@@ -1,0 +1,20 @@
+Sql Server Connection String:
+=============================
+Server=localhost\SQLEXPRESS;Database=master;Trusted_Connection=True;
+
+Sql Server Log Folder:
+======================
+C:\Program Files\Microsoft SQL Server\160\Setup Bootstrap\Log\20250814_194845
+
+Sql Server Installation Media Folder:
+=====================================
+C:\SQL2022\Express_ENU
+
+Sql Server Installation Resources Folder:
+=========================================
+C:\Program Files\Microsoft SQL Server\160\SSEI\Resources
+
+
+
+
+dotnet dev-certs https --trust

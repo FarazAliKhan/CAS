@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "Api\\Api.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "WebRazor\\WebRazor.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

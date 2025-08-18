@@ -1,0 +1,177 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\CAS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{79A57CF1-84E3-445A-9608-1626FBB738D5}|WebRazor\\WebRazor.csproj|c:\\cas\\webrazor\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{79A57CF1-84E3-445A-9608-1626FBB738D5}|WebRazor\\WebRazor.csproj|solutionrelative:webrazor\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79A57CF1-84E3-445A-9608-1626FBB738D5}|WebRazor\\WebRazor.csproj|c:\\cas\\webrazor\\pages\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79A57CF1-84E3-445A-9608-1626FBB738D5}|WebRazor\\WebRazor.csproj|solutionrelative:webrazor\\pages\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37AF4CF3-A9D9-4D22-8BB9-C8E989D1AF5C}|Api\\Api.csproj|c:\\cas\\api\\controllers\\casentitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37AF4CF3-A9D9-4D22-8BB9-C8E989D1AF5C}|Api\\Api.csproj|solutionrelative:api\\controllers\\casentitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79A57CF1-84E3-445A-9608-1626FBB738D5}|WebRazor\\WebRazor.csproj|c:\\cas\\webrazor\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79A57CF1-84E3-445A-9608-1626FBB738D5}|WebRazor\\WebRazor.csproj|solutionrelative:webrazor\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79A57CF1-84E3-445A-9608-1626FBB738D5}|WebRazor\\WebRazor.csproj|c:\\cas\\webrazor\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{79A57CF1-84E3-445A-9608-1626FBB738D5}|WebRazor\\WebRazor.csproj|solutionrelative:webrazor\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79A57CF1-84E3-445A-9608-1626FBB738D5}|WebRazor\\WebRazor.csproj|c:\\cas\\webrazor\\pages\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{79A57CF1-84E3-445A-9608-1626FBB738D5}|WebRazor\\WebRazor.csproj|solutionrelative:webrazor\\pages\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79A57CF1-84E3-445A-9608-1626FBB738D5}|WebRazor\\WebRazor.csproj|c:\\cas\\webrazor\\pages\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{79A57CF1-84E3-445A-9608-1626FBB738D5}|WebRazor\\WebRazor.csproj|solutionrelative:webrazor\\pages\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79A57CF1-84E3-445A-9608-1626FBB738D5}|WebRazor\\WebRazor.csproj|c:\\cas\\webrazor\\pages\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{79A57CF1-84E3-445A-9608-1626FBB738D5}|WebRazor\\WebRazor.csproj|solutionrelative:webrazor\\pages\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79A57CF1-84E3-445A-9608-1626FBB738D5}|WebRazor\\WebRazor.csproj|c:\\cas\\webrazor\\wwwroot\\lib\\wet-boew-dist-4.0.90\\theme-wet-boew\\css\\theme.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{79A57CF1-84E3-445A-9608-1626FBB738D5}|WebRazor\\WebRazor.csproj|solutionrelative:webrazor\\wwwroot\\lib\\wet-boew-dist-4.0.90\\theme-wet-boew\\css\\theme.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Edit.cshtml.cs",
+              "DocumentMoniker": "C:\\CAS\\WebRazor\\Pages\\Edit.cshtml.cs",
+              "RelativeDocumentMoniker": "WebRazor\\Pages\\Edit.cshtml.cs",
+              "ToolTip": "C:\\CAS\\WebRazor\\Pages\\Edit.cshtml.cs",
+              "RelativeToolTip": "WebRazor\\Pages\\Edit.cshtml.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAADwv14AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-18T02:06:17.847Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CASEntityController.cs",
+              "DocumentMoniker": "C:\\CAS\\Api\\Controllers\\CASEntityController.cs",
+              "RelativeDocumentMoniker": "Api\\Controllers\\CASEntityController.cs",
+              "ToolTip": "C:\\CAS\\Api\\Controllers\\CASEntityController.cs",
+              "RelativeToolTip": "Api\\Controllers\\CASEntityController.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAADwvzgAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-18T02:06:17.864Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\CAS\\WebRazor\\Pages\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "WebRazor\\Pages\\Index.cshtml.cs",
+              "ToolTip": "C:\\CAS\\WebRazor\\Pages\\Index.cshtml.cs",
+              "RelativeToolTip": "WebRazor\\Pages\\Index.cshtml.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAADwvzYAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-18T02:06:17.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\CAS\\WebRazor\\Pages\\Edit.cshtml",
+              "RelativeDocumentMoniker": "WebRazor\\Pages\\Edit.cshtml",
+              "ToolTip": "C:\\CAS\\WebRazor\\Pages\\Edit.cshtml",
+              "RelativeToolTip": "WebRazor\\Pages\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-18T02:47:15.562Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\CAS\\WebRazor\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "WebRazor\\Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\CAS\\WebRazor\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "WebRazor\\Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-18T02:36:38.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "theme.css",
+              "DocumentMoniker": "C:\\CAS\\WebRazor\\wwwroot\\lib\\wet-boew-dist-4.0.90\\theme-wet-boew\\css\\theme.css",
+              "RelativeDocumentMoniker": "WebRazor\\wwwroot\\lib\\wet-boew-dist-4.0.90\\theme-wet-boew\\css\\theme.css",
+              "ToolTip": "C:\\CAS\\WebRazor\\wwwroot\\lib\\wet-boew-dist-4.0.90\\theme-wet-boew\\css\\theme.css",
+              "RelativeToolTip": "WebRazor\\wwwroot\\lib\\wet-boew-dist-4.0.90\\theme-wet-boew\\css\\theme.css",
+              "ViewState": "AgIAABcBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-08-18T02:35:54.293Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\CAS\\WebRazor\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebRazor\\Pages\\Index.cshtml",
+              "ToolTip": "C:\\CAS\\WebRazor\\Pages\\Index.cshtml",
+              "RelativeToolTip": "WebRazor\\Pages\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-18T02:33:54.269Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\CAS\\WebRazor\\Pages\\Details.cshtml",
+              "RelativeDocumentMoniker": "WebRazor\\Pages\\Details.cshtml",
+              "ToolTip": "C:\\CAS\\WebRazor\\Pages\\Details.cshtml",
+              "RelativeToolTip": "WebRazor\\Pages\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-18T02:07:45.101Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\CAS\\WebRazor\\Pages\\Create.cshtml",
+              "RelativeDocumentMoniker": "WebRazor\\Pages\\Create.cshtml",
+              "ToolTip": "C:\\CAS\\WebRazor\\Pages\\Create.cshtml",
+              "RelativeToolTip": "WebRazor\\Pages\\Create.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAUAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-18T01:58:04.239Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+﻿@page
+@model WebRazor.Pages.CreateModel
+@{
+}
+
+<div class="text-center"><h1>Create CAS</h1></div>
+<form method="post">
+<section class="center">
+    <div class="form-group">
+        <div class="input-group row center">
+            <label for="firstName" class="form-control">First Name</label>
+            <input id="firstName" class="form-control" asp-for="firstName" />
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="input-group row center">
+            <label for="lastName" class="form-control">Last Name</label>
+            <input id="lastName" class="form-control" asp-for="lastName" />
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="input-group row center">
+            <label for="dob"  class="form-control">Date of Birth</label>
+            <input id="dob" class="form-control" asp-for="dob" />
+        </div>
+    </div>
+</section>
+<div>
+    <button class="btn btn-primary" type="submit">Create</button>
+        <span>
+            <a class="btn btn-default" asp-page="./Index">Back</a>
+        </span>
+</div>
+</form>

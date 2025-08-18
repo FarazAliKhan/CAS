@@ -1,0 +1,35 @@
+﻿@page
+@model WebRazor.Pages.EditModel
+@{
+}
+
+<div class="text-center"><h1>Edit CAS</h1></div>
+<section class="center">
+    <form method="post">
+        <div>
+            <div class="form-group">
+                <div class="input-group row center">
+                    <label for="firstName" class="form-control">First Name</label>
+                    <input id="firstName" class="form-control" asp-for="firstName" />
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="input-group row center">
+                    <label for="lastName" class="form-control">Last Name</label>
+                    <input id="lastName" class="form-control" asp-for="lastName" />
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="input-group row center">
+                    <label for="dob" class="form-control">Date of Birth</label>
+                    <input id="dob" class="form-control" asp-for="dob" />
+                </div>
+                <input asp-for="Id" type="hidden" />
+            </div>
+        </div>
+        <div>
+            <button class="btn btn-primary" type="submit">Update</button>
+            <a class="btn btn-default" asp-page="./Index">Back</a>
+        </div>
+    </form>
+</section>
