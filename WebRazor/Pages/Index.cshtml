@@ -1,7 +1,23 @@
 ﻿@page
+@using Microsoft.AspNetCore.Localization
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IStringLocalizer<IndexModel> localizer
+@inject IHtmlLocalizer<IndexModel> htmlLocalizer
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
+    if(HttpContext.Request.Query["culture"] == "fr")
+    {
+        CultureInfo.CurrentCulture = new CultureInfo("fr");
+        CultureInfo.CurrentUICulture = new CultureInfo("fr");
+    }
+    else if (HttpContext.Request.Query["culture"] == "en")
+    {
+        CultureInfo.CurrentCulture = new CultureInfo("en");
+        CultureInfo.CurrentUICulture = new CultureInfo("en");
+    }
+    var requestCultureFeature = HttpContext.Features.Get<IRequestCultureFeature>();
+    var requestCulture = requestCultureFeature.RequestCulture;
 }
 
 <div class="text-center"><h1>CASes</h1></div>
@@ -14,13 +30,13 @@
                     @Html.DisplayNameFor(model => model.casModels[0].Id)
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.casModels[0].FirstName)
+                    @localizer["FirstName"]
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.casModels[0].LastName)
+                    @localizer["LastName"]
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.casModels[0].DateOfBirth)
+                    @localizer["dob"]
                 </th>
                 <th></th>
             </tr>
@@ -44,14 +60,14 @@
                             @Html.DisplayFor(modelItem => item.DateOfBirth)
                         </td>
                         <td>
-                            <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
-                            <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
-                            <a asp-page="./Index" asp-route-id="@item.Id" asp-page-handler="Delete">Delete</a>
+                            <a asp-page="./Edit" asp-route-id="@item.Id">@localizer["Edit"]</a> |
+                            <a asp-page="./Details" asp-route-id="@item.Id">@localizer["Details"]</a> |
+                            <a asp-page="./Index" asp-route-id="@item.Id" asp-page-handler="Delete">@localizer["Delete"]</a>
                         </td>
                     </tr>
                 }
             }
         </tbody>
     </table>
-    <a class="btn btn-primary" asp-page="./Create">New</a>
+    <a class="btn btn-primary" asp-page="./Create">@localizer["New"]</a>
 </div>

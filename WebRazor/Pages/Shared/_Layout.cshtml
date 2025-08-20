@@ -9,6 +9,13 @@
     <link rel="stylesheet" href="~/lib/wet-boew-dist-4.0.90/theme-wet-boew/css/theme.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/WebRazor.styles.css" asp-append-version="true" />
+    <script lang="javascript">
+        function setLang(lang){
+            let url = new URL(location.href);
+            url.searchParams.set("culture", lang);
+            location.href = url;
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -29,6 +36,7 @@
                         </li>
                     </ul>
                 </div>
+                <a href="javascript:setLang('en')">en</a> | <a href="javascript:setLang('fr')">fr</a>
             </div>
         </nav>
     </header>
@@ -52,3 +60,4 @@
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
+<vc:culture-switcher />

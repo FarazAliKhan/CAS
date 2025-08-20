@@ -34,3 +34,17 @@ C:\CAS\WebRazor\obj\Debug\net8.0\refint\WebRazor.dll
 C:\CAS\WebRazor\obj\Debug\net8.0\WebRazor.pdb
 C:\CAS\WebRazor\obj\Debug\net8.0\WebRazor.genruntimeconfig.cache
 C:\CAS\WebRazor\obj\Debug\net8.0\ref\WebRazor.dll
+C:\CAS\WebRazor\bin\Debug\net8.0\en\WebRazor.resources.dll
+C:\CAS\WebRazor\bin\Debug\net8.0\fr\WebRazor.resources.dll
+C:\CAS\WebRazor\obj\Debug\net8.0\WebRazor.Resources.Pages.IndexModel.en.resources
+C:\CAS\WebRazor\obj\Debug\net8.0\WebRazor.Resources.Pages.IndexModel.fr.resources
+C:\CAS\WebRazor\obj\Debug\net8.0\WebRazor.csproj.GenerateResource.cache
+C:\CAS\WebRazor\obj\Debug\net8.0\WebRazor.sourcelink.json
+C:\CAS\WebRazor\obj\Debug\net8.0\en\WebRazor.resources.dll
+C:\CAS\WebRazor\obj\Debug\net8.0\fr\WebRazor.resources.dll
+C:\CAS\WebRazor\obj\Debug\net8.0\WebRazor.Resources.Pages.CreateModel.en.resources
+C:\CAS\WebRazor\obj\Debug\net8.0\WebRazor.Resources.Pages.CreateModel.fr.resources
+C:\CAS\WebRazor\obj\Debug\net8.0\WebRazor.Resources.Pages.DetailsModel.en.resources
+C:\CAS\WebRazor\obj\Debug\net8.0\WebRazor.Resources.Pages.DetailsModel.fr.resources
+C:\CAS\WebRazor\obj\Debug\net8.0\WebRazor.Resources.Pages.EditModel.en.resources
+C:\CAS\WebRazor\obj\Debug\net8.0\WebRazor.Resources.Pages.EditModel.fr.resources

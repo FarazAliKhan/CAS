@@ -1,35 +1,52 @@
 ﻿@page
-@model WebRazor.Pages.EditModel
+@using Microsoft.AspNetCore.Localization
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IStringLocalizer<EditModel> localizer
+@inject IHtmlLocalizer<EditModel> htmlLocalizer
+@model EditModel
 @{
+    ViewData["Title"] = "Home page";
+    if (HttpContext.Request.Query["culture"] == "fr")
+    {
+        CultureInfo.CurrentCulture = new CultureInfo("fr");
+        CultureInfo.CurrentUICulture = new CultureInfo("fr");
+    }
+    else if (HttpContext.Request.Query["culture"] == "en")
+    {
+        CultureInfo.CurrentCulture = new CultureInfo("en");
+        CultureInfo.CurrentUICulture = new CultureInfo("en");
+    }
+    var requestCultureFeature = HttpContext.Features.Get<IRequestCultureFeature>();
+    var requestCulture = requestCultureFeature.RequestCulture;
 }
 
-<div class="text-center"><h1>Edit CAS</h1></div>
+<div class="text-center"><h1>@localizer["Edit"] CAS</h1></div>
 <section class="center">
     <form method="post">
         <div>
             <div class="form-group">
                 <div class="input-group row center">
-                    <label for="firstName" class="form-control">First Name</label>
+                    <label for="firstName" class="form-control">@localizer["FirstName"]</label>
                     <input id="firstName" class="form-control" asp-for="firstName" />
                 </div>
             </div>
             <div class="form-group">
                 <div class="input-group row center">
-                    <label for="lastName" class="form-control">Last Name</label>
+                    <label for="lastName" class="form-control">@localizer["LastName"]</label>
                     <input id="lastName" class="form-control" asp-for="lastName" />
                 </div>
             </div>
             <div class="form-group">
                 <div class="input-group row center">
-                    <label for="dob" class="form-control">Date of Birth</label>
+                    <label for="dob" class="form-control">@localizer["dob"]</label>
                     <input id="dob" class="form-control" asp-for="dob" />
                 </div>
                 <input asp-for="Id" type="hidden" />
             </div>
         </div>
         <div>
-            <button class="btn btn-primary" type="submit">Update</button>
-            <a class="btn btn-default" asp-page="./Index">Back</a>
+            <button class="btn btn-primary" type="submit">@localizer["Update"]</button>
+            <a class="btn btn-default" asp-page="./Index">@localizer["Back"]</a>
         </div>
     </form>
 </section>

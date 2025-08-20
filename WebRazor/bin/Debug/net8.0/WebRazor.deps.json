@@ -12,6 +12,14 @@
         },
         "runtime": {
           "WebRazor.dll": {}
+        },
+        "resources": {
+          "en/WebRazor.resources.dll": {
+            "locale": "en"
+          },
+          "fr/WebRazor.resources.dll": {
+            "locale": "fr"
+          }
         }
       },
       "Newtonsoft.Json/13.0.3": {
