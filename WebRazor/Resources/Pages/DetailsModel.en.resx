@@ -123,7 +123,7 @@
   <data name="dob" xml:space="preserve">
     <value>Date of Birth</value>
   </data>
-  <data name="FirstNae" xml:space="preserve">
+  <data name="FirstName" xml:space="preserve">
     <value>First Name</value>
   </data>
   <data name="LastName" xml:space="preserve">

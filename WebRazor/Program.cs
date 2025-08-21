@@ -1,5 +1,6 @@
 using System.Globalization;
 using Microsoft.AspNetCore.Localization;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Extensions.Options;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -17,10 +18,16 @@ builder.Services.Configure<RequestLocalizationOptions>(options =>
     options.DefaultRequestCulture = new RequestCulture("en");
     options.SupportedCultures = supportedCultures;
     options.SupportedUICultures = supportedCultures;
+    options.RequestCultureProviders.Insert(0, new QueryStringRequestCultureProvider());
+    options.RequestCultureProviders.Insert(1, new CookieRequestCultureProvider());
 });
 
 builder.Services.AddMvc().AddViewLocalization();
 builder.Services.AddLocalization(options => options.ResourcesPath = "Resources");
+
+builder.Services.AddControllers().AddViewOptions(options =>
+    options.HtmlHelperOptions.FormInputRenderMode = FormInputRenderMode.AlwaysUseCurrentCulture
+);
 
 var app = builder.Build();
 
@@ -40,10 +47,10 @@ app.UseRouting();
 var localizationOptions = app.Services.GetService<IOptions<RequestLocalizationOptions>>().Value;
 app.UseRequestLocalization(localizationOptions);
 
-app.UseRequestLocalization(new RequestLocalizationOptions
-{
-    ApplyCurrentCultureToResponseHeaders = true,
-});
+//app.UseRequestLocalization(new RequestLocalizationOptions
+//{
+//    ApplyCurrentCultureToResponseHeaders = true,
+//});
 
 app.MapRazorPages();
 

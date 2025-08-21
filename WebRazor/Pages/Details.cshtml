@@ -10,11 +10,21 @@
     {
         CultureInfo.CurrentCulture = new CultureInfo("fr");
         CultureInfo.CurrentUICulture = new CultureInfo("fr");
+        Response.Cookies.Append(
+    CookieRequestCultureProvider.DefaultCookieName,
+    CookieRequestCultureProvider.MakeCookieValue(new RequestCulture(CultureInfo.CurrentCulture)),
+    new CookieOptions { Expires = DateTimeOffset.UtcNow.AddYears(1) }
+);
     }
     else if (HttpContext.Request.Query["culture"] == "en")
     {
         CultureInfo.CurrentCulture = new CultureInfo("en");
         CultureInfo.CurrentUICulture = new CultureInfo("en");
+        Response.Cookies.Append(
+    CookieRequestCultureProvider.DefaultCookieName,
+    CookieRequestCultureProvider.MakeCookieValue(new RequestCulture(CultureInfo.CurrentCulture)),
+    new CookieOptions { Expires = DateTimeOffset.UtcNow.AddYears(1) }
+);
     }
     var requestCultureFeature = HttpContext.Features.Get<IRequestCultureFeature>();
     var requestCulture = requestCultureFeature.RequestCulture;
