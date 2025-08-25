@@ -1,0 +1,34 @@
+{
+	"@context": {
+		"@version": 1.1,
+		"dct": "http://purl.org/dc/terms/",
+		"title": { "@id": "dct:title", "@container": "@language" },
+		"description": { "@id": "dct:description", "@container": "@language" },
+		"modified": "dct:modified"
+	},
+	"title": {
+		"en": "List - Additional style",
+		"fr": "Liste - Style additionnel"
+	},
+	"description": {
+		"en": "Additional style (double spaced)",
+		"fr": "Style additionnel (double interligne)"
+	},
+	"modified": "2018-11-07",
+	"componentName": "list",
+	"status": "stable",
+	"pages": {
+		"examples": [
+			{
+				"title": "List - Additional style",
+				"language": "en",
+				"path": "list-en.html"
+			},
+			{
+				"title": "Liste - Style additionnel",
+				"language": "fr",
+				"path": "list-fr.html"
+			}
+		]
+	}
+}

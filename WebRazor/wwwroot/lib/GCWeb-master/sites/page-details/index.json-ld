@@ -1,0 +1,874 @@
+{
+	"@context": {
+		"@version": 2.0,
+		"dct": "http://purl.org/dc/terms/",
+		"title": { "@id": "dct:title", "@container": "@language" },
+		"description": { "@id": "dct:description", "@container": "@language" },
+		"modified": "dct:modified"
+	},
+	"title": {
+		"en": "Page details",
+		"fr": "Détails de la page"
+	},
+	"description": {
+		"en": "Documentation on how to use the page details section.",
+		"fr": "Documentation sur l'utilisation de la section des détails de la page."
+	},
+	"version": "3.3",
+	"modified": "2024-12-20",
+	"componentName": "page-details",
+	"componentType": "container",
+	"status": "stable",
+	"pages": {
+		"docs": [
+			{
+				"title": "Documentation for Page details",
+				"language": "en",
+				"path": "page-details-docs-en.html"
+			},
+			{
+				"title": "Documentation pour Détails de la page",
+				"language": "fr",
+				"path": "page-details-docs-fr.html"
+			}
+		],
+		"examples": [
+			{
+				"title": "Default Page details",
+				"language": "en",
+				"path": "page-details-default-en.html"
+			},
+			{
+				"title": "Détails de la page par défaut",
+				"language": "fr",
+				"path": "page-details-default-fr.html"
+			},
+			{
+				"title": "Page details with GC feedback",
+				"language": "en",
+				"path": "page-details-pft-en.html"
+			},
+			{
+				"title": "Détails de la page avec Rétroaction GC",
+				"language": "fr",
+				"path": "page-details-pft-fr.html"
+			}
+		],
+		"reports": [
+			{
+				"title": "Accessibility (Only new SC WCAG 2.1/2.2 Level AA)- Page Details - English report",
+				"language": "en",
+				"path": "reports/pre-a11y-1-en.html"
+			},
+			{
+				"title": "Accessibility (Only new SC WCAG 2.1/2.2 Level AA)- Page Details - French report",
+				"language": "fr",
+				"path": "reports/pre-a11y-1-fr.html"
+			},
+			{
+				"title": "Accessibility (Only new SC WCAG 2.1/2.2 Level AA)- Page Details (Basic Html version)- English report",
+				"language": "en",
+				"path": "reports/pre-a11y-basic-html-1-en.html"
+			},
+			{
+				"title": "Accessibility (Only new SC WCAG 2.1/2.2 Level AA)- Page Details (Basic Html version)- French report",
+				"language": "fr",
+				"path": "reports/pre-a11y-basic-html-1-fr.html"
+			}
+		]
+	},
+	"dependencies": {
+		"en": [
+			{ "title": "Feedback area", "url": "https://wet-boew.github.io/GCWeb/sites/feedback/feedback-docs-en.html", "component": "feedback" },
+			{ "title": "Date modified", "url": "https://wet-boew.github.io/GCWeb/sites/date-modified/date-modified-en.html", "component": "date-modified" },
+			{ "title": "Contributors", "url": "https://wet-boew.github.io/GCWeb/sites/contributors/contributors-en.html", "component": "contributors" }
+		],
+		"fr": [
+			{ "title": "Zone de rétroaction", "url": "https://wet-boew.github.io/GCWeb/sites/feedback/feedback-docs-fr.html", "component": "feedback" },
+			{ "title": "Date de modification", "url": "https://wet-boew.github.io/GCWeb/sites/date-modified/date-modified-fr.html", "component": "date-modified" },
+			{ "title": "Contributeurs", "url": "https://wet-boew.github.io/GCWeb/sites/contributors/contributors-fr.html", "component": "contributors" }
+		]
+	},
+	"a11yGuidance": "no accessibility guidance",
+	"variations": [
+		{
+			"name": {
+				"en": "Page details",
+				"fr": "Détails de la page"
+			},
+			"status": "stable",
+			"description": {
+				"en": "This component may contain the following components: GC feedback and Date modified.",
+				"fr": "Ce composant peut contenir les composants suivants&nbsp;: Rétroaction GC et Date de modification."
+			},
+			"iteration": "_:iteration_pd_3",
+			"example": [
+				{
+					"en": { "href": "page-details-default-en.html", "text": "Default Page details" },
+					"fr": { "href": "page-details-default-fr.html", "text": "Détails de la page par défaut" }
+				},
+				{
+					"en": { "href": "page-details-pft-en.html", "text": "Page details with GC feedback" },
+					"fr": { "href": "page-details-pft-fr.html", "text": "Détails de la page avec Rétroaction GC" }
+				},
+				{
+					"en": { "href": "page-details-contributors-en.html", "text": "Page details with Contributors" },
+					"fr": { "href": "page-details-contributors-fr.html", "text": "Détails de la page avec Contributeurs" }
+				},
+				{
+					"en": { "href": "deprecated/page-details-v3.2-en.html", "text": "Deprecated as of GCWeb v17.0.0 - Page details version 3.2" },
+					"fr": { "href": "deprecated/page-details-v3.2-fr.html", "text": "Obsolète à partir de GCWeb v17.0.0 - Détails de la page version 3.2" }
+				},
+				{
+					"en": { "href": "deprecated/page-details-v3.1-en.html", "text": "Deprecated as of GCWeb v16.0.0 - Page details version 3.1" },
+					"fr": { "href": "deprecated/page-details-v3.1-fr.html", "text": "Obsolète à partir de GCWeb v16.0.0 - Détails de la page version 3.1" }
+				},
+				{
+					"en": { "href": "deprecated/page-details-v3-en.html", "text": "Deprecated as of GCWeb v16.0.0 - Page details version 3.0" },
+					"fr": { "href": "deprecated/page-details-v3-fr.html", "text": "Obsolète à partir de GCWeb v16.0.0 - Détails de la page version 3.0" }
+				}
+			],
+			"implementation": [
+				"_:implement_pd",
+				"_:implement_pd_gcweb",
+				"_:implement_pd_3to5",
+				"_:implement_pd_5to6"
+			],
+			"history": [
+				{
+					"en": "December 2024 - Added Contributors component.",
+					"fr": "Juillet 2024 - Ajout de la composante Contributeurs."
+				},
+				{
+					"en": "July 2024 - Removed \"col-lg-9\" class.",
+					"fr": "Juillet 2024 - Retrait de la classe «&nbsp;col-lg-9&nbsp;»."
+				},
+				{
+					"en": "June 2024 - Removed \"Share this page\" option.",
+					"fr": "Juin 2024 - Retrait de l'option « Partagez cette page »."
+				},
+				{
+					"en": "March 2023 - Tag <code>&lt;footer&gt;</code> changed to <code>&lt;section&gt;</code>.",
+					"fr": "Mars 2023 - Balise <code>&lt;footer&gt;</code> changée pour <code>&lt;section&gt;</code>."
+				},
+				{
+					"en": "May 2022 - Total revamp.",
+					"fr": "Mai 2022 - Refonte totale."
+				},
+				{
+					"en": "October 2017 - Initial implementation of the variation.",
+					"fr": "Octobre 2017 - Implémentation initiale de la variante."
+				}
+			]
+		}
+	],
+	"implementation": [
+		{
+			"@id": "_:implement_pd",
+			"iteration": "_:iteration_pd_6",
+			"name": {
+				"en": "Standard",
+				"fr": "Standard"
+			},
+			"introduction": {
+				"en": "This implementation is meant for developers/publishers adding the component manually.",
+				"fr": "Cette implémentation est destinée aux développeurs/éditeurs qui ajoutent le composant manuellement."
+			},
+			"instructions": {
+				"en": [
+					"The Page details component must include the Date modified component. It can also contain the Page feedback component and Contributors component. See below the code sample for each scenario.",
+					"For more information about the GC feedback component, please visit <a href=\"../../sites/feedback/feedback-docs-en.html\">Page feedback area</a> page.",
+					"For more information about Contributors component, please visit <a href=\"../../sites/contributors/contributors-doc-en.html\">Contributors</a> page."
+				],
+				"fr": [
+					"Le composant Détails de la page doit inclure la composante Date de modification. Il peut également contenir la composante Rétroaction GC et la composante Contributeurs. Voir ci-dessous l'exemple de code pour chaque scénario.",
+					"Pour plus d'informations sur la composante Rétroaction GC, veuillez visiter la page <a href=\"../../sites/feedback/feedback-docs-fr.html\">Zone de rétroaction sur la page</a>.",
+					"Pour plus d'informations sur la composante de Contributeurs, veuillez visiter la page <a href=\"../../sites/contributors/contributors-doc-fr.html\">Contributeurs</a>."
+				]
+			},
+			"sample": {
+				"en": [
+					{
+						"@type": "source-code",
+						"description": "Default Page details:",
+						"code": {
+							"@type": [ "@id", "rdf:HTML" ],
+							"@value": "samples/page-details-3.3-en.html#default"
+						}
+					},
+					{
+						"@type": "source-code",
+						"description": "Page details with GC feedback:",
+						"code": {
+							"@type": [ "@id", "rdf:HTML" ],
+							"@value": "samples/page-details-3.3-en.html#pft"
+						}
+					},
+					{
+						"@type": "source-code",
+						"description": "Page details with Contributors:",
+						"code": {
+							"@type": [ "@id", "rdf:HTML" ],
+							"@value": "samples/page-details-3.3-en.html#contributors"
+						}
+					}
+				],
+				"fr": [
+					{
+						"@type": "source-code",
+						"description": "Détails de la page par défaut :",
+						"code": {
+							"@type": [ "@id", "rdf:HTML" ],
+							"@value": "samples/page-details-3.3-fr.html#default"
+						}
+					},
+					{
+						"@type": "source-code",
+						"description": "Détails de la page avec Rétroaction GC :",
+						"code": {
+							"@type": [ "@id", "rdf:HTML" ],
+							"@value": "samples/page-details-3.3-fr.html#pft"
+						}
+					},
+					{
+						"@type": "source-code",
+						"description": "Détails de la page avec Contributeurs :",
+						"code": {
+							"@type": [ "@id", "rdf:HTML" ],
+							"@value": "samples/page-details-3.3-fr.html#contributors"
+						}
+					}
+				]
+			}
+		},
+		{
+			"@id": "_:implement_pd_gcweb",
+			"iteration": "_:iteration_pd_6",
+			"name": {
+				"en": "GCWeb Jekyll",
+				"fr": "GCWeb Jekyll"
+			},
+			"introduction": {
+				"en": "This implementation is meant for developers trying to implement this component within a GCWeb Jekyll site.",
+				"fr": "Cette implémentation est destinée aux développeurs essayant d'implémenter ce composant dans un site GCWeb Jekyll."
+			},
+			"instructions": {
+				"en": [
+					"To show the GC feedback component, in the page's front-matter, set the property <code>feedback</code> to <code>true</code>.",
+					"To show the page's contributors, in the page's front-matter, set the property <code>contributors</code> to an array of objects containing the following properties: <code>name</code> and <code>url</code>."
+				],
+				"fr": [
+					"Pour afficher la composante \"Rétroaction GC\", dans l'en-tête de la page, définissez la propriété <code>feedback</code> à <code>true</code>.",
+					"Pour afficher les contributeurs de la page, dans l'en-tête de la page, définissez la propriété <code>contributors</code> à un tableau d'objets contenant les propriétés suivantes&nbsp;: <code>name</code> et <code>url</code>."
+				]
+			},
+			"sample": {
+				"en": [
+					{
+						"@type": "source-code",
+						"description": "Code sample:",
+						"code": "\"feedback\": true,\n\"contributors\": [\n\t{ \"name\": \"[Department or agency 1]\", \"url\": \"https://www.canada.ca/en\" },\n\t{ \"name\": \"[Department or agency 2]\", \"url\": \"https://www.canada.ca/en\" }\n]"
+					}
+				],
+				"fr": [
+					{
+						"@type": "source-code",
+						"description": "Exemple de code:",
+						"code": "\"feedback\": true,\n\"contributors\": [\n\t{ \"name\": \"[Ministère ou agence 1]\", \"url\": \"https://www.canada.ca/fr\" },\n\t{ \"name\": \"[Ministère ou agence 2]\", \"url\": \"https://www.canada.ca/fr\" }\n]"
+					}
+				]
+			}
+		},
+		{
+			"@id": "_:implement_pd_3to5",
+			"iteration": "_:iteration_pd_5",
+			"name": {
+				"en": "Migration from version 3.0 to 3.2",
+				"fr": "Migration de la version 3.0 vers 3.2"
+			},
+			"introduction": {
+				"en": "This implementation is meant for developers or publishers trying to migrate their page from using the page details version 3.0 to 3.2 (removal of Share this page and \"col-lg-9\" class).",
+				"fr": "Cette implémentation est destinée aux développeurs ou aux éditeurs qui tentent de migrer leur page de la version 3.0 vers la version 3.2 (suppression de Partagez cette page et de la classe «&nbsp;col-lg-9&nbsp;»)."
+			},
+			"instructions": {
+				"en": [
+					"Remove the \"col-lg-9\" class from the <code>&lt;div class=\"col-sm-8 col-md-9 col-lg-9\"&gt;</code> element.",
+					"Remove the element <code>&lt;div class=\"wb-share col-sm-4 col-md-3\" data-wb-share='{\"lnkClass\": \"btn btn-default btn-block\"}'>&lt;/div></code>.",
+					"Move the date modified component out of the grid and insert right before the closing <code>&lt;section></code> tag. Delete the <code>&lt;div class=\"col-xs-12\"></code> it was in."
+				],
+				"fr": [
+					"Supprimez la classe «&nbsp;col-lg-9&nbsp;» de l’élément <code>&lt;div class=\"col-sm-8 col-md-9 col-lg-9\"&gt;</code>.",
+					"Supprimez l'élément <code>&lt;div class=\"wb-share col-sm-4 col-md-3\" data-wb-share='{\"lnkClass\": \"btn btn-default btn-block\"}'>&lt;/div></code>.",
+					"Déplacez le composant de date de modification hors de la grille et insérez-le juste avant la balise de fermeture <code>&lt;section></code>. Supprimez le <code>&lt;div class=\"col-xs-12\"></code> dans lequel il se trouvait."
+				]
+			}
+		},
+		{
+			"@id": "_:implement_pd_5to6",
+			"iteration": "_:iteration_pd_6",
+			"name": {
+				"en": "Migration from version 3.2 to 3.3",
+				"fr": "Migration de la version 3.2 vers 3.3"
+			},
+			"introduction": {
+				"en": "This implementation is meant for developers or publishers trying to migrate their page from using the page details version 3.2 to 3.3 (move to page details).",
+				"fr": "Cette implémentation est destinée aux développeurs ou aux éditeurs qui tentent de migrer leur page de la version 3.0 vers la version 3.2 (déplacement vers les détails de la page)."
+			},
+			"instructions": {
+				"en": [
+					"If there is a \"Contributors\" component present on the page, move it directly after the <code>&lt;h2 class=\"wb-inv\"&gt;Page details&lt;/h2&gt;</code>.",
+					"Change the <code>&lt;h2&gt;From:&lt;/h2&gt;</code> to an <code>&lt;<strong>h3</strong>&gt;From:&lt;/<strong>h3</strong>&gt;</code>."
+				],
+				"fr": [
+					"S'il y a une composante «&nbsp;Contributeurs&nbsp;» présente dans la page, déplacez la composante directement après le <code>&lt;h2 class=\"wb-inv\"&gt;Détails de la page&lt;/h2&gt;</code>.",
+					"Changez le <code>&lt;h2&gt;De&nbsp;:&lt;/h2&gt;</code> à un <code>&lt;<strong>h3</strong>&gt;De&nbsp;:&lt;/<strong>h3</strong>&gt;</code>."
+				]
+			}
+		}
+	],
+	"iteration": [
+		{
+			"@id": "_:iteration_pd_6",
+			"name": "Page details - Iteration 6",
+			"date": "2024-12",
+			"detectableBy": "section.pagedetails",
+			"predecessor": "_:iteration_pd_5",
+			"additions": [
+				"Adding contributors component."
+			],
+			"assets": [
+				{
+					"@type": "source-code",
+					"@language": "en",
+					"description": "Default Page details",
+					"code": {
+						"@type": [ "rdf:HTML", "@id" ],
+						"@value": "samples/page-details-3.3-en.html#default"
+					}
+				},
+				{
+					"@type": "source-code",
+					"@language": "fr",
+					"description": "Détails de la page par défaut",
+					"code": {
+						"@type": [ "rdf:HTML", "@id" ],
+						"@value": "samples/page-details-3.3-fr.html#default"
+					}
+				},
+				{
+					"@type": "source-code",
+					"@language": "en",
+					"description": "Page details with GC feedback",
+					"code": {
+						"@type": [ "rdf:HTML", "@id" ],
+						"@value": "samples/page-details-3.3-en.html#pft"
+					}
+				},
+				{
+					"@type": "source-code",
+					"@language": "fr",
+					"description": "Détails de la page avec Rétroaction GC",
+					"code": {
+						"@type": [ "rdf:HTML", "@id" ],
+						"@value": "samples/page-details-3.3-fr.html#pft"
+					}
+				},
+				{
+					"@type": "source-code",
+					"@language": "en",
+					"description": "Page details with contributors",
+					"code": {
+						"@type": [ "rdf:HTML", "@id" ],
+						"@value": "samples/page-details-3.3-en.html#contributors"
+					}
+				},
+				{
+					"@type": "source-code",
+					"@language": "fr",
+					"description": "Détails de la page avec contributeurs",
+					"code": {
+						"@type": [ "rdf:HTML", "@id" ],
+						"@value": "samples/page-details-3.3-fr.html#contributors"
+					}
+				}
+			]
+		},
+		{
+			"@id": "_:iteration_pd_5",
+			"name": "Page details - Iteration 5",
+			"date": "2024-07",
+			"detectableBy": "section.pagedetails",
+			"predecessor": "_:iteration_pd_4",
+			"successor": "_:iteration_pd_6",
+			"fixes": [
+				"Removed \"col-lg-9\" class since \"col-md-9\" already fulfils the same purpose."
+			],
+			"assets": [
+				{
+					"@type": "source-code",
+					"@language": "en",
+					"description": "Default Page details",
+					"code": {
+						"@type": [ "rdf:HTML", "@id" ],
+						"@value": "samples/page-details-3.2-en.html#default"
+					}
+				},
+				{
+					"@type": "source-code",
+					"@language": "fr",
+					"description": "Détails de la page par défaut",
+					"code": {
+						"@type": [ "rdf:HTML", "@id" ],
+						"@value": "samples/page-details-3.2-fr.html#default"
+					}
+				},
+				{
+					"@type": "source-code",
+					"@language": "en",
+					"description": "Page details with GC feedback",
+					"code": {
+						"@type": [ "rdf:HTML", "@id" ],
+						"@value": "samples/page-details-3.2-en.html#pft"
+					}
+				},
+				{
+					"@type": "source-code",
+					"@language": "fr",
+					"description": "Détails de la page avec Rétroaction GC",
+					"code": {
+						"@type": [ "rdf:HTML", "@id" ],
+						"@value": "samples/page-details-3.2-fr.html#pft"
+					}
+				}
+			]
+		},
+		{
+			"@id": "_:iteration_pd_4",
+			"name": "Page details - Iteration 4",
+			"date": "2024-06",
+			"detectableBy": "section.pagedetails",
+			"predecessor": "_:iteration_pd_3",
+			"successor": "_:iteration_pd_5",
+			"fixes": [
+				"Removed \"Share this page\" button option."
+			],
+			"assets": [
+				{
+					"@type": "source-code",
+					"@language": "en",
+					"description": "Default Page details",
+					"code": {
+						"@type": [ "rdf:HTML", "@id" ],
+						"@value": "samples/page-details-3.1-en.html#default"
+					}
+				},
+				{
+					"@type": "source-code",
+					"@language": "fr",
+					"description": "Détails de la page par défaut",
+					"code": {
+						"@type": [ "rdf:HTML", "@id" ],
+						"@value": "samples/page-details-3.1-fr.html#default"
+					}
+				},
+				{
+					"@type": "source-code",
+					"@language": "en",
+					"description": "Page details with GC feedback",
+					"code": {
+						"@type": [ "rdf:HTML", "@id" ],
+						"@value": "samples/page-details-3.1-en.html#pft"
+					}
+				},
+				{
+					"@type": "source-code",
+					"@language": "fr",
+					"description": "Détails de la page avec Rétroaction GC",
+					"code": {
+						"@type": [ "rdf:HTML", "@id" ],
+						"@value": "samples/page-details-3.1-fr.html#pft"
+					}
+				}
+			]
+		},
+		{
+			"@id": "_:iteration_pd_3",
+			"name": "Page details - Iteration 3",
+			"date": "2023-03",
+			"detectableBy": "section.pagedetails",
+			"predecessor": "_:iteration_pd_2",
+			"successor": "_:iteration_pd_4",
+			"fixes": [
+				"Changed <footer> to <section> as <footer> element does not provide a semantic break."
+			],
+			"assets": [
+				{
+					"@type": "source-code",
+					"@language": "en",
+					"description": "Default Page details",
+					"code": {
+						"@type": [ "rdf:HTML", "@id" ],
+						"@value": "samples/page-details-3-en.html#default"
+					}
+				},
+				{
+					"@type": "source-code",
+					"@language": "fr",
+					"description": "Détails de la page par défaut",
+					"code": {
+						"@type": [ "rdf:HTML", "@id" ],
+						"@value": "samples/page-details-3-fr.html#default"
+					}
+				},
+				{
+					"@type": "source-code",
+					"@language": "en",
+					"description": "Default Page details with GC feedback",
+					"code": {
+						"@type": [ "rdf:HTML", "@id" ],
+						"@value": "samples/page-details-3-en.html#pft"
+					}
+				},
+				{
+					"@type": "source-code",
+					"@language": "fr",
+					"description": "Détails de la page avec Rétroaction GC",
+					"code": {
+						"@type": [ "rdf:HTML", "@id" ],
+						"@value": "samples/page-details-3-fr.html#pft"
+					}
+				},
+				{
+					"@type": "source-code",
+					"@language": "en",
+					"description": "Page details with Share this page",
+					"code": {
+						"@type": [ "rdf:HTML", "@id" ],
+						"@value": "samples/page-details-3-en.html#share"
+					}
+				},
+				{
+					"@type": "source-code",
+					"@language": "fr",
+					"description": "Détails de la page avec Partagez cette page",
+					"code": {
+						"@type": [ "rdf:HTML", "@id" ],
+						"@value": "samples/page-details-3-fr.html#share"
+					}
+				},
+				{
+					"@type": "source-code",
+					"@language": "en",
+					"description": "Page details with GC feedback and Share this page",
+					"code": {
+						"@type": [ "rdf:HTML", "@id" ],
+						"@value": "samples/page-details-3-en.html#pftShare"
+					}
+				},
+				{
+					"@type": "source-code",
+					"@language": "fr",
+					"description": "Détails de la page avec Rétroaction GC et Partagez cette page",
+					"code": {
+						"@type": [ "rdf:HTML", "@id" ],
+						"@value": "samples/page-details-3-fr.html#pftShare"
+					}
+				}
+			]
+		},
+		{
+			"@id": "_:iteration_pd_2",
+			"name": "Page details - Iteration 2",
+			"date": "2022-05",
+			"detectableBy": "footer.pagedetails",
+			"predecessor": "_:iteration_pd_1",
+			"successor": "_:iteration_pd_3",
+			"breaking": [
+				"Wrapping <div> changed to <footer>.",
+				"Changed grid sizes for RAP and Share this page.",
+				"RAP is now loaded through Data-AJAX with a fallback for basic mode."
+			],
+			"additions": [
+				"New invisible heading for accessibility."
+			],
+			"assets": [
+				{
+					"@type": "source-code",
+					"@language": "en",
+					"description": "Code sample",
+					"code": {
+						"@type": [ "rdf:HTML", "@id" ],
+						"@value": "samples/page-details-2-en.html"
+					}
+				},
+				{
+					"@type": "source-code",
+					"@language": "fr",
+					"description": "Exemple de code",
+					"code": {
+						"@type": [ "rdf:HTML", "@id" ],
+						"@value": "samples/page-details-2-fr.html"
+					}
+				}
+			]
+		},
+		{
+			"@id": "_:iteration_pd_1",
+			"name": "Page details - Iteration 1",
+			"date": "2017-10",
+			"detectableBy": "div.pagedetails",
+			"successor": "_:iteration_pd_2",
+			"assets": [
+				{
+					"@type": "source-code",
+					"@language": "en",
+					"description": "Code sample",
+					"code": {
+						"@type": [ "rdf:HTML", "@id" ],
+						"@value": "deprecated/page-details-1-en.html"
+					}
+				},
+				{
+					"@type": "source-code",
+					"@language": "fr",
+					"description": "Exemple de code",
+					"code": {
+						"@type": [ "rdf:HTML", "@id" ],
+						"@value": "deprecated/page-details-1-fr.html"
+					}
+				}
+			]
+		}
+	],
+	"changesets": [
+		{
+			"@id": "_:cs_pd_6",
+			"name": "Page details - version 3.3",
+			"status": "stable",
+			"baseOnIteration": "_:iteration_pd_6",
+			"detectableBy": "section.pagedetails",
+			"layout": [
+				"Contributors (if included) on the top row",
+				"GC feedback (if included) on the top left",
+				"Date modified on bottom left"
+			],
+			"style": "Not applicable",
+			"semantic": {
+				"@type": "source-code",
+				"description": "Source code",
+				"code": "<section class=\"pagedetails\">\n\t<h2>[i18nText-pageDetails]</h2>\n\t<!-- Contributors (optional) -->\n\t<!-- GC feedback (optional) -->\n\t<!-- Date modified (mandatory) -->\n</section>"
+			},
+			"include": {
+				"@type": "source-code",
+				"collapsed": true,
+				"description": "Include with logic in Liquid.",
+				"code": {
+					"@type": [ "@id", "rdf:HTML" ],
+					"@value": "includes/footer.html"
+				}
+			},
+			"logic": "Not applicable",
+			"guidance": "Not applicable",
+			"context": "The last item of the <main> element.",
+			"configuration": [
+				"Input the date when the page was last modified inside the <time> tag in the format YYYY-MM-DD."
+			],
+			"static": [
+				"Section header: \"Page details\""
+			],
+			"schema": "Not applicable",
+			"dependency": "Not applicable",
+			"file": "Not applicable"
+		},
+		{
+			"@id": "_:cs_pd_5",
+			"name": "Page details - version 3.2",
+			"status": "deprecated",
+			"baseOnIteration": "_:iteration_pd_5",
+			"detectableBy": "section.pagedetails",
+			"layout": [
+				"GC feedback (if included) on the top left",
+				"Date modified on bottom left"
+			],
+			"style": "Not applicable",
+			"semantic": {
+				"@type": "source-code",
+				"description": "Source code",
+				"code": "<section class=\"pagedetails\">\n\t<h2>[i18nText-pageDetails]</h2>\n\t<!-- GC feedback (optional) -->\n\t<!-- Date modified (mandatory) -->\n</section>"
+			},
+			"include": {
+				"@type": "source-code",
+				"collapsed": true,
+				"description": "Include with logic in Liquid.",
+				"code": {
+					"@type": [ "@id", "rdf:HTML" ],
+					"@value": "includes/footer-3.2.html"
+				}
+			},
+			"logic": "Not applicable",
+			"guidance": "Not applicable",
+			"context": "Not applicable",
+			"configuration": [
+				"Input the date when the page was last modified inside the <time> tag in the format YYYY-MM-DD."
+			],
+			"static": [
+				"Section header: \"Page details\""
+			],
+			"schema": "Not applicable",
+			"dependency": "Not applicable",
+			"file": "Not applicable"
+		},
+		{
+			"@id": "_:cs_pd_4",
+			"name": "Page details - version 3.1",
+			"status": "deprecated",
+			"baseOnIteration": "_:iteration_pd_4",
+			"detectableBy": "section.pagedetails",
+			"layout": [
+				"GC feedback (if included) on the top left",
+				"Date modified on bottom left"
+			],
+			"style": "Not applicable",
+			"semantic": {
+				"@type": "source-code",
+				"description": "Source code",
+				"code": "<section class=\"pagedetails\">\n\t<h2>[i18nText-pageDetails]</h2>\n\t<!-- GC feedback (optional) -->\n\t<!-- Date modified (mandatory) -->\n</section>"
+			},
+			"include": {
+				"@type": "source-code",
+				"collapsed": true,
+				"description": "Include with logic in Liquid.",
+				"code": {
+					"@type": [ "@id", "rdf:HTML" ],
+					"@value": "includes/footer-3.1.html"
+				}
+			},
+			"logic": "Not applicable",
+			"guidance": "Not applicable",
+			"context": "Not applicable",
+			"configuration": [
+				"Input the date when the page was last modified inside the <time> tag in the format YYYY-MM-DD."
+			],
+			"static": [
+				"Section header: \"Page details\""
+			],
+			"schema": "Not applicable",
+			"dependency": "Not applicable",
+			"file": "Not applicable"
+		},
+		{
+			"@id": "_:cs_pd_3",
+			"name": "Page details - Compatible with GC feedback component + Accessibility fix (version 3.0)",
+			"status": "deprecated",
+			"baseOnIteration": "_:iteration_pd_3",
+			"detectableBy": "section.pagedetails",
+			"layout": [
+				"GC feedback (if included) on the top left",
+				"Share this page button (if included) on the top right",
+				"Date modified on bottom left"
+			],
+			"style": "Not applicable",
+			"semantic": {
+				"@type": "source-code",
+				"description": "Source code",
+				"code": "<section class=\"pagedetails\">\n\t<h2>[i18nText-pageDetails]</h2>\n\t<!-- GC feedback (optional) -->\n\t<!-- Share this page (optional) -->\n\t<!-- Date modified (mandatory) -->\n</section>"
+			},
+			"include": {
+				"@type": "source-code",
+				"collapsed": true,
+				"description": "Include with logic in Liquid.",
+				"code": {
+					"@type": [ "@id", "rdf:HTML" ],
+					"@value": "includes/footer-3.0.html"
+				}
+			},
+			"logic": "Not applicable",
+			"behaviour": [
+				"If the Share this page button is visible and the GC feedback component is not, the Date modified will be moved to the left."
+			],
+			"guidance": "Not applicable",
+			"context": "Not applicable",
+			"configuration": [
+				"Input the date when the page was last modified inside the <time> tag in the format YYYY-MM-DD."
+			],
+			"static": [
+				"Section header: \"Page details\""
+			],
+			"schema": "Not applicable",
+			"dependency": "Not applicable",
+			"file": "Not applicable"
+		},
+		{
+			"@id": "_:cs_pd_2",
+			"name": "Page details - Compatible with GC feedback + Accessibility fix",
+			"status": "deprecated",
+			"schema:expires": "2024-12",
+			"baseOnIteration": "_:iteration_pd_2",
+			"detectableBy": "footer.pagedetails",
+			"layout": [
+				"GC feedback (if included) on the top left",
+				"Share this page button (if included) on the top right",
+				"Date modified on bottom left"
+			],
+			"style": "Not applicable",
+			"semantic": {
+				"@type": "source-code",
+				"description": "Source code",
+				"code": "<footer class=\"pagedetails\">\n\t<h2>[i18nText-pageDetails]</h2>\n\t<!-- GC feedback (optional) -->\n\t<!-- Share this page (optional) -->\n\t<!-- Date modified (mandatory) -->\n</footer>"
+			},
+			"include": {
+				"@type": "source-code",
+				"collapsed": true,
+				"description": "Include with logic in Liquid.",
+				"code": {
+					"@type": [ "@id", "rdf:HTML" ],
+					"@value": "includes/footer.html"
+				}
+			},
+			"logic": "Not applicable",
+			"behaviour": [
+				"If the Share this page button is visible and the GC feedback component is not, the Date modified will be moved to the left."
+			],
+			"guidance": "Not applicable",
+			"context": "Not applicable",
+			"configuration": [
+				"Input the date when the page was last modified inside the <time> tag in the format YYYY-MM-DD."
+			],
+			"static": [
+				"Section header: \"Page details\""
+			],
+			"schema": "Not applicable",
+			"dependency": "Not applicable",
+			"file": "Not applicable"
+		},
+		{
+			"@id": "_:cs_pd_1",
+			"name": "Page details - Version 1",
+			"status": "deprecated",
+			"schema:expires": "2024-12",
+			"baseOnIteration": "_:iteration_pd_3",
+			"detectableBy": "div.pagedetails",
+			"layout": [
+				"Report a problem on the top left",
+				"Share this page button on the top right",
+				"Date modified on bottom left"
+			],
+			"style": "Not applicable",
+			"semantic": "Not applicable",
+			"logic": "Not applicable",
+			"behaviour": "Not applicable",
+			"guidance": "Not applicable",
+			"context": "Not applicable",
+			"configuration": "Not applicable",
+			"static": [
+				"Page details",
+				"Date modified: "
+			],
+			"schema": [
+				"Date modified"
+			],
+			"dependency": "Not applicable",
+			"file": "Not applicable"
+		}
+	]
+}

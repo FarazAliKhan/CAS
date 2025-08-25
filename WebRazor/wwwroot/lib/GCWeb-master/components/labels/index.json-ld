@@ -1,0 +1,57 @@
+{
+	"@context": {
+		"@version": 1.1,
+		"dct": "http://purl.org/dc/terms/",
+		"title": { "@id": "dct:title", "@container": "@language" },
+		"description": { "@id": "dct:description", "@container": "@language" },
+		"modified": "dct:modified"
+	},
+	"title": {
+		"en": "Labels",
+		"fr": "Étiquettes"
+	},
+	"description": {
+		"en": "Labels including all various states.",
+		"fr": "Étiquettes comprenant tous les différents états."
+	},
+	"modified": "2024-03-28",
+	"componentName": "labels",
+	"processing": "baseline",
+	"status": "stable",
+	"pages": {
+		"examples": [
+			{
+				"title": "Labels",
+				"language": "en",
+				"path": "labels-en.html"
+			},
+			{
+				"title": "Étiquettes",
+				"language": "fr",
+				"path": "labels-fr.html"
+			}
+		],
+		"reports": [
+			{
+				"title": "Accessibility assessment #8 - Labels",
+				"language": "en",
+				"path": "reports/a11y-8-en.html"
+			},
+			{
+				"title": "Assessment d'accessibilité #8 - Étiquettes",
+				"language": "fr",
+				"path": "reports/a11y-8-fr.html"
+			},
+			{
+				"title": "Accessibility assessment #9 - Labels",
+				"language": "en",
+				"path": "reports/a11y-9-en.html"
+			},
+			{
+				"title": "Assessment d'accessibilité #9 - Étiquettes",
+				"language": "fr",
+				"path": "reports/a11y-9-fr.html"
+			}
+		]
+	}
+}

@@ -1,0 +1,23 @@
+#wb-lng {
+	padding-top: 10px;
+
+	li {
+		padding-right: 0;
+	}
+
+	abbr {
+		font-family: $font-family-base;
+		font-size: 1.125rem;
+		text-decoration: none;
+	}
+}
+
+[dir="rtl"] {
+	#wb-lng {
+		text-align: left;
+
+		ul {
+			padding-right: 0;
+		}
+	}
+}

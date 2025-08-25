@@ -1,0 +1,20 @@
+/*
+ * Components styles
+ */
+
+// theme default color
+.bg-gctheme {
+	background-color: #355688;
+}
+
+/*
+* Panel title
+*/
+.panel-title {
+	font-size: $font-size-h3;
+}
+
+/*
+ * Components
+ */
+@import "alert";

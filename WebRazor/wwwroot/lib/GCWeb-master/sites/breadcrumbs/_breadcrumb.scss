@@ -1,0 +1,28 @@
+/*
+ WET breadcrumb overwrites
+ for: GCWeb v5
+ */
+
+#wb-bc {
+	ol {
+		margin-top: 15px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	li {
+		&:before {
+			content: "\e080";
+			padding: 0 4px 0 0;
+			position: relative;
+		}
+
+		&:first-child a {
+			padding-left: 0;
+		}
+	}
+
+	a {
+		padding: 5px 0;
+	}
+}

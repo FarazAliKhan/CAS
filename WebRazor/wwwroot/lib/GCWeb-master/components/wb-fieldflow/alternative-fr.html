@@ -1,0 +1,333 @@
+---
+title: "Alternatives pour le déroulement de champs"
+language: "fr"
+altLangPage: alternative-en.html
+category: "Plugiciels"
+description: "Trouver des alternatives de styles pour le déroulement de champs."
+tag: "fieldflow"
+parentdir: "fieldflow"
+dateModified: "2023-12-01"
+---
+<ul class="list-inline">
+	<li><a class="btn btn-primary" href="fieldflow-doc-fr.html">Documentation</a></li>
+	<li><a class="btn btn-primary" href="https://github.com/wet-boew/GCWeb/issues/new?title=Fieldflow">Questions ou commentaires?</a></li>
+</ul>
+<p>Trouver des alternatives de styles pour le déroulement de champs.</p>
+
+<ul>
+	<li><a href="fieldflow-fr.html">Déroulement de champs</a></li>
+	<li><a href="basic-fr.html">Déroulement de champs avec des configurations de base</a></li>
+	<li><a href="advanced-fr.html">Déroulement de champs avancé</a></li>
+	<li>Alternatives pour le déroulement de champs (actuelle)</li>
+</ul>
+
+<hr>
+
+<div class="wb-prettify all-pre"></div>
+
+<nav role="navigation">
+	<h2>Sur cette page:</h2>
+
+	<ul>
+		<li><a href="#policeaugmentee">Police de caractères aux dimensions augmentées</a></li>
+		<li><a href="#gcchckbxrdio">Contrôles plus grands avec GC Cases à cocher et boutons radio</a></li>
+	</ul>
+</nav>
+
+
+<section>
+	<h2 id="policeaugmentee">Police de caractères aux dimensions augmentées</h2>
+
+	<p>Augmente les dimensions de la police de caractères telle que définit par la mise à jour visuelle de 2019.</p>
+	<p>En ajoutant la classe <code>.gc-font-2019</code> à l'élément <code>.wb-fieldflow</code>, vous obtenez le résultat démontré ci-dessous.</p>
+	<div class="well">
+		<h3 class="mrgn-tp-0 h5">Remarques</h3>
+		<ul>
+			<li>Si vous utilisez le Déroulement de champs afin d'ajouté du contenu dynamique sur la page à travers AJAX (tel qu'utilisé dans l'exemple ci-dessous) et que vous espérez avoir la police de caractères augmentée sur le contenu injecté, il vous est fortement recommandé d'utiliser la technique démontré dans les <a href="advanced-fr.html#ajax">exemples avancés</a> qui met en vedette la configuration nommé "container" et l'explique plus en détails.</li>
+			<li>Si vous utilisez votre propre élément <code>form</code> et que vous avez un Déroulement de champs à l'intérieur, tel que démontré dans les <a href="advanced-fr.html#interrogation">exemples avancés</a>, vous pouvez d'ailleurs essayer d'ajouter la classe <code>.gc-font-2019</code> à votre élément <code>form</code> aussi afin de tester la possibilité d'avoir la police de caractères aux dimensions augmentées sur tout le contenu (ou presque) de votre formulaire.</li>
+		</ul>
+	</div>
+
+	<div class="wb-fieldflow gc-font-2019">
+		<p>Choisissez du contenu à insérer:</p>
+		<ul>
+			<li data-wb-fieldflow='{"action": "ajax", "url": "ajax/ajax-3.html", "container": "#ajaxPanel .panel-body"}'>Ensemble 3 - Utilise le récipient: $("#ajaxPanel .panel-body")</li>
+			<li data-wb-fieldflow='{"action": "ajax", "url": "ajax/ajax-4.html", "container": "#ajaxPanel .panel-body"}'>Ensemble 4 - Utilise le récipient: $("#ajaxPanel .panel-body")</li>
+		</ul>
+	</div>
+
+	<section id="ajaxPanel" class="panel panel-primary mrgn-tp-md">
+		<header class="panel-heading">
+			<h3 class="panel-title"><code>id="ajaxPanel"</code> Panneau a des fins d'exemple pratique</h3>
+		</header>
+		<div class="panel-body">
+			<p>(Pour illustrer le comportement de la configuration <code>container</code>)</p>
+		</div>
+	</section>
+
+	<pre><code>&lt;div class=&quot;wb-fieldflow gc-font-2019&quot;&gt;
+		&lt;p&gt;Choisissez du contenu à insérer:&lt;/p&gt;
+		&lt;ul&gt;
+			&lt;li data-wb-fieldflow='{&quot;action&quot;: &quot;ajax&quot;, &quot;url&quot;: &quot;ajax/ajax-3.html&quot;, &quot;container&quot;: &quot;#ajaxPanel .panel-body&quot;}'&gt;Ensemble 3 - Utilise le récipient: $(&quot;#ajaxPanel .panel-body&quot;)&lt;/li&gt;
+			&lt;li data-wb-fieldflow='{&quot;action&quot;: &quot;ajax&quot;, &quot;url&quot;: &quot;ajax/ajax-4.html&quot;, &quot;container&quot;: &quot;#ajaxPanel .panel-body&quot;}'&gt;Ensemble 4 - Utilise le récipient: $(&quot;#ajaxPanel .panel-body&quot;)&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+	&lt;section id=&quot;ajaxPanel&quot; class=&quot;panel panel-primary mrgn-tp-md&quot;&gt;
+		&lt;header class=&quot;panel-heading&quot;&gt;
+			&lt;h3 class=&quot;panel-title&quot;&gt;&lt;code&gt;id=&quot;ajaxPanel&quot;&lt;/code&gt; Panneau a des fins d'exemple pratique&lt;/h3&gt;
+		&lt;/header&gt;
+		&lt;div class=&quot;panel-body&quot;&gt;
+			&lt;p&gt;(Pour illustrer le comportement de la configuration &lt;code&gt;container&lt;/code&gt;)&lt;/p&gt;
+		&lt;/div&gt;
+	&lt;/section&gt;</code></pre>
+</section>
+
+<section>
+	<h2 id="gcchckbxrdio">Contrôles plus grands avec GC Cases à cocher et boutons radio</h2>
+
+	<p>Exploite le concept <a href="../gc-chckbxrdio/gc-chckbxrdio-fr.html">GC Cases à cocher et boutons radio</a> afin de livrer des cases à cocher et boutons radio plus gros.</p>
+	<p>En ajoutant la configuration <code>"gcChckbxrdio":true</code> à votre attribut "data" <code>data-wb-fieldflow</code>, Vous obtiendrez le résultat ci-dessous.</p>
+	<div class="well">
+		<h3 class="mrgn-tp-0 h5">Remarque</h3>
+		<p>Cette configuration génère du texte plus grand par défaut. Vous pouvez tout de même utiliser la classe <code>.gc-font-2019</code> si vous désirez que les éléments environnants aient une plus grande police de caractères, tel que le bouton de soumission, tel que démontré dans la section <a href="#policeaugmentee">Police de caractères aux dimensions augmentées</a>.</p>
+	</div>
+
+	<h3>Grandes cases à cocher</h3>
+	<div class="wb-fieldflow" data-wb-fieldflow='{"renderas":"checkbox", "gcChckbxrdio":true}'>
+		<p>Choisissez du contenu à insérer:</p>
+		<ul>
+			<li data-wb-fieldflow="ajax/ajax-1.html">(Ensemble 1) Nunc sed mauris id nisi molestie porta at quis erat.</li>
+			<li data-wb-fieldflow="ajax/ajax-2.html">(Ensemble 2) Vestibulum pretium tortor vel facilisis sodales.</li>
+			<li data-wb-fieldflow="ajax/ajax-3.html">(Ensemble 3) Nunc sit amet dui ut justo efficitur dapibus.</li>
+			<li data-wb-fieldflow="ajax/ajax-4.html">(Ensemble 4) Praesent at purus ut turpis sollicitudin aliquam.</li>
+			<li data-wb-fieldflow="ajax/ajax-5.html">(Ensemble 5) <em>Sed eget dui ac <strong>nunc mattis</strong> consequat</em> in a ex.</li>
+		</ul>
+	</div>
+
+	<pre><code>&lt;div class=&quot;wb-fieldflow&quot; data-wb-fieldflow='{&quot;renderas&quot;:&quot;checkbox&quot;,&quot;gcChckbxrdio&quot;:true}'&gt;
+		&lt;p&gt;Choisissez du contenu à insérer:&lt;/p&gt;
+		&lt;ul&gt;
+			&lt;li data-wb-fieldflow=&quot;ajax/ajax-1.html&quot;&gt;(Ensemble 1) Nunc sed mauris id nisi molestie porta at quis erat.&lt;/li&gt;
+			&lt;li data-wb-fieldflow=&quot;ajax/ajax-2.html&quot;&gt;(Ensemble 2) Vestibulum pretium tortor vel facilisis sodales.&lt;/li&gt;
+			&lt;li data-wb-fieldflow=&quot;ajax/ajax-3.html&quot;&gt;(Ensemble 3) Nunc sit amet dui ut justo efficitur dapibus.&lt;/li&gt;
+			&lt;li data-wb-fieldflow=&quot;ajax/ajax-4.html&quot;&gt;(Ensemble 4) Praesent at purus ut turpis sollicitudin aliquam.&lt;/li&gt;
+			&lt;li data-wb-fieldflow=&quot;ajax/ajax-5.html&quot;&gt;(Ensemble 5) &lt;em&gt;Sed eget dui ac &lt;strong&gt;nunc mattis&lt;/strong&gt; consequat&lt;/em&gt; in a ex.&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;</code></pre>
+
+	<h3>Grands boutons radio</h3>
+	<div class="wb-fieldflow" data-wb-fieldflow='{"renderas":"radio", "gcChckbxrdio":true}'>
+		<p>Choisissez du contenu à insérer:</p>
+		<ul>
+			<li data-wb-fieldflow="ajax/ajax-1.html">(Ensemble 1) Nunc sed mauris id nisi molestie porta at quis erat.</li>
+			<li data-wb-fieldflow="ajax/ajax-2.html">(Ensemble 2) Vestibulum pretium tortor vel facilisis sodales.</li>
+			<li data-wb-fieldflow="ajax/ajax-3.html">(Ensemble 3) Nunc sit amet dui ut justo efficitur dapibus.</li>
+			<li data-wb-fieldflow="ajax/ajax-4.html">(Ensemble 4) Praesent at purus ut turpis sollicitudin aliquam.</li>
+			<li data-wb-fieldflow="ajax/ajax-5.html">(Ensemble 5) <em>Sed eget dui ac <strong>nunc mattis</strong> consequat</em> in a ex.</li>
+		</ul>
+	</div>
+
+	<pre><code>&lt;div class=&quot;wb-fieldflow&quot; data-wb-fieldflow='{&quot;renderas&quot;:&quot;radio&quot;,&quot;gcChckbxrdio&quot;:true}'&gt;
+		&lt;p&gt;Choisissez du contenu à insérer:&lt;/p&gt;
+		&lt;ul&gt;
+			&lt;li data-wb-fieldflow=&quot;ajax/ajax-1.html&quot;&gt;(Ensemble 1) Nunc sed mauris id nisi molestie porta at quis erat.&lt;/li&gt;
+			&lt;li data-wb-fieldflow=&quot;ajax/ajax-2.html&quot;&gt;(Ensemble 2) Vestibulum pretium tortor vel facilisis sodales.&lt;/li&gt;
+			&lt;li data-wb-fieldflow=&quot;ajax/ajax-3.html&quot;&gt;(Ensemble 3) Nunc sit amet dui ut justo efficitur dapibus.&lt;/li&gt;
+			&lt;li data-wb-fieldflow=&quot;ajax/ajax-4.html&quot;&gt;(Ensemble 4) Praesent at purus ut turpis sollicitudin aliquam.&lt;/li&gt;
+			&lt;li data-wb-fieldflow=&quot;ajax/ajax-5.html&quot;&gt;(Ensemble 5) &lt;em&gt;Sed eget dui ac &lt;strong&gt;nunc mattis&lt;/strong&gt; consequat&lt;/em&gt; in a ex.&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;</code></pre>
+
+	<h3>Grandes cases à cocher à l'horizontal</h3>
+	<div class="wb-fieldflow" data-wb-fieldflow='{"renderas":"checkbox", "inline":true, "gcChckbxrdio":true}'>
+		<p>Choisissez du contenu à insérer:</p>
+		<ul>
+			<li data-wb-fieldflow="ajax/ajax-1.html">Ensemble 1</li>
+			<li data-wb-fieldflow="ajax/ajax-2.html">Ensemble 2</li>
+			<li data-wb-fieldflow="ajax/ajax-3.html">Ensemble 3</li>
+			<li data-wb-fieldflow="ajax/ajax-4.html">Ensemble 4</li>
+			<li data-wb-fieldflow="ajax/ajax-5.html">Ensemble 5</li>
+		</ul>
+	</div>
+
+	<pre><code>&lt;div class=&quot;wb-fieldflow&quot; data-wb-fieldflow='{&quot;renderas&quot;:&quot;checkbox&quot;, &quot;inline&quot;:true, &quot;gcChckbxrdio&quot;:true}'&gt;
+		&lt;p&gt;Choisissez du contenu à insérer:&lt;/p&gt;
+		&lt;ul&gt;
+			&lt;li data-wb-fieldflow=&quot;ajax/ajax-1.html&quot;&gt;Ensemble 1&lt;/li&gt;
+			&lt;li data-wb-fieldflow=&quot;ajax/ajax-2.html&quot;&gt;Ensemble 2&lt;/li&gt;
+			&lt;li data-wb-fieldflow=&quot;ajax/ajax-3.html&quot;&gt;Ensemble 3&lt;/li&gt;
+			&lt;li data-wb-fieldflow=&quot;ajax/ajax-4.html&quot;&gt;Ensemble 4&lt;/li&gt;
+			&lt;li data-wb-fieldflow=&quot;ajax/ajax-5.html&quot;&gt;Ensemble 5&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;</code></pre>
+
+	<h3>Grands boutons radio à l'horizontal</h3>
+	<div class="wb-fieldflow" data-wb-fieldflow='{"renderas":"radio", "inline":true, "gcChckbxrdio":true}'>
+		<p>Choisissez du contenu à insérer:</p>
+		<ul>
+			<li data-wb-fieldflow="ajax/ajax-1.html">Ensemble 1</li>
+			<li data-wb-fieldflow="ajax/ajax-2.html">Ensemble 2</li>
+			<li data-wb-fieldflow="ajax/ajax-3.html">Ensemble 3</li>
+			<li data-wb-fieldflow="ajax/ajax-4.html">Ensemble 4</li>
+			<li data-wb-fieldflow="ajax/ajax-5.html">Ensemble 5</li>
+		</ul>
+	</div>
+
+	<pre><code>&lt;div class=&quot;wb-fieldflow&quot; data-wb-fieldflow='{&quot;renderas&quot;:&quot;radio&quot;, &quot;inline&quot;:true, &quot;gcChckbxrdio&quot;:true}'&gt;
+		&lt;p&gt;Choisissez du contenu à insérer:&lt;/p&gt;
+		&lt;ul&gt;
+			&lt;li data-wb-fieldflow=&quot;ajax/ajax-1.html&quot;&gt;Ensemble 1&lt;/li&gt;
+			&lt;li data-wb-fieldflow=&quot;ajax/ajax-2.html&quot;&gt;Ensemble 2&lt;/li&gt;
+			&lt;li data-wb-fieldflow=&quot;ajax/ajax-3.html&quot;&gt;Ensemble 3&lt;/li&gt;
+			&lt;li data-wb-fieldflow=&quot;ajax/ajax-4.html&quot;&gt;Ensemble 4&lt;/li&gt;
+			&lt;li data-wb-fieldflow=&quot;ajax/ajax-5.html&quot;&gt;Ensemble 5&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;</code></pre>
+</section>
+
+<section>
+	<h2>Action <code>query</code> (requête) Utilisation d'une valeur vide</h2>
+	<h3>Pour des actions <code>query</code> (requête) individuelles</h3>
+	<div class="wb-frmvld">
+		<form action="alternative-en.html" method="get">
+			<div class="wb-fieldflow hidden" data-wb-fieldflow='{
+				"noForm": true,
+				"defaultselectedlabel": false
+			}'>
+				<p>Choisir une option</p>
+				<ul>
+					<li data-wb-fieldflow='[
+						{ "action": "query", "name": "q1", "value": "" }
+					]'>Personnalisé: Faites votre sélection...</li>
+					<li data-wb-fieldflow='[
+						{ "action": "query", "name": "q1", "value": "opt1" }
+					]'>Option 1</li>
+					<li data-wb-fieldflow='[
+						{ "action": "query", "name": "q1", "value": "opt2" }
+					]'>Option 2</li>
+				</ul>
+			</div>
+			<button>Soumettre</button>
+		</form>
+	</div>
+	<pre class="mrgn-tp-md"><code>&lt;div class=&quot;wb-frmvld&quot;&gt;
+	&lt;form action=&quot;alternative-en.html&quot; method=&quot;get&quot;&gt;
+		&lt;div class=&quot;wb-fieldflow hidden&quot; data-wb-fieldflow='{
+			&quot;noForm&quot;: true,
+			&quot;defaultselectedlabel&quot;: false
+		}'&gt;
+			&lt;p&gt;Choisir une option&lt;/p&gt;
+			&lt;ul&gt;
+				&lt;li data-wb-fieldflow='[
+					{ &quot;action&quot;: &quot;query&quot;, &quot;name&quot;: &quot;q1&quot;, &quot;value&quot;: &quot;&quot; }
+				]'&gt;Personnalisé: Faites votre sélection...&lt;/li&gt;
+				&lt;li data-wb-fieldflow='[
+					{ &quot;action&quot;: &quot;query&quot;, &quot;name&quot;: &quot;q1&quot;, &quot;value&quot;: &quot;opt1&quot; }
+				]'&gt;Option 1&lt;/li&gt;
+				&lt;li data-wb-fieldflow='[
+					{ &quot;action&quot;: &quot;query&quot;, &quot;name&quot;: &quot;q1&quot;, &quot;value&quot;: &quot;opt2&quot; }
+				]'&gt;Option 2&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/div&gt;
+		&lt;button&gt;Soumettre&lt;/button&gt;
+	&lt;/form&gt;
+&lt;/div&gt;</code></pre>
+
+	<h3>Lorsque le nouveau défaut de l'action globale est <code>query</code> (requête)</h3>
+	<div class="wb-frmvld">
+		<form action="alternative-en.html" method="get">
+			<div class="wb-fieldflow hidden" data-wb-fieldflow='{
+				"noForm": true,
+				"defaultselectedlabel": false,
+				"action": "query", "name": "q2", "prop": "value"
+			}'>
+				<p>Choisir une option</p>
+				<ul>
+					<li data-wb-fieldflow=''>Personnalisé: Faites votre sélection...</li>
+					<li data-wb-fieldflow='opt1'>Option 1</li>
+					<li data-wb-fieldflow='opt2'>Option 2</li>
+				</ul>
+			</div>
+			<button>Soumettre</button>
+		</form>
+	</div>
+	<pre class="mrgn-tp-md"><code>&lt;div class=&quot;wb-frmvld&quot;&gt;
+	&lt;form action=&quot;alternative-en.html&quot; method=&quot;get&quot;&gt;
+		&lt;div class=&quot;wb-fieldflow hidden&quot; data-wb-fieldflow='{
+			&quot;noForm&quot;: true,
+			&quot;defaultselectedlabel&quot;: false,
+			&quot;action&quot;: &quot;query&quot;, &quot;name&quot;: &quot;q2&quot;, &quot;prop&quot;: &quot;value&quot;
+		}'&gt;
+			&lt;p&gt;Choisir une option&lt;/p&gt;
+			&lt;ul&gt;
+				&lt;li data-wb-fieldflow=''&gt;Personnalisé: Faites votre sélection...&lt;/li&gt;
+				&lt;li data-wb-fieldflow='opt1'&gt;Option 1&lt;/li&gt;
+				&lt;li data-wb-fieldflow='opt2'&gt;Option 2&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/div&gt;
+		&lt;button&gt;Soumettre&lt;/button&gt;
+	&lt;/form&gt;
+&lt;/div&gt;</code></pre>
+
+	<h3>Avec plusieurs actions</h3>
+	<p>Cette notation peut améliorer la lisibilité du code comparativement à l'utilisation du paramètre "default" appartenant à l'instance du composant..</p>
+	<div class="alert alert-warning"><p><strong>L'example suivant est seulement utile afin de vérifier le bon opérabilité de la fonctionnalité et il pourrait produire une expérience et du code qui n'est pas entièrement conforme à WCAG niveau AA.</strong></p></div>
+	<div class="wb-frmvld">
+		<form action="http://localhost/" method="post">
+			<div class="wb-fieldflow hidden" data-wb-fieldflow='{
+				"noForm": true,
+				"defaultselectedlabel": false
+			}'>
+				<p>Choisir une option</p>
+				<ul>
+					<li data-wb-fieldflow='[
+						{ "action": "query", "name": "q3", "value": "" },
+						{ "action": "addClass", "source": ".redgreen", "class": "text-danger", "live": true },
+						{ "action": "removeClass", "source": ".redgreen", "class": "text-success", "live": true }
+					]'>Personnalisé: Faites votre sélection....</li>
+					<li data-wb-fieldflow='[
+						{ "action": "query", "name": "q3", "value": "opt1" },
+						{ "action": "addClass", "source": ".redgreen", "class": "text-success", "live": true },
+						{ "action": "removeClass", "source": ".redgreen", "class": "text-danger", "live": true }
+					]'>Option 1</li>
+					<li data-wb-fieldflow='[
+						{ "action": "query", "name": "q3", "value": "opt2" },
+						{ "action": "addClass", "source": ".redgreen", "class": "text-success", "live": true },
+						{ "action": "removeClass", "source": ".redgreen", "class": "text-danger", "live": true }
+					]'>Option 2</li>
+				</ul>
+			</div>
+			<p class="redgreen">Rouge lorsque l'option par défaut est sélectionné <strong>ou</strong> vert lorsque qu'une option valide est sélectionné.</p>
+			<button>Soumettre</button>
+		</form>
+	</div>
+	<pre class="mrgn-tp-md"><code>&lt;div class=&quot;wb-frmvld&quot;&gt;
+	&lt;form action=&quot;http://localhost/&quot; method=&quot;post&quot;&gt;
+		&lt;div class=&quot;wb-fieldflow hidden&quot; data-wb-fieldflow='{
+			&quot;noForm&quot;: true,
+			&quot;defaultselectedlabel&quot;: false
+		}'&gt;
+			&lt;p&gt;Choisir une option&lt;/p&gt;
+			&lt;ul&gt;
+				&lt;li data-wb-fieldflow='[
+					{ &quot;action&quot;: &quot;query&quot;, &quot;name&quot;: &quot;q3&quot;, &quot;value&quot;: &quot;&quot; },
+					{ &quot;action&quot;: &quot;addClass&quot;, &quot;source&quot;: &quot;.redgreen&quot;, &quot;class&quot;: &quot;text-danger&quot;, &quot;live&quot;: true },
+					{ &quot;action&quot;: &quot;removeClass&quot;, &quot;source&quot;: &quot;.redgreen&quot;, &quot;class&quot;: &quot;text-success&quot;, &quot;live&quot;: true }
+				]'&gt;Personnalisé: Faites votre sélection....&lt;/li&gt;
+				&lt;li data-wb-fieldflow='[
+					{ &quot;action&quot;: &quot;query&quot;, &quot;name&quot;: &quot;q3&quot;, &quot;value&quot;: &quot;opt1&quot; },
+					{ &quot;action&quot;: &quot;addClass&quot;, &quot;source&quot;: &quot;.redgreen&quot;, &quot;class&quot;: &quot;text-success&quot;, &quot;live&quot;: true },
+					{ &quot;action&quot;: &quot;removeClass&quot;, &quot;source&quot;: &quot;.redgreen&quot;, &quot;class&quot;: &quot;text-danger&quot;, &quot;live&quot;: true }
+				]'&gt;Option 1&lt;/li&gt;
+				&lt;li data-wb-fieldflow='[
+					{ &quot;action&quot;: &quot;query&quot;, &quot;name&quot;: &quot;q3&quot;, &quot;value&quot;: &quot;opt2&quot; },
+					{ &quot;action&quot;: &quot;addClass&quot;, &quot;source&quot;: &quot;.redgreen&quot;, &quot;class&quot;: &quot;text-success&quot;, &quot;live&quot;: true },
+					{ &quot;action&quot;: &quot;removeClass&quot;, &quot;source&quot;: &quot;.redgreen&quot;, &quot;class&quot;: &quot;text-danger&quot;, &quot;live&quot;: true }
+				]'&gt;Option 2&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/div&gt;
+		&lt;p class=&quot;redgreen&quot;&gt;Rouge lorsque l'option par défaut est sélectionné &lt;strong&gt;ou&lt;/strong&gt; vert lorsque qu'une option valide est sélectionné.&lt;/p&gt;
+		&lt;button&gt;Soumettre&lt;/button&gt;
+	&lt;/form&gt;
+&lt;/div&gt;</code></pre>
+</section>

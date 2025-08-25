@@ -1,0 +1,62 @@
+---
+{
+	"title": "[Service name] - 4. [Step / section page name]",
+	"secondTitle": "4. [Step / section page name]",
+	"language": "en",
+	"altLangPage": "page4-fr.html",
+	"overwriteBreadcrumbs": true,
+	"breadcrumbs": [
+		{ "title": "[Topic name]", "link": "templates/theme-topic/theme-topic-en.html" },
+		{ "title": "[Service name]", "link": "templates/advancedservice/index-en.html" }
+	],
+	"secondlevel": false,
+	"dateModified": "2017-04-07",
+	"share": "true",
+	"previous": {
+		"title": "3. [Step / section page name]",
+		"link": "page3-en.html"
+	},
+	"next": {
+		"title": "5. [Step / section page name]",
+		"link": "page5-en.html"
+	},
+	"steps": [
+		{ "name": "1. [Step / section page name]", "link": "index-en.html" },
+		{ "name": "2. [Step / section page name]", "link": "page2-en.html" },
+		{ "name": "3. [Step / section page name]", "link": "page3-en.html" },
+		{ "name": "4. [Step / section page name]", "isActive": true },
+		{ "name": "5. [Step / section page name]", "link": "page5-en.html" },
+		{ "name": "6. [Step / section page name]", "link": "page6-en.html" }
+	]
+}
+---
+<p class="gc-byline"><strong>From <a href="../institutional/institution-en.html">[Institution name]</a></strong></p>
+
+{%- include gc-stp-stp/gc-stp-stp.html -%}
+
+<div class="row">
+	<section class="col-md-8">
+		<h2>{{page.secondTitle}}</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et a adipisci nostrum optio dolorum sint ipsa facilis nisi quisquam laboriosam.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium odio adipisci ad neque distinctio quod molestias, molestiae accusamus quo aspernatur expedita blanditiis quam! Esse cum modi atque, beatae aliquam, dolor.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem aliquid hic numquam obcaecati ea, laborum accusamus culpa atque voluptate distinctio et omnis! Alias, beatae, tenetur.</p>
+		<section>
+		<h3>[Sub heading]</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti cupiditate voluptatem praesentium, facilis corporis magni esse reiciendis distinctio. Vitae totam iste porro, esse facere obcaecati? Laborum earum minus harum enim.</p>
+		</section>
+		<section>
+		<h3>[Sub heading]</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa hic minima magni nesciunt nam. Facilis perferendis, adipisci voluptates, enim illo perspiciatis molestias itaque iste qui distinctio asperiores quidem voluptatum sunt.</p>
+		</section>
+		<nav role="navigation" class="mrgn-bttm-lg">
+			<h3 class="wb-inv">Document navigation</h3>
+			<ul class="pager">
+				<li class="previous"><a href="{{page.previous.link}}" rel="prev">Previous<span class="wb-inv">: {{page.previous.title}}</span></a></li>
+				<li class="next"><a href="{{page.next.link}}" rel="next">Next<span class="wb-inv">: {{page.next.title}}</span></a></li>
+			</ul>
+		</nav>
+	</section>
+	<div class="col-md-4">
+		{% include_relative samples/service-side-panel-en.html %}
+	</div>
+</div>

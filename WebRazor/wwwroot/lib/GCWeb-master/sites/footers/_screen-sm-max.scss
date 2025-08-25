@@ -1,0 +1,24 @@
+/*
+  WET-BOEW
+  @title: Small view and under (screen only)
+ */
+
+#wb-info {
+	.gc-sub-footer {
+		nav {
+			ul {
+				li {
+					display: block;
+
+					&:not(:last-child) {
+						margin-bottom: 1.5em;
+					}
+
+					&::before {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}

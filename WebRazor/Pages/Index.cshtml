@@ -30,54 +30,34 @@
     var requestCulture = requestCultureFeature.RequestCulture;
 }
 
-<div class="text-center"><h1>CASes</h1></div>
+<div class="text-center"><h1>CAS</h1></div>
 <div>
-    <table class="wb-tables table table-striped table-hover">
-
-        <thead>
-            <tr>
-                <th>
-                    @Html.DisplayNameFor(model => model.casModels[0].Id)
-                </th>
-                <th>
-                    @localizer["FirstName"]
-                </th>
-                <th>
-                    @localizer["LastName"]
-                </th>
-                <th>
-                    @localizer["dob"]
-                </th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-            @if (Model != null)
-            {
-                @foreach (var item in Model.casModels)
-                {
-                    <tr>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Id)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.FirstName)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.LastName)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.DateOfBirth)
-                        </td>
-                        <td>
-                            <a asp-page="./Edit" asp-route-id="@item.Id">@localizer["Edit"]</a> |
-                            <a asp-page="./Details" asp-route-id="@item.Id">@localizer["Details"]</a> |
-                            <a asp-page="./Index" asp-route-id="@item.Id" asp-page-handler="Delete">@localizer["Delete"]</a>
-                        </td>
-                    </tr>
-                }
-            }
-        </tbody>
-    </table>
-    <a class="btn btn-primary" asp-page="./Create">@localizer["New"]</a>
+    <form method="post">
+        <section class="center">
+            <div class="form-group">
+                <div class="input-group row center">
+                    <label for="firstName" class="form-control">@localizer["FirstName"]</label>
+                    <input id="firstName" class="form-control"  />
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="input-group row center">
+                    <label for="lastName" class="form-control">@localizer["LastName"]</label>
+                    <input id="lastName" class="form-control" />
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="input-group row center">
+                    <label for="dob" class="form-control">@localizer["dob"]</label>
+                    <input id="dob" class="form-control"  />
+                </div>
+            </div>
+        </section>
+        <div>
+            <button class="btn btn-primary" type="submit">Create</button>
+            <span>
+                <a class="btn btn-default" asp-page="./Index">@localizer["Back"]</a>
+            </span>
+        </div>
+    </form>
 </div>

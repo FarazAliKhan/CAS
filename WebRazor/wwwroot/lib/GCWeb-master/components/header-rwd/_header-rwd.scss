@@ -1,0 +1,14 @@
+/*
+ * Well header responsive
+ */
+
+// theme default color
+.bg-gctheme {
+	&.well.header-rwd {
+		background-color: #26374a;
+	}
+}
+
+.well.header-rwd {
+	width: 100%;
+}

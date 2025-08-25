@@ -1,0 +1,34 @@
+{
+	"@context": {
+		"@version": 1.1,
+		"dct": "http://purl.org/dc/terms/",
+		"title": { "@id": "dct:title", "@container": "@language" },
+		"description": { "@id": "dct:description", "@container": "@language" },
+		"modified": "dct:modified"
+	},
+	"title": {
+		"en": "Breadcrumb trail",
+		"fr": "Fil d'Ariane"
+	},
+	"description": {
+		"en": "Indicates the location of the current page in relation to its parent in the site structure to reinforce a visitor’s current location in the Canada.ca user navigation model.",
+		"fr": "L’objectif du fil d'Ariane est de renforcer l’emplacement actuel des visiteurs dans le modèle de navigation de l’utilisateur du site Canada.ca."
+	},
+	"modified": "2023-09-06",
+	"componentName": "breadcrumbs",
+	"status": "stable",
+	"pages": {
+		"docs": [
+			{
+				"title": "Breadcrumb trail",
+				"language": "en",
+				"path": "breadcrumbs-en.html"
+			},
+			{
+				"title": "Fil d'Ariane",
+				"language": "fr",
+				"path": "breadcrumbs-fr.html"
+			}
+		]
+	}
+}

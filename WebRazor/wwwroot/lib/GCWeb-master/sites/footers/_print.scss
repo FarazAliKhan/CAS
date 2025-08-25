@@ -1,0 +1,10 @@
+/*
+ Site information (print view)
+*/
+#wb-info {
+	@include print-display-none-important;
+}
+
+.tofpg {
+	@include print-display-none-important;
+}

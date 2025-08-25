@@ -8,6 +8,28 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\lib\GCWeb-master\.github\dependabot.yml" />
+    <None Include="wwwroot\lib\GCWeb-master\.github\ISSUE_TEMPLATE\bogue-fr.md" />
+    <None Include="wwwroot\lib\GCWeb-master\.github\ISSUE_TEMPLATE\bug-en.md" />
+    <None Include="wwwroot\lib\GCWeb-master\.github\ISSUE_TEMPLATE\docs-en.md" />
+    <None Include="wwwroot\lib\GCWeb-master\.github\ISSUE_TEMPLATE\docs-fr.md" />
+    <None Include="wwwroot\lib\GCWeb-master\.github\ISSUE_TEMPLATE\question-en.md" />
+    <None Include="wwwroot\lib\GCWeb-master\.github\ISSUE_TEMPLATE\question-fr.md" />
+    <None Include="wwwroot\lib\GCWeb-master\.github\ISSUE_TEMPLATE\request-en.md" />
+    <None Include="wwwroot\lib\GCWeb-master\.github\ISSUE_TEMPLATE\requete-fr.md" />
+    <None Include="wwwroot\lib\GCWeb-master\.github\PULL_REQUEST_TEMPLATE\feature-en.md" />
+    <None Include="wwwroot\lib\GCWeb-master\.github\PULL_REQUEST_TEMPLATE\fonction-fr.md" />
+    <None Include="wwwroot\lib\GCWeb-master\.github\PULL_REQUEST_TEMPLATE\general-en.md" />
+    <None Include="wwwroot\lib\GCWeb-master\.github\PULL_REQUEST_TEMPLATE\general-fr.md" />
+    <None Include="wwwroot\lib\GCWeb-master\.github\workflows\cd.yml" />
+    <None Include="wwwroot\lib\GCWeb-master\.github\workflows\ci.yml" />
+    <None Include="wwwroot\lib\GCWeb-master\.github\workflows\gh-pages.yml" />
+    <None Include="wwwroot\lib\GCWeb-master\.github\workflows\lint-css.yml" />
+    <None Include="wwwroot\lib\GCWeb-master\.github\workflows\lint-js.yml" />
+    <None Include="wwwroot\lib\GCWeb-master\.github\workflows\lint-md.yml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 

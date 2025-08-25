@@ -1,0 +1,104 @@
+/*
+ *
+ * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+ * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
+ *
+ * @title: Home page exclusive style
+ *
+ */
+
+
+// Exclusive home page style
+.home {
+	h1 {
+		font-weight: 500;
+		margin-top: 10px;
+	}
+
+	h2 {
+		font-size: 1.2em;
+	}
+
+	/*
+	 * GCWeb menu
+	 */
+	#wb-bnr + hr {
+		border-top: 1px solid #ddd;
+		color: #284162;
+		margin-left: 0;
+	}
+
+	// This block is to only support GCWeb menu version 1
+	#wb-bnr + .gcweb-menu {
+		border-top: 1px solid #ddd;
+		color: #284162;
+		margin-left: 0;
+
+		.container {
+			padding: 0;
+		}
+	}
+
+	// Sign in button on homepage
+	#wb-so .btn {
+		margin-top: 3px;
+	}
+
+	/* Home page banner */
+	.header-rwd {
+		margin: 1em 0;
+	}
+
+	/* Home page Most requested section
+	 *
+	 * Reference in:
+	 * - views/_screen-sm-max
+	 */
+	.home-most-requested {
+		li {
+			@include defaults-alternative-font-family;
+
+			font-size: 17px;
+			font-weight: $bold-weight;
+			line-height: 26px;
+			margin-top: 0;
+		}
+	}
+
+	/* Home page Services and information */
+	.gc-srvinfo {
+		p {
+			font-size: 17px;
+		}
+	}
+
+	/* Home page your gov
+	 *
+	 * Reference in:
+	 * - views/_screen-sm-max
+	 */
+	.home-your-gov {
+		background-image: url("https://www.canada.ca/content/dam/canada/carousel/bkg-home-yourgov.jpg"), url("../assets/bkg-home-yourgov.jpg");
+		background-position: right center;
+		background-repeat: no-repeat;
+		background-size: 38%;
+	}
+
+	// All services button under services and information
+	.gc-srvinfo .container > p:last-child {
+		margin-bottom: 20px;
+		margin-top: 20px;
+
+		.btn-all-services {
+			border: 2px solid $accent-blue; // #26374a
+			color: $accent-blue; // #26374a
+			font-size: 1.1em;
+			font-weight: bold;
+			padding: .65em 1.1em;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}

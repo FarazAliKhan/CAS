@@ -1,0 +1,66 @@
+/*
+  WET-BOEW
+  @title: theme component
+  @desc:  Styles specific to the theme component for GCWeb
+*/
+
+.page-type-theme {
+	overflow-x: hidden;
+
+	#gridContainer {
+		display: flex;
+		margin: 0 auto;
+		padding: 0 15px;
+		width: $container-md;
+
+		> *:first-child {
+			flex: 0 0 300px;
+
+			.container {
+				padding: 0;
+				width: auto;
+			}
+		}
+
+		> *:last-child {
+			border-left: 5px solid #26374a;
+			flex: 1 0 0%;
+
+			.container {
+				padding-left: 35px;
+				width: auto;
+			}
+		}
+	}
+
+	#theme-nav {
+		.wb-sl {
+			display: block;
+			font-size: .8em;
+			margin: 0 5px 5px;
+			text-align: center;
+		}
+	}
+
+	#menu-btn {
+		display: none;
+	}
+
+	.gc-most-requested {
+		position: relative;
+
+		&::after {
+			background-color: #f5f5f5;
+			bottom: 0;
+			content: "";
+			left: calc(100% - 1px);
+			position: absolute;
+			top: 0;
+			width: 9999px;
+		}
+
+		ul li::after {
+			width: 240px
+		}
+	}
+}

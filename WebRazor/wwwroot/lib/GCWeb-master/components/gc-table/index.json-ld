@@ -1,0 +1,59 @@
+{
+	"@context": {
+		"@version": 1.1,
+		"dct": "http://purl.org/dc/terms/",
+		"title": { "@id": "dct:title", "@container": "@language" },
+		"description": { "@id": "dct:description", "@container": "@language" },
+		"modified": "dct:modified"
+	},
+	"title": {
+		"en": "GC tables",
+		"fr": "Tableaux GC"
+	},
+	"description": {
+		"en": "A simple CSS solution to turn tables into responsive cards for smaller windows.",
+		"fr": "Une solution CSS simple pour transformer les tables en cartes réactives pour des fenêtres plus petites."
+	},
+	"modified": "2024-03-28",
+	"componentName": "gc-table",
+	"status": "provisional",
+	"todos": [
+		"Add GC specific CSS style"
+	],
+	"pages": {
+		"examples": [
+			{
+				"title": "Tables",
+				"language": "en",
+				"path": "gc-table-en.html"
+			},
+			{
+				"title": "Tableaux",
+				"language": "fr",
+				"path": "gc-table-fr.html"
+			}
+		],
+		"reports": [
+			{
+				"title": "Accessibility assessment #6 - GC tables",
+				"language": "en",
+				"path": "reports/a11y-6-en.html"
+			},
+			{
+				"title": "Assessment d'accessibilité #6 - Tableaux GC",
+				"language": "fr",
+				"path": "reports/a11y-6-fr.html"
+			},
+			{
+				"title": "Accessibility assessment #7 - GC tables",
+				"language": "en",
+				"path": "reports/a11y-7-en.html"
+			},
+			{
+				"title": "Assessment d'accessibilité #7 - Tableaux GC",
+				"language": "fr",
+				"path": "reports/a11y-7-fr.html"
+			}
+		]
+	}
+}

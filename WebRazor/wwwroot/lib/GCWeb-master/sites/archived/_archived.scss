@@ -1,0 +1,27 @@
+.gc-archv {
+	&.modal-content {
+		border: none;
+		border-radius: 0;
+	}
+
+	background-color: #ffd700 !important;
+	box-shadow: 0 5px 15px rgb(0, 0, 0, .5);
+	padding: 25px 0;
+
+	h2 {
+		margin-top: 0;
+	}
+
+	.mfp-close.overlay-close {
+		color: #000;
+
+		&:focus, &:focus-visible {
+			outline: 5px auto rgb(0, 95, 204);
+			outline-offset: -2px;
+		}
+	}
+}
+
+.wb-disable .gc-arch.wb-overlay {
+	display: none;
+}
