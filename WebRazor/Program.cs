@@ -25,6 +25,10 @@ builder.Services.Configure<RequestLocalizationOptions>(options =>
 builder.Services.AddMvc().AddViewLocalization();
 builder.Services.AddLocalization(options => options.ResourcesPath = "Resources");
 
+builder.Services.AddMvc().AddRazorPagesOptions(options => {
+    options.Conventions.AddPageRoute("/Pages/Startup/Index", "");
+});
+
 builder.Services.AddControllers().AddViewOptions(options =>
     options.HtmlHelperOptions.FormInputRenderMode = FormInputRenderMode.AlwaysUseCurrentCulture
 );
