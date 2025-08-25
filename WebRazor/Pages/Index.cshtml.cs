@@ -19,25 +19,25 @@ namespace WebRazor.Pages
 
         public void OnGet()
         {
-            var EndPoint = "http://localhost:5282/api";
-            var httpClientHandler = new HttpClientHandler();
-            httpClientHandler.ServerCertificateCustomValidationCallback = (message, cert, chain, sslPolicyErrors) =>
-            {
-                return true;
-            };
-            HttpClient httpClient = new HttpClient(httpClientHandler) { BaseAddress = new Uri(EndPoint) };
+            //var EndPoint = "http://localhost:5282/api";
+            //var httpClientHandler = new HttpClientHandler();
+            //httpClientHandler.ServerCertificateCustomValidationCallback = (message, cert, chain, sslPolicyErrors) =>
+            //{
+            //    return true;
+            //};
+            //HttpClient httpClient = new HttpClient(httpClientHandler) { BaseAddress = new Uri(EndPoint) };
 
-            using (httpClient)
-            {
-                using (HttpResponseMessage response = httpClient.GetAsync("http://localhost:5282/api/cas/list").Result)
-                {
-                    if (response.IsSuccessStatusCode)
-                    {
-                        string apiResponse = response.Content.ReadAsStringAsync().Result;
-                        casModels = JsonConvert.DeserializeObject<List<CasModel>>(apiResponse);
-                    }
-                }
-            }
+            //using (httpClient)
+            //{
+            //    using (HttpResponseMessage response = httpClient.GetAsync("http://localhost:5282/api/cas/list").Result)
+            //    {
+            //        if (response.IsSuccessStatusCode)
+            //        {
+            //            string apiResponse = response.Content.ReadAsStringAsync().Result;
+            //            casModels = JsonConvert.DeserializeObject<List<CasModel>>(apiResponse);
+            //        }
+            //    }
+            //}
         }
 
         public IActionResult OnGetDelete([FromQuery] int id)
