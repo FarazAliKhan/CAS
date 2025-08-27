@@ -8,7 +8,7 @@ using WebRazor.Models;
 
 namespace WebRazor.Pages
 {
-    [Breadcrumb("Create")]
+    [Breadcrumb("Create", FromPage = typeof(SelectModel))]
     public class CreateModel : PageModel
     {
         [BindProperty]
