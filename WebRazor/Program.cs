@@ -1,7 +1,12 @@
+using System;
 using System.Globalization;
+using System.Runtime.CompilerServices;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Extensions.Options;
+using SmartBreadcrumbs.Extensions;
+
+Program p = new Program();
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -32,6 +37,8 @@ builder.Services.AddMvc().AddRazorPagesOptions(options => {
 builder.Services.AddControllers().AddViewOptions(options =>
     options.HtmlHelperOptions.FormInputRenderMode = FormInputRenderMode.AlwaysUseCurrentCulture
 );
+
+builder.Services.AddBreadcrumbs(p.GetType().Assembly);
 
 var app = builder.Build();
 

@@ -1,0 +1,47 @@
+﻿@page
+@using Microsoft.AspNetCore.Localization
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IStringLocalizer<SelectModel> localizer
+@inject IHtmlLocalizer<SelectModel> htmlLocalizer
+@model SelectModel
+@{
+    ViewData["Title"] = "Home page";
+    if (HttpContext.Request.Query["culture"] == "fr")
+    {
+        CultureInfo.CurrentCulture = new CultureInfo("fr");
+        CultureInfo.CurrentUICulture = new CultureInfo("fr");
+        Response.Cookies.Append(
+            CookieRequestCultureProvider.DefaultCookieName,
+            CookieRequestCultureProvider.MakeCookieValue(new RequestCulture(CultureInfo.CurrentCulture)),
+            new CookieOptions { Expires = DateTimeOffset.UtcNow.AddYears(1) }
+        );
+    }
+    else if (HttpContext.Request.Query["culture"] == "en")
+    {
+        CultureInfo.CurrentCulture = new CultureInfo("en");
+        CultureInfo.CurrentUICulture = new CultureInfo("en");
+        Response.Cookies.Append(
+            CookieRequestCultureProvider.DefaultCookieName,
+            CookieRequestCultureProvider.MakeCookieValue(new RequestCulture(CultureInfo.CurrentCulture)),
+            new CookieOptions { Expires = DateTimeOffset.UtcNow.AddYears(1) }
+        );
+    }
+
+    var requestCultureFeature = HttpContext.Features.Get<IRequestCultureFeature>();
+    var requestCulture = requestCultureFeature.RequestCulture;
+}
+
+<div class="text-center"><h1>@localizer["Select"] CAS</h1></div>
+<form method="post">
+    <div class="text-center">
+        <span>
+            <a class="btn btn-primary" asp-page="./Create">@localizer["Form"]</a>
+        </span>
+        <span>
+            <a class="btn btn-primary" asp-page="./Report">@localizer["Report"]</a>
+        </span>
+        <span>
+            <a class="btn btn-default" asp-page="./Index">@localizer["Back"]</a>
+        </span>
+    </div>
+</form>

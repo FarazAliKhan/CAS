@@ -1,12 +1,14 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Newtonsoft.Json;
+using SmartBreadcrumbs.Attributes;
 using System;
 using System.Text;
 using WebRazor.Models;
 
 namespace WebRazor.Pages
 {
+    [Breadcrumb("Create")]
     public class CreateModel : PageModel
     {
         [BindProperty]
@@ -19,8 +21,5 @@ namespace WebRazor.Pages
         public int Id { get; set; }
 
         public CreateModel() { }
-        public void OnGet()
-        {
-        }
     }
 }

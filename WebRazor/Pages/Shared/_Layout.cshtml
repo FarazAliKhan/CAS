@@ -1,11 +1,12 @@
-﻿<!DOCTYPE html>
+﻿@using WebRazor.Models
+<!DOCTYPE html>
 <html class="no-js" lang="en" dir="ltr">
 <head>
     <meta charset="utf-8">
     <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
             wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
     <title>
-        GCWeb theme - Meta information - Canada.ca
+        CAS
     </title>
     <meta content="width=device-width,initial-scale=1" name="viewport">
     <meta name="description" content="Web Experience Toolkit (WET) includes reusable components for building and maintaining innovative Web sites that are accessible, usable, and interoperable. These reusable components are open source software and free for use by departments and external Web communities">
@@ -566,17 +567,25 @@
         <nav id="wb-bc" property="breadcrumb">
             <h2>You are here:</h2>
             <div class="container">
-                <ol class="breadcrumb" typeof="BreadcrumbList">
-                    <li property="itemListElement" typeof="ListItem">
-                        <a property="item" typeof="WebPage" href="https://www.canada.ca/en.html">
-                            <span property="name">Canada.ca</span>
-                        </a>
-                        <meta property="position" content="1">
-                    </li>
-
-                </ol>
+                <breadcrumb></breadcrumb>
             </div>
         </nav>
+        @* <nav id="wb-bc" property="breadcrumb">
+            <h2>You are here:</h2>
+            <div class="container">
+                <ol class="breadcrumb" typeof="BreadcrumbList">
+                    @foreach (var crumbValue in breadcrumbModels)
+                    {
+                        <li property="itemListElement" typeof="ListItem">
+                            <a property="item" typeof="WebPage" href="https://www.canada.ca/en.html">
+                                <span property="name">Canada.ca</span>
+                            </a>
+                            <meta property="position" content="1">
+                        </li>
+                    }
+                </ol>
+            </div>
+        </nav> *@
 
 
     </header>

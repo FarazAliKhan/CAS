@@ -5,8 +5,8 @@ using WebRazor.Models;
 
 namespace WebRazor.Pages
 {
-    [DefaultBreadcrumb("Home")]
-    public class IndexModel : PageModel
+    [Breadcrumb("Select")]
+    public class SelectModel : PageModel
     {
     }
 }
