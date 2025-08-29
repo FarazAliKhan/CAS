@@ -31,35 +31,45 @@
     var requestCulture = requestCultureFeature.RequestCulture;
 }
 
-<div class="text-center"><h1>@localizer["Create"] CAS</h1></div>
-<form method="post">
-    <details class="mrgn-tp-lg" open>
-        <summary>@localizer["Create"] CAS</summary>
-        <section class="center">
-            <div class="form-group">
-                <div class="input-group row center">
-                    <label for="firstName" class="form-control">@localizer["FirstName"]</label>
-                    <input id="firstName" class="form-control" asp-for="firstName" />
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="input-group row center">
-                    <label for="lastName" class="form-control">@localizer["LastName"]</label>
-                    <input id="lastName" class="form-control" asp-for="lastName" />
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="input-group row center">
-                    <label for="dob" class="form-control">@localizer["dob"]</label>
-                    <input id="dob" class="form-control" asp-for="dob" />
-                </div>
-            </div>
-        </section>
-        <div>
-            <a class="btn btn-primary" asp-page="./Review">@localizer["Review"]</a>
-            <span>
-                <a class="btn btn-default" asp-page="./Select">@localizer["Back"]</a>
-            </span>
-        </div>
-    </details>
-</form>
+<section>
+    <div class="text-center"><h1>@localizer["Create"] CAS</h1></div>
+    <div class="wb-frmvld">
+        <form method="post" id="createForm">
+            <details class="mrgn-tp-lg" open>
+                    <summary>@localizer["Create"] CAS</summary>
+                    <section class="center">
+                    <div class="client-validation-summary">
+                        <span asp-validation-for="@Model.firstName" class="label label-danger"></span>
+                        <span asp-validation-for="@Model.lastName" class="label label-danger"></span>
+                        <span asp-validation-for="@Model.dob" class="label label-danger"></span>
+                    </div>
+                    <fieldset>
+                        <div class="form-group">
+                            <label for="firstName"><span class="field-name">First name</span></label>
+                            <input class="form-control" id="firstName" name="firstName" type="text" asp-for="@Model.firstName" autocomplete="firstName" data-rule-minlength="2">
+                            <span asp-validation-for="@Model.firstName" class="label label-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName"><span class="field-name">Last name</span></label>
+                            <input class="form-control" id="lastName" name="lastName" type="text" asp-for="@Model.lastName" autocomplete="lastName" data-rule-minlength="2">
+                            <span asp-validation-for="@Model.lastName" class="label label-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="dob"><span class="field-name">Date of Birth</span><span class="datepicker-format"> (<abbr title="Four digits year, dash, two digits month, dash, two digits day">YYYY-MM-DD</abbr>)</span></label>
+                            <input class="form-control" id="dob" name="dob" type="date" data-rule-dateISO="true"  asp-for="@Model.dob"/>
+                            <span asp-validation-for="@Model.dob" class="label label-danger"></span>
+                        </div>
+                    </fieldset>
+                    </section>
+                    <div>
+                        <button type="submit">Submit</button>
+                        <a class="btn btn-primary" asp-page="./Review">@localizer["Review"]</a>
+                        <span>
+                            <a class="btn btn-default" asp-page="./Select">@localizer["Back"]</a>
+                        </span>
+                    </div>
+
+            </details>
+        </form>
+    </div>
+</section>
