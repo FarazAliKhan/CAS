@@ -5,7 +5,7 @@
 @inject IHtmlLocalizer<CreateModel> htmlLocalizer
 @model CreateModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "CAS";
     if (HttpContext.Request.Query["culture"] == "fr")
     {
         CultureInfo.CurrentCulture = new CultureInfo("fr");
@@ -38,11 +38,23 @@
             <details class="mrgn-tp-lg" open>
                     <summary>@localizer["Create"] CAS</summary>
                     <section class="center">
-                    <div class="client-validation-summary">
-                        <span asp-validation-for="@Model.firstName" class="label label-danger"></span>
-                        <span asp-validation-for="@Model.lastName" class="label label-danger"></span>
-                        <span asp-validation-for="@Model.dob" class="label label-danger"></span>
-                    </div>
+                    @if (!ViewData.ModelState.IsValid)
+                    {
+                        @* <div class="alert alert-danger" role="alert">
+                            <div class="error-color">
+                                <p class="span-break"><span asp-validation-for="@Model.firstName" class="label label-danger"></span></p>
+                                <p class="span-break"><span asp-validation-for="@Model.lastName" class="label label-danger"></span></p>
+                                <p class="span-break"><span asp-validation-for="@Model.dob" class="label label-danger"></span></p>
+                            </div>
+                        </div> *@
+
+                        <div class="error-color">
+                            <div class="alert alert-danger" role="alert">
+                                <br />
+                                @Html.ValidationSummary(false, "Please correct the following errors: ")
+                            </div>
+                        </div> 
+                    }
                     <fieldset>
                         <div class="form-group">
                             <label for="firstName"><span class="field-name">First name</span></label>
@@ -62,8 +74,7 @@
                     </fieldset>
                     </section>
                     <div>
-                        <button type="submit">Submit</button>
-                        <a class="btn btn-primary" asp-page="./Review">@localizer["Review"]</a>
+                        <button class="btn btn-primary" type="submit">@localizer["Review"]</button>
                         <span>
                             <a class="btn btn-default" asp-page="./Select">@localizer["Back"]</a>
                         </span>
