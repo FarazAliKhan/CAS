@@ -23,9 +23,10 @@ namespace WebRazor.Pages
 
         public CreateModel() { }
 
-        public void OnPost() {
+        public IActionResult OnPost() {
             if (!ModelState.IsValid)
-                return;
+                return Page();
+            return RedirectToPage("Review");
         }
     }
 }
