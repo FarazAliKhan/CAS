@@ -11,8 +11,6 @@ namespace BusinessLayer.DTOs
     {
         public required string FirstName { get; set; }
         public required string LastName { get; set; }
-        public DateTime DateOfBirth { get; set; }
-        public DateTime CreatedDate { get; set; }
-        public DateTime? ModeifiedDate { get; set; }
+        public DateTime dob { get; set; }
     }
 }

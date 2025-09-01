@@ -36,7 +36,14 @@ namespace WebRazor.Pages
         public IActionResult OnPost() {
             if (!ModelState.IsValid)
                 return Page();
-            return RedirectToPage("Review");
+            var createItem = new CreateModel()
+            {
+                firstName = firstName,
+                lastName = lastName,
+                dob = dob
+            };
+
+            return RedirectToPage("Review", createItem);
         }
     }
 }
