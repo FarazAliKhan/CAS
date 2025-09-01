@@ -1,4 +1,5 @@
 ﻿@using WebRazor.Models
+@using Microsoft.AspNetCore.Http.Extensions;
 <!DOCTYPE html>
 <html class="no-js" lang="en" dir="ltr">
 <head>
@@ -28,6 +29,23 @@
             </li>
         </ul>
     </nav>
+    @{
+        var CurrentPageEn = "";
+        var CurrentPageFr = "";
+        var url = this.Context.Request.GetDisplayUrl();
+        if(this.Context.Request.Query.Count < 2)
+        {
+            url = this.Context.Request.GetDisplayUrl().Replace("?culture=en", "").Replace("?culture=fr", "");
+            CurrentPageEn = url + "?culture=en";
+            CurrentPageFr = url + "?culture=fr";
+        }
+        else if (this.Context.Request.Query.Count > 1)
+        {
+            url = this.Context.Request.GetDisplayUrl().Replace("&culture=en", "").Replace("&culture=fr", "");
+            CurrentPageEn = url + "&culture=en";
+            CurrentPageFr = url + "&culture=fr";
+        }
+    }
     @if (CultureInfo.CurrentCulture.Equals(new CultureInfo("fr")))
     {
         <header>
@@ -39,7 +57,7 @@
                             <div class="col-md-12">
                                 <ul class="list-inline mrgn-bttm-0">
                                     <li>
-                                        <a lang="en" href="/en.html">
+                                        <a lang="en" href=@CurrentPageEn>
                                             <span class="hidden-xs" translate="no">English</span>
                                             <abbr title="English" class="visible-xs h3 mrgn-tp-sm mrgn-bttm-0 text-uppercase" translate="no">en</abbr>
                                         </a>
@@ -585,7 +603,7 @@
                         <h2 class="wb-inv">Language selection</h2>
                         <ul class="list-inline mrgn-bttm-0">
                             <li>
-                                <a lang="fr" hreflang="fr" href="index-fr.html">
+                                <a lang="fr" hreflang="fr" href=@CurrentPageFr>
                                     <span class="hidden-xs" translate="no">Français</span>
                                     <abbr title="Français" translate="no" class="visible-xs h3 mrgn-tp-sm mrgn-bttm-0 text-uppercase">fr</abbr>
                                 </a>
