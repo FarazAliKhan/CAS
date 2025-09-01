@@ -20,10 +20,12 @@ namespace WebRazor.Pages
     public class CreateModel : PageModel
     {
         [BindProperty]
+        [Required(ErrorMessageResourceType = typeof(Resources.Pages.CreateModel), ErrorMessageResourceName = "FirstNameRequired")]
         [StringLength(50, MinimumLength = 2, ErrorMessageResourceType = typeof(Resources.Pages.CreateModel), ErrorMessageResourceName = "FirstNameTwoChars")]
         public string firstName { get; set; }
         [BindProperty]
-        [StringLength(50, MinimumLength = 2, ErrorMessage = "LastNameTwoChars")]
+        [Required(ErrorMessageResourceType = typeof(Resources.Pages.CreateModel), ErrorMessageResourceName = "LastNameRequired")]
+        [StringLength(50, MinimumLength = 2, ErrorMessageResourceType = typeof(Resources.Pages.CreateModel), ErrorMessageResourceName = "LastNameTwoChars")]
         public string lastName { get; set; }
         [BindProperty]
         public DateTime dob { get; set; }

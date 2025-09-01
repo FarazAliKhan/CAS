@@ -38,14 +38,9 @@
     <div class="text-center"><h1>@localizer["Create"] CAS</h1></div>
     <div class="wb-frmvld">
         <form method="post" id="createForm">
-            <details class="mrgn-tp-lg" open>
-                    <summary>Module#1
-
-                    </summary>
-                    <section class="center">
-                    @if (!ViewData.ModelState.IsValid)
-                    {
-                        @* <div class="alert alert-danger" role="alert">
+            @if (!ViewData.ModelState.IsValid)
+            {
+                @* <div class="alert alert-danger" role="alert">
                             <div class="error-color">
                                 <p class="span-break"><span asp-validation-for="@Model.firstName" class="label label-danger"></span></p>
                                 <p class="span-break"><span asp-validation-for="@Model.lastName" class="label label-danger"></span></p>
@@ -53,13 +48,18 @@
                             </div>
                         </div> *@
 
-                        <div class="error-color">
-                            <div class="alert alert-danger" role="alert">
-                                <br />
-                                @Html.ValidationSummary(false, "Please correct the following errors: ")
-                            </div>
-                        </div> 
-                    }
+                <div class="bg-danger">
+                    <div class="alert alert-danger" role="alert">
+                        <br />
+                        @Html.ValidationSummary(false, "Please correct the following errors: ")
+                    </div>
+                </div>
+            }
+            <details class="mrgn-tp-lg" open>
+                    <summary>Module#1
+
+                    </summary>
+                    <section class="center">
                     <fieldset>
                         <div class="form-group">
                             <label for="firstName"><span class="field-name">First name</span></label>
