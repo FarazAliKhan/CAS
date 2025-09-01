@@ -138,4 +138,7 @@
   <data name="New" xml:space="preserve">
     <value>Nouveau</value>
   </data>
+  <data name="Home" xml:space="preserve">
+    <value>Maison</value>
+  </data>
 </root>

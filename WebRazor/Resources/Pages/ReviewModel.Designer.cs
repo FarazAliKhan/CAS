@@ -22,14 +22,14 @@ namespace WebRazor.Resources.Pages {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class CreateModel {
+    public class ReviewModel {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal CreateModel() {
+        internal ReviewModel() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace WebRazor.Resources.Pages {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("WebRazor.Resources.Pages.CreateModel", typeof(CreateModel).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("WebRazor.Resources.Pages.ReviewModel", typeof(ReviewModel).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -97,15 +97,6 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to First Name should be atleast two characters long.
-        /// </summary>
-        public static string FirstNameTwoChars {
-            get {
-                return ResourceManager.GetString("FirstNameTwoChars", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Home.
         /// </summary>
         public static string Home {
@@ -124,11 +115,11 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Last Name should be atleast two characters long.
+        ///   Looks up a localized string similar to Review.
         /// </summary>
-        public static string LastNameTwoChars {
+        public static string Review {
             get {
-                return ResourceManager.GetString("LastNameTwoChars", resourceCulture);
+                return ResourceManager.GetString("Review", resourceCulture);
             }
         }
         
@@ -138,6 +129,15 @@ namespace WebRazor.Resources.Pages {
         public static string Select {
             get {
                 return ResourceManager.GetString("Select", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Submit.
+        /// </summary>
+        public static string Submit {
+            get {
+                return ResourceManager.GetString("Submit", resourceCulture);
             }
         }
     }

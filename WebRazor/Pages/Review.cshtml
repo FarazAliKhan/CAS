@@ -5,7 +5,7 @@
 @inject IHtmlLocalizer<ReviewModel> htmlLocalizer
 @model ReviewModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "CAS";
     if (HttpContext.Request.Query["culture"] == "fr")
     {
         CultureInfo.CurrentCulture = new CultureInfo("fr");
@@ -29,6 +29,10 @@
 
     var requestCultureFeature = HttpContext.Features.Get<IRequestCultureFeature>();
     var requestCulture = requestCultureFeature.RequestCulture;
+    ViewData["Review"] = localizer["Review"];
+    ViewData["Create"] = localizer["Create"];
+    ViewData["Select"] = localizer["Select"];
+    ViewData["Home"] = localizer["Home"];
 }
 
 <div class="text-center"><h1>@localizer["Review"] CAS</h1></div>

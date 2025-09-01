@@ -22,14 +22,14 @@ namespace WebRazor.Resources.Pages {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class CreateModel {
+    public class SelectModel {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal CreateModel() {
+        internal SelectModel() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace WebRazor.Resources.Pages {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("WebRazor.Resources.Pages.CreateModel", typeof(CreateModel).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("WebRazor.Resources.Pages.SelectModel", typeof(SelectModel).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -70,38 +70,11 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Create.
+        ///   Looks up a localized string similar to Form.
         /// </summary>
-        public static string Create {
+        public static string Form {
             get {
-                return ResourceManager.GetString("Create", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Date of Birth.
-        /// </summary>
-        public static string dob {
-            get {
-                return ResourceManager.GetString("dob", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to First Name.
-        /// </summary>
-        public static string FirstName {
-            get {
-                return ResourceManager.GetString("FirstName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to First Name should be atleast two characters long.
-        /// </summary>
-        public static string FirstNameTwoChars {
-            get {
-                return ResourceManager.GetString("FirstNameTwoChars", resourceCulture);
+                return ResourceManager.GetString("Form", resourceCulture);
             }
         }
         
@@ -115,20 +88,11 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Last Name.
+        ///   Looks up a localized string similar to Report.
         /// </summary>
-        public static string LastName {
+        public static string Report {
             get {
-                return ResourceManager.GetString("LastName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Last Name should be atleast two characters long.
-        /// </summary>
-        public static string LastNameTwoChars {
-            get {
-                return ResourceManager.GetString("LastNameTwoChars", resourceCulture);
+                return ResourceManager.GetString("Report", resourceCulture);
             }
         }
         

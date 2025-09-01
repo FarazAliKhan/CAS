@@ -120,26 +120,14 @@
   <data name="Back" xml:space="preserve">
     <value>Back</value>
   </data>
-  <data name="Create" xml:space="preserve">
-    <value>Create</value>
-  </data>
-  <data name="dob" xml:space="preserve">
-    <value>Date of Birth</value>
-  </data>
-  <data name="FirstName" xml:space="preserve">
-    <value>First Name</value>
-  </data>
-  <data name="FirstNameTwoChars" xml:space="preserve">
-    <value>First Name should be atleast two characters long</value>
+  <data name="Form" xml:space="preserve">
+    <value>Form</value>
   </data>
   <data name="Home" xml:space="preserve">
     <value>Home</value>
   </data>
-  <data name="LastName" xml:space="preserve">
-    <value>Last Name</value>
-  </data>
-  <data name="LastNameTwoChars" xml:space="preserve">
-    <value>Last Name should be atleast two characters long</value>
+  <data name="Report" xml:space="preserve">
+    <value>Report</value>
   </data>
   <data name="Select" xml:space="preserve">
     <value>Select</value>

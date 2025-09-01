@@ -5,7 +5,7 @@ using WebRazor.Models;
 
 namespace WebRazor.Pages
 {
-    [DefaultBreadcrumb("Home")]
+    [DefaultBreadcrumb("ViewData.Home")]
     public class IndexModel : PageModel
     {
     }

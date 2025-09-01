@@ -16,7 +16,7 @@ using WebRazor.Models;
 
 namespace WebRazor.Pages
 {
-    [Breadcrumb("ViewData.Page", FromPage = typeof(SelectModel))]
+    [Breadcrumb("ViewData.Create", FromPage = typeof(SelectModel))]
     public class CreateModel : PageModel
     {
         [BindProperty]

@@ -29,6 +29,8 @@
 
     var requestCultureFeature = HttpContext.Features.Get<IRequestCultureFeature>();
     var requestCulture = requestCultureFeature.RequestCulture;
+    ViewData["Select"] = localizer["Select"];
+    ViewData["Home"] = localizer["Home"];
 }
 
 <div class="text-center"><h1>@localizer["Select"] CAS</h1></div>

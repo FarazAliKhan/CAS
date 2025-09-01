@@ -4,7 +4,7 @@ using SmartBreadcrumbs.Attributes;
 
 namespace WebRazor.Pages
 {
-    [Breadcrumb("Report", FromPage = typeof(SelectModel))]
+    [Breadcrumb("ViewData.Report", FromPage = typeof(SelectModel))]
     public class ReportModel : PageModel
     {
         public void OnGet()
