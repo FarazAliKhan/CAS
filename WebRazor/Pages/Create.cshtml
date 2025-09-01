@@ -29,6 +29,7 @@
 
     var requestCultureFeature = HttpContext.Features.Get<IRequestCultureFeature>();
     var requestCulture = requestCultureFeature.RequestCulture;
+    ViewData["Page"] = localizer["Create"];
 }
 
 <section>

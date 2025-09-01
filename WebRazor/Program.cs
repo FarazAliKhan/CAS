@@ -1,10 +1,14 @@
-using System;
-using System.Globalization;
-using System.Runtime.CompilerServices;
 using Microsoft.AspNetCore.Localization;
+using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.Extensions.Localization;
 using Microsoft.Extensions.Options;
 using SmartBreadcrumbs.Extensions;
+using System;
+using System.Globalization;
+using System.Reflection;
+using System.Runtime.CompilerServices;
+using WebRazor.Pages;
 
 Program p = new Program();
 
@@ -27,8 +31,12 @@ builder.Services.Configure<RequestLocalizationOptions>(options =>
     options.RequestCultureProviders.Insert(1, new CookieRequestCultureProvider());
 });
 
-builder.Services.AddMvc().AddViewLocalization();
 builder.Services.AddLocalization(options => options.ResourcesPath = "Resources");
+
+builder.Services.AddMvc()
+    .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix)
+    .AddDataAnnotationsLocalization();
+
 
 builder.Services.AddMvc().AddRazorPagesOptions(options => {
     options.Conventions.AddPageRoute("/Pages/Startup/Index", "");

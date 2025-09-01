@@ -129,7 +129,13 @@
   <data name="FirstName" xml:space="preserve">
     <value>Prénom</value>
   </data>
+  <data name="FirstNameTwoChars" xml:space="preserve">
+    <value>Le prénom doit comporter au moins deux caractères</value>
+  </data>
   <data name="LastName" xml:space="preserve">
     <value>Nom</value>
+  </data>
+  <data name="LastNameTwoChars" xml:space="preserve">
+    <value>Le nom de famille doit comporter au moins deux caractères</value>
   </data>
 </root>
