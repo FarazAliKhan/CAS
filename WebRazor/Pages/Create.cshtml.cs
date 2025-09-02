@@ -1,3 +1,4 @@
+using BusinessLayer.DTOs;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Localization;
@@ -33,6 +34,10 @@ namespace WebRazor.Pages
         public CreateModel() { 
         }
 
+        public void OnGet()
+        {
+        }
+
         public IActionResult OnPost() {
             if (!ModelState.IsValid)
                 return Page();
@@ -44,6 +49,16 @@ namespace WebRazor.Pages
             };
 
             return RedirectToPage("Review", createItem);
+        }
+
+        public void OnGetLoad(CASEntityCreate? createItem)
+        {
+            if (createItem.FirstName != null && createItem.LastName != null)
+            {
+                firstName = createItem.FirstName;
+                lastName = createItem.LastName;
+                dob = createItem.dob;
+            }
         }
     }
 }

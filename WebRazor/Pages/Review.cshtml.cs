@@ -26,11 +26,13 @@ namespace WebRazor.Pages
            dob = createItem.dob;
         }
 
-        public void OnPost(CASEntityCreate createItem) 
+        public IActionResult OnPost(CASEntityCreate createItem) 
         {
             firstName = createItem.FirstName;
             lastName = createItem.LastName;
             dob = createItem.dob;
+
+            return RedirectToPagePermanent("Create", "Load", createItem);
         }
     }
 }

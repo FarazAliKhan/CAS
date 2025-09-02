@@ -126,6 +126,9 @@
   <data name="dob" xml:space="preserve">
     <value>Date of Birth</value>
   </data>
+  <data name="ErrorText" xml:space="preserve">
+    <value>Please correct following errors:</value>
+  </data>
   <data name="FirstName" xml:space="preserve">
     <value>First Name</value>
   </data>

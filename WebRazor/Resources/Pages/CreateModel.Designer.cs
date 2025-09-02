@@ -88,6 +88,15 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Please correct following errors:.
+        /// </summary>
+        public static string ErrorText {
+            get {
+                return ResourceManager.GetString("ErrorText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to First Name.
         /// </summary>
         public static string FirstName {

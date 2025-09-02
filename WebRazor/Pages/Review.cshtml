@@ -39,21 +39,25 @@
 <form method="post">
     <details class="mrgn-tp-lg" open>
         <summary>
-            Module#1
-
+            <div>
+                <span>Module#1</span>
+                <span>
+                    <button class="btn btn-primary pull-right" type="submit">@localizer["Edit"]</button>
+                </span>
+            </div>
         </summary>
         <section class="center">
             <fieldset>
                 <div class="form-group">
-                    <label for="firstName"><span class="field-name">First name</span></label>
+                    <label for="firstName"><span class="field-name">@localizer["FirstName"]</span></label>
                     <input class="form-control" id="firstName" name="firstName" type="text" asp-for="@Model.firstName" autocomplete="firstName" data-rule-minlength="2" readonly>
                 </div>
                 <div class="form-group">
-                    <label for="lastName"><span class="field-name">Last name</span></label>
+                    <label for="lastName"><span class="field-name">@localizer["LastName"]</span></label>
                     <input class="form-control" id="lastName" name="lastName" type="text" asp-for="@Model.lastName" autocomplete="lastName" data-rule-minlength="2" readonly>
                 </div>
                 <div class="form-group">
-                    <label for="dob"><span class="field-name">Date of Birth</span><span class="datepicker-format"> (<abbr title="Four digits year, dash, two digits month, dash, two digits day">YYYY-MM-DD</abbr>)</span></label>
+                    <label for="dob"><span class="field-name">@localizer["dob"]</span><span class="datepicker-format"> (<abbr title="Four digits year, dash, two digits month, dash, two digits day">YYYY-MM-DD</abbr>)</span></label>
                     <input class="form-control" id="dob" name="dob" type="date" data-rule-dateISO="true" asp-for="@Model.dob" readonly />
                 </div>
             </fieldset>
