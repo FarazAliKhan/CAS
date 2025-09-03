@@ -6,3 +6,8 @@
     background-color: #f3e9e8;
     font-family: Arial;
 }
+
+.square-bttn {
+    background-color: dodgerblue;
+    padding: 32px 16px;
+}

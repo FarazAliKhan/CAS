@@ -5,7 +5,7 @@ using WebRazor.Models;
 
 namespace WebRazor.Pages
 {
-    [Breadcrumb("ViewData.Select")]
+    [Breadcrumb("ViewData.Home")]
     public class SelectModel : PageModel
     {
     }

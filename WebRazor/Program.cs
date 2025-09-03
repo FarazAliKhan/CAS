@@ -37,11 +37,6 @@ builder.Services.AddMvc()
     .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix)
     .AddDataAnnotationsLocalization();
 
-
-builder.Services.AddMvc().AddRazorPagesOptions(options => {
-    options.Conventions.AddPageRoute("/Pages/Startup/Index", "");
-});
-
 builder.Services.AddControllers().AddViewOptions(options =>
     options.HtmlHelperOptions.FormInputRenderMode = FormInputRenderMode.AlwaysUseCurrentCulture
 );
