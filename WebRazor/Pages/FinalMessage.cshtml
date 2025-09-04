@@ -1,11 +1,11 @@
 ﻿@page
 @using Microsoft.AspNetCore.Localization
 @using Microsoft.AspNetCore.Mvc.Localization
-@inject IStringLocalizer<SelectModel> localizer
-@inject IHtmlLocalizer<SelectModel> htmlLocalizer
-@model SelectModel
+@inject IStringLocalizer<ReviewModel> localizer
+@inject IHtmlLocalizer<ReviewModel> htmlLocalizer
+@model ReviewModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "CAS";
     if (HttpContext.Request.Query["culture"] == "fr")
     {
         CultureInfo.CurrentCulture = new CultureInfo("fr");
@@ -27,20 +27,14 @@
         );
     }
 
-    var requestCultureFeature = HttpContext.Features.Get<IRequestCultureFeature>();
-    var requestCulture = requestCultureFeature.RequestCulture;
-    ViewData["Select"] = localizer["Select"];
-    ViewData["Home"] = localizer["Home"];
+  
+
 }
 
-<div class="text-center"><h1>CAS Module</h1></div>
+<div class="text-center">
 <form method="post">
-    <div class="text-center">
-        <span>
-            <a class="btn btn-primary" style="background-color: #008CBA;color:white;width:100px;height:100px;text-align:center;border-radius: 8px; margin: 10px;" asp-page="./Create"><br /><span class="glyphicon glyphicon-tasks"></span><br />@localizer["Form"]</a>
-        </span>
-        <span>
-            <a class="btn btn-primary" style="background-color: #008CBA;color:white;width:100px;height:100px;text-align:center;border-radius: 8px;" asp-page="./Report"><br /><span class="glyphicon glyphicon-list"></span><br />@localizer["Report"]</a>
-        </span>
-    </div>
+    <label for="firstName"><span class="field-name">Thanks you. We will send you confirmation email at faraz@invisorsoft.ca  </span></label>
+
+
 </form>
+</div>
