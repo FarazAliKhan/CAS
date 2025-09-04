@@ -36,13 +36,13 @@
 }
 
 <div class="text-center"><h1>@localizer["Review"] CAS</h1></div>
-<form method="post">
+<form method="post" id="reviewForm">
     <details class="mrgn-tp-lg" open>
         <summary>
             <div>
                 <span>Module#1</span>
                 <span>
-                    <button class="btn btn-primary pull-right" type="submit"><span class="glyphicon glyphicon-edit"></span></button>
+                    <a class="pull-right" onclick="submitForm();"><span class="glyphicon glyphicon-edit"></span></a>
                 </span>
             </div>
         </summary>

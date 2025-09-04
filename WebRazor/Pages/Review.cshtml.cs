@@ -18,21 +18,24 @@ namespace WebRazor.Pages
         [StringLength(50, MinimumLength = 2, ErrorMessageResourceType = typeof(Resources.Pages.CreateModel), ErrorMessageResourceName = "LastNameTwoChars")]
         public string lastName { get; set; }
         [BindProperty]
-        public DateTime dob { get; set; }
-        public void OnGet(CASEntityCreate createItem)
+        public DateTime? dob { get; set; }
+        public void OnGet()
         {
-           firstName = createItem.FirstName;
-           lastName = createItem.LastName;
-           dob = createItem.dob;
+            if (TempData["firstName"] != null)
+            {
+                firstName = (string)TempData["firstName"];
+                lastName = (string)TempData["lastName"];
+                dob = (DateTime?)TempData["dob"];
+            }          
         }
 
         public IActionResult OnPost(CASEntityCreate createItem) 
         {
-            firstName = createItem.FirstName;
-            lastName = createItem.LastName;
-            dob = createItem.dob;
+            TempData["firstName"] = createItem.FirstName;
+            TempData["lastName"] = createItem.LastName;
+            TempData["dob"] = createItem.dob;
 
-            return RedirectToPagePermanent("Create", "Load", createItem);
+            return RedirectToPage("Create", "Load");
         }
     }
 }

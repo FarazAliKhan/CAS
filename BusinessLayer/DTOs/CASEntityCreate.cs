@@ -11,6 +11,6 @@ namespace BusinessLayer.DTOs
     {
         public required string FirstName { get; set; }
         public required string LastName { get; set; }
-        public DateTime dob { get; set; }
+        public DateTime? dob { get; set; }
     }
 }
