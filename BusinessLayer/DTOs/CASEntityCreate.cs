@@ -9,8 +9,11 @@ namespace BusinessLayer.DTOs
 {
     public class CASEntityCreate
     {
-        public required string FirstName { get; set; }
-        public required string LastName { get; set; }
-        public DateTime? dob { get; set; }
+        public  int FIELD1_1_1 { get; set; }
+        public int FIELD1_1_2 { get; set; }
+        public int FIELD1_1_3 { get; set; }
+
+        public int FIELD1_1_4 { get; set; }
+
     }
 }

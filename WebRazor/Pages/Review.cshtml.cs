@@ -31,9 +31,9 @@ namespace WebRazor.Pages
 
         public IActionResult OnPost(CASEntityCreate createItem) 
         {
-            TempData["firstName"] = createItem.FirstName;
-            TempData["lastName"] = createItem.LastName;
-            TempData["dob"] = createItem.dob;
+            //TempData["firstName"] = createItem.FirstName;
+            //TempData["lastName"] = createItem.LastName;
+            //TempData["dob"] = createItem.dob;
 
             return RedirectToPage("Create", "Load");
         }

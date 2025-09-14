@@ -20,19 +20,46 @@ namespace WebRazor.Pages
     [Breadcrumb("ViewData.Create", FromPage = typeof(SelectModel))]
     public class CreateModel : PageModel
     {
+
         [BindProperty]
         [Required(ErrorMessageResourceType = typeof(Resources.Pages.CreateModel), ErrorMessageResourceName = "FirstNameRequired")]
         [StringLength(50, MinimumLength = 2, ErrorMessageResourceType = typeof(Resources.Pages.CreateModel), ErrorMessageResourceName = "FirstNameTwoChars")]
-        public string firstName { get; set; }
+        public int txtFIELD1_1_1 { get; set; }
+        [BindProperty]
+        [Required(ErrorMessageResourceType = typeof(Resources.Pages.CreateModel), ErrorMessageResourceName = "FirstNameRequired")]
+        [StringLength(50, MinimumLength = 2, ErrorMessageResourceType = typeof(Resources.Pages.CreateModel), ErrorMessageResourceName = "FirstNameTwoChars")]
+        public int txtFIELD1_1_2 { get; set; }
         [BindProperty]
         [Required(ErrorMessageResourceType = typeof(Resources.Pages.CreateModel), ErrorMessageResourceName = "LastNameRequired")]
         [StringLength(50, MinimumLength = 2, ErrorMessageResourceType = typeof(Resources.Pages.CreateModel), ErrorMessageResourceName = "LastNameTwoChars")]
-        public string lastName { get; set; }
+        public int txtFIELD1_1_3 { get; set; }
         [BindProperty]
-        public DateTime? dob { get; set; }
+        [Required(ErrorMessageResourceType = typeof(Resources.Pages.CreateModel), ErrorMessageResourceName = "LastNameRequired")]
+        [StringLength(50, MinimumLength = 2, ErrorMessageResourceType = typeof(Resources.Pages.CreateModel), ErrorMessageResourceName = "LastNameTwoChars")]
+        public int txtFIELD1_1_4 { get; set; }
+        [BindProperty]
+        [Required(ErrorMessageResourceType = typeof(Resources.Pages.CreateModel), ErrorMessageResourceName = "LastNameRequired")]
+        [StringLength(50, MinimumLength = 2, ErrorMessageResourceType = typeof(Resources.Pages.CreateModel), ErrorMessageResourceName = "LastNameTwoChars")]
+        public int txtFIELD1_1_5 { get; set; }
+        [BindProperty]
+        [Required(ErrorMessageResourceType = typeof(Resources.Pages.CreateModel), ErrorMessageResourceName = "LastNameRequired")]
+        [StringLength(50, MinimumLength = 2, ErrorMessageResourceType = typeof(Resources.Pages.CreateModel), ErrorMessageResourceName = "LastNameTwoChars")]
+        public int txtFIELD1_1_6 { get; set; }
+        [BindProperty]
+        [Required(ErrorMessageResourceType = typeof(Resources.Pages.CreateModel), ErrorMessageResourceName = "LastNameRequired")]
+        [StringLength(50, MinimumLength = 2, ErrorMessageResourceType = typeof(Resources.Pages.CreateModel), ErrorMessageResourceName = "LastNameTwoChars")]
+        public int txtFIELD1_1_7 { get; set; }
 
-        public CreateModel() { 
-        }
+        [BindProperty]
+        [Required(ErrorMessageResourceType = typeof(Resources.Pages.CreateModel), ErrorMessageResourceName = "LastNameRequired")]
+        [StringLength(50, MinimumLength = 2, ErrorMessageResourceType = typeof(Resources.Pages.CreateModel), ErrorMessageResourceName = "LastNameTwoChars")]
+        public string txtFIED_1_Comments { get; set; }
+
+
+
+
+        //public CreateModel() { 
+        //}
 
         public void OnGet()
         {
@@ -41,24 +68,24 @@ namespace WebRazor.Pages
         public IActionResult OnPost() {
             if (!ModelState.IsValid)
                 return Page();
-            var createItem = new CASEntityCreate()
-            {
-                FirstName = firstName,
-                LastName = lastName,
-                dob = dob
-            };
+         //   var createItem = new CASEntityCreate()
+            //{
+            //    //txtFIELD1_1_1 = txtFIELD1_1_1,
+            //    //LastName = lastName,
+            //    //dob = dob
+            //};
 
-            TempData["firstName"] = createItem.FirstName;
-            TempData["lastName"] = createItem.LastName;
-            TempData["dob"] = createItem.dob;
+            //TempData["firstName"] = createItem.FirstName;
+            //TempData["lastName"] = createItem.LastName;
+            //TempData["dob"] = createItem.dob;
             return RedirectToPage("Review");
         }
 
         public void OnGetLoad()
         {
-            firstName = (string)TempData["firstName"];
-            lastName = (string)TempData["lastName"];
-            dob = (DateTime?)TempData["dob"];
+            //firstName = (string)TempData["firstName"];
+            //lastName = (string)TempData["lastName"];
+            //dob = (DateTime?)TempData["dob"];
         }
     }
 }
