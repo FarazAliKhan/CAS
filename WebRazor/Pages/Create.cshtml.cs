@@ -20,7 +20,16 @@ namespace WebRazor.Pages
     [Breadcrumb("ViewData.Create", FromPage = typeof(SelectModel))]
     public class CreateModel : PageModel
     {
-
+        [BindProperty]
+        [Required(ErrorMessageResourceType = typeof(Resources.Pages.CreateModel), ErrorMessageResourceName = "FirstNameRequired")]
+        [StringLength(100, MinimumLength = 2, ErrorMessageResourceType = typeof(Resources.Pages.CreateModel), ErrorMessageResourceName = "FirstNameTwoChars")]
+        public int txtCOURT { get; set; }
+        [BindProperty]
+        public DateTime dtFROM { get; set; }
+        [BindProperty]
+        public DateTime dtTO { get; set; }
+        [BindProperty]
+        public int intREPORTINGYEAR { get; set; }
         [BindProperty]
         [Required(ErrorMessageResourceType = typeof(Resources.Pages.CreateModel), ErrorMessageResourceName = "FirstNameRequired")]
         [StringLength(50, MinimumLength = 2, ErrorMessageResourceType = typeof(Resources.Pages.CreateModel), ErrorMessageResourceName = "FirstNameTwoChars")]

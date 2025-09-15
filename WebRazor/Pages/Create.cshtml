@@ -55,70 +55,139 @@
                     </div>
                 </div>
             }
-          
 
+            <details class="mrgn-tp-lg" open>
+                <summary>
+                    Basic Information
+                </summary>
+                <section class="center">
+                    <fieldset>
+                        <div class="row col-md-12">
+                            <div class="row">
+                                <div class="form-group col-md-12">
+                                    <label for="txtCOURT"><span class="field-name">Court</span></label>
+                                    <select class="form-control" id="txtCOURT" name="txtCOURT" type="number" asp-for="@Model.txtCOURT" autocomplete="txtCOURT" data-rule-minlength="1" style="width:100%">
+                                        <option value="">Select Court</option>
+                                        <option value="ABCA">Court of Appeal of Alberta</option>
+                                        <option value="BCCA">Court of Appeal for British Columbia</option>
+                                        <option value="CMAC">Court Martial Appeal Court of Canada</option>
+                                        <option value="FCA">Federal Court of Appeal</option>
+                                        <option value="MBCA">Court of Appeal of Manitoba</option>
+                                        <option value="NBCA">Court of Appeal of New Brunswick</option>
+                                        <option value="NLCA">Court of Appeal of Newfoundland and Labrador</option>
+                                        <option value="NSCA">Nova Scotia Court of Appeal</option>
+                                        <option value="NUCA">Nunavut Court of Appeal</option>
+                                        <option value="NWTCA">Court of Appeal of the Northwest Territories</option>
+                                        <option value="ONCA">Court of Appeal for Ontario</option>
+                                        <option value="PECA">Prince Edward Island Court of Appeal</option>
+                                        <option value="QCCA">Court of Appeal of Quebec</option>
+                                        <option value="SKCA">Court of Appeal for Saskatchewan</option>
+                                        <option value="YKCA">Court of Appeal of Yukon</option>
+                                    </select>
+                                    <span asp-validation-for="@Model.txtCOURT" class="label label-danger"></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label for="intREPORTINGYEAR"><span class="field-name">Reporting Year</span></label>
+                                    <select class="form-control" id="intREPORTINGYEAR" name="intREPORTINGYEAR" type="number" asp-for="@Model.intREPORTINGYEAR" autocomplete="intREPORTINGYEAR" data-rule-minlength="1" style="width:100%; height:52px;">
+                                        <option value="">Select Year</option>
+                                        <option value="2023">2023</option>
+                                        <option value="2024">2024</option>
+                                        <option value="2025">2025</option>
+                                        <option value="2026">2026</option>
+                                    </select>
+                                    <span asp-validation-for="@Model.intREPORTINGYEAR" class="label label-danger"></span>
+                                </div>
+                                <div class="form-group col-md-3">
+                                    <label for="dtFROM"><span class="field-name">Period From</span></label>
+                                    <span class="fa-stack">
+                                        <span class="fa fa-circle fa-stack-2x fa-inverse"></span><span class="fa fa-info fa-stack-1x"></span>
+                                        <span class="tooltip">
+                                            <span class="tooltiptext">The start date of the period covered by the submission.</span>
+                                        </span>
+                                    </span>
+                                    <input class="form-control" id="dtFROM" name="dtFROM" type="date" asp-for="@Model.dtFROM" autocomplete="dtFROM" data-rule-minlength="1" style="width:100%">
+                                    <span asp-validation-for="@Model.dtFROM" class="label label-danger"></span>
+                                </div>
+                                <div class="form-group col-md-3">
+                                    <label for="dtTO">
+                                        <span class="field-name">
+                                            Period To
+                                        </span>
+                                    </label>
+                                    <span class="fa-stack">
+                                        <span class="fa fa-circle fa-stack-1x"></span><span class="fa fa-info fa-stack-1x fa-inverse"></span>
+                                        <span class="tooltip">
+                                            <span class="tooltiptext">The end date of the period covered by the submission.</span>
+                                        </span>
+                                    </span>
+                                    <input class="form-control" id="dtTO" name="dtTO" type="date" asp-for="@Model.dtTO" autocomplete="dtTO" data-rule-minlength="1" style="width:100%">
+                                    <span asp-validation-for="@Model.dtTO" class="label label-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </section>
+            </details>
 
             <details class="mrgn-tp-lg" open>
                 <summary>
                     1. Civil Appeals
-
-
-
-
-                    </summary>
-                    <section class="center">
+                </summary>
+                <section class="center">
                     <fieldset>
                         <div class="form-group">
                             <label for="txtFIELD1_1_1"><span class="field-name">1.1.1 Civil appeals pending as of Dec 31 (prev. year) </span></label>
-                            <input class="form-control" id="txtFIELD1_1_1" name="txtFIELD1_1_1" type="number" asp-for="@Model.txtFIELD1_1_1" autocomplete="txtFIELD1_1_1" data-rule-minlength="1" style="width:80%">
+                            <input class="form-control" id="txtFIELD1_1_1" name="txtFIELD1_1_1" type="number" asp-for="@Model.txtFIELD1_1_1" autocomplete="txtFIELD1_1_1" data-rule-minlength="1" style="width:100%">
                             <span asp-validation-for="@Model.txtFIELD1_1_1" class="label label-danger"></span>
                         </div>
                         <div class="form-group">
                             <label for="txtFIELD1_1_2"><span class="field-name">1.1.2 Civil appeals filed this year  </span></label>
-                            <input class="form-control" id="txtFIELD1_1_2" name="txtFIELD1_1_2" type="number" asp-for="@Model.txtFIELD1_1_2" autocomplete="txtFIELD1_1_2" data-rule-minlength="1" style="width:80%">
+                            <input class="form-control" id="txtFIELD1_1_2" name="txtFIELD1_1_2" type="number" asp-for="@Model.txtFIELD1_1_2" autocomplete="txtFIELD1_1_2" data-rule-minlength="1" style="width:10%">
                             <span asp-validation-for="@Model.txtFIELD1_1_2" class="label label-danger"></span>
                         </div>
                         <div class="form-group">
                             <label for="txtFIELD1_1_3"><span class="field-name">1.1.3 Civil appeals disposed of by judgment </span></label>
-                            <input class="form-control" id="txtFIELD1_1_3" name="txtFIELD1_1_3" type="number" asp-for="@Model.txtFIELD1_1_3" autocomplete="txtFIELD1_1_3" data-rule-minlength="1" style="width:80%">
+                            <input class="form-control" id="txtFIELD1_1_3" name="txtFIELD1_1_3" type="number" asp-for="@Model.txtFIELD1_1_3" autocomplete="txtFIELD1_1_3" data-rule-minlength="1" style="width:100%">
                             <span asp-validation-for="@Model.txtFIELD1_1_3" class="label label-danger"></span>
                         </div>
                         <div class="form-group">
                             <label for="txtFIELD1_1_4"><span class="field-name">1.1.4 Civil appeals disposed by registrar/rules </span></label>
-                            <input class="form-control" id="txtFIELD1_1_4" name="txtFIELD1_1_4" type="number" asp-for="@Model.txtFIELD1_1_4" autocomplete="txtFIELD1_1_4" data-rule-minlength="1" style="width:80%">
+                            <input class="form-control" id="txtFIELD1_1_4" name="txtFIELD1_1_4" type="number" asp-for="@Model.txtFIELD1_1_4" autocomplete="txtFIELD1_1_4" data-rule-minlength="1" style="width:100%">
                             <span asp-validation-for="@Model.txtFIELD1_1_4" class="label label-danger"></span>
                         </div>
                         <div class="form-group">
                             <label for="txtFIELD1_1_5"><span class="field-name">1.1.5 Civil appeals settled in judicial mediation </span></label>
-                            <input class="form-control" id="txtFIELD1_1_5" name="txtFIELD1_1_5" type="number" asp-for="@Model.txtFIELD1_1_5" autocomplete="txtFIELD1_1_5" data-rule-minlength="1" style="width:80%">
+                            <input class="form-control" id="txtFIELD1_1_5" name="txtFIELD1_1_5" type="number" asp-for="@Model.txtFIELD1_1_5" autocomplete="txtFIELD1_1_5" data-rule-minlength="1" style="width:100%">
                             <span asp-validation-for="@Model.txtFIELD1_1_5" class="label label-danger"></span>
                         </div>
                         <div class="form-group">
                             <label for="txtFIELD1_1_6"><span class="field-name">1.1.6 Civil appeals disposed by other means </span></label>
-                            <input class="form-control" id="txtFIELD1_1_6" name="txtFIELD1_1_6" type="number" asp-for="@Model.txtFIELD1_1_6" autocomplete="txtFIELD1_1_6" data-rule-minlength="1" style="width:80%">
+                            <input class="form-control" id="txtFIELD1_1_6" name="txtFIELD1_1_6" type="number" asp-for="@Model.txtFIELD1_1_6" autocomplete="txtFIELD1_1_6" data-rule-minlength="1" style="width:100%">
                             <span asp-validation-for="@Model.txtFIELD1_1_6" class="label label-danger"></span>
                         </div>
                         <div class="form-group">
                             <label for="txtFIELD1_1_7"><span class="field-name">1.1.7 Total civil appeals for the year </span></label>
-                            <input class="form-control" id="txtFIELD1_1_7" name="txtFIELD1_1_7" type="number" asp-for="@Model.txtFIELD1_1_7" autocomplete="txtFIELD1_1_7" data-rule-minlength="1" style="width:80%">
+                            <input class="form-control" id="txtFIELD1_1_7" name="txtFIELD1_1_7" type="number" asp-for="@Model.txtFIELD1_1_7" autocomplete="txtFIELD1_1_7" data-rule-minlength="1" style="width:100%">
                             <span asp-validation-for="@Model.txtFIELD1_1_3" class="label label-danger"></span>
                         </div>
                         <div class="form-group">
                             <label for="txtFIED_1_Comments"><span class="field-name">Comments </span></label>
-                         
-                            <input class="form-control" id="txtFIED_1_Comments" name="txtFIED_1_Comments" type="text" asp-for="@Model.txtFIED_1_Comments" autocomplete="txtFIED_1_Comments" data-rule-minlength="2" data-rule-maxlength="2000" style="width:80%" multiple="true">
+
+                            <textarea class="form-control" id="txtFIED_1_Comments" name="txtFIED_1_Comments" type="text" asp-for="@Model.txtFIED_1_Comments" autocomplete="txtFIED_1_Comments" data-rule-minlength="2" data-rule-maxlength="2000" style="width:100%" multiple="true" rows="4">
+                            </textarea>
                             <span asp-validation-for="@Model.txtFIELD1_1_3" class="label label-danger"></span>
                         </div>
                     </fieldset>
-                    </section>
-                    <div>
-                        <button class="btn btn-primary" type="submit">@localizer["Review"]</button>
-                        <span>
-                            <a class="btn btn-default" asp-page="./Select">@localizer["Back"]</a>
-                        </span>
-                    </div>
-
+                </section>
             </details>
+            <div>
+                <button class="btn btn-primary" type="submit">@localizer["Review"]</button>
+                <span>
+                    <a class="btn btn-default" asp-page="./Select">@localizer["Back"]</a>
+                </span>
+            </div>
         </form>
     </div>
 </section>
