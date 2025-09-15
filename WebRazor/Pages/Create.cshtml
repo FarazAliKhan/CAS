@@ -101,8 +101,8 @@
                                 </div>
                                 <div class="form-group col-md-3">
                                     <label for="dtFROM"><span class="field-name">Period From</span></label>
-                                    <span class="fa-stack" title="The start date of the period covered by the submission.">
-                                        <span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-info fa-stack-1x fa-inverse"></span>
+                                    <span title="The start date of the period covered by the submission.">
+                                        <i class="fa-solid fa-circle-info"></i>
                                     </span>
                                     <input class="form-control" id="dtFROM" name="dtFROM" type="date" asp-for="@Model.dtFROM" autocomplete="dtFROM" data-rule-minlength="1" style="width:100%">
                                     <span asp-validation-for="@Model.dtFROM" class="label label-danger"></span>
@@ -110,8 +110,8 @@
                                 <div class="form-group col-md-3">
                                     <label for="dtTO"><span class="field-name">Period To</span>
                                     </label>
-                                    <span class="fa-stack" title="The end date of the period covered by the submission.">
-                                        <span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-info fa-stack-1x fa-inverse"></span>
+                                    <span title="The end date of the period covered by the submission.">
+                                        <i class="fa-solid fa-circle-info"></i>
                                     </span>
                                     <input class="form-control" id="dtTO" name="dtTO" type="date" asp-for="@Model.dtTO" autocomplete="dtTO" data-rule-minlength="1" style="width:100%">
                                     <span asp-validation-for="@Model.dtTO" class="label label-danger"></span>

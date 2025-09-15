@@ -25,9 +25,9 @@ namespace WebRazor.Pages
         [StringLength(100, MinimumLength = 2, ErrorMessageResourceType = typeof(Resources.Pages.CreateModel), ErrorMessageResourceName = "FirstNameTwoChars")]
         public int? txtCOURT { get; set; }
         [BindProperty]
-        public DateTime? dtFROM { get; set; }
+        public DateTime? dtFROM { get; set; } = DateTime.Now;
         [BindProperty]
-        public DateTime? dtTO { get; set; }
+        public DateTime? dtTO { get; set; } = DateTime.Now;
         [BindProperty]
         public int intREPORTINGYEAR { get; set; }
         [BindProperty]
