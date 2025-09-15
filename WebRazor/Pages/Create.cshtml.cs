@@ -23,41 +23,41 @@ namespace WebRazor.Pages
         [BindProperty]
         [Required(ErrorMessageResourceType = typeof(Resources.Pages.CreateModel), ErrorMessageResourceName = "FirstNameRequired")]
         [StringLength(100, MinimumLength = 2, ErrorMessageResourceType = typeof(Resources.Pages.CreateModel), ErrorMessageResourceName = "FirstNameTwoChars")]
-        public int txtCOURT { get; set; }
+        public int? txtCOURT { get; set; }
         [BindProperty]
-        public DateTime dtFROM { get; set; }
+        public DateTime? dtFROM { get; set; }
         [BindProperty]
-        public DateTime dtTO { get; set; }
+        public DateTime? dtTO { get; set; }
         [BindProperty]
         public int intREPORTINGYEAR { get; set; }
         [BindProperty]
         [Required(ErrorMessageResourceType = typeof(Resources.Pages.CreateModel), ErrorMessageResourceName = "FirstNameRequired")]
         [StringLength(50, MinimumLength = 2, ErrorMessageResourceType = typeof(Resources.Pages.CreateModel), ErrorMessageResourceName = "FirstNameTwoChars")]
-        public int txtFIELD1_1_1 { get; set; }
+        public int? txtFIELD1_1_1 { get; set; }
         [BindProperty]
         [Required(ErrorMessageResourceType = typeof(Resources.Pages.CreateModel), ErrorMessageResourceName = "FirstNameRequired")]
         [StringLength(50, MinimumLength = 2, ErrorMessageResourceType = typeof(Resources.Pages.CreateModel), ErrorMessageResourceName = "FirstNameTwoChars")]
-        public int txtFIELD1_1_2 { get; set; }
+        public int? txtFIELD1_1_2 { get; set; }
         [BindProperty]
         [Required(ErrorMessageResourceType = typeof(Resources.Pages.CreateModel), ErrorMessageResourceName = "LastNameRequired")]
         [StringLength(50, MinimumLength = 2, ErrorMessageResourceType = typeof(Resources.Pages.CreateModel), ErrorMessageResourceName = "LastNameTwoChars")]
-        public int txtFIELD1_1_3 { get; set; }
+        public int? txtFIELD1_1_3 { get; set; }
         [BindProperty]
         [Required(ErrorMessageResourceType = typeof(Resources.Pages.CreateModel), ErrorMessageResourceName = "LastNameRequired")]
         [StringLength(50, MinimumLength = 2, ErrorMessageResourceType = typeof(Resources.Pages.CreateModel), ErrorMessageResourceName = "LastNameTwoChars")]
-        public int txtFIELD1_1_4 { get; set; }
+        public int? txtFIELD1_1_4 { get; set; }
         [BindProperty]
         [Required(ErrorMessageResourceType = typeof(Resources.Pages.CreateModel), ErrorMessageResourceName = "LastNameRequired")]
         [StringLength(50, MinimumLength = 2, ErrorMessageResourceType = typeof(Resources.Pages.CreateModel), ErrorMessageResourceName = "LastNameTwoChars")]
-        public int txtFIELD1_1_5 { get; set; }
+        public int? txtFIELD1_1_5 { get; set; }
         [BindProperty]
         [Required(ErrorMessageResourceType = typeof(Resources.Pages.CreateModel), ErrorMessageResourceName = "LastNameRequired")]
         [StringLength(50, MinimumLength = 2, ErrorMessageResourceType = typeof(Resources.Pages.CreateModel), ErrorMessageResourceName = "LastNameTwoChars")]
-        public int txtFIELD1_1_6 { get; set; }
+        public int? txtFIELD1_1_6 { get; set; }
         [BindProperty]
         [Required(ErrorMessageResourceType = typeof(Resources.Pages.CreateModel), ErrorMessageResourceName = "LastNameRequired")]
         [StringLength(50, MinimumLength = 2, ErrorMessageResourceType = typeof(Resources.Pages.CreateModel), ErrorMessageResourceName = "LastNameTwoChars")]
-        public int txtFIELD1_1_7 { get; set; }
+        public int? txtFIELD1_1_7 { get; set; }
 
         [BindProperty]
         [Required(ErrorMessageResourceType = typeof(Resources.Pages.CreateModel), ErrorMessageResourceName = "LastNameRequired")]
