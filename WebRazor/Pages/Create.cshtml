@@ -169,6 +169,142 @@
                     </fieldset>
                 </section>
             </details>
+
+            <details class="mrgn-tp-lg section-color" open>
+                <summary>
+                    7. Self-Represented Litigants (SRL)
+                </summary>
+                <section class="center">
+                    <fieldset>
+                        <div class="form-group">
+                            <label for="txtFIELD7_1_1"><span class="field-name">7.1.1 Appeals involving SRL at hearing</span></label>
+                            <input class="form-control" id="txtFIELD7_1_1" name="txtFIELD7_1_1" type="number" asp-for="@Model.txtFIELD7_1_1" autocomplete="txtFIELD7_1_1" data-rule-minlength="1" style="width:100%">
+                            <span asp-validation-for="@Model.txtFIELD7_1_1" class="label label-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtFIELD7_1_2"><span class="field-name">7.1.2 Motions involving SRL at hearing</span></label>
+                            <input class="form-control" id="txtFIELD7_1_2" name="txtFIELD7_1_2" type="number" asp-for="@Model.txtFIELD7_1_2" autocomplete="txtFIELD7_1_2" data-rule-minlength="1" style="width:100%">
+                            <span asp-validation-for="@Model.txtFIELD7_1_2" class="label label-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtFIELD7_1_3"><span class="field-name">7.1.3 Total SRL cases at hearing</span></label>
+                            <input class="form-control" id="txtFIELD7_1_3" name="txtFIELD7_1_3" type="number" asp-for="@Model.txtFIELD7_1_3" autocomplete="txtFIELD7_1_3" data-rule-minlength="1" style="width:100%">
+                            <span asp-validation-for="@Model.txtFIELD7_1_3" class="label label-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtFIED_7_Comments"><span class="field-name">Comments </span></label>
+                            <textarea class="form-control" id="txtFIED_7_Comments" name="txtFIED_7_Comments" type="text" asp-for="@Model.txtFIED_7_Comments" autocomplete="txtFIED_7_Comments" data-rule-minlength="2" data-rule-maxlength="2000" style="width:100%" multiple="true" rows="4">
+                            </textarea>
+                            <span asp-validation-for="@Model.txtFIED_7_Comments" class="label label-danger"></span>
+                        </div>
+                    </fieldset>
+                </section>
+            </details>
+
+            <details class="mrgn-tp-lg section-color" open>
+                <summary>
+                    8. Decision Timeframes
+                </summary>
+                <section class="center">
+                    <fieldset>
+                        <div class="form-group">
+                            <label for="txtFIELD8_1"><span class="field-name">8.1 Decisions rendered < 6 months </span></label>
+                            <input class="form-control" id="txtFIELD8_1" name="txtFIELD8_1" type="number" asp-for="@Model.txtFIELD8_1" autocomplete="txtFIELD8_1" data-rule-minlength="1" style="width:100%">
+                            <span asp-validation-for="@Model.txtFIELD8_1" class="label label-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtFIELD8_2"><span class="field-name">8.2 Decisions rendered 6-12 months</span></label>
+                            <input class="form-control" id="txtFIELD8_2" name="txtFIELD8_2" type="number" asp-for="@Model.txtFIELD8_2" autocomplete="txtFIELD8_2" data-rule-minlength="1" style="width:100%">
+                            <span asp-validation-for="@Model.txtFIELD8_2" class="label label-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtFIELD8_3"><span class="field-name">8.3 Decisions rendered > 12 months</span></label>
+                            <input class="form-control" id="txtFIELD8_3" name="txtFIELD8_3" type="number" asp-for="@Model.txtFIELD8_3" autocomplete="txtFIELD8_3" data-rule-minlength="1" style="width:100%">
+                            <span asp-validation-for="@Model.txtFIELD8_3" class="label label-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtFIED_7_Comments"><span class="field-name">Comments </span></label>
+                            <textarea class="form-control" id="txtFIED_8_Comments" name="txtFIED_7_Comments" type="text" asp-for="@Model.txtFIED_8_Comments" autocomplete="txtFIED_8_Comments" data-rule-minlength="2" data-rule-maxlength="2000" style="width:100%" multiple="true" rows="4">
+                            </textarea>
+                            <span asp-validation-for="@Model.txtFIED_8_Comments" class="label label-danger"></span>
+                        </div>
+                    </fieldset>
+                </section>
+            </details>
+
+            <details class="mrgn-tp-lg section-color" open>
+                <summary>
+                    9. Panel Compositions
+                </summary>
+                <section class="center">
+                    <fieldset>
+                        <div class="form-group">
+                            <label for="txtFIELD9_1"><span class="field-name">9.1 3-member panel hearings</span></label>
+                            <input class="form-control" id="txtFIELD9_1" name="txtFIELD9_1" type="number" asp-for="@Model.txtFIELD9_1" autocomplete="txtFIELD9_1" data-rule-minlength="1" style="width:100%">
+                            <span asp-validation-for="@Model.txtFIELD9_1" class="label label-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtFIELD9_2"><span class="field-name">9.2 5-member panel hearings</span></label>
+                            <input class="form-control" id="txtFIELD9_2" name="txtFIELD9_2" type="number" asp-for="@Model.txtFIELD9_2" autocomplete="txtFIELD9_2" data-rule-minlength="1" style="width:100%">
+                            <span asp-validation-for="@Model.txtFIELD8_2" class="label label-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtFIED_9_Comments"><span class="field-name">Comments </span></label>
+                            <textarea class="form-control" id="txtFIED_9_Comments" name="txtFIED_9_Comments" type="text" asp-for="@Model.txtFIED_9_Comments" autocomplete="txtFIED_9_Comments" data-rule-minlength="2" data-rule-maxlength="2000" style="width:100%" multiple="true" rows="4">
+                            </textarea>
+                            <span asp-validation-for="@Model.txtFIED_9_Comments" class="label label-danger"></span>
+                        </div>
+                    </fieldset>
+                </section>
+            </details>
+
+            <details class="mrgn-tp-lg section-color" open>
+                <summary>
+                    10. Pending Cases
+                </summary>
+                <section class="center">
+                    <fieldset>
+                        <div class="form-group">
+                            <label for="txtFIELD10_1"><span class="field-name">10.1 Appeals/reviews pending as of Dec 31</span></label>
+                            <input class="form-control" id="txtFIELD10_1" name="txtFIELD10_1" type="number" asp-for="@Model.txtFIELD10_1" autocomplete="txtFIELD10_1" data-rule-minlength="1" style="width:100%">
+                            <span asp-validation-for="@Model.txtFIELD10_1" class="label label-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtFIED_10_Comments"><span class="field-name">Comments </span></label>
+                            <textarea class="form-control" id="txtFIED_10_Comments" name="txtFIED_10_Comments" type="text" asp-for="@Model.txtFIED_10_Comments" autocomplete="txtFIED_10_Comments" data-rule-minlength="2" data-rule-maxlength="2000" style="width:100%" multiple="true" rows="4">
+                            </textarea>
+                            <span asp-validation-for="@Model.txtFIED_10_Comments" class="label label-danger"></span>
+                        </div>
+                    </fieldset>
+                </section>
+            </details>
+
+            <details class="mrgn-tp-lg section-color" open>
+                <summary>
+                    11. Judges
+                </summary>
+                <section class="center">
+                    <fieldset>
+                        <div class="form-group">
+                            <label for="txtFIELD11_1"><span class="field-name">11.1 Number of regular judges</span></label>
+                            <input class="form-control" id="txtFIELD11_1" name="txtFIELD11_1" type="number" asp-for="@Model.txtFIELD11_1" autocomplete="txtFIELD11_1" data-rule-minlength="1" style="width:100%">
+                            <span asp-validation-for="@Model.txtFIELD11_1" class="label label-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtFIELD11_2"><span class="field-name">11.2 Number of supernumerary judges</span></label>
+                            <input class="form-control" id="txtFIELD11_2" name="txtFIELD11_2" type="number" asp-for="@Model.txtFIELD11_2" autocomplete="txtFIELD11_2" data-rule-minlength="1" style="width:100%">
+                            <span asp-validation-for="@Model.txtFIELD11_2" class="label label-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtFIED_11_Comments"><span class="field-name">Comments </span></label>
+                            <textarea class="form-control" id="txtFIED_11_Comments" name="txtFIED_11_Comments" type="text" asp-for="@Model.txtFIED_11_Comments" autocomplete="txtFIED_11_Comments" data-rule-minlength="2" data-rule-maxlength="2000" style="width:100%" multiple="true" rows="4">
+                            </textarea>
+                            <span asp-validation-for="@Model.txtFIED_11_Comments" class="label label-danger"></span>
+                        </div>
+                    </fieldset>
+                </section>
+            </details>
+
             <div>
                 <button class="btn btn-primary" type="submit">@localizer["Review"]</button>
                 <span>
