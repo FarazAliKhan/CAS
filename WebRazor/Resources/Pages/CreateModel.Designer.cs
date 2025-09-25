@@ -70,6 +70,15 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Court is required.
+        /// </summary>
+        public static string CourtRequired {
+            get {
+                return ResourceManager.GetString("CourtRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Create.
         /// </summary>
         public static string Create {
@@ -124,6 +133,15 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to From Date is Required.
+        /// </summary>
+        public static string FromDateRequired {
+            get {
+                return ResourceManager.GetString("FromDateRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Home.
         /// </summary>
         public static string Home {
@@ -160,6 +178,15 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Reporting Year is required.
+        /// </summary>
+        public static string ReportingYearRequired {
+            get {
+                return ResourceManager.GetString("ReportingYearRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Review.
         /// </summary>
         public static string Review {
@@ -174,6 +201,15 @@ namespace WebRazor.Resources.Pages {
         public static string Select {
             get {
                 return ResourceManager.GetString("Select", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to To Date is required.
+        /// </summary>
+        public static string ToDateRequired {
+            get {
+                return ResourceManager.GetString("ToDateRequired", resourceCulture);
             }
         }
     }
