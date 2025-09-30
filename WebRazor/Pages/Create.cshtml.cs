@@ -1,14 +1,18 @@
 using BusinessLayer.DTOs;
+using Microsoft.AspNetCore.Components;
+using Microsoft.AspNetCore.Components.Forms;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Localization;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Localization;
+using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using SmartBreadcrumbs.Attributes;
 using System;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.IO;
 using System.Runtime.Versioning;
 using System.Security.AccessControl;
 using System.Text;
@@ -89,6 +93,10 @@ namespace WebRazor.Pages
         [BindProperty]
         public string? sectId { get; set; }
 
+        private long maxFileSize = 1024;// * 10;
+        [BindProperty]
+        public IFormFile? Upload { get; set; }
+
         //public CreateModel() { 
         //}
 
@@ -97,6 +105,15 @@ namespace WebRazor.Pages
         }
 
         public IActionResult OnPost() {
+            if (Upload != null) { 
+                if(Upload.Length > maxFileSize)
+                {
+                    ModelState.Clear();
+                    ModelState.AddModelError("FileUpload", "File size should be less than 10 MB");
+                    return Page();
+                }
+            }
+
             if (!ModelState.IsValid)
                 return Page();
             var createItem = new CASEntityCreate()
@@ -212,6 +229,26 @@ namespace WebRazor.Pages
             txtFIED_11_Comments = (string?)TempData["txtFIED_11_Comments"];
 
             sectId = (string?)TempData["sectionId"];
+        }
+
+        public IActionResult LoadFiles(InputFileChangeEventArgs e)
+        {
+            try
+            {
+                IBrowserFile file = e.File;
+                if (file != null) { 
+                    if(file?.Size > maxFileSize)
+                    {
+
+                        return Page();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            return Page();
         }
     }
 }

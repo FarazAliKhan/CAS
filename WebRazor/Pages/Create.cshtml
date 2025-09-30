@@ -37,11 +37,9 @@
 <section>
     <div class="text-center"><h1>CAACS</h1></div> <div class="text-center"><h4>Court of Appeal Annual Case Statistics Data Entry Form</h4></div>
     <div class="wb-frmvld">
-        <form method="post" id="createForm">
-            <input type="hidden" id="sectionId" asp-for="@Model.sectId">
-            @if (!ViewData.ModelState.IsValid)
-            {
-                @* <div class="alert alert-danger" role="alert">
+        @if (!ViewData.ModelState.IsValid)
+        {
+            @* <div class="alert alert-danger" role="alert">
                             <div class="error-color">
                                 <p class="span-break"><span asp-validation-for="@Model.firstName" class="label label-danger"></span></p>
                                 <p class="span-break"><span asp-validation-for="@Model.lastName" class="label label-danger"></span></p>
@@ -49,14 +47,41 @@
                             </div>
                         </div> *@
 
-                <div class="bg-danger">
-                    <div class="alert alert-danger" role="alert">
-                        <br />
-                        @Html.ValidationSummary(false, localizer["ErrorText"])
-                    </div>
+            <div class="bg-danger">
+                <div class="alert alert-danger" role="alert">
+                    <br />
+                    @Html.ValidationSummary(false, localizer["ErrorText"])
                 </div>
-            }
+            </div>
+        }
 
+        <form method="post" enctype="multipart/form-data">
+            <details class="mrgn-tp-lg section-color" open>
+                <summary>
+                    File Upload
+                </summary>
+                <section class="center">
+                    <fieldset>
+                        <div class="row col-md-12">
+                            <div class="row">
+                                <div class="form-group col-md-12">
+                                    <span class="col-md-3">
+                                        <input type="file" asp-for="Upload" />
+                                    </span>
+                                    <span class="col-md-9">
+                                        <input type="submit" value="Upload" />
+                                    </span>
+                                    <span asp-validation-for="@Model.Upload" class="label label-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </section>
+            </details>
+        </form>
+
+        <form method="post" id="createForm">
+            <input type="hidden" id="sectionId" asp-for="@Model.sectId">
             <details class="mrgn-tp-lg section-color" open>
                 <summary>
                     Basic Information
