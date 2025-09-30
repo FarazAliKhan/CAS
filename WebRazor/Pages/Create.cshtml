@@ -195,6 +195,610 @@
 
             <details class="mrgn-tp-lg section-color" open>
                 <summary>
+                    2. Decisions
+                </summary>
+                <section class="center">
+                    <fieldset>
+                        <div class="row col-md-12">
+                            <div class="form-group col-md-12">
+                                <label for="txtFIELD1_1_1"><span class="field-name">2.1.1 Civil decisions given at hearing (Bench). </span></label>
+                                <span data-tooltip="Number of civil case decisions given at hearing – A decision given at hearing (also referred to as Bench decision) is a decision that is rendered immediately after the hearing, the same day of the hearing or during the same sitting week. If a decision is given at the hearing but the reasons follow the pronouncement, which means that the reasons are not  provided immediately after the hearing, on the same day of the hearing or on the same sitting week of the hearing, this decision should be counted as a reserved judgment."></i></span>
+                                <input class="form-control" id="txtFIELD1_1_1" name="txtFIELD1_1_1" type="number" asp-for="@Model.txtFIELD1_1_1" autocomplete="txtFIELD1_1_1" data-rule-minlength="1" style="width:100%">
+                                <span asp-validation-for="@Model.txtFIELD1_1_1" class="label label-danger"></span>
+                            </div>
+                        </div>
+                        <div class="row col-md-12">
+                            <div class="form-group col-md-12">
+                                <label for="txtFIELD1_1_2"><span class="field-name">2.1.2 Civil case reserved decisions.  </span></label>
+                                <span data-tooltip="Number of civil case reserved decisions – A decision given after reserving"></i></span>
+                                <input class="form-control" id="txtFIELD1_1_2" name="txtFIELD1_1_2" type="number" asp-for="@Model.txtFIELD1_1_2" autocomplete="txtFIELD1_1_2" data-rule-minlength="1" style="width:100%">
+                                <span asp-validation-for="@Model.txtFIELD1_1_2" class="label label-danger"></span>
+                            </div>
+                        </div>
+                        <div class="row col-md-12">
+                            <div class="form-group col-md-12">
+                                <label for="txtFIELD1_1_3"><span class="field-name">2.2.1.1 Criminal convictions/acquittals at hearing </span></label>
+                                <span data-tooltip="Number of civil appeals, cross-appeals, references, and JRs disposed of by judgment."><i class="fa-solid fa-circle-info"></i></span>
+                                <input class="form-control" id="txtFIELD1_1_3" name="txtFIELD1_1_3" type="number" asp-for="@Model.txtFIELD1_1_3" autocomplete="txtFIELD1_1_3" data-rule-minlength="1" style="width:100%">
+                                <span asp-validation-for="@Model.txtFIELD1_1_3" class="label label-danger"></span>
+                            </div>
+                        </div>
+                        <div class="row col-md-12">
+                            <div class="form-group col-md-12">
+                                <label for="txtFIELD1_1_4"><span class="field-name">2.2.1.2 Criminal sentences at hearing </span></label>
+                                <span data-tooltip="Number of civil appeals, cross-appeals, references, and JRs disposed of by the registrar, the case management officer or authorized personnel or by operation of the rules. The civil appeals, cross-appeals, references, and JRs disposed of by the registrar take into account the certificates of lapse of appeal issued by the registry."><i class="fa-solid fa-circle-info"></i></span>
+                                <input class="form-control" id="txtFIELD1_1_4" name="txtFIELD1_1_4" type="number" asp-for="@Model.txtFIELD1_1_4" autocomplete="txtFIELD1_1_4" data-rule-minlength="1" style="width:100%">
+                                <span asp-validation-for="@Model.txtFIELD1_1_4" class="label label-danger"></span>
+                            </div>
+                        </div>
+                        <div class="row col-md-12">
+                            <div class="form-group col-md-12">
+                                <label for="txtFIELD1_1_5"><span class="field-name">2.2.1.3 Other criminal decisions at hearing </span></label>
+                                <span data-tooltip="Number of civil appeals, cross-appeals, references, and JRs settled by judicial mediation. To be included in this category, the settlement must have taken place at the time of judicial mediation and can include settlement, abandonment or withdrawal of the appeal at that time."><i class="fa-solid fa-circle-info"></i></span>
+                                <input class="form-control" id="txtFIELD1_1_5" name="txtFIELD1_1_5" type="number" asp-for="@Model.txtFIELD1_1_5" autocomplete="txtFIELD1_1_5" data-rule-minlength="1" style="width:100%">
+                                <span asp-validation-for="@Model.txtFIELD1_1_5" class="label label-danger"></span>
+                            </div>
+                        </div>
+                        <div class="row col-md-12">
+                            <div class="form-group col-md-12">
+                                <label for="txtFIELD1_1_6"><span class="field-name">2.2.2.1 Criminal convictions/acquittals after reserving </span></label>
+                                <span data-tooltip="Number of civil appeals, cross-appeals, references, and JRs disposed of by other means – These appeals, cross-appeals, references, and JRs are to include those that are abandoned, withdrawn, dismissed for want of prosecution, non-compliance with rules, dispositions by a single judge, etc. The civil appeals, cross-appeals, references, and JRs abandoned or withdrawn by the registrar take into account the certificates of lapse of appeal issued by the registry."><i class="fa-solid fa-circle-info"></i></span>
+                                <input class="form-control" id="txtFIELD1_1_6" name="txtFIELD1_1_6" type="number" asp-for="@Model.txtFIELD1_1_6" autocomplete="txtFIELD1_1_6" data-rule-minlength="1" style="width:100%">
+                                <span asp-validation-for="@Model.txtFIELD1_1_6" class="label label-danger"></span>
+                            </div>
+                        </div>
+                        <div class="row col-md-12">
+                            <div class="form-group col-md-12">
+                                <label for="txtFIELD1_1_7"><span class="field-name">2.2.2.2 Criminal sentences after reserving </span></label>
+                                <span data-tooltip="Total number of civil appeals, cross-appeals, references, and JRs: Previous year civil appeals, cross-appeals, references and JRs filed but still pending as of December 31st of the previous year (1.1.1) plus new civil appeals, cross-appeals, references, and JRs filed (1.1.2) minus total number of civil appeals, cross-appeals, references, and JRs disposed of, settled by mediation, abandoned or withdrawn (1.1.3 to 1.1.6) = net civil appeals, cross-appeals, references, and JRs for the year."><i class="fa-solid fa-circle-info"></i></span>
+                                <input class="form-control" id="txtFIELD1_1_7" name="txtFIELD1_1_7" type="number" asp-for="@Model.txtFIELD1_1_7" autocomplete="txtFIELD1_1_7" data-rule-minlength="1" style="width:100%">
+                                <span asp-validation-for="@Model.txtFIELD1_1_3" class="label label-danger"></span>
+                            </div>
+                        </div>
+                        <div class="row col-md-12">
+                            <div class="form-group col-md-12">
+                                <label for="txtFIELD1_1_7"><span class="field-name">2.2.2.3 Other criminal decisions after reserving  </span></label>
+                                <span data-tooltip="Total number of civil appeals, cross-appeals, references, and JRs: Previous year civil appeals, cross-appeals, references and JRs filed but still pending as of December 31st of the previous year (1.1.1) plus new civil appeals, cross-appeals, references, and JRs filed (1.1.2) minus total number of civil appeals, cross-appeals, references, and JRs disposed of, settled by mediation, abandoned or withdrawn (1.1.3 to 1.1.6) = net civil appeals, cross-appeals, references, and JRs for the year."><i class="fa-solid fa-circle-info"></i></span>
+                                <input class="form-control" id="txtFIELD1_1_7" name="txtFIELD1_1_7" type="number" asp-for="@Model.txtFIELD1_1_7" autocomplete="txtFIELD1_1_7" data-rule-minlength="1" style="width:100%">
+                                <span asp-validation-for="@Model.txtFIELD1_1_3" class="label label-danger"></span>
+                            </div>
+                        </div>
+                        <div class="row col-md-12">
+                            <div class="form-group col-md-12">
+                                <label for="txtFIED_1_Comments"><span class="field-name">Comments </span></label>
+                                <textarea class="form-control" id="txtFIED_1_Comments" name="txtFIED_1_Comments" type="text" asp-for="@Model.txtFIED_1_Comments" autocomplete="txtFIED_1_Comments" data-rule-minlength="2" data-rule-maxlength="2000" style="width:100%" multiple="true" rows="4">
+                                </textarea>
+                                <span asp-validation-for="@Model.txtFIELD1_1_3" class="label label-danger"></span>
+                            </div>
+                        </div>
+                    </fieldset>
+                </section>
+            </details>
+
+            <details class="mrgn-tp-lg section-color" open>
+                <summary>
+                    3. Total Decisions
+                </summary>
+                <section class="center">
+                    <fieldset>
+                        <div class="row col-md-12">
+                            <div class="form-group col-md-12">
+                                <label for="txtFIELD1_1_1"><span class="field-name">3.1 Total Bench decisions/judgments </span></label>
+                                <span data-tooltip="Number of civil case decisions given at hearing – A decision given at hearing (also referred to as Bench decision) is a decision that is rendered immediately after the hearing, the same day of the hearing or during the same sitting week. If a decision is given at the hearing but the reasons follow the pronouncement, which means that the reasons are not  provided immediately after the hearing, on the same day of the hearing or on the same sitting week of the hearing, this decision should be counted as a reserved judgment."></i></span>
+                                <input class="form-control" id="txtFIELD1_1_1" name="txtFIELD1_1_1" type="number" asp-for="@Model.txtFIELD1_1_1" autocomplete="txtFIELD1_1_1" data-rule-minlength="1" style="width:100%">
+                                <span asp-validation-for="@Model.txtFIELD1_1_1" class="label label-danger"></span>
+                            </div>
+                        </div>
+                        <div class="row col-md-12">
+                            <div class="form-group col-md-12">
+                                <label for="txtFIELD1_1_2"><span class="field-name">3.2 Total reserved decisions/judgments  </span></label>
+                                <span data-tooltip="Number of civil case reserved decisions – A decision given after reserving"></i></span>
+                                <input class="form-control" id="txtFIELD1_1_2" name="txtFIELD1_1_2" type="number" asp-for="@Model.txtFIELD1_1_2" autocomplete="txtFIELD1_1_2" data-rule-minlength="1" style="width:100%">
+                                <span asp-validation-for="@Model.txtFIELD1_1_2" class="label label-danger"></span>
+                            </div>
+                        </div>
+                                   <div class="row col-md-12">
+                            <div class="form-group col-md-12">
+                                <label for="txtFIED_1_Comments"><span class="field-name">Comments </span></label>
+                                <textarea class="form-control" id="txtFIED_1_Comments" name="txtFIED_1_Comments" type="text" asp-for="@Model.txtFIED_1_Comments" autocomplete="txtFIED_1_Comments" data-rule-minlength="2" data-rule-maxlength="2000" style="width:100%" multiple="true" rows="4">
+                                </textarea>
+                                <span asp-validation-for="@Model.txtFIELD1_1_3" class="label label-danger"></span>
+                            </div>
+                        </div>
+                    </fieldset>
+                </section>
+            </details>
+
+            <details class="mrgn-tp-lg section-color" open>
+                <summary>
+                    4. Time Intervals
+                </summary>
+                <section class="center">
+                    <fieldset>
+                        <div class="row col-md-12">
+                            <div class="form-group col-md-12">
+                                <label for="txtFIELD1_1_1"><span class="field-name">4.1.1 Civil: Notice to factum < 6 months  </span></label>
+                                <span data-tooltip="Number of civil case decisions given at hearing – A decision given at hearing (also referred to as Bench decision) is a decision that is rendered immediately after the hearing, the same day of the hearing or during the same sitting week. If a decision is given at the hearing but the reasons follow the pronouncement, which means that the reasons are not  provided immediately after the hearing, on the same day of the hearing or on the same sitting week of the hearing, this decision should be counted as a reserved judgment."></i></span>
+                                <input class="form-control" id="txtFIELD1_1_1" name="txtFIELD1_1_1" type="number" asp-for="@Model.txtFIELD1_1_1" autocomplete="txtFIELD1_1_1" data-rule-minlength="1" style="width:100%">
+                                <span asp-validation-for="@Model.txtFIELD1_1_1" class="label label-danger"></span>
+                            </div>
+                        </div>
+                        <div class="row col-md-12">
+                            <div class="form-group col-md-12">
+                                <label for="txtFIELD1_1_2"><span class="field-name">4.1.2 Civil: Notice to factum 6-12 months  </span></label>
+                                <span data-tooltip="Number of civil case reserved decisions – A decision given after reserving"></i></span>
+                                <input class="form-control" id="txtFIELD1_1_2" name="txtFIELD1_1_2" type="number" asp-for="@Model.txtFIELD1_1_2" autocomplete="txtFIELD1_1_2" data-rule-minlength="1" style="width:100%">
+                                <span asp-validation-for="@Model.txtFIELD1_1_2" class="label label-danger"></span>
+                            </div>
+                        </div>
+                          <div class="row col-md-12">
+                            <div class="form-group col-md-12">
+                                <label for="txtFIELD1_1_2"><span class="field-name"> 4.1.3 Civil: Notice to factum> 12 months  </span></label>
+                                <span data-tooltip="Number of civil case reserved decisions – A decision given after reserving"></i></span>
+                                <input class="form-control" id="txtFIELD1_1_2" name="txtFIELD1_1_2" type="number" asp-for="@Model.txtFIELD1_1_2" autocomplete="txtFIELD1_1_2" data-rule-minlength="1" style="width:100%">
+                                <span asp-validation-for="@Model.txtFIELD1_1_2" class="label label-danger"></span>
+                            </div>
+                        </div>
+                          <div class="row col-md-12">
+                            <div class="form-group col-md-12">
+                                <label for="txtFIELD1_1_2"><span class="field-name">4.1.4.1 Criminal Conv/Acq: Notice to factum < 6 months  </span></label>
+                                <span data-tooltip="Number of civil case reserved decisions – A decision given after reserving"></i></span>
+                                <input class="form-control" id="txtFIELD1_1_2" name="txtFIELD1_1_2" type="number" asp-for="@Model.txtFIELD1_1_2" autocomplete="txtFIELD1_1_2" data-rule-minlength="1" style="width:100%">
+                                <span asp-validation-for="@Model.txtFIELD1_1_2" class="label label-danger"></span>
+                            </div>
+                        </div>
+                          <div class="row col-md-12">
+                            <div class="form-group col-md-12">
+                                <label for="txtFIELD1_1_2"><span class="field-name">4.1.4.2 Criminal Sentence: Notice to factum < 6 months  </span></label>
+                                <span data-tooltip="Number of civil case reserved decisions – A decision given after reserving"></i></span>
+                                <input class="form-control" id="txtFIELD1_1_2" name="txtFIELD1_1_2" type="number" asp-for="@Model.txtFIELD1_1_2" autocomplete="txtFIELD1_1_2" data-rule-minlength="1" style="width:100%">
+                                <span asp-validation-for="@Model.txtFIELD1_1_2" class="label label-danger"></span>
+                            </div>
+                        </div>
+                          <div class="row col-md-12">
+                            <div class="form-group col-md-12">
+                                <label for="txtFIELD1_1_2"><span class="field-name">4.1.4.3 Criminal Other: Notice to factum < 6 months  </span></label>
+                                <span data-tooltip="Number of civil case reserved decisions – A decision given after reserving"></i></span>
+                                <input class="form-control" id="txtFIELD1_1_2" name="txtFIELD1_1_2" type="number" asp-for="@Model.txtFIELD1_1_2" autocomplete="txtFIELD1_1_2" data-rule-minlength="1" style="width:100%">
+                                <span asp-validation-for="@Model.txtFIELD1_1_2" class="label label-danger"></span>
+                            </div>
+                        </div>
+                        <div class="row col-md-12">
+                            <div class="form-group col-md-12">
+                                <label for="txtFIELD1_1_2"><span class="field-name">4.1.5.1 Criminal Conv/Acq: Notice to factum 6-12 months  </span></label>
+                                <span data-tooltip="Number of civil case reserved decisions – A decision given after reserving"></i></span>
+                                <input class="form-control" id="txtFIELD1_1_2" name="txtFIELD1_1_2" type="number" asp-for="@Model.txtFIELD1_1_2" autocomplete="txtFIELD1_1_2" data-rule-minlength="1" style="width:100%">
+                                <span asp-validation-for="@Model.txtFIELD1_1_2" class="label label-danger"></span>
+                            </div>
+                        </div>
+                         <div class="row col-md-12">
+                            <div class="form-group col-md-12">
+                                <label for="txtFIELD1_1_2">
+                                    <span class="field-name">
+                                        4.1.5.2 Criminal Sentence: Notice to factum 6-12 months
+                                    </span>
+                                </label>
+                                <span data-tooltip="Number of civil case reserved decisions – A decision given after reserving"></i></span>
+                                <input class="form-control" id="txtFIELD1_1_2" name="txtFIELD1_1_2" type="number" asp-for="@Model.txtFIELD1_1_2" autocomplete="txtFIELD1_1_2" data-rule-minlength="1" style="width:100%">
+                                <span asp-validation-for="@Model.txtFIELD1_1_2" class="label label-danger"></span>
+                            </div>
+                        </div>
+                         <div class="row col-md-12">
+                            <div class="form-group col-md-12">
+                                <label for="txtFIELD1_1_2">
+                                    <span class="field-name">
+                                        4.1.5.3 Criminal Other: Notice to factum 6-12 months
+                                    </span>
+                                </label>
+                                <span data-tooltip="Number of civil case reserved decisions – A decision given after reserving"></i></span>
+                                <input class="form-control" id="txtFIELD1_1_2" name="txtFIELD1_1_2" type="number" asp-for="@Model.txtFIELD1_1_2" autocomplete="txtFIELD1_1_2" data-rule-minlength="1" style="width:100%">
+                                <span asp-validation-for="@Model.txtFIELD1_1_2" class="label label-danger"></span>
+                            </div>
+                        </div>
+                         <div class="row col-md-12">
+                            <div class="form-group col-md-12">
+                                <label for="txtFIELD1_1_2"><span class="field-name">4.1.6.1 Criminal Conv/Acq: Notice to factum > 12 months  </span></label>
+                                <span data-tooltip="Number of civil case reserved decisions – A decision given after reserving"></i></span>
+                                <input class="form-control" id="txtFIELD1_1_2" name="txtFIELD1_1_2" type="number" asp-for="@Model.txtFIELD1_1_2" autocomplete="txtFIELD1_1_2" data-rule-minlength="1" style="width:100%">
+                                <span asp-validation-for="@Model.txtFIELD1_1_2" class="label label-danger"></span>
+                            </div>
+                        </div>
+                         <div class="row col-md-12">
+                            <div class="form-group col-md-12">
+                                <label for="txtFIELD1_1_2"><span class="field-name">4.1.6.2 Criminal Sentence: Notice to factum > 12 months  </span></label>
+                                <span data-tooltip="Number of civil case reserved decisions – A decision given after reserving"></i></span>
+                                <input class="form-control" id="txtFIELD1_1_2" name="txtFIELD1_1_2" type="number" asp-for="@Model.txtFIELD1_1_2" autocomplete="txtFIELD1_1_2" data-rule-minlength="1" style="width:100%">
+                                <span asp-validation-for="@Model.txtFIELD1_1_2" class="label label-danger"></span>
+                            </div>
+                        </div>
+                        <div class="row col-md-12">
+                            <div class="form-group col-md-12">
+                                <label for="txtFIELD1_1_2"><span class="field-name">4.1.6.3 Criminal Other: Notice to factum > 12 months  </span></label>
+                                <span data-tooltip="Number of civil case reserved decisions – A decision given after reserving"></i></span>
+                                <input class="form-control" id="txtFIELD1_1_2" name="txtFIELD1_1_2" type="number" asp-for="@Model.txtFIELD1_1_2" autocomplete="txtFIELD1_1_2" data-rule-minlength="1" style="width:100%">
+                                <span asp-validation-for="@Model.txtFIELD1_1_2" class="label label-danger"></span>
+                            </div>
+                        </div>
+                         <div class="row col-md-12">
+                            <div class="form-group col-md-12">
+                                <label for="txtFIELD1_1_2"><span class="field-name">4.2.1 Civil: Factum to hearing < 6 months   </span></label>
+                                <span data-tooltip="Number of civil case reserved decisions – A decision given after reserving"></i></span>
+                                <input class="form-control" id="txtFIELD1_1_2" name="txtFIELD1_1_2" type="number" asp-for="@Model.txtFIELD1_1_2" autocomplete="txtFIELD1_1_2" data-rule-minlength="1" style="width:100%">
+                                <span asp-validation-for="@Model.txtFIELD1_1_2" class="label label-danger"></span>
+                            </div>
+                        </div>
+                         <div class="row col-md-12">
+                            <div class="form-group col-md-12">
+                                <label for="txtFIELD1_1_2"><span class="field-name">4.2.2 Civil: Factum to hearing 6-12 months  </span></label>
+                                <span data-tooltip="Number of civil case reserved decisions – A decision given after reserving"></i></span>
+                                <input class="form-control" id="txtFIELD1_1_2" name="txtFIELD1_1_2" type="number" asp-for="@Model.txtFIELD1_1_2" autocomplete="txtFIELD1_1_2" data-rule-minlength="1" style="width:100%">
+                                <span asp-validation-for="@Model.txtFIELD1_1_2" class="label label-danger"></span>
+                            </div>
+                        </div>
+                         <div class="row col-md-12">
+                            <div class="form-group col-md-12">
+                                <label for="txtFIELD1_1_2"><span class="field-name">4.2.3 Civil: Factum to hearing > 12 months  </span></label>
+                                <span data-tooltip="Number of civil case reserved decisions – A decision given after reserving"></i></span>
+                                <input class="form-control" id="txtFIELD1_1_2" name="txtFIELD1_1_2" type="number" asp-for="@Model.txtFIELD1_1_2" autocomplete="txtFIELD1_1_2" data-rule-minlength="1" style="width:100%">
+                                <span asp-validation-for="@Model.txtFIELD1_1_2" class="label label-danger"></span>
+                            </div>
+                        </div>
+                         <div class="row col-md-12">
+                            <div class="form-group col-md-12">
+                                <label for="txtFIELD1_1_2"><span class="field-name">4.2.4.1 Criminal Conv/Acq: Factum to hearing < 6 months  </span></label>
+                                <span data-tooltip="Number of civil case reserved decisions – A decision given after reserving"></i></span>
+                                <input class="form-control" id="txtFIELD1_1_2" name="txtFIELD1_1_2" type="number" asp-for="@Model.txtFIELD1_1_2" autocomplete="txtFIELD1_1_2" data-rule-minlength="1" style="width:100%">
+                                <span asp-validation-for="@Model.txtFIELD1_1_2" class="label label-danger"></span>
+                            </div>
+                        </div>
+                         <div class="row col-md-12">
+                            <div class="form-group col-md-12">
+                                <label for="txtFIELD1_1_2"><span class="field-name">4.2.4.2 Criminal Sentence: Factum to hearing < 6 months  </span></label>
+                                <span data-tooltip="Number of civil case reserved decisions – A decision given after reserving"></i></span>
+                                <input class="form-control" id="txtFIELD1_1_2" name="txtFIELD1_1_2" type="number" asp-for="@Model.txtFIELD1_1_2" autocomplete="txtFIELD1_1_2" data-rule-minlength="1" style="width:100%">
+                                <span asp-validation-for="@Model.txtFIELD1_1_2" class="label label-danger"></span>
+                            </div>
+                        </div>
+                        <div class="row col-md-12">
+                            <div class="form-group col-md-12">
+                                <label for="txtFIELD1_1_2"><span class="field-name">4.2.4.3 Criminal Other: Factum to hearing < 6 months  </span></label>
+                                <span data-tooltip="Number of civil case reserved decisions – A decision given after reserving"></i></span>
+                                <input class="form-control" id="txtFIELD1_1_2" name="txtFIELD1_1_2" type="number" asp-for="@Model.txtFIELD1_1_2" autocomplete="txtFIELD1_1_2" data-rule-minlength="1" style="width:100%">
+                                <span asp-validation-for="@Model.txtFIELD1_1_2" class="label label-danger"></span>
+                            </div>
+                        </div>
+                         <div class="row col-md-12">
+                            <div class="form-group col-md-12">
+                                <label for="txtFIELD1_1_2"><span class="field-name">4.2.5.1 Criminal Conv/Acq: Factum to hearing 6-12 months  </span></label>
+                                <span data-tooltip="Number of civil case reserved decisions – A decision given after reserving"></i></span>
+                                <input class="form-control" id="txtFIELD1_1_2" name="txtFIELD1_1_2" type="number" asp-for="@Model.txtFIELD1_1_2" autocomplete="txtFIELD1_1_2" data-rule-minlength="1" style="width:100%">
+                                <span asp-validation-for="@Model.txtFIELD1_1_2" class="label label-danger"></span>
+                            </div>
+                        </div>
+                         <div class="row col-md-12">
+                            <div class="form-group col-md-12">
+                                <label for="txtFIELD1_1_2">
+                                    <span class="field-name">
+                                        4.2.5.2 Criminal Sentence: Factum to hearing 6-12 months
+                                    </span>
+                                </label>
+                                <span data-tooltip="Number of civil case reserved decisions – A decision given after reserving"></i></span>
+                                <input class="form-control" id="txtFIELD1_1_2" name="txtFIELD1_1_2" type="number" asp-for="@Model.txtFIELD1_1_2" autocomplete="txtFIELD1_1_2" data-rule-minlength="1" style="width:100%">
+                                <span asp-validation-for="@Model.txtFIELD1_1_2" class="label label-danger"></span>
+                            </div>
+                        </div>
+                         <div class="row col-md-12">
+                            <div class="form-group col-md-12">
+                                <label for="txtFIELD1_1_2"><span class="field-name">4.2.5.3 Criminal Other: Factum to hearing 6-12 months  </span></label>
+                                <span data-tooltip="Number of civil case reserved decisions – A decision given after reserving"></i></span>
+                                <input class="form-control" id="txtFIELD1_1_2" name="txtFIELD1_1_2" type="number" asp-for="@Model.txtFIELD1_1_2" autocomplete="txtFIELD1_1_2" data-rule-minlength="1" style="width:100%">
+                                <span asp-validation-for="@Model.txtFIELD1_1_2" class="label label-danger"></span>
+                            </div>
+                        </div>
+                        <div class="row col-md-12">
+                            <div class="form-group col-md-12">
+                                <label for="txtFIELD1_1_2"><span class="field-name">4.2.6.1 Criminal Conv/Acq: Factum to hearing > 12 months  </span></label>
+                                <span data-tooltip="Number of civil case reserved decisions – A decision given after reserving"></i></span>
+                                <input class="form-control" id="txtFIELD1_1_2" name="txtFIELD1_1_2" type="number" asp-for="@Model.txtFIELD1_1_2" autocomplete="txtFIELD1_1_2" data-rule-minlength="1" style="width:100%">
+                                <span asp-validation-for="@Model.txtFIELD1_1_2" class="label label-danger"></span>
+                            </div>
+                        </div>
+                         <div class="row col-md-12">
+                            <div class="form-group col-md-12">
+                                <label for="txtFIELD1_1_2">
+                                    <span class="field-name">
+                                        4.2.6.2 Criminal Sentence: Factum to hearing > 12 months
+                                    </span>
+                                </label>
+                                <span data-tooltip="Number of civil case reserved decisions – A decision given after reserving"></i></span>
+                                <input class="form-control" id="txtFIELD1_1_2" name="txtFIELD1_1_2" type="number" asp-for="@Model.txtFIELD1_1_2" autocomplete="txtFIELD1_1_2" data-rule-minlength="1" style="width:100%">
+                                <span asp-validation-for="@Model.txtFIELD1_1_2" class="label label-danger"></span>
+                            </div>
+                        </div>
+                         <div class="row col-md-12">
+                            <div class="form-group col-md-12">
+                                <label for="txtFIELD1_1_2">
+                                    <span class="field-name">
+                                        4.2.6.3 Criminal Other: Factum to hearing > 12 months
+                                    </span>
+                                </label>
+                                <span data-tooltip="Number of civil case reserved decisions – A decision given after reserving"></i></span>
+                                <input class="form-control" id="txtFIELD1_1_2" name="txtFIELD1_1_2" type="number" asp-for="@Model.txtFIELD1_1_2" autocomplete="txtFIELD1_1_2" data-rule-minlength="1" style="width:100%">
+                                <span asp-validation-for="@Model.txtFIELD1_1_2" class="label label-danger"></span>
+                            </div>
+                        </div>
+                         <div class="row col-md-12">
+                            <div class="form-group col-md-12">
+                                <label for="txtFIELD1_1_2"><span class="field-name">4.3.1 Civil: Hearing to decision < 6 months  </span></label>
+                                <span data-tooltip="Number of civil case reserved decisions – A decision given after reserving"></i></span>
+                                <input class="form-control" id="txtFIELD1_1_2" name="txtFIELD1_1_2" type="number" asp-for="@Model.txtFIELD1_1_2" autocomplete="txtFIELD1_1_2" data-rule-minlength="1" style="width:100%">
+                                <span asp-validation-for="@Model.txtFIELD1_1_2" class="label label-danger"></span>
+                            </div>
+                        </div>
+                        <div class="row col-md-12">
+                            <div class="form-group col-md-12">
+                                <label for="txtFIELD1_1_2"><span class="field-name">4.3.2 Civil: Hearing to decision 6-12 months  </span></label>
+                                <span data-tooltip="Number of civil case reserved decisions – A decision given after reserving"></i></span>
+                                <input class="form-control" id="txtFIELD1_1_2" name="txtFIELD1_1_2" type="number" asp-for="@Model.txtFIELD1_1_2" autocomplete="txtFIELD1_1_2" data-rule-minlength="1" style="width:100%">
+                                <span asp-validation-for="@Model.txtFIELD1_1_2" class="label label-danger"></span>
+                            </div>
+                        </div>
+                        <div class="row col-md-12">
+                            <div class="form-group col-md-12">
+                                <label for="txtFIELD1_1_2"><span class="field-name">4.3.3 Civil: Hearing to decision > 12 months   </span></label>
+                                <span data-tooltip="Number of civil case reserved decisions – A decision given after reserving"></i></span>
+                                <input class="form-control" id="txtFIELD1_1_2" name="txtFIELD1_1_2" type="number" asp-for="@Model.txtFIELD1_1_2" autocomplete="txtFIELD1_1_2" data-rule-minlength="1" style="width:100%">
+                                <span asp-validation-for="@Model.txtFIELD1_1_2" class="label label-danger"></span>
+                            </div>
+                        </div>
+                         <div class="row col-md-12">
+                            <div class="form-group col-md-12">
+                                <label for="txtFIELD1_1_2"><span class="field-name">4.3.4.1 Criminal Conv/Acq: Hearing to decision < 6 months  </span></label>
+                                <span data-tooltip="Number of civil case reserved decisions – A decision given after reserving"></i></span>
+                                <input class="form-control" id="txtFIELD1_1_2" name="txtFIELD1_1_2" type="number" asp-for="@Model.txtFIELD1_1_2" autocomplete="txtFIELD1_1_2" data-rule-minlength="1" style="width:100%">
+                                <span asp-validation-for="@Model.txtFIELD1_1_2" class="label label-danger"></span>
+                            </div>
+                        </div>
+                         <div class="row col-md-12">
+                            <div class="form-group col-md-12">
+                                <label for="txtFIELD1_1_2"><span class="field-name">4.3.4.2 Criminal Sentence: Hearing to decision < 6 months </span></label>
+                                <span data-tooltip="Number of civil case reserved decisions – A decision given after reserving"></i></span>
+                                <input class="form-control" id="txtFIELD1_1_2" name="txtFIELD1_1_2" type="number" asp-for="@Model.txtFIELD1_1_2" autocomplete="txtFIELD1_1_2" data-rule-minlength="1" style="width:100%">
+                                <span asp-validation-for="@Model.txtFIELD1_1_2" class="label label-danger"></span>
+                            </div>
+                        </div>
+                         <div class="row col-md-12">
+                            <div class="form-group col-md-12">
+                                <label for="txtFIELD1_1_2">
+                                    <span class="field-name">
+                                        4.3.4.3 Criminal Other: Hearing to decision < 6 months
+                                    </span>
+                                </label>
+                                <span data-tooltip="Number of civil case reserved decisions – A decision given after reserving"></i></span>
+                                <input class="form-control" id="txtFIELD1_1_2" name="txtFIELD1_1_2" type="number" asp-for="@Model.txtFIELD1_1_2" autocomplete="txtFIELD1_1_2" data-rule-minlength="1" style="width:100%">
+                                <span asp-validation-for="@Model.txtFIELD1_1_2" class="label label-danger"></span>
+                            </div>
+                        </div>
+                         <div class="row col-md-12">
+                            <div class="form-group col-md-12">
+                                <label for="txtFIELD1_1_2">
+                                    <span class="field-name">
+                                        4.3.5.1 Criminal Conv/Acq: Hearing to decision 6-12 months
+                                    </span>
+                                </label>
+                                <span data-tooltip="Number of civil case reserved decisions – A decision given after reserving"></i></span>
+                                <input class="form-control" id="txtFIELD1_1_2" name="txtFIELD1_1_2" type="number" asp-for="@Model.txtFIELD1_1_2" autocomplete="txtFIELD1_1_2" data-rule-minlength="1" style="width:100%">
+                                <span asp-validation-for="@Model.txtFIELD1_1_2" class="label label-danger"></span>
+                            </div>
+                        </div>
+                         <div class="row col-md-12">
+                            <div class="form-group col-md-12">
+                                <label for="txtFIELD1_1_2"><span class="field-name">4.3.5.2 Criminal Sentence: Hearing to decision 6-12 months  </span></label>
+                                <span data-tooltip="Number of civil case reserved decisions – A decision given after reserving"></i></span>
+                                <input class="form-control" id="txtFIELD1_1_2" name="txtFIELD1_1_2" type="number" asp-for="@Model.txtFIELD1_1_2" autocomplete="txtFIELD1_1_2" data-rule-minlength="1" style="width:100%">
+                                <span asp-validation-for="@Model.txtFIELD1_1_2" class="label label-danger"></span>
+                            </div>
+                        </div>
+                         <div class="row col-md-12">
+                            <div class="form-group col-md-12">
+                                <label for="txtFIELD1_1_2"><span class="field-name">4.3.5.3 Criminal Other: Hearing to decision 6-12 months </span></label>
+                                <span data-tooltip="Number of civil case reserved decisions – A decision given after reserving"></i></span>
+                                <input class="form-control" id="txtFIELD1_1_2" name="txtFIELD1_1_2" type="number" asp-for="@Model.txtFIELD1_1_2" autocomplete="txtFIELD1_1_2" data-rule-minlength="1" style="width:100%">
+                                <span asp-validation-for="@Model.txtFIELD1_1_2" class="label label-danger"></span>
+                            </div>
+                        </div>
+                         <div class="row col-md-12">
+                            <div class="form-group col-md-12">
+                                <label for="txtFIELD1_1_2"><span class="field-name">4.3.6.1 Criminal Conv/Acq: Hearing to decision > 12 months  </span></label>
+                                <span data-tooltip="Number of civil case reserved decisions – A decision given after reserving"></i></span>
+                                <input class="form-control" id="txtFIELD1_1_2" name="txtFIELD1_1_2" type="number" asp-for="@Model.txtFIELD1_1_2" autocomplete="txtFIELD1_1_2" data-rule-minlength="1" style="width:100%">
+                                <span asp-validation-for="@Model.txtFIELD1_1_2" class="label label-danger"></span>
+                            </div>
+                        </div>
+                         <div class="row col-md-12">
+                            <div class="form-group col-md-12">
+                                <label for="txtFIELD1_1_2">
+                                    <span class="field-name">
+                                        4.3.6.2 Criminal Sentence: Hearing to decision > 12 months
+                                    </span>
+                                </label>
+                                <span data-tooltip="Number of civil case reserved decisions – A decision given after reserving"></i></span>
+                                <input class="form-control" id="txtFIELD1_1_2" name="txtFIELD1_1_2" type="number" asp-for="@Model.txtFIELD1_1_2" autocomplete="txtFIELD1_1_2" data-rule-minlength="1" style="width:100%">
+                                <span asp-validation-for="@Model.txtFIELD1_1_2" class="label label-danger"></span>
+                            </div>
+                        </div>
+                         <div class="row col-md-12">
+                            <div class="form-group col-md-12">
+                                <label for="txtFIELD1_1_2"><span class="field-name">4.3.6.3 Criminal Other: Hearing to decision > 12 months  </span></label>
+                                <span data-tooltip="Number of civil case reserved decisions – A decision given after reserving"></i></span>
+                                <input class="form-control" id="txtFIELD1_1_2" name="txtFIELD1_1_2" type="number" asp-for="@Model.txtFIELD1_1_2" autocomplete="txtFIELD1_1_2" data-rule-minlength="1" style="width:100%">
+                                <span asp-validation-for="@Model.txtFIELD1_1_2" class="label label-danger"></span>
+                            </div>
+                        </div>
+                     
+
+
+
+
+
+
+
+
+                        <div class="row col-md-12">
+                            <div class="form-group col-md-12">
+                                <label for="txtFIED_1_Comments"><span class="field-name">Comments </span></label>
+                                <textarea class="form-control" id="txtFIED_1_Comments" name="txtFIED_1_Comments" type="text" asp-for="@Model.txtFIED_1_Comments" autocomplete="txtFIED_1_Comments" data-rule-minlength="2" data-rule-maxlength="2000" style="width:100%" multiple="true" rows="4">
+                                </textarea>
+                                <span asp-validation-for="@Model.txtFIELD1_1_3" class="label label-danger"></span>
+                            </div>
+                        </div>
+                    </fieldset>
+                </section>
+            </details>
+
+            <details class="mrgn-tp-lg section-color" open>
+                <summary>
+                    5. Hearing Types
+                </summary>
+                <section class="center">
+                    <fieldset>
+                        <div class="row col-md-12">
+                            <div class="form-group col-md-12">
+                                <label for="txtFIELD7_1_1"><span class="field-name">5.1 In-person hearings</span></label>
+                                <span data-tooltip="Number of appeals involving an SRL at the hearing."><i class="fa-solid fa-circle-info"></i></span>
+                                <input class="form-control" id="txtFIELD7_1_1" name="txtFIELD7_1_1" type="number" asp-for="@Model.txtFIELD7_1_1" autocomplete="txtFIELD7_1_1" data-rule-minlength="1" style="width:100%">
+                                <span asp-validation-for="@Model.txtFIELD7_1_1" class="label label-danger"></span>
+                            </div>
+                        </div>
+                        <div class="row col-md-12">
+                            <div class="form-group col-md-12">
+                                <label for="txtFIELD7_1_2"><span class="field-name">5.2 Virtual hearings</span></label>
+                                <span data-tooltip="Number of motions and applications involving an SRL at the hearing of a motion or an application (by a single judge, a panel or the registrar). Motions and applications heard at the time of the hearing of an appeal are not to be included."><i class="fa-solid fa-circle-info"></i></span>
+                                <input class="form-control" id="txtFIELD7_1_2" name="txtFIELD7_1_2" type="number" asp-for="@Model.txtFIELD7_1_2" autocomplete="txtFIELD7_1_2" data-rule-minlength="1" style="width:100%">
+                                <span asp-validation-for="@Model.txtFIELD7_1_2" class="label label-danger"></span>
+                            </div>
+                        </div>
+                        <div class="row col-md-12">
+                            <div class="form-group col-md-12">
+                                <label for="txtFIELD7_1_3"><span class="field-name">5.3 Hybrid hearings</span></label>
+                                <span data-tooltip="Total number of appeals, motions and applications involving an SRL at the hearing (7.1.1 and 7.1.2)."><i class="fa-solid fa-circle-info"></i></span>
+                                <input class="form-control" id="txtFIELD7_1_3" name="txtFIELD7_1_3" type="number" asp-for="@Model.txtFIELD7_1_3" autocomplete="txtFIELD7_1_3" data-rule-minlength="1" style="width:100%">
+                                <span asp-validation-for="@Model.txtFIELD7_1_3" class="label label-danger"></span>
+                            </div>
+                        </div>
+                        <div class="row col-md-12">
+                            <div class="form-group col-md-12">
+                                <label for="txtFIELD7_1_3"><span class="field-name">5.4 Total hearings (in-person, virtual, hybrid) </span></label>
+                                <span data-tooltip="Total number of appeals, motions and applications involving an SRL at the hearing (7.1.1 and 7.1.2)."><i class="fa-solid fa-circle-info"></i></span>
+                                <input class="form-control" id="txtFIELD7_1_3" name="txtFIELD7_1_3" type="number" asp-for="@Model.txtFIELD7_1_3" autocomplete="txtFIELD7_1_3" data-rule-minlength="1" style="width:100%">
+                                <span asp-validation-for="@Model.txtFIELD7_1_3" class="label label-danger"></span>
+                            </div>
+                        </div>
+                        <div class="row col-md-12">
+                            <div class="form-group col-md-12">
+                                <label for="txtFIED_7_Comments"><span class="field-name">Comments </span></label>
+                                <textarea class="form-control" id="txtFIED_7_Comments" name="txtFIED_7_Comments" type="text" asp-for="@Model.txtFIED_7_Comments" autocomplete="txtFIED_7_Comments" data-rule-minlength="2" data-rule-maxlength="2000" style="width:100%" multiple="true" rows="4">
+                            </textarea>
+                                <span asp-validation-for="@Model.txtFIED_7_Comments" class="label label-danger"></span>
+                            </div>
+                        </div>
+                    </fieldset>
+                </section>
+            </details>
+            <details class="mrgn-tp-lg section-color" open>
+                <summary>
+                    6. Motions
+                </summary>
+                <section class="center">
+                    <fieldset>
+                        <div class="row col-md-12">
+                            <div class="form-group col-md-12">
+                                <label for="txtFIELD7_1_1"><span class="field-name">6.1.1 Motions before single judge filed</span></label>
+                                <span data-tooltip="Number of appeals involving an SRL at the hearing."><i class="fa-solid fa-circle-info"></i></span>
+                                <input class="form-control" id="txtFIELD7_1_1" name="txtFIELD7_1_1" type="number" asp-for="@Model.txtFIELD7_1_1" autocomplete="txtFIELD7_1_1" data-rule-minlength="1" style="width:100%">
+                                <span asp-validation-for="@Model.txtFIELD7_1_1" class="label label-danger"></span>
+                            </div>
+                        </div>
+                        <div class="row col-md-12">
+                            <div class="form-group col-md-12">
+                                <label for="txtFIELD7_1_2"><span class="field-name">6.1.2 Motions before single judge disposed </span></label>
+                                <span data-tooltip="Number of motions and applications involving an SRL at the hearing of a motion or an application (by a single judge, a panel or the registrar). Motions and applications heard at the time of the hearing of an appeal are not to be included."><i class="fa-solid fa-circle-info"></i></span>
+                                <input class="form-control" id="txtFIELD7_1_2" name="txtFIELD7_1_2" type="number" asp-for="@Model.txtFIELD7_1_2" autocomplete="txtFIELD7_1_2" data-rule-minlength="1" style="width:100%">
+                                <span asp-validation-for="@Model.txtFIELD7_1_2" class="label label-danger"></span>
+                            </div>
+                        </div>
+                        <div class="row col-md-12">
+                            <div class="form-group col-md-12">
+                                <label for="txtFIELD7_1_3"><span class="field-name">6.1.3 Motions before single judge dismissed/withdrawn</span></label>
+                                <span data-tooltip="Total number of appeals, motions and applications involving an SRL at the hearing (7.1.1 and 7.1.2)."><i class="fa-solid fa-circle-info"></i></span>
+                                <input class="form-control" id="txtFIELD7_1_3" name="txtFIELD7_1_3" type="number" asp-for="@Model.txtFIELD7_1_3" autocomplete="txtFIELD7_1_3" data-rule-minlength="1" style="width:100%">
+                                <span asp-validation-for="@Model.txtFIELD7_1_3" class="label label-danger"></span>
+                            </div>
+                        </div>
+                        <div class="row col-md-12">
+                            <div class="form-group col-md-12">
+                                <label for="txtFIELD7_1_3"><span class="field-name">6.2.1 Motions before panel filed </span></label>
+                                <span data-tooltip="Total number of appeals, motions and applications involving an SRL at the hearing (7.1.1 and 7.1.2)."><i class="fa-solid fa-circle-info"></i></span>
+                                <input class="form-control" id="txtFIELD7_1_3" name="txtFIELD7_1_3" type="number" asp-for="@Model.txtFIELD7_1_3" autocomplete="txtFIELD7_1_3" data-rule-minlength="1" style="width:100%">
+                                <span asp-validation-for="@Model.txtFIELD7_1_3" class="label label-danger"></span>
+                            </div>
+                        </div>
+                        <div class="row col-md-12">
+                            <div class="form-group col-md-12">
+                                <label for="txtFIELD7_1_3"><span class="field-name">6.2.2 Motions before panel disposed  </span></label>
+                                <span data-tooltip="Total number of appeals, motions and applications involving an SRL at the hearing (7.1.1 and 7.1.2)."><i class="fa-solid fa-circle-info"></i></span>
+                                <input class="form-control" id="txtFIELD7_1_3" name="txtFIELD7_1_3" type="number" asp-for="@Model.txtFIELD7_1_3" autocomplete="txtFIELD7_1_3" data-rule-minlength="1" style="width:100%">
+                                <span asp-validation-for="@Model.txtFIELD7_1_3" class="label label-danger"></span>
+                            </div>
+                        </div>
+                        <div class="row col-md-12">
+                            <div class="form-group col-md-12">
+                                <label for="txtFIELD7_1_3"><span class="field-name">6.2.3 Motions before panel dismissed/withdrawn  </span></label>
+                                <span data-tooltip="Total number of appeals, motions and applications involving an SRL at the hearing (7.1.1 and 7.1.2)."><i class="fa-solid fa-circle-info"></i></span>
+                                <input class="form-control" id="txtFIELD7_1_3" name="txtFIELD7_1_3" type="number" asp-for="@Model.txtFIELD7_1_3" autocomplete="txtFIELD7_1_3" data-rule-minlength="1" style="width:100%">
+                                <span asp-validation-for="@Model.txtFIELD7_1_3" class="label label-danger"></span>
+                            </div>
+                        </div><div class="row col-md-12">
+                            <div class="form-group col-md-12">
+                                <label for="txtFIELD7_1_3"><span class="field-name">6.3.1 Motions before registrar filed </span></label>
+                                <span data-tooltip="Total number of appeals, motions and applications involving an SRL at the hearing (7.1.1 and 7.1.2)."><i class="fa-solid fa-circle-info"></i></span>
+                                <input class="form-control" id="txtFIELD7_1_3" name="txtFIELD7_1_3" type="number" asp-for="@Model.txtFIELD7_1_3" autocomplete="txtFIELD7_1_3" data-rule-minlength="1" style="width:100%">
+                                <span asp-validation-for="@Model.txtFIELD7_1_3" class="label label-danger"></span>
+                            </div>
+                        </div>
+                        <div class="row col-md-12">
+                            <div class="form-group col-md-12">
+                                <label for="txtFIELD7_1_3"><span class="field-name">6.3.2 Motions before registrar disposed  </span></label>
+                                <span data-tooltip="Total number of appeals, motions and applications involving an SRL at the hearing (7.1.1 and 7.1.2)."><i class="fa-solid fa-circle-info"></i></span>
+                                <input class="form-control" id="txtFIELD7_1_3" name="txtFIELD7_1_3" type="number" asp-for="@Model.txtFIELD7_1_3" autocomplete="txtFIELD7_1_3" data-rule-minlength="1" style="width:100%">
+                                <span asp-validation-for="@Model.txtFIELD7_1_3" class="label label-danger"></span>
+                            </div>
+                        </div>
+                        <div class="row col-md-12">
+                            <div class="form-group col-md-12">
+                                <label for="txtFIELD7_1_3"><span class="field-name">6.3.3 Motions before registrar dismissed/withdrawn  </span></label>
+                                <span data-tooltip="Total number of appeals, motions and applications involving an SRL at the hearing (7.1.1 and 7.1.2)."><i class="fa-solid fa-circle-info"></i></span>
+                                <input class="form-control" id="txtFIELD7_1_3" name="txtFIELD7_1_3" type="number" asp-for="@Model.txtFIELD7_1_3" autocomplete="txtFIELD7_1_3" data-rule-minlength="1" style="width:100%">
+                                <span asp-validation-for="@Model.txtFIELD7_1_3" class="label label-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="row col-md-12">
+                            <div class="form-group col-md-12">
+                                <label for="txtFIED_7_Comments"><span class="field-name">Comments </span></label>
+                                <textarea class="form-control" id="txtFIED_7_Comments" name="txtFIED_7_Comments" type="text" asp-for="@Model.txtFIED_7_Comments" autocomplete="txtFIED_7_Comments" data-rule-minlength="2" data-rule-maxlength="2000" style="width:100%" multiple="true" rows="4">
+                            </textarea>
+                                <span asp-validation-for="@Model.txtFIED_7_Comments" class="label label-danger"></span>
+                            </div>
+                        </div>
+                    </fieldset>
+                </section>
+            </details>
+
+
+
+            <details class="mrgn-tp-lg section-color" open>
+                <summary>
                     7. Self-Represented Litigants (SRL)
                 </summary>
                 <section class="center">
