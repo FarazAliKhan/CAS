@@ -38,6 +38,7 @@
     <div class="text-center"><h1>CAACS</h1></div> <div class="text-center"><h4>Court of Appeal Annual Case Statistics Data Entry Form</h4></div>
     <div class="wb-frmvld">
         <form method="post" id="createForm">
+            <input type="hidden" id="sectionId" asp-for="@Model.sectId">
             @if (!ViewData.ModelState.IsValid)
             {
                 @* <div class="alert alert-danger" role="alert">
@@ -984,3 +985,4 @@
         </form>
     </div>
 </section>
+

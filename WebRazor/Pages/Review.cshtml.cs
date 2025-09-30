@@ -153,6 +153,7 @@ namespace WebRazor.Pages
             TempData["txtFIELD11_2"] = createItem.txtFIELD11_2;
             TempData["txtFIED_11_Comments"] = createItem.txtFIED_11_Comments;
 
+            TempData["sectionId"] = Request.Query["sectionId"].FirstOrDefault();
             return RedirectToPage("Create", "Load");
         }
     }

@@ -4,11 +4,40 @@
 // Write your JavaScript code.
 $(".breadcrumb").children().first().remove();
 
-function submitForm() {
+function submitForm(sectionId) {
     var form = document.getElementById("reviewForm");
-    form.action = "/Review/";
+    form.action = "/Review?sectionId=" + sectionId;
     form.method = "POST";
     form.submit();
+}
+
+function focusOnForm(sectionId) {
+    let sectField = document.getElementById("sectionId");
+    if (sectField != null) {
+        let sectId = sectField.value;
+        if (sectId != null && sectId != "") {
+            fieldFocus(sectId);
+        }
+    }
+}
+
+function fieldFocus(sectionId) {
+    switch (sectionId) {
+        case "1": document.getElementById("txtFIELD1_1_1").focus();
+            break;
+        case "7": document.getElementById("txtFIELD7_1_1").focus();
+            break;
+        case "8": document.getElementById("txtFIELD8_1").focus();
+            break;
+        case "9": document.getElementById("txtFIELD9_1").focus();
+            break;
+        case "10": document.getElementById("txtFIELD10_1").focus();
+            break;
+        case "11": document.getElementById("txtFIELD11_1").focus();
+            break;
+        case '0': document.getElementById("txtCOURT").focus();
+            break;
+    }
 }
 
 function Save() {
@@ -40,8 +69,4 @@ function Save() {
             window.location.href = "/Create/Load"
         }
     })
-}
-
-function post() {
-    
 }

@@ -86,6 +86,8 @@ namespace WebRazor.Pages
         public int? txtFIELD11_2 { get; set; }
         [BindProperty]
         public string? txtFIED_11_Comments { get; set; }
+        [BindProperty]
+        public string? sectId { get; set; }
 
         //public CreateModel() { 
         //}
@@ -208,6 +210,8 @@ namespace WebRazor.Pages
             txtFIELD11_1 = (int?)TempData["txtFIELD11_1"];
             txtFIELD11_2 = (int?)TempData["txtFIELD11_2"];
             txtFIED_11_Comments = (string?)TempData["txtFIED_11_Comments"];
+
+            sectId = (string?)TempData["sectionId"];
         }
     }
 }
