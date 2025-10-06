@@ -25,6 +25,16 @@ function fieldFocus(sectionId) {
     switch (sectionId) {
         case "1": document.getElementById("txtFIELD1_1_1").focus();
             break;
+        case "2": document.getElementById("txtFIELD2_1_1").focus();
+            break;
+        case "3": document.getElementById("txtFIELD3_1").focus();
+            break;
+        case "4": document.getElementById("txtFIELD4_1_1").focus();
+            break;
+        case "5": document.getElementById("txtFIELD5_1").focus();
+            break;
+        case "6": document.getElementById("txtFIELD6_1_1").focus();
+            break;
         case "7": document.getElementById("txtFIELD7_1_1").focus();
             break;
         case "8": document.getElementById("txtFIELD8_1").focus();
