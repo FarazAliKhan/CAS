@@ -33,14 +33,42 @@
     ViewData["Home"] = localizer["Home"];
 }
 
-<div class="text-center"><h1>CAAS Module</h1></div>
+<div class="text-center"><h3>Court of Appeal Annual Statistics</h3></div>
+<br />
 <form method="post">
     <div class="text-center">
-        <span>
-            <a class="btn btn-primary" class="btn btn-primary" style="color:white;width:100px;height:100px;text-align:center;border-radius: 8px; margin: 10px;" asp-page="./Create"><br /><span class="glyphicon glyphicon-tasks"></span><br />@localizer["Form"]</a>
+        <div>
+            Welcome to the Court of Appeal Annual Statistics (CAAS) database.
+        </div>
+        <br />
+        <div>
+            All statistics are to be collected on a calendar year basis and for the period ending December 31st (January 1st to December 31st).
+        </div>
+        <br />
+        <div>
+            The database offers a variety of reports that can be generated for use by your court.
+            To enter your annual statistics and/or generate reports, please use the buttons below.
+        </div>
+        <br />
+        <div>
+            <i>
+                Please note that your session will automatically expire after X minutes of inactivity.
+                If you encounter any technical difficulties, please contact X.
+            </i>
+        </div>
+        <br />
+        <br />
+    </div>
+    <div class="text-center">
+        <span class="col-md-6 text-right">
+            <a class="btn btn-primary" style="color:white;width:240px;height:100px;text-align:center;border-radius:12px;" asp-page="./Create"><br /><span class="glyphicon glyphicon-tasks align-top"></span><br />Submit Statistics</a>
         </span>
-        <span>
-            <a class="btn btn-primary" class="btn btn-primary" style="color:white;width:100px;height:100px;text-align:center;border-radius: 8px;" asp-page="./Report"><br /><span class="glyphicon glyphicon-list"></span><br />@localizer["Report"]</a>
+        <span class="col-md-6 text-left">
+            <a class="btn btn-primary" style="color:white;width:240px;height:100px;text-align:center;border-radius:12px;" asp-page="./Report"><br /><span class="glyphicon glyphicon-list align-top"></span><br />Generate Reports</a>
         </span>
     </div>
 </form>
+<br />
+<br />
+<br />
+<br />
