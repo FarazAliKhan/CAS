@@ -36,6 +36,10 @@
     margin-left: -60px;
 }
 
+.align-right{
+    text-align: right;
+}
+
 .item{
     color: #fff;
 }

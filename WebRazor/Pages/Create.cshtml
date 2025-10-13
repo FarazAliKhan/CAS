@@ -49,17 +49,17 @@
                         </a>
                     </li>
                         <li class="btn-primary" style="padding-left:10px; padding-top:5px; padding-bottom:5px;">
-                        <a href="#">
+                        <a href="javascript:showDetails('detailsBasicInfo');">
                             <span class="item">Basic Information</span>
                         </a>
                     </li>
                         <li class="btn-primary" style="padding-left:10px;padding-top:5px; padding-bottom:5px;">
-                        <a href="#">
+                            <a href="javascript:showDetails('details1');">
                             <span class="item">Civil Appeals</span>
                         </a>
                     </li>
                         <li class="btn-primary" style="padding-left:10px;padding-top:5px; padding-bottom:5px;">
-                        <a href="#">
+                            <a href="javascript:showDetails('details2');">
                                 <span class="item">Decisions</span>
                         </a>
                     </li>
@@ -157,8 +157,9 @@
                     </form>
 
                     <form method="post" id="createForm">
+                        <input type="hidden" id="activeDetailsId" value="detailsBasicInfo">
                         <input type="hidden" id="sectionId" asp-for="@Model.sectId">
-                        <details class="mrgn-tp-lg section-color" open>
+                        <details id="detailsBasicInfo" class="mrgn-tp-lg section-color" open hidden>
                             <summary>
                                 Basic Information
                             </summary>
@@ -221,7 +222,7 @@
                             </section>
                         </details>
 
-                        <details class="mrgn-tp-lg section-color" open>
+                        <details id="details1" class="mrgn-tp-lg section-color" open hidden>
                             <summary>
                                 1. Civil Appeals
                             </summary>
@@ -295,7 +296,7 @@
                             </section>
                         </details>
 
-                        <details class="mrgn-tp-lg section-color" open>
+                        <details id="details2" class="mrgn-tp-lg section-color" open hidden>
                             <summary>
                                 2. Decisions
                             </summary>
@@ -1066,6 +1067,11 @@
                                 </fieldset>
                             </section>
                         </details>
+
+                        <div class="align-right">
+                            <button class="btn btn-primary" type="button" onclick="javascript:gotoPrevious();">Previous Tab</button>
+                            <button class="btn btn-primary" type="button" onclick="javascript:gotoNext();">Next Tab</button>
+                        </div>
 
                         <div>
                             <button class="btn btn-primary" type="submit">@localizer["Review"]</button>

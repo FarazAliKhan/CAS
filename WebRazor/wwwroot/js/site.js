@@ -80,3 +80,38 @@ function Save() {
         }
     })
 }
+
+function showDetails(detailsId) {
+    let activeDetails = $("#activeDetailsId").val();
+    hideDetails(activeDetails);
+    $('#' + detailsId).removeAttr('hidden');
+    $("#activeDetailsId").val(detailsId);
+}
+
+function hideDetails(detailsId) {
+    $('#' + detailsId).attr('hidden', true);
+}
+
+function gotoPrevious() {
+    let activeDetails = $("#activeDetailsId").val();
+    switch (activeDetails) {
+        case "detailsBasicInfo": 
+            break;
+        case "details1": showDetails("detailsBasicInfo");
+            break;
+        case "details2": showDetails("details1");
+            break;
+    }
+}
+
+function gotoNext() {
+    let activeDetails = $("#activeDetailsId").val();
+    switch (activeDetails) {
+        case "detailsBasicInfo": showDetails("details1");
+            break;
+        case "details1": showDetails("details2");
+            break;
+        case "details2": 
+            break;
+    }
+}
