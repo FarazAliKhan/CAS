@@ -101,6 +101,24 @@ function gotoPrevious() {
             break;
         case "details2": showDetails("details1");
             break;
+        case "details3": showDetails("details2");
+            break;
+        case "details4": showDetails("details3");
+            break;
+        case "details5": showDetails("details4");
+            break;
+        case "details6": showDetails("details5");
+            break;
+        case "details7": showDetails("details6");
+            break;
+        case "details8": showDetails("details7");
+            break;
+        case "details9": showDetails("details8");
+            break;
+        case "details10": showDetails("details9");
+            break;
+        case "details11": showDetails("details10");
+            break;
     }
 }
 
@@ -111,7 +129,25 @@ function gotoNext() {
             break;
         case "details1": showDetails("details2");
             break;
-        case "details2": 
+        case "details2": showDetails("details3");
+            break;
+        case "details3": showDetails("details4");
+            break;
+        case "details4": showDetails("details5");
+            break;
+        case "details5": showDetails("details6");
+            break;
+        case "details6": showDetails("details7");
+            break;
+        case "details7": showDetails("details8");
+            break;
+        case "details8": showDetails("details9");
+            break;
+        case "details9": showDetails("details10");
+            break;
+        case "details10": showDetails("details11");
+            break;
+        case "details11": 
             break;
     }
 }
