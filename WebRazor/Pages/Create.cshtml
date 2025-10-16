@@ -40,7 +40,7 @@
         <div class="col-md-12">
             <div class="col-md-3">
                 <!--Top menu -->
-                <div style="font-size:small">
+                <div style="font-size:small;">
                     <ul>
                         <li class="btn-primary" style="padding-left:10px; padding-top:5px; padding-bottom:5px;">
                             <a href="javascript:showDetails('detailsBasicInfo');">
@@ -166,7 +166,7 @@
                                         <div class="row">
                                             <div class="form-group col-md-12">
                                                 <label for="txtCOURT"><span class="field-name">Court</span></label>
-                                                <select class="form-control" id="txtCOURT" name="txtCOURT" asp-for="@Model.txtCOURT" autocomplete="txtCOURT" data-rule-minlength="1" style="width:100%">
+                                                <select class="form-control" id="txtCOURT" name="txtCOURT" asp-for="@Model.txtCOURT" onchange="javascript:enableDisableReview();" autocomplete="txtCOURT" data-rule-minlength="1" style="width:100%">
                                                     <option value="">Select Court</option>
                                                     <option value="ABCA">Court of Appeal of Alberta</option>
                                                     <option value="BCCA">Court of Appeal for British Columbia</option>
@@ -190,7 +190,7 @@
                                         <div class="row">
                                             <div class="form-group col-md-6">
                                                 <label for="intREPORTINGYEAR"><span class="field-name">Reporting Year</span></label>
-                                                <select class="form-control" id="intREPORTINGYEAR" name="intREPORTINGYEAR" asp-for="@Model.intREPORTINGYEAR" autocomplete="intREPORTINGYEAR" data-rule-minlength="1" style="width:100%; height:52px;">
+                                                <select class="form-control" id="intREPORTINGYEAR" name="intREPORTINGYEAR" asp-for="@Model.intREPORTINGYEAR" onchange="javascript:enableDisableReview();" autocomplete="intREPORTINGYEAR" data-rule-minlength="1" style="width:100%; height:52px;">
                                                     <option value="">Select Year</option>
                                                     <option value="2023">2023</option>
                                                     <option value="2024">2024</option>
@@ -202,7 +202,7 @@
                                             <div class="form-group col-md-3">
                                                 <label for="dtFROM"><span class="field-name">Period From</span></label>
                                                 <span data-tooltip="The start date of the period covered by the submission."><i class="fa-solid fa-circle-info"></i></span>
-                                                <input class="form-control" id="dtFROM" name="dtFROM" type="date" asp-for="@Model.dtFROM" autocomplete="dtFROM" data-rule-minlength="1" style="width:100%">
+                                                <input class="form-control" id="dtFROM" name="dtFROM" type="date" asp-for="@Model.dtFROM" onchange="javascript:enableDisableReview();" autocomplete="dtFROM" data-rule-minlength="1" style="width:100%">
                                                 <span asp-validation-for="@Model.dtFROM" class="label label-danger"></span>
                                             </div>
                                             <div class="form-group col-md-3">
@@ -210,7 +210,7 @@
                                                     <span class="field-name">Period To</span>
                                                 </label>
                                                 <span data-tooltip="The end date of the period covered by the submission."><i class="fa-solid fa-circle-info"></i></span>
-                                                <input class="form-control" id="dtTO" name="dtTO" type="date" asp-for="@Model.dtTO" autocomplete="dtTO" data-rule-minlength="1" style="width:100%">
+                                                <input class="form-control" id="dtTO" name="dtTO" type="date" asp-for="@Model.dtTO" onchange="javascript:enableDisableReview();" autocomplete="dtTO" data-rule-minlength="1" style="width:100%">
                                                 <span asp-validation-for="@Model.dtTO" class="label label-danger"></span>
                                             </div>
                                         </div>
@@ -1064,25 +1064,16 @@
                                 </fieldset>
                             </section>
                         </details>
-
                         <div class="align-right">
+                            <button id="btnReview" class="btn btn-primary" type="submit" disabled>@localizer["Review"]</button>
                             <button class="btn btn-primary" type="button" onclick="javascript:gotoPrevious();">Previous Tab</button>
                             <button class="btn btn-primary" type="button" onclick="javascript:gotoNext();">Next Tab</button>
-                        </div>
-
-                        <div>
-                            <button class="btn btn-primary" type="submit">@localizer["Review"]</button>
-                            <span>
-                                <a class="btn btn-default" asp-page="./Select">@localizer["Back"]</a>
-                            </span>
                         </div>
                     </form>
                     <br />
                 </div>
-
             </div>
         </div>
-
     </section>
 </div>
 

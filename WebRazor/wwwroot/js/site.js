@@ -122,6 +122,19 @@ function gotoPrevious() {
     }
 }
 
+function enableDisableReview() {
+    if ($("#txtCOURT").val() != ""
+        && $("#intREPORTINGYEAR").val() != ""
+        && $("#dtFROM").val() != ""
+        && $("#dtTO").val() != ""
+    ) {
+        $("#btnReview").removeAttr('disabled');
+    }
+    else {
+        $("#btnReview").attr('disabled', true);
+    }
+}
+
 function gotoNext() {
     let activeDetails = $("#activeDetailsId").val();
     switch (activeDetails) {
