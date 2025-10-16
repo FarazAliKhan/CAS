@@ -41,13 +41,6 @@
             <div class="col-md-3">
             <!--Top menu -->
                 <div>
-                <!--profile image & text-->
-                    <ul class="list-unstyled">
-                        <li class="btn-primary" style="padding-left:10px; padding-top:5px; padding-bottom:5px;">
-                        <a href="#" class="active">
-                            <span class="item">File Upload</span>
-                        </a>
-                    </li>
                         <li class="btn-primary" style="padding-left:10px; padding-top:5px; padding-bottom:5px;">
                         <a href="javascript:showDetails('detailsBasicInfo');">
                             <span class="item">Basic Information</span>
@@ -159,35 +152,10 @@
                         </div>
                     }
 
-                    <form method="post" enctype="multipart/form-data">
-                        <details class="mrgn-tp-lg section-color" open>
-                            <summary>
-                                File Upload
-                            </summary>
-                            <section class="center">
-                                <fieldset>
-                                    <div class="row col-md-12">
-                                        <div class="row">
-                                            <div class="form-group col-md-12">
-                                                <span class="col-md-6">
-                                                    <input type="file" asp-for="Upload" />
-                                                </span>
-                                                <span class="col-md-6">
-                                                    <input type="submit" value="Upload" />
-                                                </span>
-                                                <span asp-validation-for="@Model.Upload" class="label label-danger"></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </fieldset>
-                            </section>
-                        </details>
-                    </form>
-
                     <form method="post" id="createForm">
                         <input type="hidden" id="activeDetailsId" value="detailsBasicInfo">
                         <input type="hidden" id="sectionId" asp-for="@Model.sectId">
-                        <details id="detailsBasicInfo" class="mrgn-tp-lg section-color" open hidden>
+                        <details id="detailsBasicInfo" class="mrgn-tp-lg section-color" open>
                             <summary>
                                 Basic Information
                             </summary>
