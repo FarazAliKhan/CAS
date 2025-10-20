@@ -124,7 +124,7 @@
     <value>Court is required</value>
   </data>
   <data name="Create" xml:space="preserve">
-    <value>Create</value>
+    <value>Statistics</value>
   </data>
   <data name="dob" xml:space="preserve">
     <value>Date of Birth</value>

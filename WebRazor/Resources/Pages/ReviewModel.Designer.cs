@@ -70,7 +70,7 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Create.
+        ///   Looks up a localized string similar to Statistics.
         /// </summary>
         public static string Create {
             get {
