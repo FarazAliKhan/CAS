@@ -3,6 +3,7 @@
 
 // Write your JavaScript code.
 $(".breadcrumb").children().first().remove();
+enableDisableReview();
 
 function submitForm(sectionId) {
     var form = document.getElementById("reviewForm");
