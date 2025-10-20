@@ -40,14 +40,14 @@
         <div class="col-md-12">
             <div class="col-md-3">
                 <!--Top menu -->
-                <div style="font-size:small;">
+                <div style="font-size:x-small;">
                     <ul>
                         <li class="btn-primary" style="padding-left:10px; padding-top:5px; padding-bottom:5px;">
                             <a href="javascript:showDetails('detailsBasicInfo');">
                                 <span class="item">Basic Information</span>
                             </a>
                         </li>
-                        <li class="btn-primary" style="padding-left:10px;padding-top:5px; padding-bottom:5px;">
+                        <li class="btn-primary" style="font-size:x-small;padding-left:10px;padding-top:5px; padding-bottom:5px;">
                             <span data-tooltip="The number of criminal or civil appeals, cross-appeals, references, bail reviews, judicial reviews (filed, disposed of, abandoned or Number of civil appeals, cross-appeals, references, and JRs disposed of by other means – These appeals, cross-appeals, references, and JRs are to include those that are abandoned, withdrawn, dismissed for want of prosecution, non-compliance with rules, dispositions by a single judge, etc. The civil appeals, cross-appeals, references, and JRs abandoned or withdrawn by the registrar take into account the certificates of lapse of appeal issued by the registry. notice of appeal counts as one appeal filed and one appeal disposed of, even though a number of related cases may be grouped together and heard at one hearing (example: if 10 cases are grouped together and heard together but are the subject of 10 notices of appeal, this counts as 10 appeals filed and 10 appeals disposed of). A notice of appeal containing both an appeal against conviction and against sentence, shall be counted as two appeals, but when heard together shall be counted as a single hearing. Where an appeal was deemed abandoned or struck in the previous calendar year and restored in this calendar year, it is counted as a new appeal filed.">
                                 <a href="javascript:showDetails('details1');">
                                     <span class="item">Tab 1 –	Types of appeals</span>
@@ -162,25 +162,25 @@
                             </summary>
                             <section class="center">
                                 <fieldset>
-                                    <div class="row col-md-12">
+                                    <div class="row col-sm-12">
                                         <div class="row">
                                             <div class="form-group col-md-12">
-                                                <label for="txtCOURT"><span class="field-name">Court</span></label>
+                                                <label for="txtCOURT"><span class="field-name">Name of Court</span></label>
                                                 <select class="form-control" id="txtCOURT" name="txtCOURT" asp-for="@Model.txtCOURT" onchange="javascript:enableDisableReview();" autocomplete="txtCOURT" data-rule-minlength="1" style="width:100%">
                                                     <option value="">Select Court</option>
-                                                    <option value="ABCA">Court of Appeal of Alberta</option>
+                                                    <option value="ABCA">Alberta Court of Appeal</option>
                                                     <option value="BCCA">Court of Appeal for British Columbia</option>
-                                                    <option value="CMAC">Court Martial Appeal Court of Canada</option>
-                                                    <option value="FCA">Federal Court of Appeal</option>
-                                                    <option value="MBCA">Court of Appeal of Manitoba</option>
+                                                    <option value="CMAC">Court Martial Appeal Court of Canada (CMACC)</option>
+                                                    <option value="FCA">Federal Court of Appeal (FCA) </option>
+                                                    <option value="MBCA">Manitoba Court of Appeal</option>
                                                     <option value="NBCA">Court of Appeal of New Brunswick</option>
                                                     <option value="NLCA">Court of Appeal of Newfoundland and Labrador</option>
-                                                    <option value="NSCA">Nova Scotia Court of Appeal</option>
-                                                    <option value="NUCA">Nunavut Court of Appeal</option>
-                                                    <option value="NWTCA">Court of Appeal of the Northwest Territories</option>
+                                                    <option value="NSCA">Court of Appeal for the Northwest Territories</option>
+                                                    <option value="NUCA">Nova Scotia Court of Appeal</option>
+                                                    <option value="NWTCA">Court of Appeal of Nunavut</option>
                                                     <option value="ONCA">Court of Appeal for Ontario</option>
-                                                    <option value="PECA">Prince Edward Island Court of Appeal</option>
-                                                    <option value="QCCA">Court of Appeal of Quebec</option>
+                                                    <option value="PECA">Court of Appeal of Prince Edward Island</option>
+                                                    <option value="QCCA">Cour d’appel du Québec</option>
                                                     <option value="SKCA">Court of Appeal for Saskatchewan</option>
                                                     <option value="YKCA">Court of Appeal of Yukon</option>
                                                 </select>
@@ -188,7 +188,7 @@
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="form-group col-md-6">
+                                            <div class="form-group col-sm-6">
                                                 <label for="intREPORTINGYEAR"><span class="field-name">Reporting Year</span></label>
                                                 <select class="form-control" id="intREPORTINGYEAR" name="intREPORTINGYEAR" asp-for="@Model.intREPORTINGYEAR" onchange="javascript:enableDisableReview();" autocomplete="intREPORTINGYEAR" data-rule-minlength="1" style="width:100%; height:52px;">
                                                     <option value="">Select Year</option>
@@ -199,15 +199,15 @@
                                                 </select>
                                                 <span asp-validation-for="@Model.intREPORTINGYEAR" class="label label-danger"></span>
                                             </div>
-                                            <div class="form-group col-md-3">
-                                                <label for="dtFROM"><span class="field-name">Period From</span></label>
+                                            <div class="form-group col-sm-3">
+                                                <label for="dtFROM"><span class="field-name">From</span></label>
                                                 <span data-tooltip="The start date of the period covered by the submission."><i class="fa-solid fa-circle-info"></i></span>
                                                 <input class="form-control" id="dtFROM" name="dtFROM" type="date" asp-for="@Model.dtFROM" onchange="javascript:enableDisableReview();" autocomplete="dtFROM" data-rule-minlength="1" style="width:100%">
                                                 <span asp-validation-for="@Model.dtFROM" class="label label-danger"></span>
                                             </div>
-                                            <div class="form-group col-md-3">
+                                            <div class="form-group col-sm-3">
                                                 <label for="dtTO">
-                                                    <span class="field-name">Period To</span>
+                                                    <span class="field-name">To</span>
                                                 </label>
                                                 <span data-tooltip="The end date of the period covered by the submission."><i class="fa-solid fa-circle-info"></i></span>
                                                 <input class="form-control" id="dtTO" name="dtTO" type="date" asp-for="@Model.dtTO" onchange="javascript:enableDisableReview();" autocomplete="dtTO" data-rule-minlength="1" style="width:100%">
