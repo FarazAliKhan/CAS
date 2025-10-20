@@ -84,11 +84,13 @@ function Save() {
 function showDetails(detailsId) {
     let activeDetails = $("#activeDetailsId").val();
     hideDetails(activeDetails);
+    $('#li' + detailsId).css("background", "#1C578A");
     $('#' + detailsId).removeAttr('hidden');
     $("#activeDetailsId").val(detailsId);
 }
 
 function hideDetails(detailsId) {
+    $('#li' + detailsId).css("background", "#26374A");
     $('#' + detailsId).attr('hidden', true);
 }
 
@@ -98,26 +100,100 @@ function gotoPrevious() {
         case "detailsBasicInfo": 
             break;
         case "details1": showDetails("detailsBasicInfo");
+            $("#lidetailsBasicInfo").css("background", "#1C578A");
+            $("#lidetails1").css("background", "#26374A");
             break;
         case "details2": showDetails("details1");
+            $("#lidetails1").css("background", "#1C578A");
+            $("#lidetails2").css("background", "#26374A");
             break;
         case "details3": showDetails("details2");
+            $("#lidetails2").css("background", "#1C578A");
+            $("#lidetails3").css("background", "#26374A");
             break;
         case "details4": showDetails("details3");
+            $("#lidetails3").css("background", "#1C578A");
+            $("#lidetails4").css("background", "#26374A");
             break;
         case "details5": showDetails("details4");
+            $("#lidetails4").css("background", "#1C578A");
+            $("#lidetails5").css("background", "#26374A");
             break;
         case "details6": showDetails("details5");
+            $("#lidetails5").css("background", "#1C578A");
+            $("#lidetails6").css("background", "#26374A");
             break;
         case "details7": showDetails("details6");
+            $("#lidetails6").css("background", "#1C578A");
+            $("#lidetails7").css("background", "#26374A");
             break;
         case "details8": showDetails("details7");
+            $("#lidetails7").css("background", "#1C578A");
+            $("#lidetails8").css("background", "#26374A");
             break;
         case "details9": showDetails("details8");
+            $("#lidetails8").css("background", "#1C578A");
+            $("#lidetails9").css("background", "#26374A");
             break;
         case "details10": showDetails("details9");
+            $("#lidetails9").css("background", "#1C578A");
+            $("#lidetails10").css("background", "#26374A");
             break;
         case "details11": showDetails("details10");
+            $("#lidetails10").css("background", "#1C578A");
+            $("#lidetails11").css("background", "#26374A");
+            break;
+    }
+}
+
+function gotoNext() {
+    let activeDetails = $("#activeDetailsId").val();
+    switch (activeDetails) {
+        case "detailsBasicInfo": showDetails("details1");
+            $("#lidetails1").css("background", "#1C578A");
+            $("#lidetailsBasicInfo").css("background", "#26374A");
+            break;
+        case "details1": showDetails("details2");
+            $("#lidetails2").css("background", "#1C578A");
+            $("#lidetails1").css("background", "#26374A");
+            break;
+        case "details2": showDetails("details3");
+            $("#lidetails3").css("background", "#1C578A");
+            $("#lidetails2").css("background", "#26374A");
+            break;
+        case "details3": showDetails("details4");
+            $("#lidetails4").css("background", "#1C578A");
+            $("#lidetails3").css("background", "#26374A");
+            break;
+        case "details4": showDetails("details5");
+            $("#lidetails5").css("background", "#1C578A");
+            $("#lidetails4").css("background", "#26374A");
+            break;
+        case "details5": showDetails("details6");
+            $("#lidetails6").css("background", "#1C578A");
+            $("#lidetails5").css("background", "#26374A");
+            break;
+        case "details6": showDetails("details7");
+            $("#lidetails7").css("background", "#1C578A");
+            $("#lidetails6").css("background", "#26374A");
+            break;
+        case "details7": showDetails("details8");
+            $("#lidetails8").css("background", "#1C578A");
+            $("#lidetails7").css("background", "#26374A");
+            break;
+        case "details8": showDetails("details9");
+            $("#lidetails9").css("background", "#1C578A");
+            $("#lidetails8").css("background", "#26374A");
+            break;
+        case "details9": showDetails("details10");
+            $("#lidetails10").css("background", "#1C578A");
+            $("#lidetails9").css("background", "#26374A");
+            break;
+        case "details10": showDetails("details11");
+            $("#lidetails11").css("background", "#1C578A");
+            $("#lidetails10").css("background", "#26374A");
+            break;
+        case "details11": 
             break;
     }
 }
@@ -132,35 +208,5 @@ function enableDisableReview() {
     }
     else {
         $("#btnReview").attr('disabled', true);
-    }
-}
-
-function gotoNext() {
-    let activeDetails = $("#activeDetailsId").val();
-    switch (activeDetails) {
-        case "detailsBasicInfo": showDetails("details1");
-            break;
-        case "details1": showDetails("details2");
-            break;
-        case "details2": showDetails("details3");
-            break;
-        case "details3": showDetails("details4");
-            break;
-        case "details4": showDetails("details5");
-            break;
-        case "details5": showDetails("details6");
-            break;
-        case "details6": showDetails("details7");
-            break;
-        case "details7": showDetails("details8");
-            break;
-        case "details8": showDetails("details9");
-            break;
-        case "details9": showDetails("details10");
-            break;
-        case "details10": showDetails("details11");
-            break;
-        case "details11": 
-            break;
     }
 }
