@@ -47,7 +47,7 @@
                                 <span class="item">Basic Information</span>
                             </a>
                         </li>
-                        <li id="lidetails1" class="btn-primary" style="font-size:x-small;padding-left:10px;padding-top:5px; padding-bottom:5px;">
+                        <li id="lidetails1" class="btn-primary" style="padding-left:10px;padding-top:5px; padding-bottom:5px;">
                             <span data-tooltip="The number of criminal or civil appeals, cross-appeals, references, bail reviews, judicial reviews (filed, disposed of, abandoned or Number of civil appeals, cross-appeals, references, and JRs disposed of by other means – These appeals, cross-appeals, references, and JRs are to include those that are abandoned, withdrawn, dismissed for want of prosecution, non-compliance with rules, dispositions by a single judge, etc. The civil appeals, cross-appeals, references, and JRs abandoned or withdrawn by the registrar take into account the certificates of lapse of appeal issued by the registry. notice of appeal counts as one appeal filed and one appeal disposed of, even though a number of related cases may be grouped together and heard at one hearing (example: if 10 cases are grouped together and heard together but are the subject of 10 notices of appeal, this counts as 10 appeals filed and 10 appeals disposed of). A notice of appeal containing both an appeal against conviction and against sentence, shall be counted as two appeals, but when heard together shall be counted as a single hearing. Where an appeal was deemed abandoned or struck in the previous calendar year and restored in this calendar year, it is counted as a new appeal filed.">
                                 <a href="javascript:showDetails('details1');">
                                     <span class="item">Tab 1 –	Types of appeals</span>
@@ -127,6 +127,13 @@
                             <span data-tooltip="The number of regular and supernumerary judges as of December 31st.">
                                 <a href="javascript:showDetails('details11');">
                                     <span class="item">Tab 11 – Number of judges</span>
+                                </a>
+                            </span>
+                        </li>
+                        <li id="lidetails12" class="btn-primary" style="padding-left:10px;padding-top:5px; padding-bottom:5px;">
+                            <span data-tooltip="The database will allow for comments to be added in order to explain true anomalies. Comments should only be used on an exceptional basis. A true anomaly is a situation that considerably deviates from what is considered normal or expected.">
+                                <a href="javascript:showDetails('details12');">
+                                    <span class="item">Tab 12 – Additional comments</span>
                                 </a>
                             </span>
                         </li>
@@ -1059,6 +1066,23 @@
                                             <textarea class="form-control" id="txtFIED_11_Comments" name="txtFIED_11_Comments" type="text" asp-for="@Model.txtFIED_11_Comments" autocomplete="txtFIED_11_Comments" data-rule-minlength="2" data-rule-maxlength="2000" style="width:100%" multiple="true" rows="4">
                             </textarea>
                                             <span asp-validation-for="@Model.txtFIED_11_Comments" class="label label-danger"></span>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </section>
+                        </details>
+                        <details id="details12" class="mrgn-tp-lg section-color" open hidden>
+                            <summary>
+                                Tab 12 – Additional comments
+                            </summary>
+                            <section class="center">
+                                <fieldset>
+                                    <div class="row col-md-12">
+                                        <div class="form-group col-md-12">
+                                            <label for="txtFIED_12_Comments"><span class="field-name">Comments </span></label>
+                                            <textarea class="form-control" id="txtFIED_12_Comments" name="txtFIED_12_Comments" type="text" asp-for="@Model.txtFIED_12_Comments" autocomplete="txtFIED_12_Comments" data-rule-minlength="2" data-rule-maxlength="2000" style="width:100%" multiple="true" rows="4">
+                            </textarea>
+                                            <span asp-validation-for="@Model.txtFIED_12_Comments" class="label label-danger"></span>
                                         </div>
                                     </div>
                                 </fieldset>

@@ -92,6 +92,12 @@ function fieldFocus(sectionId) {
             $('#details11').removeAttr('hidden');
             document.getElementById("txtFIELD11_1").focus();
             break;
+        case "12":
+            $("#lidetails12").css("background", "#1C578A");
+            $("#activeDetailsId").val("details12");
+            $('#details12').removeAttr('hidden');
+            document.getElementById("txtFIED_12_Comments").focus();
+            break;
         case '0': 
             $("#lidetailsBasicInfo").css("background", "#1C578A");
             $("#activeDetailsId").val("detailsBasicInfo");
@@ -194,6 +200,10 @@ function gotoPrevious() {
             $("#lidetails10").css("background", "#1C578A");
             $("#lidetails11").css("background", "#26374A");
             break;
+        case "details12": showDetails("details11");
+            $("#lidetails11").css("background", "#1C578A");
+            $("#lidetails12").css("background", "#26374A");
+            break;
     }
 }
 
@@ -244,7 +254,12 @@ function gotoNext() {
             $("#lidetails11").css("background", "#1C578A");
             $("#lidetails10").css("background", "#26374A");
             break;
-        case "details11": 
+        case "details11": showDetails("details12");
+            $("#lidetails12").css("background", "#1C578A");
+            $("#lidetails11").css("background", "#26374A");
+            break;
+            break;
+        case "details12":
             break;
     }
 }
@@ -275,4 +290,5 @@ function setTabsBackgroundDark() {
     $("#lidetails9").css("background", "#26374A");
     $("#lidetails10").css("background", "#26374A");
     $("#lidetails11").css("background", "#26374A");
+    $("#lidetails12").css("background", "#26374A");
 }

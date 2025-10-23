@@ -178,5 +178,7 @@ namespace BusinessLayer.DTOs
         public int? txtFIELD11_1 { get; set; }
         public int? txtFIELD11_2 { get; set; }
         public string? txtFIED_11_Comments { get; set; }
+
+        public string? txtFIED_12_Comments { get; set; }
     }
 }

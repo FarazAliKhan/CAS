@@ -981,6 +981,28 @@
             </fieldset>
         </section>
     </details>
+
+    <details class="mrgn-tp-lg section-color" open>
+        <summary>
+            Tab 12 – Additional comments
+            <span>
+                <a class="pull-right" onclick="submitForm('12');"><span class="glyphicon glyphicon-edit"></span></a>
+            </span>
+        </summary>
+        <section class="center">
+            <fieldset>
+                <div class="row col-md-12">
+                    <div class="form-group col-md-12">
+                        <label for="txtFIED_12_Comments"><span class="field-name">Comments </span></label>
+                        <textarea class="form-control" id="txtFIED_12_Comments" name="txtFIED_12_Comments" type="text" asp-for="@Model.txtFIED_12_Comments" autocomplete="txtFIED_12_Comments" data-rule-minlength="2" data-rule-maxlength="2000" style="width:100%" multiple="true" rows="4" readonly>
+                            </textarea>
+                        <span asp-validation-for="@Model.txtFIED_12_Comments" class="label label-danger"></span>
+                    </div>
+                </div>
+            </fieldset>
+        </section>
+    </details>
+
     <div>
         <span>
             <a class="btn btn-primary" asp-page="./FinalMessage">@localizer["Submit"]</a>

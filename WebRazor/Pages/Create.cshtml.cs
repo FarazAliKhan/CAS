@@ -226,6 +226,9 @@ namespace WebRazor.Pages
         public string? txtFIED_11_Comments { get; set; }
 
         [BindProperty]
+        public string? txtFIED_12_Comments { get; set; }
+
+        [BindProperty]
         public string? sectId { get; set; }
 
         private long maxFileSize = 1024;// * 10;
@@ -355,6 +358,8 @@ namespace WebRazor.Pages
                 txtFIELD11_1 = txtFIELD11_1,
                 txtFIELD11_2 = txtFIELD11_2,
                 txtFIED_11_Comments = txtFIED_11_Comments,
+
+                txtFIED_12_Comments = txtFIED_12_Comments,
             };
 
             TempData["txtCOURT"] = createItem.txtCOURT;
@@ -460,6 +465,8 @@ namespace WebRazor.Pages
             TempData["txtFIELD11_1"] = createItem.txtFIELD11_1;
             TempData["txtFIELD11_2"] = createItem.txtFIELD11_2;
             TempData["txtFIED_11_Comments"] = createItem.txtFIED_11_Comments;
+
+            TempData["txtFIED_12_Comments"] = createItem.txtFIED_12_Comments;
 
             return RedirectToPage("Review");
         }
@@ -569,6 +576,8 @@ namespace WebRazor.Pages
             txtFIELD11_1 = (int?)TempData["txtFIELD11_1"];
             txtFIELD11_2 = (int?)TempData["txtFIELD11_2"];
             txtFIED_11_Comments = (string?)TempData["txtFIED_11_Comments"];
+
+            txtFIED_12_Comments = (string?)TempData["txtFIED_12_Comments"];
 
             sectId = (string?)TempData["sectionId"];
         }

@@ -209,6 +209,10 @@ namespace WebRazor.Pages
         public int? txtFIELD11_2 { get; set; }
         [BindProperty]
         public string? txtFIED_11_Comments { get; set; }
+
+        [BindProperty]
+        public string? txtFIED_12_Comments { get; set; }
+
         public void OnGet()
         {
             if (TempData["txtCOURT"] != null)
@@ -316,6 +320,8 @@ namespace WebRazor.Pages
                 txtFIELD11_1 = (int?)TempData["txtFIELD11_1"];
                 txtFIELD11_2 = (int?)TempData["txtFIELD11_2"];
                 txtFIED_11_Comments = (string?)TempData["txtFIED_11_Comments"];
+
+                txtFIED_12_Comments = (string?)TempData["txtFIED_12_Comments"];
             }          
         }
 
@@ -424,6 +430,8 @@ namespace WebRazor.Pages
             TempData["txtFIELD11_1"] = createItem.txtFIELD11_1;
             TempData["txtFIELD11_2"] = createItem.txtFIELD11_2;
             TempData["txtFIED_11_Comments"] = createItem.txtFIED_11_Comments;
+
+            TempData["txtFIED_12_Comments"] = createItem.txtFIED_12_Comments;
 
             TempData["sectionId"] = Request.Query["sectionId"].FirstOrDefault();
             return RedirectToPage("Create", "Load");
