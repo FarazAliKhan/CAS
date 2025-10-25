@@ -601,5 +601,136 @@ namespace WebRazor.Pages
             }
             return Page();
         }
+
+        public IActionResult OnPostBasicInfo()
+        {
+            if (!ModelState.IsValid)
+                return Page();
+            
+            SetValuesInTempData();
+
+            TempData["sectionId"] = "1";
+            return RedirectToPage("Create", "Load");
+        }
+
+        public IActionResult OnPostDetails1()
+        {
+            if (!ModelState.IsValid)
+                return Page();
+
+            SetValuesInTempData();
+
+            TempData["sectionId"] = "2";
+            return RedirectToPage("Create", "Load");
+        }
+
+        public void SetValuesInTempData()
+        {
+            TempData["txtCOURT"] = txtCOURT;
+            TempData["dtFROM"] = dtFROM;
+            TempData["dtTO"] = dtTO;
+            TempData["intREPORTINGYEAR"] = intREPORTINGYEAR;
+
+            TempData["txtFIELD1_1_1"] = txtFIELD1_1_1;
+            TempData["txtFIELD1_1_2"] = txtFIELD1_1_2;
+            TempData["txtFIELD1_1_3"] = txtFIELD1_1_3;
+            TempData["txtFIELD1_1_4"] = txtFIELD1_1_4;
+            TempData["txtFIELD1_1_5"] = txtFIELD1_1_5;
+            TempData["txtFIELD1_1_6"] = txtFIELD1_1_6;
+            TempData["txtFIELD1_1_7"] = txtFIELD1_1_7;
+            TempData["txtFIED_1_Comments"] = txtFIED_1_Comments;
+
+            TempData["txtFIELD2_1_1"] = txtFIELD2_1_1;
+            TempData["txtFIELD2_1_2"] = txtFIELD2_1_2;
+            TempData["txtFIELD2_2_1_1"] = txtFIELD2_2_1_1;
+            TempData["txtFIELD2_2_1_2"] = txtFIELD2_2_1_2;
+            TempData["txtFIELD2_2_1_3"] = txtFIELD2_2_1_3;
+            TempData["txtFIELD2_2_2_1"] = txtFIELD2_2_2_1;
+            TempData["txtFIELD2_2_2_2"] = txtFIELD2_2_2_2;
+            TempData["txtFIELD2_2_2_3"] = txtFIELD2_2_2_3;
+            TempData["txtFIED_2_Comments"] = txtFIED_2_Comments;
+
+            TempData["txtFIELD3_1"] = txtFIELD3_1;
+            TempData["txtFIELD3_2"] = txtFIELD3_2;
+            TempData["txtFIED_3_Comments"] = txtFIED_3_Comments;
+
+            TempData["txtFIELD4_1_1"] = txtFIELD4_1_1;
+            TempData["txtFIELD4_1_2"] = txtFIELD4_1_2;
+            TempData["txtFIELD4_1_3"] = txtFIELD4_1_3;
+            TempData["txtFIELD4_1_4_1"] = txtFIELD4_1_4_1;
+            TempData["txtFIELD4_1_4_2"] = txtFIELD4_1_4_2;
+            TempData["txtFIELD4_1_4_3"] = txtFIELD4_1_4_3;
+            TempData["txtFIELD4_1_5_1"] = txtFIELD4_1_5_1;
+            TempData["txtFIELD4_1_5_2"] = txtFIELD4_1_5_2;
+            TempData["txtFIELD4_1_5_3"] = txtFIELD4_1_5_3;
+            TempData["txtFIELD4_1_6_1"] = txtFIELD4_1_6_1;
+            TempData["txtFIELD4_1_6_2"] = txtFIELD4_1_6_2;
+            TempData["txtFIELD4_1_6_3"] = txtFIELD4_1_6_3;
+            TempData["txtFIELD4_2_1"] = txtFIELD4_2_1;
+            TempData["txtFIELD4_2_2"] = txtFIELD4_2_2;
+            TempData["txtFIELD4_2_3"] = txtFIELD4_2_3;
+            TempData["txtFIELD4_2_4_1"] = txtFIELD4_2_4_1;
+            TempData["txtFIELD4_2_4_2"] = txtFIELD4_2_4_2;
+            TempData["txtFIELD4_2_4_3"] = txtFIELD4_2_4_3;
+            TempData["txtFIELD4_2_5_1"] = txtFIELD4_2_5_1;
+            TempData["txtFIELD4_2_5_2"] = txtFIELD4_2_5_2;
+            TempData["txtFIELD4_2_5_3"] = txtFIELD4_2_5_3;
+            TempData["txtFIELD4_2_6_1"] = txtFIELD4_2_6_1;
+            TempData["txtFIELD4_2_6_2"] = txtFIELD4_2_6_2;
+            TempData["txtFIELD4_2_6_3"] = txtFIELD4_2_6_3;
+            TempData["txtFIELD4_3_1"] = txtFIELD4_3_1;
+            TempData["txtFIELD4_3_2"] = txtFIELD4_3_2;
+            TempData["txtFIELD4_3_3"] = txtFIELD4_3_3;
+            TempData["txtFIELD4_3_4_1"] = txtFIELD4_3_4_1;
+            TempData["txtFIELD4_3_4_2"] = txtFIELD4_3_4_2;
+            TempData["txtFIELD4_3_4_3"] = txtFIELD4_3_4_3;
+            TempData["txtFIELD4_3_5_1"] = txtFIELD4_3_5_1;
+            TempData["txtFIELD4_3_5_2"] = txtFIELD4_3_5_2;
+            TempData["txtFIELD4_3_5_3"] = txtFIELD4_3_5_3;
+            TempData["txtFIELD4_3_6_1"] = txtFIELD4_3_6_1;
+            TempData["txtFIELD4_3_6_2"] = txtFIELD4_3_6_2;
+            TempData["txtFIELD4_3_6_3"] = txtFIELD4_3_6_3;
+            TempData["txtFIED_4_Comments"] = txtFIED_4_Comments;
+
+            TempData["txtFIELD5_1"] = txtFIELD5_1;
+            TempData["txtFIELD5_2"] = txtFIELD5_2;
+            TempData["txtFIELD5_3"] = txtFIELD5_3;
+            TempData["txtFIELD5_4"] = txtFIELD5_4;
+            TempData["txtFIED_5_Comments"] = txtFIED_5_Comments;
+
+            TempData["txtFIELD6_1_1"] = txtFIELD6_1_1;
+            TempData["txtFIELD6_1_2"] = txtFIELD6_1_2;
+            TempData["txtFIELD6_1_3"] = txtFIELD6_1_3;
+            TempData["txtFIELD6_2_1"] = txtFIELD6_2_1;
+            TempData["txtFIELD6_2_2"] = txtFIELD6_2_2;
+            TempData["txtFIELD6_2_3"] = txtFIELD6_2_3;
+            TempData["txtFIELD6_3_1"] = txtFIELD6_3_1;
+            TempData["txtFIELD6_3_2"] = txtFIELD6_3_2;
+            TempData["txtFIELD6_3_3"] = txtFIELD6_3_3;
+            TempData["txtFIED_6_Comments"] = txtFIED_6_Comments;
+
+            TempData["txtFIELD7_1_1"] = txtFIELD7_1_1;
+            TempData["txtFIELD7_1_2"] = txtFIELD7_1_2;
+            TempData["txtFIELD7_1_3"] = txtFIELD7_1_3;
+            TempData["txtFIED_7_Comments"] = txtFIED_7_Comments;
+
+            TempData["txtFIELD8_1"] = txtFIELD8_1;
+            TempData["txtFIELD8_2"] = txtFIELD8_2;
+            TempData["txtFIELD8_3"] = txtFIELD8_3;
+            TempData["txtFIED_8_Comments"] = txtFIED_8_Comments;
+
+            TempData["txtFIELD9_1"] = txtFIELD9_1;
+            TempData["txtFIELD9_2"] = txtFIELD9_2;
+            TempData["txtFIED_9_Comments"] = txtFIED_9_Comments;
+
+            TempData["txtFIELD10_1"] = txtFIELD10_1;
+            TempData["txtFIED_10_Comments"] = txtFIED_10_Comments;
+
+            TempData["txtFIELD11_1"] = txtFIELD11_1;
+            TempData["txtFIELD11_2"] = txtFIELD11_2;
+            TempData["txtFIED_11_Comments"] = txtFIED_11_Comments;
+
+            TempData["txtFIED_12_Comments"] = txtFIED_12_Comments;
+        }
     }
 }

@@ -31,6 +31,7 @@ function fieldFocus(sectionId) {
             $("#activeDetailsId").val("details1");
             $('#details1').removeAttr('hidden');
             document.getElementById("txtFIELD1_1_1").focus();
+            document.getElementById("txtFIELD1_1_1").setAttribute("required", "true");
             break;
         case "2": 
             $("#lidetails2").css("background", "#1C578A");
@@ -107,37 +108,6 @@ function fieldFocus(sectionId) {
     }
 }
 
-function Save() {
-    //var xhr = new XMLHttpRequest();
-    //var url = "/Review";
-    //xhr.open("POST", url, true);
-
-    let firstname = $("#firstName").val();
-    let lastname = $("#lastName").val();
-    let dob = $("#dob").val();
-
-    let datastring = `{
-        "FirstName": ` + firstname + `,` +
-       `"LastName": ` + lastname +
-        `}`;
-
-    let obj = {
-        "FirstName" : firstname,
-        "LastName": lastname,
-        "dob": dob
-    }
-
-    $.ajax({
-        type: "POST",
-        url: "/Review?handler=ReviewToCreate",
-        data: { data: JSON.stringify(datastring) },
-        dataType: "json",
-        success: function (data) {
-            window.location.href = "/Create/Load"
-        }
-    })
-}
-
 function showDetails(detailsId) {
     let activeDetails = $("#activeDetailsId").val();
     hideDetails(activeDetails);
@@ -208,59 +178,69 @@ function gotoPrevious() {
 }
 
 function gotoNext() {
-    let activeDetails = $("#activeDetailsId").val();
-    switch (activeDetails) {
-        case "detailsBasicInfo": showDetails("details1");
-            $("#lidetails1").css("background", "#1C578A");
-            $("#lidetailsBasicInfo").css("background", "#26374A");
-            break;
-        case "details1": showDetails("details2");
-            $("#lidetails2").css("background", "#1C578A");
-            $("#lidetails1").css("background", "#26374A");
-            break;
-        case "details2": showDetails("details3");
-            $("#lidetails3").css("background", "#1C578A");
-            $("#lidetails2").css("background", "#26374A");
-            break;
-        case "details3": showDetails("details4");
-            $("#lidetails4").css("background", "#1C578A");
-            $("#lidetails3").css("background", "#26374A");
-            break;
-        case "details4": showDetails("details5");
-            $("#lidetails5").css("background", "#1C578A");
-            $("#lidetails4").css("background", "#26374A");
-            break;
-        case "details5": showDetails("details6");
-            $("#lidetails6").css("background", "#1C578A");
-            $("#lidetails5").css("background", "#26374A");
-            break;
-        case "details6": showDetails("details7");
-            $("#lidetails7").css("background", "#1C578A");
-            $("#lidetails6").css("background", "#26374A");
-            break;
-        case "details7": showDetails("details8");
-            $("#lidetails8").css("background", "#1C578A");
-            $("#lidetails7").css("background", "#26374A");
-            break;
-        case "details8": showDetails("details9");
-            $("#lidetails9").css("background", "#1C578A");
-            $("#lidetails8").css("background", "#26374A");
-            break;
-        case "details9": showDetails("details10");
-            $("#lidetails10").css("background", "#1C578A");
-            $("#lidetails9").css("background", "#26374A");
-            break;
-        case "details10": showDetails("details11");
-            $("#lidetails11").css("background", "#1C578A");
-            $("#lidetails10").css("background", "#26374A");
-            break;
-        case "details11": showDetails("details12");
-            $("#lidetails12").css("background", "#1C578A");
-            $("#lidetails11").css("background", "#26374A");
-            break;
-            break;
-        case "details12":
-            break;
+    var validator = $("form").validate();
+    if ($('form').valid()) {
+        const summary = document.getElementById("validationSummary");
+        summary.classList.add("d-none");
+        let activeDetails = $("#activeDetailsId").val();
+        switch (activeDetails) {
+            case "detailsBasicInfo": showDetails("details1");
+                $("#lidetails1").css("background", "#1C578A");
+                $("#lidetailsBasicInfo").css("background", "#26374A");
+                document.getElementById("txtFIELD1_1_1").setAttribute("required", "true");
+                break;
+            case "details1": showDetails("details2");
+                $("#lidetails2").css("background", "#1C578A");
+                $("#lidetails1").css("background", "#26374A");
+                break;
+            case "details2": showDetails("details3");
+                $("#lidetails3").css("background", "#1C578A");
+                $("#lidetails2").css("background", "#26374A");
+                break;
+            case "details3": showDetails("details4");
+                $("#lidetails4").css("background", "#1C578A");
+                $("#lidetails3").css("background", "#26374A");
+                break;
+            case "details4": showDetails("details5");
+                $("#lidetails5").css("background", "#1C578A");
+                $("#lidetails4").css("background", "#26374A");
+                break;
+            case "details5": showDetails("details6");
+                $("#lidetails6").css("background", "#1C578A");
+                $("#lidetails5").css("background", "#26374A");
+                break;
+            case "details6": showDetails("details7");
+                $("#lidetails7").css("background", "#1C578A");
+                $("#lidetails6").css("background", "#26374A");
+                break;
+            case "details7": showDetails("details8");
+                $("#lidetails8").css("background", "#1C578A");
+                $("#lidetails7").css("background", "#26374A");
+                break;
+            case "details8": showDetails("details9");
+                $("#lidetails9").css("background", "#1C578A");
+                $("#lidetails8").css("background", "#26374A");
+                break;
+            case "details9": showDetails("details10");
+                $("#lidetails10").css("background", "#1C578A");
+                $("#lidetails9").css("background", "#26374A");
+                break;
+            case "details10": showDetails("details11");
+                $("#lidetails11").css("background", "#1C578A");
+                $("#lidetails10").css("background", "#26374A");
+                break;
+            case "details11": showDetails("details12");
+                $("#lidetails12").css("background", "#1C578A");
+                $("#lidetails11").css("background", "#26374A");
+                break;
+                break;
+            case "details12":
+                break;
+        }
+    }
+    else {
+        var errors = validator.errorList;
+        showValidationSummary(errors);
     }
 }
 
@@ -291,4 +271,72 @@ function setTabsBackgroundDark() {
     $("#lidetails10").css("background", "#26374A");
     $("#lidetails11").css("background", "#26374A");
     $("#lidetails12").css("background", "#26374A");
+}
+
+function submitBasicInfoForm() {
+    var form = document.getElementById("basicInfoForm");
+    form.action = "/Create?handler=basicinfo";
+    form.method = "POST";
+    form.submit();
+}
+
+//$('form').each(function () {
+//    var validator = $(this).data('validator');
+//    if (validator) {
+//        validator.settings.showErrors = function (map, errors) {
+//            this.defaultShowErrors();
+//            if ($('div[data-valmsg-summary=true] li:visible').length) {
+//                this.checkForm();
+//                if (this.errorList.length)
+//                    $(this.currentForm).triggerHandler("invalid-form", [this]);
+//                else
+//                    $(this.currentForm).resetSummary();
+//            }
+//        };
+//    }
+//});
+
+//jQuery.fn.resetSummary = function () {
+//    var form = this.is('form') ? this : this.closest('form');
+//    form.find("[data-valmsg-summary=true]")
+//        .removeClass("validation-summary-errors")
+//        .addClass("validation-summary-valid")
+//        .find("ul")
+//        .empty();
+//    return this;
+//};
+
+//$('form').validate({
+//    errorPlacement: function (error, element) {
+//        element = element.closest('li');
+//        element = element.children(':first-child');
+//        error.insertBefore(element);
+//        error.addClass('message');
+//        $(function () {                                 // my function
+//            var errorIndex = $(error).index('div');
+//            var errorId = 'errordiv' + errorIndex.toString();
+//            $(error).attr('id', errorId);
+//            $('.errorList').append('<li><a href="#' + errorId + '">' + $(error).text() + '</a></li>');
+//        });
+//    }
+//});
+
+//$('form').validate({
+//    errorPlacement: function (error, element) {
+//        showValidationSummary(["Please enter", "value"]);
+//    }
+//});
+
+function showValidationSummary(errors) {
+    const summary = document.getElementById("validationSummary");
+    const list = document.getElementById("errorList");
+    list.innerHTML = ""; // Clear previous errors
+
+    errors.forEach(error => {
+        const li = document.createElement("li");
+        li.textContent = error.message;
+        list.appendChild(li);
+    });
+
+    summary.classList.remove("d-none");
 }

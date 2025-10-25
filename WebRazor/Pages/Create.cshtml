@@ -139,7 +139,7 @@
                 </div>
             </div>
             <div class="col-md-7">
-                <div class="wb-frmvld">
+                <div>
                     @if (!ViewData.ModelState.IsValid)
                     {
                         @* <div class="alert alert-danger" role="alert">
@@ -154,11 +154,21 @@
                             <div class="alert alert-danger" role="alert">
                                 <br />
                                 @Html.ValidationSummary(false, localizer["ErrorText"])
+
                             </div>
                         </div>
                     }
-
-                    <form method="post" id="createForm">
+                    
+                    <div class="wb-frmvld">
+                        <form method="post" id="createForm">
+                            <div class="bg-danger">
+                                <div id="validationSummary" class="alert alert-danger d-none" role="alert">
+                                    <h4 class="alert-heading">Please fix the following errors:</h4>
+                                    <ul id="errorList" class="mb-0">
+                                        <!-- Errors will be injected here -->
+                                    </ul>
+                                </div>
+                            </div>
                         <input type="hidden" id="activeDetailsId" value="detailsBasicInfo">
                         <input type="hidden" id="sectionId" asp-for="@Model.sectId">
                         <details id="detailsBasicInfo" class="mrgn-tp-lg section-color" open>
@@ -170,8 +180,9 @@
                                     <div class="row col-sm-12">
                                         <div class="row">
                                             <div class="form-group col-md-12">
-                                                <label for="txtCOURT"><span class="field-name">Name of Court</span></label>
-                                                <select class="form-control" id="txtCOURT" name="txtCOURT" asp-for="@Model.txtCOURT" onchange="javascript:enableDisableReview();" autocomplete="txtCOURT" data-rule-minlength="1" style="width:100%">
+                                                <label for="txtCOURT" class="required"><span class="field-name">Name of Court</span></label>
+                                                <select class="form-control" id="txtCOURT" name="txtCOURT" asp-for="@Model.txtCOURT" onchange="javascript:enableDisableReview();" autocomplete="txtCOURT" data-rule-minlength="1" style="width:100%" required="required"
+                                                data-msg="Please enter Name of Court">
                                                     <option value="">Select Court</option>
                                                     <option value="ABCA">Alberta Court of Appeal</option>
                                                     <option value="BCCA">Court of Appeal for British Columbia</option>
@@ -195,7 +206,8 @@
                                         <div class="row">
                                             <div class="form-group col-sm-6">
                                                 <label for="intREPORTINGYEAR"><span class="field-name">Reporting Year</span></label>
-                                                <select class="form-control" id="intREPORTINGYEAR" name="intREPORTINGYEAR" asp-for="@Model.intREPORTINGYEAR" onchange="javascript:enableDisableReview();" autocomplete="intREPORTINGYEAR" data-rule-minlength="1" style="width:100%; height:52px;">
+                                                <select class="form-control" id="intREPORTINGYEAR" name="intREPORTINGYEAR" asp-for="@Model.intREPORTINGYEAR" onchange="javascript:enableDisableReview();" autocomplete="intREPORTINGYEAR" data-rule-minlength="1" style="width:100%; height:52px;" required="required"
+                                                            data-msg="Please enter Reporting Year">
                                                     <option value="">Select Year</option>
                                                     <option value="2023">2023</option>
                                                     <option value="2024">2024</option>
@@ -207,7 +219,8 @@
                                             <div class="form-group col-sm-3">
                                                 <label for="dtFROM"><span class="field-name">From</span></label>
                                                 <span data-tooltip="The start date of the period covered by the submission."><i class="fa-solid fa-circle-info"></i></span>
-                                                <input class="form-control" id="dtFROM" name="dtFROM" type="date" asp-for="@Model.dtFROM" onchange="javascript:enableDisableReview();" autocomplete="dtFROM" data-rule-minlength="1" style="width:100%">
+                                                <input class="form-control" id="dtFROM" name="dtFROM" type="date" asp-for="@Model.dtFROM" onchange="javascript:enableDisableReview();" autocomplete="dtFROM" data-rule-minlength="1" style="width:100%" required="required"
+                                                           data-msg="Please enter From Date">
                                                 <span asp-validation-for="@Model.dtFROM" class="label label-danger"></span>
                                             </div>
                                             <div class="form-group col-sm-3">
@@ -215,7 +228,8 @@
                                                     <span class="field-name">To</span>
                                                 </label>
                                                 <span data-tooltip="The end date of the period covered by the submission."><i class="fa-solid fa-circle-info"></i></span>
-                                                <input class="form-control" id="dtTO" name="dtTO" type="date" asp-for="@Model.dtTO" onchange="javascript:enableDisableReview();" autocomplete="dtTO" data-rule-minlength="1" style="width:100%">
+                                                <input class="form-control" id="dtTO" name="dtTO" type="date" asp-for="@Model.dtTO" onchange="javascript:enableDisableReview();" autocomplete="dtTO" data-rule-minlength="1" style="width:100%" required="required"
+                                                           data-msg="Please enter To Date">
                                                 <span asp-validation-for="@Model.dtTO" class="label label-danger"></span>
                                             </div>
                                         </div>
@@ -234,7 +248,8 @@
                                         <div class="form-group col-md-12">
                                             <label for="txtFIELD1_1_1"><span class="field-name">1.1.1 Civil appeals pending as of Dec 31 (prev. year) </span></label>
                                             <span data-tooltip="Number of civil appeals, cross-appeals, references, and JRs filed but still pending as of December 31st of the previous year."><i class="fa-solid fa-circle-info"></i></span>
-                                            <input class="form-control" id="txtFIELD1_1_1" name="txtFIELD1_1_1" type="number" asp-for="@Model.txtFIELD1_1_1" autocomplete="txtFIELD1_1_1" data-rule-minlength="1" style="width:100%">
+                                            <input class="form-control" id="txtFIELD1_1_1" name="txtFIELD1_1_1" type="number" asp-for="@Model.txtFIELD1_1_1" autocomplete="txtFIELD1_1_1" data-rule-minlength="1" style="width:100%"
+                                                       data-msg="Please enter Civic Appeals 1.1.1">
                                             <span asp-validation-for="@Model.txtFIELD1_1_1" class="label label-danger"></span>
                                         </div>
                                     </div>
@@ -1092,6 +1107,7 @@
                             <button class="btn btn-primary" type="button" onclick="javascript:gotoNext();">Next Tab</button>
                         </div>
                     </form>
+                    </div>
                     <br />
                 </div>
             </div>

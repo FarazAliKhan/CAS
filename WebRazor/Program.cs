@@ -15,7 +15,9 @@ Program p = new Program();
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddServerSideBlazor();
 builder.Services.AddRazorPages();
+builder.Services.AddRazorComponents();
 
 builder.Services.Configure<RequestLocalizationOptions>(options =>
 {
