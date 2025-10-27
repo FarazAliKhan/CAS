@@ -12,6 +12,18 @@ function submitForm(sectionId) {
     form.submit();
 }
 
+function submitForReview() {
+    var validator = $("form").validate();
+    if ($('form').valid()) {
+        var form = document.getElementById("createForm");
+        form.submit();
+    }
+    else {
+        var errors = validator.errorList;
+        showValidationSummary(errors);
+    }
+}
+
 function focusOnForm(sectionId) {
     let sectField = document.getElementById("sectionId");
     if (sectField != null) {
@@ -129,52 +141,65 @@ function gotoPrevious() {
         case "details1": showDetails("detailsBasicInfo");
             $("#lidetailsBasicInfo").css("background", "#1C578A");
             $("#lidetails1").css("background", "#26374A");
+            makeSection1NotRequired();
             break;
         case "details2": showDetails("details1");
             $("#lidetails1").css("background", "#1C578A");
             $("#lidetails2").css("background", "#26374A");
+            makeSection2NotRequired();
             break;
         case "details3": showDetails("details2");
             $("#lidetails2").css("background", "#1C578A");
             $("#lidetails3").css("background", "#26374A");
+            makeSection3NotRequired();
             break;
         case "details4": showDetails("details3");
             $("#lidetails3").css("background", "#1C578A");
             $("#lidetails4").css("background", "#26374A");
+            makeSection4NotRequired();
             break;
         case "details5": showDetails("details4");
             $("#lidetails4").css("background", "#1C578A");
             $("#lidetails5").css("background", "#26374A");
+            makeSection5NotRequired();
             break;
         case "details6": showDetails("details5");
             $("#lidetails5").css("background", "#1C578A");
             $("#lidetails6").css("background", "#26374A");
+            makeSection6NotRequired();
             break;
         case "details7": showDetails("details6");
             $("#lidetails6").css("background", "#1C578A");
             $("#lidetails7").css("background", "#26374A");
+            makeSection7NotRequired();
             break;
         case "details8": showDetails("details7");
             $("#lidetails7").css("background", "#1C578A");
             $("#lidetails8").css("background", "#26374A");
+            makeSection8NotRequired();
             break;
         case "details9": showDetails("details8");
             $("#lidetails8").css("background", "#1C578A");
             $("#lidetails9").css("background", "#26374A");
+            makeSection9NotRequired();
             break;
         case "details10": showDetails("details9");
             $("#lidetails9").css("background", "#1C578A");
             $("#lidetails10").css("background", "#26374A");
+            makeSection10NotRequired();
             break;
         case "details11": showDetails("details10");
             $("#lidetails10").css("background", "#1C578A");
             $("#lidetails11").css("background", "#26374A");
+            makeSection11NotRequired();
             break;
         case "details12": showDetails("details11");
             $("#lidetails11").css("background", "#1C578A");
             $("#lidetails12").css("background", "#26374A");
             break;
     }
+    const summary = document.getElementById("validationSummary");
+    summary.classList.add("d-none");
 }
 
 function gotoNext() {
@@ -187,52 +212,61 @@ function gotoNext() {
             case "detailsBasicInfo": showDetails("details1");
                 $("#lidetails1").css("background", "#1C578A");
                 $("#lidetailsBasicInfo").css("background", "#26374A");
-                document.getElementById("txtFIELD1_1_1").setAttribute("required", "true");
+                makeSection1Required();
                 break;
             case "details1": showDetails("details2");
                 $("#lidetails2").css("background", "#1C578A");
                 $("#lidetails1").css("background", "#26374A");
+                makeSection2Required();
                 break;
             case "details2": showDetails("details3");
                 $("#lidetails3").css("background", "#1C578A");
                 $("#lidetails2").css("background", "#26374A");
+                makeSection3Required();
                 break;
             case "details3": showDetails("details4");
                 $("#lidetails4").css("background", "#1C578A");
                 $("#lidetails3").css("background", "#26374A");
+                makeSection4Required();
                 break;
             case "details4": showDetails("details5");
                 $("#lidetails5").css("background", "#1C578A");
                 $("#lidetails4").css("background", "#26374A");
+                makeSection5Required();
                 break;
             case "details5": showDetails("details6");
                 $("#lidetails6").css("background", "#1C578A");
                 $("#lidetails5").css("background", "#26374A");
+                makeSection6Required();
                 break;
             case "details6": showDetails("details7");
                 $("#lidetails7").css("background", "#1C578A");
                 $("#lidetails6").css("background", "#26374A");
+                makeSection7Required();
                 break;
             case "details7": showDetails("details8");
                 $("#lidetails8").css("background", "#1C578A");
                 $("#lidetails7").css("background", "#26374A");
+                makeSection8Required();
                 break;
             case "details8": showDetails("details9");
                 $("#lidetails9").css("background", "#1C578A");
                 $("#lidetails8").css("background", "#26374A");
+                makeSection9Required();
                 break;
             case "details9": showDetails("details10");
                 $("#lidetails10").css("background", "#1C578A");
                 $("#lidetails9").css("background", "#26374A");
+                makeSection10Required();
                 break;
             case "details10": showDetails("details11");
                 $("#lidetails11").css("background", "#1C578A");
                 $("#lidetails10").css("background", "#26374A");
+                makeSection11Required();
                 break;
             case "details11": showDetails("details12");
                 $("#lidetails12").css("background", "#1C578A");
                 $("#lidetails11").css("background", "#26374A");
-                break;
                 break;
             case "details12":
                 break;
@@ -339,4 +373,226 @@ function showValidationSummary(errors) {
     });
 
     summary.classList.remove("d-none");
+}
+
+// Make Required
+function makeSection1Required() {
+    document.getElementById("txtFIELD1_1_1").setAttribute("required", "true");
+    document.getElementById("txtFIELD1_1_2").setAttribute("required", "true");
+    document.getElementById("txtFIELD1_1_3").setAttribute("required", "true");
+    document.getElementById("txtFIELD1_1_4").setAttribute("required", "true");
+    document.getElementById("txtFIELD1_1_5").setAttribute("required", "true");
+    document.getElementById("txtFIELD1_1_6").setAttribute("required", "true");
+    document.getElementById("txtFIELD1_1_7").setAttribute("required", "true");
+}
+
+function makeSection2Required() {
+    document.getElementById("txtFIELD2_1_1").setAttribute("required", "true");
+    document.getElementById("txtFIELD2_1_2").setAttribute("required", "true");
+    document.getElementById("txtFIELD2_2_1_1").setAttribute("required", "true");
+    document.getElementById("txtFIELD2_2_1_2").setAttribute("required", "true");
+    document.getElementById("txtFIELD2_2_1_3").setAttribute("required", "true");
+    document.getElementById("txtFIELD2_2_2_1").setAttribute("required", "true");
+    document.getElementById("txtFIELD2_2_2_2").setAttribute("required", "true");
+    document.getElementById("txtFIELD2_2_2_3").setAttribute("required", "true");
+}
+
+function makeSection3Required() {
+    document.getElementById("txtFIELD3_1").setAttribute("required", "true");
+    document.getElementById("txtFIELD3_2").setAttribute("required", "true");
+}
+
+function makeSection4Required() {
+    document.getElementById("txtFIELD4_1_1").setAttribute("required", "true");
+    document.getElementById("txtFIELD4_1_2").setAttribute("required", "true");
+    document.getElementById("txtFIELD4_1_3").setAttribute("required", "true");
+    document.getElementById("txtFIELD4_1_4_1").setAttribute("required", "true");
+    document.getElementById("txtFIELD4_1_4_2").setAttribute("required", "true");
+    document.getElementById("txtFIELD4_1_4_3").setAttribute("required", "true");
+    document.getElementById("txtFIELD4_1_5_1").setAttribute("required", "true");
+    document.getElementById("txtFIELD4_1_5_2").setAttribute("required", "true");
+    document.getElementById("txtFIELD4_1_5_3").setAttribute("required", "true");
+    document.getElementById("txtFIELD4_1_6_1").setAttribute("required", "true");
+    document.getElementById("txtFIELD4_1_6_2").setAttribute("required", "true");
+    document.getElementById("txtFIELD4_1_6_3").setAttribute("required", "true");
+    document.getElementById("txtFIELD4_2_1").setAttribute("required", "true");
+    document.getElementById("txtFIELD4_2_2").setAttribute("required", "true");
+    document.getElementById("txtFIELD4_2_3").setAttribute("required", "true");
+    document.getElementById("txtFIELD4_2_4_1").setAttribute("required", "true");
+    document.getElementById("txtFIELD4_2_4_2").setAttribute("required", "true");
+    document.getElementById("txtFIELD4_2_4_3").setAttribute("required", "true");
+    document.getElementById("txtFIELD4_2_5_1").setAttribute("required", "true");
+    document.getElementById("txtFIELD4_2_5_2").setAttribute("required", "true");
+    document.getElementById("txtFIELD4_2_5_3").setAttribute("required", "true");
+    document.getElementById("txtFIELD4_2_6_1").setAttribute("required", "true");
+    document.getElementById("txtFIELD4_2_6_2").setAttribute("required", "true");
+    document.getElementById("txtFIELD4_2_6_3").setAttribute("required", "true");
+    document.getElementById("txtFIELD4_3_1").setAttribute("required", "true");
+    document.getElementById("txtFIELD4_3_2").setAttribute("required", "true");
+    document.getElementById("txtFIELD4_3_3").setAttribute("required", "true");
+    document.getElementById("txtFIELD4_3_4_1").setAttribute("required", "true");
+    document.getElementById("txtFIELD4_3_4_2").setAttribute("required", "true");
+    document.getElementById("txtFIELD4_3_4_3").setAttribute("required", "true");
+    document.getElementById("txtFIELD4_3_5_1").setAttribute("required", "true");
+    document.getElementById("txtFIELD4_3_5_2").setAttribute("required", "true");
+    document.getElementById("txtFIELD4_3_5_3").setAttribute("required", "true");
+    document.getElementById("txtFIELD4_3_6_1").setAttribute("required", "true");
+    document.getElementById("txtFIELD4_3_6_2").setAttribute("required", "true");
+    document.getElementById("txtFIELD4_3_6_3").setAttribute("required", "true");
+}
+
+function makeSection5Required() {
+    document.getElementById("txtFIELD5_1").setAttribute("required", "true");
+    document.getElementById("txtFIELD5_2").setAttribute("required", "true");
+    document.getElementById("txtFIELD5_3").setAttribute("required", "true");
+    document.getElementById("txtFIELD5_4").setAttribute("required", "true");
+}
+
+function makeSection6Required() {
+    document.getElementById("txtFIELD6_1_1").setAttribute("required", "true");
+    document.getElementById("txtFIELD6_1_2").setAttribute("required", "true");
+    document.getElementById("txtFIELD6_1_3").setAttribute("required", "true");
+    document.getElementById("txtFIELD6_2_1").setAttribute("required", "true");
+    document.getElementById("txtFIELD6_2_2").setAttribute("required", "true");
+    document.getElementById("txtFIELD6_2_3").setAttribute("required", "true");
+    document.getElementById("txtFIELD6_3_1").setAttribute("required", "true");
+    document.getElementById("txtFIELD6_3_2").setAttribute("required", "true");
+    document.getElementById("txtFIELD6_3_3").setAttribute("required", "true");
+}
+
+function makeSection7Required() {
+    document.getElementById("txtFIELD7_1_1").setAttribute("required", "true");
+    document.getElementById("txtFIELD7_1_2").setAttribute("required", "true");
+    document.getElementById("txtFIELD7_1_3").setAttribute("required", "true");
+}
+
+function makeSection8Required() {
+    document.getElementById("txtFIELD8_1").setAttribute("required", "true");
+    document.getElementById("txtFIELD8_2").setAttribute("required", "true");
+    document.getElementById("txtFIELD8_3").setAttribute("required", "true");
+}
+
+function makeSection9Required() {
+    document.getElementById("txtFIELD9_1").setAttribute("required", "true");
+    document.getElementById("txtFIELD9_2").setAttribute("required", "true");
+}
+
+function makeSection10Required() {
+    document.getElementById("txtFIELD10_1").setAttribute("required", "true");
+}
+
+function makeSection11Required() {
+    document.getElementById("txtFIELD11_1").setAttribute("required", "true");
+    document.getElementById("txtFIELD11_2").setAttribute("required", "true");
+}
+
+// Make Not Required
+function makeSection1NotRequired() {
+    document.getElementById("txtFIELD1_1_1").removeAttribute("required");
+    document.getElementById("txtFIELD1_1_2").removeAttribute("required");
+    document.getElementById("txtFIELD1_1_3").removeAttribute("required");
+    document.getElementById("txtFIELD1_1_4").removeAttribute("required");
+    document.getElementById("txtFIELD1_1_5").removeAttribute("required");
+    document.getElementById("txtFIELD1_1_6").removeAttribute("required");
+    document.getElementById("txtFIELD1_1_7").removeAttribute("required");
+}
+
+function makeSection2NotRequired() {
+    document.getElementById("txtFIELD2_1_1").removeAttribute("required");
+    document.getElementById("txtFIELD2_1_2").removeAttribute("required");
+    document.getElementById("txtFIELD2_2_1_1").removeAttribute("required");
+    document.getElementById("txtFIELD2_2_1_2").removeAttribute("required");
+    document.getElementById("txtFIELD2_2_1_3").removeAttribute("required");
+    document.getElementById("txtFIELD2_2_2_1").removeAttribute("required");
+    document.getElementById("txtFIELD2_2_2_2").removeAttribute("required");
+    document.getElementById("txtFIELD2_2_2_3").removeAttribute("required");
+}
+
+function makeSection3NotRequired() {
+    document.getElementById("txtFIELD3_1").removeAttribute("required");
+    document.getElementById("txtFIELD3_2").removeAttribute("required");
+}
+
+function makeSection4NotRequired() {
+    document.getElementById("txtFIELD4_1_1").removeAttribute("required");
+    document.getElementById("txtFIELD4_1_2").removeAttribute("required");
+    document.getElementById("txtFIELD4_1_3").removeAttribute("required");
+    document.getElementById("txtFIELD4_1_4_1").removeAttribute("required");
+    document.getElementById("txtFIELD4_1_4_2").removeAttribute("required");
+    document.getElementById("txtFIELD4_1_4_3").removeAttribute("required");
+    document.getElementById("txtFIELD4_1_5_1").removeAttribute("required");
+    document.getElementById("txtFIELD4_1_5_2").removeAttribute("required");
+    document.getElementById("txtFIELD4_1_5_3").removeAttribute("required");
+    document.getElementById("txtFIELD4_1_6_1").removeAttribute("required");
+    document.getElementById("txtFIELD4_1_6_2").removeAttribute("required");
+    document.getElementById("txtFIELD4_1_6_3").removeAttribute("required");
+    document.getElementById("txtFIELD4_2_1").removeAttribute("required");
+    document.getElementById("txtFIELD4_2_2").removeAttribute("required");
+    document.getElementById("txtFIELD4_2_3").removeAttribute("required");
+    document.getElementById("txtFIELD4_2_4_1").removeAttribute("required");
+    document.getElementById("txtFIELD4_2_4_2").removeAttribute("required");
+    document.getElementById("txtFIELD4_2_4_3").removeAttribute("required");
+    document.getElementById("txtFIELD4_2_5_1").removeAttribute("required");
+    document.getElementById("txtFIELD4_2_5_2").removeAttribute("required");
+    document.getElementById("txtFIELD4_2_5_3").removeAttribute("required");
+    document.getElementById("txtFIELD4_2_6_1").removeAttribute("required");
+    document.getElementById("txtFIELD4_2_6_2").removeAttribute("required");
+    document.getElementById("txtFIELD4_2_6_3").removeAttribute("required");
+    document.getElementById("txtFIELD4_3_1").removeAttribute("required");
+    document.getElementById("txtFIELD4_3_2").removeAttribute("required");
+    document.getElementById("txtFIELD4_3_3").removeAttribute("required");
+    document.getElementById("txtFIELD4_3_4_1").removeAttribute("required");
+    document.getElementById("txtFIELD4_3_4_2").removeAttribute("required");
+    document.getElementById("txtFIELD4_3_4_3").removeAttribute("required");
+    document.getElementById("txtFIELD4_3_5_1").removeAttribute("required");
+    document.getElementById("txtFIELD4_3_5_2").removeAttribute("required");
+    document.getElementById("txtFIELD4_3_5_3").removeAttribute("required");
+    document.getElementById("txtFIELD4_3_6_1").removeAttribute("required");
+    document.getElementById("txtFIELD4_3_6_2").removeAttribute("required");
+    document.getElementById("txtFIELD4_3_6_3").removeAttribute("required");
+}
+
+function makeSection5NotRequired() {
+    document.getElementById("txtFIELD5_1").removeAttribute("required");
+    document.getElementById("txtFIELD5_2").removeAttribute("required");
+    document.getElementById("txtFIELD5_3").removeAttribute("required");
+    document.getElementById("txtFIELD5_4").removeAttribute("required");
+}
+
+function makeSection6NotRequired() {
+    document.getElementById("txtFIELD6_1_1").removeAttribute("required");
+    document.getElementById("txtFIELD6_1_2").removeAttribute("required");
+    document.getElementById("txtFIELD6_1_3").removeAttribute("required");
+    document.getElementById("txtFIELD6_2_1").removeAttribute("required");
+    document.getElementById("txtFIELD6_2_2").removeAttribute("required");
+    document.getElementById("txtFIELD6_2_3").removeAttribute("required");
+    document.getElementById("txtFIELD6_3_1").removeAttribute("required");
+    document.getElementById("txtFIELD6_3_2").removeAttribute("required");
+    document.getElementById("txtFIELD6_3_3").removeAttribute("required");
+}
+
+function makeSection7NotRequired() {
+    document.getElementById("txtFIELD7_1_1").removeAttribute("required");
+    document.getElementById("txtFIELD7_1_2").removeAttribute("required");
+    document.getElementById("txtFIELD7_1_3").removeAttribute("required");
+}
+
+function makeSection8NotRequired() {
+    document.getElementById("txtFIELD8_1").removeAttribute("required");
+    document.getElementById("txtFIELD8_2").removeAttribute("required");
+    document.getElementById("txtFIELD8_3").removeAttribute("required");
+}
+
+function makeSection9NotRequired() {
+    document.getElementById("txtFIELD9_1").removeAttribute("required");
+    document.getElementById("txtFIELD9_2").removeAttribute("required");
+}
+
+function makeSection10NotRequired() {
+    document.getElementById("txtFIELD10_1").removeAttribute("required");
+}
+
+function makeSection11NotRequired() {
+    document.getElementById("txtFIELD11_1").removeAttribute("required");
+    document.getElementById("txtFIELD11_2").removeAttribute("required");
 }
