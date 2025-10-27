@@ -126,6 +126,47 @@ function showDetails(detailsId) {
     $('#li' + detailsId).css("background", "#1C578A");
     $('#' + detailsId).removeAttr('hidden');
     $("#activeDetailsId").val(detailsId);
+    const summary = document.getElementById("validationSummary");
+    summary.classList.add("d-none");
+    switch (detailsId) {
+        case "detailsBasicInfo":
+            break;
+        case "details1":
+            makeSection1Required();
+            break;
+        case "details2":
+            makeSection2Required();
+            break;
+        case "details3":
+            makeSection3Required();
+            break;
+        case "details4":
+            makeSection4Required();
+            break;
+        case "details5":
+            makeSection5Required();
+            break;
+        case "details6":
+            makeSection6Required();
+            break;
+        case "details7":
+            makeSection7Required();
+            break;
+        case "details8":
+            makeSection8Required();
+            break;
+        case "details9":
+            makeSection9Required();
+            break;
+        case "details10":
+            makeSection10Required();
+            break;
+        case "details11":
+            makeSection11Required();
+            break;
+        case "details12":
+            break;
+    }
 }
 
 function hideDetails(detailsId) {
