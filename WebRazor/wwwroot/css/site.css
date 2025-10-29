@@ -45,6 +45,10 @@
     text-align: right;
 }
 
+.align-left {
+    text-align: left;
+}
+
 .item{
     color: #fff;
 }
