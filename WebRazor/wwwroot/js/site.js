@@ -425,6 +425,11 @@ function makeSection1Required() {
     document.getElementById("txtFIELD1_1_5").setAttribute("required", "true");
     document.getElementById("txtFIELD1_1_6").setAttribute("required", "true");
     document.getElementById("txtFIELD1_1_7").setAttribute("required", "true");
+    document.getElementById("txtFIELD1_2_1").setAttribute("required", "true");
+    document.getElementById("txtFIELD1_2_2").setAttribute("required", "true");
+    document.getElementById("txtFIELD1_2_3").setAttribute("required", "true");
+    document.getElementById("txtFIELD1_2_4").setAttribute("required", "true");
+    document.getElementById("txtFIELD1_2_5").setAttribute("required", "true");
 }
 
 function makeSection2Required() {
@@ -536,6 +541,11 @@ function makeSection1NotRequired() {
     document.getElementById("txtFIELD1_1_5").removeAttribute("required");
     document.getElementById("txtFIELD1_1_6").removeAttribute("required");
     document.getElementById("txtFIELD1_1_7").removeAttribute("required");
+    document.getElementById("txtFIELD1_2_1").removeAttribute("required");
+    document.getElementById("txtFIELD1_2_2").removeAttribute("required");
+    document.getElementById("txtFIELD1_2_3").removeAttribute("required");
+    document.getElementById("txtFIELD1_2_4").removeAttribute("required");
+    document.getElementById("txtFIELD1_2_5").removeAttribute("required");
 }
 
 function makeSection2NotRequired() {
@@ -659,6 +669,23 @@ function calculateField_1_1_7() {
         calcSum = calcSum + parseInt(document.getElementById("txtFIELD1_1_6").value);
     }
     document.getElementById("txtFIELD1_1_7").value = calcSum;
+}
+
+function calculateField_1_2_5() {
+    let calcSum = 0;
+    if (document.getElementById("txtFIELD1_2_1").value != "") {
+        calcSum = calcSum + parseInt(document.getElementById("txtFIELD1_2_1").value);
+    }
+    if (document.getElementById("txtFIELD1_2_2").value != "") {
+        calcSum = calcSum + parseInt(document.getElementById("txtFIELD1_2_2").value);
+    }
+    if (document.getElementById("txtFIELD1_2_3").value != "") {
+        calcSum = calcSum + parseInt(document.getElementById("txtFIELD1_2_3").value);
+    }
+    if (document.getElementById("txtFIELD1_2_4").value != "") {
+        calcSum = calcSum + parseInt(document.getElementById("txtFIELD1_2_4").value);
+    }
+    document.getElementById("txtFIELD1_2_5").value = calcSum;
 }
 
 function calculateField_5_4() {

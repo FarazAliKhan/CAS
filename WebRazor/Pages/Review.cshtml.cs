@@ -35,6 +35,16 @@ namespace WebRazor.Pages
         public int? txtFIELD1_1_6 { get; set; }
         [BindProperty]
         public int? txtFIELD1_1_7 { get; set; }
+        [BindProperty]
+        public int? txtFIELD1_2_1 { get; set; }
+        [BindProperty]
+        public int? txtFIELD1_2_2 { get; set; }
+        [BindProperty]
+        public int? txtFIELD1_2_3 { get; set; }
+        [BindProperty]
+        public int? txtFIELD1_2_4 { get; set; }
+        [BindProperty]
+        public int? txtFIELD1_2_5 { get; set; }
 
         [BindProperty]
         public string? txtFIED_1_Comments { get; set; }
@@ -229,6 +239,11 @@ namespace WebRazor.Pages
                 txtFIELD1_1_5 = (int?)TempData["txtFIELD1_1_5"];
                 txtFIELD1_1_6 = (int?)TempData["txtFIELD1_1_6"];
                 txtFIELD1_1_7 = (int?)TempData["txtFIELD1_1_7"];
+                txtFIELD1_2_1 = (int?)TempData["txtFIELD1_2_1"];
+                txtFIELD1_2_2 = (int?)TempData["txtFIELD1_2_2"];
+                txtFIELD1_2_3 = (int?)TempData["txtFIELD1_2_3"];
+                txtFIELD1_2_4 = (int?)TempData["txtFIELD1_2_4"];
+                txtFIELD1_2_5 = (int?)TempData["txtFIELD1_2_5"];
                 txtFIED_1_Comments = (string?)TempData["txtFIED_1_Comments"];
 
                 txtFIELD2_1_1 = (int?)TempData["txtFIELD2_1_1"];
@@ -339,6 +354,11 @@ namespace WebRazor.Pages
             TempData["txtFIELD1_1_5"] = createItem.txtFIELD1_1_5;
             TempData["txtFIELD1_1_6"] = createItem.txtFIELD1_1_6;
             TempData["txtFIELD1_1_7"] = createItem.txtFIELD1_1_7;
+            TempData["txtFIELD1_2_1"] = createItem.txtFIELD1_2_1;
+            TempData["txtFIELD1_2_2"] = createItem.txtFIELD1_2_2;
+            TempData["txtFIELD1_2_3"] = createItem.txtFIELD1_2_3;
+            TempData["txtFIELD1_2_4"] = createItem.txtFIELD1_2_4;
+            TempData["txtFIELD1_2_5"] = createItem.txtFIELD1_2_5;
             TempData["txtFIED_1_Comments"] = createItem.txtFIED_1_Comments;
 
             TempData["txtFIELD2_1_1"] = createItem.txtFIELD2_1_1;

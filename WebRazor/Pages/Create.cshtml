@@ -309,6 +309,51 @@
                                         </div>
                                         <div class="row col-md-12">
                                             <div class="form-group col-md-12">
+                                                <label for="txtFIELD1_2_1"><span class="field-name">1.2.1 Criminal appeals pending as of Dec 31 (prev. year) </span></label>
+                                                <span data-tooltip="Number of criminal appeals, cross-appeals, references and bail reviews filed but still pending as of December 31st of the previous year."><i class="fa-solid fa-circle-info"></i></span>
+                                                <input class="form-control" id="txtFIELD1_2_1" name="txtFIELD1_2_1" type="number" asp-for="@Model.txtFIELD1_2_1" autocomplete="txtFIELD1_2_1" data-rule-minlength="1" style="width:100%"
+                                                       data-msg="Please enter Criminal appeals pending as of Dec 31 (prev. year)" onchange="javascript:calculateField_1_2_5();">
+                                                <span asp-validation-for="@Model.txtFIELD1_2_1" class="label label-danger"></span>
+                                            </div>
+                                        </div>
+                                        <div class="row col-md-12">
+                                            <div class="form-group col-md-12">
+                                                <label for="txtFIELD1_2_2"><span class="field-name">1.2.2 Criminal appeals filed this year </span></label>
+                                                <span data-tooltip="Number of criminal  appeals, cross-appeals, references and bail reviews filed The criminal appeals, cross-appeals, references and bail reviews  filed involving the Youth Criminal Justice Act are not to be separately  tracked as such. They should be counted as any other criminal appeals,  cross-appeals, references and bail reviews filed."><i class="fa-solid fa-circle-info"></i></span>
+                                                <input class="form-control" id="txtFIELD1_2_2" name="txtFIELD1_2_2" type="number" asp-for="@Model.txtFIELD1_2_2" autocomplete="txtFIELD1_2_2" data-rule-minlength="1" style="width:100%"
+                                                       data-msg="Please enter Criminal appeals filed this year" onchange="javascript:calculateField_1_2_5();">
+                                                <span asp-validation-for="@Model.txtFIELD1_2_2" class="label label-danger"></span>
+                                            </div>
+                                        </div>
+                                        <div class="row col-md-12">
+                                            <div class="form-group col-md-12">
+                                                <label for="txtFIELD1_2_3"><span class="field-name">1.2.3 Criminal appeals disposed of by judgment </span></label>
+                                                <span data-tooltip="Number of criminal appeals, cross-appeals, references and bail reviews disposed of by judgment – The criminal appeals, cross-appeals, references and bail reviews disposed of by judgment involving the Youth Criminal Justice Act are not to be tracked separately. They should be counted as any other criminal appeals, cross appeals, references and bail reviews disposed of."><i class="fa-solid fa-circle-info"></i></span>
+                                                <input class="form-control" id="txtFIELD1_2_3" name="txtFIELD1_2_3" type="number" asp-for="@Model.txtFIELD1_2_3" autocomplete="txtFIELD1_2_3" data-rule-minlength="1" style="width:100%"
+                                                       data-msg="Please enter Criminal appeals disposed of by judgment" onchange="javascript:calculateField_1_2_5();">
+                                                <span asp-validation-for="@Model.txtFIELD1_2_3" class="label label-danger"></span>
+                                            </div>
+                                        </div>
+                                        <div class="row col-md-12">
+                                            <div class="form-group col-md-12">
+                                                <label for="txtFIELD1_2_4"><span class="field-name">1.2.4 Criminal appeals disposed by other means </span></label>
+                                                <span data-tooltip="Number of criminal appeals, cross-appeals, references and bail reviews disposed of by other means – These appeals, cross-appeals, references and bail reviews are to include those that are settled by judicial facilitations, abandoned, withdrawn, dismissed for want of prosecution, non-compliance with rules, and disposed of by a single judge, etc."><i class="fa-solid fa-circle-info"></i></span>
+                                                <input class="form-control" id="txtFIELD1_2_4" name="txtFIELD1_2_4" type="number" asp-for="@Model.txtFIELD1_2_4" autocomplete="txtFIELD1_2_4" data-rule-minlength="1" style="width:100%"
+                                                       data-msg="Please enter Criminal appeals disposed by other means" onchange="javascript:calculateField_1_2_5();">
+                                                <span asp-validation-for="@Model.txtFIELD1_2_4" class="label label-danger"></span>
+                                            </div>
+                                        </div>
+                                        <div class="row col-md-12">
+                                            <div class="form-group col-md-12">
+                                                <label for="txtFIELD1_2_5"><span class="field-name">1.2.5 Total criminal appeals for the year </span></label>
+                                                <span data-tooltip="Total number of criminal  appeals, cross-appeals, references and bail reviews: Criminal appeals, cross-appeals, references and bail reviews filed but still pending as of December 31st of the previous year (1.2.1) plus new criminal appeals, cross-appeals, references and bail reviews filed (1.2.2) plus new criminal appeals, cross-appeals, references and bail reviews filed (1.2.2)  minus total number of criminal appeals, cross-appeals, references and bail reviews disposed of, settled by judicial facilitations, abandoned or withdrawn (1.2.3 to 1.2.4) = net criminal appeals, cross-appeals, references and bail reviews for the year"><i class="fa-solid fa-circle-info"></i></span>
+                                                <input class="form-control" id="txtFIELD1_2_5" name="txtFIELD1_2_5" type="number" asp-for="@Model.txtFIELD1_2_5" autocomplete="txtFIELD1_2_5" data-rule-minlength="1" style="width:100%"
+                                                       data-msg="Please enter Total criminal appeals for the year">
+                                                <span asp-validation-for="@Model.txtFIELD1_2_5" class="label label-danger"></span>
+                                            </div>
+                                        </div>
+                                        <div class="row col-md-12">
+                                            <div class="form-group col-md-12">
                                                 <label for="txtFIED_1_Comments"><span class="field-name">Comments </span></label>
                                                 <textarea class="form-control" id="txtFIED_1_Comments" name="txtFIED_1_Comments" type="text" asp-for="@Model.txtFIED_1_Comments" autocomplete="txtFIED_1_Comments" data-rule-minlength="2" data-rule-maxlength="2000" style="width:100%" multiple="true" rows="4">
                                 </textarea>
