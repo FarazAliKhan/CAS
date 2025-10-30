@@ -637,3 +637,51 @@ function makeSection11NotRequired() {
     document.getElementById("txtFIELD11_1").removeAttribute("required");
     document.getElementById("txtFIELD11_2").removeAttribute("required");
 }
+
+function calculateField_1_1_7() {
+    let calcSum = 0;
+    if (document.getElementById("txtFIELD1_1_1").value != "") {
+        calcSum = calcSum + parseInt(document.getElementById("txtFIELD1_1_1").value);
+    }
+    if (document.getElementById("txtFIELD1_1_2").value != "") {
+        calcSum = calcSum + parseInt(document.getElementById("txtFIELD1_1_2").value);
+    }
+    if (document.getElementById("txtFIELD1_1_3").value != "") {
+        calcSum = calcSum + parseInt(document.getElementById("txtFIELD1_1_3").value);
+    }
+    if (document.getElementById("txtFIELD1_1_4").value != "") {
+        calcSum = calcSum + parseInt(document.getElementById("txtFIELD1_1_4").value);
+    }
+    if (document.getElementById("txtFIELD1_1_5").value != "") {
+        calcSum = calcSum + parseInt(document.getElementById("txtFIELD1_1_5").value);
+    }
+    if (document.getElementById("txtFIELD1_1_6").value != "") {
+        calcSum = calcSum + parseInt(document.getElementById("txtFIELD1_1_6").value);
+    }
+    document.getElementById("txtFIELD1_1_7").value = calcSum;
+}
+
+function calculateField_5_4() {
+    let calcSum = 0;
+    if (document.getElementById("txtFIELD5_1").value != "") {
+        calcSum = calcSum + parseInt(document.getElementById("txtFIELD5_1").value);
+    }
+    if (document.getElementById("txtFIELD5_2").value != "") {
+        calcSum = calcSum + parseInt(document.getElementById("txtFIELD5_2").value);
+    }
+    if (document.getElementById("txtFIELD5_3").value != "") {
+        calcSum = calcSum + parseInt(document.getElementById("txtFIELD5_3").value);
+    }
+    document.getElementById("txtFIELD5_4").value = calcSum;
+}
+
+function calculateField_7_1_3() {
+    let calcSum = 0;
+    if (document.getElementById("txtFIELD7_1_1").value != "") {
+        calcSum = calcSum + parseInt(document.getElementById("txtFIELD7_1_1").value);
+    }
+    if (document.getElementById("txtFIELD7_1_2").value != "") {
+        calcSum = calcSum + parseInt(document.getElementById("txtFIELD7_1_2").value);
+    }
+    document.getElementById("txtFIELD7_1_3").value = calcSum;
+}
