@@ -105,6 +105,7 @@
             </div>
         </header>
     }
+    <h1 class="d-none">CAAS</h1>
     <nav id="wb-bc" property="breadcrumb">
         <h2>You are here:</h2>
         <div class="container">
@@ -116,7 +117,29 @@
             @RenderBody()
         </main>
     </div>
+    <span class="wb-sessto" data-wb-sessto='{
+         "inactivity": 3600000,
+         "reactionTime": 300000,
+         "sessionalive": 300000,
+         "logouturl": "http://localhost:5261/",
+         "signInUrl": "http://localhost:5261/",
+         "refreshCallbackUrl": "http://localhost:5261/",
+         "refreshOnClick": true,
+         "refreshLimit": 300000,
+         "method": "POST",
+         "additionalData": null,
+         "textOverrides": {
+          "buttonContinue": "Continue Session",
+          "buttonEnd": "End Session",
+          "buttonSignin": "Goto Sign In",
+          "timeoutEnd": "",
+          "timeoutAlready": "Session Already Expired"
+          }
+         }'>
+     </span>
+    
     @*
+        <span class="wb-sessto" data-wb-sessto='{"inactivity": 6000, "logouturl": "session-timeout-expired-en.html"}'></span>
     @if (CultureInfo.CurrentCulture.Equals(new CultureInfo("fr")))
     {
         <footer id="wb-info">
@@ -463,8 +486,8 @@
     *@
     <script src="~/lib/jquery/dist/jquery.js"></script>
     <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
-    <script src="~/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js"></script>
-    <script src="~/lib/themes-dist-17.2.0-gcweb/GCWeb/js/wet-boew.js"></script>
+    <script src="~/lib/themes-dist-17.2.0-gcweb/wet-boew/js/wet-boew.js"></script>
+    <script src="~/lib/themes-dist-17.2.0-gcweb/GCWeb/js/theme.js"></script>
     <script src="~/lib/fontawesome-7.0.1/js/all.js"></script>
     <script src="~/js/site.js"></script>
 </body>
