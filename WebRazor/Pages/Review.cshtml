@@ -40,7 +40,7 @@
 <form method="post" id="reviewForm">
     <details id="detailsBasicInfo" class="mrgn-tp-lg section-color small-font" open>
         <summary>
-            Basic Information
+            Name of Court and Reporting Year
         </summary>
         <section class="center">
             <fieldset>
@@ -71,7 +71,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="form-group col-sm-6">
+                        <div class="form-group col-sm-4">
                             <label for="intREPORTINGYEAR"><span class="field-name">Reporting Year</span></label>
                             <select readonly class="form-control" id="intREPORTINGYEAR" name="intREPORTINGYEAR" asp-for="@Model.intREPORTINGYEAR" onchange="javascript:enableDisableReview();" autocomplete="intREPORTINGYEAR" data-rule-minlength="1" style="width:100%; height:52px;" required="required"
                                     data-msg="Please enter Reporting Year">
@@ -83,14 +83,14 @@
                             </select>
                             <span asp-validation-for="@Model.intREPORTINGYEAR" class="label label-danger"></span>
                         </div>
-                        <div class="form-group col-sm-3">
+                        <div class="form-group col-sm-4">
                             <label for="dtFROM"><span class="field-name">From</span></label>
                             <span data-tooltip="The start date of the period covered by the submission."><i class="fa-solid fa-circle-info"></i></span>
                             <input readonly class="form-control" id="dtFROM" name="dtFROM" type="date" asp-for="@Model.dtFROM" onchange="javascript:enableDisableReview();" autocomplete="dtFROM" data-rule-minlength="1" style="width:100%" required="required"
                                    data-msg="Please enter From Date">
                             <span asp-validation-for="@Model.dtFROM" class="label label-danger"></span>
                         </div>
-                        <div class="form-group col-sm-3">
+                        <div class="form-group col-sm-4">
                             <label for="dtTO">
                                 <span class="field-name">To</span>
                             </label>
