@@ -117,7 +117,9 @@
             @RenderBody()
         </main>
     </div>
-    <span class="wb-sessto" data-wb-sessto='{
+    
+    @*
+            <span class="wb-sessto" data-wb-sessto='{
          "inactivity": 3600000,
          "reactionTime": 300000,
          "sessionalive": 300000,
@@ -137,8 +139,6 @@
           }
          }'>
      </span>
-    
-    @*
         <span class="wb-sessto" data-wb-sessto='{"inactivity": 6000, "logouturl": "session-timeout-expired-en.html"}'></span>
     @if (CultureInfo.CurrentCulture.Equals(new CultureInfo("fr")))
     {
