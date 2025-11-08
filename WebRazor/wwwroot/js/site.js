@@ -723,3 +723,18 @@ function calculateField_7_1_3() {
     }
     document.getElementById("txtFIELD7_1_3").value = calcSum;
 }
+
+function showJSPanel(panelContainer, targetId, msg) {
+    jsPanel.tooltip.create({
+        container: '#divJSContainer',
+        target: '#' + targetId,
+        mode: 'default',
+        connector: true,
+        position: { my: 'left-top', at: 'right-top' },
+        theme: 'light filled',
+        panelSize: '600 400',
+        headerControls: 'closeonly xs',
+        headerTitle: 'default mode',
+        content: msg
+    });
+}

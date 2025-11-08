@@ -105,3 +105,11 @@
 .cjc-btn-primary:visited{
     color: #fff;
 }
+
+.cjc-blue-text{
+    color: blue;
+}
+
+.cjc-red-text {
+    color: red;
+}
