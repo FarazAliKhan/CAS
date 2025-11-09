@@ -724,7 +724,7 @@ function calculateField_7_1_3() {
     document.getElementById("txtFIELD7_1_3").value = calcSum;
 }
 
-function showJSPanel(panelContainer, targetId, msg) {
+function showJSPanel(panelContainer, targetId, msg, panelSize) {
     jsPanel.tooltip.create({
         container: '#divJSContainer',
         target: '#' + targetId,
@@ -732,9 +732,24 @@ function showJSPanel(panelContainer, targetId, msg) {
         connector: true,
         position: { my: 'left-top', at: 'right-top' },
         theme: 'light filled',
-        panelSize: '600 400',
+        panelSize: panelSize,
         headerControls: 'closeonly xs',
-        headerTitle: 'default mode',
+        headerTitle: 'Description',
+        content: msg
+    });
+}
+
+function showJSPanelTop(panelContainer, targetId, msg, panelSize) {
+    jsPanel.tooltip.create({
+        container: '#divJSContainer',
+        target: '#' + targetId,
+        mode: 'default',
+        connector: true,
+        position: { my: 'center-bottom', at: 'center-top' },
+        theme: 'light filled',
+        panelSize: panelSize,
+        headerControls: 'closeonly xs',
+        headerTitle: 'Description',
         content: msg
     });
 }
