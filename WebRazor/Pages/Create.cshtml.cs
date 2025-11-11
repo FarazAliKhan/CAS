@@ -70,11 +70,16 @@ namespace WebRazor.Pages
         [BindProperty]
         public int? txtFIELD2_1_2 { get; set; }
         [BindProperty]
+        public int? txtFIELD2_2_1 { get; set; }
+        [BindProperty]
         public int? txtFIELD2_2_1_1 { get; set; }
         [BindProperty]
         public int? txtFIELD2_2_1_2 { get; set; }
         [BindProperty]
         public int? txtFIELD2_2_1_3 { get; set; }
+        [BindProperty]
+        public int? txtFIELD2_2_2 { get; set; }
+        
         [BindProperty]
         public int? txtFIELD2_2_2_1 { get; set; }
         [BindProperty]

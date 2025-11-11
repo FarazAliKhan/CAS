@@ -185,7 +185,7 @@
                             </div>
                             <input type="hidden" id="activeDetailsId" value="detailsBasicInfo">
                             <input type="hidden" id="sectionId" asp-for="@Model.sectId">
-                            <div id="detailsBasicInfo" class="mrgn-tp-lg section-color small-font" open>
+                            <div id="detailsBasicInfo" class="mrgn-tp-lg section-color small-font">
                                 <section class="center small-font">                                 
                                     <div class="row col-md-12">
                                         <div class="form-group col-md-12">
@@ -389,6 +389,10 @@
                                                 <span asp-validation-for="@Model.txtFIELD1_2_5" class="label label-danger"></span>
                                             </div>
                                         </div>
+                                    </fieldset>
+                                </section>          
+                                <section class="center mrgn-tp-lg section-color small-font">
+                                    <fieldset>
                                         <div class="row col-md-12">
                                             <div class="form-group col-md-12">
                                                 <label for="txtFIED_1_Comments"><span class="field-name">Comments </span></label>
@@ -399,18 +403,26 @@
                                         </div>
                                     </fieldset>
                                 </section>
-                              
                             </div>
 
-                            <details id="details2" class="mrgn-tp-lg section-color small-font" open hidden>
-                                <summary>
-                                    2. Civil & criminal decisions given at hearing/reserved
-                                </summary>
-                                <section class="center">
+                            <div id="details2" class="mrgn-tp-lg section-color small-font" hidden>
+                                <section class="center small-font">
+                                    <div class="row col-md-12">
+                                        <div class="form-group col-md-12">
+                                            <label><span class="field-name">2. Civil and criminal case decisions </span></label>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="center mrgn-tp-lg section-color small-font">
                                     <fieldset>
                                         <div class="row col-md-12">
                                             <div class="form-group col-md-12">
-                                                <label for="txtFIELD2_1_1"><span class="field-name">2.1.1 Civil decisions given at hearing (Bench). </span></label>
+                                                <label><span class="field-name">2.1 Civil case decisions</span></label>
+                                            </div>
+                                        </div>
+                                        <div class="row col-md-12">
+                                            <div class="form-group col-md-12">
+                                                <label for="txtFIELD2_1_1"><span class="field-name">2.1.1 Number of civil case decisions given at hearing  </span></label>
                                                 <span data-tooltip="Number of civil case decisions given at hearing – A decision given at hearing (also referred to as Bench decision) is a decision that is rendered immediately after the hearing, the same day of the hearing or during the same sitting week. If a decision is given at the hearing but the reasons follow the pronouncement, which means that the reasons are not  provided immediately after the hearing, on the same day of the hearing or on the same sitting week of the hearing, this decision should be counted as a reserved judgment."><i class="fa-solid fa-circle-info"></i></span>
                                                 <input class="form-control" id="txtFIELD2_1_1" name="txtFIELD2_1_1" type="number" asp-for="@Model.txtFIELD2_1_1" autocomplete="txtFIELD2_1_1" data-rule-minlength="1" style="width:100%"
                                                        data-msg="Civil decisions given at hearing (Bench)">
@@ -419,16 +431,40 @@
                                         </div>
                                         <div class="row col-md-12">
                                             <div class="form-group col-md-12">
-                                                <label for="txtFIELD2_1_2"><span class="field-name">2.1.2 Civil case reserved decisions.  </span></label>
+                                                <label for="txtFIELD2_1_2"><span class="field-name">2.1.2 Number of civil case reserved decisions   </span></label>
                                                 <span data-tooltip="Number of civil case reserved decisions – A decision given after reserving"><i class="fa-solid fa-circle-info"></i></span>
                                                 <input class="form-control" id="txtFIELD2_1_2" name="txtFIELD2_1_2" type="number" asp-for="@Model.txtFIELD2_1_2" autocomplete="txtFIELD2_1_2" data-rule-minlength="1" style="width:100%"
                                                        data-msg="Civil case reserved decisions">
                                                 <span asp-validation-for="@Model.txtFIELD2_1_2" class="label label-danger"></span>
                                             </div>
                                         </div>
+                                    </fieldset>
+                                </section>
+                                <section class="center mrgn-tp-lg section-color small-font">
+                                    <fieldset>
                                         <div class="row col-md-12">
                                             <div class="form-group col-md-12">
-                                                <label for="txtFIELD2_2_1_1"><span class="field-name">2.2.1.1 Criminal convictions/acquittals at hearing </span></label>
+                                                <label><span class="field-name">2.2 Criminal case decisions </span></label>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                    <section class="center mrgn-tp-lg section-color small-font">
+                                        <fieldset>
+                                        <div class="row col-md-12">
+                                            <div class="form-group col-md-12">
+                                                <label for="txtFIELD2_2_1"><span class="field-name">2.2.1 Number of criminal case decisions given at hearing  </span></label>
+                                                <span data-tooltip="Criminal convictions /acquittals at hearing"><i class="fa-solid fa-circle-info"></i></span>
+                                                <input class="form-control" id="txtFIELD2_2_1" name="txtFIELD2_2_1" type="number" asp-for="@Model.txtFIELD2_2_1" autocomplete="txtFIELD2_2_1" data-rule-minlength="1" style="width:100%"
+                                                       data-msg="Criminal convictions/acquittals at hearing">
+                                                <span asp-validation-for="@Model.txtFIELD2_2_1" class="label label-danger"></span>
+                                            </div>
+                                        </div>
+                                        </fieldset>
+                                        <section class="center mrgn-tp-lg section-color small-font">
+                                            <fieldset>
+                                        <div class="row col-md-12">
+                                            <div class="form-group col-md-12">
+                                                <label for="txtFIELD2_2_1_1"><span class="field-name">2.2.1.1 Number of convictions/acquittals given at hearing </span></label>
                                                 <span data-tooltip="Criminal convictions /acquittals at hearing"><i class="fa-solid fa-circle-info"></i></span>
                                                 <input class="form-control" id="txtFIELD2_2_1_1" name="txtFIELD2_2_1_1" type="number" asp-for="@Model.txtFIELD2_2_1_1" autocomplete="txtFIELD2_2_1_1" data-rule-minlength="1" style="width:100%"
                                                        data-msg="Criminal convictions/acquittals at hearing">
@@ -437,7 +473,7 @@
                                         </div>
                                         <div class="row col-md-12">
                                             <div class="form-group col-md-12">
-                                                <label for="txtFIELD2_2_1_2"><span class="field-name">2.2.1.2 Criminal sentences at hearing </span></label>
+                                                <label for="txtFIELD2_2_1_2"><span class="field-name">2.2.1.2 Number of sentences given at hearing </span></label>
                                                 <span data-tooltip="Criminal sentences at hearing"><i class="fa-solid fa-circle-info"></i></span>
                                                 <input class="form-control" id="txtFIELD2_2_1_2" name="txtFIELD2_2_1_2" type="number" asp-for="@Model.txtFIELD2_2_1_2" autocomplete="txtFIELD2_2_1_2" data-rule-minlength="1" style="width:100%"
                                                        data-msg="Criminal sentences at hearing">
@@ -446,40 +482,63 @@
                                         </div>
                                         <div class="row col-md-12">
                                             <div class="form-group col-md-12">
-                                                <label for="txtFIELD2_2_1_3"><span class="field-name">2.2.1.3 Other criminal decisions at hearing </span></label>
+                                                <label for="txtFIELD2_2_1_3"><span class="field-name">2.2.1.3 Number of other criminal appeals given at hearing </span></label>
                                                 <span data-tooltip="Number of other criminal appeals (e.g. habeas corpus, prohibition, certiorari, mental disorder reviews, etc.) given at hearing."><i class="fa-solid fa-circle-info"></i></span>
                                                 <input class="form-control" id="txtFIELD2_2_1_3" name="txtFIELD2_2_1_3" type="number" asp-for="@Model.txtFIELD2_2_1_3" autocomplete="txtFIELD2_2_1_3" data-rule-minlength="1" style="width:100%"
                                                        data-msg="Other criminal decisions at hearing">
                                                 <span asp-validation-for="@Model.txtFIELD2_2_1_3" class="label label-danger"></span>
                                             </div>
                                         </div>
-                                        <div class="row col-md-12">
-                                            <div class="form-group col-md-12">
-                                                <label for="txtFIELD2_2_2_1"><span class="field-name">2.2.2.1 Criminal convictions/acquittals after reserving </span></label>
-                                                <span data-tooltip="Criminal convictions/acquittals after reserving"><i class="fa-solid fa-circle-info"></i></span>
-                                                <input class="form-control" id="txtFIELD2_2_2_1" name="txtFIELD2_2_2_1" type="number" asp-for="@Model.txtFIELD2_2_2_1" autocomplete="txtFIELD2_2_2_1" data-rule-minlength="1" style="width:100%"
-                                                       data-msg="Criminal convictions/acquittals after reserving">
-                                                <span asp-validation-for="@Model.txtFIELD2_2_2_1" class="label label-danger"></span>
+                                    </fieldset>
+                                    </section>
+                                    </section>
+                                    <section class="center mrgn-tp-lg section-color small-font">
+                                        <fieldset>
+                                            <div class="row col-md-12">
+                                                <div class="form-group col-md-12">
+                                                    <label for="txtFIELD2_2_2"><span class="field-name">2.2.2 Number of criminal case decisions filed after reserving  </span></label>
+                                                    <span data-tooltip="Criminal convictions /acquittals at hearing"><i class="fa-solid fa-circle-info"></i></span>
+                                                    <input class="form-control" id="txtFIELD2_2_2" name="txtFIELD2_2_2" type="number" asp-for="@Model.txtFIELD2_2_2" autocomplete="txtFIELD2_2_2" data-rule-minlength="1" style="width:100%"
+                                                           data-msg="Criminal convictions/acquittals at hearing">
+                                                    <span asp-validation-for="@Model.txtFIELD2_2_2" class="label label-danger"></span>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="row col-md-12">
-                                            <div class="form-group col-md-12">
-                                                <label for="txtFIELD2_2_2_2"><span class="field-name">2.2.2.2 Criminal sentences after reserving </span></label>
-                                                <span data-tooltip="Criminal sentences after reserving"><i class="fa-solid fa-circle-info"></i></span>
-                                                <input class="form-control" id="txtFIELD2_2_2_2" name="txtFIELD2_2_2_2" type="number" asp-for="@Model.txtFIELD2_2_2_2" autocomplete="txtFIELD2_2_2_2" data-rule-minlength="1" style="width:100%"
-                                                       data-msg="Criminal sentences after reserving">
-                                                <span asp-validation-for="@Model.txtFIELD2_2_2_2" class="label label-danger"></span>
+                                            </fieldset>
+                                            <section class="center mrgn-tp-lg section-color small-font">
+                                                <fieldset>
+                                            <div class="row col-md-12">
+                                                <div class="form-group col-md-12">
+                                                    <label for="txtFIELD2_2_2_1"><span class="field-name">2.2.2.1 Number of convictions/acquittals filed after reserving </span></label>
+                                                    <span data-tooltip="Criminal convictions/acquittals after reserving"><i class="fa-solid fa-circle-info"></i></span>
+                                                    <input class="form-control" id="txtFIELD2_2_2_1" name="txtFIELD2_2_2_1" type="number" asp-for="@Model.txtFIELD2_2_2_1" autocomplete="txtFIELD2_2_2_1" data-rule-minlength="1" style="width:100%"
+                                                           data-msg="Criminal convictions/acquittals after reserving">
+                                                    <span asp-validation-for="@Model.txtFIELD2_2_2_1" class="label label-danger"></span>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="row col-md-12">
-                                            <div class="form-group col-md-12">
-                                                <label for="txtFIELD2_2_2_3"><span class="field-name">2.2.2.3 Other criminal decisions after reserving  </span></label>
-                                                <span data-tooltip="Number of other criminal appeals (e.g. habeas corpus, prohibition, certiorari, mental disorder reviews, etc.) filed after reserving."><i class="fa-solid fa-circle-info"></i></span>
-                                                <input class="form-control" id="txtFIELD2_2_2_3" name="txtFIELD2_2_2_3" type="number" asp-for="@Model.txtFIELD2_2_2_3" autocomplete="txtFIELD2_2_2_3" data-rule-minlength="1" style="width:100%"
-                                                       data-msg="Other criminal decisions after reserving">
-                                                <span asp-validation-for="@Model.txtFIELD2_2_2_3" class="label label-danger"></span>
+                                            <div class="row col-md-12">
+                                                <div class="form-group col-md-12">
+                                                    <label for="txtFIELD2_2_2_2"><span class="field-name">2.2.2.2 Number of sentences filed after reserving</span></label>
+                                                    <span data-tooltip="Criminal sentences after reserving"><i class="fa-solid fa-circle-info"></i></span>
+                                                    <input class="form-control" id="txtFIELD2_2_2_2" name="txtFIELD2_2_2_2" type="number" asp-for="@Model.txtFIELD2_2_2_2" autocomplete="txtFIELD2_2_2_2" data-rule-minlength="1" style="width:100%"
+                                                           data-msg="Criminal sentences after reserving">
+                                                    <span asp-validation-for="@Model.txtFIELD2_2_2_2" class="label label-danger"></span>
+                                                </div>
                                             </div>
-                                        </div>
+                                            <div class="row col-md-12">
+                                                <div class="form-group col-md-12">
+                                                    <label for="txtFIELD2_2_2_3"><span class="field-name">2.2.2.3 Number of other criminal appeals filed after reserving   </span></label>
+                                                    <span data-tooltip="Number of other criminal appeals (e.g. habeas corpus, prohibition, certiorari, mental disorder reviews, etc.) filed after reserving."><i class="fa-solid fa-circle-info"></i></span>
+                                                    <input class="form-control" id="txtFIELD2_2_2_3" name="txtFIELD2_2_2_3" type="number" asp-for="@Model.txtFIELD2_2_2_3" autocomplete="txtFIELD2_2_2_3" data-rule-minlength="1" style="width:100%"
+                                                           data-msg="Other criminal decisions after reserving">
+                                                    <span asp-validation-for="@Model.txtFIELD2_2_2_3" class="label label-danger"></span>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                        </section>
+                                    </section>
+                                </section>
+                                <section class="center mrgn-tp-lg section-color small-font">
+                                    <fieldset>
                                         <div class="row col-md-12">
                                             <div class="form-group col-md-12">
                                                 <label for="txtFIED_2_Comments"><span class="field-name">Comments </span></label>
@@ -490,17 +549,20 @@
                                         </div>
                                     </fieldset>
                                 </section>
-                            </details>
-
-                            <details id="details3" class="mrgn-tp-lg section-color small-font" open hidden>
-                                <summary>
-                                    3. Total decisions given at hearing
-                                </summary>
-                                <section class="center">
+                            </div>
+                            <div id="details3" class="mrgn-tp-lg section-color small-font" hidden>
+                                <section class="center small-font">
+                                    <div class="row col-md-12">
+                                        <div class="form-group col-md-12">
+                                            <label><span class="field-name">3. Number of decisions/judgments (total)</span></label>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="center mrgn-tp-lg section-color small-font">
                                     <fieldset>
                                         <div class="row col-md-12">
                                             <div class="form-group col-md-12">
-                                                <label for="txtFIELD3_1"><span class="field-name">3.1 Total Bench decisions/judgments </span></label>
+                                                <label for="txtFIELD3_1"><span class="field-name">3.1 Number of Bench decisions/judgments</span></label>
                                                 <span data-tooltip="Number of Bench decisions/judgments (also referred to as decisions given at hearing) – A Bench decision or decision given at hearing is rendered immediately after the hearing, the same day of the hearing or during the same sitting week. The decisions involving the Youth Criminal Justice Act are not to be tracked separately. They should be counted as any other decision/judgment."><i class="fa-solid fa-circle-info"></i></span>
                                                 <input class="form-control" id="txtFIELD3_1" name="txtFIELD3_1" type="number" asp-for="@Model.txtFIELD3_1" autocomplete="txtFIELD3_1" data-rule-minlength="1" style="width:100%"
                                                        data-msg="Total Bench decisions/judgments">
@@ -509,7 +571,7 @@
                                         </div>
                                         <div class="row col-md-12">
                                             <div class="form-group col-md-12">
-                                                <label for="txtFIELD3_2"><span class="field-name">3.2 Total reserved decisions/judgments  </span></label>
+                                                <label for="txtFIELD3_2"><span class="field-name">3.2 Number of reserved decisions/judgments</span></label>
                                                 <span data-tooltip="Number of reserved decisions/judgments – A reserved decision is a decision that is rendered at a later date i.e. not immediately after the hearing, not on the same day of the hearing nor during the same sitting week. The decisions involving the Youth Criminal Justice Act are not to be tracked separately. They should be counted as any other criminal appeal decision."><i class="fa-solid fa-circle-info"></i></span>
                                                 <input class="form-control" id="txtFIELD3_2" name="txtFIELD3_2" type="number" asp-for="@Model.txtFIELD3_2" autocomplete="txtFIELD3_2" data-rule-minlength="1" style="width:100%"
                                                        data-msg="Total reserved decisions/judgments">
@@ -526,13 +588,17 @@
                                         </div>
                                     </fieldset>
                                 </section>
-                            </details>
+                            </div>
 
-                            <details id="details4" class="mrgn-tp-lg section-color small-font" open hidden>
-                                <summary>
-                                    4. Civil & criminal case time intervals
-                                </summary>
-                                <section class="center">
+                            <div id="details4" class="mrgn-tp-lg section-color small-font" hidden>
+                                <section class="center small-font">
+                                    <div class="row col-md-12">
+                                        <div class="form-group col-md-12">
+                                            <label><span class="field-name">4. Civil & criminal case time intervals</span></label>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="center mrgn-tp-lg section-color small-font">
                                     <fieldset>
                                         <div class="row col-md-12">
                                             <div class="form-group col-md-12">
@@ -797,9 +863,18 @@
                                                 <span asp-validation-for="@Model.txtFIELD4_3_3" class="label label-danger"></span>
                                             </div>
                                         </div>
+                                    </fieldset>
+                                </section>
+                                <section class="center mrgn-tp-lg section-color small-font">
+                                    <fieldset>
                                         <div class="row col-md-12">
                                             <div class="form-group col-md-12">
-                                                <label for="txtFIELD4_3_4_1"><span class="field-name">4.3.4.1 Criminal Conv/Acq: Hearing to decision < 6 months  </span></label>
+                                                <label><span class="field-name">4.3.4 Number of criminal appeals where the time interval from the hearing 	to the final decision took less than 6 months for:</span></label>
+                                            </div>
+                                        </div>
+                                        <div class="row col-md-12">
+                                            <div class="form-group col-md-12">
+                                                <label for="txtFIELD4_3_4_1"><span class="field-name">4.3.4.1 Conviction/acquittal </span></label>
                                                 <span data-tooltip="Number of criminal appeals where the time interval from the hearing to the final decision took between 6 months for: Conviction/acquittal"><i class="fa-solid fa-circle-info"></i></span>
                                                 <input class="form-control" id="txtFIELD4_3_4_1" name="txtFIELD4_3_4_1" type="number" asp-for="@Model.txtFIELD4_3_4_1" autocomplete="txtFIELD4_3_4_1" data-rule-minlength="1" style="width:100%"
                                                        data-msg="Criminal Conv/Acq: Hearing to decision < 6 months">
@@ -808,7 +883,7 @@
                                         </div>
                                         <div class="row col-md-12">
                                             <div class="form-group col-md-12">
-                                                <label for="txtFIELD4_3_4_2"><span class="field-name">4.3.4.2 Criminal Sentence: Hearing to decision < 6 months </span></label>
+                                                <label for="txtFIELD4_3_4_2"><span class="field-name">4.3.4.2 Sentence </span></label>
                                                 <span data-tooltip="Number of criminal appeals where the time interval from the hearing to the final decision took between 6 months for: Sentence"><i class="fa-solid fa-circle-info"></i></span>
                                                 <input class="form-control" id="txtFIELD4_3_4_2" name="txtFIELD4_3_4_2" type="number" asp-for="@Model.txtFIELD4_3_4_2" autocomplete="txtFIELD4_3_4_2" data-rule-minlength="1" style="width:100%"
                                                        data-msg="Criminal Sentence: Hearing to decision < 6 months">
@@ -819,7 +894,7 @@
                                             <div class="form-group col-md-12">
                                                 <label for="txtFIELD4_3_4_3">
                                                     <span class="field-name">
-                                                        4.3.4.3 Criminal Other: Hearing to decision < 6 months
+                                                        4.3.4.3 Other
                                                     </span>
                                                 </label>
                                                 <span data-tooltip="Number of criminal appeals where the time interval from the hearing to the final decision took between 6 months for: Other"><i class="fa-solid fa-circle-info"></i></span>
@@ -828,11 +903,20 @@
                                                 <span asp-validation-for="@Model.txtFIELD4_3_4_3" class="label label-danger"></span>
                                             </div>
                                         </div>
+                                    </fieldset>
+                                </section>
+                                <section class="center mrgn-tp-lg section-color small-font">
+                                    <fieldset>
+                                        <div class="row col-md-12">
+                                            <div class="form-group col-md-12">
+                                                <label><span class="field-name">4.3.5 Number of criminal appeals where the time interval from the hearing to the final decision took between 6 to 12 months for:</span></label>
+                                            </div>
+                                        </div>
                                         <div class="row col-md-12">
                                             <div class="form-group col-md-12">
                                                 <label for="txtFIELD4_3_5_1">
                                                     <span class="field-name">
-                                                        4.3.5.1 Criminal Conv/Acq: Hearing to decision 6-12 months
+                                                        4.3.5.1 Conviction/acquittal
                                                     </span>
                                                 </label>
                                                 <span data-tooltip="Number of criminal appeals where the time interval from the hearing to the final decision took between 6 to 12 months for: Conviction/acquittal"><i class="fa-solid fa-circle-info"></i></span>
@@ -843,7 +927,7 @@
                                         </div>
                                         <div class="row col-md-12">
                                             <div class="form-group col-md-12">
-                                                <label for="txtFIELD4_3_5_2"><span class="field-name">4.3.5.2 Criminal Sentence: Hearing to decision 6-12 months  </span></label>
+                                                <label for="txtFIELD4_3_5_2"><span class="field-name">4.3.5.2 Sentence </span></label>
                                                 <span data-tooltip="Number of criminal appeals where the time interval from the hearing to the final decision took between 6 to 12 months for: Sentence"><i class="fa-solid fa-circle-info"></i></span>
                                                 <input class="form-control" id="txtFIELD4_3_5_2" name="txtFIELD4_3_5_2" type="number" asp-for="@Model.txtFIELD4_3_5_2" autocomplete="txtFIELD4_3_5_2" data-rule-minlength="1" style="width:100%"
                                                        data-msg="Criminal Sentence: Hearing to decision 6-12 months">
@@ -852,16 +936,25 @@
                                         </div>
                                         <div class="row col-md-12">
                                             <div class="form-group col-md-12">
-                                                <label for="txtFIELD4_3_5_3"><span class="field-name">4.3.5.3 Criminal Other: Hearing to decision 6-12 months </span></label>
+                                                <label for="txtFIELD4_3_5_3"><span class="field-name">4.3.5.3 Other  </span></label>
                                                 <span data-tooltip="Number of criminal appeals where the time interval from the hearing to the final decision took between 6 to 12 months for: Other"><i class="fa-solid fa-circle-info"></i></span>
                                                 <input class="form-control" id="txtFIELD4_3_5_3" name="txtFIELD4_3_5_3" type="number" asp-for="@Model.txtFIELD4_3_5_3" autocomplete="txtFIELD4_3_5_3" data-rule-minlength="1" style="width:100%"
                                                        data-msg="Criminal Other: Hearing to decision 6-12 months">
                                                 <span asp-validation-for="@Model.txtFIELD4_3_5_3" class="label label-danger"></span>
                                             </div>
                                         </div>
+                                    </fieldset>
+                                </section>
+                                <section class="center mrgn-tp-lg section-color small-font">
+                                    <fieldset>
                                         <div class="row col-md-12">
                                             <div class="form-group col-md-12">
-                                                <label for="txtFIELD4_3_6_1"><span class="field-name">4.3.6.1 Criminal Conv/Acq: Hearing to decision > 12 months  </span></label>
+                                                <label><span class="field-name">4.3.6 Number of criminal appeals where the time interval from the hearing to the final decision took more than 12 months for:</span></label>
+                                            </div>
+                                        </div>
+                                        <div class="row col-md-12">
+                                            <div class="form-group col-md-12">
+                                                <label for="txtFIELD4_3_6_1"><span class="field-name">4.3.6.1 Conviction/acquittal </span></label>
                                                 <span data-tooltip="Number of criminal appeals where the time interval from the hearing to the final decision took more than 12 months for:Conviction/acquittal"><i class="fa-solid fa-circle-info"></i></span>
                                                 <input class="form-control" id="txtFIELD4_3_6_1" name="txtFIELD4_3_6_1" type="number" asp-for="@Model.txtFIELD4_3_6_1" autocomplete="txtFIELD4_3_6_1" data-rule-minlength="1" style="width:100%"
                                                        data-msg="Criminal Conv/Acq: Hearing to decision > 12 months">
@@ -872,7 +965,7 @@
                                             <div class="form-group col-md-12">
                                                 <label for="txtFIELD4_3_6_2">
                                                     <span class="field-name">
-                                                        4.3.6.2 Criminal Sentence: Hearing to decision > 12 months
+                                                        4.3.6.2 Sentence
                                                     </span>
                                                 </label>
                                                 <span data-tooltip="Number of criminal appeals where the time interval from the hearing to the final decision took more than 12 months for: Sentence"><i class="fa-solid fa-circle-info"></i></span>
@@ -883,7 +976,7 @@
                                         </div>
                                         <div class="row col-md-12">
                                             <div class="form-group col-md-12">
-                                                <label for="txtFIELD4_3_6_3"><span class="field-name">4.3.6.3 Criminal Other: Hearing to decision > 12 months  </span></label>
+                                                <label for="txtFIELD4_3_6_3"><span class="field-name">4.3.6.3 Other </span></label>
                                                 <span data-tooltip="Number of criminal appeals where the time interval from the hearing to the final decision took more than 12 months for: Other"><i class="fa-solid fa-circle-info"></i></span>
                                                 <input class="form-control" id="txtFIELD4_3_6_3" name="txtFIELD4_3_6_3" type="number" asp-for="@Model.txtFIELD4_3_6_3" autocomplete="txtFIELD4_3_6_3" data-rule-minlength="1" style="width:100%"
                                                        data-msg="Criminal Other: Hearing to decision > 12 months">
@@ -900,13 +993,17 @@
                                         </div>
                                     </fieldset>
                                 </section>
-                            </details>
+                            </div>
 
-                            <details id="details5" class="mrgn-tp-lg section-color small-font" open hidden>
-                                <summary>
-                                    5. Number of in-person, virtual and hybrid hearings
-                                </summary>
-                                <section class="center">
+                            <div id="details5" class="mrgn-tp-lg section-color small-font" hidden>
+                                <section class="center small-font">
+                                    <div class="row col-md-12">
+                                        <div class="form-group col-md-12">
+                                            <label><span class="field-name">5. Number of in-person, virtual and hybrid hearings</span></label>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="center mrgn-tp-lg section-color small-font">
                                     <fieldset>
                                         <div class="row col-md-12">
                                             <div class="form-group col-md-12">
@@ -937,7 +1034,7 @@
                                         </div>
                                         <div class="row col-md-12">
                                             <div class="form-group col-md-12">
-                                                <label for="txtFIELD5_4"><span class="field-name">5.4 Total hearings (in-person, virtual, hybrid) </span></label>
+                                                <label for="txtFIELD5_4"><span class="field-name">5.4 Total number of hearings held in-person, virtually and in hybrid mode</span></label>
                                                 <span data-tooltip="Total number of hearings held in-person, virtually and in hybrid mode (5.1 to 5.3)."><i class="fa-solid fa-circle-info"></i></span>
                                                 <input class="form-control" id="txtFIELD5_4" name="txtFIELD5_4" type="number" asp-for="@Model.txtFIELD5_4" autocomplete="txtFIELD5_4" data-rule-minlength="1" style="width:100%"
                                                        data-msg="Total hearings (in-person, virtual, hybrid)">
@@ -954,17 +1051,26 @@
                                         </div>
                                     </fieldset>
                                 </section>
-                            </details>
+                            </div>
 
-                            <details id="details6" class="mrgn-tp-lg section-color small-font" open hidden>
-                                <summary>
-                                    6. Number of motions/applications
-                                </summary>
-                                <section class="center">
+                            <div id="details6" class="mrgn-tp-lg section-color small-font" hidden>
+                                <section class="center small-font">
+                                    <div class="row col-md-12">
+                                        <div class="form-group col-md-12">
+                                            <label><span class="field-name">6. Number of motions and applications</span></label>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="center mrgn-tp-lg section-color small-font">
                                     <fieldset>
                                         <div class="row col-md-12">
                                             <div class="form-group col-md-12">
-                                                <label for="txtFIELD6_1_1"><span class="field-name">6.1.1 Motions before single judge filed</span></label>
+                                                <label><span class="field-name">6.1 Motions and applications heard by a single judge</span></label>
+                                            </div>
+                                        </div>
+                                        <div class="row col-md-12">
+                                            <div class="form-group col-md-12">
+                                                <label for="txtFIELD6_1_1"><span class="field-name">6.1.1 Number of motions and applications filed before a single judge</span></label>
                                                 <span data-tooltip="Number of motions and applications filed before a single judge."><i class="fa-solid fa-circle-info"></i></span>
                                                 <input class="form-control" id="txtFIELD6_1_1" name="txtFIELD6_1_1" type="number" asp-for="@Model.txtFIELD6_1_1" autocomplete="txtFIELD6_1_1" data-rule-minlength="1" style="width:100%"
                                                        data-msg="Motions before single judge filed">
@@ -973,7 +1079,7 @@
                                         </div>
                                         <div class="row col-md-12">
                                             <div class="form-group col-md-12">
-                                                <label for="txtFIELD6_1_2"><span class="field-name">6.1.2 Motions before single judge disposed </span></label>
+                                                <label for="txtFIELD6_1_2"><span class="field-name">6.1.2 Number of motions and applications disposed of by order of a single 	judge</span></label>
                                                 <span data-tooltip="Number of motions and applications disposed of by order of a single judge."><i class="fa-solid fa-circle-info"></i></span>
                                                 <input class="form-control" id="txtFIELD6_1_2" name="txtFIELD6_1_2" type="number" asp-for="@Model.txtFIELD6_1_2" autocomplete="txtFIELD6_1_2" data-rule-minlength="1" style="width:100%"
                                                        data-msg="Motions before single judge disposed">
@@ -982,16 +1088,25 @@
                                         </div>
                                         <div class="row col-md-12">
                                             <div class="form-group col-md-12">
-                                                <label for="txtFIELD6_1_3"><span class="field-name">6.1.3 Motions before single judge dismissed/withdrawn</span></label>
+                                                <label for="txtFIELD6_1_3"><span class="field-name">6.1.3 Number of motions and applications before a single judge that were abandoned, withdrawn or dismissed administratively</span></label>
                                                 <span data-tooltip="Number of motions and applications before a single judge that were abandoned, withdrawn or dismissed administratively i.e., dismissed for want of prosecution, non-compliance with rules, applications where leave is denied, etc."><i class="fa-solid fa-circle-info"></i></span>
                                                 <input class="form-control" id="txtFIELD6_1_3" name="txtFIELD6_1_3" type="number" asp-for="@Model.txtFIELD6_1_3" autocomplete="txtFIELD6_1_3" data-rule-minlength="1" style="width:100%"
                                                        data-msg="Motions before single judge dismissed/withdrawn">
                                                 <span asp-validation-for="@Model.txtFIELD6_1_3" class="label label-danger"></span>
                                             </div>
                                         </div>
+                                    </fieldset>
+                                </section>
+                                <section class="center mrgn-tp-lg section-color small-font">
+                                    <fieldset>
                                         <div class="row col-md-12">
                                             <div class="form-group col-md-12">
-                                                <label for="txtFIELD6_2_1"><span class="field-name">6.2.1 Motions before panel filed </span></label>
+                                                <label><span class="field-name">6.2 Motions and applications heard by a panel of three or more judges </span></label>
+                                            </div>
+                                        </div>
+                                        <div class="row col-md-12">
+                                            <div class="form-group col-md-12">
+                                                <label for="txtFIELD6_2_1"><span class="field-name">6.2.1 Number of motions and applications filed before a panel of three or more 	judges </span></label>
                                                 <span data-tooltip="Number of motions and applications filed before a panel of three or more  judges."><i class="fa-solid fa-circle-info"></i></span>
                                                 <input class="form-control" id="txtFIELD6_2_1" name="txtFIELD6_2_1" type="number" asp-for="@Model.txtFIELD6_2_1" autocomplete="txtFIELD6_2_1" data-rule-minlength="1" style="width:100%"
                                                        data-msg="Motions before panel filed">
@@ -1000,7 +1115,7 @@
                                         </div>
                                         <div class="row col-md-12">
                                             <div class="form-group col-md-12">
-                                                <label for="txtFIELD6_2_2"><span class="field-name">6.2.2 Motions before panel disposed  </span></label>
+                                                <label for="txtFIELD6_2_2"><span class="field-name">6.2.2 Number of motions and applications disposed of by order of a panel of three or more judges</span></label>
                                                 <span data-tooltip="Number of motions and applications disposed of by order of a panel of three or more judges."><i class="fa-solid fa-circle-info"></i></span>
                                                 <input class="form-control" id="txtFIELD6_2_2" name="txtFIELD6_2_2" type="number" asp-for="@Model.txtFIELD6_2_2" autocomplete="txtFIELD6_2_2" data-rule-minlength="1" style="width:100%"
                                                        data-msg="Motions before panel disposed">
@@ -1009,16 +1124,25 @@
                                         </div>
                                         <div class="row col-md-12">
                                             <div class="form-group col-md-12">
-                                                <label for="txtFIELD6_2_3"><span class="field-name">6.2.3 Motions before panel dismissed/withdrawn  </span></label>
+                                                <label for="txtFIELD6_2_3"><span class="field-name">6.2.3 Number of panel motions and applications that were abandoned, withdrawn or dismissed administratively</span></label>
                                                 <span data-tooltip="Number of panel motions and applications that were abandoned, withdrawn or dismissed administratively i.e., dismissed for want of  prosecution, non-compliance with rules, applications where leave is denied, etc."><i class="fa-solid fa-circle-info"></i></span>
                                                 <input class="form-control" id="txtFIELD6_2_3" name="txtFIELD6_2_3" type="number" asp-for="@Model.txtFIELD6_2_3" autocomplete="txtFIELD6_2_3" data-rule-minlength="1" style="width:100%"
                                                        data-msg="Motions before panel dismissed/withdrawn">
                                                 <span asp-validation-for="@Model.txtFIELD6_2_3" class="label label-danger"></span>
                                             </div>
                                         </div>
+                                    </fieldset>
+                                </section>
+                                <section class="center mrgn-tp-lg section-color small-font">
+                                    <fieldset>
                                         <div class="row col-md-12">
                                             <div class="form-group col-md-12">
-                                                <label for="txtFIELD6_3_1"><span class="field-name">6.3.1 Motions before registrar filed </span></label>
+                                                <label><span class="field-name">6.3 SMotions and applications heard by a registrar </span></label>
+                                            </div>
+                                        </div>
+                                        <div class="row col-md-12">
+                                            <div class="form-group col-md-12">
+                                                <label for="txtFIELD6_3_1"><span class="field-name">6.3.1 Number of motions and applications filed before a registrar</span></label>
                                                 <span data-tooltip="Number of motions and applications filed before a registrar."><i class="fa-solid fa-circle-info"></i></span>
                                                 <input class="form-control" id="txtFIELD6_3_1" name="txtFIELD6_3_1" type="number" asp-for="@Model.txtFIELD6_3_1" autocomplete="txtFIELD6_3_1" data-rule-minlength="1" style="width:100%"
                                                        data-msg="Motions before registrar filed">
@@ -1027,7 +1151,7 @@
                                         </div>
                                         <div class="row col-md-12">
                                             <div class="form-group col-md-12">
-                                                <label for="txtFIELD6_3_2"><span class="field-name">6.3.2 Motions before registrar disposed  </span></label>
+                                                <label for="txtFIELD6_3_2"><span class="field-name">6.3.2 Number of motions and applications disposed of by order of a registrar</span></label>
                                                 <span data-tooltip="Number of motions and applications disposed of by order of a registrar."><i class="fa-solid fa-circle-info"></i></span>
                                                 <input class="form-control" id="txtFIELD6_3_2" name="txtFIELD6_3_2" type="number" asp-for="@Model.txtFIELD6_3_2" autocomplete="txtFIELD6_3_2" data-rule-minlength="1" style="width:100%"
                                                        data-msg="Motions before registrar disposed">
@@ -1036,14 +1160,17 @@
                                         </div>
                                         <div class="row col-md-12">
                                             <div class="form-group col-md-12">
-                                                <label for="txtFIELD6_3_3"><span class="field-name">6.3.3 Motions before registrar dismissed/withdrawn  </span></label>
+                                                <label for="txtFIELD6_3_3"><span class="field-name">6.3.3 Number of panel motions and applications that were abandoned, withdrawn or dismissed by a registrar or for administrative reasons</span></label>
                                                 <span data-tooltip="Number of panel motions and applications that were abandoned, withdrawn or dismissed by a registrar or for administrative reasons i.e., dismissed for want of prosecution, non-compliance with rules, applications where leave is denied, etc."><i class="fa-solid fa-circle-info"></i></span>
                                                 <input class="form-control" id="txtFIELD6_3_3" name="txtFIELD6_3_3" type="number" asp-for="@Model.txtFIELD6_3_3" autocomplete="txtFIELD6_3_3" data-rule-minlength="1" style="width:100%"
                                                        data-msg="Motions before registrar dismissed/withdrawn">
                                                 <span asp-validation-for="@Model.txtFIELD6_3_3" class="label label-danger"></span>
                                             </div>
                                         </div>
-
+                                    </fieldset>
+                                </section>
+                                <section class="center mrgn-tp-lg section-color small-font">
+                                    <fieldset>
                                         <div class="row col-md-12">
                                             <div class="form-group col-md-12">
                                                 <label for="txtFIED_6_Comments"><span class="field-name">Comments </span></label>
@@ -1054,17 +1181,21 @@
                                         </div>
                                     </fieldset>
                                 </section>
-                            </details>
+                            </div>
 
-                            <details id="details7" class="mrgn-tp-lg section-color small-font" open hidden>
-                                <summary>
-                                    7. Self-represented litigants
-                                </summary>
-                                <section class="center">
+                            <div id="details7" class="mrgn-tp-lg section-color small-font" hidden>
+                                <section class="center small-font">
+                                    <div class="row col-md-12">
+                                        <div class="form-group col-md-12">
+                                            <label><span class="field-name">7. Self-Represented Litigants (SRLs)</span></label>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="center mrgn-tp-lg section-color small-font">
                                     <fieldset>
                                         <div class="row col-md-12">
                                             <div class="form-group col-md-12">
-                                                <label for="txtFIELD7_1_1"><span class="field-name">7.1.1 Appeals involving SRL at hearing</span></label>
+                                                <label for="txtFIELD7_1_1"><span class="field-name">7.1.1 Number of appeals involving an SRL at the hearing of the appeal on the merits</span></label>
                                                 <span data-tooltip="Number of appeals involving an SRL at the hearing."><i class="fa-solid fa-circle-info"></i></span>
                                                 <input class="form-control" id="txtFIELD7_1_1" name="txtFIELD7_1_1" type="number" asp-for="@Model.txtFIELD7_1_1" autocomplete="txtFIELD7_1_1" data-rule-minlength="1" style="width:100%"
                                                        data-msg="Appeals involving SRL at hearing" onchange="javascript:calculateField_7_1_3();">
@@ -1073,7 +1204,7 @@
                                         </div>
                                         <div class="row col-md-12">
                                             <div class="form-group col-md-12">
-                                                <label for="txtFIELD7_1_2"><span class="field-name">7.1.2 Motions involving SRL at hearing</span></label>
+                                                <label for="txtFIELD7_1_2"><span class="field-name">7.1.2 Number of motions and applications involving an SRL at the hearing of a motion or an application (by a single judge, a panel or the registrar)</span></label>
                                                 <span data-tooltip="Number of motions and applications involving an SRL at the hearing of a motion or an application (by a single judge, a panel or the registrar). Motions and applications heard at the time of the hearing of an appeal are not to be included."><i class="fa-solid fa-circle-info"></i></span>
                                                 <input class="form-control" id="txtFIELD7_1_2" name="txtFIELD7_1_2" type="number" asp-for="@Model.txtFIELD7_1_2" autocomplete="txtFIELD7_1_2" data-rule-minlength="1" style="width:100%"
                                                        data-msg="Motions involving SRL at hearing" onchange="javascript:calculateField_7_1_3();">
@@ -1082,7 +1213,7 @@
                                         </div>
                                         <div class="row col-md-12">
                                             <div class="form-group col-md-12">
-                                                <label for="txtFIELD7_1_3"><span class="field-name">7.1.3 Total SRL cases at hearing</span></label>
+                                                <label for="txtFIELD7_1_3"><span class="field-name">7.1.3 Total number of appeals, motions and applications involving an SRL at the hearing</span></label>
                                                 <span data-tooltip="Total number of appeals, motions and applications involving an SRL at the hearing (7.1.1 and 7.1.2)."><i class="fa-solid fa-circle-info"></i></span>
                                                 <input class="form-control" id="txtFIELD7_1_3" name="txtFIELD7_1_3" type="number" asp-for="@Model.txtFIELD7_1_3" autocomplete="txtFIELD7_1_3" data-rule-minlength="1" style="width:100%"
                                                        data-msg="SRL 7.1.3">
@@ -1099,17 +1230,21 @@
                                         </div>
                                     </fieldset>
                                 </section>
-                            </details>
+                            </div>
 
-                            <details id="details8" class="mrgn-tp-lg section-color small-font" open hidden>
-                                <summary>
-                                    8. Time required to render civil & 	criminal cases
-                                </summary>
-                                <section class="center">
+                            <div id="details8" class="mrgn-tp-lg section-color small-font" hidden>
+                                <section class="center small-font">
+                                    <div class="row col-md-12">
+                                        <div class="form-group col-md-12">
+                                            <label><span class="field-name">8. Number of decisions/judgments rendered</span></label>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="center mrgn-tp-lg section-color small-font">
                                     <fieldset>
                                         <div class="row col-md-12">
                                             <div class="form-group col-md-12">
-                                                <label for="txtFIELD8_1"><span class="field-name">8.1 Decisions rendered < 6 months </span></label>
+                                                <label for="txtFIELD8_1"><span class="field-name">8.1 Less than 6 months</span></label>
                                                 <span data-tooltip="Less than 6 months – Number of decisions related to civil and criminal cases that are rendered in less than 6 months from the hearing date. The cases involving the Youth Criminal Justice Act are not to be tracked separately. They should be counted as any other decision rendered."><i class="fa-solid fa-circle-info"></i></span>
                                                 <input class="form-control" id="txtFIELD8_1" name="txtFIELD8_1" type="number" asp-for="@Model.txtFIELD8_1" autocomplete="txtFIELD8_1" data-rule-minlength="1" style="width:100%"
                                                        data-msg="Decisions rendered">
@@ -1118,7 +1253,7 @@
                                         </div>
                                         <div class="row col-md-12">
                                             <div class="form-group col-md-12">
-                                                <label for="txtFIELD8_2"><span class="field-name">8.2 Decisions rendered 6-12 months</span></label>
+                                                <label for="txtFIELD8_2"><span class="field-name">8.2 Between 6 to 12 months</span></label>
                                                 <span data-tooltip="Between 6 to 12 months – Number of decisions related to civil and criminal cases that are rendered between 6 to 12 months from the hearing date. The cases involving the Youth Criminal Justice Act are not to be tracked separately. They should be counted as any other decision rendered."><i class="fa-solid fa-circle-info"></i></span>
                                                 <input class="form-control" id="txtFIELD8_2" name="txtFIELD8_2" type="number" asp-for="@Model.txtFIELD8_2" autocomplete="txtFIELD8_2" data-rule-minlength="1" style="width:100%"
                                                        data-msg="Decisions rendered 6-12 months">
@@ -1127,7 +1262,7 @@
                                         </div>
                                         <div class="row col-md-12">
                                             <div class="form-group col-md-12">
-                                                <label for="txtFIELD8_3"><span class="field-name">8.3 Decisions rendered > 12 months</span></label>
+                                                <label for="txtFIELD8_3"><span class="field-name">8.3 More than 12 months</span></label>
                                                 <span data-tooltip="More than 12 months – Number of decisions related to civil and criminal cases that are rendered in more than 12 months from the hearing date. The cases involving the Youth Criminal Justice Act are not to be tracked separately. They should be counted as any other decision rendered."><i class="fa-solid fa-circle-info"></i></span>
                                                 <input class="form-control" id="txtFIELD8_3" name="txtFIELD8_3" type="number" asp-for="@Model.txtFIELD8_3" autocomplete="txtFIELD8_3" data-rule-minlength="1" style="width:100%"
                                                        data-msg="Decisions rendered > 12 months">
@@ -1144,17 +1279,21 @@
                                         </div>
                                     </fieldset>
                                 </section>
-                            </details>
+                            </div>
 
-                            <details id="details9" class="mrgn-tp-lg section-color small-font" open hidden>
-                                <summary>
-                                    9. Number of panel hearings
-                                </summary>
-                                <section class="center">
+                            <div id="details9" class="mrgn-tp-lg section-color small-font" hidden>
+                                <section class="center small-font">
+                                    <div class="row col-md-12">
+                                        <div class="form-group col-md-12">
+                                            <label><span class="field-name">9. Number of appeals that are heard</span></label>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="center mrgn-tp-lg section-color small-font">
                                     <fieldset>
                                         <div class="row col-md-12">
                                             <div class="form-group col-md-12">
-                                                <label for="txtFIELD9_1"><span class="field-name">9.1 3-member panel hearings</span></label>
+                                                <label for="txtFIELD9_1"><span class="field-name">9.1 By a 3-member panel hearings</span></label>
                                                 <span data-tooltip="3-member panel hearings – Number of appeals that are heard by a 3-member panel."><i class="fa-solid fa-circle-info"></i></span>
                                                 <input class="form-control" id="txtFIELD9_1" name="txtFIELD9_1" type="number" asp-for="@Model.txtFIELD9_1" autocomplete="txtFIELD9_1" data-rule-minlength="1" style="width:100%"
                                                        data-msg="3-member panel hearings">
@@ -1163,7 +1302,7 @@
                                         </div>
                                         <div class="row col-md-12">
                                             <div class="form-group col-md-12">
-                                                <label for="txtFIELD9_2"><span class="field-name">9.2 5-member panel hearings</span></label>
+                                                <label for="txtFIELD9_2"><span class="field-name">9.2 By a 5-member panel hearings</span></label>
                                                 <span data-tooltip="5-member panel hearings – Number of appeals that are heard by a 5-member panel."><i class="fa-solid fa-circle-info"></i></span>
                                                 <input class="form-control" id="txtFIELD9_2" name="txtFIELD9_2" type="number" asp-for="@Model.txtFIELD9_2" autocomplete="txtFIELD9_2" data-rule-minlength="1" style="width:100%"
                                                        data-msg="5-member panel hearings">
@@ -1180,20 +1319,26 @@
                                         </div>
                                     </fieldset>
                                 </section>
-                            </details>
+                            </div>
 
-                            <details id="details10" class="mrgn-tp-lg section-color small-font" open hidden>
-                                <summary>
-                                    10. Total number of pending cases
-                                </summary>
-                                <section class="center">
+                            <div id="details10" class="mrgn-tp-lg section-color small-font" hidden>
+                                <section class="center small-font">
+                                    <fieldset>
+                                    <div class="row col-md-12">
+                                        <div class="form-group col-md-12">
+                                                <label><span class="field-name">10. Total number of  appeals, cross-appeals, references, bail reviews and JRs pending on December 31st</span></label>
+                                        </div>
+                                    </div>
+                                    </fieldset>
+                                </section>
+                                <section class="center mrgn-tp-lg section-color small-font">
                                     <fieldset>
                                         <div class="row col-md-12">
                                             <div class="form-group col-md-12">
-                                                <label for="txtFIELD10_1"><span class="field-name">10.1 Appeals/reviews pending as of Dec 31</span></label>
-                                                <span data-tooltip="Number of appeals, cross-appeals, references, bail reviews and JRs that have not been finalized as of December 31st."><i class="fa-solid fa-circle-info"></i></span>
+                                                <label for="txtFIELD10_1"><span class="field-name">10.1 Number of appeals, cross-appeals, references, bail reviews and JRs that have not been finalized as of December 31st</span></label>
+                                                <span data-tooltip="Regular judges – Number of judges of the court as of December 31st that have not elected a supernumerary status and have regular judicial duties."><i class="fa-solid fa-circle-info"></i></span>
                                                 <input class="form-control" id="txtFIELD10_1" name="txtFIELD10_1" type="number" asp-for="@Model.txtFIELD10_1" autocomplete="txtFIELD10_1" data-rule-minlength="1" style="width:100%"
-                                                       data-msg="Appeals/reviews pending as of Dec 31">
+                                                       data-msg="Number of regular judges">
                                                 <span asp-validation-for="@Model.txtFIELD10_1" class="label label-danger"></span>
                                             </div>
                                         </div>
@@ -1207,17 +1352,21 @@
                                         </div>
                                     </fieldset>
                                 </section>
-                            </details>
+                            </div>
 
-                            <details id="details11" class="mrgn-tp-lg section-color small-font" open hidden>
-                                <summary>
-                                    11. Number of judges
-                                </summary>
-                                <section class="center">
+                            <div id="details11" class="mrgn-tp-lg section-color small-font" hidden>
+                                <section class="center small-font">
+                                    <div class="row col-md-12">
+                                        <div class="form-group col-md-12">
+                                            <label><span class="field-name">11. Number of judges (as of December 31st)</span></label>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="center mrgn-tp-lg section-color small-font">
                                     <fieldset>
                                         <div class="row col-md-12">
                                             <div class="form-group col-md-12">
-                                                <label for="txtFIELD11_1"><span class="field-name">11.1 Number of regular judges</span></label>
+                                                <label for="txtFIELD11_1"><span class="field-name">11.1 Regular judges</span></label>
                                                 <span data-tooltip="Regular judges – Number of judges of the court as of December 31st that have not elected a supernumerary status and have regular judicial duties."><i class="fa-solid fa-circle-info"></i></span>
                                                 <input class="form-control" id="txtFIELD11_1" name="txtFIELD11_1" type="number" asp-for="@Model.txtFIELD11_1" autocomplete="txtFIELD11_1" data-rule-minlength="1" style="width:100%"
                                                        data-msg="Number of regular judges">
@@ -1226,7 +1375,7 @@
                                         </div>
                                         <div class="row col-md-12">
                                             <div class="form-group col-md-12">
-                                                <label for="txtFIELD11_2"><span class="field-name">11.2 Number of supernumerary judges</span></label>
+                                                <label for="txtFIELD11_2"><span class="field-name">11.2 Supernumerary judges </span></label>
                                                 <span data-tooltip="Supernumerary judges – Number of judges of the court as of December 31st that hold office as supernumerary judges as per section 28 of the Judges Act."><i class="fa-solid fa-circle-info"></i></span>
                                                 <input class="form-control" id="txtFIELD11_2" name="txtFIELD11_2" type="number" asp-for="@Model.txtFIELD11_2" autocomplete="txtFIELD11_2" data-rule-minlength="1" style="width:100%"
                                                        data-msg="Number of supernumerary judges">
@@ -1243,16 +1392,21 @@
                                         </div>
                                     </fieldset>
                                 </section>
-                            </details>
-                            <details id="details12" class="mrgn-tp-lg section-color small-font" open hidden>
-                                <summary>
-                                    Tab 12 – Additional comments
-                                </summary>
-                                <section class="center">
+                            </div>
+
+                            <div id="details12" class="mrgn-tp-lg section-color small-font" hidden>
+                                <section class="center small-font">
+                                    <div class="row col-md-12">
+                                        <div class="form-group col-md-12">
+                                            <label><span class="field-name">Tab 12 – Additional comments</span></label>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="center mrgn-tp-lg section-color small-font">
                                     <fieldset>
                                         <div class="row col-md-12">
                                             <div class="form-group col-md-12">
-                                                <label for="txtFIED_12_Comments"><span class="field-name">Comments </span></label>
+                                                <label for="txtFIED_12_Comments"><span class="field-name">Additional comments </span></label>
                                                 <textarea class="form-control" id="txtFIED_12_Comments" name="txtFIED_12_Comments" type="text" asp-for="@Model.txtFIED_12_Comments" autocomplete="txtFIED_12_Comments" data-rule-minlength="2" data-rule-maxlength="2000" style="width:100%" multiple="true" rows="4">
                             </textarea>
                                                 <span asp-validation-for="@Model.txtFIED_12_Comments" class="label label-danger"></span>
@@ -1260,7 +1414,7 @@
                                         </div>
                                     </fieldset>
                                 </section>
-                            </details>
+                            </div>
                             <div class="align-right">
                                 <button id="btnReview" class="btn cjc-btn-primary" type="button" disabled onclick="javascript:submitForReview();">@localizer["Review"]</button>
                                 <button class="btn cjc-btn-primary" type="button" onclick="javascript:gotoPrevious();">Previous Tab</button>
