@@ -753,3 +753,19 @@ function showJSPanelTop(panelContainer, targetId, msg, panelSize) {
         content: msg
     });
 }
+
+function showJSPanelRight(panelContainer, targetId, msg, panelSize, x, y) {
+    jsPanel.tooltip.create({
+        container: '#divJSContainer',
+        target: '#' + targetId,
+        mode: 'default',
+        connector: true,
+        position: {
+            my: 'left-top', at: 'right-top', offsetX: x, offsetY: y },
+        theme: 'light filled',
+        panelSize: panelSize,
+        headerControls: 'closeonly xs',
+        headerTitle: 'Description',
+        content: msg
+    });
+}
