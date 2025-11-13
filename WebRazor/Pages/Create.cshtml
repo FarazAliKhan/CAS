@@ -262,7 +262,7 @@
                                     <div class="row ">
                                         <div class="form-group col-md-12">
                                             <label>
-                                                <span class="field-name">1.Number of appeals, cross-appeals, references, bail reviews, and judicial reviews (JRs)
+                                                <span class="field-name">1.Number of appeals, cross-appeals, references, bail reviews, and judicial reviews <br/>(JRs)
                                                     <span>
                                                         <i id="iAppeals" class="fa-solid fa-circle-info" onmouseenter="javascript:showJSPanelRight('details11-content', 'iAppeals','One notice of appeal counts as one appeal filed and one appeal disposed of, even though a number of related cases may be grouped together and heard at one hearing (example: if 10 cases are grouped together and heard together but are the subject of 10 notices of appeal, this counts as 10 appeals filed and 10 appeals disposed of). A notice of appeal containing both an appeal against conviction and against sentence, shall be counted as two appeals, but when heard together shall be counted as a single hearing.<br/><br/>Where an appeal was deemed abandoned or struck in the previous calendar year and restored in this calendar year, it is counted as a new appeal filed.<br/><br/>Cross-appeals are to be collected only if they are docket as a separate appeal.','600 400', 100,200)"></i>
                                                     </span>
@@ -1693,8 +1693,10 @@
                                     
                                         <div class="row ">
                                             <div class="form-group col-md-12">
-                                                <label for="txtFIELD10_1"><span class="field-name">10.1 Number of appeals, cross-appeals, references, bail reviews and JRs that have not been finalized as of December 31st</span></label>
-                                                <span data-tooltip="Regular judges – Number of judges of the court as of December 31st that have not elected a supernumerary status and have regular judicial duties."><i class="fa-solid fa-circle-info"></i></span>
+                                                <label for="txtFIELD10_1"><span class="field-name">10.1 Number of appeals, cross-appeals, references, bail reviews and JRs that have not been finalized as of December 31st
+                                                    <span data-tooltip="Regular judges – Number of judges of the court as of December 31st that have not elected a supernumerary status and have regular judicial duties."><i class="fa-solid fa-circle-info"></i></span>
+
+                                                </span></label>
                                                 <input class="form-control" id="txtFIELD10_1" name="txtFIELD10_1" type="number" asp-for="@Model.txtFIELD10_1" autocomplete="txtFIELD10_1" data-rule-minlength="1" style="width:100%"
                                                        data-msg="Number of appeals, cross-appeals, references, bail reviews and JRs that have not been finalized as of December 31st">
                                                 <span asp-validation-for="@Model.txtFIELD10_1" class="label label-danger"></span>
