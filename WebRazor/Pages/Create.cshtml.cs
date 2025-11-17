@@ -62,7 +62,7 @@ namespace WebRazor.Pages
         public int? txtFIELD1_2_5 { get; set; }
 
         [BindProperty]
-        public string? txtFIED_1_Comments { get; set; }
+        public string? txtFIELD_1_Comments { get; set; }
 
 
         [BindProperty]
@@ -87,14 +87,14 @@ namespace WebRazor.Pages
         [BindProperty]
         public int? txtFIELD2_2_2_3 { get; set; }
         [BindProperty]
-        public string? txtFIED_2_Comments { get; set; }
+        public string? txtFIELD_2_Comments { get; set; }
 
         [BindProperty]
         public int? txtFIELD3_1 { get; set; }
         [BindProperty]
         public int? txtFIELD3_2 { get; set; }
         [BindProperty]
-        public string? txtFIED_3_Comments { get; set; }
+        public string? txtFIELD_3_Comments { get; set; }
 
         [BindProperty]
         public int? txtFIELD4_1_1 { get; set; }
@@ -169,7 +169,7 @@ namespace WebRazor.Pages
         [BindProperty]
         public int? txtFIELD4_3_6_3 { get; set; }
         [BindProperty]
-        public string? txtFIED_4_Comments { get; set; }
+        public string? txtFIELD_4_Comments { get; set; }
 
         [BindProperty]
         public int? txtFIELD5_1 { get; set; }
@@ -180,7 +180,7 @@ namespace WebRazor.Pages
         [BindProperty]
         public int? txtFIELD5_4 { get; set; }
         [BindProperty]
-        public string? txtFIED_5_Comments { get; set; }
+        public string? txtFIELD_5_Comments { get; set; }
 
         [BindProperty]
         public int? txtFIELD6_1_1 { get; set; }
@@ -201,7 +201,7 @@ namespace WebRazor.Pages
         [BindProperty]
         public int? txtFIELD6_3_3 { get; set; }
         [BindProperty]
-        public string? txtFIED_6_Comments { get; set; }
+        public string? txtFIELD_6_Comments { get; set; }
 
         [BindProperty]
         public int? txtFIELD7_1_1 { get; set; }
@@ -210,7 +210,7 @@ namespace WebRazor.Pages
         [BindProperty]
         public int? txtFIELD7_1_3 { get; set; }
         [BindProperty]
-        public string? txtFIED_7_Comments { get; set; }
+        public string? txtFIELD_7_Comments { get; set; }
 
         [BindProperty]
         public int? txtFIELD8_1 { get; set; }
@@ -219,29 +219,29 @@ namespace WebRazor.Pages
         [BindProperty]
         public int? txtFIELD8_3 { get; set; }
         [BindProperty]
-        public string? txtFIED_8_Comments { get; set; }
+        public string? txtFIELD_8_Comments { get; set; }
 
         [BindProperty]
         public int? txtFIELD9_1 { get; set; }
         [BindProperty]
         public int? txtFIELD9_2 { get; set; }
         [BindProperty]
-        public string? txtFIED_9_Comments { get; set; }
+        public string? txtFIELD_9_Comments { get; set; }
 
         [BindProperty]
         public int? txtFIELD10_1 { get; set; }
         [BindProperty]
-        public string? txtFIED_10_Comments { get; set; }
+        public string? txtFIELD_10_Comments { get; set; }
 
         [BindProperty]
         public int? txtFIELD11_1 { get; set; }
         [BindProperty]
         public int? txtFIELD11_2 { get; set; }
         [BindProperty]
-        public string? txtFIED_11_Comments { get; set; }
+        public string? txtFIELD_11_Comments { get; set; }
 
         [BindProperty]
-        public string? txtFIED_12_Comments { get; set; }
+        public string? txtFIELD_12_Comments { get; set; }
 
         [BindProperty]
         public string? sectId { get; set; }
@@ -287,7 +287,7 @@ namespace WebRazor.Pages
                 txtFIELD1_2_3 = txtFIELD1_2_3,
                 txtFIELD1_2_4 = txtFIELD1_2_4,
                 txtFIELD1_2_5 = txtFIELD1_2_5,
-                txtFIED_1_Comments = txtFIED_1_Comments,
+                txtFIELD_1_Comments = txtFIELD_1_Comments,
 
                 txtFIELD2_1_1 = txtFIELD2_1_1,
                 txtFIELD2_1_2 = txtFIELD2_1_2,
@@ -299,11 +299,11 @@ namespace WebRazor.Pages
                 txtFIELD2_2_2_1 = txtFIELD2_2_2_1,
                 txtFIELD2_2_2_2 = txtFIELD2_2_2_2,
                 txtFIELD2_2_2_3 = txtFIELD2_2_2_3,
-                txtFIED_2_Comments = txtFIED_2_Comments,
+                txtFIELD_2_Comments = txtFIELD_2_Comments,
 
                 txtFIELD3_1 = txtFIELD3_1,
                 txtFIELD3_2 = txtFIELD3_2,
-                txtFIED_3_Comments = txtFIED_3_Comments,
+                txtFIELD_3_Comments = txtFIELD_3_Comments,
 
                 txtFIELD4_1_1 = txtFIELD4_1_1,
                 txtFIELD4_1_2 = txtFIELD4_1_2,
@@ -341,13 +341,13 @@ namespace WebRazor.Pages
                 txtFIELD4_3_6_1 = txtFIELD4_3_6_1,
                 txtFIELD4_3_6_2 = txtFIELD4_3_6_2,
                 txtFIELD4_3_6_3 = txtFIELD4_3_6_3,
-                txtFIED_4_Comments = txtFIED_4_Comments,
+                txtFIELD_4_Comments = txtFIELD_4_Comments,
 
                 txtFIELD5_1 = txtFIELD5_1,
                 txtFIELD5_2 = txtFIELD5_2,
                 txtFIELD5_3 = txtFIELD5_3,
                 txtFIELD5_4 = txtFIELD5_4,
-                txtFIED_5_Comments = txtFIED_5_Comments,
+                txtFIELD_5_Comments = txtFIELD_5_Comments,
 
                 txtFIELD6_1_1 = txtFIELD6_1_1,
                 txtFIELD6_1_2 = txtFIELD6_1_2,
@@ -358,30 +358,30 @@ namespace WebRazor.Pages
                 txtFIELD6_3_1 = txtFIELD6_3_1,
                 txtFIELD6_3_2 = txtFIELD6_3_2,
                 txtFIELD6_3_3 = txtFIELD6_3_3,
-                txtFIED_6_Comments = txtFIED_6_Comments,
+                txtFIELD_6_Comments = txtFIELD_6_Comments,
                 
                 txtFIELD7_1_1 = txtFIELD7_1_1,
                 txtFIELD7_1_2 = txtFIELD7_1_2,
                 txtFIELD7_1_3 = txtFIELD7_1_3,
-                txtFIED_7_Comments = txtFIED_7_Comments,
+                txtFIELD_7_Comments = txtFIELD_7_Comments,
 
                 txtFIELD8_1 = txtFIELD8_1,
                 txtFIELD8_2 = txtFIELD8_2,
                 txtFIELD8_3 = txtFIELD8_3,
-                txtFIED_8_Comments = txtFIED_8_Comments,
+                txtFIELD_8_Comments = txtFIELD_8_Comments,
 
                 txtFIELD9_1 = txtFIELD9_1,
                 txtFIELD9_2 = txtFIELD9_2,
-                txtFIED_9_Comments = txtFIED_9_Comments,
+                txtFIELD_9_Comments = txtFIELD_9_Comments,
 
                 txtFIELD10_1 = txtFIELD10_1,
-                txtFIED_10_Comments = txtFIED_10_Comments,
+                txtFIELD_10_Comments = txtFIELD_10_Comments,
 
                 txtFIELD11_1 = txtFIELD11_1,
                 txtFIELD11_2 = txtFIELD11_2,
-                txtFIED_11_Comments = txtFIED_11_Comments,
+                txtFIELD_11_Comments = txtFIELD_11_Comments,
 
-                txtFIED_12_Comments = txtFIED_12_Comments,
+                txtFIELD_12_Comments = txtFIELD_12_Comments,
             };
 
             TempData["txtCOURT"] = createItem.txtCOURT;
@@ -401,7 +401,7 @@ namespace WebRazor.Pages
             TempData["txtFIELD1_2_3"] = createItem.txtFIELD1_2_3;
             TempData["txtFIELD1_2_4"] = createItem.txtFIELD1_2_4;
             TempData["txtFIELD1_2_5"] = createItem.txtFIELD1_2_5;
-            TempData["txtFIED_1_Comments"] = createItem.txtFIED_1_Comments;
+            TempData["txtFIELD_1_Comments"] = createItem.txtFIELD_1_Comments;
 
             TempData["txtFIELD2_1_1"] = createItem.txtFIELD2_1_1;
             TempData["txtFIELD2_1_2"] = createItem.txtFIELD2_1_2;
@@ -413,11 +413,11 @@ namespace WebRazor.Pages
             TempData["txtFIELD2_2_2_1"] = createItem.txtFIELD2_2_2_1;
             TempData["txtFIELD2_2_2_2"] = createItem.txtFIELD2_2_2_2;
             TempData["txtFIELD2_2_2_3"] = createItem.txtFIELD2_2_2_3;
-            TempData["txtFIED_2_Comments"] = createItem.txtFIED_2_Comments;
+            TempData["txtFIELD_2_Comments"] = createItem.txtFIELD_2_Comments;
 
             TempData["txtFIELD3_1"] = createItem.txtFIELD3_1;
             TempData["txtFIELD3_2"] = createItem.txtFIELD3_2;
-            TempData["txtFIED_3_Comments"] = createItem.txtFIED_3_Comments;
+            TempData["txtFIELD_3_Comments"] = createItem.txtFIELD_3_Comments;
 
             TempData["txtFIELD4_1_1"] = createItem.txtFIELD4_1_1;
             TempData["txtFIELD4_1_2"] = createItem.txtFIELD4_1_2;
@@ -455,13 +455,13 @@ namespace WebRazor.Pages
             TempData["txtFIELD4_3_6_1"] = createItem.txtFIELD4_3_6_1;
             TempData["txtFIELD4_3_6_2"] = createItem.txtFIELD4_3_6_2;
             TempData["txtFIELD4_3_6_3"] = createItem.txtFIELD4_3_6_3;
-            TempData["txtFIED_4_Comments"] = createItem.txtFIED_4_Comments;
+            TempData["txtFIELD_4_Comments"] = createItem.txtFIELD_4_Comments;
 
             TempData["txtFIELD5_1"] = createItem.txtFIELD5_1;
             TempData["txtFIELD5_2"] = createItem.txtFIELD5_2;
             TempData["txtFIELD5_3"] = createItem.txtFIELD5_3;
             TempData["txtFIELD5_4"] = createItem.txtFIELD5_4;
-            TempData["txtFIED_5_Comments"] = createItem.txtFIED_5_Comments;
+            TempData["txtFIELD_5_Comments"] = createItem.txtFIELD_5_Comments;
 
             TempData["txtFIELD6_1_1"] = createItem.txtFIELD6_1_1;
             TempData["txtFIELD6_1_2"] = createItem.txtFIELD6_1_2;
@@ -472,30 +472,30 @@ namespace WebRazor.Pages
             TempData["txtFIELD6_3_1"] = createItem.txtFIELD6_3_1;
             TempData["txtFIELD6_3_2"] = createItem.txtFIELD6_3_2;
             TempData["txtFIELD6_3_3"] = createItem.txtFIELD6_3_3;
-            TempData["txtFIED_6_Comments"] = createItem.txtFIED_6_Comments;
+            TempData["txtFIELD_6_Comments"] = createItem.txtFIELD_6_Comments;
 
             TempData["txtFIELD7_1_1"] = createItem.txtFIELD7_1_1;
             TempData["txtFIELD7_1_2"] = createItem.txtFIELD7_1_2;
             TempData["txtFIELD7_1_3"] = createItem.txtFIELD7_1_3;
-            TempData["txtFIED_7_Comments"] = createItem.txtFIED_7_Comments;
+            TempData["txtFIELD_7_Comments"] = createItem.txtFIELD_7_Comments;
 
             TempData["txtFIELD8_1"] = createItem.txtFIELD8_1;
             TempData["txtFIELD8_2"] = createItem.txtFIELD8_2;
             TempData["txtFIELD8_3"] = createItem.txtFIELD8_3;
-            TempData["txtFIED_8_Comments"] = createItem.txtFIED_8_Comments;
+            TempData["txtFIELD_8_Comments"] = createItem.txtFIELD_8_Comments;
 
             TempData["txtFIELD9_1"] = createItem.txtFIELD9_1;
             TempData["txtFIELD9_2"] = createItem.txtFIELD9_2;
-            TempData["txtFIED_9_Comments"] = createItem.txtFIED_9_Comments;
+            TempData["txtFIELD_9_Comments"] = createItem.txtFIELD_9_Comments;
 
             TempData["txtFIELD10_1"] = createItem.txtFIELD10_1;
-            TempData["txtFIED_10_Comments"] = createItem.txtFIED_10_Comments;
+            TempData["txtFIELD_10_Comments"] = createItem.txtFIELD_10_Comments;
 
             TempData["txtFIELD11_1"] = createItem.txtFIELD11_1;
             TempData["txtFIELD11_2"] = createItem.txtFIELD11_2;
-            TempData["txtFIED_11_Comments"] = createItem.txtFIED_11_Comments;
+            TempData["txtFIELD_11_Comments"] = createItem.txtFIELD_11_Comments;
 
-            TempData["txtFIED_12_Comments"] = createItem.txtFIED_12_Comments;
+            TempData["txtFIELD_12_Comments"] = createItem.txtFIELD_12_Comments;
 
             return RedirectToPage("Review");
         }
@@ -519,7 +519,7 @@ namespace WebRazor.Pages
             txtFIELD1_2_3 = (int?)TempData["txtFIELD1_2_3"];
             txtFIELD1_2_4 = (int?)TempData["txtFIELD1_2_4"];
             txtFIELD1_2_5 = (int?)TempData["txtFIELD1_2_5"];
-            txtFIED_1_Comments = (string?)TempData["txtFIED_1_Comments"];
+            txtFIELD_1_Comments = (string?)TempData["txtFIELD_1_Comments"];
 
             txtFIELD2_1_1 = (int?)TempData["txtFIELD2_1_1"];
             txtFIELD2_1_2 = (int?)TempData["txtFIELD2_1_2"];
@@ -531,11 +531,11 @@ namespace WebRazor.Pages
             txtFIELD2_2_2_1 = (int?)TempData["txtFIELD2_2_2_1"];
             txtFIELD2_2_2_2 = (int?)TempData["txtFIELD2_2_2_2"];
             txtFIELD2_2_2_3 = (int?)TempData["txtFIELD2_2_2_3"];
-            txtFIED_2_Comments = (string?)TempData["txtFIED_2_Comments"];
+            txtFIELD_2_Comments = (string?)TempData["txtFIELD_2_Comments"];
 
             txtFIELD3_1 = (int?)TempData["txtFIELD3_1"];
             txtFIELD3_2 = (int?)TempData["txtFIELD3_2"];
-            txtFIED_3_Comments = (string?)TempData["txtFIED_3_Comments"];
+            txtFIELD_3_Comments = (string?)TempData["txtFIELD_3_Comments"];
 
             txtFIELD4_1_1 = (int?)TempData["txtFIELD4_1_1"];
             txtFIELD4_1_2 = (int?)TempData["txtFIELD4_1_2"];
@@ -573,13 +573,13 @@ namespace WebRazor.Pages
             txtFIELD4_3_6_1 = (int?)TempData["txtFIELD4_3_6_1"];
             txtFIELD4_3_6_2 = (int?)TempData["txtFIELD4_3_6_2"];
             txtFIELD4_3_6_3 = (int?)TempData["txtFIELD4_3_6_3"];
-            txtFIED_4_Comments = (string?)TempData["txtFIED_4_Comments"];
+            txtFIELD_4_Comments = (string?)TempData["txtFIELD_4_Comments"];
 
             txtFIELD5_1 = (int?)TempData["txtFIELD5_1"];
             txtFIELD5_2 = (int?)TempData["txtFIELD5_2"];
             txtFIELD5_3 = (int?)TempData["txtFIELD5_3"];
             txtFIELD5_4 = (int?)TempData["txtFIELD5_4"];
-            txtFIED_5_Comments = (string?)TempData["txtFIED_5_Comments"];
+            txtFIELD_5_Comments = (string?)TempData["txtFIELD_5_Comments"];
 
             txtFIELD6_1_1 = (int?)TempData["txtFIELD6_1_1"];
             txtFIELD6_1_2 = (int?)TempData["txtFIELD6_1_2"];
@@ -590,30 +590,30 @@ namespace WebRazor.Pages
             txtFIELD6_3_1 = (int?)TempData["txtFIELD6_3_1"];
             txtFIELD6_3_2 = (int?)TempData["txtFIELD6_3_2"];
             txtFIELD6_3_3 = (int?)TempData["txtFIELD6_3_3"];
-            txtFIED_6_Comments = (string?)TempData["txtFIED_6_Comments"];
+            txtFIELD_6_Comments = (string?)TempData["txtFIELD_6_Comments"];
 
             txtFIELD7_1_1 = (int?)TempData["txtFIELD7_1_1"];
             txtFIELD7_1_2 = (int?)TempData["txtFIELD7_1_2"];
             txtFIELD7_1_3 = (int?)TempData["txtFIELD7_1_3"];
-            txtFIED_7_Comments = (string?)TempData["txtFIED_7_Comments"];
+            txtFIELD_7_Comments = (string?)TempData["txtFIELD_7_Comments"];
 
             txtFIELD8_1 = (int?)TempData["txtFIELD8_1"];
             txtFIELD8_2 = (int?)TempData["txtFIELD8_2"];
             txtFIELD8_3 = (int?)TempData["txtFIELD8_3"];
-            txtFIED_8_Comments = (string?)TempData["txtFIED_8_Comments"];
+            txtFIELD_8_Comments = (string?)TempData["txtFIELD_8_Comments"];
 
             txtFIELD9_1 = (int?)TempData["txtFIELD9_1"];
             txtFIELD9_2 = (int?)TempData["txtFIELD9_2"];
-            txtFIED_9_Comments = (string?)TempData["txtFIED_9_Comments"];
+            txtFIELD_9_Comments = (string?)TempData["txtFIELD_9_Comments"];
 
             txtFIELD10_1 = (int?)TempData["txtFIELD10_1"];
-            txtFIED_10_Comments = (string?)TempData["txtFIED_10_Comments"];
+            txtFIELD_10_Comments = (string?)TempData["txtFIELD_10_Comments"];
 
             txtFIELD11_1 = (int?)TempData["txtFIELD11_1"];
             txtFIELD11_2 = (int?)TempData["txtFIELD11_2"];
-            txtFIED_11_Comments = (string?)TempData["txtFIED_11_Comments"];
+            txtFIELD_11_Comments = (string?)TempData["txtFIELD_11_Comments"];
 
-            txtFIED_12_Comments = (string?)TempData["txtFIED_12_Comments"];
+            txtFIELD_12_Comments = (string?)TempData["txtFIELD_12_Comments"];
 
             sectId = (string?)TempData["sectionId"];
         }
@@ -679,7 +679,7 @@ namespace WebRazor.Pages
             TempData["txtFIELD1_2_3"] = txtFIELD1_2_3;
             TempData["txtFIELD1_2_4"] = txtFIELD1_2_4;
             TempData["txtFIELD1_2_5"] = txtFIELD1_2_5;
-            TempData["txtFIED_1_Comments"] = txtFIED_1_Comments;
+            TempData["txtFIELD_1_Comments"] = txtFIELD_1_Comments;
 
             TempData["txtFIELD2_1_1"] = txtFIELD2_1_1;
             TempData["txtFIELD2_1_2"] = txtFIELD2_1_2;
@@ -691,11 +691,11 @@ namespace WebRazor.Pages
             TempData["txtFIELD2_2_2_1"] = txtFIELD2_2_2_1;
             TempData["txtFIELD2_2_2_2"] = txtFIELD2_2_2_2;
             TempData["txtFIELD2_2_2_3"] = txtFIELD2_2_2_3;
-            TempData["txtFIED_2_Comments"] = txtFIED_2_Comments;
+            TempData["txtFIELD_2_Comments"] = txtFIELD_2_Comments;
 
             TempData["txtFIELD3_1"] = txtFIELD3_1;
             TempData["txtFIELD3_2"] = txtFIELD3_2;
-            TempData["txtFIED_3_Comments"] = txtFIED_3_Comments;
+            TempData["txtFIELD_3_Comments"] = txtFIELD_3_Comments;
 
             TempData["txtFIELD4_1_1"] = txtFIELD4_1_1;
             TempData["txtFIELD4_1_2"] = txtFIELD4_1_2;
@@ -733,13 +733,13 @@ namespace WebRazor.Pages
             TempData["txtFIELD4_3_6_1"] = txtFIELD4_3_6_1;
             TempData["txtFIELD4_3_6_2"] = txtFIELD4_3_6_2;
             TempData["txtFIELD4_3_6_3"] = txtFIELD4_3_6_3;
-            TempData["txtFIED_4_Comments"] = txtFIED_4_Comments;
+            TempData["txtFIELD_4_Comments"] = txtFIELD_4_Comments;
 
             TempData["txtFIELD5_1"] = txtFIELD5_1;
             TempData["txtFIELD5_2"] = txtFIELD5_2;
             TempData["txtFIELD5_3"] = txtFIELD5_3;
             TempData["txtFIELD5_4"] = txtFIELD5_4;
-            TempData["txtFIED_5_Comments"] = txtFIED_5_Comments;
+            TempData["txtFIELD_5_Comments"] = txtFIELD_5_Comments;
 
             TempData["txtFIELD6_1_1"] = txtFIELD6_1_1;
             TempData["txtFIELD6_1_2"] = txtFIELD6_1_2;
@@ -750,30 +750,30 @@ namespace WebRazor.Pages
             TempData["txtFIELD6_3_1"] = txtFIELD6_3_1;
             TempData["txtFIELD6_3_2"] = txtFIELD6_3_2;
             TempData["txtFIELD6_3_3"] = txtFIELD6_3_3;
-            TempData["txtFIED_6_Comments"] = txtFIED_6_Comments;
+            TempData["txtFIELD_6_Comments"] = txtFIELD_6_Comments;
 
             TempData["txtFIELD7_1_1"] = txtFIELD7_1_1;
             TempData["txtFIELD7_1_2"] = txtFIELD7_1_2;
             TempData["txtFIELD7_1_3"] = txtFIELD7_1_3;
-            TempData["txtFIED_7_Comments"] = txtFIED_7_Comments;
+            TempData["txtFIELD_7_Comments"] = txtFIELD_7_Comments;
 
             TempData["txtFIELD8_1"] = txtFIELD8_1;
             TempData["txtFIELD8_2"] = txtFIELD8_2;
             TempData["txtFIELD8_3"] = txtFIELD8_3;
-            TempData["txtFIED_8_Comments"] = txtFIED_8_Comments;
+            TempData["txtFIELD_8_Comments"] = txtFIELD_8_Comments;
 
             TempData["txtFIELD9_1"] = txtFIELD9_1;
             TempData["txtFIELD9_2"] = txtFIELD9_2;
-            TempData["txtFIED_9_Comments"] = txtFIED_9_Comments;
+            TempData["txtFIELD_9_Comments"] = txtFIELD_9_Comments;
 
             TempData["txtFIELD10_1"] = txtFIELD10_1;
-            TempData["txtFIED_10_Comments"] = txtFIED_10_Comments;
+            TempData["txtFIELD_10_Comments"] = txtFIELD_10_Comments;
 
             TempData["txtFIELD11_1"] = txtFIELD11_1;
             TempData["txtFIELD11_2"] = txtFIELD11_2;
-            TempData["txtFIED_11_Comments"] = txtFIED_11_Comments;
+            TempData["txtFIELD_11_Comments"] = txtFIELD_11_Comments;
 
-            TempData["txtFIED_12_Comments"] = txtFIED_12_Comments;
+            TempData["txtFIELD_12_Comments"] = txtFIELD_12_Comments;
         }
     }
 }

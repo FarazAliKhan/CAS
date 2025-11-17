@@ -27,7 +27,7 @@ namespace BusinessLayer.DTOs
         public int? txtFIELD1_2_4 { get; set; }
         public int? txtFIELD1_2_5 { get; set; }
 
-        public string? txtFIED_1_Comments { get; set; }
+        public string? txtFIELD_1_Comments { get; set; }
 
 
         
@@ -51,14 +51,14 @@ namespace BusinessLayer.DTOs
         
         public int? txtFIELD2_2_2_3 { get; set; }
         
-        public string? txtFIED_2_Comments { get; set; }
+        public string? txtFIELD_2_Comments { get; set; }
 
         
         public int? txtFIELD3_1 { get; set; }
         
         public int? txtFIELD3_2 { get; set; }
         
-        public string? txtFIED_3_Comments { get; set; }
+        public string? txtFIELD_3_Comments { get; set; }
 
         
         public int? txtFIELD4_1_1 { get; set; }
@@ -133,7 +133,7 @@ namespace BusinessLayer.DTOs
         
         public int? txtFIELD4_3_6_3 { get; set; }
         
-        public string? txtFIED_4_Comments { get; set; }
+        public string? txtFIELD_4_Comments { get; set; }
 
         
         public int? txtFIELD5_1 { get; set; }
@@ -144,7 +144,7 @@ namespace BusinessLayer.DTOs
         
         public int? txtFIELD5_4 { get; set; }
         
-        public string? txtFIED_5_Comments { get; set; }
+        public string? txtFIELD_5_Comments { get; set; }
 
         
         public int? txtFIELD6_1_1 { get; set; }
@@ -165,30 +165,30 @@ namespace BusinessLayer.DTOs
         
         public int? txtFIELD6_3_3 { get; set; }
         
-        public string? txtFIED_6_Comments { get; set; }
+        public string? txtFIELD_6_Comments { get; set; }
 
 
         public int? txtFIELD7_1_1 { get; set; }
         public int? txtFIELD7_1_2 { get; set; }
         public int? txtFIELD7_1_3 { get; set; }
-        public string? txtFIED_7_Comments { get; set; }
+        public string? txtFIELD_7_Comments { get; set; }
 
         public int? txtFIELD8_1 { get; set; }
         public int? txtFIELD8_2 { get; set; }
         public int? txtFIELD8_3 { get; set; }
-        public string? txtFIED_8_Comments { get; set; }
+        public string? txtFIELD_8_Comments { get; set; }
 
         public int? txtFIELD9_1 { get; set; }
         public int? txtFIELD9_2 { get; set; }
-        public string? txtFIED_9_Comments { get; set; }
+        public string? txtFIELD_9_Comments { get; set; }
 
         public int? txtFIELD10_1 { get; set; }
-        public string? txtFIED_10_Comments { get; set; }
+        public string? txtFIELD_10_Comments { get; set; }
 
         public int? txtFIELD11_1 { get; set; }
         public int? txtFIELD11_2 { get; set; }
-        public string? txtFIED_11_Comments { get; set; }
+        public string? txtFIELD_11_Comments { get; set; }
 
-        public string? txtFIED_12_Comments { get; set; }
+        public string? txtFIELD_12_Comments { get; set; }
     }
 }
