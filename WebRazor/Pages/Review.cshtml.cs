@@ -55,11 +55,11 @@ namespace WebRazor.Pages
         [BindProperty]
         public int? txtFIELD2_1_2 { get; set; }
         [BindProperty]
+        public int? txtFIELD2_2_1 { get; set; }
+        [BindProperty]
         public int? txtFIELD2_2_1_1 { get; set; }
         [BindProperty]
         public int? txtFIELD2_2_1_2 { get; set; }
-        [BindProperty]
-        public int? txtFIELD2_2_1 { get; set; }
         [BindProperty]
         public int? txtFIELD2_2_1_3 { get; set; }
         [BindProperty]
@@ -252,9 +252,11 @@ namespace WebRazor.Pages
 
                 txtFIELD2_1_1 = (int?)TempData["txtFIELD2_1_1"];
                 txtFIELD2_1_2 = (int?)TempData["txtFIELD2_1_2"];
+                txtFIELD2_2_1 = (int?)TempData["txtFIELD2_2_1"];
                 txtFIELD2_2_1_1 = (int?)TempData["txtFIELD2_2_1_1"];
                 txtFIELD2_2_1_2 = (int?)TempData["txtFIELD2_2_1_2"];
                 txtFIELD2_2_1_3 = (int?)TempData["txtFIELD2_2_1_3"];
+                txtFIELD2_2_2 = (int?)TempData["txtFIELD2_2_2"];
                 txtFIELD2_2_2_1 = (int?)TempData["txtFIELD2_2_2_1"];
                 txtFIELD2_2_2_2 = (int?)TempData["txtFIELD2_2_2_2"];
                 txtFIELD2_2_2_3 = (int?)TempData["txtFIELD2_2_2_3"];
@@ -367,9 +369,11 @@ namespace WebRazor.Pages
 
             TempData["txtFIELD2_1_1"] = createItem.txtFIELD2_1_1;
             TempData["txtFIELD2_1_2"] = createItem.txtFIELD2_1_2;
+            TempData["txtFIELD2_2_1"] = createItem.txtFIELD2_2_1;
             TempData["txtFIELD2_2_1_1"] = createItem.txtFIELD2_2_1_1;
             TempData["txtFIELD2_2_1_2"] = createItem.txtFIELD2_2_1_2;
             TempData["txtFIELD2_2_1_3"] = createItem.txtFIELD2_2_1_3;
+            TempData["txtFIELD2_2_2"] = createItem.txtFIELD2_2_2;
             TempData["txtFIELD2_2_2_1"] = createItem.txtFIELD2_2_2_1;
             TempData["txtFIELD2_2_2_2"] = createItem.txtFIELD2_2_2_2;
             TempData["txtFIELD2_2_2_3"] = createItem.txtFIELD2_2_2_3;

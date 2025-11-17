@@ -34,13 +34,17 @@ namespace BusinessLayer.DTOs
         public int? txtFIELD2_1_1 { get; set; }
         
         public int? txtFIELD2_1_2 { get; set; }
-        
+
+        public int? txtFIELD2_2_1 { get; set; }
+
         public int? txtFIELD2_2_1_1 { get; set; }
         
         public int? txtFIELD2_2_1_2 { get; set; }
         
         public int? txtFIELD2_2_1_3 { get; set; }
-        
+
+        public int? txtFIELD2_2_2 { get; set; }
+
         public int? txtFIELD2_2_2_1 { get; set; }
         
         public int? txtFIELD2_2_2_2 { get; set; }
