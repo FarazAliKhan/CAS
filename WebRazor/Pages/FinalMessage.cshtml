@@ -1,9 +1,9 @@
 ﻿@page
 @using Microsoft.AspNetCore.Localization
 @using Microsoft.AspNetCore.Mvc.Localization
-@inject IStringLocalizer<ReviewModel> localizer
-@inject IHtmlLocalizer<ReviewModel> htmlLocalizer
-@model ReviewModel
+@inject IStringLocalizer<FinalMessageModel> localizer
+@inject IHtmlLocalizer<FinalMessageModel> htmlLocalizer
+@model FinalMessageModel
 @{
     ViewData["Title"] = "CAS";
     if (HttpContext.Request.Query["culture"] == "fr")
@@ -36,6 +36,20 @@
         <div>Thank you for submitting your annual statistics.</div><br />
         <div>You will receive a confirmation email at (email associated with user account).</div><br />
         <div>You may now generate reports using your newly entered statistics.</div><br />
+
+        <div class="row ">
+            <div class="form-group col-md-6">
+                <label for="reqJson"><span class="field-name">Request Json </span></label>
+                <textarea class="form-control" id="reqJson" name="reqJson" type="text" asp-for="@Model.reqJson" autocomplete="reqJson" style="width:100%" multiple="true" rows="10" readonly>
+                            </textarea>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="resJson"><span class="field-name">Response Json </span></label>
+                <textarea class="form-control" id="resJson" name="resJson" type="text" asp-for="@Model.resJson" autocomplete="resJson" style="width:100%" multiple="true" rows="10" readonly>
+                            </textarea>
+            </div>
+        </div>
+
         <a class="btn btn-primary" style="color:white;width:200px;height:90px;text-align:center;border-radius:12px;" href="/Index"><span><br />Back to Home</span></a><br />
 </form>
 </div>

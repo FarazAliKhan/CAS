@@ -4,15 +4,21 @@ namespace WebRazor.Models
 {
     public class CasModel
     {
-        [Display(Name = "Id")]
-        public int Id { get; set; }
-        [Display(Name = "First Name")]
-        public string? FirstName { get; set; }
-        [Display(Name = "Last Name")]
-        public string? LastName { get; set; }
-        [Display(Name = "Date Of Birth")]
-        public DateTime DateOfBirth { get; set; }
-        public DateTime CreatedDate { get; set; }
-        public DateTime? ModeifiedDate { get; set; }
+        public string appId { get; set; } = "CAACS";
+        public string region { get; set; } = "NEWRECORD";
+        public string uuid { get; set; } = "00000000-0000-0000-0000-000000000000";
+        public List<Node> nodes { get; set; }
+    }
+
+    public class Node
+    {
+        public string uuid { get; set; } = "00000000-0000-0000-0000-000000000000";
+        public List<Field> fields { get; set; }
+    }
+
+    public class Field
+    {
+        public string name { get; set; }
+        public string value { get; set; }
     }
 }

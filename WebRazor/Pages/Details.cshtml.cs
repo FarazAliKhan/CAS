@@ -40,9 +40,6 @@ namespace WebRazor.Pages
                     {
                         string apiResponse = response.Content.ReadAsStringAsync().Result;
                         var casModel = JsonConvert.DeserializeObject<CasModel>(apiResponse);
-                        firstName = casModel.FirstName;
-                        lastName = casModel.LastName;
-                        dob = casModel.DateOfBirth;
                     }
                 }
             }

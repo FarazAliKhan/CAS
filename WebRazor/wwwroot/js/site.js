@@ -777,3 +777,9 @@ function showJSPanelRight(panelContainer, targetId, msg, panelSize, x, y) {
     });
 }
 
+function finalSubmit() {
+    var form = document.getElementById("reviewForm");
+    form.action = "/Review?finalSubmit=true";
+    form.method = "post";
+    form.submit();
+}
