@@ -37,36 +37,6 @@
             CurrentPageFr = url + "&culture=fr";
         }
     }
-    @if (CultureInfo.CurrentCulture.Equals(new CultureInfo("fr")))
-    {
-        <!-- HEADER -->
-        <header class="py-3 px-4 d-flex justify-content-between align-items-center">
-        @if (!(this.Context.Request.Path.ToString().Contains("Create")))
-        {
-                <div class="col-xs-9 col-sm-5 col-md-4">
-                    <img src="~/images/cjc-f-315-k-no-url.jpg" alt="Conseil canadien de la magistrature">
-                </div>
-        }
-   @*          <h4 class="text-white m-0">My Dashboard</h4> *@
-
-            @* <a href="#" class="btn btn-outline-light">Se connecter</a> *@
-        </header>
-    }
-    else
-    {
-        <!-- HEADER -->
-        <header class="py-3 px-4 d-flex justify-content-between align-items-center">
-            @if (!(this.Context.Request.Path.ToString().Contains("Create")))
-            {
-                <div class="align-left">
-                    <img src="~/images/cjc-e-315-k-no-url.jpg" alt="Conseil canadien de la magistrature" width="50px;" height="50px;">
-            </div>
-            }
-@*             <h4 class="text-white m-0 align-center">CAAS</h4> *@
-
-            @* <a href="#" class="btn btn-outline-light">Sign Out</a> *@
-        </header>
-    }
 
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom px-3">
         <a class="navbar-brand d-flex align-items-center" href="#">

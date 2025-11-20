@@ -26,13 +26,21 @@
             new CookieOptions { Expires = DateTimeOffset.UtcNow.AddYears(1) }
         );
     }
-
-  
-
 }
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="~/css/dashboard03.css">
+
+<nav id="wb-bc" property="breadcrumb">
+    <div class="container">
+        <breadcrumb></breadcrumb>
+    </div>
+</nav>
 
 <div class="text-center">
 <form method="post">
+    <br/>
+        <br />
         <div>Thank you for submitting your annual statistics.</div><br />
         <div>You will receive a confirmation email at (email associated with user account).</div><br />
         <div>You may now generate reports using your newly entered statistics.</div><br />
@@ -49,7 +57,7 @@
                             </textarea>
             </div>
         </div>
-
+        <br/>
         <a class="btn btn-primary" style="color:white;width:200px;height:90px;text-align:center;border-radius:12px;" href="/Index"><span><br />Back to Home</span></a><br />
 </form>
 </div>
