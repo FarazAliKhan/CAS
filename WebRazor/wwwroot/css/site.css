@@ -63,7 +63,7 @@
 
 .cjc-btn-primary {
     color: #fff;
-    background-color: #00728F;
+    background-color: #022A5E;
     border-color: rgb(19.6082949309, 60.4147465438, 95.3917050691);
 }
 
@@ -93,7 +93,7 @@
         }
 
     .cjc-btn-primary.disabled:hover, .cjc-btn-primary.disabled:focus, .cjc-btn-primary.disabled.focus, .cjc-btn-primary[disabled]:hover, .cjc-btn-primary[disabled]:focus, .cjc-btn-primary[disabled].focus, fieldset[disabled] .cjc-btn-primary:hover, fieldset[disabled] .cjc-btn-primary:focus, fieldset[disabled] .cjc-btn-primary.focus {
-        background-color: #2572b4;
+        background-color: #022A5E;
         border-color: rgb(19.6082949309, 60.4147465438, 95.3917050691);
     }
 
