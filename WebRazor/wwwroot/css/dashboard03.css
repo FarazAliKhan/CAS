@@ -4,6 +4,11 @@ body {
 }
 
 /* Header styling */
+header {
+    background-color: #022a5e;
+}
+
+/* Header styling */
 .navbar-custom {
     background-color: #002b5c; /* Dark Blue */
     position: fixed;
@@ -22,11 +27,11 @@ body {
     width: 500px;
     background-color: #f8f9fa;
     border-right: 2px solid #dee2e6;
-    height: calc(100vh - 56px);
+    height: calc(100vh - 75px);
     position: fixed;
-    top: 56px;
+    top: 75px;
     left: 0;
-    padding: 1rem 0.5rem;
+    padding: 0.65rem 0.5rem;
     display: flex;
     flex-direction: column;
 }
