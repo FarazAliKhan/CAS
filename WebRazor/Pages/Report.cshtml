@@ -34,7 +34,16 @@
     ViewData["Home"] = localizer["Home"];
 }
 
-<div class="text-center"><h1>@localizer["Report"] CAS</h1></div>
+<!-- Custom CSS -->
+<link rel="stylesheet" href="~/css/dashboard03.css">
+
+<nav id="wb-bc" property="breadcrumb">
+    <div class="container">
+        <breadcrumb></breadcrumb>
+    </div>
+</nav>
+
+<div class="text-center"><h1>@localizer["Report"] CAAS</h1></div>
 <form method="post">
     <div>
         <div style="text-align:center;">
@@ -42,7 +51,7 @@
                     frameborder="0" allowFullScreen="allowfullscreen"></iframe>
         </div>
         <span>
-            <a class="btn btn-default" asp-page="./Select">@localizer["Back"]</a>
+            <a class="btn btn-secondary" asp-page="./Select">@localizer["Back"]</a>
         </span>
     </div>
 </form>
