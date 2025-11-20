@@ -1114,31 +1114,31 @@ namespace WebRazor.Pages
             reqJson = json;
             resJson = "";
 
-            var apiEndpoint = _configuration.GetValue<string>("SaveURL1");
+            //var apiEndpoint = _configuration.GetValue<string>("SaveURL1");
 
-            var content = new StringContent(json, UnicodeEncoding.UTF8, "application/json");
+            //var content = new StringContent(json, UnicodeEncoding.UTF8, "application/json");
 
-            var httpClientHandler = new HttpClientHandler();
-            httpClientHandler.ServerCertificateCustomValidationCallback = (message, cert, chain, sslPolicyErrors) =>
-            {
-                return true;
-            };
-            HttpClient httpClient = new HttpClient(httpClientHandler) { BaseAddress = new Uri(apiEndpoint) };
+            //var httpClientHandler = new HttpClientHandler();
+            //httpClientHandler.ServerCertificateCustomValidationCallback = (message, cert, chain, sslPolicyErrors) =>
+            //{
+            //    return true;
+            //};
+            //HttpClient httpClient = new HttpClient(httpClientHandler) { BaseAddress = new Uri(apiEndpoint) };
 
-            using (httpClient)
-            {
+            //using (httpClient)
+            //{
 
-                using (HttpResponseMessage response = httpClient.PostAsync(apiEndpoint, content).Result)
-                {
-                    if (response.IsSuccessStatusCode)
-                    {
-                        string apiResponse = response.Content.ReadAsStringAsync().Result;
-                        Console.WriteLine(apiResponse);
-                        resJson = apiResponse;
-                        //var casModel = JsonConvert.DeserializeObject<CasModel>(apiResponse);
-                    }
-                }
-            }
+            //    using (HttpResponseMessage response = httpClient.PostAsync(apiEndpoint, content).Result)
+            //    {
+            //        if (response.IsSuccessStatusCode)
+            //        {
+            //            string apiResponse = response.Content.ReadAsStringAsync().Result;
+            //            Console.WriteLine(apiResponse);
+            //            resJson = apiResponse;
+            //            //var casModel = JsonConvert.DeserializeObject<CasModel>(apiResponse);
+            //        }
+            //    }
+            //}
 
             return true;
         }
