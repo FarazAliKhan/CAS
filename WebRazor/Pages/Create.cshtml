@@ -32,126 +32,99 @@
     ViewData["Create"] = localizer["Create"];
     ViewData["Select"] = localizer["Select"];
     ViewData["Home"] = localizer["Home"];
+    //string tooltip1 = "One notice of appeal counts as one appeal filed and one appeal disposed of, even though a number of related cases may be grouped together and heard at one hearing (example: if 10 cases are grouped together and heard together but are the subject of 10 notices of appeal, this counts as 10 appeals filed and 10 appeals disposed of). A notice of appeal containing both an appeal against conviction and against sentence, shall be counted as two appeals, but when heard together shall be counted as a single hearing.\u003c\u002f\u003eWhere an appeal was deemed abandoned or struck in the previous calendar year and restored in this calendar year, it is counted as a new appeal filed.<br/><br/>Cross-appeals are to be collected only if they are docket as a separate appeal.";
 }
 
+<!-- Custom CSS -->
+<link rel="stylesheet" href="~/css/dashboard03.css">
+<!-- SIDEBAR -->
+<div class="sidebar">
+    <div class="sider-brand align-left">
+        <img src="~/images/cjc-e-315-k-no-url.jpg" alt="Canadian Council of Megistrate" class="dashboard-logo" />
+    </div>
+    <div class="menu-container">
+    <div class="active slot-item">
+        <span>
+        <a href="javascript:showDetails('detailsBasicInfo');" style="text-decoration:none;">
+            <span class="item">Name of Court and Reporting Year</span>
+        </a>
+        </span>
+    </div>
+    <div class="slot-item">
+        <span>
+        <a href="javascript:showDetails('details1');" style="text-decoration:none;">
+            <span class="item">Tab 1 –	Number of appeals, cross-appeals, references, bail reviews, and judicial reviews (JRs) </span>
+        </a>
+        </span>
+    </div>
+    <div class="slot-item">
+        <a href="javascript:showDetails('details2');" style="text-decoration:none;">
+            <span class="item">
+                Tab 2 –	Civil and criminal case decisions
+            </span>
+        </a>
+    </div>
+    <div class="slot-item">
+        <a href="javascript:showDetails('details3');" style="text-decoration:none;">
+            <span class="item">Tab 3 – Number of decisions/judgments (total)</span>
+        </a>
+    </div>
+    <div class="slot-item">
+        <a href="javascript:showDetails('details4');" style="text-decoration:none;">
+            <span class="item">Tab 4 – Civil and criminal case time intervals</span>
+        </a>
+    </div>
+    <div class="slot-item">
+        <a href="javascript:showDetails('details5');" style="text-decoration:none;">
+            <span class="item">
+                Tab 5 –	Number of in-person, virtual and hybrid hearings
+            </span>
+        </a>
+    </div>
+    <div class="slot-item">
+        <a href="javascript:showDetails('details6');" style="text-decoration:none;">
+            <span class="item">Tab 6 – Number of motions and applications </span>
+        </a>
+    </div>
+    <div class="slot-item">
+        <a href="javascript:showDetails('details7');" style="text-decoration:none;">
+            <span class="item">Tab 7 – Self-Represented Litigants (SRLs)</span>
+        </a>
+    </div>
+    <div class="slot-item">
+        <a href="javascript:showDetails('details8');" style="text-decoration:none;">
+            <span class="item">Tab 8 – Number of decisions/judgments rendered</span>
+        </a>
+    </div>
+    <div class="slot-item">
+        <a href="javascript:showDetails('details9');" style="text-decoration:none;">
+            <span class="item">Tab 9 – Number of appeals that are heard</span>
+        </a>
+    </div>
+    <div class="slot-item">
+        <a href="javascript:showDetails('details10');" style="text-decoration:none;">
+            <span class="item">Tab 10 – Total number of  appeals, cross-appeals, references, bail reviews and JRs pending on December 31st</span>
+        </a>
+    </div>
+    <div class="slot-item">
+        <a href="javascript:showDetails('details11');" style="text-decoration:none;">
+            <span class="item">Tab 11 – Number of judges (as of December 31st)</span>
+        </a>
+    </div>
+    <div class="slot-item">
+        <a href="javascript:showDetails('details12');" style="text-decoration:none;">
+            <span class="item">Tab 12 – Additional comments</span>
+        </a>
+    </div>
+    </div>
+</div>
 <div id="page">
-    <section>
-        <div class="text-center"><h4>Court of Appeal<br />Annual Statistics<br />(CAAS)<br />Data Entry Form</h4></div>
+
+        <div class="custom-card ">
+    <div>
+        
         <div class="col-md-12">
-            <div class="col-md-5" style="padding-top:30px;">
-                <!--Top menu -->
-                <div style="font-size:small;">
-                    <ul>
-                        <li id="lidetailsBasicInfo" class="btn-primary" style="padding-left:10px; padding-top:5px; padding-bottom:5px;background:#1C578A">
-                            <a href="javascript:showDetails('detailsBasicInfo');" style="text-decoration:none;">
-                                <span class="item">Name of Court and Reporting Year</span>
-                            </a>
-                        </li>
-                        <li id="lidetails1" class="btn-primary" style="padding-left:10px;padding-top:5px; padding-bottom:5px;"
-                            onmouseenter="javascript:showJSPanel('details1-content', 'lidetails1','The number of criminal or civil appeals, cross-appeals, references, bail reviews, judicial reviews (filed, disposed of and abandoned or withdrawn).<br/><br/>One notice of appeal counts as one appeal filed and one appeal disposed of, even though a number of related cases may be grouped together and heard at one hearing (example: if 10 cases are grouped together and heard together but are the subject of 10 notices of appeal, this counts as 10 appeals filed and 10 appeals disposed of). A notice of appeal containing both an appeal against conviction and against sentence, shall be counted as two appeals, but when heard together shall be counted as a single hearing.<br/><br/>Where an appeal was deemed abandoned or struck in the previous calendar year and restored in this calendar year, it is counted as a new appeal filed.','600 400')">
-                            <span>
-                                <a href="javascript:showDetails('details1');" style="text-decoration:none;">
-                                    <span class="item">Tab 1 –	Number of appeals, cross-appeals, references, bail reviews, and judicial reviews (JRs) </span>
-                                </a>
-                            </span>
-                        </li>
-                        <li id="lidetails2" class="btn-primary" style="padding-left:10px;padding-top:5px; padding-bottom:5px;"
-                            onmouseenter="javascript:showJSPanel('details2-content', 'lidetails2','The number of civil case decisions given at hearing and the number of civil case reserved decisions as well as the number of criminal case decisions given at hearing and filed after reserving.','600 125')">
-                            <span>
-                                <a href="javascript:showDetails('details2');" style="text-decoration:none;">
-                                    <span class="item">
-                                        Tab 2 –	Civil and criminal case decisions
-                                    </span>
-                                </a>
-                            </span>
-                        </li>
-                        <li id="lidetails3" class="btn-primary" style="padding-left:10px;padding-top:5px; padding-bottom:5px;"
-                            onmouseenter="javascript:showJSPanel('details3-content', 'lidetails3','The number of bench decisions/judgments and the number of reserved decisions/judgments.','600 100')">
-                            <span>
-                                <a href="javascript:showDetails('details3');" style="text-decoration:none;">
-                                    <span class="item">Tab 3 – Number of decisions/judgments (total)</span>
-                                </a>
-                            </span>
-                        </li>
-                        <li id="lidetails4" class="btn-primary" style="padding-left:10px;padding-top:5px; padding-bottom:5px;"
-                            onmouseenter="javascript:showJSPanel('details4-content', 'lidetails4','Civil and criminal case statistics are to be collected for three time intervals: 1) Notice of appeal to filing of the appellant’s factum (or the equivalent document), 2) Filing of appellant’s factum to hearing, and 3) Hearing to final decision.<br/><br/>For each of these time intervals, information will be gathered for three time periods: 1) Less than 6 months, 2) Between 6 to 12 months, and 3) More than 12 months.<br/><br/>For criminal cases, the time intervals and time periods should be reported for each of the following three categories of criminal appeals: 1) Conviction/acquittal, 2) Sentence, and 3) Other.','600 300')">
-                            <span>
-                                <a href="javascript:showDetails('details4');" style="text-decoration:none;">
-                                    <span class="item">Tab 4 – Civil and criminal case time intervals</span>
-                                </a>
-                            </span>
-                        </li>
-                        <li id="lidetails5" class="btn-primary" style="padding-left:10px;padding-top:5px; padding-bottom:5px;"
-                            onmouseenter="javascript:showJSPanel('details5-content', 'lidetails5','The number of in-person, virtual and hybrid hearings by a panel of judges only.','600 75')">
-                            <span>
-                                <a href="javascript:showDetails('details5');" style="text-decoration:none;">
-                                    <span class="item">
-                                        Tab 5 –	Number of in-person, virtual and hybrid hearings
-                                    </span>
-                                </a>
-                            </span>
-                        </li>
-                        <li id="lidetails6" class="btn-primary" style="padding-left:10px;padding-top:5px; padding-bottom:5px;"
-                            onmouseenter="javascript:showJSPanel('details6-content', 'lidetails6','The number of motions and applications heard in chambers (single judge), in court (panels of three or more judges) and by registrars. In some jurisdictions, motions and applications can be heard by a master or other judicial officers.<br/>Motions and applications heard at the time of the hearing of an appeal are not to be included. Motions and applications in writing should be included. Consent orders should also be included if judicial time is required to deal with them.','600 200')">
-                            <span>
-                                <a href="javascript:showDetails('details6');" style="text-decoration:none;">
-                                    <span class="item">Tab 6 – Number of motions and applications </span>
-                                </a>
-                            </span>
-                        </li>
-                        <li id="lidetails7" class="btn-primary" style="padding-left:10px;padding-top:5px; padding-bottom:5px;"
-                            onmouseenter="javascript:showJSPanel('details7-content', 'lidetails7','A self-represented litigant (SRL) is a person who appears in court without representation from a lawyer. The litigant is not to be considered an SRL if the court has appointed counsel to assist the litigant.<br/><br/>The number of appeals and the number of motions involving an SRL is only collected at the hearing. For example, if a person is represented by a lawyer at the filing stage of an appeal or motion but is not represented at the hearing, the appeal or motion is considered an SRL case.','600 250')">
-                            <span>
-                                <a href="javascript:showDetails('details7');" style="text-decoration:none;">
-                                    <span class="item">Tab 7 – Self-Represented Litigants (SRLs)</span>
-                                </a>
-                            </span>
-                        </li>
-                        <li id="lidetails8" class="btn-primary" style="padding-left:10px;padding-top:5px; padding-bottom:5px;"
-                            onmouseenter="javascript:showJSPanel('details8-content', 'lidetails8','The number of decisions related to civil and criminal cases that are rendered in: 1) Less than 6 months, 2) Between 6 and 12 months, and 3) More than 12 months from the hearing date.','600 150')">
-                            <span>
-                                <a href="javascript:showDetails('details8');" style="text-decoration:none;">
-                                    <span class="item">Tab 8 – Number of decisions/judgments rendered</span>
-                                </a>
-                            </span>
-                        </li>
-                        <li id="lidetails9" class="btn-primary" style="padding-left:10px;padding-top:5px; padding-bottom:5px;"
-                            onmouseenter="javascript:showJSPanel('details9-content', 'lidetails9','The number of appeals that are heard by a 3-member and 5-member panel.','600 75')">
-                            <span>
-                                <a href="javascript:showDetails('details9');" style="text-decoration:none;">
-                                    <span class="item">Tab 9 – Number of appeals that are heard</span>
-                                </a>
-                            </span>
-                        </li>
-                        <li id="lidetails10" class="btn-primary" style="padding-left:10px;padding-top:5px; padding-bottom:5px;"
-                            onmouseenter="javascript:showJSPanel('details10-content', 'lidetails10','Total number of appeals, cross-appeals, references, bail reviews and judicial reviews pending on December 31st.<br/><br/>The closing inventory of one year will equally be the opening inventory of the next year. That inventory can be measured “as of” December 31st of each year. Appeals, cross-appeals, references, bail reviews and judicial reviews filed before December 31st for which there is no judgement date or other disposition date before December 31st are considered pending on that date. This includes the appeals, cross-appeals, references, bail reviews and judicial reviews that have not been heard as well as those that have been heard but for which judgment has not been released. These appeals, cross-appeals, references, bail reviews and judicial reviews will appear in the closing inventory of one year and the opening inventory of the next year.','600 400')">
-                            <span>
-                                <a href="javascript:showDetails('details10');" style="text-decoration:none;">
-                                    <span class="item">Tab 10 – Total number of  appeals, cross-appeals, references, bail reviews and JRs pending on December 31st</span>
-                                </a>
-                            </span>
-                        </li>
-                        <li id="lidetails11" class="btn-primary" style="padding-left:10px;padding-top:5px; padding-bottom:5px;"
-                            onmouseenter="javascript:showJSPanel('details11-content', 'lidetails11','The number of regular and supernumerary judges as of December 31st.','600 75')">
-                            <span>
-                                <a href="javascript:showDetails('details11');" style="text-decoration:none;">
-                                    <span class="item">Tab 11 – Number of judges (as of December 31st)</span>
-                                </a>
-                            </span>
-                        </li>
-                        <li id="lidetails12" class="btn-primary" style="padding-left:10px;padding-top:5px; padding-bottom:5px;"
-                            onmouseenter="javascript:showJSPanel('details12-content', 'lidetails12','The database will allow for comments to be added in order to explain true anomalies. Comments should only be used on an exceptional basis. A true anomaly is a situation that considerably deviates from what is considered normal or expected.','600 150')">
-                            <span>
-                                <a href="javascript:showDetails('details12');" style="text-decoration:none;">
-                                    <span class="item">Tab 12 – Additional comments</span>
-                                </a>
-                            </span>
-                        </li>
-                    </ul>
-                    <div id="divJSContainer"></div>
-                </div>
-            </div>
-            <div class="col-md-7">
+            <div class="col-md-12">
                 <div>
                     @* @if (!ViewData.ModelState.IsValid)
                     {
@@ -171,7 +144,7 @@
                             </div>
                         </div> 
                     } *@
-
+                            <h3 class="mb-3"><span class="text-center">Court of Appeal<br />Annual Statistics<br />(CAAS)<br />Data Entry Form</span></h3><br/>
                     <div class="wb-frmvld">
                         <form method="post" id="createForm">
                             <div id="divJSInfoContainer"></div>
@@ -257,18 +230,18 @@
                                     </fieldset>
                                 </section>
                             </div>
-                            <div id="details1" class="mrgn-tp-lg section-color small-font" hidden>
-                                <div class="center small-font">
+                            <div id="details1" class="fs-6" hidden>
+                                        <div class="align-left fs-6">
 
                                     <div class="row ">
                                         <div class="form-group col-md-12">
                                             <div id="divJSInfoContainerAppeals"></div>
                                             <label>
                                                 <span class="field-name">
-                                                    1.Number of appeals, cross-appeals, references, bail reviews, and judicial reviews <br />(JRs)
+                                                    1.Number of appeals, cross-appeals, references, bail reviews, and judicial reviews (JRs)
 
-                                                    <span>
-                                                        <i id="iAppeals" class="fa-solid fa-circle-info" onmouseenter="javascript:showJSPanelRight('divJSInfoContainerAppeals', 'iAppeals','One notice of appeal counts as one appeal filed and one appeal disposed of, even though a number of related cases may be grouped together and heard at one hearing (example: if 10 cases are grouped together and heard together but are the subject of 10 notices of appeal, this counts as 10 appeals filed and 10 appeals disposed of). A notice of appeal containing both an appeal against conviction and against sentence, shall be counted as two appeals, but when heard together shall be counted as a single hearing.<br/><br/>Where an appeal was deemed abandoned or struck in the previous calendar year and restored in this calendar year, it is counted as a new appeal filed.<br/><br/>Cross-appeals are to be collected only if they are docket as a separate appeal.','600 400', -500, -500)"></i>
+                                                    <span class="red-tooltip" data-toggle="tooltip" data-placement="top" title="One notice of appeal counts as one appeal filed and one appeal disposed of, even though a number of related cases may be grouped together and heard at one hearing (example: if 10 cases are grouped together and heard together but are the subject of 10 notices of appeal, this counts as 10 appeals filed and 10 appeals disposed of). A notice of appeal containing both an appeal against conviction and against sentence, shall be counted as two appeals, but when heard together shall be counted as a single hearing.&#013;&#013;Where an appeal was deemed abandoned or struck in the previous calendar year and restored in this calendar year, it is counted as a new appeal filed.&#013;&#013;Cross-appeals are to be collected only if they are docket as a separate appeal.">
+                                                        <i id="iAppeals" class="fa-solid fa-circle-info"></i>
                                                     </span>
                                                 </span>
                                             </label>
@@ -277,12 +250,12 @@
                                     </div>
 
                                 </div>
-                                <div class="center  small-font">
+                                        <div class="align-left  fs-6">
 
                                     <div class="row ">
 
                                         <div class="form-group col-md-12">
-                                            <label><span class="field-name">1.1 Civil appeals, cross-appeals, references, and JRs filed, disposed of, and abandoned <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;or withdrawn</span></label>
+                                            <label><span class="field-name">1.1 Civil appeals, cross-appeals, references, and JRs filed, disposed of, and abandoned or withdrawn</span></label>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -387,7 +360,7 @@
                                     </div>
 
                                 </div>
-                                <div class="center  small-font">
+                                <div class="align-left  small-font">
 
                                     <div class="row ">
 
@@ -482,7 +455,7 @@
                                     </div>
 
                                 </div>
-                                <div class="center  small-font">
+                                        <div class="align-left  small-font">
 
                                     <div class="row ">
                                         <div class="form-group col-md-12">
@@ -497,14 +470,14 @@
                             </div>
 
                             <div id="details2" class="mrgn-tp-lg section-color small-font" hidden>
-                                <div class="center small-font">
+                                        <div class="align-left small-font">
                                     <div class="row">
                                         <div class="form-group col-md-12">
                                             <label><span class="field-name">2. Civil and criminal case decisions  </span></label>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="center  small-font">
+                                        <div class="align-left  small-font">
 
                                     <div class="row">
                                         <div class="form-group col-md-1"></div>
@@ -1946,6 +1919,7 @@
 
                                 </div>
                             </div>
+                            <br/>
                             <div class="align-right">
                                 <button id="btnReview" class="btn btn-primary" type="button" disabled onclick="javascript:submitForReview();">@localizer["Review"]</button>
                                 <button class="btn btn-primary" type="button" onclick="javascript:gotoPrevious();">Previous Tab</button>
@@ -1957,5 +1931,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+    </<div>
+    </div>
+</div>
+
 </div>

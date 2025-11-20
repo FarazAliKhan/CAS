@@ -1,0 +1,176 @@
+/* ---------- Global Style ---------- */
+body {
+  background: #f5f7fb;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* ---------- HEADER ---------- */
+header {
+  background: #022a5e;
+  color: #fff;
+  height: 100px;
+  margin-left: 560px; /* header moves right of sidebar */
+  position: fixed;
+  width: calc(100% - 160px);
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+}
+
+
+
+/* ---------- SIDEBAR ---------- */
+
+.sider-brand{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.slot-item {
+    /*margin: 10px;*/
+    /* background: linear-gradient(180deg, #f2f4f7, #d7dbe2); */
+    /*padding: 2px 2px;*/
+    margin-bottom: 5px;
+    width: 87%;
+    border-radius: 6px;
+    font-size: 12px;
+    color: white;
+    /* color: #2a2f33; */
+    font-weight: 500;
+    border: 0.5px solid #c7c9cc;
+    box-shadow: inset 0px 1px 1px rgba(255,255,255,0.8), 0 2px 4px rgba(0,0,0,0.15);
+    cursor: pointer;
+    transition: 0.2s;
+    height: 60px;
+}
+
+/* Hover effect */
+    .slot-item:hover {
+        background: linear-gradient(180deg, #2776ed, #054cb0);
+        transform: translateX(3px);
+        height: 60px;
+        width: 87%;
+        border-radius: 6px;
+        border: 0.5px solid #c7c9cc;
+        margin-bottom: 5px;
+    }
+
+.sidebar {
+  width: 600px;
+  height: 100vh;
+  background: #022a5e;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding-top: 10px;
+  text-align: center;
+  border-right: 1px solid rgba(255,255,255,0.08);
+}
+
+/* Logo Styling */
+.dashboard-logo {
+  width: 130px;
+  padding-top: 10px;
+  margin-bottom: 40px;
+  filter: brightness(1.5);
+}
+
+.sidebar a {
+  display: block;
+  padding: 15px 25px;
+  color: #b8b8d1;
+  text-decoration: none;
+  font-size: 15px;
+  transition: 0.2s ease;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+  background: #1e2132;
+  color: #fff;
+  border-left: 4px solid #4e73df;
+}
+
+
+
+/* ---------- MAIN CONTENT AREA ---------- */
+.main {
+  margin-left: 260px;
+  padding: 110px 40px 40px;
+  width: 100%;
+}
+
+body{
+    background-color: white;
+}
+
+/* ---------- CARDS ---------- */
+.custom-card {
+    /*    margin-top: 30px;*/
+    margin-left: 260px;
+    width: 100%;
+    background: #fff;
+    border-radius: 16px;
+    padding: 25px;
+    min-height: 300px;
+    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.07);
+}
+
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+@media (max-width: 900px) {
+  .sidebar {
+    width: 200px;
+  }
+
+  header {
+    width: calc(100% - 200px);
+    margin-left: 200px;
+  }
+
+  .main {
+    margin-left: 200px;
+  }
+}
+
+@media (max-width: 600px) {
+  .sidebar {
+    position: absolute;
+    left: -260px;
+    transition: 0.3s;
+  }
+
+  .sidebar.active {
+    left: 0;
+  }
+
+  header {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .main {
+    margin-left: 0;
+    padding-top: 90px;
+  }
+}
+
+.menu-container{
+    height: 800px;
+    overflow: auto;
+    padding-bottom: 70px;
+    margin-bottom: 50px;
+}
+
+.menu-container::-webkit-scrollbar {
+    display: none;
+}

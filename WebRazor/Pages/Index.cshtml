@@ -34,81 +34,34 @@
     ViewData["Home"] = localizer["Home"];
 }
 <!DOCTYPE html>
-<html class="js backgroundsize borderimage csstransitions fontface svg details progressbar meter mathml cors smallview" lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head class="at-element-marker">
+<html lang="en">
+<head>
     <meta charset="utf-8">
-    <title>CAS</title>
-
-    <link rel="apple-touch-icon" sizes="57x57 72x72 114x114 144x144 150x150" class="wb-favicon" href="~/lib/themes-dist-17.2.0-gcweb/GCWeb/assets/favicon-mobile.png">
-    <link href="~/lib/themes-dist-17.2.0-gcweb/GCWeb/assets/favicon.ico" rel="icon" type="image/x-icon" class="wb-init wb-favicon-inited">
-    <link rel="stylesheet" href="~/lib/themes-dist-17.2.0-gcweb/GCWeb/css/theme.css">
-    <noscript><link rel="stylesheet" href="~/lib/themes-dist-17.2.0-gcweb/GCWeb/css/noscript.css" /></noscript>
-    <link rel="stylesheet" href="~/lib/themes-dist-17.2.0-gcweb/GCWeb/css/messages.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="~/css/dashboard01.css">
     <link rel="stylesheet" href="~/css/site.css">
 </head>
 
-<body class="align-content-center" vocab="http://schema.org/" typeof="WebPage" resource="#wb-webpage">
-    <main property="mainContentOfPage" resource="#wb-main" typeof="WebPageElement">
-        <div class="center text-center">
-            <div>
-                @* <div class="col-xs-12">
-                    <h1 property="name" class="wb-inv">Canada.ca</h1>
-                    <div class="row text-center">
-                        <div class="col-xs-12 col-md-12" style="padding-top:400px;padding-left:1030px;opacity:0.5;">
-                            <img src="~/images/cjc-ccm-ef.jpg" alt="Conseil canadien de la magistrature">
-                        </div>
-                    </div>
-                </div> *@
-                @*   <div class="sp-bx-bt col-xs-12">
-                <div class="row">
-                    <div class="col-xs-7 col-md-8">
-                        <a href="/en/transparency/terms.html" class="sp-lk">Terms &amp; conditions</a> <span class="glyphicon glyphicon-asterisk"></span> <a href="/fr/transparence/avis.html" class="sp-lk" lang="fr">Avis</a>
-                    </div>
+<body>
 
-                    <div class="col-xs-5 col-md-4 text-right mrgn-bttm-md">
-                        <img src="~/images/cjc-e-315-k-no-url.jpg" width="127" alt="Canadian Council of Magistrate">
-                    </div>
-                </div>
-            </div> *@
+    <main class="bg-page">
+        <div class="page-content text-white text-center">
+            <div class="text-content">
+                <h1 class="display-5">Court of Appeal Annual Statistics (CAAS)</h1>
+                <!-- <p class="lead">Background image with bottom-left buttons.</p> -->
             </div>
         </div>
-        <div class="center text-center">
-            <div>
-                <div class="col-xs-12">
-                    <div class="row text-center" style="padding-top:514px;">
-                        <section class="col-xs-6" style="text-align:right;">
-                            <h2 class="wb-inv">Canadian Council of Magistrate</h2>
-                            <p><a href="Select/?culture=en" class="btn btn-primary" translate="no">English</a></p>
-                        </section>
-                        <section class="col-xs-6" style="text-align:left;padding-left:65px;" lang="fr">
-                            <h2 class="wb-inv">Conseil canadien de la magistrature</h2>
-                            <p><a href="Select/?culture=fr" class="btn btn-primary" translate="no">Français</a></p>
-                        </section>
-                    </div>
-                </div>
-                @*   <div class="sp-bx-bt col-xs-12">
-                <div class="row">
-                    <div class="col-xs-7 col-md-8">
-                        <a href="/en/transparency/terms.html" class="sp-lk">Terms &amp; conditions</a> <span class="glyphicon glyphicon-asterisk"></span> <a href="/fr/transparence/avis.html" class="sp-lk" lang="fr">Avis</a>
-                    </div>
 
-                    <div class="col-xs-5 col-md-4 text-right mrgn-bttm-md">
-                        <img src="~/images/cjc-e-315-k-no-url.jpg" width="127" alt="Canadian Council of Magistrate">
-                    </div>
-                </div>
-            </div> *@
-            </div>
+        <div class="bottom-left-buttons">
+            <a href="Select/?culture=en" class="btn btn-primary">English</a>
+            <a href="Select/?culture=fr" class="btn btn-outline-light">Français</a>
         </div>
     </main>
-</body>
-</html>
-<style>
-    body {
-        background-image: url('/images/background.jpg');
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position-x: center;
-        background-position-y: center;
-    }
 
-</style>
+</body>
+
+</html>

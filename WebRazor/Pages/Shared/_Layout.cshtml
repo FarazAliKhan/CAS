@@ -1,4 +1,5 @@
-﻿@using WebRazor.Models
+﻿@using Microsoft.AspNetCore.Components
+@using WebRazor.Models
 @using Microsoft.AspNetCore.Http.Extensions;
 <!DOCTYPE html>
 <html class="no-js" lang="en" dir="ltr">
@@ -7,18 +8,18 @@
     <title>
         CAS
     </title>
-    <meta content="width=device-width,initial-scale=1" name="viewport">
-    <meta name="description" content="Web Experience Toolkit (WET) includes reusable components for building and maintaining innovative Web sites that are accessible, usable, and interoperable. These reusable components are open source software and free for use by departments and external Web communities">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="alternate" hreflang="fr" href="index-fr.html">
-    <link href="../GCWeb/assets/favicon.ico" rel="icon" type="image/x-icon">
     <link rel="stylesheet" href="~/lib/fontawesome-7.0.1/css/all.css">
-    <link rel="stylesheet" href="~/lib/themes-dist-17.2.0-gcweb/GCWeb/css/theme.css">
-    <link rel="stylesheet" href="~/lib/themes-dist-17.2.0-gcweb/GCWeb/css/messages.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- External CSS -->
+    @* <link rel="stylesheet" href="~/css/dashboard02.css"> *@
     <link rel="stylesheet" href="~/css/site.css">
-    <noscript><link rel="stylesheet" href="~/lib/themes-dist-17.2.0-gcweb/GCWeb/css/noscript.css" /></noscript>
     <link href="~/lib/jspanel-4.16.1/dist/jspanel.css" rel="stylesheet">
 </head>
-<body vocab="http://schema.org/" resource="#wb-webpage" typeof="WebPage" onload="focusOnForm('@TempData["sectionId"]');">
+<body class="bg-page" vocab="http://schema.org/" resource="#wb-webpage" typeof="WebPage" onload="focusOnForm('@TempData["sectionId"]');">
     @{
         var CurrentPageEn = "";
         var CurrentPageFr = "";
@@ -38,457 +39,54 @@
     }
     @if (CultureInfo.CurrentCulture.Equals(new CultureInfo("fr")))
     {
-        <header>
-            <div id="wb-bnr" class="container">
-                <div class="row">
-                    <section id="wb-lng" class="col-xs-3 col-sm-12 pull-right text-right">
-                        <h2 class="wb-inv">Sélection de la langue</h2>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <ul class="list-inline mrgn-bttm-0">
-                                    <li>
-                                        <a lang="en" href=@CurrentPageEn>
-                                            <span class="hidden-xs" translate="no">English</span>
-                                            <abbr title="English" class="visible-xs h3 mrgn-tp-sm mrgn-bttm-0 text-uppercase" translate="no">en</abbr>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </section>
-                    <div class="col-xs-9 col-sm-5 col-md-4">
-                        <img src="~/images/cjc-f-315-k-no-url.jpg" alt="Conseil canadien de la magistrature">
-                    </div>
+        <!-- HEADER -->
+        <header class="py-3 px-4 d-flex justify-content-between align-items-center">
+        @if (!(this.Context.Request.Path.ToString().Contains("Create")))
+        {
+                <div class="col-xs-9 col-sm-5 col-md-4">
+                    <img src="~/images/cjc-f-315-k-no-url.jpg" alt="Conseil canadien de la magistrature">
                 </div>
-            </div>
-            <hr>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 pull-right">
-                        <section id="wb-so">
-                            <a class="btn btn-primary" href="/Index"><span>Se connecter</span></a>
-                        </section>
-                    </div>
-                </div>
-            </div>
+        }
+   @*          <h4 class="text-white m-0">My Dashboard</h4> *@
+
+            @* <a href="#" class="btn btn-outline-light">Se connecter</a> *@
         </header>
     }
     else
     {
-        <header>
-            <div id="wb-bnr" class="container">
-                <div class="row">
-                    <section id="wb-lng" class="col-xs-3 col-sm-12 pull-right text-right">
-                        <h2 class="wb-inv">Language selection</h2>
-                        <ul class="list-inline mrgn-bttm-0">
-                            <li>
-                                <a lang="fr" hreflang="fr" href=@CurrentPageFr>
-                                    <span class="hidden-xs" translate="no">Français</span>
-                                    <abbr title="Français" translate="no" class="visible-xs h3 mrgn-tp-sm mrgn-bttm-0 text-uppercase">fr</abbr>
-                                </a>
-                            </li>
-                        </ul>
-                    </section>
-                    <div class="col-xs-9 col-sm-5 col-md-4">
-                        <img src="~/images/cjc-e-315-k-no-url.jpg" alt="Canadian Council of Magistrate">
-                    </div>
-                </div>
+        <!-- HEADER -->
+        <header class="py-3 px-4 d-flex justify-content-between align-items-center">
+            @if (!(this.Context.Request.Path.ToString().Contains("Create")))
+            {
+                <div class="align-left">
+                    <img src="~/images/cjc-e-315-k-no-url.jpg" alt="Conseil canadien de la magistrature" width="50px;" height="50px;">
             </div>
-            <hr>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 pull-right">
-                        <section id="wb-so">
-                            <a class="btn btn-primary" href="/Index"><span>Sign Out</span></a>
-                        </section>
-                    </div>
-                </div>
-            </div>
+            }
+@*             <h4 class="text-white m-0 align-center">CAAS</h4> *@
+
+            @* <a href="#" class="btn btn-outline-light">Sign Out</a> *@
         </header>
     }
-    <h1 class="d-none">CAAS</h1>
+
     <nav id="wb-bc" property="breadcrumb">
-        <h2>You are here:</h2>
         <div class="container">
             <breadcrumb></breadcrumb>
         </div>
     </nav>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
-    
-    @*
-            <span class="wb-sessto" data-wb-sessto='{
-         "inactivity": 3600000,
-         "reactionTime": 300000,
-         "sessionalive": 300000,
-         "logouturl": "http://localhost:5261/",
-         "signInUrl": "http://localhost:5261/",
-         "refreshCallbackUrl": "http://localhost:5261/",
-         "refreshOnClick": true,
-         "refreshLimit": 300000,
-         "method": "POST",
-         "additionalData": null,
-         "textOverrides": {
-          "buttonContinue": "Continue Session",
-          "buttonEnd": "End Session",
-          "buttonSignin": "Goto Sign In",
-          "timeoutEnd": "",
-          "timeoutAlready": "Session Already Expired"
-          }
-         }'>
-     </span>
-        <span class="wb-sessto" data-wb-sessto='{"inactivity": 6000, "logouturl": "session-timeout-expired-en.html"}'></span>
-    @if (CultureInfo.CurrentCulture.Equals(new CultureInfo("fr")))
-    {
-        <footer id="wb-info">
-            <div>
-                <div>
-                    <div class="gc-main-footer">
-                        <div class="container">
-                            <nav>
-                                <table>
-                                    <tr>
-                                        <td width="25%" valign="top">
-                                            <ul class="list-unstyled">
-                                                <li>
-                                                    <u>
-                                                        <a target="_self" href="/fr/a-propos">
-                                                            À propos
-                                                        </a>
-                                                    </u>
-                                                </li>
-                                            </ul>
-                                            <ul class="list-unstyled">
-                                                <li>
-                                                    <a target="_self" href="/fr/a-propos/notre-mandat">
-                                                        Mandat et pouvoirs
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a target="_self" href="/fr/a-propos/qui-sommes-nous">
-                                                        Qui sommes-nous
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </td>
-                                        <td width="25%" valign="top">
-                                            <ul class="list-unstyled">
-                                                <li>
-                                                    <u>
-                                                        <a target="_self" href="/fr/nouvelles">
-                                                            Nouvelles
-                                                        </a>
-                                                    </u>
-                                                </li>
-                                            </ul>
-                                            <ul class="list-unstyled">
-                                                <li>
-                                                    <a target="_self" href="/fr/taxonomy/term/1">
-                                                        Communiqués de presse
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a target="_self" href="/fr/taxonomy/term/2">
-                                                        Dans les nouvelles
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a target="_self" href="/fr/taxonomy/term/3">
-                                                        Articles
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </td>
-                                        <td width="30%" valign="top">
-                                            <ul class="list-unstyled">
-                                                <li>
-                                                    <u>
-                                                        <a target="_self" href="/fr/ce-que-nous-faisons">
-                                                            Ce que nous faisons
-                                                        </a>
-                                                    </u>
-                                                </li>
-                                            </ul>
-                                            <ul class="list-unstyled">
-                                                <li>
-                                                    <a target="_self" href="/fr/ce-que-nous-faisons/le-droit-un-systeme-judiciaire-efficace">
-                                                        Système judiciaire efficace
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a target="_self" href="/fr/ce-que-nous-faisons/une-formation-qui-ne-sarrete-jamais">
-                                                        Formation continue
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a target="_self" href="/fr/ce-que-nous-faisons/un-comportement-irreprochable">
-                                                        Comportement irréprochable
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a target="_self" href="/fr/ce-que-nous-faisons/procedures-dexamen-des-plaintes">
-                                                        Examen des plaintes
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a target="_self" href="/fr/ce-que-nous-faisons/lindependance-des-juges">
-                                                        Indépendance des juges
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a target="_self" href="/fr/ce-que-nous-faisons/les-directives-au-jury">
-                                                        Les directives au jury
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a target="_self" href="/fr/ce-que-nous-faisons/decisions-dun-comite-dexamen-affaires-fermees-la-troisieme-etape-de-la">
-                                                        Review Panel Decisions
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </td>
-                                        <td width="20%" valign="top">
-                                            <ul class="list-unstyled">
-                                                <li>
-                                                    <u>
-                                                        <a target="_self" href="/fr/centre-de-ressources">
-                                                            Centre de ressources
-                                                        </a>
-                                                    </u>
-                                                </li>
-                                            </ul>
-                                            <ul class="list-unstyled">
-                                                <li>
-                                                    <a target="_self" href="/fr/centre-de-ressources/comprendre-son-systeme-de-justice">
-                                                        Le système de justice
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a target="_self" href="/fr/centre-de-ressources/soumettre-une-plainte">
-                                                        Soumettre une plainte
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a target="_self" href="/fr/centre-de-ressources/publications">
-                                                        Publications
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a target="_self" href="/fr/centre-de-ressources/conseils-de-la-magistrature-provinciaux-et-territoriaux">
-                                                        Les différentes cours
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
+    <!-- MAIN DASHBOARD AREA -->
+    <main class="dashboard-container">
+        <div class="container">
+            <div class="text-center p-5 bg-white shadow-sm rounded">
+                
+                <p class="text-muted">@RenderBody()</p>
             </div>
-            <div class="gc-sub-footer">
-                <div class="container d-flex align-items-center">
-                    <nav>
-                        <h3 class="wb-inv">Organisation du gouvernement du Canada</h3>
-                        <ul>
-                            
-                            <li><a href="https://www.canada.ca/fr/sociaux.html">Médias sociaux</a></li>
-                            <li><a href="https://www.canada.ca/fr/mobile.html">Applications mobiles</a></li>
-                            <li><a href="https://www.canada.ca/fr/gouvernement/a-propos.html">À propos de Canada.ca</a></li>
-
-                            <li><a href="/fr/transparence/avis.html">Avis</a></li>
-                            <li><a href="/fr/transparence/confidentialite.html">Confidentialité</a></li>
-                            
-                        </ul>
-                    </nav>
-                    <div class="wtrmrk align-self-end">
-                        <img src="~/images/cjc-f-315-k-no-url.jpg" alt="Symbole du gouvernement du Canada">
-                    </div>
-                </div>
-            </div>
-        </footer>
-    }
-    else
-    {
-        <footer id="wb-info">
-            <div>
-                <div>
-                    <div class="gc-main-footer">
-                        <div class="container">
-                            <nav>
-                                <table>
-                                    <tr>
-                                        <td width="25%" valign="top">
-                                            <ul class="list-unstyled">
-                                                <li>
-                                                    <u>
-                                                        <a target="_self" href="/en/about">
-                                                            About
-                                                        </a>
-                                                    </u>
-                                                </li>
-                                            </ul>
-                                            <div class="row"></div>
-                                            <ul class="list-unstyled">
-                                                <li>
-                                                    <a target="_self" href="/en/about/our-mandate">
-                                                        Our mandate
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a target="_self" href="/en/about/who-we-are">
-                                                        Who we are
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </td>
-                                        <td width="25%" valign="top">
-                                            <ul class="list-unstyled">
-                                                <li>
-                                                    <u>
-                                                        <a target="_self" href="/en/news">
-                                                            News
-                                                        </a>
-                                                    </u>
-                                                </li>
-                                            </ul>
-                                            <div class="row"></div>
-                                            <ul class="list-unstyled">
-                                                <li>
-                                                    <a target="_self" href="/en/taxonomy/term/1">
-                                                        Press releases
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a target="_self" href="/en/taxonomy/term/2">
-                                                        In the news
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a target="_self" href="/en/taxonomy/term/3">
-                                                        Articles
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </td>
-                                        <td width="30%" valign="top">
-                                            <ul class="list-unstyled">
-                                                <li>
-                                                    <u>
-                                                        <a target="_self" href="/en/what-we-do">
-                                                            What we do
-                                                        </a>
-                                                    </u>
-                                                </li>
-                                            </ul>
-                                            <div class="row"></div>
-                                            <ul class="list-unstyled">
-                                                <li>
-                                                    <a target="_self" href="/en/what-we-do/access-justice">
-                                                        Access to justice
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a target="_self" href="/en/what-we-do/professional-development">
-                                                        Professional development
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a target="_self" href="/en/what-we-do/judicial-conduct">
-                                                        Judicial conduct
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a target="_self" href="/en/what-we-do/review-procedures">
-                                                        Review procedures
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a target="_self" href="/en/what-we-do/judicial-independence">
-                                                        Judicial independence
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a target="_self" href="/en/what-we-do/jury-instructions">
-                                                        Jury instructions
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a target="_self" href="/en/what-we-do/review-panel-decisions-matters-closed-third-stage-review-process">
-                                                        Review Panel Decisions
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </td>
-                                        <td width="20%" valign="top">
-                                            <ul class="list-unstyled">
-                                                <li>
-                                                    <u>
-                                                        <a target="_self" href="/en/resources-centre">
-                                                            Resources centre
-                                                        </a>
-                                                    </u>
-                                                </li>
-                                            </ul>
-                                            <div class="row"></div>
-                                            <ul class="list-unstyled">
-                                                <li>
-                                                    <a target="_self" href="/en/resources-centre/understanding-your-judicial-system">
-                                                        Know your judicial system
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a target="_self" href="/en/resources-center/filing-complaint">
-                                                        Filing a complaint
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a target="_self" href="/en/resources-centre/publications">
-                                                        Publications
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a target="_self" href="/en/resources-centre/provincial-and-territorial-judicial-councils">
-                                                        Provincial Council
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="gc-sub-footer">
-                <div class="container d-flex align-items-center">
-                    <nav>
-                        <h3 class="wb-inv">Government of Canada Corporate</h3>
-                        <ul>
-                            <li><a href="https://www.canada.ca/en/social.html">Social media</a></li>
-                            <li><a href="https://www.canada.ca/en/mobile.html">Mobile applications</a></li>
-                            <li><a href="https://www.canada.ca/en/government/about.html">About Canada.ca</a></li>
-                            <li><a href="https://www.canada.ca/en/transparency/terms.html">Terms and conditions</a></li>
-                            <li><a href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
-                        </ul>
-                    </nav>
-                    <div class="wtrmrk align-self-end">
-                        <img src="~/images/cjc-e-315-k-no-url.jpg" alt="Symbol of the Government of Canada">
-                    </div>
-                </div>
-            </div>
-        </footer>
-    }
-    *@
+        </div>
+    </main>
+   
     <script src="~/lib/jquery/dist/jquery.js"></script>
     <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
-    <script src="~/lib/themes-dist-17.2.0-gcweb/wet-boew/js/wet-boew.js"></script>
-    <script src="~/lib/themes-dist-17.2.0-gcweb/GCWeb/js/theme.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/lib/fontawesome-7.0.1/js/all.js"></script>
     <script src="~/js/site.js"></script>
     <!-- loading jsPanel javascript -->
