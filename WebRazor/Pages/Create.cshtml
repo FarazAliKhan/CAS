@@ -171,6 +171,13 @@
                             <h3 class="mb-3"><span class="text-center">Court of Appeal Annual Statistics (CAAS)<br />Data Entry Form</span></h3><br/>
                     <div class="wb-frmvld">
                         <form method="post" id="createForm">
+                                     <div >                   
+                        <div id="revMessage" class="alert alert-info align-left" hidden>To review and submit your statistics, please click on the Review button below.</div>
+                        <div class="align-right">
+                                <button id="btnPrevious" class="btn btn-primary" type="button" hidden onclick="javascript:gotoPrevious();">Previous Tab</button>
+                        <button id="btnReview" class="btn btn-danger" type="button" hidden onclick="javascript:submitForReview();">@localizer["Review"]</button>
+                        </div>
+                    </div>
                             <div id="divJSInfoContainer"></div>
                             <div class="bg-danger">
                                 <div id="validationSummary" class="alert alert-danger d-none georgia-font" role="alert">
@@ -2011,7 +2018,7 @@
                                         <div class="form-group col-md-12">
                                             <label>
                                         <h5>
-                                                <span class="field-name">Tab 12 – Additional comments
+                                                <span class="field-name">Tab 12 – Additional comments and review
                                                     
                                                         <span  data-toggle="tooltip" data-placement="top" title="Comments should only be used on an exceptional basis. A true anomaly is a situation that considerably deviates from what is considered normal or expected.">
                                                             <i  class="fa-solid fa-circle-info"></i>
@@ -2038,9 +2045,9 @@
                             </div>
                             <br/>
                             <div class="align-right">
-                                <button id="btnReview" class="btn btn-primary" type="button" disabled onclick="javascript:submitForReview();">@localizer["Review"]</button>
-                                <button class="btn btn-primary" type="button" onclick="javascript:gotoPrevious();">Previous Tab</button>
-                                <button class="btn btn-primary" type="button" onclick="javascript:gotoNext();">Next Tab</button>
+                                <button id="btnReview" class="btn btn-danger" type="button" hidden onclick="javascript:submitForReview();">@localizer["Review"]</button>
+                                <button id="btnPrevious" class="btn btn-primary" type="button" hidden onclick="javascript:gotoPrevious();">Previous Tab</button>
+                                <button id="btnNext" class="btn btn-primary" type="button" onclick="javascript:gotoNext();">Next Tab</button>
                             </div>
                         </form>
                     </div>
