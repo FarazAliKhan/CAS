@@ -1,6 +1,8 @@
 body {
     margin: 0;
     overflow-x: hidden;
+    font-family: Georgia,Times,Times New Roman,serif;
+    font-size: 12px;
 }
 
 /* Header styling */
@@ -141,4 +143,9 @@ header {
     #sidebar ul.nav {
         justify-content: flex-start; /* stack items normally on small screens */
     }
+}
+
+georgia-font {
+    font-family: Georgia,Times,Times New Roman,serif;
+    font-size: 12px;
 }
