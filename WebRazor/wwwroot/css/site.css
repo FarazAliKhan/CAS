@@ -4,12 +4,14 @@
 
 .error-color {
     background-color: #f3e9e8;
-    font-family: Arial;
+    font-family: Georgia,Times,Times New Roman,serif;
+    font-size: 12px;
 }
 
 .error {
     background-color: #f3e9e8;
-    font-family: Arial;
+    font-family: Georgia,Times,Times New Roman,serif;
+    font-size: 12px;
 }
 
 .square-bttn {
