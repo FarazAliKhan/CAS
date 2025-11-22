@@ -234,6 +234,7 @@ namespace WebRazor.Pages
 
         public string? reqJson { get; set; }
         public string? resJson { get; set; }
+        public string? responseStatusCode { get; set; }
 
         public ReviewModel(
                 IConfiguration configuration
@@ -371,6 +372,7 @@ namespace WebRazor.Pages
                 {
                     TempData["reqJson"] = reqJson;
                     TempData["resJson"] = resJson;
+                    TempData["responseStatusCode"] = responseStatusCode;
                     return RedirectToPage("FinalMessage");
                 }
             }
@@ -1113,6 +1115,7 @@ namespace WebRazor.Pages
             Console.Write(json);
             reqJson = json;
             resJson = "";
+            responseStatusCode = "200";
 
             //var apiEndpoint = _configuration.GetValue<string>("SaveURL1");
 
@@ -1137,6 +1140,7 @@ namespace WebRazor.Pages
             //            resJson = apiResponse;
             //            //var casModel = JsonConvert.DeserializeObject<CasModel>(apiResponse);
             //        }
+            //        responseStatusCode = response.StatusCode.ToString();
             //    }
             //}
 

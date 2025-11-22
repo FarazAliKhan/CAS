@@ -13,15 +13,15 @@ function submitForm(sectionId) {
 }
 
 function submitForReview() {
-    var validator = $("form").validate();
+    //var validator = $("form").validate();
     if ($('form').valid()) {
         var form = document.getElementById("createForm");
         form.submit();
     }
-    else {
-        var errors = validator.errorList;
-        showValidationSummary(errors);
-    }
+    //else {
+    //    var errors = validator.errorList;
+    //    showValidationSummary(errors);
+    //}
 }
 
 function focusOnForm(sectionId) {
@@ -262,7 +262,7 @@ function gotoPrevious() {
 }
 
 function gotoNext() {
-    var validator = $("form").validate();
+    //var validator = $("form").validate();
     if ($('form').valid()) {
         const summary = document.getElementById("validationSummary");
         summary.classList.add("d-none");
@@ -337,10 +337,10 @@ function gotoNext() {
                 break;
         }
     }
-    else {
-        var errors = validator.errorList;
-        showValidationSummary(errors);
-    }
+    //else {
+    //    var errors = validator.errorList;
+    //    showValidationSummary(errors);
+    //}
 }
 
 function enableDisableReview() {

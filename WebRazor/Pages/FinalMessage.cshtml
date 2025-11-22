@@ -47,7 +47,7 @@
         <div>You will receive a confirmation email at (email associated with user account).</div><br />
         <div>You may now generate reports using your newly entered statistics.</div><br />
 
-        <div class="row ">
+@*         <div class="row ">
             <div class="form-group col-md-6">
                 <label for="reqJson"><span class="field-name">Request Json </span></label>
                 <textarea class="form-control" id="reqJson" name="reqJson" type="text" asp-for="@Model.reqJson" autocomplete="reqJson" style="width:100%" multiple="true" rows="10" readonly>
@@ -58,7 +58,9 @@
                 <textarea class="form-control" id="resJson" name="resJson" type="text" asp-for="@Model.resJson" autocomplete="resJson" style="width:100%" multiple="true" rows="10" readonly>
                             </textarea>
             </div>
-        </div>
+        </div> *@
+        <br/>
+        <div class="row"><h3>Response Code returned is: @TempData["responseStatusCode"]</h3></div>
         <br/>
         <a class="btn btn-primary" style="color:white;width:200px;height:90px;text-align:center;border-radius:12px;" href="/Select"><span><br />Back to Home</span></a><br />
 </form>
