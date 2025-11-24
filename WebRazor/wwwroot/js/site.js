@@ -5,6 +5,8 @@
 $(".breadcrumb").children().first().remove();
 enableDisableReview();
 
+$('#sidebarMessage').delay(5000).fadeOut(400);
+
 function submitForm(sectionId) {
     var form = document.getElementById("reviewForm");
     form.action = "/Review?sectionId=" + sectionId;
@@ -356,6 +358,7 @@ function enableDisableReview() {
         && $("#dtTO").val() != ""
     ) {
         $("#btnReview").removeAttr('disabled');
+        $("#tabsbar").removeAttr('hidden');
     }
     else {
         $("#btnReview").attr('disabled', true);
