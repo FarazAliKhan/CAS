@@ -5,8 +5,6 @@
 $(".breadcrumb").children().first().remove();
 enableDisableReview();
 
-$('#sidebarMessage').delay(5000).fadeOut(400);
-
 function submitForm(sectionId) {
     var form = document.getElementById("reviewForm");
     form.action = "/Review?sectionId=" + sectionId;
@@ -37,9 +35,27 @@ function focusOnForm(sectionId) {
     if (sectField != null) {
         let sectId = sectField.value;
         if (sectId != null && sectId != "") {
+            $('#sidebarMessage').attr("hidden", true);
             setTabsBackgroundDark();
             hideDetails("detailsBasicInfo");
             fieldFocus(sectId);
+            $("#btnReview").removeAttr("hidden");
+            $("#revMessage").removeAttr("hidden");
+            if (sectId != 12) {
+                $("#btnNext").removeAttr("hidden");
+            }
+            else {
+                $("#btnNext").attr("hidden", true);
+            }
+            if (sectId != 0) {
+                $("#btnPrevious").removeAttr("hidden");
+            }
+            else {
+                $("#btnPrevious").attr("hidden", true);
+            }
+        }
+        else {
+            $('#sidebarMessage').delay(5000).fadeOut(400);
         }
     }
 }
@@ -128,7 +144,7 @@ function fieldFocus(sectionId) {
             //$("#lidetails12").css("background", "#1C578A");
             $("#activeDetailsId").val("details12");
             $('#details12').removeAttr('hidden');
-            document.getElementById("txtFIED_12_Comments").focus();
+            document.getElementById("txtFIELD_12_Comments").focus();
             break;
         case '0':
             //$("#lidetailsBasicInfo").css("background", "#1C578A");
