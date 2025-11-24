@@ -36,6 +36,29 @@
 
 <!-- Custom CSS -->
 <link rel="stylesheet" href="~/css/dashboard03.css">
+
+
+<!-- Create modal window for validation -->
+
+<!-- Modal -->
+<div class="modal fade" id="validationModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Please correct following</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="javascript:hideValidationModal();">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div id="validation-body" class="modal-body">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="javascript:hideValidationModal();">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- SIDEBAR -->
 
     
@@ -118,7 +141,7 @@
                 <li class="nav-item">
             <span data-toggle="tooltip" data-placement="top" title="Total number of appeals, cross-appeals, references, bail reviews and judicial reviews pending on December 31st.&#013;&#013;The closing inventory of one year will equally be the opening inventory of the next year. That inventory can be measured “as of” December 31st of each year. Appeals, cross-appeals, references, bail reviews and judicial reviews filed before December 31st for which there is no judgement date or other disposition date before December 31st are considered pending on that date. This includes the appeals, cross-appeals, references, bail reviews and judicial reviews that have not been heard as well as those that have been heard but for which judgment has not been released. These appeals, cross-appeals, references, bail reviews and judicial reviews will appear in the closing inventory of one year and the opening inventory of the next year.">
                         <a class="nav-link" href="javascript:showDetails('details10');" >
-            <span >Tab 10 – Total number of  appeals, cross-appeals, references, bail reviews and JRs pending on December 31st</span>
+                    <span>Tab 10 – Total number of  appeals, cross-appeals, references, bail reviews and JRs pending on December 31<sub>st</sub></span>
         </a>
         </span>
     </li>
