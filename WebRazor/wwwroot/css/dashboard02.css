@@ -3,7 +3,7 @@
 body {
     background-color: #f5f6fa;
     font-family: Georgia,Times,Times New Roman,serif;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 /* Header styling */
@@ -32,9 +32,4 @@ header .btn {
   background-color: white;
   box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.075);
   border-radius: 0.25rem;
-}
-
-georgia-font {
-    font-family: Georgia,Times,Times New Roman,serif;
-    font-size: 12px;
 }
