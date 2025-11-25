@@ -138,14 +138,14 @@
         <li class="nav-item">
             <span data-toggle="tooltip" data-placement="top" title="Total number of appeals, cross-appeals, references, bail reviews and judicial reviews pending on December 31st.&#013;&#013;The closing inventory of one year will equally be the opening inventory of the next year. That inventory can be measured “as of” December 31st of each year. Appeals, cross-appeals, references, bail reviews and judicial reviews filed before December 31st for which there is no judgement date or other disposition date before December 31st are considered pending on that date. This includes the appeals, cross-appeals, references, bail reviews and judicial reviews that have not been heard as well as those that have been heard but for which judgment has not been released. These appeals, cross-appeals, references, bail reviews and judicial reviews will appear in the closing inventory of one year and the opening inventory of the next year.">
                 <a class="nav-link" href="javascript:showDetails('details10');">
-                    <span>Tab 10 – Total number of  appeals, cross-appeals, references, bail reviews and JRs pending on December 31<sub>st</sub></span>
+                    <span>Tab 10 – Total number of  appeals, cross-appeals, references, bail reviews and JRs pending on December 31<sup>st</sup></span>
                 </a>
             </span>
         </li>
         <li class="nav-item">
             <span data-toggle="tooltip" data-placement="top" title="The number of regular and supernumerary judges as of December 31st.">
                 <a class="nav-link" href="javascript:showDetails('details11');">
-                    <span>Tab 11 – Number of judges (as of December 31st)</span>
+                    <span>Tab 11 – Number of judges (as of December 31<sup>st</sup>)</span>
                 </a>
             </span>
         </li>
@@ -325,9 +325,9 @@
                             <div class="row">
                                 <div class="form-group col-md-1"></div>
                                 <div class="form-group col-md-11">
-                                    <label for="txtFIELD1_1_1"><span class="field-name">1.1.1 Number of civil appeals, cross-appeals, references, and JRs filed but still 	pending as of December 31st of the previous year </span></label>
+                                    <label for="txtFIELD1_1_1"><span class="field-name">1.1.1 Number of civil appeals, cross-appeals, references, and JRs filed but still 	pending as of December 31<sup>st</sup> of the previous year </span></label>
                                     <input class="form-control" id="txtFIELD1_1_1" name="txtFIELD1_1_1" type="number" min="0" asp-for="@Model.txtFIELD1_1_1" autocomplete="txtFIELD1_1_1" data-rule-minlength="1" style="width:100%"
-                                           data-msg="Number of civil appeals, cross-appeals, references, and JRs filed but still 	pending as of December 31st of the previous year" onchange="javascript:calculateField_1_1_7();">
+                                           data-msg="Number of civil appeals, cross-appeals, references, and JRs filed but still pending as of December 31<sup>st</sup> of the previous year" onchange="javascript:calculateField_1_1_7();">
                                     <span asp-validation-for="@Model.txtFIELD1_1_1" class="label label-danger"></span>
                                 </div>
                             </div>
@@ -449,9 +449,9 @@
                             <div class="row ">
                                 <div class="form-group col-md-1"></div>
                                 <div class="form-group col-md-11">
-                                    <label for="txtFIELD1_2_1"><span class="field-name">1.2.1 Number of criminal appeals, cross-appeals, references and bail reviews filed but still pending as of December 31st of the previous year </span></label>
+                                    <label for="txtFIELD1_2_1"><span class="field-name">1.2.1 Number of criminal appeals, cross-appeals, references and bail reviews filed but still pending as of December 31<sup>st</sup> of the previous year </span></label>
                                     <input class="form-control" id="txtFIELD1_2_1" name="txtFIELD1_2_1" type="number" min="0" asp-for="@Model.txtFIELD1_2_1" autocomplete="txtFIELD1_2_1" data-rule-minlength="1" style="width:100%"
-                                           data-msg="Number of criminal appeals, cross-appeals, references and bail reviews filed but still pending as of December 31st of the previous year" onchange="javascript:calculateField_1_2_5();">
+                                           data-msg="Number of criminal appeals, cross-appeals, references and bail reviews filed but still pending as of December 31<sup>st</sup> of the previous year" onchange="javascript:calculateField_1_2_5();">
                                     <span asp-validation-for="@Model.txtFIELD1_2_1" class="label label-danger"></span>
                                 </div>
                             </div>
@@ -1986,7 +1986,7 @@
                                     <label>
                                         <h5>
                                             <span class="field-name">
-                                                10. Total number of  appeals, cross-appeals, references, bail reviews and JRs pending on December 31st
+                                                10. Total number of  appeals, cross-appeals, references, bail reviews and JRs pending on December 31<sup>st</sup>
 
                                                 <span data-toggle="tooltip" data-placement="top" title="The closing inventory of one year will equally be the opening inventory of the next year. That inventory can be measured “as of” December 31st of each year. Appeals, cross-appeals, references, bail reviews and JRs filed before December 31st for which there is no judgment date or other disposition date before December 31st are considered pending on that date. This includes the appeals, cross-appeals, references, bail reviews and JRs that have not been heard as well as those that have been heard but for which judgment has not yet been released. These appeals, cross-appeals, references, bail reviews and JRs will appear in the closing inventory of one year and the opening inventory of the next year.">
                                                     <i class="fa-solid fa-circle-info"></i>
@@ -2005,12 +2005,12 @@
                                 <div class="form-group col-md-12">
                                     <label for="txtFIELD10_1">
                                         <span class="field-name">
-                                            10.1 Number of appeals, cross-appeals, references, bail reviews and JRs that have not been finalized as of December 31st
+                                            10.1 Number of appeals, cross-appeals, references, bail reviews and JRs that have not been finalized as of December 31<sup>st</sup>
 
                                         </span>
                                     </label>
                                     <input class="form-control" id="txtFIELD10_1" name="txtFIELD10_1" type="number" min="0" asp-for="@Model.txtFIELD10_1" autocomplete="txtFIELD10_1" data-rule-minlength="1" style="width:100%"
-                                           data-msg="Number of appeals, cross-appeals, references, bail reviews and JRs that have not been finalized as of December 31st">
+                                           data-msg="Number of appeals, cross-appeals, references, bail reviews and JRs that have not been finalized as of December 31<sup>st</sup>">
                                     <span asp-validation-for="@Model.txtFIELD10_1" class="label label-danger"></span>
                                 </div>
                             </div>
@@ -2030,7 +2030,7 @@
                         <div class="align-left fs-6">
                             <div class="row ">
                                 <div class="form-group col-md-12">
-                                    <label><h5><span class="field-name">11. Number of judges (as of December 31st)</span></h5></label>
+                                    <label><h5><span class="field-name">11. Number of judges (as of December 31<sup>st</sup>)</span></h5></label>
                                 </div>
                             </div>
                         </div>
