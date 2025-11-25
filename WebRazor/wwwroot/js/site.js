@@ -1,6 +1,23 @@
 ﻿// Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
 // for details on configuring this project to bundle and minify static web assets.
 
+document.querySelectorAll('#sidebar .nav-link').forEach(link => {
+        link.addEventListener('click', function () {
+
+            // Remove active from all links
+            document.querySelectorAll('#sidebar .nav-link').forEach(item => {
+                item.classList.remove('active');
+            });
+
+            // Add active to clicked link
+            this.classList.add('active');
+        });
+});
+
+
+
+
+
 // Write your JavaScript code.
 $(".breadcrumb").children().first().remove();
 enableDisableReview();
