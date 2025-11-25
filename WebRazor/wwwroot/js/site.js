@@ -41,6 +41,8 @@ function focusOnForm(sectionId) {
             fieldFocus(sectId);
             $("#btnReview").removeAttr("hidden");
             $("#revMessage").removeAttr("hidden");
+            $("#tabsbar").removeAttr("hidden");
+            enableDisableReview();
             if (sectId != 12) {
                 $("#btnNext").removeAttr("hidden");
             }
