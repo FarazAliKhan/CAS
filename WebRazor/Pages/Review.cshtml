@@ -53,8 +53,6 @@
 </div>
 <br />
 <form method="post" id="reviewForm">
-    <div id="divJSContainer"></div>
-    <div id="divJSInfoContainer"></div>
 
     <div id="detailsBasicInfo" class="mrgn-tp-lg section-color fs-6">
         <div class="align-left fs-6">
@@ -74,7 +72,7 @@
 
                                 <i id="iCourtName" class="fa-solid fa-circle-info"></i>
                             </span>
-                        <select readonly class="form-control" id="txtCOURT" name="txtCOURT" asp-for="@Model.txtCOURT" onchange="javascript:enableDisableReview();" autocomplete="txtCOURT" data-rule-minlength="1" style="width:100%" required="required"
+                        <select style="pointer-events: none;" class="form-control" id="txtCOURT" name="txtCOURT" asp-for="@Model.txtCOURT" onchange="javascript:enableDisableReview();" autocomplete="txtCOURT" data-rule-minlength="1" style="width:100%" required="required"
                                     data-msg="Please enter Name of Court">
                                 <option value="">Select Court</option>
                                 <option value="ABCA">Alberta Court of Appeal</option>
@@ -103,7 +101,7 @@
 
                                 <i id="iReportingYear" class="fa-solid fa-circle-info"></i>
                             </span>
-                        <select readonly class="form-control" id="intREPORTINGYEAR" name="intREPORTINGYEAR" asp-for="@Model.intREPORTINGYEAR" onchange="javascript:enableDisableReview();" autocomplete="intREPORTINGYEAR" data-rule-minlength="1" style="width:100%;" required="required"
+                        <select style="pointer-events: none;" class="form-control" id="intREPORTINGYEAR" name="intREPORTINGYEAR" asp-for="@Model.intREPORTINGYEAR" onchange="javascript:enableDisableReview();" autocomplete="intREPORTINGYEAR" data-rule-minlength="1" style="width:100%;" required="required"
                                     data-msg="Please enter Reporting Year">
                                 <option value="">Select Year</option>
                                 <option value="2023">2023</option>
@@ -145,7 +143,7 @@
 
             <div class="row ">
                 <div class="form-group col-md-12">
-                    <div id="divJSInfoContainerAppeals"></div>
+                    
                     <label>
                         <span class="field-name">
                             1.Number of appeals, cross-appeals, references, bail reviews, and judicial reviews (JRs)
@@ -202,7 +200,7 @@
             <div class="row ">
                 <div class="form-group col-md-1"></div>
                 <div class="form-group col-md-11">
-                    <div id="divJSInfoContainer1_1_4"></div>
+                   
                     <label for="txtFIELD1_1_4">
                         <span class="field-name">
                             1.1.4 Number of civil appeals, cross-appeals, references, and JRs disposed of by the registrar, the case management officer or authorized personnel or by operation of the rules
@@ -221,7 +219,7 @@
             <div class="row ">
                 <div class="form-group col-md-1"></div>
                 <div class="form-group col-md-11">
-                    <div id="divJSInfoContainer1_1_5"></div>
+                  
                     <label for="txtFIELD1_1_5">
                         <span class="field-name">
                             1.1.5 Number of civil appeals, cross-appeals, references, and JRs settled by judicial mediation
@@ -241,7 +239,7 @@
             <div class="row ">
                 <div class="form-group col-md-1"></div>
                 <div class="form-group col-md-11">
-                    <div id="divJSInfoContainer1_1_6"></div>
+                 
                     <label for="txtFIELD1_1_6">
                         <span class="field-name">
                             1.1.6 Number of civil appeals, cross-appeals, references, and JRs disposed of by other means
@@ -583,7 +581,7 @@
                                     <span class="red-tooltip" data-toggle="tooltip" data-placement="top" title="Examples of criminal appeals are habeas corpus, prohibition, certiorari, mental disorder reviews.">
 
 
-                                        <i id="i_2_2_2_3" class="fa-solid fa-circle-info" onmouseenter="javascript:showJSPanelRight('details11-content', 'i_2_2_2_3',', etc.','400 100', -1150, -500)"></i>
+                                        <i id="i_2_2_2_3" class="fa-solid fa-circle-info"></i>
                                     </span>
                                 </span>
                             </label>
