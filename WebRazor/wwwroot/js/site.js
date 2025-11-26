@@ -15,7 +15,19 @@ document.querySelectorAll('#sidebar .nav-link').forEach(link => {
 });
 
 
+$("#txtCOURTReview").each(function () {
+    let original = $(this).val();
+    $(this).on('change', function () {
+        $(this).val(original);
+    });
+});
 
+$("#intREPORTINGYEARReview").each(function () {
+    let original = $(this).val();
+    $(this).on('change', function () {
+        $(this).val(original);
+    });
+});
 
 
 // Write your JavaScript code.
