@@ -28,19 +28,29 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
-[data-tooltip]:hover::after {
-    display: block;
-    position: absolute;
-    content: attr(data-tooltip);
-    background-color: black;
+.tooltip-container {
+    display: inline-block;
+    position: relative;
+}
+
+.tooltip-content{
+    visibility: hidden;
+    width: 800px;
+    background-color: grey;
     color: #fff;
-    text-align: center;
-    padding: 5px 5px 5px 5px;
+    text-align: left;
     border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
     z-index: 1;
-    bottom: 100%;
+    bottom: 125%;
     left: 50%;
-    margin-left: -60px;
+    margin-left: -600px;
+    font-size: 16px;
+}
+
+.tooltip-container:hover .tooltip-content{
+    visibility: visible;
 }
 
 .align-right{

@@ -61,6 +61,42 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs disposed of by the registrar, the case management officer or authorized personnel or by operation of the rules.
+        /// </summary>
+        public static string _1_1_4_Heading {
+            get {
+                return ResourceManager.GetString("1_1_4_Heading", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The civil appeals, cross-appeals, references, and JRs disposed of by the registrar take into account the certificates of lapse of appeal issued by the registry..
+        /// </summary>
+        public static string _1_1_4_Info {
+            get {
+                return ResourceManager.GetString("1_1_4_Info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of appeals, cross-appeals, references, bail reviews, and judicial reviews (JRs).
+        /// </summary>
+        public static string _1_Heading {
+            get {
+                return ResourceManager.GetString("1_Heading", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to One notice of appeal counts as one appeal filed and one appeal disposed of, even though a number of related cases may be grouped together and heard at one hearing (example: if 10 cases are grouped together and heard together but are the subject of 10 notices of appeal, this counts as 10 appeals filed and 10 appeals disposed of). A notice of appeal containing both an appeal against conviction and against sentence, shall be counted as two appeals, but when heard together shall be counted as a single hearing.&lt; [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string _1_Info {
+            get {
+                return ResourceManager.GetString("1_Info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Back.
         /// </summary>
         public static string Back {
