@@ -46,7 +46,7 @@
     bottom: 125%;
     left: 50%;
     margin-left: -600px;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .tooltip-container:hover .tooltip-content{
@@ -70,7 +70,7 @@
 }
 
 .small-font{
-    font-size: small;
+    font-size: 18px;
 }
 
 .cjc-btn-primary {
@@ -133,5 +133,13 @@
 
 .georgia-font {
     font-family: Georgia,Times,Times New Roman,serif;
-    font-size: 16px;
+    font-size: 18px;
+}
+
+.cjc-big-buttons {
+    width: 240px;
+    height: 100px;
+    text-align: center;
+    border-radius: 12px;
+    padding: 35px;
 }

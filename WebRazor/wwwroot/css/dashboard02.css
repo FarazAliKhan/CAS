@@ -3,7 +3,7 @@
 body {
     background-color: #f5f6fa;
     font-family: Georgia,Times,Times New Roman,serif;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 /* Header styling */
@@ -26,10 +26,8 @@ header .btn {
   padding: 2rem;
 }
 
-.dashboard-container .card-placeholder {
-  text-align: center;
-  padding: 5rem;
-  background-color: white;
-  box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.075);
-  border-radius: 0.25rem;
-}
+    .dashboard-container .card-placeholder {
+        text-align: center;
+        padding: 5rem;
+        background-color: #f5f6fa;
+    }

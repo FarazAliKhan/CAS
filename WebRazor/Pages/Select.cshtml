@@ -45,6 +45,9 @@
 
     <!-- External CSS -->
     <link rel="stylesheet" href="~/css/dashboard02.css">
+
+    <!-- project css -->
+    <link rel="stylesheet" href="~/css/site.css">
 </head>
 <body class="bg-page">
 
@@ -57,8 +60,8 @@
 
     <!-- MAIN DASHBOARD AREA -->
     <main class="dashboard-container">
-        <div class="container">
-            <div class="text-center bg-white shadow-sm rounded">
+        <div >
+            <div class="text-center">
                 <div class="text-center"><h3>Court of Appeal Annual Statistics (CAAS)</h3></div>
                 <br />
                 <form method="post">
@@ -79,22 +82,22 @@
                             To enter your annual statistics and/or generate reports, please use the buttons below.
                         </div>
                         <br />
-                        <div>
-                            <i>
-                                If you encounter any technical difficulties, please contact committees-comites@cjc-ccm.ca.
-                            </i>
-                        </div>
-                        <br />
-                        <br />
                     </div>
                     <div class="text-center">
                         <span class="col-md-6 text-right">
-                            <a class="btn btn-primary" style="width:240px;height:100px;text-align:center;border-radius:12px;" asp-page="./Create"><br /><span class="glyphicon glyphicon-tasks align-top"></span><br />Submit Statistics</a>
+                            <a class="btn btn-primary cjc-big-buttons" asp-page="./Create">Submit Statistics</a>
                         </span>
                         <span class="col-md-6 text-left">
-                            <a class="btn btn-primary" style="width:240px;height:100px;text-align:center;border-radius:12px;" asp-page="./Report"><br /><span class="glyphicon glyphicon-list align-top"></span><br />Generate Reports</a>
+                            <a class="btn btn-primary cjc-big-buttons" asp-page="./Report">Generate Reports</a>
                         </span>
                     </div>
+                    <br/>
+                    <div>
+                        <i>
+                            If you encounter any technical difficulties, please contact committees-comites@cjc-ccm.ca.
+                        </i>
+                    </div>
+                    <br />
                 </form>
                 <br />
                 <br />
