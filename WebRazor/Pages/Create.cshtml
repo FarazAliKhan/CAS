@@ -152,7 +152,7 @@
         <li class="nav-item">
             <span>
                 <a class="nav-link" href="javascript:showDetails('details12');">
-                    <span>Tab 12 – Additional comments / Review statistics</span>
+                    <span>Tab 12 – Additional Comments and Review Statistics</span>
                 </a>
             </span>
         </li>
@@ -189,10 +189,8 @@
             <div class="wb-frmvld">
                 <form method="post" id="createForm">
                     <div>
-                        <div id="revMessage" class="alert alert-info align-left" hidden><i class="fa-solid fa-circle-info"></i> To review and submit your statistics, please click on the Review button below.</div>
                         <div class="align-right">
                             <button id="btnPrevious" class="btn btn-primary" type="button" hidden onclick="javascript:gotoPrevious();">Previous Tab</button>
-                            <button id="btnReview" class="btn btn-danger" type="button" hidden onclick="javascript:submitForReview();">@localizer["Review"]</button>
                         </div>
                         <br/>
                     </div>
@@ -265,11 +263,11 @@
                                         </div>
                                         <select class="form-control" id="intREPORTINGYEAR" name="intREPORTINGYEAR" asp-for="@Model.intREPORTINGYEAR" onchange="javascript:enableDisableReview();" autocomplete="intREPORTINGYEAR" data-rule-minlength="1" style="width:100%;" required="required"
                                                 data-msg="Please enter Reporting Year">
-                                            <option value="">Select Year</option>
-                                            <option value="2023">2023</option>
-                                            <option value="2024">2024</option>
+                                            <option value="">Select Year</option>                                          
                                             <option value="2025">2025</option>
                                             <option value="2026">2026</option>
+                                            <option value="2027">2027</option>
+                                            <option value="2028">2028</option>
                                         </select>
                                         <span asp-validation-for="@Model.intREPORTINGYEAR" class="label label-danger"></span>
                                     </div>
@@ -2257,7 +2255,7 @@
                                     <label>
                                         <h5>
                                             <span class="field-name">
-                                                Tab 12 – Additional comments / Review statistics
+                                                Tab 12 – Additional Comments
                                                 <div class="tooltip-container">
                                                     <span class="tooltip-trigger"><i class="fa-solid fa-circle-info"></i></span>
                                                     <div class="tooltip-content">
@@ -2277,7 +2275,6 @@
 
                             <div class="row ">
                                 <div class="form-group col-md-12">
-                                    <label for="txtFIELD_12_Comments"><span class="field-name">Additional comments </span></label>
                                     <textarea class="form-control" id="txtFIELD_12_Comments" name="txtFIELD_12_Comments" type="text" asp-for="@Model.txtFIELD_12_Comments" autocomplete="txtFIELD_12_Comments" data-rule-maxlength="2000" style="width:100%" multiple="true" rows="4">
                             </textarea>
                                     <span asp-validation-for="@Model.txtFIELD_12_Comments" class="label label-danger"></span>
@@ -2287,10 +2284,10 @@
                         </div>
                     </div>
                     <br />
+                    <div id="revMessage" class="alert alert-info align-left" hidden><i class="fa-solid fa-circle-info"></i> To review and submit your statistics, please click on the Review Statistics button below.</div>
                     <div class="align-right">
-                        <button id="btnReview" class="btn btn-danger" type="button" hidden onclick="javascript:submitForReview();">@localizer["Review"]</button>
-                        <button id="btnPrevious" class="btn btn-primary" type="button" hidden onclick="javascript:gotoPrevious();">Previous Tab</button>
                         <button id="btnNext" class="btn btn-primary" type="button" onclick="javascript:gotoNext();">Next Tab</button>
+                        <button id="btnReview" class="btn btn-danger" type="button" hidden onclick="javascript:submitForReview();">Review Statistics</button>
                     </div>
                 </form>
             </div>
