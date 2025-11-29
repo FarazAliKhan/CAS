@@ -1010,7 +1010,7 @@ function validate() {
         || (fIELD1_2_4.value == "")
         || (fIELD1_2_5.value == "")
     ) {
-        sectionHtml = sectionHtml + "<div> Please complete <a href='javascript:errorSection1();'>Tab 1 –	Number of appeals, cross-appeals, references, bail reviews, and judicial reviews (JRs)</a></div>";
+        sectionHtml = sectionHtml + "<div><a href='javascript:errorSection1();'>Tab 1 –	Number of appeals, cross-appeals, references, bail reviews, and judicial reviews (JRs)</a></div>";
         result = false;
     }
 
@@ -1023,14 +1023,14 @@ function validate() {
         || (txtFIELD2_2_2_2.value == "")
         || (txtFIELD2_2_2_3.value == "")
     ) {
-        sectionHtml = sectionHtml + "<div> Please complete <a href='javascript:errorSection2();'>Tab 2 – Civil and criminal case decisions</a></div>";
+        sectionHtml = sectionHtml + "<div><a href='javascript:errorSection2();'>Tab 2 – Civil and criminal case decisions</a></div>";
         result = false;
     }
 
     if ((txtFIELD3_1.value == "")
         || (txtFIELD3_2.value == "")
     ) {
-        sectionHtml = sectionHtml + "<div> Please complete <a href='javascript:errorSection3();'>Tab 3 – Number of decisions/judgments (total)</a></div>";
+        sectionHtml = sectionHtml + "<div><a href='javascript:errorSection3();'>Tab 3 – Number of decisions/judgments (total)</a></div>";
         result = false;
     }
 
@@ -1071,7 +1071,7 @@ function validate() {
         || (txtFIELD4_3_6_2.value == "")
         || (txtFIELD4_3_6_3.value == "")
     ) {
-        sectionHtml = sectionHtml + "<div> Please complete <a href='javascript:errorSection4();'>Tab 4 – Civil and criminal case time intervals</a></div>";
+        sectionHtml = sectionHtml + "<div><a href='javascript:errorSection4();'>Tab 4 – Civil and criminal case time intervals</a></div>";
         result = false;
     }
 
@@ -1080,7 +1080,7 @@ function validate() {
         || (txtFIELD5_3.value == "")
         || (txtFIELD5_4.value == "")
     ) {
-        sectionHtml = sectionHtml + "<div> Please complete <a href='javascript:errorSection5();'>Tab 5 – Number of in-person, virtual and hybrid hearings</a></div>";
+        sectionHtml = sectionHtml + "<div><a href='javascript:errorSection5();'>Tab 5 – Number of in-person, virtual and hybrid hearings</a></div>";
         result = false;
     }
 
@@ -1094,7 +1094,7 @@ function validate() {
         || (txtFIELD6_3_2.value == "")
         || (txtFIELD6_3_3.value == "")
     ) {
-        sectionHtml = sectionHtml + "<div> Please complete <a href='javascript:errorSection6();'>Tab 6 – Number of motions and applications</a></div>";
+        sectionHtml = sectionHtml + "<div><a href='javascript:errorSection6();'>Tab 6 – Number of motions and applications</a></div>";
         result = false;
     }
 
@@ -1102,7 +1102,7 @@ function validate() {
         || (txtFIELD7_1_2.value == "")
         || (txtFIELD7_1_3.value == "")
     ) {
-        sectionHtml = sectionHtml + "<div> Please complete <a href='javascript:errorSection7();'>Tab 7 – Self-Represented Litigants (SRLs)</a></div>";
+        sectionHtml = sectionHtml + "<div><a href='javascript:errorSection7();'>Tab 7 – Self-Represented Litigants (SRLs)</a></div>";
         result = false;
     }
 
@@ -1110,27 +1110,27 @@ function validate() {
         || (txtFIELD8_2.value == "")
         || (txtFIELD8_3.value == "")
     ) {
-        sectionHtml = sectionHtml + "<div> Please complete <a href='javascript:errorSection8();'>Tab 8 – Number of decisions/judgments rendered</a></div>";
+        sectionHtml = sectionHtml + "<div><a href='javascript:errorSection8();'>Tab 8 – Number of decisions/judgments rendered</a></div>";
         result = false;
     }
 
     if ((txtFIELD9_1.value == "")
         || (txtFIELD9_2.value == "")
     ) {
-        sectionHtml = sectionHtml + "<div> Please complete <a href='javascript:errorSection9();'>Tab 9 – Number of appeals that are heard</a></div>";
+        sectionHtml = sectionHtml + "<div><a href='javascript:errorSection9();'>Tab 9 – Number of appeals that are heard</a></div>";
         result = false;
     }
 
     if ((txtFIELD10_1.value == "")
     ) {
-        sectionHtml = sectionHtml + "<div> Please complete <a href='javascript:errorSection10();'>Tab 10 – Total number of  appeals, cross-appeals, references, bail reviews and JRs pending on December 31<sub>st</sub></a></div>";
+        sectionHtml = sectionHtml + "<div><a href='javascript:errorSection10();'>Tab 10 – Total number of  appeals, cross-appeals, references, bail reviews and JRs pending on December 31<sup>st</sup></a></div>";
         result = false;
     }
 
     if ((txtFIELD11_1.value == "")
         || (txtFIELD11_2.value == "")
     ) {
-        sectionHtml = sectionHtml + "<div> Please complete <a href='javascript:errorSection11();'>Tab 11 – Number of judges (as of December 31st)</a></div>";
+        sectionHtml = sectionHtml + "<div><a href='javascript:errorSection11();'>Tab 11 – Number of judges (as of December 31<sup>st</sup>)</a></div>";
         result = false;
     }
 
