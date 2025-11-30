@@ -186,8 +186,8 @@
                         </div> 
                     } *@
             <h3 class="mb-3"><span class="text-center">Court of Appeal Annual Statistics (CAAS)<br />Data Entry Form</span></h3><br />
-            <div class="wb-frmvld">
-                <form method="post" id="createForm">
+            <div>
+                <form method="post" id="createForm" novalidate>
                     <div>
                         <div class="align-right">
                             <button id="btnPrevious" class="btn btn-primary" style="background-color: #022a5e;" type="button" hidden onclick="javascript:gotoPrevious();">Previous Tab</button>
@@ -195,13 +195,14 @@
                         <br/>
                     </div>
                     <div class="bg-danger">
-                        <div id="validationSummary" class="alert alert-danger d-none georgia-font" role="alert">
+                        <div id="validationSummary" class="alert alert-danger d-none georgia-font align-left" role="alert">
                             <h4 class="alert-heading georgia-font">Form Incomplete: All fields are mandatory. Please enter 0 to indicate that no data is being submitted.</h4>
                             <ul id="errorList" class="mb-0 align-left">
                                 <!-- Errors will be injected here -->
                             </ul>
                         </div>
                     </div>
+                    
                     <input type="hidden" id="activeDetailsId" value="detailsBasicInfo">
                     <input type="hidden" id="sectionId" asp-for="@Model.sectId">
                     <div id="sidebarMessage" class="alert alert-info align-left"><i class="fa-solid fa-circle-info"></i> The sidebar tabs will appear once you fill the Name of Court and Reporting Year Form.</div>
@@ -245,7 +246,7 @@
                                             <option value="SKCA">Court of Appeal for Saskatchewan</option>
                                             <option value="YKCA">Court of Appeal of Yukon</option>
                                         </select>
-                                        <span asp-validation-for="@Model.txtCOURT" class="label label-danger"></span>
+                                        
                                     </div>
                                 </div>
                                 <div class="row mt-4">
@@ -267,7 +268,7 @@
                                             <option value="2027">2027</option>
                                             <option value="2028">2028</option>
                                         </select>
-                                        <span asp-validation-for="@Model.intREPORTINGYEAR" class="label label-danger"></span>
+                                       
                                     </div>
                                     <div class="form-group col-sm-4">
                                         <label for="dtFROM"><span class="field-name">From</span></label>
@@ -281,7 +282,7 @@
                                         </div>
                                         <input class="form-control" id="dtFROM" name="dtFROM" type="date" asp-for="@Model.dtFROM" onchange="javascript:enableDisableReview();" autocomplete="dtFROM" data-rule-minlength="1" style="width:100%" required="required"
                                                data-msg="Please enter From Date">
-                                        <span asp-validation-for="@Model.dtFROM" class="label label-danger"></span>
+                                        
                                     </div>
                                     <div class="form-group col-sm-4">
                                         <label for="dtTO">
@@ -297,7 +298,7 @@
                                         </div>
                                         <input class="form-control" id="dtTO" name="dtTO" type="date" asp-for="@Model.dtTO" onchange="javascript:enableDisableReview();" autocomplete="dtTO" data-rule-minlength="1" style="width:100%" required="required"
                                                data-msg="Please enter To Date">
-                                        <span asp-validation-for="@Model.dtTO" class="label label-danger"></span>
+                                        
                                     </div>
                                 </div>
                             </div>                         
@@ -342,7 +343,7 @@
                                 <div class="form-group col-md-11">
                                     <label for="txtFIELD1_1_1"><span class="field-name">1.1.1 Number of civil appeals, cross-appeals, references, and JRs filed but still pending as of December 31<sup>st</sup> of the previous year </span></label>
                                     <input class="form-control" id="txtFIELD1_1_1" name="txtFIELD1_1_1" type="number" min="0" asp-for="@Model.txtFIELD1_1_1" autocomplete="txtFIELD1_1_1" data-rule-minlength="1" style="width:100%"
-                                           data-msg="Number of civil appeals, cross-appeals, references, and JRs filed but still pending as of December 31<sup>st</sup> of the previous year" onchange="javascript:calculateField_1_1_7();">
+                                           data-msg="1.1.1 Number of civil appeals, cross-appeals, references, and JRs filed but still pending as of December 31<sup>st</sup> of the previous year" onchange="javascript:calculateField_1_1_7();">
                                     <span asp-validation-for="@Model.txtFIELD1_1_1" class="label label-danger"></span>
                                 </div>
                             </div>
@@ -351,7 +352,7 @@
                                 <div class="form-group col-md-11">
                                     <label for="txtFIELD1_1_2"><span class="field-name">1.1.2 Number of civil appeals, cross-appeals, references, and JRs filed  </span></label>
                                     <input class="form-control" id="txtFIELD1_1_2" name="txtFIELD1_1_2" type="number" min="0" asp-for="@Model.txtFIELD1_1_2" autocomplete="txtFIELD1_1_2" data-rule-minlength="1" style="width:100%"
-                                           data-msg="Number of civil appeals, cross-appeals, references, and JRs filed" onchange="javascript:calculateField_1_1_7();">
+                                           data-msg="1.1.2 Number of civil appeals, cross-appeals, references, and JRs filed" onchange="javascript:calculateField_1_1_7();">
                                     <span asp-validation-for="@Model.txtFIELD1_1_2" class="label label-danger"></span>
                                 </div>
                             </div>
@@ -360,7 +361,7 @@
                                 <div class="form-group col-md-11">
                                     <label for="txtFIELD1_1_3"><span class="field-name">1.1.3 Number of civil appeals, cross-appeals, references, and JRs disposed of by judgment </span></label>
                                     <input class="form-control" id="txtFIELD1_1_3" name="txtFIELD1_1_3" type="number" min="0" asp-for="@Model.txtFIELD1_1_3" autocomplete="txtFIELD1_1_3" data-rule-minlength="1" style="width:100%"
-                                           data-msg="Number of civil appeals, cross-appeals, references, and JRs disposed of by judgment" onchange="javascript:calculateField_1_1_7();">
+                                           data-msg="1.1.3 Number of civil appeals, cross-appeals, references, and JRs disposed of by judgment" onchange="javascript:calculateField_1_1_7();">
                                     <span asp-validation-for="@Model.txtFIELD1_1_3" class="label label-danger"></span>
                                 </div>
                             </div>
@@ -383,7 +384,7 @@
                                     </label>
 
                                     <input class="form-control" id="txtFIELD1_1_4" name="txtFIELD1_1_4" type="number" min="0" asp-for="@Model.txtFIELD1_1_4" autocomplete="txtFIELD1_1_4" data-rule-minlength="1" style="width:100%"
-                                           data-msg="Number of civil appeals, cross-appeals, references, and JRs disposed of by the registrar, the case management officer or authorized personnel or by operation of the rules" onchange="javascript:calculateField_1_1_7();">
+                                           data-msg="1.1.4 Number of civil appeals, cross-appeals, references, and JRs disposed of by the registrar, the case management officer or authorized personnel or by operation of the rules" onchange="javascript:calculateField_1_1_7();">
                                     <span asp-validation-for="@Model.txtFIELD1_1_4" class="label label-danger"></span>
                                 </div>
                             </div>
@@ -406,7 +407,7 @@
                                     </label>
 
                                     <input class="form-control" id="txtFIELD1_1_5" name="txtFIELD1_1_5" type="number" min="0" asp-for="@Model.txtFIELD1_1_5" autocomplete="txtFIELD1_1_5" data-rule-minlength="1" style="width:100%"
-                                           data-msg="Number of civil appeals, cross-appeals, references, and JRs settled by judicial mediation" onchange="javascript:calculateField_1_1_7();">
+                                           data-msg="1.1.5 Number of civil appeals, cross-appeals, references, and JRs settled by judicial mediation" onchange="javascript:calculateField_1_1_7();">
                                     <span asp-validation-for="@Model.txtFIELD1_1_5" class="label label-danger"></span>
                                 </div>
                             </div>
@@ -429,7 +430,7 @@
                                     </label>
 
                                     <input class="form-control" id="txtFIELD1_1_6" name="txtFIELD1_1_6" type="number" min="0" asp-for="@Model.txtFIELD1_1_6" autocomplete="txtFIELD1_1_6" data-rule-minlength="1" style="width:100%"
-                                           data-msg="Number of civil appeals, cross-appeals, references, and JRs disposed of by other means" onchange="javascript:calculateField_1_1_7();">
+                                           data-msg="1.1.6 Number of civil appeals, cross-appeals, references, and JRs disposed of by other means" onchange="javascript:calculateField_1_1_7();">
                                     <span asp-validation-for="@Model.txtFIELD1_1_6" class="label label-danger"></span>
                                 </div>
                             </div>
@@ -451,7 +452,7 @@
                                     </label>
 
                                     <input class="form-control" id="txtFIELD1_1_7" name="txtFIELD1_1_7" type="number" min="0" asp-for="@Model.txtFIELD1_1_7" autocomplete="txtFIELD1_1_7" data-rule-minlength="1" style="width:100%"
-                                           data-msg="Total number of civil appeals, cross-appeals, references, and JRs">
+                                           data-msg="1.1.7 Total number of civil appeals, cross-appeals, references, and JRs">
                                     <span asp-validation-for="@Model.txtFIELD1_1_3" class="label label-danger"></span>
                                 </div>
                             </div>
@@ -485,7 +486,7 @@
                                 <div class="form-group col-md-11">
                                     <label for="txtFIELD1_2_1"><span class="field-name">1.2.1 Number of criminal appeals, cross-appeals, references and bail reviews filed but still pending as of December 31<sup>st</sup> of the previous year </span></label>
                                     <input class="form-control" id="txtFIELD1_2_1" name="txtFIELD1_2_1" type="number" min="0" asp-for="@Model.txtFIELD1_2_1" autocomplete="txtFIELD1_2_1" data-rule-minlength="1" style="width:100%"
-                                           data-msg="Number of criminal appeals, cross-appeals, references and bail reviews filed but still pending as of December 31<sup>st</sup> of the previous year" onchange="javascript:calculateField_1_2_5();">
+                                           data-msg="1.2.1 Number of civil appeals, cross-appeals, references, and JRs filed of criminal appeals, cross-appeals, references and bail reviews filed but still pending as of December 31<sup>st</sup> of the previous year" onchange="javascript:calculateField_1_2_5();">
                                     <span asp-validation-for="@Model.txtFIELD1_2_1" class="label label-danger"></span>
                                 </div>
                             </div>
@@ -507,7 +508,7 @@
                                     </label>
 
                                     <input class="form-control" id="txtFIELD1_2_2" name="txtFIELD1_2_2" type="number" min="0" asp-for="@Model.txtFIELD1_2_2" autocomplete="txtFIELD1_2_2" data-rule-minlength="1" style="width:100%"
-                                           data-msg="Number of criminal  appeals, cross-appeals, references and bail reviews filed" onchange="javascript:calculateField_1_2_5();">
+                                           data-msg="1.2.2 Number of civil appeals, cross-appeals, references, and JRs filed of criminal  appeals, cross-appeals, references and bail reviews filed" onchange="javascript:calculateField_1_2_5();">
                                     <span asp-validation-for="@Model.txtFIELD1_2_2" class="label label-danger"></span>
                                 </div>
                             </div>
@@ -529,7 +530,7 @@
                                     </label>
 
                                     <input class="form-control" id="txtFIELD1_2_3" name="txtFIELD1_2_3" type="number" min="0" asp-for="@Model.txtFIELD1_2_3" autocomplete="txtFIELD1_2_3" data-rule-minlength="1" style="width:100%"
-                                           data-msg="Number of criminal appeals, cross-appeals, references and bail reviews disposed of by judgment" onchange="javascript:calculateField_1_2_5();">
+                                           data-msg="1.2.3 Number of criminal appeals, cross-appeals, references and bail reviews disposed of by judgment" onchange="javascript:calculateField_1_2_5();">
                                     <span asp-validation-for="@Model.txtFIELD1_2_3" class="label label-danger"></span>
                                 </div>
                             </div>
@@ -551,7 +552,7 @@
                                     </label>
 
                                     <input class="form-control" id="txtFIELD1_2_4" name="txtFIELD1_2_4" type="number" min="0" asp-for="@Model.txtFIELD1_2_4" autocomplete="txtFIELD1_2_4" data-rule-minlength="1" style="width:100%"
-                                           data-msg="Number of criminal appeals, cross-appeals, references and bail reviews disposed of by other means" onchange="javascript:calculateField_1_2_5();">
+                                           data-msg="1.2.4 Number of criminal appeals, cross-appeals, references and bail reviews disposed of by other means" onchange="javascript:calculateField_1_2_5();">
                                     <span asp-validation-for="@Model.txtFIELD1_2_4" class="label label-danger"></span>
                                 </div>
                             </div>
@@ -573,7 +574,7 @@
                                     </label>
 
                                     <input class="form-control" id="txtFIELD1_2_5" name="txtFIELD1_2_5" type="number" min="0" asp-for="@Model.txtFIELD1_2_5" autocomplete="txtFIELD1_2_5" data-rule-minlength="1" style="width:100%"
-                                           data-msg="Total number of criminal  appeals, cross-appeals, references and bail reviews">
+                                           data-msg="1.2.5 Total number of criminal  appeals, cross-appeals, references and bail reviews">
                                     <span asp-validation-for="@Model.txtFIELD1_2_5" class="label label-danger"></span>
                                 </div>
                             </div>
@@ -625,7 +626,7 @@
                                         </span>
                                     </label>
                                     <input class="form-control" id="txtFIELD2_1_1" name="txtFIELD2_1_1" type="number" min="0" asp-for="@Model.txtFIELD2_1_1" autocomplete="txtFIELD2_1_1" data-rule-minlength="1" style="width:100%"
-                                           data-msg="Number of civil case decisions given at hearing">
+                                           data-msg="2.1.1 Number of civil appeals, cross-appeals, references, and JRs filed of civil case decisions given at hearing">
                                     <span asp-validation-for="@Model.txtFIELD2_1_1" class="label label-danger"></span>
                                 </div>
                             </div>
@@ -646,7 +647,7 @@
                                         </span>
                                     </label>
                                     <input class="form-control" id="txtFIELD2_1_2" name="txtFIELD2_1_2" type="number" min="0" asp-for="@Model.txtFIELD2_1_2" autocomplete="txtFIELD2_1_2" data-rule-minlength="1" style="width:100%"
-                                           data-msg="Number of civil case reserved decisions">
+                                           data-msg="2.1.2 Number of civil case reserved decisions">
                                     <span asp-validation-for="@Model.txtFIELD2_1_2" class="label label-danger"></span>
                                 </div>
                             </div>
@@ -679,7 +680,7 @@
                                             </span>
                                         </label>
                                         <input class="form-control" id="txtFIELD2_2_1" name="txtFIELD2_2_1" type="number" min="0" asp-for="@Model.txtFIELD2_2_1" autocomplete="txtFIELD2_2_1" data-rule-minlength="1" style="width:100%"
-                                               data-msg="Number of criminal case decisions given at hearing">
+                                               data-msg="2.2.1 Number of criminal case decisions given at hearing">
                                         <span asp-validation-for="@Model.txtFIELD2_2_1" class="label label-danger"></span>
                                     </div>
                                 </div>
@@ -696,7 +697,7 @@
                                                 </span>
                                             </label>
                                             <input class="form-control" id="txtFIELD2_2_1_1" name="txtFIELD2_2_1_1" type="number" min="0" asp-for="@Model.txtFIELD2_2_1_1" autocomplete="txtFIELD2_2_1_1" data-rule-minlength="1" style="width:100%"
-                                                   data-msg="Number of convictions/acquittals given at hearing">
+                                                   data-msg="2.2.1.1 Number of convictions/acquittals given at hearing">
                                             <span asp-validation-for="@Model.txtFIELD2_2_1_1" class="label label-danger"></span>
                                         </div>
                                     </div>
@@ -710,7 +711,7 @@
                                                 </span>
                                             </label>
                                             <input class="form-control" id="txtFIELD2_2_1_2" name="txtFIELD2_2_1_2" type="number" min="0" asp-for="@Model.txtFIELD2_2_1_2" autocomplete="txtFIELD2_2_1_2" data-rule-minlength="1" style="width:100%"
-                                                   data-msg="Number of sentences given at hearing">
+                                                   data-msg="2.2.1.2 Number of sentences given at hearing">
                                             <span asp-validation-for="@Model.txtFIELD2_2_1_2" class="label label-danger"></span>
                                         </div>
                                     </div>
@@ -731,7 +732,7 @@
                                                 </span>
                                             </label>
                                             <input class="form-control" id="txtFIELD2_2_1_3" name="txtFIELD2_2_1_3" type="number" min="0" asp-for="@Model.txtFIELD2_2_1_3" autocomplete="txtFIELD2_2_1_3" data-rule-minlength="1" style="width:100%"
-                                                   data-msg="Number of other criminal appeals given at hearing">
+                                                   data-msg="2.2.1.3 Number of other criminal appeals given at hearing">
                                             <span asp-validation-for="@Model.txtFIELD2_2_1_3" class="label label-danger"></span>
                                         </div>
                                     </div>
@@ -757,7 +758,7 @@
                                             </span>
                                         </label>
                                         <input class="form-control" id="txtFIELD2_2_2" name="txtFIELD2_2_2" type="number" min="0" asp-for="@Model.txtFIELD2_2_2" autocomplete="txtFIELD2_2_2" data-rule-minlength="1" style="width:100%"
-                                               data-msg="Number of criminal case decisions filed after reserving">
+                                               data-msg="2.2.2 Number of criminal case decisions filed after reserving">
                                         <span asp-validation-for="@Model.txtFIELD2_2_2" class="label label-danger"></span>
                                     </div>
                                 </div>
@@ -774,7 +775,7 @@
                                                 </span>
                                             </label>
                                             <input class="form-control" id="txtFIELD2_2_2_1" name="txtFIELD2_2_2_1" type="number" min="0" asp-for="@Model.txtFIELD2_2_2_1" autocomplete="txtFIELD2_2_2_1" data-rule-minlength="1" style="width:100%"
-                                                   data-msg="Number of convictions/acquittals filed after reserving">
+                                                   data-msg="2.2.2.1 Number of convictions/acquittals filed after reserving">
                                             <span asp-validation-for="@Model.txtFIELD2_2_2_1" class="label label-danger"></span>
                                         </div>
                                     </div>
@@ -788,7 +789,7 @@
                                                 </span>
                                             </label>
                                             <input class="form-control" id="txtFIELD2_2_2_2" name="txtFIELD2_2_2_2" type="number" min="0" asp-for="@Model.txtFIELD2_2_2_2" autocomplete="txtFIELD2_2_2_2" data-rule-minlength="1" style="width:100%"
-                                                   data-msg="Number of sentences filed after reserving">
+                                                   data-msg="2.2.2.2 Number of sentences filed after reserving">
                                             <span asp-validation-for="@Model.txtFIELD2_2_2_2" class="label label-danger"></span>
                                         </div>
                                     </div>
@@ -809,7 +810,7 @@
                                                 </span>
                                             </label>
                                             <input class="form-control" id="txtFIELD2_2_2_3" name="txtFIELD2_2_2_3" type="number" min="0" asp-for="@Model.txtFIELD2_2_2_3" autocomplete="txtFIELD2_2_2_3" data-rule-minlength="1" style="width:100%"
-                                                   data-msg="Number of other criminal appeals filed after reserving">
+                                                   data-msg="2.2.2.3 Number of other criminal appeals filed after reserving">
                                             <span asp-validation-for="@Model.txtFIELD2_2_2_3" class="label label-danger"></span>
                                         </div>
                                     </div>
@@ -857,7 +858,7 @@
                                         </span>
                                     </label>
                                     <input class="form-control" id="txtFIELD3_1" name="txtFIELD3_1" type="number" min="0" asp-for="@Model.txtFIELD3_1" autocomplete="txtFIELD3_1" data-rule-minlength="1" style="width:100%"
-                                           data-msg="Number of Bench decisions/judgments">
+                                           data-msg="3.1 Number of Bench decisions/judgments">
                                     <span asp-validation-for="@Model.txtFIELD3_1" class="label label-danger"></span>
                                 </div>
                             </div>
@@ -877,7 +878,7 @@
                                         </span>
                                     </label>
                                     <input class="form-control" id="txtFIELD3_2" name="txtFIELD3_2" type="number" min="0" asp-for="@Model.txtFIELD3_2" autocomplete="txtFIELD3_2" data-rule-minlength="1" style="width:100%"
-                                           data-msg="Number of reserved decisions/judgments">
+                                           data-msg="3.2 Number of reserved decisions/judgments">
                                     <span asp-validation-for="@Model.txtFIELD3_2" class="label label-danger"></span>
                                 </div>
                             </div>
@@ -957,7 +958,7 @@
                                             </span>
                                         </label>
                                         <input class="form-control" id="txtFIELD4_1_1" name="txtFIELD4_1_1" type="number" min="0" asp-for="@Model.txtFIELD4_1_1" autocomplete="txtFIELD4_1_1" data-rule-minlength="1" style="width:100%"
-                                               data-msg="Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took less than 6 months">
+                                               data-msg="4.1.1 Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took less than 6 months">
                                         <span asp-validation-for="@Model.txtFIELD4_1_1" class="label label-danger"></span>
                                     </div>
                                 </div>
@@ -971,7 +972,7 @@
                                             </span>
                                         </label>
                                         <input class="form-control" id="txtFIELD4_1_2" name="txtFIELD4_1_2" type="number" min="0" asp-for="@Model.txtFIELD4_1_2" autocomplete="txtFIELD4_1_2" data-rule-minlength="1" style="width:100%"
-                                               data-msg="Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took between 6 to 12 months">
+                                               data-msg="4.1.2 Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took between 6 to 12 months">
                                         <span asp-validation-for="@Model.txtFIELD4_1_2" class="label label-danger"></span>
                                     </div>
                                 </div>
@@ -985,7 +986,7 @@
                                             </span>
                                         </label>
                                         <input class="form-control" id="txtFIELD4_1_3" name="txtFIELD4_1_3" type="number" min="0" asp-for="@Model.txtFIELD4_1_3" autocomplete="txtFIELD4_1_3" data-rule-minlength="1" style="width:100%"
-                                               data-msg="Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took more than 12 months">
+                                               data-msg="4.1.3 Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took more than 12 months">
                                         <span asp-validation-for="@Model.txtFIELD4_1_3" class="label label-danger"></span>
                                     </div>
                                 </div>
@@ -1025,7 +1026,7 @@
                                         <div class="form-group col-md-10">
                                             <label for="txtFIELD4_1_4_1"><span class="field-name">4.1.4.1 Conviction/acquittal  </span></label>
                                             <input class="form-control" id="txtFIELD4_1_4_1" name="txtFIELD4_1_4_1" type="number" min="0" asp-for="@Model.txtFIELD4_1_4_1" autocomplete="txtFIELD4_1_4_1" data-rule-minlength="1" style="width:100%"
-                                                   data-msg="Conviction/acquittal">
+                                                   data-msg="4.1.4.1 Conviction/acquittal">
                                             <span asp-validation-for="@Model.txtFIELD4_1_4_1" class="label label-danger"></span>
                                         </div>
                                     </div>
@@ -1034,7 +1035,7 @@
                                         <div class="form-group col-md-10">
                                             <label for="txtFIELD4_1_4_2"><span class="field-name">4.1.4.2 Sentence </span></label>
                                             <input class="form-control" id="txtFIELD4_1_4_2" name="txtFIELD4_1_4_2" type="number" min="0" asp-for="@Model.txtFIELD4_1_4_2" autocomplete="txtFIELD4_1_4_2" data-rule-minlength="1" style="width:100%"
-                                                   data-msg="Sentence">
+                                                   data-msg="4.1.4.2 Sentence">
                                             <span asp-validation-for="@Model.txtFIELD4_1_4_2" class="label label-danger"></span>
                                         </div>
                                     </div>
@@ -1043,7 +1044,7 @@
                                         <div class="form-group col-md-10">
                                             <label for="txtFIELD4_1_4_3"><span class="field-name">4.1.4.3 Other </span></label>
                                             <input class="form-control" id="txtFIELD4_1_4_3" name="txtFIELD4_1_4_3" type="number" min="0" asp-for="@Model.txtFIELD4_1_4_3" autocomplete="txtFIELD4_1_4_3" data-rule-minlength="1" style="width:100%"
-                                                   data-msg="Other">
+                                                   data-msg="4.1.4.3 Other">
                                             <span asp-validation-for="@Model.txtFIELD4_1_4_3" class="label label-danger"></span>
                                         </div>
                                     </div>
@@ -1066,7 +1067,7 @@
                                         <div class="form-group col-md-10">
                                             <label for="txtFIELD4_1_5_1"><span class="field-name">4.1.5.1 Conviction/acquittal </span></label>
                                             <input class="form-control" id="txtFIELD4_1_5_1" name="txtFIELD4_1_5_1" type="number" min="0" asp-for="@Model.txtFIELD4_1_5_1" autocomplete="txtFIELD4_1_5_1" data-rule-minlength="1" style="width:100%"
-                                                   data-msg="Conviction/acquittal">
+                                                   data-msg="4.1.5.1 Conviction/acquittal">
                                             <span asp-validation-for="@Model.txtFIELD4_1_5_1" class="label label-danger"></span>
                                         </div>
                                     </div>
@@ -1079,7 +1080,7 @@
                                                 </span>
                                             </label>
                                             <input class="form-control" id="txtFIELD4_1_5_2" name="txtFIELD4_1_5_2" type="number" min="0" asp-for="@Model.txtFIELD4_1_5_2" autocomplete="txtFIELD4_1_5_2" data-rule-minlength="1" style="width:100%"
-                                                   data-msg="Sentence">
+                                                   data-msg="4.1.5.2 Sentence">
                                             <span asp-validation-for="@Model.txtFIELD4_1_5_2" class="label label-danger"></span>
                                         </div>
                                     </div>
@@ -1092,7 +1093,7 @@
                                                 </span>
                                             </label>
                                             <input class="form-control" id="txtFIELD4_1_5_3" name="txtFIELD4_1_5_3" type="number" min="0" asp-for="@Model.txtFIELD4_1_5_3" autocomplete="txtFIELD4_1_5_3" data-rule-minlength="1" style="width:100%"
-                                                   data-msg="Other">
+                                                   data-msg="4.1.5.3 Other">
                                             <span asp-validation-for="@Model.txtFIELD4_1_5_3" class="label label-danger"></span>
                                         </div>
                                     </div>
@@ -1115,7 +1116,7 @@
                                         <div class="form-group col-md-10">
                                             <label for="txtFIELD4_1_6_1"><span class="field-name">4.1.6.1 Conviction/acquittal  </span></label>
                                             <input class="form-control" id="txtFIELD4_1_6_1" name="txtFIELD4_1_6_1" type="number" min="0" asp-for="@Model.txtFIELD4_1_6_1" autocomplete="txtFIELD4_1_6_1" data-rule-minlength="1" style="width:100%"
-                                                   data-msg="Conviction/acquittal">
+                                                   data-msg="4.1.6.1 Conviction/acquittal">
                                             <span asp-validation-for="@Model.txtFIELD4_1_6_1" class="label label-danger"></span>
                                         </div>
                                     </div>
@@ -1124,7 +1125,7 @@
                                         <div class="form-group col-md-10">
                                             <label for="txtFIELD4_1_6_2"><span class="field-name">4.1.6.2 Sentence  </span></label>
                                             <input class="form-control" id="txtFIELD4_1_6_2" name="txtFIELD4_1_6_2" type="number" min="0" asp-for="@Model.txtFIELD4_1_6_2" autocomplete="txtFIELD4_1_6_2" data-rule-minlength="1" style="width:100%"
-                                                   data-msg="Sentence">
+                                                   data-msg="4.1.6.2 Sentence">
                                             <span asp-validation-for="@Model.txtFIELD4_1_6_2" class="label label-danger"></span>
                                         </div>
                                     </div>
@@ -1133,7 +1134,7 @@
                                         <div class="form-group col-md-10">
                                             <label for="txtFIELD4_1_6_3"><span class="field-name">4.1.6.3 Other  </span></label>
                                             <input class="form-control" id="txtFIELD4_1_6_3" name="txtFIELD4_1_6_3" type="number" min="0" asp-for="@Model.txtFIELD4_1_6_3" autocomplete="txtFIELD4_1_6_3" data-rule-minlength="1" style="width:100%"
-                                                   data-msg="Other">
+                                                   data-msg="4.1.6.3 Other">
                                             <span asp-validation-for="@Model.txtFIELD4_1_6_3" class="label label-danger"></span>
                                         </div>
                                     </div>
@@ -1180,7 +1181,7 @@
                                             </span>
                                         </label>
                                         <input class="form-control" id="txtFIELD4_2_1" name="txtFIELD4_2_1" type="number" min="0" asp-for="@Model.txtFIELD4_2_1" autocomplete="txtFIELD4_2_1" data-rule-minlength="1" style="width:100%"
-                                               data-msg="Number of civil appeals where the time interval from filing of the appellant’s factum to the hearing took less than 6 months">
+                                               data-msg="4.2.1 Number of civil appeals where the time interval from filing of the appellant’s factum to the hearing took less than 6 months">
                                         <span asp-validation-for="@Model.txtFIELD4_2_1" class="label label-danger"></span>
                                     </div>
                                 </div>
@@ -1193,7 +1194,7 @@
                                             </span>
                                         </label>
                                         <input class="form-control" id="txtFIELD4_2_2" name="txtFIELD4_2_2" type="number" min="0" asp-for="@Model.txtFIELD4_2_2" autocomplete="txtFIELD4_2_2" data-rule-minlength="1" style="width:100%"
-                                               data-msg="Number of civil appeals where the time interval from filing of the appellant’s factum to the hearing took between 6 to 12 months">
+                                               data-msg="4.2.2 of civil appeals where the time interval from filing of the appellant’s factum to the hearing took between 6 to 12 months">
                                         <span asp-validation-for="@Model.txtFIELD4_2_2" class="label label-danger"></span>
                                     </div>
                                 </div>
@@ -1206,7 +1207,7 @@
                                             </span>
                                         </label>
                                         <input class="form-control" id="txtFIELD4_2_3" name="txtFIELD4_2_3" type="number" min="0" asp-for="@Model.txtFIELD4_2_3" autocomplete="txtFIELD4_2_3" data-rule-minlength="1" style="width:100%"
-                                               data-msg="Number of civil appeals where the time interval from filing of the appellant’s factum to the hearing took more than 12 months">
+                                               data-msg="4.2.3 Number of civil appeals where the time interval from filing of the appellant’s factum to the hearing took more than 12 months">
                                         <span asp-validation-for="@Model.txtFIELD4_2_3" class="label label-danger"></span>
                                     </div>
                                 </div>
@@ -1234,7 +1235,7 @@
                                             <div class="form-group col-md-10">
                                                 <label for="txtFIELD4_2_4_1"><span class="field-name">4.2.4.1 Conviction/acquittal  </span></label>
                                                 <input class="form-control" id="txtFIELD4_2_4_1" name="txtFIELD4_2_4_1" type="number" min="0" asp-for="@Model.txtFIELD4_2_4_1" autocomplete="txtFIELD4_2_4_1" data-rule-minlength="1" style="width:100%"
-                                                       data-msg="Conviction/acquittal">
+                                                       data-msg="4.2.4.1 Conviction/acquittal">
                                                 <span asp-validation-for="@Model.txtFIELD4_2_4_1" class="label label-danger"></span>
                                             </div>
                                         </div>
@@ -1243,7 +1244,7 @@
                                             <div class="form-group col-md-10">
                                                 <label for="txtFIELD4_2_4_2"><span class="field-name">4.2.4.2 Sentence </span></label>
                                                 <input class="form-control" id="txtFIELD4_2_4_2" name="txtFIELD4_2_4_2" type="number" min="0" asp-for="@Model.txtFIELD4_2_4_2" autocomplete="txtFIELD4_2_4_2" data-rule-minlength="1" style="width:100%"
-                                                       data-msg="Sentence">
+                                                       data-msg="4.2.4.2 Sentence">
                                                 <span asp-validation-for="@Model.txtFIELD4_2_4_2" class="label label-danger"></span>
                                             </div>
                                         </div>
@@ -1252,7 +1253,7 @@
                                             <div class="form-group col-md-10">
                                                 <label for="txtFIELD4_2_4_3"><span class="field-name">4.2.4.3 Other   </span></label>
                                                 <input class="form-control" id="txtFIELD4_2_4_3" name="txtFIELD4_2_4_3" type="number" min="0" asp-for="@Model.txtFIELD4_2_4_3" autocomplete="txtFIELD4_2_4_3" data-rule-minlength="1" style="width:100%"
-                                                       data-msg="Other">
+                                                       data-msg="4.2.4.3 Other">
                                                 <span asp-validation-for="@Model.txtFIELD4_2_4_3" class="label label-danger"></span>
                                             </div>
                                         </div>
@@ -1275,7 +1276,7 @@
                                                 <div class="form-group col-md-10">
                                                     <label for="txtFIELD4_2_5_1"><span class="field-name">4.2.5.1 Conviction/acquittal </span></label>
                                                     <input class="form-control" id="txtFIELD4_2_5_1" name="txtFIELD4_2_5_1" type="number" min="0" asp-for="@Model.txtFIELD4_2_5_1" autocomplete="txtFIELD4_2_5_1" data-rule-minlength="1" style="width:100%"
-                                                           data-msg="Conviction/acquittal">
+                                                           data-msg="4.2.5.1 Conviction/acquittal">
                                                     <span asp-validation-for="@Model.txtFIELD4_2_5_1" class="label label-danger"></span>
                                                 </div>
                                             </div>
@@ -1288,7 +1289,7 @@
                                                         </span>
                                                     </label>
                                                     <input class="form-control" id="txtFIELD4_2_5_2" name="txtFIELD4_2_5_2" type="number" min="0" asp-for="@Model.txtFIELD4_2_5_2" autocomplete="txtFIELD4_2_5_2" data-rule-minlength="1" style="width:100%"
-                                                           data-msg="Sentence">
+                                                           data-msg="4.2.5.2 Sentence">
                                                     <span asp-validation-for="@Model.txtFIELD4_2_5_2" class="label label-danger"></span>
                                                 </div>
                                             </div>
@@ -1297,7 +1298,7 @@
                                                 <div class="form-group col-md-10">
                                                     <label for="txtFIELD4_2_5_3"><span class="field-name">4.2.5.3 Other  </span></label>
                                                     <input class="form-control" id="txtFIELD4_2_5_3" name="txtFIELD4_2_5_3" type="number" min="0" asp-for="@Model.txtFIELD4_2_5_3" autocomplete="txtFIELD4_2_5_3" data-rule-minlength="1" style="width:100%"
-                                                           data-msg="Other">
+                                                           data-msg="4.2.5.3 Other">
                                                     <span asp-validation-for="@Model.txtFIELD4_2_5_3" class="label label-danger"></span>
                                                 </div>
                                             </div>
@@ -1320,7 +1321,7 @@
                                                     <div class="form-group col-md-10">
                                                         <label for="txtFIELD4_2_6_1"><span class="field-name">4.2.6.1 Conviction/acquittal  </span></label>
                                                         <input class="form-control" id="txtFIELD4_2_6_1" name="txtFIELD4_2_6_1" type="number" min="0" asp-for="@Model.txtFIELD4_2_6_1" autocomplete="txtFIELD4_2_6_1" data-rule-minlength="1" style="width:100%"
-                                                               data-msg="Conviction/acquittal">
+                                                               data-msg="4.2.6.1 Conviction/acquittal">
                                                         <span asp-validation-for="@Model.txtFIELD4_2_6_1" class="label label-danger"></span>
                                                     </div>
                                                 </div>
@@ -1333,7 +1334,7 @@
                                                             </span>
                                                         </label>
                                                         <input class="form-control" id="txtFIELD4_2_6_2" name="txtFIELD4_2_6_2" type="number" min="0" asp-for="@Model.txtFIELD4_2_6_2" autocomplete="txtFIELD4_2_6_2" data-rule-minlength="1" style="width:100%"
-                                                               data-msg="Sentence">
+                                                               data-msg="4.2.6.2 Sentence">
                                                         <span asp-validation-for="@Model.txtFIELD4_2_6_2" class="label label-danger"></span>
                                                     </div>
                                                 </div>
@@ -1346,7 +1347,7 @@
                                                             </span>
                                                         </label>
                                                         <input class="form-control" id="txtFIELD4_2_6_3" name="txtFIELD4_2_6_3" type="number" min="0" asp-for="@Model.txtFIELD4_2_6_3" autocomplete="txtFIELD4_2_6_3" data-rule-minlength="1" style="width:100%"
-                                                               data-msg="Other">
+                                                               data-msg="4.2.6.3 Other">
                                                         <span asp-validation-for="@Model.txtFIELD4_2_6_3" class="label label-danger"></span>
                                                     </div>
                                                 </div>
@@ -1395,7 +1396,7 @@
                                             </span>
                                         </label>
                                         <input class="form-control" id="txtFIELD4_3_1" name="txtFIELD4_3_1" type="number" min="0" asp-for="@Model.txtFIELD4_3_1" autocomplete="txtFIELD4_3_1" data-rule-minlength="1" style="width:100%"
-                                               data-msg="Number of civil appeals where the time interval from the hearing to the final decision took less than 6 months">
+                                               data-msg="4.3.1 Number of civil appeals where the time interval from the hearing to the final decision took less than 6 months">
                                         <span asp-validation-for="@Model.txtFIELD4_3_1" class="label label-danger"></span>
                                     </div>
                                 </div>
@@ -1405,11 +1406,10 @@
                                         <label for="txtFIELD4_3_2">
                                             <span class="field-name">
                                                 4.3.2 Number of civil appeals where the time interval from the hearing to the final decision took between 6 to 12 months
-
                                             </span>
                                         </label>
                                         <input class="form-control" id="txtFIELD4_3_2" name="txtFIELD4_3_2" type="number" min="0" asp-for="@Model.txtFIELD4_3_2" autocomplete="txtFIELD4_3_2" data-rule-minlength="1" style="width:100%"
-                                               data-msg="Number of civil appeals where the time interval from the hearing to the final decision took between 6 to 12 months">
+                                               data-msg="4.3.2 Number of civil appeals where the time interval from the hearing to the final decision took between 6 to 12 months">
                                         <span asp-validation-for="@Model.txtFIELD4_3_2" class="label label-danger"></span>
                                     </div>
                                 </div>
@@ -1422,7 +1422,7 @@
                                             </span>
                                         </label>
                                         <input class="form-control" id="txtFIELD4_3_3" name="txtFIELD4_3_3" type="number" min="0" asp-for="@Model.txtFIELD4_3_3" autocomplete="txtFIELD4_3_3" data-rule-minlength="1" style="width:100%"
-                                               data-msg="Number of civil appeals where the time interval from the hearing to the final decision took more than 12 months">
+                                               data-msg="4.3.3 Number of civil appeals where the time interval from the hearing to the final decision took more than 12 months">
                                         <span asp-validation-for="@Model.txtFIELD4_3_3" class="label label-danger"></span>
                                     </div>
                                 </div>
@@ -1450,7 +1450,7 @@
                                             <div class="form-group col-md-10">
                                                 <label for="txtFIELD4_3_4_1"><span class="field-name">4.3.4.1 Conviction/acquittal </span></label>
                                                 <input class="form-control" id="txtFIELD4_3_4_1" name="txtFIELD4_3_4_1" type="number" min="0" asp-for="@Model.txtFIELD4_3_4_1" autocomplete="txtFIELD4_3_4_1" data-rule-minlength="1" style="width:100%"
-                                                       data-msg="Conviction/acquittal">
+                                                       data-msg="4.3.4.1 Conviction/acquittal">
                                                 <span asp-validation-for="@Model.txtFIELD4_3_4_1" class="label label-danger"></span>
                                             </div>
                                         </div>
@@ -1459,7 +1459,7 @@
                                             <div class="form-group col-md-10">
                                                 <label for="txtFIELD4_3_4_2"><span class="field-name">4.3.4.2 Sentence </span></label>
                                                 <input class="form-control" id="txtFIELD4_3_4_2" name="txtFIELD4_3_4_2" type="number" min="0" asp-for="@Model.txtFIELD4_3_4_2" autocomplete="txtFIELD4_3_4_2" data-rule-minlength="1" style="width:100%"
-                                                       data-msg="Sentence">
+                                                       data-msg="4.3.4.2 Sentence">
                                                 <span asp-validation-for="@Model.txtFIELD4_3_4_2" class="label label-danger"></span>
                                             </div>
                                         </div>
@@ -1472,7 +1472,7 @@
                                                     </span>
                                                 </label>
                                                 <input class="form-control" id="txtFIELD4_3_4_3" name="txtFIELD4_3_4_3" type="number" min="0" asp-for="@Model.txtFIELD4_3_4_3" autocomplete="txtFIELD4_3_4_3" data-rule-minlength="1" style="width:100%"
-                                                       data-msg="Other" ">
+                                                       data-msg="4.3.4.3 Other">
                                                 <span asp-validation-for="@Model.txtFIELD4_3_4_3" class="label label-danger"></span>
                                             </div>
                                         </div>
@@ -1499,7 +1499,7 @@
                                                     </span>
                                                 </label>
                                                 <input class="form-control" id="txtFIELD4_3_5_1" name="txtFIELD4_3_5_1" type="number" min="0" asp-for="@Model.txtFIELD4_3_5_1" autocomplete="txtFIELD4_3_5_1" data-rule-minlength="1" style="width:100%"
-                                                       data-msg="Conviction/acquittal">
+                                                       data-msg="4.3.5.1 Conviction/acquittal">
                                                 <span asp-validation-for="@Model.txtFIELD4_3_5_1" class="label label-danger"></span>
                                             </div>
                                         </div>
@@ -1508,7 +1508,7 @@
                                             <div class="form-group col-md-10">
                                                 <label for="txtFIELD4_3_5_2"><span class="field-name">4.3.5.2 Sentence </span></label>
                                                 <input class="form-control" id="txtFIELD4_3_5_2" name="txtFIELD4_3_5_2" type="number" min="0" asp-for="@Model.txtFIELD4_3_5_2" autocomplete="txtFIELD4_3_5_2" data-rule-minlength="1" style="width:100%"
-                                                       data-msg="Sentence">
+                                                       data-msg="4.3.5.2 Sentence">
                                                 <span asp-validation-for="@Model.txtFIELD4_3_5_2" class="label label-danger"></span>
                                             </div>
                                         </div>
@@ -1517,7 +1517,7 @@
                                             <div class="form-group col-md-10">
                                                 <label for="txtFIELD4_3_5_3"><span class="field-name">4.3.5.3 Other  </span></label>
                                                 <input class="form-control" id="txtFIELD4_3_5_3" name="txtFIELD4_3_5_3" type="number" min="0" asp-for="@Model.txtFIELD4_3_5_3" autocomplete="txtFIELD4_3_5_3" data-rule-minlength="1" style="width:100%"
-                                                       data-msg="Other">
+                                                       data-msg="4.3.5.3 Other">
                                                 <span asp-validation-for="@Model.txtFIELD4_3_5_3" class="label label-danger"></span>
                                             </div>
                                         </div>
@@ -1540,7 +1540,7 @@
                                             <div class="form-group col-md-10">
                                                 <label for="txtFIELD4_3_6_1"><span class="field-name">4.3.6.1 Conviction/acquittal </span></label>
                                                 <input class="form-control" id="txtFIELD4_3_6_1" name="txtFIELD4_3_6_1" type="number" min="0" asp-for="@Model.txtFIELD4_3_6_1" autocomplete="txtFIELD4_3_6_1" data-rule-minlength="1" style="width:100%"
-                                                       data-msg="Conviction/acquittal">
+                                                       data-msg="4.3.6.1 Conviction/acquittal">
                                                 <span asp-validation-for="@Model.txtFIELD4_3_6_1" class="label label-danger"></span>
                                             </div>
                                         </div>
@@ -1553,7 +1553,7 @@
                                                     </span>
                                                 </label>
                                                 <input class="form-control" id="txtFIELD4_3_6_2" name="txtFIELD4_3_6_2" type="number" min="0" asp-for="@Model.txtFIELD4_3_6_2" autocomplete="txtFIELD4_3_6_2" data-rule-minlength="1" style="width:100%"
-                                                       data-msg="Sentence">
+                                                       data-msg="4.3.6.2 Sentence">
                                                 <span asp-validation-for="@Model.txtFIELD4_3_6_2" class="label label-danger"></span>
                                             </div>
                                         </div>
@@ -1562,7 +1562,7 @@
                                             <div class="form-group col-md-10">
                                                 <label for="txtFIELD4_3_6_3"><span class="field-name">4.3.6.3 Other </span></label>
                                                 <input class="form-control" id="txtFIELD4_3_6_3" name="txtFIELD4_3_6_3" type="number" min="0" asp-for="@Model.txtFIELD4_3_6_3" autocomplete="txtFIELD4_3_6_3" data-rule-minlength="1" style="width:100%"
-                                                       data-msg="Other">
+                                                       data-msg="4.3.6.3 Other">
                                                 <span asp-validation-for="@Model.txtFIELD4_3_6_3" class="label label-danger"></span>
                                             </div>
                                         </div>
@@ -1626,7 +1626,7 @@
                                         </span>
                                     </label>
                                     <input class="form-control" id="txtFIELD5_1" name="txtFIELD5_1" type="number" min="0" asp-for="@Model.txtFIELD5_1" autocomplete="txtFIELD5_1" data-rule-minlength="1" style="width:100%"
-                                           data-msg="In-person hearings" onchange="javascript:calculateField_5_4();">
+                                           data-msg="5.1 In-person hearings" onchange="javascript:calculateField_5_4();">
                                     <span asp-validation-for="@Model.txtFIELD5_1" class="label label-danger"></span>
                                 </div>
                             </div>
@@ -1646,7 +1646,7 @@
                                         </span>
                                     </label>
                                     <input class="form-control" id="txtFIELD5_2" name="txtFIELD5_2" type="number" asp-for="@Model.txtFIELD5_2" autocomplete="txtFIELD5_2" data-rule-minlength="1" style="width:100%"
-                                           data-msg="Virtual hearings" onchange="javascript:calculateField_5_4();">
+                                           data-msg="5.2 Virtual hearings" onchange="javascript:calculateField_5_4();">
                                     <span asp-validation-for="@Model.txtFIELD5_2" class="label label-danger"></span>
                                 </div>
                             </div>
@@ -1666,7 +1666,7 @@
                                         </span>
                                     </label>
                                     <input class="form-control" id="txtFIELD5_3" name="txtFIELD5_3" type="number" min="0" asp-for="@Model.txtFIELD5_3" autocomplete="txtFIELD5_3" data-rule-minlength="1" style="width:100%"
-                                           data-msg="Hybrid hearings" onchange="javascript:calculateField_5_4();">
+                                           data-msg="5.3 Hybrid hearings" onchange="javascript:calculateField_5_4();">
                                     <span asp-validation-for="@Model.txtFIELD5_3" class="label label-danger"></span>
                                 </div>
                             </div>
@@ -1686,7 +1686,7 @@
                                         </span>
                                     </label>
                                     <input class="form-control" id="txtFIELD5_4" name="txtFIELD5_4" type="number" min="0" asp-for="@Model.txtFIELD5_4" autocomplete="txtFIELD5_4" data-rule-minlength="1" style="width:100%"
-                                           data-msg="Total number of hearings held in-person, virtually and in hybrid mode">
+                                           data-msg="5.4 Total number of hearings held in-person, virtually and in hybrid mode">
                                     <span asp-validation-for="@Model.txtFIELD5_4" class="label label-danger"></span>
                                 </div>
                             </div>
@@ -1742,7 +1742,7 @@
                                     </label>
 
                                     <input class="form-control" id="txtFIELD6_1_1" name="txtFIELD6_1_1" type="number" min="0" asp-for="@Model.txtFIELD6_1_1" autocomplete="txtFIELD6_1_1" data-rule-minlength="1" style="width:100%"
-                                           data-msg="Number of motions and applications filed before a single judge">
+                                           data-msg="6.1.1 Number of motions and applications filed before a single judge">
                                     <span asp-validation-for="@Model.txtFIELD6_1_1" class="label label-danger"></span>
                                 </div>
                             </div>
@@ -1755,7 +1755,7 @@
                                         </span>
                                     </label>
                                     <input class="form-control" id="txtFIELD6_1_2" name="txtFIELD6_1_2" type="number" min="0" asp-for="@Model.txtFIELD6_1_2" autocomplete="txtFIELD6_1_2" data-rule-minlength="1" style="width:100%"
-                                           data-msg="Number of motions and applications disposed of by order of a single judge">
+                                           data-msg="6.1.2 Number of motions and applications disposed of by order of a single judge">
                                     <span asp-validation-for="@Model.txtFIELD6_1_2" class="label label-danger"></span>
                                 </div>
                             </div>
@@ -1776,7 +1776,7 @@
                                         </span>
                                     </label>
                                     <input class="form-control" id="txtFIELD6_1_3" name="txtFIELD6_1_3" type="number" min="0" asp-for="@Model.txtFIELD6_1_3" autocomplete="txtFIELD6_1_3" data-rule-minlength="1" style="width:100%"
-                                           data-msg="Number of motions and applications before a single judge that were abandoned, withdrawn or dismissed administratively">
+                                           data-msg="6.1.3 Number of motions and applications before a single judge that were abandoned, withdrawn or dismissed administratively">
                                     <span asp-validation-for="@Model.txtFIELD6_1_3" class="label label-danger"></span>
                                 </div>
                             </div>
@@ -1798,7 +1798,7 @@
                                         </span>
                                     </label>
                                     <input class="form-control" id="txtFIELD6_2_1" name="txtFIELD6_2_1" type="number" min="0" asp-for="@Model.txtFIELD6_2_1" autocomplete="txtFIELD6_2_1" data-rule-minlength="1" style="width:100%"
-                                           data-msg="Number of motions and applications filed before a panel of three or more judges">
+                                           data-msg="6.2.1 Number of motions and applications filed before a panel of three or more judges">
                                     <span asp-validation-for="@Model.txtFIELD6_2_1" class="label label-danger"></span>
                                 </div>
                             </div>
@@ -1811,7 +1811,7 @@
                                         </span>
                                     </label>
                                     <input class="form-control" id="txtFIELD6_2_2" name="txtFIELD6_2_2" type="number" min="0" asp-for="@Model.txtFIELD6_2_2" autocomplete="txtFIELD6_2_2" data-rule-minlength="1" style="width:100%"
-                                           data-msg="Number of motions and applications disposed of by order of a panel of three or more judges">
+                                           data-msg="6.2.2 Number of motions and applications disposed of by order of a panel of three or more judges">
                                     <span asp-validation-for="@Model.txtFIELD6_2_2" class="label label-danger"></span>
                                 </div>
                             </div>
@@ -1832,7 +1832,7 @@
                                         </span>
                                     </label>
                                     <input class="form-control" id="txtFIELD6_2_3" name="txtFIELD6_2_3" type="number" min="0" asp-for="@Model.txtFIELD6_2_3" autocomplete="txtFIELD6_2_3" data-rule-minlength="1" style="width:100%"
-                                           data-msg="Number of panel motions and applications that were abandoned, withdrawn or dismissed administratively">
+                                           data-msg="6.2.3 Number of panel motions and applications that were abandoned, withdrawn or dismissed administratively">
                                     <span asp-validation-for="@Model.txtFIELD6_2_3" class="label label-danger"></span>
                                 </div>
                             </div>
@@ -1854,7 +1854,7 @@
                                         </span>
                                     </label>
                                     <input class="form-control" id="txtFIELD6_3_1" name="txtFIELD6_3_1" type="number" min="0" asp-for="@Model.txtFIELD6_3_1" autocomplete="txtFIELD6_3_1" data-rule-minlength="1" style="width:100%"
-                                           data-msg="Number of motions and applications filed before a registrar">
+                                           data-msg="6.3.1 Number of motions and applications filed before a registrar">
                                     <span asp-validation-for="@Model.txtFIELD6_3_1" class="label label-danger"></span>
                                 </div>
                             </div>
@@ -1867,7 +1867,7 @@
                                         </span>
                                     </label>
                                     <input class="form-control" id="txtFIELD6_3_2" name="txtFIELD6_3_2" type="number" min="0" asp-for="@Model.txtFIELD6_3_2" autocomplete="txtFIELD6_3_2" data-rule-minlength="1" style="width:100%"
-                                           data-msg="Number of motions and applications disposed of by order of a registrar">
+                                           data-msg="6.3.2 Number of motions and applications disposed of by order of a registrar">
                                     <span asp-validation-for="@Model.txtFIELD6_3_2" class="label label-danger"></span>
                                 </div>
                             </div>
@@ -1888,7 +1888,7 @@
                                         </span>
                                     </label>
                                     <input class="form-control" id="txtFIELD6_3_3" name="txtFIELD6_3_3" type="number" min="0" asp-for="@Model.txtFIELD6_3_3" autocomplete="txtFIELD6_3_3" data-rule-minlength="1" style="width:100%"
-                                           data-msg="Number of panel motions and applications that were abandoned, withdrawn or dismissed by a registrar or for administrative reasons">
+                                           data-msg="6.3.3 Number of panel motions and applications that were abandoned, withdrawn or dismissed by a registrar or for administrative reasons">
                                     <span asp-validation-for="@Model.txtFIELD6_3_3" class="label label-danger"></span>
                                 </div>
                             </div>
@@ -1942,7 +1942,7 @@
                                         </span>
                                     </label>
                                     <input class="form-control" id="txtFIELD7_1_1" name="txtFIELD7_1_1" type="number" min="0" asp-for="@Model.txtFIELD7_1_1" autocomplete="txtFIELD7_1_1" data-rule-minlength="1" style="width:100%"
-                                           data-msg="Number of appeals involving an SRL at the hearing of the appeal on the merits" onchange="javascript:calculateField_7_1_3();">
+                                           data-msg="7.1.1 Number of appeals involving an SRL at the hearing of the appeal on the merits" onchange="javascript:calculateField_7_1_3();">
                                     <span asp-validation-for="@Model.txtFIELD7_1_1" class="label label-danger"></span>
                                 </div>
                             </div>
@@ -1962,7 +1962,7 @@
                                         </span>
                                     </label>
                                     <input class="form-control" id="txtFIELD7_1_2" name="txtFIELD7_1_2" type="number" min="0" asp-for="@Model.txtFIELD7_1_2" autocomplete="txtFIELD7_1_2" data-rule-minlength="1" style="width:100%"
-                                           data-msg="Number of motions and applications involving an SRL at the hearing of a motion or an application (by a single judge, a panel or the registrar)" onchange="javascript:calculateField_7_1_3();">
+                                           data-msg="7.1.2 Number of motions and applications involving an SRL at the hearing of a motion or an application (by a single judge, a panel or the registrar)" onchange="javascript:calculateField_7_1_3();">
                                     <span asp-validation-for="@Model.txtFIELD7_1_2" class="label label-danger"></span>
                                 </div>
                             </div>
@@ -1982,7 +1982,7 @@
                                         </span>
                                     </label>
                                     <input class="form-control" id="txtFIELD7_1_3" name="txtFIELD7_1_3" type="number" min="0" asp-for="@Model.txtFIELD7_1_3" autocomplete="txtFIELD7_1_3" data-rule-minlength="1" style="width:100%"
-                                           data-msg="Total number of appeals, motions and applications involving an SRL at the hearing">
+                                           data-msg="7.1.3 Total number of appeals, motions and applications involving an SRL at the hearing">
                                     <span asp-validation-for="@Model.txtFIELD7_1_3" class="label label-danger"></span>
                                 </div>
                             </div>
@@ -2025,7 +2025,7 @@
                                         </span>
                                     </label>
                                     <input class="form-control" id="txtFIELD8_1" name="txtFIELD8_1" type="number" min="0" asp-for="@Model.txtFIELD8_1" autocomplete="txtFIELD8_1" data-rule-minlength="1" style="width:100%"
-                                           data-msg="Less than 6 months">
+                                           data-msg="8.1 Less than 6 months">
                                     <span asp-validation-for="@Model.txtFIELD8_1" class="label label-danger"></span>
                                 </div>
                             </div>
@@ -2045,7 +2045,7 @@
                                         </span>
                                     </label>
                                     <input class="form-control" id="txtFIELD8_2" name="txtFIELD8_2" type="number" min="0" asp-for="@Model.txtFIELD8_2" autocomplete="txtFIELD8_2" data-rule-minlength="1" style="width:100%"
-                                           data-msg="Between 6 to 12 months">
+                                           data-msg="8.2 Between 6 to 12 months">
                                     <span asp-validation-for="@Model.txtFIELD8_2" class="label label-danger"></span>
                                 </div>
                             </div>
@@ -2065,7 +2065,7 @@
                                         </span>
                                     </label>
                                     <input class="form-control" id="txtFIELD8_3" name="txtFIELD8_3" type="number" min="0" asp-for="@Model.txtFIELD8_3" autocomplete="txtFIELD8_3" data-rule-minlength="1" style="width:100%"
-                                           data-msg="More than 12 months">
+                                           data-msg="8.3 More than 12 months">
                                     <span asp-validation-for="@Model.txtFIELD8_3" class="label label-danger"></span>
                                 </div>
                             </div>
@@ -2101,7 +2101,7 @@
                                         </span>
                                     </label>
                                     <input class="form-control" id="txtFIELD9_1" name="txtFIELD9_1" type="number" min="0" asp-for="@Model.txtFIELD9_1" autocomplete="txtFIELD9_1" data-rule-minlength="1" style="width:100%"
-                                           data-msg="By a 3-member panel hearings">
+                                           data-msg="9.1 By a 3-member panel hearings">
                                     <span asp-validation-for="@Model.txtFIELD9_1" class="label label-danger"></span>
                                 </div>
                             </div>
@@ -2114,7 +2114,7 @@
                                         </span>
                                     </label>
                                     <input class="form-control" id="txtFIELD9_2" name="txtFIELD9_2" type="number" min="0" asp-for="@Model.txtFIELD9_2" autocomplete="txtFIELD9_2" data-rule-minlength="1" style="width:100%"
-                                           data-msg="By a 5-member panel hearings">
+                                           data-msg="9.2 By a 5-member panel hearings">
                                     <span asp-validation-for="@Model.txtFIELD8_2" class="label label-danger"></span>
                                 </div>
                             </div>
@@ -2166,7 +2166,7 @@
                                         </span>
                                     </label>
                                     <input class="form-control" id="txtFIELD10_1" name="txtFIELD10_1" type="number" min="0" asp-for="@Model.txtFIELD10_1" autocomplete="txtFIELD10_1" data-rule-minlength="1" style="width:100%"
-                                           data-msg="Number of appeals, cross-appeals, references, bail reviews and JRs that have not been finalized as of December 31<sup>st</sup>">
+                                           data-msg="10.1 Number of appeals, cross-appeals, references, bail reviews and JRs that have not been finalized as of December 31<sup>st</sup>">
                                     <span asp-validation-for="@Model.txtFIELD10_1" class="label label-danger"></span>
                                 </div>
                             </div>
@@ -2209,7 +2209,7 @@
                                         </span>
                                     </label>
                                     <input class="form-control" id="txtFIELD11_1" name="txtFIELD11_1" type="number" min="0" asp-for="@Model.txtFIELD11_1" autocomplete="txtFIELD11_1" data-rule-minlength="1" style="width:100%"
-                                           data-msg="Regular judges">
+                                           data-msg="11.1 Regular judges">
                                     <span asp-validation-for="@Model.txtFIELD11_1" class="label label-danger"></span>
                                 </div>
                             </div>
@@ -2229,7 +2229,7 @@
                                         </span>
                                     </label>
                                     <input class="form-control" id="txtFIELD11_2" name="txtFIELD11_2" type="number" min="0" asp-for="@Model.txtFIELD11_2" autocomplete="txtFIELD11_2" data-rule-minlength="1" style="width:100%"
-                                           data-msg="Supernumerary judges">
+                                           data-msg="11.2 Supernumerary judges">
                                     <span asp-validation-for="@Model.txtFIELD11_2" class="label label-danger"></span>
                                 </div>
                             </div>

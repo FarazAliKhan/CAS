@@ -192,7 +192,9 @@ function showDetails(detailsId) {
     $('#li' + detailsId).css("background", "#1C578A");
     $('#' + detailsId).removeAttr('hidden');
     $("#activeDetailsId").val(detailsId);
-    const summary = document.getElementById("validationSummary");
+    let errorL = document.getElementById("errorList");
+    errorL.innerHTML = "";
+    let summary = document.getElementById("validationSummary");
     summary.classList.add("d-none");
     let sectField = document.getElementById("sectionId");
     if (sectField != null) {
@@ -274,6 +276,45 @@ function showDetails(detailsId) {
 function hideDetails(detailsId) {
     $('#li' + detailsId).css("background", "#26374A");
     $('#' + detailsId).attr('hidden', true);
+    switch (detailsId) {
+        case "detailsBasicInfo":
+            break;
+        case "details1":
+            makeSection1NotRequired();
+            break;
+        case "details2":
+            makeSection2NotRequired();
+            break;
+        case "details3":
+            makeSection3NotRequired();
+            break;
+        case "details4":
+            makeSection4NotRequired();
+            break;
+        case "details5":
+            makeSection5NotRequired();
+            break;
+        case "details6":
+            makeSection6NotRequired();
+            break;
+        case "details7":
+            makeSection7NotRequired();
+            break;
+        case "details8":
+            makeSection8NotRequired();
+            break;
+        case "details9":
+            makeSection9NotRequired();
+            break;
+        case "details10":
+            makeSection10NotRequired();
+            break;
+        case "details11":
+            makeSection11NotRequired();
+            break;
+        case "details12":
+            break;
+    }
 }
 
 function gotoPrevious() {
@@ -363,10 +404,10 @@ function gotoPrevious() {
 }
 
 function gotoNext() {
-    var validator = $("form").validate();
-    if ($('form').valid()) {
-        const summary = document.getElementById("validationSummary");
-        summary.classList.add("d-none");
+    //var validator = $("form").validate();
+    if (validateFields()) {
+        //const summary = document.getElementById("validationSummary");
+        //summary.classList.add("d-none");
         let activeDetails = $("#activeDetailsId").val();
         switch (activeDetails) {
             case "detailsBasicInfo":
@@ -439,8 +480,8 @@ function gotoNext() {
         }
     }
     else {
-        var errors = validator.errorList;
-        showValidationSummary(errors);
+        //var errors = validator.errorList;
+        //showValidationSummary(errors);
     }
 }
 
@@ -1523,5 +1564,45 @@ function errorSection11() {
     }
     else if (txtFIELD11_2.value == "") {
         document.getElementById("txtFIELD11_2").focus();
+    }
+}
+
+function validateFields() {
+
+    let form = document.getElementById("createForm");
+    let errors = [];
+
+    // Clear previous alerts
+    let summary = document.getElementById("validationSummary");
+    summary.classList.add('d-none');
+
+    // Check each required input
+    form.querySelectorAll('input, select, textarea').forEach(field => {
+        if (!field.checkValidity()) {
+            let msg = field.getAttribute("data-msg");
+            errors.push(`${msg}`);
+            field.classList.add('is-invalid'); // Add red border
+        } else {
+            field.classList.remove('is-invalid');
+        }
+    });
+
+    // If errors exist, show in summary
+    if (errors.length > 0) {
+        let summary = document.getElementById("validationSummary");
+        summary.classList.remove("d-none");
+        var errorL = document.getElementById("errorList");
+        errorL.innerHTML = "";
+        errors.forEach(errormsg => {
+            
+            var li = document.createElement("li");
+            li.innerHTML = errormsg;
+            errorL.appendChild(li);
+
+        }
+        );
+        return false;
+    } else {
+        return true; // Or perform AJAX submit
     }
 }
