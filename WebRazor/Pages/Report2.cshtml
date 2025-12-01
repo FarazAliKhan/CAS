@@ -1,0 +1,59 @@
+﻿@page
+@using Microsoft.AspNetCore.Localization
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IStringLocalizer<Report2Model> localizer
+@inject IHtmlLocalizer<Report2Model> htmlLocalizer
+@model Report2Model
+@{
+    ViewData["Title"] = "Home page";
+    if (HttpContext.Request.Query["culture"] == "fr")
+    {
+        CultureInfo.CurrentCulture = new CultureInfo("fr");
+        CultureInfo.CurrentUICulture = new CultureInfo("fr");
+        Response.Cookies.Append(
+            CookieRequestCultureProvider.DefaultCookieName,
+            CookieRequestCultureProvider.MakeCookieValue(new RequestCulture(CultureInfo.CurrentCulture)),
+            new CookieOptions { Expires = DateTimeOffset.UtcNow.AddYears(1) }
+        );
+    }
+    else if (HttpContext.Request.Query["culture"] == "en")
+    {
+        CultureInfo.CurrentCulture = new CultureInfo("en");
+        CultureInfo.CurrentUICulture = new CultureInfo("en");
+        Response.Cookies.Append(
+            CookieRequestCultureProvider.DefaultCookieName,
+            CookieRequestCultureProvider.MakeCookieValue(new RequestCulture(CultureInfo.CurrentCulture)),
+            new CookieOptions { Expires = DateTimeOffset.UtcNow.AddYears(1) }
+        );
+    }
+
+    var requestCultureFeature = HttpContext.Features.Get<IRequestCultureFeature>();
+    var requestCulture = requestCultureFeature.RequestCulture;
+    ViewData["Report2"] = localizer["Report2"];
+    ViewData["Select"] = localizer["Select"];
+    ViewData["Home"] = localizer["Home"];
+}
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="~/css/dashboard03.css">
+
+<nav id="wb-bc" property="breadcrumb">
+    <div class="container">
+        <breadcrumb></breadcrumb>
+    </div>
+</nav>
+
+<div class="text-center"><h3>Court of Appeal Annual Statistics (CAAS)<br /></h3></div>
+
+<div class="text-center"><h3>@localizer["Report2"]</h3></div>
+<form method="post">
+    <div>
+        <div style="text-align:center;">
+            <iframe title="CAACS Stats - 1 - Appeals" width="1200" height="747" src=https://app.powerbi.com/view?r=eyJrIjoiMmRiNDgxZDUtNDc0NS00OTQ3LTliYTktN2Y5MTk4M2UwNGRjIiwidCI6IjY0OTM3ZDA0LWI4MDYtNDhiMy04N2U3LWIzNGQyYzBkYWVjMiJ9
+                    frameborder="0" allowFullScreen="allowfullscreen"></iframe>
+        </div>
+        <span>
+            <a class="btn btn-secondary" asp-page="./Select">@localizer["Back"]</a>
+        </span>
+    </div>
+</form>
