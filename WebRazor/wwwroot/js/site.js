@@ -14,6 +14,32 @@ document.querySelectorAll('#sidebar .nav-link').forEach(link => {
         });
 });
 
+setYears("intREPORTINGYEAR");
+setYears("intREPORTINGYEARReview");
+
+function setYears(elemId) {
+    const select = document.getElementById(elemId);
+
+    if (select != null) {
+        const currentYear = new Date().getFullYear();
+
+        // Loop from currentYear - 2 to currentYear + 2
+        for (let year = currentYear - 2; year <= currentYear + 2; year++) {
+            const option = document.createElement("option");
+            option.value = year;
+            option.textContent = year;
+
+            if (elemId != "intREPORTINGYEARReview") {
+                // Set current year as selected
+                if (year === currentYear) {
+                    option.selected = true;
+                }
+            }
+
+            select.appendChild(option);
+        }
+    }
+}
 
 $("#txtCOURTReview").each(function () {
     let original = $(this).val();
