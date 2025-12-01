@@ -14,32 +14,35 @@ document.querySelectorAll('#sidebar .nav-link').forEach(link => {
         });
 });
 
-setYears("intREPORTINGYEAR");
-setYears("intREPORTINGYEARReview");
+//setYears("intREPORTINGYEAR","");
+//function setYears(elemId, selectedYear) {
+//    const select = document.getElementById(elemId);
 
-function setYears(elemId) {
-    const select = document.getElementById(elemId);
+//    if (select != null) {
+//        const currentYear = new Date().getFullYear();
 
-    if (select != null) {
-        const currentYear = new Date().getFullYear();
+//        // Loop from currentYear - 2 to currentYear + 2
+//        for (let year = currentYear - 2; year <= currentYear + 2; year++) {
+//            const option = document.createElement("option");
+//            option.value = year;
+//            option.textContent = year;
 
-        // Loop from currentYear - 2 to currentYear + 2
-        for (let year = currentYear - 2; year <= currentYear + 2; year++) {
-            const option = document.createElement("option");
-            option.value = year;
-            option.textContent = year;
+//            if ((elemId != "intREPORTINGYEARReview") && (elemId != "intREPORTINGYEARResult")) {
+//                // Set current year as selected
+//                if (year === currentYear) {
+//                    option.selected = true;
+//                }
+//            }
+//            else {
+//                if (year === selectedYear) {
+//                    option.selected = true;
+//                }
+//            }
 
-            if (elemId != "intREPORTINGYEARReview") {
-                // Set current year as selected
-                if (year === currentYear) {
-                    option.selected = true;
-                }
-            }
-
-            select.appendChild(option);
-        }
-    }
-}
+//            select.appendChild(option);
+//        }
+//    }
+//}
 
 $("#txtCOURTReview").each(function () {
     let original = $(this).val();
@@ -49,6 +52,20 @@ $("#txtCOURTReview").each(function () {
 });
 
 $("#intREPORTINGYEARReview").each(function () {
+    let original = $(this).val();
+    $(this).on('change', function () {
+        $(this).val(original);
+    });
+});
+
+$("#txtCOURTResult").each(function () {
+    let original = $(this).val();
+    $(this).on('change', function () {
+        $(this).val(original);
+    });
+});
+
+$("#intREPORTINGYEARResult").each(function () {
     let original = $(this).val();
     $(this).on('change', function () {
         $(this).val(original);
@@ -83,6 +100,12 @@ function submitForReview() {
         var errors = validator.errorList;
         showValidationSummary(errors);
     }
+}
+
+function submitForResult() {
+    var form = document.getElementById("finalForm");
+    form.method = "post";
+    form.submit();
 }
 
 function focusOnForm(sectionId) {
@@ -920,6 +943,7 @@ function finalSubmit() {
 }
 
 function validate() {
+
     let result = true;
     let errorHtml = "";
 

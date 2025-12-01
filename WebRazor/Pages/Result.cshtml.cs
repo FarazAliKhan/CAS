@@ -9,19 +9,19 @@ using WebRazor.Models;
 
 namespace WebRazor.Pages
 {
-    [Breadcrumb("ViewData.Review", FromPage = typeof(CreateModel))]
-    public class ReviewModel : PageModel
+    [Breadcrumb("ViewData.Result", FromPage = typeof(CreateModel))]
+    public class ResultModel : PageModel
     {
         private readonly IConfiguration _configuration;
 
         [BindProperty]
-         public string? txtCOURT { get; set; }
+        public string? txtCOURT { get; set; }
         [BindProperty]
         public DateTime? dtFROM { get; set; } = DateTime.Now;
         [BindProperty]
-       public DateTime? dtTO { get; set; } = DateTime.Now;
+        public DateTime? dtTO { get; set; } = DateTime.Now;
         [BindProperty]
-         public string? intREPORTINGYEAR { get; set; }
+        public string? intREPORTINGYEAR { get; set; }
         [BindProperty]
         public int? txtFIELD1_1_1 { get; set; }
         [BindProperty]
@@ -232,7 +232,7 @@ namespace WebRazor.Pages
         public string? resJson { get; set; }
         public string? responseStatusCode { get; set; }
 
-        public ReviewModel(
+        public ResultModel(
                 IConfiguration configuration
             )
         {
@@ -240,9 +240,7 @@ namespace WebRazor.Pages
         }
 
         public void OnGet()
-        {
-            if (TempData["txtCOURT"] != null)
-            {
+        {     
                 txtCOURT = (string)TempData["txtCOURT"];
                 dtFROM = (DateTime?)TempData["dtFROM"];
                 dtTO = (DateTime?)TempData["dtTO"];
@@ -355,11 +353,24 @@ namespace WebRazor.Pages
                 txtFIELD_11_Comments = (string?)TempData["txtFIELD_11_Comments"];
 
                 txtFIELD_12_Comments = (string?)TempData["txtFIELD_12_Comments"];
-            }          
+      
         }
 
-        public IActionResult OnPost(CASEntityCreate createItem) 
-        {            
+        public IActionResult OnPost(CASEntityCreate createItem)
+        {
+            var finalSubmit = Request.Query["finalSubmit"].FirstOrDefault();
+            if (!String.IsNullOrEmpty(finalSubmit))
+            {
+                bool success = HandleSubmit(createItem);
+                if (success)
+                {
+                    TempData["reqJson"] = reqJson;
+                    TempData["resJson"] = resJson;
+                    TempData["responseStatusCode"] = responseStatusCode;
+                    return RedirectToPage("FinalMessage");
+                }
+            }
+
             TempData["txtCOURT"] = createItem.txtCOURT;
             TempData["dtFROM"] = createItem.dtFROM;
             TempData["dtTO"] = createItem.dtTO;
@@ -472,19 +483,6 @@ namespace WebRazor.Pages
             TempData["txtFIELD_11_Comments"] = createItem.txtFIELD_11_Comments;
 
             TempData["txtFIELD_12_Comments"] = createItem.txtFIELD_12_Comments;
-
-            var finalSubmit = Request.Query["finalSubmit"].FirstOrDefault();
-            if (!String.IsNullOrEmpty(finalSubmit))
-            {
-                bool success = HandleSubmit(createItem);
-                if (success)
-                {
-                    TempData["reqJson"] = reqJson;
-                    TempData["resJson"] = resJson;
-                    TempData["responseStatusCode"] = responseStatusCode;
-                    return RedirectToPage("FinalMessage");
-                }
-            }
 
             TempData["sectionId"] = Request.Query["sectionId"].FirstOrDefault();
             return RedirectToPage("Create", "Load");
@@ -1142,5 +1140,5 @@ namespace WebRazor.Pages
 
             return true;
         }
-    }    
+    }
 }

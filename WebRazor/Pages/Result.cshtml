@@ -1,9 +1,9 @@
 ﻿@page
 @using Microsoft.AspNetCore.Localization
 @using Microsoft.AspNetCore.Mvc.Localization
-@inject IStringLocalizer<ReviewModel> localizer
-@inject IHtmlLocalizer<ReviewModel> htmlLocalizer
-@model ReviewModel
+@inject IStringLocalizer<ResultModel> localizer
+@inject IHtmlLocalizer<ResultModel> htmlLocalizer
+@model ResultModel
 @{
     ViewData["Title"] = "CAS";
     if (HttpContext.Request.Query["culture"] == "fr")
@@ -29,7 +29,7 @@
 
     var requestCultureFeature = HttpContext.Features.Get<IRequestCultureFeature>();
     var requestCulture = requestCultureFeature.RequestCulture;
-    ViewData["Review"] = localizer["Review"];
+    ViewData["Result"] = localizer["Result"];
     ViewData["Create"] = localizer["Create"];
     ViewData["Select"] = localizer["Select"];
     ViewData["Home"] = localizer["Home"];
@@ -39,20 +39,19 @@
 <link rel="stylesheet" href="~/css/dashboard03.css">
 
 <nav id="wb-bc" property="breadcrumb">
-        <div class="container">
-            <breadcrumb></breadcrumb>
-        </div>
-    </nav>
+    <div class="container">
+        <breadcrumb></breadcrumb>
+    </div>
+</nav>
 
 <div class="text-center"><h3>Court of Appeal Annual Statistics (CAAS)<br /></h3></div>
-<div class="text-center"><h3>@localizer["Review"]</h3></div>
-<br/>
+<div class="text-center"><h3>@localizer["Result"]</h3></div>
+<br />
 <div class="text-center georgia-font">
-    Before submitting your statistics, please review the data you have entered. If you wish to make any changes, click on this icon at the top of every section: <i class="fa-solid fa-pen-to-square"></i><br />
-    To submit your statistics, please click on the Submit button at the bottom of the page.
+    Following is the submitted data.
 </div>
 <br />
-<form method="post" id="reviewForm">
+<form method="post" id="ResultForm">
 
     <div id="detailsBasicInfo" class="section-color fs-6">
         <div class="align-left fs-12">
@@ -66,7 +65,7 @@
             <div class="row col-sm-12">
                 <div class="row mt-4">
                     <div class="form-group col-md-12">
-                        <label for="txtCOURTReview"><span class="field-name">Name of Court</span></label>
+                        <label for="txtCOURTResult"><span class="field-name">Name of Court</span></label>
                         <div class="tooltip-container">
                             <span class="tooltip-trigger"><i class="fa-solid fa-circle-info"></i></span>
                             <div class="tooltip-content">
@@ -75,7 +74,7 @@
                                 </p>
                             </div>
                         </div>
-                        <select style="pointer-events: none;" class="form-control" id="txtCOURTReview" asp-for="@Model.txtCOURT" onchange="javascript:enableDisableReview();" style="width:100%" required="required"
+                        <select style="pointer-events: none;" class="form-control" id="txtCOURTResult" asp-for="@Model.txtCOURT" onchange="javascript:enableDisableResult();" style="width:100%" required="required"
                                 data-num="" data-msg="Please enter Name of Court">
                             <option value="">Select Court</option>
                             <option value="ABCA">Alberta Court of Appeal</option>
@@ -99,7 +98,7 @@
                 </div>
                 <div class="row mt-4">
                     <div class="form-group col-sm-4">
-                        <label for="intREPORTINGYEARReview"><span class="field-name">Reporting Year</span></label>
+                        <label for="intREPORTINGYEARResult"><span class="field-name">Reporting Year</span></label>
                         <div class="tooltip-container">
                             <span class="tooltip-trigger"><i class="fa-solid fa-circle-info"></i></span>
                             <div class="tooltip-content">
@@ -108,7 +107,7 @@
                                 </p>
                             </div>
                         </div>
-                        <select style="pointer-events: none;" class="form-control" id="intREPORTINGYEARReview" asp-for="@Model.intREPORTINGYEAR" onchange="javascript:enableDisableReview();" style="width:100%;" required="required"
+                        <select style="pointer-events: none;" class="form-control" id="intREPORTINGYEARResult" asp-for="@Model.intREPORTINGYEAR" onchange="javascript:enableDisableResult();" style="width:100%;" required="required"
                                 data-num="" data-msg="Please enter Reporting Year">
                             <option value="">Select Year</option>
                         </select>
@@ -124,7 +123,7 @@
                                 </p>
                             </div>
                         </div>
-                        <input readonly class="form-control" id="dtFROM" name="dtFROM" type="date" asp-for="@Model.dtFROM" onchange="javascript:enableDisableReview();" autocomplete="dtFROM" data-rule-minlength="1" style="width:100%" required="required"
+                        <input readonly class="form-control" id="dtFROM" name="dtFROM" type="date" asp-for="@Model.dtFROM" onchange="javascript:enableDisableResult();" autocomplete="dtFROM" data-rule-minlength="1" style="width:100%" required="required"
                                data-num="" data-msg="Please enter From Date">
 
                     </div>
@@ -140,7 +139,7 @@
                                 </p>
                             </div>
                         </div>
-                        <input readonly class="form-control" id="dtTO" name="dtTO" type="date" asp-for="@Model.dtTO" onchange="javascript:enableDisableReview();" autocomplete="dtTO" data-rule-minlength="1" style="width:100%" required="required"
+                        <input readonly class="form-control" id="dtTO" name="dtTO" type="date" asp-for="@Model.dtTO" onchange="javascript:enableDisableResult();" autocomplete="dtTO" data-rule-minlength="1" style="width:100%" required="required"
                                data-num="" data-msg="Please enter To Date">
 
                     </div>
@@ -148,7 +147,7 @@
             </div>
         </div>
     </div>
-    <div id="details1" class="section-color fs-6" >
+    <div id="details1" class="section-color fs-6">
         <div class="align-left fs-12">
 
             <div class="row">
@@ -169,9 +168,6 @@
                             </span>
                         </h5>
                     </label>
-                    <span class="pull-right">
-                        <a class="pull-right" onclick="submitForm('1');"><i class="fa-solid fa-pen-to-square pull-right"></i></a>
-                    </span>
                 </div>
             </div>
 
@@ -341,7 +337,7 @@
                     <label>
 
                         <span class="field-name">
-                            1.2 Criminal appeals, cross-appeals, references and bail reviews filed, disposed of, and abandoned or withdrawn. <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="checkbox" /> Conviction appeal and sentence appeal are heard together
+                            1.2 Criminal appeals, cross-appeals, references and bail Results filed, disposed of, and abandoned or withdrawn. <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="checkbox" /> Conviction appeal and sentence appeal are heard together
                             <div class="tooltip-container">
                                 <span class="tooltip-trigger"><i class="fa-solid fa-circle-info"></i></span>
                                 <div class="tooltip-content">
@@ -362,9 +358,9 @@
                     <div class="row">
                         <div class="col-md-1">1.2.1</div>
                         <div class="col-md-11">
-                            <label for="txtFIELD1_2_1"><span class="field-name">Number of criminal appeals, cross-appeals, references and bail reviews filed but still pending as of December 31<sup>st</sup> of the previous year </span></label>
+                            <label for="txtFIELD1_2_1"><span class="field-name">Number of criminal appeals, cross-appeals, references and bail Results filed but still pending as of December 31<sup>st</sup> of the previous year </span></label>
                             <input readonly class="form-control" id="txtFIELD1_2_1" name="txtFIELD1_2_1" type="number" min="0" asp-for="@Model.txtFIELD1_2_1" autocomplete="txtFIELD1_2_1" data-rule-minlength="1" style="width:100%"
-                                   data-num="1.2.1" data-msg="Number of civil appeals, cross-appeals, references, and JRs filed of criminal appeals, cross-appeals, references and bail reviews filed but still pending as of December 31<sup>st</sup> of the previous year" onchange="javascript:calculateField_1_2_5();">
+                                   data-num="1.2.1" data-msg="Number of civil appeals, cross-appeals, references, and JRs filed of criminal appeals, cross-appeals, references and bail Results filed but still pending as of December 31<sup>st</sup> of the previous year" onchange="javascript:calculateField_1_2_5();">
                             <span asp-validation-for="@Model.txtFIELD1_2_1" class="label label-danger"></span>
                         </div>
                     </div>
@@ -378,12 +374,12 @@
                         <div class="col-md-11">
                             <label for="txtFIELD1_2_2">
                                 <span class="field-name">
-                                    Number of criminal  appeals, cross-appeals, references and bail reviews filed
+                                    Number of criminal  appeals, cross-appeals, references and bail Results filed
                                     <div class="tooltip-container">
                                         <span class="tooltip-trigger"><i class="fa-solid fa-circle-info"></i></span>
                                         <div class="tooltip-content">
                                             <p>
-                                                The criminal appeals, cross-appeals, references and bail reviews filed involving the Youth Criminal Justice Act are not to be separately tracked as such. They should be counted as any other criminal appeals, cross-appeals, references and bail reviews filed.
+                                                The criminal appeals, cross-appeals, references and bail Results filed involving the Youth Criminal Justice Act are not to be separately tracked as such. They should be counted as any other criminal appeals, cross-appeals, references and bail Results filed.
                                             </p>
                                         </div>
                                     </div>
@@ -391,7 +387,7 @@
                             </label>
 
                             <input readonly class="form-control" id="txtFIELD1_2_2" name="txtFIELD1_2_2" type="number" min="0" asp-for="@Model.txtFIELD1_2_2" autocomplete="txtFIELD1_2_2" data-rule-minlength="1" style="width:100%"
-                                   data-num="1.2.2" data-msg="Number of civil appeals, cross-appeals, references, and JRs filed of criminal  appeals, cross-appeals, references and bail reviews filed" onchange="javascript:calculateField_1_2_5();">
+                                   data-num="1.2.2" data-msg="Number of civil appeals, cross-appeals, references, and JRs filed of criminal  appeals, cross-appeals, references and bail Results filed" onchange="javascript:calculateField_1_2_5();">
                             <span asp-validation-for="@Model.txtFIELD1_2_2" class="label label-danger"></span>
                         </div>
                     </div>
@@ -405,12 +401,12 @@
                         <div class="col-md-11">
                             <label for="txtFIELD1_2_3">
                                 <span class="field-name">
-                                    Number of criminal appeals, cross-appeals, references and bail reviews disposed of by judgment
+                                    Number of criminal appeals, cross-appeals, references and bail Results disposed of by judgment
                                     <div class="tooltip-container">
                                         <span class="tooltip-trigger"><i class="fa-solid fa-circle-info"></i></span>
                                         <div class="tooltip-content">
                                             <p>
-                                                The criminal appeals, cross-appeals, references and bail reviews disposed of by judgment involving the Youth <i>Criminal Justice Act</i> are not to be tracked separately. They should be counted as any other criminal appeals, cross appeals, references and bail reviews disposed of.
+                                                The criminal appeals, cross-appeals, references and bail Results disposed of by judgment involving the Youth <i>Criminal Justice Act</i> are not to be tracked separately. They should be counted as any other criminal appeals, cross appeals, references and bail Results disposed of.
                                             </p>
                                         </div>
                                     </div>
@@ -418,7 +414,7 @@
                             </label>
 
                             <input readonly class="form-control" id="txtFIELD1_2_3" name="txtFIELD1_2_3" type="number" min="0" asp-for="@Model.txtFIELD1_2_3" autocomplete="txtFIELD1_2_3" data-rule-minlength="1" style="width:100%"
-                                   data-num="1.2.3" data-msg="Number of criminal appeals, cross-appeals, references and bail reviews disposed of by judgment" onchange="javascript:calculateField_1_2_5();">
+                                   data-num="1.2.3" data-msg="Number of criminal appeals, cross-appeals, references and bail Results disposed of by judgment" onchange="javascript:calculateField_1_2_5();">
                             <span asp-validation-for="@Model.txtFIELD1_2_3" class="label label-danger"></span>
                         </div>
                     </div>
@@ -432,12 +428,12 @@
                         <div class="col-md-11">
                             <label for="txtFIELD1_2_4">
                                 <span class="field-name">
-                                    Number of criminal appeals, cross-appeals, references and bail reviews disposed of by other means
+                                    Number of criminal appeals, cross-appeals, references and bail Results disposed of by other means
                                     <div class="tooltip-container">
                                         <span class="tooltip-trigger"><i class="fa-solid fa-circle-info"></i></span>
                                         <div class="tooltip-content">
                                             <p>
-                                                These appeals, cross-appeals, references and bail reviews are to include those that are settled by judicial facilitations, abandoned, withdrawn, dismissed for want of prosecution, non-compliance with rules, and disposed of by a single judge, etc.
+                                                These appeals, cross-appeals, references and bail Results are to include those that are settled by judicial facilitations, abandoned, withdrawn, dismissed for want of prosecution, non-compliance with rules, and disposed of by a single judge, etc.
                                             </p>
                                         </div>
                                     </div>
@@ -445,7 +441,7 @@
                             </label>
 
                             <input readonly class="form-control" id="txtFIELD1_2_4" name="txtFIELD1_2_4" type="number" min="0" asp-for="@Model.txtFIELD1_2_4" autocomplete="txtFIELD1_2_4" data-rule-minlength="1" style="width:100%"
-                                   data-num="1.2.4" data-msg="Number of criminal appeals, cross-appeals, references and bail reviews disposed of by other means" onchange="javascript:calculateField_1_2_5();">
+                                   data-num="1.2.4" data-msg="Number of criminal appeals, cross-appeals, references and bail Results disposed of by other means" onchange="javascript:calculateField_1_2_5();">
                             <span asp-validation-for="@Model.txtFIELD1_2_4" class="label label-danger"></span>
                         </div>
                     </div>
@@ -459,12 +455,12 @@
                         <div class="col-md-11">
                             <label for="txtFIELD1_2_5">
                                 <span class="field-name">
-                                    Total number of criminal  appeals, cross-appeals, references and bail reviews
+                                    Total number of criminal  appeals, cross-appeals, references and bail Results
                                     <div class="tooltip-container">
                                         <span class="tooltip-trigger"><i class="fa-solid fa-circle-info"></i></span>
                                         <div class="tooltip-content">
                                             <p>
-                                                Criminal appeals, cross-appeals, references and bail reviews filed but still pending as of December 31st of the previous year (1.2.1) plus new criminal appeals, cross-appeals, references and bail reviews filed (1.2.2) minus total number of criminal appeals, cross-appeals, references and bail reviews disposed of, settled by judicial facilitations, abandoned or withdrawn (1.2.3 to 1.2.4) = net criminal appeals, cross-appeals, references and bail reviews for the year.
+                                                Criminal appeals, cross-appeals, references and bail Results filed but still pending as of December 31st of the previous year (1.2.1) plus new criminal appeals, cross-appeals, references and bail Results filed (1.2.2) minus total number of criminal appeals, cross-appeals, references and bail Results disposed of, settled by judicial facilitations, abandoned or withdrawn (1.2.3 to 1.2.4) = net criminal appeals, cross-appeals, references and bail Results for the year.
                                             </p>
                                         </div>
                                     </div>
@@ -472,7 +468,7 @@
                             </label>
 
                             <input readonly class="form-control" id="txtFIELD1_2_5" name="txtFIELD1_2_5" type="number" min="0" asp-for="@Model.txtFIELD1_2_5" autocomplete="txtFIELD1_2_5" data-rule-minlength="1" style="width:100%"
-                                   data-num="1.2.5" data-msg="Total number of criminal  appeals, cross-appeals, references and bail reviews">
+                                   data-num="1.2.5" data-msg="Total number of criminal  appeals, cross-appeals, references and bail Results">
                             <span asp-validation-for="@Model.txtFIELD1_2_5" class="label label-danger"></span>
                         </div>
                     </div>
@@ -498,9 +494,6 @@
             <div class="row">
                 <div class="form-group col-md-12">
                     <label><h5><span class="field-name">2. Civil and criminal case decisions  </span></h5></label>
-                    <span class="pull-right">
-                        <a class="pull-right" onclick="submitForm('2');"><i class="fa-solid fa-pen-to-square pull-right"></i></a>
-                    </span>
                 </div>
             </div>
         </div>
@@ -655,7 +648,7 @@
                                                 <span class="tooltip-trigger"><i class="fa-solid fa-circle-info"></i></span>
                                                 <div class="tooltip-content">
                                                     <p>
-                                                        Examples of other criminal appeals are habeas corpus, prohibition, certiorari, mental disorder reviews, etc.
+                                                        Examples of other criminal appeals are habeas corpus, prohibition, certiorari, mental disorder Results, etc.
                                                     </p>
                                                 </div>
                                             </div>
@@ -751,7 +744,7 @@
                                                 <span class="tooltip-trigger"><i class="fa-solid fa-circle-info"></i></span>
                                                 <div class="tooltip-content">
                                                     <p>
-                                                        Examples of criminal appeals are habeas corpus, prohibition, certiorari, mental disorder reviews.
+                                                        Examples of criminal appeals are habeas corpus, prohibition, certiorari, mental disorder Results.
                                                     </p>
                                                 </div>
                                             </div>
@@ -786,9 +779,6 @@
             <div class="row">
                 <div class="form-group col-md-12">
                     <label><h5><span class="field-name">3. Number of decisions/judgments (total)</span></h5></label>
-                    <span class="pull-right">
-                        <a class="pull-right" onclick="submitForm('3');"><i class="fa-solid fa-pen-to-square pull-right"></i></a>
-                    </span>
                 </div>
             </div>
         </div>
@@ -876,9 +866,6 @@
                             </span>
                         </h5>
                     </label>
-                    <span class="pull-right">
-                        <a class="pull-right" onclick="submitForm('4');"><i class="fa-solid fa-pen-to-square pull-right"></i></a>
-                    </span>
                 </div>
             </div>
         </div>
@@ -1818,9 +1805,6 @@
                             </span>
                         </h5>
                     </label>
-                    <span class="pull-right">
-                        <a class="pull-right" onclick="submitForm('5');"><i class="fa-solid fa-pen-to-square pull-right"></i></a>
-                    </span>
                 </div>
             </div>
         </div>
@@ -1958,9 +1942,6 @@
                             </span>
                         </h5>
                     </label>
-                    <span class="pull-right">
-                        <a class="pull-right" onclick="submitForm('6');"><i class="fa-solid fa-pen-to-square pull-right"></i></a>
-                    </span>
                 </div>
             </div>
         </div>
@@ -2227,9 +2208,6 @@
                             </span>
                         </h5>
                     </label>
-                    <span class="pull-right">
-                        <a class="pull-right" onclick="submitForm('7');"><i class="fa-solid fa-pen-to-square pull-right"></i></a>
-                    </span>
                 </div>
             </div>
         </div>
@@ -2320,9 +2298,6 @@
             <div class="row">
                 <div class="form-group col-md-12">
                     <label><h5><span class="field-name">8. Number of decisions/judgments rendered</span></h5></label>
-                    <span class="pull-right">
-                        <a class="pull-right" onclick="submitForm('8');"><i class="fa-solid fa-pen-to-square pull-right"></i></a>
-                    </span>
                 </div>
             </div>
         </div>
@@ -2421,9 +2396,6 @@
             <div class="row">
                 <div class="form-group col-md-12">
                     <label><h5><span class="field-name">9. Number of appeals that are heard</span></h5></label>
-                    <span class="pull-right">
-                        <a class="pull-right" onclick="submitForm('9');"><i class="fa-solid fa-pen-to-square pull-right"></i></a>
-                    </span>
                 </div>
             </div>
         </div>
@@ -2484,21 +2456,18 @@
                     <label>
                         <h5>
                             <span class="field-name">
-                                10. Total number of  appeals, cross-appeals, references, bail reviews and JRs pending on December 31<sup>st</sup>
+                                10. Total number of  appeals, cross-appeals, references, bail Results and JRs pending on December 31<sup>st</sup>
                                 <div class="tooltip-container">
                                     <span class="tooltip-trigger"><i class="fa-solid fa-circle-info"></i></span>
                                     <div class="tooltip-content">
                                         <p>
-                                            The closing inventory of one year will equally be the opening inventory of the next year. That inventory can be measured “as of” December 31st of each year. Appeals, cross-appeals, references, bail reviews and JRs filed before December 31st for which there is no judgment date or other disposition date before December 31st are considered pending on that date. This includes the appeals, cross-appeals, references, bail reviews and JRs that have not been heard as well as those that have been heard but for which judgment has not yet been released. These appeals, cross-appeals, references, bail reviews and JRs will appear in the closing inventory of one year and the opening inventory of the next year.
+                                            The closing inventory of one year will equally be the opening inventory of the next year. That inventory can be measured “as of” December 31st of each year. Appeals, cross-appeals, references, bail Results and JRs filed before December 31st for which there is no judgment date or other disposition date before December 31st are considered pending on that date. This includes the appeals, cross-appeals, references, bail Results and JRs that have not been heard as well as those that have been heard but for which judgment has not yet been released. These appeals, cross-appeals, references, bail Results and JRs will appear in the closing inventory of one year and the opening inventory of the next year.
                                         </p>
                                     </div>
                                 </div>
                             </span>
                         </h5>
                     </label>
-                    <span class="pull-right">
-                        <a class="pull-right" onclick="submitForm('10');"><i class="fa-solid fa-pen-to-square pull-right"></i></a>
-                    </span>
                 </div>
             </div>
 
@@ -2513,11 +2482,11 @@
                         <div class="col-md-11">
                             <label for="txtFIELD10_1">
                                 <span class="field-name">
-                                    Number of appeals, cross-appeals, references, bail reviews and JRs that have not been finalized as of December 31<sup>st</sup>
+                                    Number of appeals, cross-appeals, references, bail Results and JRs that have not been finalized as of December 31<sup>st</sup>
                                 </span>
                             </label>
                             <input readonly class="form-control" id="txtFIELD10_1" name="txtFIELD10_1" type="number" min="0" asp-for="@Model.txtFIELD10_1" autocomplete="txtFIELD10_1" data-rule-minlength="1" style="width:100%"
-                                   data-num="10.1" data-msg="Number of appeals, cross-appeals, references, bail reviews and JRs that have not been finalized as of December 31<sup>st</sup>">
+                                   data-num="10.1" data-msg="Number of appeals, cross-appeals, references, bail Results and JRs that have not been finalized as of December 31<sup>st</sup>">
                             <span asp-validation-for="@Model.txtFIELD10_1" class="label label-danger"></span>
                         </div>
                     </div>
@@ -2535,14 +2504,11 @@
         </div>
     </div>
 
-    <div id="details11" class="mrgn-tp-lg section-color fs-6" >
+    <div id="details11" class="mrgn-tp-lg section-color fs-6">
         <div class="align-left fs-6">
             <div class="row">
                 <div class="form-group col-md-12">
                     <label><h5><span class="field-name">11. Number of judges (as of December 31<sup>st</sup>)</span></h5></label>
-                    <span class="pull-right">
-                        <a class="pull-right" onclick="submitForm('11');"><i class="fa-solid fa-pen-to-square pull-right"></i></a>
-                    </span>
                 </div>
             </div>
         </div>
@@ -2630,9 +2596,6 @@
                             </span>
                         </h5>
                     </label>
-                    <span class="pull-right">
-                        <a class="pull-right" onclick="submitForm('12');"><i class="fa-solid fa-pen-to-square pull-right"></i></a>
-                    </span>
                 </div>
             </div>
         </div>
@@ -2652,42 +2615,39 @@
 
     <div>
         <span>
-            <button id="btnSubmit" class="btn btn-primary" type="button" onclick="javascript:finalSubmit();">@localizer["Submit"]</button>
-        </span>
-        <span>
-            <a class="btn btn-secondary" asp-page="./Create">@localizer["Cancel"]</a>
+            <a class="btn btn-secondary" asp-page="./Create">@localizer["Close"]</a>
         </span>
     </div>
 </form>
 <script>
-    function setYears(elemId, selectedYear) {
-    const select = document.getElementById(elemId);
+        function setYears(elemId, selectedYear) {
+        const select = document.getElementById(elemId);
 
-    if (select != null) {
-        const currentYear = new Date().getFullYear();
+        if (select != null) {
+            const currentYear = new Date().getFullYear();
 
-        // Loop from currentYear - 2 to currentYear + 2
-        for (let year = currentYear - 2; year <= currentYear + 2; year++) {
-            const option = document.createElement("option");
-            option.value = year;
-            option.textContent = year;
+            // Loop from currentYear - 2 to currentYear + 2
+            for (let year = currentYear - 2; year <= currentYear + 2; year++) {
+                const option = document.createElement("option");
+                option.value = year;
+                option.textContent = year;
 
-            if ((elemId != "intREPORTINGYEARReview") && (elemId != "intREPORTINGYEARResult")) {
-                // Set current year as selected
-                if (year === currentYear) {
-                    option.selected = true;
+                if ((elemId != "intREPORTINGYEARReview") && (elemId != "intREPORTINGYEARResult")) {
+                    // Set current year as selected
+                    if (year === currentYear) {
+                        option.selected = true;
+                    }
                 }
-            }
-            else {
-                if (year === selectedYear) {
-                    option.selected = true;
+                else {
+                    if (year === selectedYear) {
+                        option.selected = true;
+                    }
                 }
-            }
 
-            select.appendChild(option);
+                select.appendChild(option);
+            }
         }
     }
-}
 
-setYears("intREPORTINGYEARReview", @Model.intREPORTINGYEAR);
+    setYears("intREPORTINGYEARResult", @Model.intREPORTINGYEAR);
 </script>
