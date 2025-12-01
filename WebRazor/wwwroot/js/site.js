@@ -521,54 +521,6 @@ function submitBasicInfoForm() {
     form.method = "POST";
     form.submit();
 }
-
-//$('form').each(function () {
-//    var validator = $(this).data('validator');
-//    if (validator) {
-//        validator.settings.showErrors = function (map, errors) {
-//            this.defaultShowErrors();
-//            if ($('div[data-valmsg-summary=true] li:visible').length) {
-//                this.checkForm();
-//                if (this.errorList.length)
-//                    $(this.currentForm).triggerHandler("invalid-form", [this]);
-//                else
-//                    $(this.currentForm).resetSummary();
-//            }
-//        };
-//    }
-//});
-
-//jQuery.fn.resetSummary = function () {
-//    var form = this.is('form') ? this : this.closest('form');
-//    form.find("[data-valmsg-summary=true]")
-//        .removeClass("validation-summary-errors")
-//        .addClass("validation-summary-valid")
-//        .find("ul")
-//        .empty();
-//    return this;
-//};
-
-//$('form').validate({
-//    errorPlacement: function (error, element) {
-//        element = element.closest('li');
-//        element = element.children(':first-child');
-//        error.insertBefore(element);
-//        error.addClass('message');
-//        $(function () {                                 // my function
-//            var errorIndex = $(error).index('div');
-//            var errorId = 'errordiv' + errorIndex.toString();
-//            $(error).attr('id', errorId);
-//            $('.errorList').append('<li><a href="#' + errorId + '">' + $(error).text() + '</a></li>');
-//        });
-//    }
-//});
-
-//$('form').validate({
-//    errorPlacement: function (error, element) {
-//        showValidationSummary(["Please enter", "value"]);
-//    }
-//});
-
 function showValidationSummary(errors) {
     const summary = document.getElementById("validationSummary");
     const list = document.getElementById("errorList");

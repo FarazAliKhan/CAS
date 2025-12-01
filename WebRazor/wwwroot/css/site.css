@@ -144,3 +144,11 @@
     border-radius: 12px;
     padding: 35px;
 }
+
+.custom-link,
+.custom-link:hover,
+.custom-link:visited,
+.custom-link:active {
+    text-decoration: none;
+    color: white;
+}
