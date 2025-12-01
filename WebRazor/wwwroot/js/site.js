@@ -1580,7 +1580,13 @@ function validateFields() {
     form.querySelectorAll('input, select, textarea').forEach(field => {
         if (!field.checkValidity()) {
             let msg = field.getAttribute("data-msg");
-            errors.push(`${msg}`);
+            let num = field.getAttribute("data-num");
+            if (num == "") {
+                errors.push(`<div class="row"><div class="col-md-11">${msg}</div></div>`);
+            }
+            else {
+                errors.push(`<div class="row"><div class="col-md-1">${num}</div><div class="col-md-11">${msg}</div></div>`);
+            }     
             field.classList.add('is-invalid'); // Add red border
         } else {
             field.classList.remove('is-invalid');
@@ -1593,9 +1599,8 @@ function validateFields() {
         summary.classList.remove("d-none");
         var errorL = document.getElementById("errorList");
         errorL.innerHTML = "";
-        errors.forEach(errormsg => {
-            
-            var li = document.createElement("li");
+        errors.forEach(errormsg => {    
+            var li = document.createElement("li");         
             li.innerHTML = errormsg;
             errorL.appendChild(li);
 
