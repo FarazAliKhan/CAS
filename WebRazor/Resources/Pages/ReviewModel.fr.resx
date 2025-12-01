@@ -117,6 +117,18 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="1_1_4_Heading" xml:space="preserve">
+    <value>Number of civil appeals, cross-appeals, references, and JRs disposed of by the registrar, the case management officer or authorized personnel or by operation of the rules</value>
+  </data>
+  <data name="1_1_4_Info" xml:space="preserve">
+    <value>The civil appeals, cross-appeals, references, and JRs disposed of by the registrar take into account the certificates of lapse of appeal issued by the registry.</value>
+  </data>
+  <data name="1_Heading" xml:space="preserve">
+    <value>Number of appeals, cross-appeals, references, bail reviews, and judicial reviews (JRs)</value>
+  </data>
+  <data name="1_Info" xml:space="preserve">
+    <value>One notice of appeal counts as one appeal filed and one appeal disposed of, even though a number of related cases may be grouped together and heard at one hearing (example: if 10 cases are grouped together and heard together but are the subject of 10 notices of appeal, this counts as 10 appeals filed and 10 appeals disposed of). A notice of appeal containing both an appeal against conviction and against sentence, shall be counted as two appeals, but when heard together shall be counted as a single hearing.&lt;br /&gt;&lt;br /&gt;Where an appeal was deemed abandoned or struck in the previous calendar year and restored in this calendar year, it is counted as a new appeal filed.&lt;br /&gt;&lt;br /&gt;Cross-appeals are to be collected &lt;u&gt;only&lt;/u&gt; if they are docket as a separate appeal.</value>
+  </data>
   <data name="Back" xml:space="preserve">
     <value>Retour</value>
   </data>
