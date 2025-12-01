@@ -604,9 +604,11 @@ function makeSection1Required() {
 function makeSection2Required() {
     document.getElementById("txtFIELD2_1_1").setAttribute("required", "true");
     document.getElementById("txtFIELD2_1_2").setAttribute("required", "true");
+    document.getElementById("txtFIELD2_2_1").setAttribute("required", "true");
     document.getElementById("txtFIELD2_2_1_1").setAttribute("required", "true");
     document.getElementById("txtFIELD2_2_1_2").setAttribute("required", "true");
     document.getElementById("txtFIELD2_2_1_3").setAttribute("required", "true");
+    document.getElementById("txtFIELD2_2_2").setAttribute("required", "true");
     document.getElementById("txtFIELD2_2_2_1").setAttribute("required", "true");
     document.getElementById("txtFIELD2_2_2_2").setAttribute("required", "true");
     document.getElementById("txtFIELD2_2_2_3").setAttribute("required", "true");
@@ -720,9 +722,11 @@ function makeSection1NotRequired() {
 function makeSection2NotRequired() {
     document.getElementById("txtFIELD2_1_1").removeAttribute("required");
     document.getElementById("txtFIELD2_1_2").removeAttribute("required");
+    document.getElementById("txtFIELD2_2_1").removeAttribute("required");
     document.getElementById("txtFIELD2_2_1_1").removeAttribute("required");
     document.getElementById("txtFIELD2_2_1_2").removeAttribute("required");
     document.getElementById("txtFIELD2_2_1_3").removeAttribute("required");
+    document.getElementById("txtFIELD2_2_2").removeAttribute("required");
     document.getElementById("txtFIELD2_2_2_1").removeAttribute("required");
     document.getElementById("txtFIELD2_2_2_2").removeAttribute("required");
     document.getElementById("txtFIELD2_2_2_3").removeAttribute("required");
@@ -962,9 +966,11 @@ function validate() {
 
     let txtFIELD2_1_1 = document.getElementById("txtFIELD2_1_1");
     let txtFIELD2_1_2 = document.getElementById("txtFIELD2_1_2");
+    let txtFIELD2_2_1 = document.getElementById("txtFIELD2_2_1");
     let txtFIELD2_2_1_1 = document.getElementById("txtFIELD2_2_1_1");
     let txtFIELD2_2_1_2 = document.getElementById("txtFIELD2_2_1_2");
     let txtFIELD2_2_1_3 = document.getElementById("txtFIELD2_2_1_3");
+    let txtFIELD2_2_2 = document.getElementById("txtFIELD2_2_2");
     let txtFIELD2_2_2_1 = document.getElementById("txtFIELD2_2_2_1");
     let txtFIELD2_2_2_2 = document.getElementById("txtFIELD2_2_2_2");
     let txtFIELD2_2_2_3 = document.getElementById("txtFIELD2_2_2_3");
@@ -1060,9 +1066,11 @@ function validate() {
 
     if ((txtFIELD2_1_1.value == "")
         || (txtFIELD2_1_2.value == "")
+        || (txtFIELD2_2_1.value == "")
         || (txtFIELD2_2_1_1.value == "")
         || (txtFIELD2_2_1_2.value == "")
         || (txtFIELD2_2_1_3.value == "")
+        || (txtFIELD2_2_2.value == "")
         || (txtFIELD2_2_2_1.value == "")
         || (txtFIELD2_2_2_2.value == "")
         || (txtFIELD2_2_2_3.value == "")
@@ -1245,9 +1253,11 @@ function errorSection2() {
     hideValidationModal();
     let txtFIELD2_1_1 = document.getElementById("txtFIELD2_1_1");
     let txtFIELD2_1_2 = document.getElementById("txtFIELD2_1_2");
+    let txtFIELD2_2_1 = document.getElementById("txtFIELD2_2_1");
     let txtFIELD2_2_1_1 = document.getElementById("txtFIELD2_2_1_1");
     let txtFIELD2_2_1_2 = document.getElementById("txtFIELD2_2_1_2");
     let txtFIELD2_2_1_3 = document.getElementById("txtFIELD2_2_1_3");
+    let txtFIELD2_2_2 = document.getElementById("txtFIELD2_2_2");
     let txtFIELD2_2_2_1 = document.getElementById("txtFIELD2_2_2_1");
     let txtFIELD2_2_2_2 = document.getElementById("txtFIELD2_2_2_2");
     let txtFIELD2_2_2_3 = document.getElementById("txtFIELD2_2_2_3");
@@ -1259,6 +1269,9 @@ function errorSection2() {
     else if (txtFIELD2_1_2.value == "") {
         document.getElementById("txtFIELD2_1_2").focus();
     }
+    else if (txtFIELD2_2_1.value == "") {
+        document.getElementById("txtFIELD2_2_1").focus();
+    }
     else if (txtFIELD2_2_1_1.value == "") {
         document.getElementById("txtFIELD2_2_1_1").focus();
     }
@@ -1267,6 +1280,9 @@ function errorSection2() {
     }
     else if (txtFIELD2_2_1_3.value == "") {
         document.getElementById("txtFIELD2_2_1_3").focus();
+    }
+    else if (txtFIELD2_2_2.value == "") {
+        document.getElementById("txtFIELD2_2_2").focus();
     }
     else if (txtFIELD2_2_2_1.value == "") {
         document.getElementById("txtFIELD2_2_2_1").focus();
