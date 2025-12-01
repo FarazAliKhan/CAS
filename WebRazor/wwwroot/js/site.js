@@ -65,7 +65,7 @@ function focusOnForm(sectionId) {
         let sectId = sectField.value;
         if (sectId != null && sectId != "") {
             $('#sidebarMessage').attr("hidden", true);
-            setTabsBackgroundDark();
+            setTabsBackgroundToInit();
             hideDetails("detailsBasicInfo");
             fieldFocus(sectId);
             $("#btnReview").removeAttr("hidden");
@@ -92,9 +92,10 @@ function focusOnForm(sectionId) {
 }
 
 function fieldFocus(sectionId) {
+    $("#lidetailsBasicInfo").removeClass("active");
     switch (sectionId) {
         case "1":
-            //$("#lidetails1").css("background", "#1C578A");
+            $("#lidetails1").addClass("active");
             $("#activeDetailsId").val("details1");
             $('#details1').removeAttr('hidden');
             document.getElementById("txtFIELD1_1_1").focus();
@@ -102,83 +103,83 @@ function fieldFocus(sectionId) {
             makeSection1Required();
             break;
         case "2":
-            //$("#lidetails2").css("background", "#1C578A");
+            $("#lidetails2").addClass("active");
             $("#activeDetailsId").val("details2");
             $('#details2').removeAttr('hidden');
             document.getElementById("txtFIELD2_1_1").focus();
             makeSection2Required();
             break;
         case "3":
-           // $("#lidetails3").css("background", "#1C578A");
+            $("#lidetails3").addClass("active");
             $("#activeDetailsId").val("details3");
             $('#details3').removeAttr('hidden');
             document.getElementById("txtFIELD3_1").focus();
             makeSection3Required();
             break;
         case "4":
-            //$("#lidetails4").css("background", "#1C578A");
+            $("#lidetails4").addClass("active");
             $("#activeDetailsId").val("details4");
             $('#details4').removeAttr('hidden');
             document.getElementById("txtFIELD4_1_1").focus();
             makeSection4Required();
             break;
         case "5":
-            //$("#lidetails5").css("background", "#1C578A");
+            $("#lidetails5").addClass("active");
             $("#activeDetailsId").val("details5");
             $('#details5').removeAttr('hidden');
             document.getElementById("txtFIELD5_1").focus();
             makeSection5Required();
             break;
         case "6":
-            //$("#lidetails6").css("background", "#1C578A");
+            $("#lidetails6").addClass("active");
             $("#activeDetailsId").val("details6");
             $('#details6').removeAttr('hidden');
             document.getElementById("txtFIELD6_1_1").focus();
             makeSection6Required();
             break;
         case "7":
-            //$("#lidetails7").css("background", "#1C578A");
+            $("#lidetails7").addClass("active");
             $("#activeDetailsId").val("details7");
             $('#details7').removeAttr('hidden');
             document.getElementById("txtFIELD7_1_1").focus();
             makeSection7Required();
             break;
         case "8":
-            //$("#lidetails8").css("background", "#1C578A");
+            $("#lidetails8").addClass("active");
             $("#activeDetailsId").val("details8");
             $('#details8').removeAttr('hidden');
             document.getElementById("txtFIELD8_1").focus();
             makeSection8Required();
             break;
         case "9":
-            //$("#lidetails9").css("background", "#1C578A");
+            $("#lidetails9").addClass("active");
             $("#activeDetailsId").val("details9");
             $('#details9').removeAttr('hidden');
             document.getElementById("txtFIELD9_1").focus();
             makeSection9Required();
             break;
         case "10":
-            //$("#lidetails10").css("background", "#1C578A");
+            $("#lidetails10").addClass("active");
             $("#activeDetailsId").val("details10");
             $('#details10').removeAttr('hidden');
             document.getElementById("txtFIELD10_1").focus();
             makeSection10Required();
             break;
         case "11":
-            //$("#lidetails11").css("background", "#1C578A");
+            $("#lidetails11").addClass("active");
             $("#activeDetailsId").val("details11");
             $('#details11').removeAttr('hidden');
             document.getElementById("txtFIELD11_1").focus();
             makeSection11Required();
             break;
         case "12":
-            //$("#lidetails12").css("background", "#1C578A");
+            $("#lidetails12").addClass("active");
             $("#activeDetailsId").val("details12");
             $('#details12').removeAttr('hidden');
             document.getElementById("txtFIELD_12_Comments").focus();
             break;
         case '0':
-            //$("#lidetailsBasicInfo").css("background", "#1C578A");
+            $("#lidetailsBasicInfo").addClass("active");
             $("#activeDetailsId").val("detailsBasicInfo");
             $('#detailsBasicInfo').removeAttr('hidden');
             document.getElementById("txtCOURT").focus();
@@ -189,7 +190,7 @@ function fieldFocus(sectionId) {
 function showDetails(detailsId) {
     let activeDetails = $("#activeDetailsId").val();
     hideDetails(activeDetails);
-    $('#li' + detailsId).css("background", "#1C578A");
+    $('#li' + detailsId).addClass("active");
     $('#' + detailsId).removeAttr('hidden');
     $("#activeDetailsId").val(detailsId);
     let errorL = document.getElementById("errorList");
@@ -274,7 +275,7 @@ function showDetails(detailsId) {
 }
 
 function hideDetails(detailsId) {
-    $('#li' + detailsId).css("background", "#26374A");
+    //$('#li' + detailsId).css("background", "#26374A");
     $('#' + detailsId).attr('hidden', true);
     switch (detailsId) {
         case "detailsBasicInfo":
@@ -326,58 +327,58 @@ function gotoPrevious() {
             $("#btnPrevious").attr("hidden", true);
             $("#btnNext").removeAttr("hidden");
             showDetails("detailsBasicInfo");
-            //$("#lidetailsBasicInfo").css("background", "#1C578A");
-            //$("#lidetails1").css("background", "#26374A");
+            $("#lidetailsBasicInfo").addClass("active");
+            $("#lidetails1").removeClass("active");
             makeSection1NotRequired();
             break;
         case "details2": showDetails("details1");
-            //$("#lidetails1").css("background", "#1C578A");
-            //$("#lidetails2").css("background", "#26374A");
+            $("#lidetails1").addClass("active");
+            $("#lidetails2").removeClass("active");
             makeSection2NotRequired();
             break;
         case "details3": showDetails("details2");
-            //$("#lidetails2").css("background", "#1C578A");
-            //$("#lidetails3").css("background", "#26374A");
+            $("#lidetails2").addClass("active");
+            $("#lidetails3").removeClass("active");
             makeSection3NotRequired();
             break;
         case "details4": showDetails("details3");
-            //$("#lidetails3").css("background", "#1C578A");
-            //$("#lidetails4").css("background", "#26374A");
+            $("#lidetails3").addClass("active");
+            $("#lidetails4").removeClass("active");
             makeSection4NotRequired();
             break;
         case "details5": showDetails("details4");
-            //$("#lidetails4").css("background", "#1C578A");
-            //$("#lidetails5").css("background", "#26374A");
+            $("#lidetails4").addClass("active");
+            $("#lidetails5").removeClass("active");
             makeSection5NotRequired();
             break;
         case "details6": showDetails("details5");
-            //$("#lidetails5").css("background", "#1C578A");
-            //$("#lidetails6").css("background", "#26374A");
+            $("#lidetails5").addClass("active");
+            $("#lidetails6").removeClass("active");
             makeSection6NotRequired();
             break;
         case "details7": showDetails("details6");
-            //$("#lidetails6").css("background", "#1C578A");
-            //$("#lidetails7").css("background", "#26374A");
+            $("#lidetails6").addClass("active");
+            $("#lidetails7").removeClass("active");
             makeSection7NotRequired();
             break;
         case "details8": showDetails("details7");
-            //$("#lidetails7").css("background", "#1C578A");
-            //$("#lidetails8").css("background", "#26374A");
+            $("#lidetails7").addClass("active");
+            $("#lidetails8").removeClass("active");
             makeSection8NotRequired();
             break;
         case "details9": showDetails("details8");
-            //$("#lidetails8").css("background", "#1C578A");
-            //$("#lidetails9").css("background", "#26374A");
+            $("#lidetails8").addClass("active");
+            $("#lidetails9").removeClass("active");
             makeSection9NotRequired();
             break;
         case "details10": showDetails("details9");
-            //$("#lidetails9").css("background", "#1C578A");
-            //$("#lidetails10").css("background", "#26374A");
+            $("#lidetails9").addClass("active");
+            $("#lidetails10").removeClass("active");
             makeSection10NotRequired();
             break;
         case "details11": showDetails("details10");
-            //$("#lidetails10").css("background", "#1C578A");
-            //$("#lidetails11").css("background", "#26374A");
+            $("#lidetails10").addClass("active");
+            $("#lidetails11").removeClass("active");
             makeSection11NotRequired();
             break;
         case "details12":
@@ -395,8 +396,8 @@ function gotoPrevious() {
             }
             $("#btnNext").removeAttr("hidden");
             showDetails("details11");
-            //$("#lidetails11").css("background", "#1C578A");
-            //$("#lidetails12").css("background", "#26374A");
+            $("#lidetails11").addClass("active");
+            $("#lidetails12").removeClass("active");
             break;
     }
     const summary = document.getElementById("validationSummary");
@@ -413,63 +414,63 @@ function gotoNext() {
             case "detailsBasicInfo":
                 $("#btnPrevious").removeAttr("hidden");
                 showDetails("details1");
-               // $("#lidetails1").css("background", "#1C578A");
-                // $("#lidetailsBasicInfo").css("background", "#26374A");
+                $("#lidetails1").addClass("active");
+                $("#lidetailsBasicInfo").removeClass("active");
                 makeSection1Required();
                 break;
             case "details1": showDetails("details2");
-                //$("#lidetails2").css("background", "#1C578A");
-                //$("#lidetails1").css("background", "#26374A");
+                $("#lidetails2").addClass("active");
+                $("#lidetails1").removeClass("active");
                 makeSection2Required();
                 break;
             case "details2": showDetails("details3");
-                //$("#lidetails3").css("background", "#1C578A");
-                //$("#lidetails2").css("background", "#26374A");
+                $("#lidetails3").addClass("active");
+                $("#lidetails2").removeClass("active");
                 makeSection3Required();
                 break;
             case "details3": showDetails("details4");
-                //$("#lidetails4").css("background", "#1C578A");
-                //$("#lidetails3").css("background", "#26374A");
+                $("#lidetails4").addClass("active");
+                $("#lidetails3").removeClass("active");
                 makeSection4Required();
                 break;
             case "details4": showDetails("details5");
-                //$("#lidetails5").css("background", "#1C578A");
-                //$("#lidetails4").css("background", "#26374A");
+                $("#lidetails5").addClass("active");
+                $("#lidetails4").removeClass("active");
                 makeSection5Required();
                 break;
             case "details5": showDetails("details6");
-                //$("#lidetails6").css("background", "#1C578A");
-                //$("#lidetails5").css("background", "#26374A");
+                $("#lidetails6").addClass("active");
+                $("#lidetails5").removeClass("active");
                 makeSection6Required();
                 break;
             case "details6": showDetails("details7");
-                //$("#lidetails7").css("background", "#1C578A");
-                //$("#lidetails6").css("background", "#26374A");
+                $("#lidetails7").addClass("active");
+                $("#lidetails6").removeClass("active");
                 makeSection7Required();
                 break;
             case "details7": showDetails("details8");
-                //$("#lidetails8").css("background", "#1C578A");
-                //$("#lidetails7").css("background", "#26374A");
+                $("#lidetails8").addClass("active");
+                $("#lidetails7").removeClass("active");
                 makeSection8Required();
                 break;
             case "details8": showDetails("details9");
-                //$("#lidetails9").css("background", "#1C578A");
-                //$("#lidetails8").css("background", "#26374A");
+                $("#lidetails9").addClass("active");
+                $("#lidetails8").removeClass("active");
                 makeSection9Required();
                 break;
             case "details9": showDetails("details10");
-                //$("#lidetails10").css("background", "#1C578A");
-                //$("#lidetails9").css("background", "#26374A");
+                $("#lidetails10").addClass("active");
+                $("#lidetails9").removeClass("active");
                 makeSection10Required();
                 break;
             case "details10": showDetails("details11");
-                //$("#lidetails11").css("background", "#1C578A");
-                //$("#lidetails10").css("background", "#26374A");
+                $("#lidetails11").addClass("active");
+                $("#lidetails10").removeClass("active");
                 makeSection11Required();
                 break;
             case "details11": showDetails("details12");
-                //$("#lidetails12").css("background", "#1C578A");
-                //$("#lidetails11").css("background", "#26374A");
+                $("#lidetails12").addClass("active");
+                $("#lidetails11").removeClass("active");
                 $("#btnNext").attr("hidden", true);
                 $("#btnReview").removeAttr("hidden");
                 $("#btnPrevious").removeAttr("hidden");
@@ -499,20 +500,20 @@ function enableDisableReview() {
     }
 }
 
-function setTabsBackgroundDark() {
-    $("#lidetailsBasicInfo").css("background", "#26374A");
-    $("#lidetails1").css("background", "#26374A");
-    $("#lidetails2").css("background", "#26374A");
-    $("#lidetails3").css("background", "#26374A");
-    $("#lidetails4").css("background", "#26374A");
-    $("#lidetails5").css("background", "#26374A");
-    $("#lidetails6").css("background", "#26374A");
-    $("#lidetails7").css("background", "#26374A");
-    $("#lidetails8").css("background", "#26374A");
-    $("#lidetails9").css("background", "#26374A");
-    $("#lidetails10").css("background", "#26374A");
-    $("#lidetails11").css("background", "#26374A");
-    $("#lidetails12").css("background", "#26374A");
+function setTabsBackgroundToInit() {
+    $("#lidetailsBasicInfo").removeClass("active");
+    $("#lidetails1").removeClass("active");
+    $("#lidetails2").removeClass("active");
+    $("#lidetails3").removeClass("active");
+    $("#lidetails4").removeClass("active");
+    $("#lidetails5").removeClass("active");
+    $("#lidetails6").removeClass("active");
+    $("#lidetails7").removeClass("active");
+    $("#lidetails8").removeClass("active");
+    $("#lidetails9").removeClass("active");
+    $("#lidetails10").removeClass("active");
+    $("#lidetails11").removeClass("active");
+    $("#lidetails12").removeClass("active");
 }
 
 function submitBasicInfoForm() {
@@ -1150,6 +1151,7 @@ function errorSection1() {
     let fIELD1_2_3 = document.getElementById("txtFIELD1_2_3");
     let fIELD1_2_4 = document.getElementById("txtFIELD1_2_4");
     let fIELD1_2_5 = document.getElementById("txtFIELD1_2_5");
+    setTabsBackgroundToInit();
     showDetails('details1');
     if (fIELD1_1_1.value == "") {
         document.getElementById("txtFIELD1_1_1").focus();
@@ -1199,6 +1201,7 @@ function errorSection2() {
     let txtFIELD2_2_2_1 = document.getElementById("txtFIELD2_2_2_1");
     let txtFIELD2_2_2_2 = document.getElementById("txtFIELD2_2_2_2");
     let txtFIELD2_2_2_3 = document.getElementById("txtFIELD2_2_2_3");
+    setTabsBackgroundToInit();
     showDetails('details2');
     if (txtFIELD2_1_1.value == "") {
         document.getElementById("txtFIELD2_1_1").focus();
@@ -1230,6 +1233,7 @@ function errorSection3() {
     hideValidationModal();
     let txtFIELD3_1 = document.getElementById("txtFIELD3_1");
     let txtFIELD3_2 = document.getElementById("txtFIELD3_2");
+    setTabsBackgroundToInit();
     showDetails('details3');
     if (txtFIELD3_1.value == "") {
         document.getElementById("txtFIELD3_1").focus();
@@ -1277,6 +1281,7 @@ function errorSection4() {
     let txtFIELD4_3_6_1 = document.getElementById("txtFIELD4_3_6_1");
     let txtFIELD4_3_6_2 = document.getElementById("txtFIELD4_3_6_2");
     let txtFIELD4_3_6_3 = document.getElementById("txtFIELD4_3_6_3");
+    setTabsBackgroundToInit();
     showDetails('details4');
     if (txtFIELD4_1_1.value == "") {
         document.getElementById("txtFIELD4_1_1").focus();
@@ -1394,6 +1399,7 @@ function errorSection5() {
     let txtFIELD5_2 = document.getElementById("txtFIELD5_2");
     let txtFIELD5_3 = document.getElementById("txtFIELD5_3");
     let txtFIELD5_4 = document.getElementById("txtFIELD5_4");
+    setTabsBackgroundToInit();
     showDetails('details5');
     if (txtFIELD5_1.value == "") {
         document.getElementById("txtFIELD5_1").focus();
@@ -1420,6 +1426,7 @@ function errorSection6() {
     let txtFIELD6_3_1 = document.getElementById("txtFIELD6_3_1");
     let txtFIELD6_3_2 = document.getElementById("txtFIELD6_3_2");
     let txtFIELD6_3_3 = document.getElementById("txtFIELD6_3_3");
+    setTabsBackgroundToInit();
     showDetails('details6');
     if (txtFIELD6_1_1.value == "") {
         document.getElementById("txtFIELD6_1_1").focus();
@@ -1455,6 +1462,7 @@ function errorSection7() {
     let txtFIELD7_1_1 = document.getElementById("txtFIELD7_1_1");
     let txtFIELD7_1_2 = document.getElementById("txtFIELD7_1_2");
     let txtFIELD7_1_3 = document.getElementById("txtFIELD7_1_3");
+    setTabsBackgroundToInit();
     showDetails('details7');
     if (txtFIELD7_1_1.value == "") {
         document.getElementById("txtFIELD7_1_1").focus();
@@ -1472,6 +1480,7 @@ function errorSection8() {
     let txtFIELD8_1 = document.getElementById("txtFIELD8_1");
     let txtFIELD8_2 = document.getElementById("txtFIELD8_2");
     let txtFIELD8_3 = document.getElementById("txtFIELD8_3");
+    setTabsBackgroundToInit();
     showDetails('details8');
     if (txtFIELD8_1.value == "") {
         document.getElementById("txtFIELD8_1").focus();
@@ -1488,6 +1497,7 @@ function errorSection9() {
     hideValidationModal();
     let txtFIELD9_1 = document.getElementById("txtFIELD9_1");
     let txtFIELD9_2 = document.getElementById("txtFIELD9_2");
+    setTabsBackgroundToInit();
     showDetails('details9');
     if (txtFIELD9_1.value == "") {
         document.getElementById("txtFIELD9_1").focus();
@@ -1500,6 +1510,7 @@ function errorSection9() {
 function errorSection10() {
     hideValidationModal();
     let txtFIELD10_1 = document.getElementById("txtFIELD10_1");
+    setTabsBackgroundToInit();
     showDetails('details10');
     if (txtFIELD10_1.value == "") {
         document.getElementById("txtFIELD10_1").focus();
@@ -1510,6 +1521,7 @@ function errorSection11() {
     hideValidationModal();
     let txtFIELD11_1 = document.getElementById("txtFIELD11_1");
     let txtFIELD11_2 = document.getElementById("txtFIELD11_2");
+    setTabsBackgroundToInit();
     showDetails('details11');
     if (txtFIELD11_1.value == "") {
         document.getElementById("txtFIELD11_1").focus();
