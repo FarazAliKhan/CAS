@@ -277,7 +277,7 @@
                                             </div>
                                         </div>
                                         <input class="form-control" id="dtFROM" name="dtFROM" type="date" asp-for="@Model.dtFROM" onchange="javascript:enableDisableReview();" autocomplete="dtFROM" data-rule-minlength="1" style="width:100%" required="required"
-                                               data-num="" data-msg="Please enter From Date">
+                                               min="2025-01-01" max="2025-12-31" data-num="" data-msg="Please enter From Date">
 
                                     </div>
                                     <div class="form-group col-sm-4">
@@ -293,7 +293,7 @@
                                             </div>
                                         </div>
                                         <input class="form-control" id="dtTO" name="dtTO" type="date" asp-for="@Model.dtTO" onchange="javascript:enableDisableReview();" autocomplete="dtTO" data-rule-minlength="1" style="width:100%" required="required"
-                                               data-num="" data-msg="Please enter To Date">
+                                               min="2025-01-01" max="2025-12-31" data-num="" data-msg="Please enter To Date">
 
                                     </div>
                                 </div>
@@ -310,14 +310,15 @@
                                         <h5>
                                             <div class="row">
                                                 <div class="col-md-1">1.</div>
-                                                <div class="col-md-11">@htmlLocalizer["1_Heading"]
+                                                <div class="col-md-11">
+                                                    @htmlLocalizer["1_Heading"]
                                                     <div class="tooltip-container">
                                                         <span class="tooltip-trigger"><i class="fa-solid fa-circle-info"></i></span>
                                                         <div class="tooltip-content">
                                                             <p>@htmlLocalizer["1_Info"]</p>
                                                         </div>
                                                     </div>
-                                                </div>                                       
+                                                </div>
                                             </div>
                                         </h5>
                                     </label>
@@ -334,9 +335,9 @@
                                     <div class="row">
                                         <div class="col-md-1">1.1</div>
                                         <div class="col-md-11">
-                                    <label><span class="field-name">Civil appeals, cross-appeals, references, and JRs filed, disposed of, and abandoned or withdrawn</span></label>
-                                </div>
-                                </div>
+                                            <label><span class="field-name">Civil appeals, cross-appeals, references, and JRs filed, disposed of, and abandoned or withdrawn</span></label>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="row mt-4">
@@ -348,12 +349,12 @@
                                             <div class="row">
                                                 <div class="col-md-1">1.1.1</div>
                                                 <div class="col-md-11">
-                                            <label for="txtFIELD1_1_1"><span class="field-name">Number of civil appeals, cross-appeals, references, and JRs filed but still pending as of December 31<sup>st</sup> of the previous year </span></label>
-                                            <input class="form-control" id="txtFIELD1_1_1" name="txtFIELD1_1_1" type="number" min="0" asp-for="@Model.txtFIELD1_1_1" autocomplete="txtFIELD1_1_1" data-rule-minlength="1" style="width:100%"
-                                                   data-num="1.1.1" data-msg="Number of civil appeals, cross-appeals, references, and JRs filed but still pending as of December 31<sup>st</sup> of the previous year" onchange="javascript:calculateField_1_1_7();">
+                                                    <label for="txtFIELD1_1_1"><span class="field-name">Number of civil appeals, cross-appeals, references, and JRs filed but still pending as of December 31<sup>st</sup> of the previous year </span></label>
+                                                    <input class="form-control" id="txtFIELD1_1_1" name="txtFIELD1_1_1" type="number" min="0" asp-for="@Model.txtFIELD1_1_1" autocomplete="txtFIELD1_1_1" data-rule-minlength="1" style="width:100%"
+                                                           data-num="1.1.1" data-msg="Number of civil appeals, cross-appeals, references, and JRs filed but still pending as of December 31<sup>st</sup> of the previous year" onchange="javascript:calculateField_1_1_7();">
 
-                                        </div>
-                                        </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -367,11 +368,11 @@
                                             <div class="row">
                                                 <div class="col-md-1">1.1.2</div>
                                                 <div class="col-md-11">
-                                            <label for="txtFIELD1_1_2"><span class="field-name">Number of civil appeals, cross-appeals, references, and JRs filed  </span></label>
-                                            <input class="form-control" id="txtFIELD1_1_2" name="txtFIELD1_1_2" type="number" min="0" asp-for="@Model.txtFIELD1_1_2" autocomplete="txtFIELD1_1_2" data-rule-minlength="1" style="width:100%"
-                                                   data-num="1.1.2" data-msg="Number of civil appeals, cross-appeals, references, and JRs filed" onchange="javascript:calculateField_1_1_7();">
-                                        </div>
-                                        </div>
+                                                    <label for="txtFIELD1_1_2"><span class="field-name">Number of civil appeals, cross-appeals, references, and JRs filed  </span></label>
+                                                    <input class="form-control" id="txtFIELD1_1_2" name="txtFIELD1_1_2" type="number" min="0" asp-for="@Model.txtFIELD1_1_2" autocomplete="txtFIELD1_1_2" data-rule-minlength="1" style="width:100%"
+                                                           data-num="1.1.2" data-msg="Number of civil appeals, cross-appeals, references, and JRs filed" onchange="javascript:calculateField_1_1_7();">
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -385,13 +386,13 @@
                                             <div class="row">
                                                 <div class="col-md-1">1.1.3</div>
                                                 <div class="col-md-11">
-                                            <label for="txtFIELD1_1_3"><span class="field-name">Number of civil appeals, cross-appeals, references, and JRs disposed of by judgment </span></label>
-                                            <input class="form-control" id="txtFIELD1_1_3" name="txtFIELD1_1_3" type="number" min="0" asp-for="@Model.txtFIELD1_1_3" autocomplete="txtFIELD1_1_3" data-rule-minlength="1" style="width:100%"
-                                                   data-num="1.1.3" data-msg="Number of civil appeals, cross-appeals, references, and JRs disposed of by judgment" onchange="javascript:calculateField_1_1_7();">
+                                                    <label for="txtFIELD1_1_3"><span class="field-name">Number of civil appeals, cross-appeals, references, and JRs disposed of by judgment </span></label>
+                                                    <input class="form-control" id="txtFIELD1_1_3" name="txtFIELD1_1_3" type="number" min="0" asp-for="@Model.txtFIELD1_1_3" autocomplete="txtFIELD1_1_3" data-rule-minlength="1" style="width:100%"
+                                                           data-num="1.1.3" data-msg="Number of civil appeals, cross-appeals, references, and JRs disposed of by judgment" onchange="javascript:calculateField_1_1_7();">
+                                                </div>
+                                            </div>
                                         </div>
-                                        </div>
-                                        </div>
-                                     
+
                                     </div>
                                 </div>
                             </div>
@@ -404,25 +405,25 @@
                                             <div class="row">
                                                 <div class="col-md-1">1.1.4</div>
                                                 <div class="col-md-11">
-                                            <label for="txtFIELD1_1_4">
-                                                <span class="field-name">
-                                                    @htmlLocalizer["1_1_4_Heading"]
-                                                    <div class="tooltip-container">
-                                                        <span class="tooltip-trigger"><i class="fa-solid fa-circle-info"></i></span>
-                                                        <div class="tooltip-content">
-                                                            <p>
-                                                                @htmlLocalizer["1_1_4_Info"]
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </span>
-                                            </label>
+                                                    <label for="txtFIELD1_1_4">
+                                                        <span class="field-name">
+                                                            @htmlLocalizer["1_1_4_Heading"]
+                                                            <div class="tooltip-container">
+                                                                <span class="tooltip-trigger"><i class="fa-solid fa-circle-info"></i></span>
+                                                                <div class="tooltip-content">
+                                                                    <p>
+                                                                        @htmlLocalizer["1_1_4_Info"]
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </span>
+                                                    </label>
 
-                                            <input class="form-control" id="txtFIELD1_1_4" name="txtFIELD1_1_4" type="number" min="0" asp-for="@Model.txtFIELD1_1_4" autocomplete="txtFIELD1_1_4" data-rule-minlength="1" style="width:100%"
-                                                   data-num="1.1.4" data-msg="Number of civil appeals, cross-appeals, references, and JRs disposed of by the registrar, the case management officer or authorized personnel or by operation of the rules" onchange="javascript:calculateField_1_1_7();">
+                                                    <input class="form-control" id="txtFIELD1_1_4" name="txtFIELD1_1_4" type="number" min="0" asp-for="@Model.txtFIELD1_1_4" autocomplete="txtFIELD1_1_4" data-rule-minlength="1" style="width:100%"
+                                                           data-num="1.1.4" data-msg="Number of civil appeals, cross-appeals, references, and JRs disposed of by the registrar, the case management officer or authorized personnel or by operation of the rules" onchange="javascript:calculateField_1_1_7();">
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    </div>
                                     </div>
                                 </div>
                             </div>
@@ -435,24 +436,24 @@
                                             <div class="row">
                                                 <div class="col-md-1">1.1.5</div>
                                                 <div class="col-md-11">
-                                            <label for="txtFIELD1_1_5">
-                                                <span class="field-name">
-                                                    Number of civil appeals, cross-appeals, references, and JRs settled by judicial mediation
-                                                    <div class="tooltip-container">
-                                                        <span class="tooltip-trigger"><i class="fa-solid fa-circle-info"></i></span>
-                                                        <div class="tooltip-content">
-                                                            <p>
-                                                                To be included in this category, the settlement must have taken place at the time of judicial mediation and can include settlement, abandonment or withdrawal of the appeal at that time.
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </span>
-                                            </label>
-                                            <input class="form-control" id="txtFIELD1_1_5" name="txtFIELD1_1_5" type="number" min="0" asp-for="@Model.txtFIELD1_1_5" autocomplete="txtFIELD1_1_5" data-rule-minlength="1" style="width:100%"
-                                                   data-num="1.1.5" data-msg="Number of civil appeals, cross-appeals, references, and JRs settled by judicial mediation" onchange="javascript:calculateField_1_1_7();">
-                                            <span asp-validation-for="@Model.txtFIELD1_1_5" class="label label-danger"></span>
-                                        </div>
-                                        </div>
+                                                    <label for="txtFIELD1_1_5">
+                                                        <span class="field-name">
+                                                            Number of civil appeals, cross-appeals, references, and JRs settled by judicial mediation
+                                                            <div class="tooltip-container">
+                                                                <span class="tooltip-trigger"><i class="fa-solid fa-circle-info"></i></span>
+                                                                <div class="tooltip-content">
+                                                                    <p>
+                                                                        To be included in this category, the settlement must have taken place at the time of judicial mediation and can include settlement, abandonment or withdrawal of the appeal at that time.
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </span>
+                                                    </label>
+                                                    <input class="form-control" id="txtFIELD1_1_5" name="txtFIELD1_1_5" type="number" min="0" asp-for="@Model.txtFIELD1_1_5" autocomplete="txtFIELD1_1_5" data-rule-minlength="1" style="width:100%"
+                                                           data-num="1.1.5" data-msg="Number of civil appeals, cross-appeals, references, and JRs settled by judicial mediation" onchange="javascript:calculateField_1_1_7();">
+                                                    <span asp-validation-for="@Model.txtFIELD1_1_5" class="label label-danger"></span>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -466,25 +467,25 @@
                                             <div class="row">
                                                 <div class="col-md-1">1.1.6</div>
                                                 <div class="col-md-11">
-                                            <label for="txtFIELD1_1_6">
-                                                <span class="field-name">
-                                                    Number of civil appeals, cross-appeals, references, and JRs disposed of by other means
-                                                    <div class="tooltip-container">
-                                                        <span class="tooltip-trigger"><i class="fa-solid fa-circle-info"></i></span>
-                                                        <div class="tooltip-content">
-                                                            <p>
-                                                                These appeals, cross-appeals, references, and JRs are to include those that are abandoned, withdrawn, dismissed for want of prosecution, non-compliance with rules, dispositions by a single judge, etc. The civil appeals, cross-appeals, references, and JRs abandoned or withdrawn by the registrar take into account the certificates of lapse of appeal issued by the registry.
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </span>
-                                            </label>
-                                            <input class="form-control" id="txtFIELD1_1_6" name="txtFIELD1_1_6" type="number" min="0" asp-for="@Model.txtFIELD1_1_6" autocomplete="txtFIELD1_1_6" data-rule-minlength="1" style="width:100%"
-                                                   data-num="1.1.6" data-msg="Number of civil appeals, cross-appeals, references, and JRs disposed of by other means" onchange="javascript:calculateField_1_1_7();">
-                                            <span asp-validation-for="@Model.txtFIELD1_1_6" class="label label-danger"></span>
+                                                    <label for="txtFIELD1_1_6">
+                                                        <span class="field-name">
+                                                            Number of civil appeals, cross-appeals, references, and JRs disposed of by other means
+                                                            <div class="tooltip-container">
+                                                                <span class="tooltip-trigger"><i class="fa-solid fa-circle-info"></i></span>
+                                                                <div class="tooltip-content">
+                                                                    <p>
+                                                                        These appeals, cross-appeals, references, and JRs are to include those that are abandoned, withdrawn, dismissed for want of prosecution, non-compliance with rules, dispositions by a single judge, etc. The civil appeals, cross-appeals, references, and JRs abandoned or withdrawn by the registrar take into account the certificates of lapse of appeal issued by the registry.
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </span>
+                                                    </label>
+                                                    <input class="form-control" id="txtFIELD1_1_6" name="txtFIELD1_1_6" type="number" min="0" asp-for="@Model.txtFIELD1_1_6" autocomplete="txtFIELD1_1_6" data-rule-minlength="1" style="width:100%"
+                                                           data-num="1.1.6" data-msg="Number of civil appeals, cross-appeals, references, and JRs disposed of by other means" onchange="javascript:calculateField_1_1_7();">
+                                                    <span asp-validation-for="@Model.txtFIELD1_1_6" class="label label-danger"></span>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    </div>
                                     </div>
                                 </div>
                             </div>
@@ -494,57 +495,57 @@
                                     <div class="row">
                                         <div class="col-md-1"></div>
                                         <div class="col-md-11">
-                                        <div class="row">
-                                            <div class="col-md-1">1.1.7</div>
-                                            <div class="col-md-11">
-                                            <label for="txtFIELD1_1_7">
-                                                <span class="field-name">
-                                                    Total number of civil appeals, cross-appeals, references, and JRs
-                                                    <div class="tooltip-container">
-                                                        <span class="tooltip-trigger"><i class="fa-solid fa-circle-info"></i></span>
-                                                        <div class="tooltip-content">
-                                                            <p>
-                                                                Previous year civil appeals, cross-appeals, references and JRs filed but still pending as of December 31st of the previous year (1.1.1) plus new civil appeals, cross-appeals, references, and JRs filed (1.1.2) minus total number of civil appeals, cross-appeals, references, and JRs disposed of, settled by mediation, abandoned or withdrawn (1.1.3 to 1.1.6) = net civil appeals, cross-appeals, references, and JRs for the year.
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </span>
-                                            </label>
-                                            <input class="form-control" id="txtFIELD1_1_7" name="txtFIELD1_1_7" type="number" min="0" asp-for="@Model.txtFIELD1_1_7" autocomplete="txtFIELD1_1_7" data-rule-minlength="1" style="width:100%"
-                                                   data-num="1.1.7" data-msg="Total number of civil appeals, cross-appeals, references, and JRs">
-                                            <span asp-validation-for="@Model.txtFIELD1_1_3" class="label label-danger"></span>
+                                            <div class="row">
+                                                <div class="col-md-1">1.1.7</div>
+                                                <div class="col-md-11">
+                                                    <label for="txtFIELD1_1_7">
+                                                        <span class="field-name">
+                                                            Total number of civil appeals, cross-appeals, references, and JRs
+                                                            <div class="tooltip-container">
+                                                                <span class="tooltip-trigger"><i class="fa-solid fa-circle-info"></i></span>
+                                                                <div class="tooltip-content">
+                                                                    <p>
+                                                                        Previous year civil appeals, cross-appeals, references and JRs filed but still pending as of December 31st of the previous year (1.1.1) plus new civil appeals, cross-appeals, references, and JRs filed (1.1.2) minus total number of civil appeals, cross-appeals, references, and JRs disposed of, settled by mediation, abandoned or withdrawn (1.1.3 to 1.1.6) = net civil appeals, cross-appeals, references, and JRs for the year.
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </span>
+                                                    </label>
+                                                    <input class="form-control" id="txtFIELD1_1_7" name="txtFIELD1_1_7" type="number" min="0" asp-for="@Model.txtFIELD1_1_7" autocomplete="txtFIELD1_1_7" data-rule-minlength="1" style="width:100%"
+                                                           data-num="1.1.7" data-msg="Total number of civil appeals, cross-appeals, references, and JRs">
+                                                    <span asp-validation-for="@Model.txtFIELD1_1_3" class="label label-danger"></span>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            </div>
                             </div>
                         </div>
                         <div class="align-left  fs-6">
 
                             <div class="row  mt-4">
-   
-                                    <div class="col-md-1"></div>
-                                    <div class="col-md-11">
+
+                                <div class="col-md-1"></div>
+                                <div class="col-md-11">
                                     <div class="row ">
                                         <div class="col-md-1">1.2</div>
                                         <div class="col-md-11">
-                                    <label>
+                                            <label>
 
-                                        <span class="field-name">
-                                            Criminal appeals, cross-appeals, references and bail reviews filed, disposed of, and abandoned or withdrawn. <br /><input type="checkbox" /> Conviction appeal and sentence appeal are heard together
-                                            <div class="tooltip-container">
-                                                <span class="tooltip-trigger"><i class="fa-solid fa-circle-info"></i></span>
-                                                <div class="tooltip-content">
-                                                    <p>
-                                                        Courts that hear conviction and sentence appeals together should check this box.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </span>
+                                                <span class="field-name">
+                                                    Criminal appeals, cross-appeals, references and bail reviews filed, disposed of, and abandoned or withdrawn. <br /><input type="checkbox" /> Conviction appeal and sentence appeal are heard together
+                                                    <div class="tooltip-container">
+                                                        <span class="tooltip-trigger"><i class="fa-solid fa-circle-info"></i></span>
+                                                        <div class="tooltip-content">
+                                                            <p>
+                                                                Courts that hear conviction and sentence appeals together should check this box.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </span>
 
-                                    </label>
-                                    </div>
+                                            </label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -557,13 +558,13 @@
                                             <div class="row">
                                                 <div class="col-md-1">1.2.1</div>
                                                 <div class="col-md-11">
-                                            <label for="txtFIELD1_2_1"><span class="field-name">Number of criminal appeals, cross-appeals, references and bail reviews filed but still pending as of December 31<sup>st</sup> of the previous year </span></label>
-                                            <input class="form-control" id="txtFIELD1_2_1" name="txtFIELD1_2_1" type="number" min="0" asp-for="@Model.txtFIELD1_2_1" autocomplete="txtFIELD1_2_1" data-rule-minlength="1" style="width:100%"
-                                                   data-num="1.2.1" data-msg="Number of civil appeals, cross-appeals, references, and JRs filed of criminal appeals, cross-appeals, references and bail reviews filed but still pending as of December 31<sup>st</sup> of the previous year" onchange="javascript:calculateField_1_2_5();">
-                                            <span asp-validation-for="@Model.txtFIELD1_2_1" class="label label-danger"></span>
+                                                    <label for="txtFIELD1_2_1"><span class="field-name">Number of criminal appeals, cross-appeals, references and bail reviews filed but still pending as of December 31<sup>st</sup> of the previous year </span></label>
+                                                    <input class="form-control" id="txtFIELD1_2_1" name="txtFIELD1_2_1" type="number" min="0" asp-for="@Model.txtFIELD1_2_1" autocomplete="txtFIELD1_2_1" data-rule-minlength="1" style="width:100%"
+                                                           data-num="1.2.1" data-msg="Number of civil appeals, cross-appeals, references, and JRs filed of criminal appeals, cross-appeals, references and bail reviews filed but still pending as of December 31<sup>st</sup> of the previous year" onchange="javascript:calculateField_1_2_5();">
+                                                    <span asp-validation-for="@Model.txtFIELD1_2_1" class="label label-danger"></span>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    </div>
                                     </div>
                                 </div>
                             </div>
@@ -576,25 +577,26 @@
                                             <div class="row">
                                                 <div class="col-md-1">1.2.2</div>
                                                 <div class="col-md-11">
-                                            <label for="txtFIELD1_2_2">
-                                                <span class="field-name">
-                                                    Number of criminal  appeals, cross-appeals, references and bail reviews filed
-                                                    <div class="tooltip-container">
-                                                        <span class="tooltip-trigger"><i class="fa-solid fa-circle-info"></i></span>
-                                                        <div class="tooltip-content">
-                                                            <p>
-                                                                The criminal appeals, cross-appeals, references and bail reviews filed involving the Youth Criminal Justice Act are not to be separately tracked as such. They should be counted as any other criminal appeals, cross-appeals, references and bail reviews filed.
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </span>
-                                            </label>
+                                                    <label for="txtFIELD1_2_2">
+                                                        <span class="field-name">
+                                                            Number of criminal  appeals, cross-appeals, references and bail reviews filed
+                                                            <div class="tooltip-container">
+                                                                <span class="tooltip-trigger"><i class="fa-solid fa-circle-info"></i></span>
+                                                                <div class="tooltip-content">
+                                                                    <p>
+                                                                        The criminal appeals, cross-appeals, references and bail reviews filed involving the Youth Criminal Justice Act are not to be separately tracked as such. They should be counted as any other criminal appeals, cross-appeals, references and bail reviews filed.
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </span>
+                                                    </label>
 
-                                            <input class="form-control" id="txtFIELD1_2_2" name="txtFIELD1_2_2" type="number" min="0" asp-for="@Model.txtFIELD1_2_2" autocomplete="txtFIELD1_2_2" data-rule-minlength="1" style="width:100%"
-                                                   data-num="1.2.2" data-msg="Number of civil appeals, cross-appeals, references, and JRs filed of criminal  appeals, cross-appeals, references and bail reviews filed" onchange="javascript:calculateField_1_2_5();">
-                                            <span asp-validation-for="@Model.txtFIELD1_2_2" class="label label-danger"></span>
+                                                    <input class="form-control" id="txtFIELD1_2_2" name="txtFIELD1_2_2" type="number" min="0" asp-for="@Model.txtFIELD1_2_2" autocomplete="txtFIELD1_2_2" data-rule-minlength="1" style="width:100%"
+                                                           data-num="1.2.2" data-msg="Number of civil appeals, cross-appeals, references, and JRs filed of criminal  appeals, cross-appeals, references and bail reviews filed" onchange="javascript:calculateField_1_2_5();">
+                                                    <span asp-validation-for="@Model.txtFIELD1_2_2" class="label label-danger"></span>
+                                                </div>
+                                            </div>
                                         </div>
-                                        </div></div>
                                     </div>
                                 </div>
                             </div>
@@ -607,25 +609,26 @@
                                             <div class="row">
                                                 <div class="col-md-1">1.2.3</div>
                                                 <div class="col-md-11">
-                                            <label for="txtFIELD1_2_3">
-                                                <span class="field-name">
-                                                    Number of criminal appeals, cross-appeals, references and bail reviews disposed of by judgment
-                                                    <div class="tooltip-container">
-                                                        <span class="tooltip-trigger"><i class="fa-solid fa-circle-info"></i></span>
-                                                        <div class="tooltip-content">
-                                                            <p>
-                                                                The criminal appeals, cross-appeals, references and bail reviews disposed of by judgment involving the Youth <i>Criminal Justice Act</i> are not to be tracked separately. They should be counted as any other criminal appeals, cross appeals, references and bail reviews disposed of.
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </span>
-                                            </label>
+                                                    <label for="txtFIELD1_2_3">
+                                                        <span class="field-name">
+                                                            Number of criminal appeals, cross-appeals, references and bail reviews disposed of by judgment
+                                                            <div class="tooltip-container">
+                                                                <span class="tooltip-trigger"><i class="fa-solid fa-circle-info"></i></span>
+                                                                <div class="tooltip-content">
+                                                                    <p>
+                                                                        The criminal appeals, cross-appeals, references and bail reviews disposed of by judgment involving the Youth <i>Criminal Justice Act</i> are not to be tracked separately. They should be counted as any other criminal appeals, cross appeals, references and bail reviews disposed of.
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </span>
+                                                    </label>
 
-                                            <input class="form-control" id="txtFIELD1_2_3" name="txtFIELD1_2_3" type="number" min="0" asp-for="@Model.txtFIELD1_2_3" autocomplete="txtFIELD1_2_3" data-rule-minlength="1" style="width:100%"
-                                                   data-num="1.2.3" data-msg="Number of criminal appeals, cross-appeals, references and bail reviews disposed of by judgment" onchange="javascript:calculateField_1_2_5();">
-                                            <span asp-validation-for="@Model.txtFIELD1_2_3" class="label label-danger"></span>
+                                                    <input class="form-control" id="txtFIELD1_2_3" name="txtFIELD1_2_3" type="number" min="0" asp-for="@Model.txtFIELD1_2_3" autocomplete="txtFIELD1_2_3" data-rule-minlength="1" style="width:100%"
+                                                           data-num="1.2.3" data-msg="Number of criminal appeals, cross-appeals, references and bail reviews disposed of by judgment" onchange="javascript:calculateField_1_2_5();">
+                                                    <span asp-validation-for="@Model.txtFIELD1_2_3" class="label label-danger"></span>
+                                                </div>
+                                            </div>
                                         </div>
-                                        </div></div>
                                     </div>
                                 </div>
                             </div>
@@ -638,25 +641,26 @@
                                             <div class="row">
                                                 <div class="col-md-1">1.2.4</div>
                                                 <div class="col-md-11">
-                                            <label for="txtFIELD1_2_4">
-                                                <span class="field-name">
-                                                    Number of criminal appeals, cross-appeals, references and bail reviews disposed of by other means
-                                                    <div class="tooltip-container">
-                                                        <span class="tooltip-trigger"><i class="fa-solid fa-circle-info"></i></span>
-                                                        <div class="tooltip-content">
-                                                            <p>
-                                                                These appeals, cross-appeals, references and bail reviews are to include those that are settled by judicial facilitations, abandoned, withdrawn, dismissed for want of prosecution, non-compliance with rules, and disposed of by a single judge, etc.
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </span>
-                                            </label>
+                                                    <label for="txtFIELD1_2_4">
+                                                        <span class="field-name">
+                                                            Number of criminal appeals, cross-appeals, references and bail reviews disposed of by other means
+                                                            <div class="tooltip-container">
+                                                                <span class="tooltip-trigger"><i class="fa-solid fa-circle-info"></i></span>
+                                                                <div class="tooltip-content">
+                                                                    <p>
+                                                                        These appeals, cross-appeals, references and bail reviews are to include those that are settled by judicial facilitations, abandoned, withdrawn, dismissed for want of prosecution, non-compliance with rules, and disposed of by a single judge, etc.
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </span>
+                                                    </label>
 
-                                            <input class="form-control" id="txtFIELD1_2_4" name="txtFIELD1_2_4" type="number" min="0" asp-for="@Model.txtFIELD1_2_4" autocomplete="txtFIELD1_2_4" data-rule-minlength="1" style="width:100%"
-                                                   data-num="1.2.4" data-msg="Number of criminal appeals, cross-appeals, references and bail reviews disposed of by other means" onchange="javascript:calculateField_1_2_5();">
-                                            <span asp-validation-for="@Model.txtFIELD1_2_4" class="label label-danger"></span>
+                                                    <input class="form-control" id="txtFIELD1_2_4" name="txtFIELD1_2_4" type="number" min="0" asp-for="@Model.txtFIELD1_2_4" autocomplete="txtFIELD1_2_4" data-rule-minlength="1" style="width:100%"
+                                                           data-num="1.2.4" data-msg="Number of criminal appeals, cross-appeals, references and bail reviews disposed of by other means" onchange="javascript:calculateField_1_2_5();">
+                                                    <span asp-validation-for="@Model.txtFIELD1_2_4" class="label label-danger"></span>
+                                                </div>
+                                            </div>
                                         </div>
-                                        </div></div>
                                     </div>
                                 </div>
                             </div>
@@ -669,25 +673,26 @@
                                             <div class="row">
                                                 <div class="col-md-1">1.2.5</div>
                                                 <div class="col-md-11">
-                                            <label for="txtFIELD1_2_5">
-                                                <span class="field-name">
-                                                    Total number of criminal  appeals, cross-appeals, references and bail reviews
-                                                    <div class="tooltip-container">
-                                                        <span class="tooltip-trigger"><i class="fa-solid fa-circle-info"></i></span>
-                                                        <div class="tooltip-content">
-                                                            <p>
-                                                                Criminal appeals, cross-appeals, references and bail reviews filed but still pending as of December 31st of the previous year (1.2.1) plus new criminal appeals, cross-appeals, references and bail reviews filed (1.2.2) minus total number of criminal appeals, cross-appeals, references and bail reviews disposed of, settled by judicial facilitations, abandoned or withdrawn (1.2.3 to 1.2.4) = net criminal appeals, cross-appeals, references and bail reviews for the year.
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </span>
-                                            </label>
+                                                    <label for="txtFIELD1_2_5">
+                                                        <span class="field-name">
+                                                            Total number of criminal  appeals, cross-appeals, references and bail reviews
+                                                            <div class="tooltip-container">
+                                                                <span class="tooltip-trigger"><i class="fa-solid fa-circle-info"></i></span>
+                                                                <div class="tooltip-content">
+                                                                    <p>
+                                                                        Criminal appeals, cross-appeals, references and bail reviews filed but still pending as of December 31st of the previous year (1.2.1) plus new criminal appeals, cross-appeals, references and bail reviews filed (1.2.2) minus total number of criminal appeals, cross-appeals, references and bail reviews disposed of, settled by judicial facilitations, abandoned or withdrawn (1.2.3 to 1.2.4) = net criminal appeals, cross-appeals, references and bail reviews for the year.
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </span>
+                                                    </label>
 
-                                            <input class="form-control" id="txtFIELD1_2_5" name="txtFIELD1_2_5" type="number" min="0" asp-for="@Model.txtFIELD1_2_5" autocomplete="txtFIELD1_2_5" data-rule-minlength="1" style="width:100%"
-                                                   data-num="1.2.5" data-msg="Total number of criminal  appeals, cross-appeals, references and bail reviews">
-                                            <span asp-validation-for="@Model.txtFIELD1_2_5" class="label label-danger"></span>
+                                                    <input class="form-control" id="txtFIELD1_2_5" name="txtFIELD1_2_5" type="number" min="0" asp-for="@Model.txtFIELD1_2_5" autocomplete="txtFIELD1_2_5" data-rule-minlength="1" style="width:100%"
+                                                           data-num="1.2.5" data-msg="Total number of criminal  appeals, cross-appeals, references and bail reviews">
+                                                    <span asp-validation-for="@Model.txtFIELD1_2_5" class="label label-danger"></span>
+                                                </div>
+                                            </div>
                                         </div>
-                                        </div></div>
                                     </div>
                                 </div>
                             </div>
@@ -734,9 +739,10 @@
                                     <div class="row">
                                         <div class="col-md-1">2.1</div>
                                         <div class="col-md-11">
-                                    <label><span class="field-name">Civil case decisions</span></label>
+                                            <label><span class="field-name">Civil case decisions</span></label>
+                                        </div>
+                                    </div>
                                 </div>
-                                </div></div>
                             </div>
                             <div class="row  mt-4">
                                 <div class="col-md-1"></div>
@@ -747,22 +753,23 @@
                                             <div class="row">
                                                 <div class="col-md-1">2.1.1</div>
                                                 <div class="col-md-11">
-                                            <label for="txtFIELD2_1_1">
-                                                <span class="field-name">
-                                                    Number of civil case decisions given at hearing
-                                                    <div class="tooltip-container">
-                                                        <span class="tooltip-trigger"><i class="fa-solid fa-circle-info"></i></span>
-                                                        <div class="tooltip-content">
-                                                            <p>A decision given at hearing (also referred to as Bench decision) is a decision that is rendered immediately after the hearing, the same day of the hearing or during the same sitting week. If a decision is given at the hearing but the reasons follow the pronouncement, which means that the reasons are not provided immediately after the hearing, on the same day of the hearing or on the same sitting week of the hearing, this decision should be counted as a reserved judgment. </p>
-                                                        </div>
-                                                    </div>
-                                                </span>
-                                            </label>
-                                            <input class="form-control" id="txtFIELD2_1_1" name="txtFIELD2_1_1" type="number" min="0" asp-for="@Model.txtFIELD2_1_1" autocomplete="txtFIELD2_1_1" data-rule-minlength="1" style="width:100%"
-                                                   data-num="2.1.1" data-msg="Number of civil appeals, cross-appeals, references, and JRs filed of civil case decisions given at hearing">
-                                            <span asp-validation-for="@Model.txtFIELD2_1_1" class="label label-danger"></span>
+                                                    <label for="txtFIELD2_1_1">
+                                                        <span class="field-name">
+                                                            Number of civil case decisions given at hearing
+                                                            <div class="tooltip-container">
+                                                                <span class="tooltip-trigger"><i class="fa-solid fa-circle-info"></i></span>
+                                                                <div class="tooltip-content">
+                                                                    <p>A decision given at hearing (also referred to as Bench decision) is a decision that is rendered immediately after the hearing, the same day of the hearing or during the same sitting week. If a decision is given at the hearing but the reasons follow the pronouncement, which means that the reasons are not provided immediately after the hearing, on the same day of the hearing or on the same sitting week of the hearing, this decision should be counted as a reserved judgment. </p>
+                                                                </div>
+                                                            </div>
+                                                        </span>
+                                                    </label>
+                                                    <input class="form-control" id="txtFIELD2_1_1" name="txtFIELD2_1_1" type="number" min="0" asp-for="@Model.txtFIELD2_1_1" autocomplete="txtFIELD2_1_1" data-rule-minlength="1" style="width:100%"
+                                                           data-num="2.1.1" data-msg="Number of civil appeals, cross-appeals, references, and JRs filed of civil case decisions given at hearing">
+                                                    <span asp-validation-for="@Model.txtFIELD2_1_1" class="label label-danger"></span>
+                                                </div>
+                                            </div>
                                         </div>
-                                        </div></div>
                                     </div>
                                 </div>
                             </div>
@@ -775,27 +782,28 @@
                                             <div class="row">
                                                 <div class="col-md-1">2.1.2</div>
                                                 <div class="col-md-11">
-                                            <label for="txtFIELD2_1_2">
-                                                <span class="field-name">
-                                                    Number of civil case reserved decisions
-                                                    <div class="tooltip-container">
-                                                        <span class="tooltip-trigger"><i class="fa-solid fa-circle-info"></i></span>
-                                                        <div class="tooltip-content">
-                                                            <p>
-                                                                A decision given after reserving is a decision that is rendered at a later date, i.e., not immediately after the hearing, not on the same day of the hearing and not during the same sitting week.
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </span>
-                                            </label>
-                                            <input class="form-control" id="txtFIELD2_1_2" name="txtFIELD2_1_2" type="number" min="0" asp-for="@Model.txtFIELD2_1_2" autocomplete="txtFIELD2_1_2" data-rule-minlength="1" style="width:100%"
-                                                   data-num="2.1.2" data-msg="Number of civil case reserved decisions">
-                                            <span asp-validation-for="@Model.txtFIELD2_1_2" class="label label-danger"></span>
+                                                    <label for="txtFIELD2_1_2">
+                                                        <span class="field-name">
+                                                            Number of civil case reserved decisions
+                                                            <div class="tooltip-container">
+                                                                <span class="tooltip-trigger"><i class="fa-solid fa-circle-info"></i></span>
+                                                                <div class="tooltip-content">
+                                                                    <p>
+                                                                        A decision given after reserving is a decision that is rendered at a later date, i.e., not immediately after the hearing, not on the same day of the hearing and not during the same sitting week.
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </span>
+                                                    </label>
+                                                    <input class="form-control" id="txtFIELD2_1_2" name="txtFIELD2_1_2" type="number" min="0" asp-for="@Model.txtFIELD2_1_2" autocomplete="txtFIELD2_1_2" data-rule-minlength="1" style="width:100%"
+                                                           data-num="2.1.2" data-msg="Number of civil case reserved decisions">
+                                                    <span asp-validation-for="@Model.txtFIELD2_1_2" class="label label-danger"></span>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            </div></div>
                         </div>
                         <div class="align-left  fs-6">
 
@@ -805,8 +813,8 @@
                                     <div class="row">
                                         <div class="col-md-1">2.2</div>
                                         <div class="col-md-11">
-                                        <label><span class="field-name">Criminal case decisions </span></label>
-                                    </div>
+                                            <label><span class="field-name">Criminal case decisions </span></label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -822,27 +830,28 @@
                                                 <div class="row">
                                                     <div class="col-md-1">2.2.1</div>
                                                     <div class="col-md-11">
-                                                <label for="txtFIELD2_2_1">
-                                                    <span class="field-name">
-                                                        Number of criminal case decisions given at hearing
-                                                        <div class="tooltip-container">
-                                                            <span class="tooltip-trigger"><i class="fa-solid fa-circle-info"></i></span>
-                                                            <div class="tooltip-content">
-                                                                <p>
-                                                                    A decision given at hearing (also referred to as Bench decision) is a decision that is rendered immediately after the hearing, the same day of the hearing or during the same sitting week. If a decision is given at the hearing but the reasons follow the pronouncement, which means that the reasons are not provided immediately after the hearing, on the same day of the hearing or on the same sitting week of the hearing, this decision should be counted as a reserved judgment.<br /><br />The decisions involving the <i>Youth Criminal Justice Act</i> are not to be tracked separately. They should be counted as any other criminal appeal decision.
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </span>
-                                                </label>
-                                                <input class="form-control" id="txtFIELD2_2_1" name="txtFIELD2_2_1" type="number" min="0" asp-for="@Model.txtFIELD2_2_1" autocomplete="txtFIELD2_2_1" data-rule-minlength="1" style="width:100%"
-                                                       data-num="2.2.1" data-msg="Number of criminal case decisions given at hearing">
-                                                <span asp-validation-for="@Model.txtFIELD2_2_1" class="label label-danger"></span>
+                                                        <label for="txtFIELD2_2_1">
+                                                            <span class="field-name">
+                                                                Number of criminal case decisions given at hearing
+                                                                <div class="tooltip-container">
+                                                                    <span class="tooltip-trigger"><i class="fa-solid fa-circle-info"></i></span>
+                                                                    <div class="tooltip-content">
+                                                                        <p>
+                                                                            A decision given at hearing (also referred to as Bench decision) is a decision that is rendered immediately after the hearing, the same day of the hearing or during the same sitting week. If a decision is given at the hearing but the reasons follow the pronouncement, which means that the reasons are not provided immediately after the hearing, on the same day of the hearing or on the same sitting week of the hearing, this decision should be counted as a reserved judgment.<br /><br />The decisions involving the <i>Youth Criminal Justice Act</i> are not to be tracked separately. They should be counted as any other criminal appeal decision.
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </span>
+                                                        </label>
+                                                        <input class="form-control" id="txtFIELD2_2_1" name="txtFIELD2_2_1" type="number" min="0" asp-for="@Model.txtFIELD2_2_1" autocomplete="txtFIELD2_2_1" data-rule-minlength="1" style="width:100%"
+                                                               data-num="2.2.1" data-msg="Number of criminal case decisions given at hearing">
+                                                        <span asp-validation-for="@Model.txtFIELD2_2_1" class="label label-danger"></span>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                </div></div>
 
                                 <div class="align-left  fs-6">
 
@@ -858,19 +867,22 @@
                                                             <div class="row">
                                                                 <div class="col-md-1">2.2.1.1</div>
                                                                 <div class="col-md-11">
-                                                    <label for="txtFIELD2_2_1_1">
-                                                        <span class="field-name">
-                                                            Number of convictions/acquittals given at hearing
+                                                                    <label for="txtFIELD2_2_1_1">
+                                                                        <span class="field-name">
+                                                                            Number of convictions/acquittals given at hearing
 
-                                                        </span>
-                                                    </label>
-                                                    <input class="form-control" id="txtFIELD2_2_1_1" name="txtFIELD2_2_1_1" type="number" min="0" asp-for="@Model.txtFIELD2_2_1_1" autocomplete="txtFIELD2_2_1_1" data-rule-minlength="1" style="width:100%"
-                                                           data-num="2.2.1.1" data-msg="Number of convictions/acquittals given at hearing">
-                                                    <span asp-validation-for="@Model.txtFIELD2_2_1_1" class="label label-danger"></span>
+                                                                        </span>
+                                                                    </label>
+                                                                    <input class="form-control" id="txtFIELD2_2_1_1" name="txtFIELD2_2_1_1" type="number" min="0" asp-for="@Model.txtFIELD2_2_1_1" autocomplete="txtFIELD2_2_1_1" data-rule-minlength="1" style="width:100%"
+                                                                           data-num="2.2.1.1" data-msg="Number of convictions/acquittals given at hearing">
+                                                                    <span asp-validation-for="@Model.txtFIELD2_2_1_1" class="label label-danger"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        </div></div></div></div>
                                     </div>
                                     <div class="row mt-4">
                                         <div class="col-md-1"></div>
@@ -879,24 +891,27 @@
                                                 <div class="col-md-1"></div>
                                                 <div class="col-md-11">
                                                     <div class="row">
-                                                <div class="col-md-1"></div>
-                                                <div class="col-md-11">
+                                                        <div class="col-md-1"></div>
+                                                        <div class="col-md-11">
                                                             <div class="row">
                                                                 <div class="col-md-1">2.2.1.2</div>
                                                                 <div class="col-md-11">
-                                                    <label for="txtFIELD2_2_1_2">
-                                                        <span class="field-name">
-                                                            Number of sentences given at hearing
+                                                                    <label for="txtFIELD2_2_1_2">
+                                                                        <span class="field-name">
+                                                                            Number of sentences given at hearing
 
-                                                        </span>
-                                                    </label>
-                                                    <input class="form-control" id="txtFIELD2_2_1_2" name="txtFIELD2_2_1_2" type="number" min="0" asp-for="@Model.txtFIELD2_2_1_2" autocomplete="txtFIELD2_2_1_2" data-rule-minlength="1" style="width:100%"
-                                                           data-num="2.2.1.2" data-msg="Number of sentences given at hearing">
-                                                    <span asp-validation-for="@Model.txtFIELD2_2_1_2" class="label label-danger"></span>
+                                                                        </span>
+                                                                    </label>
+                                                                    <input class="form-control" id="txtFIELD2_2_1_2" name="txtFIELD2_2_1_2" type="number" min="0" asp-for="@Model.txtFIELD2_2_1_2" autocomplete="txtFIELD2_2_1_2" data-rule-minlength="1" style="width:100%"
+                                                                           data-num="2.2.1.2" data-msg="Number of sentences given at hearing">
+                                                                    <span asp-validation-for="@Model.txtFIELD2_2_1_2" class="label label-danger"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        </div></div></div></div>
                                     </div>
                                     <div class="row  mt-4">
                                         <div class="col-md-1"></div>
@@ -905,31 +920,31 @@
                                                 <div class="col-md-1"></div>
                                                 <div class="col-md-11">
                                                     <div class="row">
-                                                <div class="col-md-1"></div>
-                                                <div class="col-md-11">
+                                                        <div class="col-md-1"></div>
+                                                        <div class="col-md-11">
                                                             <div class="row">
                                                                 <div class="col-md-1">2.2.1.3</div>
                                                                 <div class="col-md-11">
-                                                    <label for="txtFIELD2_2_1_3">
-                                                        <span class="field-name">
-                                                            Number of other criminal appeals given at hearing
-                                                            <div class="tooltip-container">
-                                                                <span class="tooltip-trigger"><i class="fa-solid fa-circle-info"></i></span>
-                                                                <div class="tooltip-content">
-                                                                    <p>
-                                                                        Examples of other criminal appeals are habeas corpus, prohibition, certiorari, mental disorder reviews, etc.
-                                                                    </p>
+                                                                    <label for="txtFIELD2_2_1_3">
+                                                                        <span class="field-name">
+                                                                            Number of other criminal appeals given at hearing
+                                                                            <div class="tooltip-container">
+                                                                                <span class="tooltip-trigger"><i class="fa-solid fa-circle-info"></i></span>
+                                                                                <div class="tooltip-content">
+                                                                                    <p>
+                                                                                        Examples of other criminal appeals are habeas corpus, prohibition, certiorari, mental disorder reviews, etc.
+                                                                                    </p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </span>
+                                                                    </label>
+                                                                    <input class="form-control" id="txtFIELD2_2_1_3" name="txtFIELD2_2_1_3" type="number" min="0" asp-for="@Model.txtFIELD2_2_1_3" autocomplete="txtFIELD2_2_1_3" data-rule-minlength="1" style="width:100%"
+                                                                           data-num="2.2.1.3" data-msg="Number of other criminal appeals given at hearing">
+                                                                    <span asp-validation-for="@Model.txtFIELD2_2_1_3" class="label label-danger"></span>
                                                                 </div>
                                                             </div>
-                                                        </span>
-                                                    </label>
-                                                    <input class="form-control" id="txtFIELD2_2_1_3" name="txtFIELD2_2_1_3" type="number" min="0" asp-for="@Model.txtFIELD2_2_1_3" autocomplete="txtFIELD2_2_1_3" data-rule-minlength="1" style="width:100%"
-                                                           data-num="2.2.1.3" data-msg="Number of other criminal appeals given at hearing">
-                                                    <span asp-validation-for="@Model.txtFIELD2_2_1_3" class="label label-danger"></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -947,26 +962,27 @@
                                                 <div class="row">
                                                     <div class="col-md-1">2.2.2</div>
                                                     <div class="col-md-11">
-                                                <label for="txtFIELD2_2_2">
-                                                    <span class="field-name">
-                                                        Number of criminal case decisions filed after reserving
-                                                        <div class="tooltip-container">
-                                                            <span class="tooltip-trigger"><i class="fa-solid fa-circle-info"></i></span>
-                                                            <div class="tooltip-content">
-                                                                <p>
-                                                                    A decision filed after reserving is a decision that is rendered at a later date i.e. not on the same day of the hearing or during the same sitting week. If a decision is given at the hearing but the reasons follow the pronouncement i.e., they are not provided immediately after the hearing, on the same day of the hearing or during the same sitting week, this decision should be counted as a reserved judgment.
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </span>
-                                                </label>
-                                                <input class="form-control" id="txtFIELD2_2_2" name="txtFIELD2_2_2" type="number" min="0" asp-for="@Model.txtFIELD2_2_2" autocomplete="txtFIELD2_2_2" data-rule-minlength="1" style="width:100%"
-                                                       data-num="2.2.2" data-msg="Number of criminal case decisions filed after reserving">
-                                                <span asp-validation-for="@Model.txtFIELD2_2_2" class="label label-danger"></span>
+                                                        <label for="txtFIELD2_2_2">
+                                                            <span class="field-name">
+                                                                Number of criminal case decisions filed after reserving
+                                                                <div class="tooltip-container">
+                                                                    <span class="tooltip-trigger"><i class="fa-solid fa-circle-info"></i></span>
+                                                                    <div class="tooltip-content">
+                                                                        <p>
+                                                                            A decision filed after reserving is a decision that is rendered at a later date i.e. not on the same day of the hearing or during the same sitting week. If a decision is given at the hearing but the reasons follow the pronouncement i.e., they are not provided immediately after the hearing, on the same day of the hearing or during the same sitting week, this decision should be counted as a reserved judgment.
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </span>
+                                                        </label>
+                                                        <input class="form-control" id="txtFIELD2_2_2" name="txtFIELD2_2_2" type="number" min="0" asp-for="@Model.txtFIELD2_2_2" autocomplete="txtFIELD2_2_2" data-rule-minlength="1" style="width:100%"
+                                                               data-num="2.2.2" data-msg="Number of criminal case decisions filed after reserving">
+                                                        <span asp-validation-for="@Model.txtFIELD2_2_2" class="label label-danger"></span>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    </div></div>
                                 </div>
                                 <div class="align-left  fs-6">
 
@@ -977,49 +993,23 @@
                                                 <div class="col-md-1"></div>
                                                 <div class="col-md-11">
                                                     <div class="row">
-                                                <div class="col-md-1"></div>
-                                                <div class="col-md-11">
+                                                        <div class="col-md-1"></div>
+                                                        <div class="col-md-11">
                                                             <div class="row">
                                                                 <div class="col-md-1">2.2.2.1</div>
                                                                 <div class="col-md-11">
-                                                    <label for="txtFIELD2_2_2_1">
-                                                        <span class="field-name">
-                                                            Number of convictions/acquittals filed after reserving
+                                                                    <label for="txtFIELD2_2_2_1">
+                                                                        <span class="field-name">
+                                                                            Number of convictions/acquittals filed after reserving
 
-                                                        </span>
-                                                    </label>
-                                                    <input class="form-control" id="txtFIELD2_2_2_1" name="txtFIELD2_2_2_1" type="number" min="0" asp-for="@Model.txtFIELD2_2_2_1" autocomplete="txtFIELD2_2_2_1" data-rule-minlength="1" style="width:100%"
-                                                           data-num="2.2.2.1" data-msg="Number of convictions/acquittals filed after reserving">
-                                                    <span asp-validation-for="@Model.txtFIELD2_2_2_1" class="label label-danger"></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        </div></div></div></div>
-                                    </div>
-                                    <div class="row  mt-4">
-                                        <div class="col-md-1"></div>
-                                        <div class="col-md-11">
-                                            <div class="row">
-                                                <div class="col-md-1"></div>
-                                                <div class="col-md-11">
-                                                    <div class="row">
-                                                <div class="col-md-1"></div>
-                                                <div class="col-md-11">
-                                                            <div class="row">
-                                                                <div class="col-md-1">2.2.2.2</div>
-                                                                <div class="col-md-11">
-                                                    <label for="txtFIELD2_2_2_2">
-                                                        <span class="field-name">
-                                                            Number of sentences filed after reserving
-
-                                                        </span>
-                                                    </label>
-                                                    <input class="form-control" id="txtFIELD2_2_2_2" name="txtFIELD2_2_2_2" type="number" min="0" asp-for="@Model.txtFIELD2_2_2_2" autocomplete="txtFIELD2_2_2_2" data-rule-minlength="1" style="width:100%"
-                                                           data-num="2.2.2.2" data-msg="Number of sentences filed after reserving">
-                                                    <span asp-validation-for="@Model.txtFIELD2_2_2_2" class="label label-danger"></span>
-                                                </div>
-                                            </div>
-                                        </div>
+                                                                        </span>
+                                                                    </label>
+                                                                    <input class="form-control" id="txtFIELD2_2_2_1" name="txtFIELD2_2_2_1" type="number" min="0" asp-for="@Model.txtFIELD2_2_2_1" autocomplete="txtFIELD2_2_2_1" data-rule-minlength="1" style="width:100%"
+                                                                           data-num="2.2.2.1" data-msg="Number of convictions/acquittals filed after reserving">
+                                                                    <span asp-validation-for="@Model.txtFIELD2_2_2_1" class="label label-danger"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1032,31 +1022,60 @@
                                                 <div class="col-md-1"></div>
                                                 <div class="col-md-11">
                                                     <div class="row">
-                                                <div class="col-md-1"></div>
-                                                <div class="col-md-11">
+                                                        <div class="col-md-1"></div>
+                                                        <div class="col-md-11">
                                                             <div class="row">
-                                                                <div class="col-md-1">2.2.2.3</div>
+                                                                <div class="col-md-1">2.2.2.2</div>
                                                                 <div class="col-md-11">
-                                                    <label for="txtFIELD2_2_2_3">
-                                                        <span class="field-name">
-                                                            Number of other criminal appeals filed after reserving
-                                                            <div class="tooltip-container">
-                                                                <span class="tooltip-trigger"><i class="fa-solid fa-circle-info"></i></span>
-                                                                <div class="tooltip-content">
-                                                                    <p>
-                                                                        Examples of criminal appeals are habeas corpus, prohibition, certiorari, mental disorder reviews.
-                                                                    </p>
+                                                                    <label for="txtFIELD2_2_2_2">
+                                                                        <span class="field-name">
+                                                                            Number of sentences filed after reserving
+
+                                                                        </span>
+                                                                    </label>
+                                                                    <input class="form-control" id="txtFIELD2_2_2_2" name="txtFIELD2_2_2_2" type="number" min="0" asp-for="@Model.txtFIELD2_2_2_2" autocomplete="txtFIELD2_2_2_2" data-rule-minlength="1" style="width:100%"
+                                                                           data-num="2.2.2.2" data-msg="Number of sentences filed after reserving">
+                                                                    <span asp-validation-for="@Model.txtFIELD2_2_2_2" class="label label-danger"></span>
                                                                 </div>
                                                             </div>
-                                                        </span>
-                                                    </label>
-                                                    <input class="form-control" id="txtFIELD2_2_2_3" name="txtFIELD2_2_2_3" type="number" min="0" asp-for="@Model.txtFIELD2_2_2_3" autocomplete="txtFIELD2_2_2_3" data-rule-minlength="1" style="width:100%"
-                                                           data-num="2.2.2.3" data-msg="Number of other criminal appeals filed after reserving">
-                                                    <span asp-validation-for="@Model.txtFIELD2_2_2_3" class="label label-danger"></span>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="row  mt-4">
+                                        <div class="col-md-1"></div>
+                                        <div class="col-md-11">
+                                            <div class="row">
+                                                <div class="col-md-1"></div>
+                                                <div class="col-md-11">
+                                                    <div class="row">
+                                                        <div class="col-md-1"></div>
+                                                        <div class="col-md-11">
+                                                            <div class="row">
+                                                                <div class="col-md-1">2.2.2.3</div>
+                                                                <div class="col-md-11">
+                                                                    <label for="txtFIELD2_2_2_3">
+                                                                        <span class="field-name">
+                                                                            Number of other criminal appeals filed after reserving
+                                                                            <div class="tooltip-container">
+                                                                                <span class="tooltip-trigger"><i class="fa-solid fa-circle-info"></i></span>
+                                                                                <div class="tooltip-content">
+                                                                                    <p>
+                                                                                        Examples of criminal appeals are habeas corpus, prohibition, certiorari, mental disorder reviews.
+                                                                                    </p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </span>
+                                                                    </label>
+                                                                    <input class="form-control" id="txtFIELD2_2_2_3" name="txtFIELD2_2_2_3" type="number" min="0" asp-for="@Model.txtFIELD2_2_2_3" autocomplete="txtFIELD2_2_2_3" data-rule-minlength="1" style="width:100%"
+                                                                           data-num="2.2.2.3" data-msg="Number of other criminal appeals filed after reserving">
+                                                                    <span asp-validation-for="@Model.txtFIELD2_2_2_3" class="label label-danger"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -2958,4 +2977,17 @@
     }
 
     setYears("intREPORTINGYEAR", 0);
+
+        document.getElementById("intREPORTINGYEAR").addEventListener("change", function () {
+        const year = this.value;
+        if (!year) return;
+
+        document.getElementById("dtFROM").min = `${year}-01-01`;
+        document.getElementById("dtFROM").max = `${year}-12-31`;
+        document.getElementById("dtTO").min = `${year}-01-01`;
+        document.getElementById("dtTO").max = `${year}-12-31`;
+
+        document.getElementById("dtFROM").value = `${year}-01-01`;
+        document.getElementById("dtTO").value = `${year}-12-31`;
+    });
 </script>

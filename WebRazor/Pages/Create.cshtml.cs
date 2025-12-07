@@ -255,6 +255,8 @@ namespace WebRazor.Pages
 
         public void OnGet()
         {
+            dtFROM = new DateTime(2025, 01, 01);
+            dtTO = new DateTime(2025, 12, 31);
         }
 
         public IActionResult OnPost() {
