@@ -102,8 +102,22 @@ function submitForReview() {
     }
 }
 
+function finalSubmit() {
+    var form = document.getElementById("reviewForm");
+    form.action = "/Review?finalSubmit=true";
+    form.method = "post";
+    form.submit();
+}
+
 function submitForResult() {
     var form = document.getElementById("finalForm");
+    form.method = "post";
+    form.submit();
+}
+
+function submitForSave() {
+    var form = document.getElementById("createForm");
+    form.action = "/Create/Create?submitForSave=true";
     form.method = "post";
     form.submit();
 }
@@ -938,13 +952,6 @@ function calculateField_7_1_3() {
 //        content: msg
 //    });
 //}
-
-function finalSubmit() {
-    var form = document.getElementById("reviewForm");
-    form.action = "/Review?finalSubmit=true";
-    form.method = "post";
-    form.submit();
-}
 
 function validate() {
 

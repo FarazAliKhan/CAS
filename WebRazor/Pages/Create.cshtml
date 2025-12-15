@@ -217,6 +217,14 @@
                         <div class="align-left fs-6">
                             <div class="row col-sm-12">
                                 <div class="row mt-4">
+                                    <div class="form-group col-sm-12">
+                                        <label for="emailAddress">
+                                            <span class="field-name">Email Address</span>
+                                        </label>
+                                        <input class="form-control" id="emailAddress" name="emailAddress" type="text" asp-for="@Model.emailAddress" autocomplete="emailAddress" data-rule-minlength="1" style="width:100%" required="required"
+                                               data-num="" data-msg="Please enter Email Address" value="atthew.bifolchi@workdynamics.com">
+
+                                    </div>
                                     <div class="form-group col-md-12">
                                         <label for="txtCOURT"><span class="field-name">Name of Court</span></label>
                                         <div class="tooltip-container">
@@ -3418,6 +3426,7 @@
                     <br />
                     <div id="revMessage" class="alert alert-info align-left" hidden><i class="fa-solid fa-circle-info"></i> To review and submit your statistics, please click on the Review Statistics button below.</div>
                     <div class="align-right">
+                        <button id="btnSave" class="btn btn-primary" style="background-color: #022a5e;" type="button" onclick="javascript:submitForSave();">Save</button>
                         <button id="btnNext" class="btn btn-primary" style="background-color: #022a5e;" type="button" onclick="javascript:gotoNext();">Next Tab</button>
                         <button id="btnReview" class="btn btn-danger" type="button" hidden onclick="javascript:submitForReview();">Review Statistics</button>
                     </div>

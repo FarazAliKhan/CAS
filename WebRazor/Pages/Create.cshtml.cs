@@ -24,6 +24,11 @@ namespace WebRazor.Pages
     [Breadcrumb("ViewData.Create", FromPage = typeof(SelectModel))]
     public class CreateModel : PageModel
     {
+        private readonly IConfiguration _configuration;
+
+        [BindProperty]
+        public string? emailAddress { get; set; }
+
         [BindProperty]
         [Required(ErrorMessageResourceType = typeof(Resources.Pages.CreateModel), ErrorMessageResourceName = "CourtRequired")]
         public string txtCOURT { get; set; }
@@ -250,8 +255,12 @@ namespace WebRazor.Pages
         [BindProperty]
         public IFormFile? Upload { get; set; }
 
-        //public CreateModel() { 
-        //}
+        public CreateModel(
+                IConfiguration configuration
+            )
+        {
+            this._configuration = configuration;
+        }
 
         public void OnGet()
         {
@@ -271,6 +280,7 @@ namespace WebRazor.Pages
 
             if (!ModelState.IsValid)
                 return Page();
+
             var createItem = new CASEntityCreate()
             {
                 txtCOURT = txtCOURT,
@@ -499,6 +509,19 @@ namespace WebRazor.Pages
 
             TempData["txtFIELD_12_Comments"] = createItem.txtFIELD_12_Comments;
 
+            var submitForSave = Request.Query["submitForSave"].FirstOrDefault();
+            if (!String.IsNullOrEmpty(submitForSave))
+            {
+                bool success = HandleSubmit(createItem);
+                if (success)
+                {
+                    //TempData["reqJson"] = reqJson;
+                    //TempData["resJson"] = resJson;
+                    //TempData["responseStatusCode"] = responseStatusCode;
+                    return Page();
+                }
+            }
+                
             return RedirectToPage("Review");
         }
 
@@ -776,6 +799,670 @@ namespace WebRazor.Pages
             TempData["txtFIELD_11_Comments"] = txtFIELD_11_Comments;
 
             TempData["txtFIELD_12_Comments"] = txtFIELD_12_Comments;
+        }
+
+        public bool HandleSubmit(CASEntityCreate createItem)
+        {
+            CasModel casModel = new CasModel();
+            List<Node> nodes = new List<Node>();
+            List<Field> fields = new List<Field>();
+
+            Node node = new Node();
+
+            DateTime today = DateTime.Now;
+            string todayString = today.ToString("yyyy-MM-dd");
+
+            fields.Add(new Field()
+            {
+                name = "EXTERNALUSERID",
+                value = emailAddress,
+            });
+
+            fields.Add(new Field()
+            {
+                name = "STATUS",
+                value = "DRAFT",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "INPUT",
+                value = todayString,
+            });
+
+            // reporting year and court name
+            fields.Add(new Field()
+            {
+                name = "COURT",
+                value = createItem.txtCOURT != null ? createItem.txtCOURT : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "REPORTINGYEAR",
+                value = createItem.intREPORTINGYEAR != null ? createItem.intREPORTINGYEAR.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "DATEFROM",
+                value = createItem.dtFROM != null ? createItem.dtFROM.Value.ToString("yyyy-MM-dd") : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "DATETO",
+                value = createItem.dtTO != null ? createItem.dtTO.Value.ToString("yyyy-MM-dd") : "0",
+            });
+
+            // section 1
+            fields.Add(new Field()
+            {
+                name = "FIELD1_1_1",
+                value = createItem.txtFIELD1_1_1 != null ? createItem.txtFIELD1_1_1.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD1_1_2",
+                value = createItem.txtFIELD1_1_2 != null ? createItem.txtFIELD1_1_2.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD1_1_3",
+                value = createItem.txtFIELD1_1_3 != null ? createItem.txtFIELD1_1_3.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD1_1_4",
+                value = createItem.txtFIELD1_1_4 != null ? createItem.txtFIELD1_1_4.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD1_1_5",
+                value = createItem.txtFIELD1_1_5 != null ? createItem.txtFIELD1_1_5.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD1_1_6",
+                value = createItem.txtFIELD1_1_6 != null ? createItem.txtFIELD1_1_6.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD1_1_7",
+                value = createItem.txtFIELD1_1_7 != null ? createItem.txtFIELD1_1_7.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "COMMENTSECTION1",
+                value = createItem.txtFIELD_1_Comments != null ? createItem.txtFIELD_1_Comments : "",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD1_2_1",
+                value = createItem.txtFIELD1_2_1 != null ? createItem.txtFIELD1_2_1.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD1_2_2",
+                value = createItem.txtFIELD1_2_2 != null ? createItem.txtFIELD1_2_2.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD1_2_3",
+                value = createItem.txtFIELD1_2_3 != null ? createItem.txtFIELD1_2_3.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD1_2_4",
+                value = createItem.txtFIELD1_2_4 != null ? createItem.txtFIELD1_2_4.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD1_2_5",
+                value = createItem.txtFIELD1_2_5 != null ? createItem.txtFIELD1_2_5.Value.ToString() : "0",
+            });
+
+            // section 2
+            fields.Add(new Field()
+            {
+                name = "FIELD2_1_1",
+                value = createItem.txtFIELD2_1_1 != null ? createItem.txtFIELD2_1_1.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD2_1_2",
+                value = createItem.txtFIELD2_1_2 != null ? createItem.txtFIELD2_1_2.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD2_2_1_1",
+                value = createItem.txtFIELD2_2_1_1 != null ? createItem.txtFIELD2_2_1_1.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD2_2_1_2",
+                value = createItem.txtFIELD2_2_1_2 != null ? createItem.txtFIELD2_2_1_2.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD2_2_1_3",
+                value = createItem.txtFIELD2_2_1_3 != null ? createItem.txtFIELD2_2_1_3.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD2_2_2_1",
+                value = createItem.txtFIELD2_2_2_1 != null ? createItem.txtFIELD2_2_2_1.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD2_2_2_2",
+                value = createItem.txtFIELD2_2_2_2 != null ? createItem.txtFIELD2_2_2_2.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD2_2_2_3",
+                value = createItem.txtFIELD2_2_2_3 != null ? createItem.txtFIELD2_2_2_3.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "COMMENTSECTION2",
+                value = createItem.txtFIELD_2_Comments != null ? createItem.txtFIELD_2_Comments : "",
+            });
+
+            // section 3
+            fields.Add(new Field()
+            {
+                name = "FIELD3_1",
+                value = createItem.txtFIELD3_1 != null ? createItem.txtFIELD3_1.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD3_2",
+                value = createItem.txtFIELD3_2 != null ? createItem.txtFIELD3_2.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "COMMENTSECTION3",
+                value = createItem.txtFIELD_3_Comments != null ? createItem.txtFIELD_3_Comments : "",
+            });
+
+            // section 4
+            fields.Add(new Field()
+            {
+                name = "FIELD4_1_1",
+                value = createItem.txtFIELD4_1_1 != null ? createItem.txtFIELD4_1_1.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD4_1_2",
+                value = createItem.txtFIELD4_1_2 != null ? createItem.txtFIELD4_1_2.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD4_1_3",
+                value = createItem.txtFIELD4_1_3 != null ? createItem.txtFIELD4_1_3.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD4_1_4_1",
+                value = createItem.txtFIELD4_1_4_1 != null ? createItem.txtFIELD4_1_4_1.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD4_1_4_2",
+                value = createItem.txtFIELD4_1_4_2 != null ? createItem.txtFIELD4_1_4_2.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD4_1_4_3",
+                value = createItem.txtFIELD4_1_4_3 != null ? createItem.txtFIELD4_1_4_3.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD4_1_5_1",
+                value = createItem.txtFIELD4_1_5_1 != null ? createItem.txtFIELD4_1_5_1.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD4_1_5_2",
+                value = createItem.txtFIELD4_1_5_2 != null ? createItem.txtFIELD4_1_5_2.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD4_1_5_3",
+                value = createItem.txtFIELD4_1_5_3 != null ? createItem.txtFIELD4_1_5_3.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD4_1_6_1",
+                value = createItem.txtFIELD4_1_6_1 != null ? createItem.txtFIELD4_1_6_1.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD4_1_6_2",
+                value = createItem.txtFIELD4_1_6_2 != null ? createItem.txtFIELD4_1_6_2.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD4_1_6_3",
+                value = createItem.txtFIELD4_1_6_3 != null ? createItem.txtFIELD4_1_6_3.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD4_2_1",
+                value = createItem.txtFIELD4_2_1 != null ? createItem.txtFIELD4_2_1.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD4_2_2",
+                value = createItem.txtFIELD4_2_2 != null ? createItem.txtFIELD4_2_2.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD4_2_3",
+                value = createItem.txtFIELD4_2_3 != null ? createItem.txtFIELD4_2_3.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD4_2_4_1",
+                value = createItem.txtFIELD4_2_4_1 != null ? createItem.txtFIELD4_2_4_1.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD4_2_4_2",
+                value = createItem.txtFIELD4_2_4_2 != null ? createItem.txtFIELD4_2_4_2.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD4_2_4_3",
+                value = createItem.txtFIELD4_2_4_3 != null ? createItem.txtFIELD4_2_4_3.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD4_2_5_1",
+                value = createItem.txtFIELD4_2_5_1 != null ? createItem.txtFIELD4_2_5_1.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD4_2_5_2",
+                value = createItem.txtFIELD4_2_5_2 != null ? createItem.txtFIELD4_2_5_2.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD4_2_5_3",
+                value = createItem.txtFIELD4_2_5_3 != null ? createItem.txtFIELD4_2_5_3.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD4_2_6_1",
+                value = createItem.txtFIELD4_2_6_1 != null ? createItem.txtFIELD4_2_6_1.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD4_2_6_2",
+                value = createItem.txtFIELD4_2_6_2 != null ? createItem.txtFIELD4_2_6_2.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD4_2_6_3",
+                value = createItem.txtFIELD4_2_6_3 != null ? createItem.txtFIELD4_2_6_3.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD4_3_1",
+                value = createItem.txtFIELD4_3_1 != null ? createItem.txtFIELD4_3_1.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD4_3_2",
+                value = createItem.txtFIELD4_3_2 != null ? createItem.txtFIELD4_3_2.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD4_3_3",
+                value = createItem.txtFIELD4_3_3 != null ? createItem.txtFIELD4_3_3.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD4_3_4_1",
+                value = createItem.txtFIELD4_3_4_1 != null ? createItem.txtFIELD4_3_4_1.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD4_3_4_2",
+                value = createItem.txtFIELD4_3_4_2 != null ? createItem.txtFIELD4_3_4_2.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD4_3_4_3",
+                value = createItem.txtFIELD4_3_4_3 != null ? createItem.txtFIELD4_3_4_3.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD4_3_5_1",
+                value = createItem.txtFIELD4_3_5_1 != null ? createItem.txtFIELD4_3_5_1.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD4_3_5_2",
+                value = createItem.txtFIELD4_3_5_2 != null ? createItem.txtFIELD4_3_5_2.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD4_3_5_3",
+                value = createItem.txtFIELD4_3_5_3 != null ? createItem.txtFIELD4_3_5_3.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD4_3_6_1",
+                value = createItem.txtFIELD4_3_6_1 != null ? createItem.txtFIELD4_3_6_1.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD4_3_6_2",
+                value = createItem.txtFIELD4_3_6_2 != null ? createItem.txtFIELD4_3_6_2.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD4_3_6_3",
+                value = createItem.txtFIELD4_3_6_3 != null ? createItem.txtFIELD4_3_6_3.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "COMMENTSECTION4",
+                value = createItem.txtFIELD_4_Comments != null ? createItem.txtFIELD_4_Comments : "",
+            });
+
+            // section 5
+            fields.Add(new Field()
+            {
+                name = "FIELD5_1",
+                value = createItem.txtFIELD5_1 != null ? createItem.txtFIELD5_1.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD5_2",
+                value = createItem.txtFIELD5_2 != null ? createItem.txtFIELD5_2.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD5_3",
+                value = createItem.txtFIELD5_3 != null ? createItem.txtFIELD5_3.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD5_4",
+                value = createItem.txtFIELD5_4 != null ? createItem.txtFIELD5_4.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "COMMENTSECTION5",
+                value = createItem.txtFIELD_5_Comments != null ? createItem.txtFIELD_5_Comments : "",
+            });
+
+            // section 6
+            fields.Add(new Field()
+            {
+                name = "FIELD6_1_1",
+                value = createItem.txtFIELD6_1_1 != null ? createItem.txtFIELD6_1_1.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD6_1_2",
+                value = createItem.txtFIELD6_1_2 != null ? createItem.txtFIELD6_1_2.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD6_1_3",
+                value = createItem.txtFIELD6_1_3 != null ? createItem.txtFIELD6_1_3.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD6_2_1",
+                value = createItem.txtFIELD6_2_1 != null ? createItem.txtFIELD6_2_1.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD6_2_2",
+                value = createItem.txtFIELD6_2_2 != null ? createItem.txtFIELD6_2_2.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD6_2_3",
+                value = createItem.txtFIELD6_2_3 != null ? createItem.txtFIELD6_2_3.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD6_3_1",
+                value = createItem.txtFIELD6_3_1 != null ? createItem.txtFIELD6_3_1.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD6_3_2",
+                value = createItem.txtFIELD6_3_2 != null ? createItem.txtFIELD6_3_2.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD6_3_3",
+                value = createItem.txtFIELD6_3_3 != null ? createItem.txtFIELD6_3_3.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "COMMENTSECTION6",
+                value = createItem.txtFIELD_6_Comments != null ? createItem.txtFIELD_6_Comments : "",
+            });
+
+            // section 7
+            fields.Add(new Field()
+            {
+                name = "FIELD7_1_1",
+                value = createItem.txtFIELD7_1_1 != null ? createItem.txtFIELD7_1_1.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD7_1_2",
+                value = createItem.txtFIELD7_1_2 != null ? createItem.txtFIELD7_1_2.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD7_1_3",
+                value = createItem.txtFIELD7_1_3 != null ? createItem.txtFIELD7_1_3.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "COMMENTSECTION7",
+                value = createItem.txtFIELD_7_Comments != null ? createItem.txtFIELD_7_Comments : "",
+            });
+
+            // section 8
+            fields.Add(new Field()
+            {
+                name = "FIELD8_1",
+                value = createItem.txtFIELD8_1 != null ? createItem.txtFIELD8_1.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD8_2",
+                value = createItem.txtFIELD8_2 != null ? createItem.txtFIELD8_2.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD8_3",
+                value = createItem.txtFIELD8_3 != null ? createItem.txtFIELD8_3.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "COMMENTSECTION8",
+                value = createItem.txtFIELD_8_Comments != null ? createItem.txtFIELD_8_Comments : "",
+            });
+
+            // section 9
+            fields.Add(new Field()
+            {
+                name = "FIELD9_1",
+                value = createItem.txtFIELD9_1 != null ? createItem.txtFIELD9_1.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD9_2",
+                value = createItem.txtFIELD9_2 != null ? createItem.txtFIELD9_2.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "COMMENTSECTION9",
+                value = createItem.txtFIELD_9_Comments != null ? createItem.txtFIELD_9_Comments : "",
+            });
+
+            // section 10
+            fields.Add(new Field()
+            {
+                name = "FIELD10_1",
+                value = createItem.txtFIELD10_1 != null ? createItem.txtFIELD10_1.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "COMMENTSECTION10",
+                value = createItem.txtFIELD_10_Comments != null ? createItem.txtFIELD_10_Comments : "",
+            });
+
+            // section 11
+            fields.Add(new Field()
+            {
+                name = "FIELD11_1",
+                value = createItem.txtFIELD11_1 != null ? createItem.txtFIELD11_1.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD11_2",
+                value = createItem.txtFIELD11_2 != null ? createItem.txtFIELD11_2.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "COMMENTSECTION11",
+                value = createItem.txtFIELD_11_Comments != null ? createItem.txtFIELD_11_Comments : "",
+            });
+
+            node.fields = fields;
+            nodes.Add(node);
+            casModel.nodes = nodes;
+
+            var json = JsonConvert.SerializeObject(casModel);
+
+            Console.Write(json);
+            //reqJson = json;
+            //resJson = "";
+            var responseStatusCode = "200";
+
+            var apiEndpoint = _configuration.GetValue<string>("SaveURL1");
+
+            var content = new StringContent(json, UnicodeEncoding.UTF8, "application/json");
+
+            var httpClientHandler = new HttpClientHandler();
+            httpClientHandler.ServerCertificateCustomValidationCallback = (message, cert, chain, sslPolicyErrors) =>
+            {
+                return true;
+            };
+            HttpClient httpClient = new HttpClient(httpClientHandler) { BaseAddress = new Uri(apiEndpoint) };
+
+            using (httpClient)
+            {
+
+                using (HttpResponseMessage response = httpClient.PostAsync(apiEndpoint, content).Result)
+                {
+                    if (response.IsSuccessStatusCode)
+                    {
+                        string apiResponse = response.Content.ReadAsStringAsync().Result;
+                        Console.WriteLine(apiResponse);
+                        //resJson = apiResponse;
+                        //var casModel = JsonConvert.DeserializeObject<CasModel>(apiResponse);
+                    }
+                    responseStatusCode = response.StatusCode.ToString();
+                }
+            }
+
+            return true;
         }
     }
 }
