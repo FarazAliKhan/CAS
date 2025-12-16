@@ -266,6 +266,7 @@ namespace WebRazor.Pages
         {
             dtFROM = new DateTime(2025, 01, 01);
             dtTO = new DateTime(2025, 12, 31);
+            emailAddress = (string)TempData["emailAddress"];
         }
 
         public IActionResult OnPost() {

@@ -205,6 +205,7 @@
 
                     <input type="hidden" id="activeDetailsId" value="detailsBasicInfo">
                     <input type="hidden" id="sectionId" asp-for="@Model.sectId">
+                    <input type="hidden" id="emailAddress" asp-for="@Model.emailAddress">
                     <div id="sidebarMessage" class="alert alert-info align-left"><i class="fa-solid fa-circle-info"></i> The sidebar tabs will appear once you fill the Name of Court and Reporting Year Form.</div>
                     <div id="detailsBasicInfo" class="fs-6">
                         <div class="align-left fs-12">
@@ -216,15 +217,7 @@
                         </div>
                         <div class="align-left fs-6">
                             <div class="row col-sm-12">
-                                <div class="row mt-4">
-                                    <div class="form-group col-sm-12">
-                                        <label for="emailAddress">
-                                            <span class="field-name">Email Address</span>
-                                        </label>
-                                        <input class="form-control" id="emailAddress" name="emailAddress" type="text" asp-for="@Model.emailAddress" autocomplete="emailAddress" data-rule-minlength="1" style="width:100%" required="required"
-                                               data-num="" data-msg="Please enter Email Address" value="atthew.bifolchi@workdynamics.com">
-
-                                    </div>
+                                <div class="row mt-4">                                    
                                     <div class="form-group col-md-12">
                                         <label for="txtCOURT"><span class="field-name">Name of Court</span></label>
                                         <div class="tooltip-container">

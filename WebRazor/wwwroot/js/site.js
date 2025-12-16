@@ -44,33 +44,41 @@ document.querySelectorAll('#sidebar .nav-link').forEach(link => {
 //    }
 //}
 
-$("#txtCOURTReview").each(function () {
-    let original = $(this).val();
-    $(this).on('change', function () {
-        $(this).val(original);
+if ($("#txtCOURTReview") != null) {
+    $("#txtCOURTReview").each(function () {
+        let original = $(this).val();
+        $(this).on('change', function () {
+            $(this).val(original);
+        });
     });
-});
+}
 
-$("#intREPORTINGYEARReview").each(function () {
-    let original = $(this).val();
-    $(this).on('change', function () {
-        $(this).val(original);
+if ($("#intREPORTINGYEARReview") != null) {
+    $("#intREPORTINGYEARReview").each(function () {
+        let original = $(this).val();
+        $(this).on('change', function () {
+            $(this).val(original);
+        });
     });
-});
+}
 
-$("#txtCOURTResult").each(function () {
-    let original = $(this).val();
-    $(this).on('change', function () {
-        $(this).val(original);
+if ($("#txtCOURTResult") != null) {
+    $("#txtCOURTResult").each(function () {
+        let original = $(this).val();
+        $(this).on('change', function () {
+            $(this).val(original);
+        });
     });
-});
+}
 
-$("#intREPORTINGYEARResult").each(function () {
-    let original = $(this).val();
-    $(this).on('change', function () {
-        $(this).val(original);
+if ($("#intREPORTINGYEARResult") != null) {
+    $("#intREPORTINGYEARResult").each(function () {
+        let original = $(this).val();
+        $(this).on('change', function () {
+            $(this).val(original);
+        });
     });
-});
+}
 
 
 // Write your JavaScript code.
@@ -118,6 +126,13 @@ function submitForResult() {
 function submitForSave() {
     var form = document.getElementById("createForm");
     form.action = "/Create/Create?submitForSave=true";
+    form.method = "post";
+    form.submit();
+}
+
+function submitStats() {
+    var form = document.getElementById("selectForm");
+    form.action = "/Select";
     form.method = "post";
     form.submit();
 }
