@@ -27,6 +27,11 @@ namespace WebRazor.Pages
         private readonly IConfiguration _configuration;
 
         [BindProperty]
+        public string? modelUuid { get; set; }
+        [BindProperty]
+        public string? nodeUuid { get; set; }
+
+        [BindProperty]
         public string? emailAddress { get; set; }
 
         [BindProperty]
@@ -813,6 +818,9 @@ namespace WebRazor.Pages
             DateTime today = DateTime.Now;
             string todayString = today.ToString("yyyy-MM-dd");
 
+            casModel.uuid = modelUuid;
+            node.uuid = nodeUuid;
+
             fields.Add(new Field()
             {
                 name = "EXTERNALUSERID",
@@ -1457,7 +1465,9 @@ namespace WebRazor.Pages
                         string apiResponse = response.Content.ReadAsStringAsync().Result;
                         Console.WriteLine(apiResponse);
                         //resJson = apiResponse;
-                        //var casModel = JsonConvert.DeserializeObject<CasModel>(apiResponse);
+                        var casResponseModel = JsonConvert.DeserializeObject<CasModel>(apiResponse);
+                        modelUuid = casResponseModel.uuid;
+                        nodeUuid = casResponseModel.nodes[0].uuid;
                     }
                     responseStatusCode = response.StatusCode.ToString();
                 }
