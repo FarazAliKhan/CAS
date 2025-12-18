@@ -271,7 +271,18 @@ namespace WebRazor.Pages
         {
             dtFROM = new DateTime(2025, 01, 01);
             dtTO = new DateTime(2025, 12, 31);
-            emailAddress = (string)TempData["emailAddress"];
+            if (TempData["emailAddress"] != null)
+            {
+                emailAddress = (string)TempData["emailAddress"];
+            }
+            if (TempData["modelUuid"] != null)
+            {
+                modelUuid = (string)TempData["modelUuid"];
+            }
+            if (TempData["nodeUuid"] != null)
+            {
+                nodeUuid = (string)TempData["nodeUuid"];
+            }
         }
 
         public IActionResult OnPost() {
@@ -521,6 +532,9 @@ namespace WebRazor.Pages
                 bool success = HandleSubmit(createItem);
                 if (success)
                 {
+                    TempData["emailAddress"] = emailAddress;
+                    TempData["modelUuid"] = modelUuid;
+                    TempData["nodeUuid"] = nodeUuid;
                     //TempData["reqJson"] = reqJson;
                     //TempData["resJson"] = resJson;
                     //TempData["responseStatusCode"] = responseStatusCode;
