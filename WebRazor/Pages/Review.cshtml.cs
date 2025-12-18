@@ -15,6 +15,14 @@ namespace WebRazor.Pages
         private readonly IConfiguration _configuration;
 
         [BindProperty]
+        public string? modelUuid { get; set; }
+        [BindProperty]
+        public string? nodeUuid { get; set; }
+
+        [BindProperty]
+        public string? emailAddress { get; set; }
+
+        [BindProperty]
          public string? txtCOURT { get; set; }
         [BindProperty]
         public DateTime? dtFROM { get; set; } = DateTime.Now;
@@ -232,11 +240,19 @@ namespace WebRazor.Pages
         public string? resJson { get; set; }
         public string? responseStatusCode { get; set; }
 
+        [BindProperty]
+        public string apiUrlSave { get; set; }
+
+        [BindProperty]
+        public string apiUrlRetrieve { get; set; }
+
         public ReviewModel(
                 IConfiguration configuration
             )
         {
             this._configuration = configuration;
+            apiUrlSave = _configuration.GetValue<string>("SaveURL1");
+            apiUrlRetrieve = _configuration.GetValue<string>("RetrieveURL1");
         }
 
         public void OnGet()
@@ -501,6 +517,21 @@ namespace WebRazor.Pages
 
             DateTime today = DateTime.Now;
             string todayString = today.ToString("yyyy-MM-dd");
+
+            casModel.uuid = modelUuid;
+            node.uuid = nodeUuid;
+
+            fields.Add(new Field()
+            {
+                name = "EXTERNALUSERID",
+                value = emailAddress,
+            });
+
+            fields.Add(new Field()
+            {
+                name = "STATUS",
+                value = "COMPLETED",
+            });
 
             fields.Add(new Field()
             {
@@ -1113,32 +1144,32 @@ namespace WebRazor.Pages
             resJson = "";
             responseStatusCode = "200";
 
-            //var apiEndpoint = _configuration.GetValue<string>("SaveURL1");
+            var apiEndpoint = _configuration.GetValue<string>("SaveURL1");
 
-            //var content = new StringContent(json, UnicodeEncoding.UTF8, "application/json");
+            var content = new StringContent(json, UnicodeEncoding.UTF8, "application/json");
 
-            //var httpClientHandler = new HttpClientHandler();
-            //httpClientHandler.ServerCertificateCustomValidationCallback = (message, cert, chain, sslPolicyErrors) =>
-            //{
-            //    return true;
-            //};
-            //HttpClient httpClient = new HttpClient(httpClientHandler) { BaseAddress = new Uri(apiEndpoint) };
+            var httpClientHandler = new HttpClientHandler();
+            httpClientHandler.ServerCertificateCustomValidationCallback = (message, cert, chain, sslPolicyErrors) =>
+            {
+                return true;
+            };
+            HttpClient httpClient = new HttpClient(httpClientHandler) { BaseAddress = new Uri(apiEndpoint) };
 
-            //using (httpClient)
-            //{
+            using (httpClient)
+            {
 
-            //    using (HttpResponseMessage response = httpClient.PostAsync(apiEndpoint, content).Result)
-            //    {
-            //        if (response.IsSuccessStatusCode)
-            //        {
-            //            string apiResponse = response.Content.ReadAsStringAsync().Result;
-            //            Console.WriteLine(apiResponse);
-            //            resJson = apiResponse;
-            //            //var casModel = JsonConvert.DeserializeObject<CasModel>(apiResponse);
-            //        }
-            //        responseStatusCode = response.StatusCode.ToString();
-            //    }
-            //}
+                using (HttpResponseMessage response = httpClient.PostAsync(apiEndpoint, content).Result)
+                {
+                    if (response.IsSuccessStatusCode)
+                    {
+                        string apiResponse = response.Content.ReadAsStringAsync().Result;
+                        Console.WriteLine(apiResponse);
+                        resJson = apiResponse;
+                        var casResponseModel = JsonConvert.DeserializeObject<CasModel>(apiResponse);
+                    }
+                    responseStatusCode = response.StatusCode.ToString();
+                }
+            }
 
             return true;
         }
