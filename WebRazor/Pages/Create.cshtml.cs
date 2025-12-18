@@ -263,12 +263,16 @@ namespace WebRazor.Pages
         [BindProperty]
         public string apiUrlSave { get; set; }
 
+        [BindProperty]
+        public string apiUrlRetrieve { get; set; }
+
         public CreateModel(
                 IConfiguration configuration
             )
         {
             this._configuration = configuration;
             apiUrlSave = _configuration.GetValue<string>("SaveURL1");
+            apiUrlRetrieve = _configuration.GetValue<string>("RetrieveURL1");
         }
 
         public void OnGet()

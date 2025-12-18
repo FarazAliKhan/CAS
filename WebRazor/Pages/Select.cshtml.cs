@@ -14,7 +14,7 @@ namespace WebRazor.Pages
         public IActionResult OnPost()
         {
             TempData["emailAddress"] = emailAddress;
-            return RedirectToPage("Create");
+            return RedirectToPage("/Create", new { retrieveRecord = "true" });
         }
     }
 }

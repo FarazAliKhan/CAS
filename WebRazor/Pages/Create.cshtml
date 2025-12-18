@@ -96,6 +96,45 @@
     </div>
 </div>
 
+<div class="modal fade" id="draftFound" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Draft Found</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="javascript:hideFoundModal();">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div id="failed-body" class="modal-body align-left">
+                <div class="alert alert-success align-left"><i class="fa-solid fa-circle-failed"></i> A draft record found. Do you want to load it?</div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="javascript:loadFoundRecord();">Yes</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="javascript:hideFoundModal();">No</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="draftRetrievalFailed" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Failed</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="javascript:hideFailedRetrieval();">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div id="failed-body" class="modal-body align-left">
+                <div class="alert alert-danger align-left"><i class="fa-solid fa-circle-failed"></i> The record retrieval failed.</div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="javascript:hideFailedRetrieval();">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- SIDEBAR -->
 <nav id="sidebar" class="collapse d-lg-block align-left">
     <ul id="tabsbar" class="nav flex-column" hidden>
@@ -244,6 +283,7 @@
                     <input type="hidden" id="activeDetailsId" value="detailsBasicInfo">
                     <input type="hidden" id="sectionId" asp-for="@Model.sectId">
                     <input type="hidden" id="apiUrlSave" asp-for="@Model.apiUrlSave">
+                    <input type="hidden" id="apiUrlRetrieve" asp-for="@Model.apiUrlRetrieve">
                     <input type="hidden" id="emailAddress" asp-for="@Model.emailAddress">
                     <input type="hidden" id="modelUuid" asp-for="@Model.modelUuid" value="00000000-0000-0000-0000-000000000000">
                     <input type="hidden" id="nodeUuid" asp-for="@Model.nodeUuid" value="00000000-0000-0000-0000-000000000000">

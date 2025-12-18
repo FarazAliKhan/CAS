@@ -14,35 +14,8 @@ document.querySelectorAll('#sidebar .nav-link').forEach(link => {
         });
 });
 
-//setYears("intREPORTINGYEAR","");
-//function setYears(elemId, selectedYear) {
-//    const select = document.getElementById(elemId);
-
-//    if (select != null) {
-//        const currentYear = new Date().getFullYear();
-
-//        // Loop from currentYear - 2 to currentYear + 2
-//        for (let year = currentYear - 2; year <= currentYear + 2; year++) {
-//            const option = document.createElement("option");
-//            option.value = year;
-//            option.textContent = year;
-
-//            if ((elemId != "intREPORTINGYEARReview") && (elemId != "intREPORTINGYEARResult")) {
-//                // Set current year as selected
-//                if (year === currentYear) {
-//                    option.selected = true;
-//                }
-//            }
-//            else {
-//                if (year === selectedYear) {
-//                    option.selected = true;
-//                }
-//            }
-
-//            select.appendChild(option);
-//        }
-//    }
-//}
+const params = new URLSearchParams(window.location.search);
+const needRetrieve = params.get("retrieveRecord");
 
 if ($("#txtCOURTReview") != null) {
     $("#txtCOURTReview").each(function () {
@@ -80,10 +53,13 @@ if ($("#intREPORTINGYEARResult") != null) {
     });
 }
 
-
 // Write your JavaScript code.
 $(".breadcrumb").children().first().remove();
 enableDisableReview();
+
+if (needRetrieve != null) {
+    retrieveDraft();
+}
 
 function submitForm(sectionId) {
     var form = document.getElementById("reviewForm");
@@ -600,6 +576,7 @@ function submitBasicInfoForm() {
     form.method = "POST";
     form.submit();
 }
+
 function showValidationSummary(errors) {
     const summary = document.getElementById("validationSummary");
     const list = document.getElementById("errorList");
@@ -914,59 +891,6 @@ function calculateField_7_1_3() {
     }
     document.getElementById("txtFIELD7_1_3").value = calcSum;
 }
-
-//function showJSPanel(panelContainer, targetId, msg, panelSize) {
-//    jsPanel.tooltip.create({
-//        container: '#divJSContainer',
-//        target: '#' + targetId,
-//        mode: 'default',
-//        connector: true,
-//        position: { my: 'left-top', at: 'right-top' },
-//        theme: 'light filled',
-//        panelSize: panelSize,
-//        headerControls: 'closeonly xs',
-//        headerTitle: 'Description',
-//        content: msg
-//    });
-//}
-
-//function showJSPanelTop(panelContainer, targetId, msg, panelSize) {
-//    jsPanel.tooltip.create({
-//        container: '#divJSContainer',
-//        target: '#' + targetId,
-//        mode: 'default',
-//        connector: true,
-//        position: { my: 'center-bottom', at: 'center-top' },
-//        theme: 'light filled',
-//        panelSize: panelSize,
-//        headerControls: 'closeonly xs',
-//        headerTitle: 'Description',
-//        content: msg
-//    });
-//}
-
-//function showJSPanelRight(panelContainer, targetId, msg, panelSize, x, y) {
-//    var element = $('#' + targetId);
-//    //var rect = element.getBoundingClientRect();
-//    var pos = element.offset();
-//    var _x = pos.left + x;
-//    var _y = pos.top + y;
-//    jsPanel.tooltip.create({
-//        container: '#divJSInfoContainer',
-//        target: '#' + targetId,
-//        mode: 'default',
-//        connector: true,
-//        position: {
-//            my: 'center', at: 'center', offsetX: _x, offsetY: _y
-//        },
-//        theme: 'light filled',
-//        panelSize: panelSize,
-//        headerControls: 'closeonly xs',
-//        headerTitle: 'Description',
-//        delay: 0,
-//        content: msg
-//    });
-//}
 
 function validate() {
 
@@ -2167,7 +2091,7 @@ function saveDraft() {
             console.log(response);
             $("#modelUuid").val(response.rootUuid);
             $("#nodeUuid").val(response.nodes[0].uuid);
-            $("#emailAddress").val("frz.khan1@gmail.com");
+            $("#emailAddress").val(response.nodes[0].fields[0].value);
             //$('#savedSuccessfullyMessage').removeAttr("hidden");
             //alert("The draft saved successfully.");
             $('#draftSavedSuccessfully').modal('show');
@@ -2190,4 +2114,75 @@ function hideSuccessModal() {
 
 function hideFailedModal() {
     $('#draftSavedFailed').modal('hide');
+}
+
+function retrieveDraft() {
+    var retrieveObj = {
+        "appId": "CAACS",
+        "region": "NEWRECORD",
+        "summaryPage": {
+            "pageSize": 1,
+            "pageNumber": 1,
+            "offset": 0,
+            "pageCount": 0,
+            "sortFieldName": "DOCKET",
+            "sortDirection": "DESC",
+            "showRestrictedItems": true
+        },
+        "searchParams": [
+            {
+                "fieldName": "STATUS",
+                "operator": "EQUAL",
+                "values": [
+                    "DRAFT"
+                ]
+            },
+            {
+                "fieldName": "EXTERNALUSERID",
+                "operator": "EQUAL",
+                "values": [
+                    $("#emailAddress").val()
+                ]
+            }
+        ]
+    }
+
+    $.ajax({
+        url: $("#apiUrlRetrieve").val(),
+        type: 'POST',
+        data: JSON.stringify(retrieveObj), // convert to JSON
+        contentType: 'application/json; charset=utf-8',
+        dataType: 'json',
+        success: function (response) {
+            console.log(response);
+            $("#modelUuid").val(response.rootUuid);
+            $("#nodeUuid").val(response.nodes[0].uuid);
+            $("#emailAddress").val(response.nodes[0].fields[0].value);
+            //$('#savedSuccessfullyMessage').removeAttr("hidden");
+            //alert("The draft saved successfully.");
+            //$('#draftSavedSuccessfully').modal('show');
+            //setTimeout(function () {
+            //    document.getElementById("savedSuccessfullyMessage").style.display = "none";
+            //}, 10000);
+        },
+        error: function (err) {
+            console.error(err);
+            $('#draftRetrievalFailed').modal('show');
+            //alert("The draft save failed");
+        }
+    });
+
+}
+
+function hideFoundModal() {
+    $('#draftFound').modal('hide');
+}
+
+function hideFailedRetrieval() {
+    $('#draftRetrievalFailed').modal('hide');
+}
+
+function loadFoundRecord() {
+    retrieveDraft();
+    $('#draftFound').modal('hide');
 }
