@@ -1694,10 +1694,7 @@ function saveDraft() {
                         name:"FIELD2_1_2",
                         value: $("#txtFIELD2_1_2").val(),
                 },  
-                {
-                    name: "FIELD2_2_1",
-                    value: $("#txtFIELD2_2_1").val(),
-                }, 
+               
             {
                         name:"FIELD2_2_1_1",
                         value: $("#txtFIELD2_2_1_1").val(),
@@ -1710,10 +1707,7 @@ function saveDraft() {
                         name:"FIELD2_2_1_3",
                         value: $("#txtFIELD2_2_1_3").val(),
                 },   
-                {
-                    name: "FIELD2_2_2",
-                    value: $("#txtFIELD2_2_2").val(),
-                }, 
+
             {
                         name:"FIELD2_2_2_1",
                         value: $("#txtFIELD2_2_2_1").val(),
