@@ -2186,5 +2186,12 @@ function hideFailedRetrieval() {
 }
 
 function loadFoundRecord() {
+    var data = retrievedRecord;
+
+    const rootKey = Object.keys(data)[0];
+    const childKey = Object.keys(data[rootKey])[0];
+
+    const fields = data[rootKey][childKey][0].fields;
+
     $('#draftFound').modal('hide');
 }
