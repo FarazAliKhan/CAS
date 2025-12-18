@@ -2165,7 +2165,7 @@ function saveDraft() {
         dataType: 'json',
         success: function (response) {
             console.log(response);
-            $("#modelUuid").val(response.uuid);
+            $("#modelUuid").val(response.rootUuid);
             $("#nodeUuid").val(response.nodes[0].uuid);
             $("#emailAddress").val("frz.khan1@gmail.com");
             alert("Draft saved successfull");

@@ -275,14 +275,14 @@ namespace WebRazor.Pages
             {
                 emailAddress = (string)TempData["emailAddress"];
             }
-            if (TempData["modelUuid"] != null)
-            {
-                modelUuid = (string)TempData["modelUuid"];
-            }
-            if (TempData["nodeUuid"] != null)
-            {
-                nodeUuid = (string)TempData["nodeUuid"];
-            }
+            //if (TempData["modelUuid"] != null)
+            //{
+            //    modelUuid = (string)TempData["modelUuid"];
+            //}
+            //if (TempData["nodeUuid"] != null)
+            //{
+            //    nodeUuid = (string)TempData["nodeUuid"];
+            //}
         }
 
         public IActionResult OnPost() {
