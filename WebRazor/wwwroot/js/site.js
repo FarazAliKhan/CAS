@@ -2116,6 +2116,8 @@ function hideFailedModal() {
     $('#draftSavedFailed').modal('hide');
 }
 
+var retrievedRecord = {};
+
 function retrieveDraft() {
     var retrieveObj = {
         "appId": "CAACS",
@@ -2155,6 +2157,7 @@ function retrieveDraft() {
         dataType: 'json',
         success: function (response) {
             console.log(response);
+            retrievedRecord = response;
             //$("#modelUuid").val(response.rootUuid);
             //$("#nodeUuid").val(response.nodes[0].uuid);
             //$("#emailAddress").val(response.nodes[0].fields[0].value);
