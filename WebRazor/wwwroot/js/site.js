@@ -2155,9 +2155,9 @@ function retrieveDraft() {
         dataType: 'json',
         success: function (response) {
             console.log(response);
-            $("#modelUuid").val(response.rootUuid);
-            $("#nodeUuid").val(response.nodes[0].uuid);
-            $("#emailAddress").val(response.nodes[0].fields[0].value);
+            //$("#modelUuid").val(response.rootUuid);
+            //$("#nodeUuid").val(response.nodes[0].uuid);
+            //$("#emailAddress").val(response.nodes[0].fields[0].value);
             //$('#savedSuccessfullyMessage').removeAttr("hidden");
             //alert("The draft saved successfully.");
             $('#draftFound').modal('show');
