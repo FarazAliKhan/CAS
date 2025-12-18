@@ -2167,7 +2167,7 @@ function saveDraft() {
             console.log(response);
             $("#modelUuid").val(response.rootUuid);
             $("#nodeUuid").val(response.nodes[0].uuid);
-            $("#emailAddress").val(response.nodes[0].fields[0].value);
+            $("#emailAddress").val("frz.khan1@gmail.com");
             //$('#savedSuccessfullyMessage').removeAttr("hidden");
             //alert("The draft saved successfully.");
             $('#draftSavedSuccessfully').modal('show');
