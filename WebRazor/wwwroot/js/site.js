@@ -2174,9 +2174,6 @@ function saveDraft() {
             setTimeout(function () {
                 document.getElementById("savedSuccessfullyMessage").style.display = "none";
             }, 10000);
-            setTimeout(function () {
-                document.getElementById("draftSavedSuccessfully").style.display = "none";
-            }, 10000);
         },
         error: function (err) {
             console.error(err);
@@ -2184,4 +2181,8 @@ function saveDraft() {
         }
     });
 
+}
+
+function hideSuccessModal() {
+    $('#draftSavedSuccessfully').modal('hide');
 }
