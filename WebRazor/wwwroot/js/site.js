@@ -2160,7 +2160,7 @@ function retrieveDraft() {
             $("#emailAddress").val(response.nodes[0].fields[0].value);
             //$('#savedSuccessfullyMessage').removeAttr("hidden");
             //alert("The draft saved successfully.");
-            //$('#draftSavedSuccessfully').modal('show');
+            $('#draftFound').modal('show');
             //setTimeout(function () {
             //    document.getElementById("savedSuccessfullyMessage").style.display = "none";
             //}, 10000);
@@ -2183,6 +2183,5 @@ function hideFailedRetrieval() {
 }
 
 function loadFoundRecord() {
-    retrieveDraft();
     $('#draftFound').modal('hide');
 }
