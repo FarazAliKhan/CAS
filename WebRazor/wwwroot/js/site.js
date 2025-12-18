@@ -2191,6 +2191,11 @@ function loadFoundRecord() {
     const rootKey = Object.keys(data)[0];
     const childKey = Object.keys(data[rootKey])[0];
 
+    const guid = data[rootKey][childKey][0].guid;
+
+    $("#modelUuid").val(guid);
+    $("#nodeUuid").val(guid);
+
     const fields = data[rootKey][childKey][0].fields;
 
     fields.forEach(f => {
