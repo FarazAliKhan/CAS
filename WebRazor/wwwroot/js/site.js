@@ -2168,16 +2168,17 @@ function saveDraft() {
             $("#modelUuid").val(response.rootUuid);
             $("#nodeUuid").val(response.nodes[0].uuid);
             $("#emailAddress").val("frz.khan1@gmail.com");
-            $('#savedSuccessfullyMessage').removeAttr("hidden");
+            //$('#savedSuccessfullyMessage').removeAttr("hidden");
             //alert("The draft saved successfully.");
             $('#draftSavedSuccessfully').modal('show');
-            setTimeout(function () {
-                document.getElementById("savedSuccessfullyMessage").style.display = "none";
-            }, 10000);
+            //setTimeout(function () {
+            //    document.getElementById("savedSuccessfullyMessage").style.display = "none";
+            //}, 10000);
         },
         error: function (err) {
             console.error(err);
-            alert("The draft save failed");
+            $('#draftSavedFailed').modal('show');
+            //alert("The draft save failed");
         }
     });
 
@@ -2185,4 +2186,8 @@ function saveDraft() {
 
 function hideSuccessModal() {
     $('#draftSavedSuccessfully').modal('hide');
+}
+
+function hideFailedModal() {
+    $('#draftSavedFailed').modal('hide');
 }

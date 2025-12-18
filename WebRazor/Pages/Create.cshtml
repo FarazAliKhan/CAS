@@ -77,6 +77,25 @@
     </div>
 </div>
 
+<div class="modal fade" id="draftSavedFailed" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Failed</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="javascript:hideFailedModal();">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div id="failed-body" class="modal-body align-left">
+                <div class="alert alert-danger align-left"><i class="fa-solid fa-circle-failed"></i> The draft save failed.</div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="javascript:hideFailedModal();">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- SIDEBAR -->
 <nav id="sidebar" class="collapse d-lg-block align-left">
     <ul id="tabsbar" class="nav flex-column" hidden>
