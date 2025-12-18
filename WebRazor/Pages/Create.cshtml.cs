@@ -260,11 +260,15 @@ namespace WebRazor.Pages
         [BindProperty]
         public IFormFile? Upload { get; set; }
 
+        [BindProperty]
+        public string apiUrlSave { get; set; }
+
         public CreateModel(
                 IConfiguration configuration
             )
         {
             this._configuration = configuration;
+            apiUrlSave = _configuration.GetValue<string>("SaveURL1");
         }
 
         public void OnGet()

@@ -2158,7 +2158,7 @@ function saveDraft() {
     }
 
     $.ajax({
-        url: 'http://10.138.32.4:11010/conveyor/envoy/save',
+        url: $("#apiUrlSave").val(),
         type: 'POST',
         data: JSON.stringify(casModel), // convert to JSON
         contentType: 'application/json; charset=utf-8',
