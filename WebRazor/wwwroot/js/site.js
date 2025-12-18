@@ -1693,7 +1693,11 @@ function saveDraft() {
             {
                         name:"FIELD2_1_2",
                         value: $("#txtFIELD2_1_2").val(),
-                    },                
+                },  
+                {
+                    name: "FIELD2_2_1",
+                    value: $("#txtFIELD2_2_1").val(),
+                }, 
             {
                         name:"FIELD2_2_1_1",
                         value: $("#txtFIELD2_2_1_1").val(),
@@ -1705,7 +1709,11 @@ function saveDraft() {
             {
                         name:"FIELD2_2_1_3",
                         value: $("#txtFIELD2_2_1_3").val(),
-                    },         
+                },   
+                {
+                    name: "FIELD2_2_2",
+                    value: $("#txtFIELD2_2_2").val(),
+                }, 
             {
                         name:"FIELD2_2_2_1",
                         value: $("#txtFIELD2_2_2_1").val(),
@@ -2223,9 +2231,11 @@ function loadFoundRecord() {
             case "FIELD1_2_5": $("#txtFIELD1_2_5").val(f.value); break;
             case "FIELD2_1_1": $("#txtFIELD2_1_1").val(f.value); break;
             case "FIELD2_1_2": $("#txtFIELD2_1_2").val(f.value); break;
+            case "FIELD2_2_1": $("#txtFIELD2_2_1").val(f.value); break;
             case "FIELD2_2_1_1": $("#txtFIELD2_2_1_1").val(f.value); break;
             case "FIELD2_2_1_2": $("#txtFIELD2_2_1_2").val(f.value); break;
             case "FIELD2_2_1_3": $("#txtFIELD2_2_1_3").val(f.value); break;
+            case "FIELD2_2_2": $("#txtFIELD2_2_2").val(f.value); break;
             case "FIELD2_2_2_1": $("#txtFIELD2_2_2_1").val(f.value); break;
             case "FIELD2_2_2_2": $("#txtFIELD2_2_2_2").val(f.value); break;
             case "FIELD2_2_2_3": $("#txtFIELD2_2_2_3").val(f.value); break;
