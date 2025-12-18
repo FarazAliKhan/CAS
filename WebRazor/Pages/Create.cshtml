@@ -58,6 +58,16 @@
     </div>
 </div>
 
+<div class="modal fade" id="draftSavedSuccessfully" tabindex="-1" role="dialog" aria-hidden="true" hidden>
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div id="success-body" class="modal-body align-left">
+                The draft saved successfully.
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- SIDEBAR -->
 <nav id="sidebar" class="collapse d-lg-block align-left">
     <ul id="tabsbar" class="nav flex-column" hidden>
@@ -210,7 +220,7 @@
                     <input type="hidden" id="modelUuid" asp-for="@Model.modelUuid" value="00000000-0000-0000-0000-000000000000">
                     <input type="hidden" id="nodeUuid" asp-for="@Model.nodeUuid" value="00000000-0000-0000-0000-000000000000">
                     <div id="sidebarMessage" class="alert alert-info align-left"><i class="fa-solid fa-circle-info"></i> The sidebar tabs will appear once you fill the Name of Court and Reporting Year Form.</div>
-                    <div id="savedSuccessfullyMessage" hidden class="alert alert-success align-left"><i class="fa-solid fa-circle-success"></i> The data saved successfully.</div>
+                    <div id="savedSuccessfullyMessage" hidden class="alert alert-success align-left"><i class="fa-solid fa-circle-success"></i> The draft saved successfully.</div>
                     <div id="detailsBasicInfo" class="fs-6">
                         <div class="align-left fs-12">
                             <div class="row">

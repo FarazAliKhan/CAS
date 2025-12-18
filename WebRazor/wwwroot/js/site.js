@@ -2169,13 +2169,18 @@ function saveDraft() {
             $("#nodeUuid").val(response.nodes[0].uuid);
             $("#emailAddress").val("frz.khan1@gmail.com");
             $('#savedSuccessfullyMessage').removeAttr("hidden");
+            //alert("The draft saved successfully.");
+            $('#draftSavedSuccessfully').modal('show');
             setTimeout(function () {
                 document.getElementById("savedSuccessfullyMessage").style.display = "none";
+            }, 10000);
+            setTimeout(function () {
+                document.getElementById("draftSavedSuccessfully").style.display = "none";
             }, 10000);
         },
         error: function (err) {
             console.error(err);
-            alert("Draft save failed");
+            alert("The draft save failed");
         }
     });
 
