@@ -534,15 +534,17 @@ namespace WebRazor.Pages
 
             TempData["txtFIELD_12_Comments"] = createItem.txtFIELD_12_Comments;
 
+            TempData["emailAddress"] = emailAddress;
+            TempData["modelUuid"] = modelUuid;
+            TempData["nodeUuid"] = nodeUuid;
+
             var submitForSave = Request.Query["submitForSave"].FirstOrDefault();
             if (!String.IsNullOrEmpty(submitForSave))
             {
                 bool success = HandleSubmit(createItem);
                 if (success)
                 {
-                    TempData["emailAddress"] = emailAddress;
-                    TempData["modelUuid"] = modelUuid;
-                    TempData["nodeUuid"] = nodeUuid;
+
                     //TempData["reqJson"] = reqJson;
                     //TempData["resJson"] = resJson;
                     //TempData["responseStatusCode"] = responseStatusCode;

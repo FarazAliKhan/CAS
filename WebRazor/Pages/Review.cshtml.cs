@@ -371,6 +371,10 @@ namespace WebRazor.Pages
                 txtFIELD_11_Comments = (string?)TempData["txtFIELD_11_Comments"];
 
                 txtFIELD_12_Comments = (string?)TempData["txtFIELD_12_Comments"];
+
+                emailAddress = (string?)TempData["emailAddress"];
+                modelUuid = (string?)TempData["modelUuid"];
+                nodeUuid = (string?)TempData["nodeUuid"];
             }          
         }
 
