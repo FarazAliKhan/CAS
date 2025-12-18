@@ -2168,7 +2168,10 @@ function saveDraft() {
             $("#modelUuid").val(response.rootUuid);
             $("#nodeUuid").val(response.nodes[0].uuid);
             $("#emailAddress").val("frz.khan1@gmail.com");
-            alert("Draft saved successfull");
+            $('#savedSuccessfullyMessage').removeAttr("hidden");
+            setTimeout(function () {
+                document.getElementById("savedSuccessfullyMessage").style.display = "none";
+            }, 10000);
         },
         error: function (err) {
             console.error(err);
