@@ -294,17 +294,17 @@ namespace WebRazor.Pages
         }
 
         public IActionResult OnPost() {
-            if (Upload != null) { 
-                if(Upload.Length > maxFileSize)
-                {
-                    ModelState.Clear();
-                    ModelState.AddModelError("FileUpload", "File size should be less than 10 MB");
-                    return Page();
-                }
-            }
+            //if (Upload != null) { 
+            //    if(Upload.Length > maxFileSize)
+            //    {
+            //        ModelState.Clear();
+            //        ModelState.AddModelError("FileUpload", "File size should be less than 10 MB");
+            //        return Page();
+            //    }
+            //}
 
-            if (!ModelState.IsValid)
-                return Page();
+            //if (!ModelState.IsValid)
+                //return Page();
 
             var createItem = new CASEntityCreate()
             {

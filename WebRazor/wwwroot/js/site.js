@@ -77,6 +77,7 @@ function submitForReview() {
         }
         else {
             var form = document.getElementById("createForm");
+            //form.action = "Create";
             form.submit();
         }
     }

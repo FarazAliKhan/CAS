@@ -373,8 +373,8 @@ namespace WebRazor.Pages
                 txtFIELD_12_Comments = (string?)TempData["txtFIELD_12_Comments"];
 
                 emailAddress = (string?)TempData["emailAddress"];
-                modelUuid = (string?)TempData["modelUuid"];
-                nodeUuid = (string?)TempData["nodeUuid"];
+                modelUuid = (string?)TempData["modelUuid"].ToString();
+                nodeUuid = (string?)TempData["nodeUuid"].ToString();
             }          
         }
 
