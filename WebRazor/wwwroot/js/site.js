@@ -22,10 +22,16 @@ const needRetrieve = params.get("retrieveRecord");
 function populateCourts() {
     const select = document.getElementById("txtCOURT");
 
+    var courtModel = {
+        "appId": "CAACS",
+        "region": "NEWRECORD",
+        "fieldName": "COURT"
+    }
+
     $.ajax({
         url: $("#apiUrlPickCourt").val(),
         type: 'POST',
-        data: JSON.stringify(casModel), // convert to JSON
+        data: JSON.stringify(courtModel), // convert to JSON
         contentType: 'application/json; charset=utf-8',
         dataType: 'json',
         success: function (response) {
