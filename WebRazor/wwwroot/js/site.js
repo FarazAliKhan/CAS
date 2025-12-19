@@ -14,8 +14,38 @@ document.querySelectorAll('#sidebar .nav-link').forEach(link => {
         });
 });
 
+populateCourts();
+
 const params = new URLSearchParams(window.location.search);
 const needRetrieve = params.get("retrieveRecord");
+
+function populateCourts() {
+    const select = document.getElementById("txtCOURT");
+
+    $.ajax({
+        url: $("#apiUrlPickCourt").val(),
+        type: 'POST',
+        data: JSON.stringify(casModel), // convert to JSON
+        contentType: 'application/json; charset=utf-8',
+        dataType: 'json',
+        success: function (response) {
+            console.log(response);
+            response.forEach(item => {
+                const option = document.createElement("option");
+                option.value = item.code;
+                option.text = item.desc_en_CA;
+                select.add(option); // or select.appendChild(option)
+            });
+        },
+        error: function (err) {
+            console.error(err);
+            //$('#draftFound').modal('hide');
+            //$('#draftDeleteFailed').modal('show');
+            //alert("The draft save failed");
+        }
+    });
+   
+}
 
 if ($("#txtCOURTReview") != null) {
     $("#txtCOURTReview").each(function () {
@@ -2166,7 +2196,9 @@ function retrieveDraft() {
             //$("#emailAddress").val(response.nodes[0].fields[0].value);
             //$('#savedSuccessfullyMessage').removeAttr("hidden");
             //alert("The draft saved successfully.");
-            $('#draftFound').modal('show');
+            if (response != null) {
+                $('#draftFound').modal('show');
+            }
             //setTimeout(function () {
             //    document.getElementById("savedSuccessfullyMessage").style.display = "none";
             //}, 10000);
@@ -2186,6 +2218,61 @@ function hideFoundModal() {
 
 function hideFailedRetrieval() {
     $('#draftRetrievalFailed').modal('hide');
+}
+
+function deleteFoundModal() {
+    var casModel =
+    {
+        appId: "CAACS",
+        region: "NEWRECORD",
+        uuid: $("#modelUuid").val(),
+        nodes: [{
+            uuid: $("#nodeUuid").val(),
+            fields: [
+                {
+                    name: "EXTERNALUSERID",
+                    value: $("#emailAddress").val(),
+                },
+                {
+                    name: "STATUS",
+                    value: "DELETED",
+                }
+            ]
+        }]
+    }
+
+    $.ajax({
+        url: $("#apiUrlSave").val(),
+        type: 'POST',
+        data: JSON.stringify(casModel), // convert to JSON
+        contentType: 'application/json; charset=utf-8',
+        dataType: 'json',
+        success: function (response) {
+            console.log(response);
+            //$("#modelUuid").val(response.rootUuid);
+            //$("#nodeUuid").val(response.nodes[0].uuid);
+            //$("#emailAddress").val(response.nodes[0].fields[0].value);
+            //$('#savedSuccessfullyMessage').removeAttr("hidden");
+            //alert("The draft saved successfully.");
+            /*$('#draftSavedSuccessfully').modal('show');*/
+            //setTimeout(function () {
+            //    document.getElementById("savedSuccessfullyMessage").style.display = "none";
+            //}, 10000);
+            $('#draftFound').modal('hide');
+        },
+        error: function (err) {
+            console.error(err);
+            $('#draftFound').modal('hide');
+            $('#draftDeleteFailed').modal('show');
+            //alert("The draft save failed");
+        }
+    });
+
+    
+}
+
+function hideFailedDelete() {
+    $('#draftDeleteFailed').modal('hide');
 }
 
 function loadFoundRecord() {
