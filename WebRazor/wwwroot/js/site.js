@@ -2202,7 +2202,7 @@ function retrieveDraft() {
             //$("#emailAddress").val(response.nodes[0].fields[0].value);
             //$('#savedSuccessfullyMessage').removeAttr("hidden");
             //alert("The draft saved successfully.");
-            if (response != null) {
+            if (Object.keys(data)[0] != null) {
                 $('#draftFound').modal('show');
             }
             //setTimeout(function () {
