@@ -2302,8 +2302,8 @@ function loadFoundRecord() {
             //case "INPUT": $("#emailAddress").val(f.value); break;
             case "COURT": $("#txtCOURT").val(f.value); break;
             case "REPORTINGYEAR": $("#intREPORTINGYEAR").val(Math.floor(Number(f.value))); break;
-            case "DATEFROM": $("#dtFROM").val(f.value); break;
-            case "DATETO": $("#dtTO").val(f.value); break;
+            case "DATEFROM": $("#dtFROM").val(f.value.split("T")[0]); break;
+            case "DATETO": $("#dtTO").val(f.value.split("T")[0]); break;
             case "FIELD1_1_1": $("#txtFIELD1_1_1").val(Math.floor(Number(f.value))); break;
             case "FIELD1_1_2": $("#txtFIELD1_1_2").val(Math.floor(Number(f.value))); break;
             case "FIELD1_1_3": $("#txtFIELD1_1_3").val(Math.floor(Number(f.value))); break;
@@ -2401,6 +2401,8 @@ function loadFoundRecord() {
             case "COMMENTSECTION11": $("#txtFIELD_11_Comments").val(f.value); break;
         }
     });
+
+    enableDisableReview();
 
     $('#draftFound').modal('hide');
 }
