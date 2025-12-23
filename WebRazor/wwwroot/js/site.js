@@ -2213,8 +2213,15 @@ function retrieveDraft() {
         success: function (response) {
             console.log(response);
             retrievedRecord = response;
-            //$("#modelUuid").val(response.rootUuid);
-            //$("#nodeUuid").val(response.nodes[0].uuid);
+            var data = retrievedRecord;
+
+            const rootKey = Object.keys(data)[0];
+            const childKey = Object.keys(data[rootKey])[0];
+
+            const guid = data[rootKey][childKey][0].guid;
+
+            $("#modelUuid").val(guid);
+            $("#nodeUuid").val(guid);
             //$("#emailAddress").val(response.nodes[0].fields[0].value);
             //$('#savedSuccessfullyMessage').removeAttr("hidden");
             //alert("The draft saved successfully.");
