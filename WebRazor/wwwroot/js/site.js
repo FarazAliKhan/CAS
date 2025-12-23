@@ -125,13 +125,14 @@ function submitForReview() {
 
 function finalSubmit() {
     var form = document.getElementById("reviewForm");
-    form.action = "/Review?finalSubmit=true";
+    form.action = "/FinalMessage?finalSubmit=true";
     form.method = "post";
     form.submit();
 }
 
 function submitForResult() {
     var form = document.getElementById("finalForm");
+    form.action = "/Result";
     form.method = "post";
     form.submit();
 }
