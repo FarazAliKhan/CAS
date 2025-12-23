@@ -543,6 +543,8 @@ namespace WebRazor.Pages
             TempData["modelUuid"] = modelUuid;
             TempData["nodeUuid"] = nodeUuid;
 
+            var fromSelect = Request.Query["fromSelect"].FirstOrDefault();
+
             var submitForSave = Request.Query["submitForSave"].FirstOrDefault();
             if (!String.IsNullOrEmpty(submitForSave))
             {
@@ -556,8 +558,15 @@ namespace WebRazor.Pages
                     return Page();
                 }
             }
-                
-            return RedirectToPage("Review");
+             
+            if(!String.IsNullOrEmpty(fromSelect))
+            {
+                return Page();
+            }
+            else
+            {
+                return RedirectToPage("Review");
+            }              
         }
 
         public void OnGetLoad()

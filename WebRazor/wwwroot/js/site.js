@@ -145,7 +145,7 @@ function submitForSave() {
 
 function submitStats() {
     var form = document.getElementById("selectForm");
-    form.action = "/Select";
+    form.action = "/Create/Create?fromSelect=true&retrieveRecord=true";
     form.method = "post";
     form.submit();
 }
