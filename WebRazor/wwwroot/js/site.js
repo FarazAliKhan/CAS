@@ -25,7 +25,9 @@ function populateCourts() {
     var courtModel = {
         "appId": "CAACS",
         "region": "NEWRECORD",
+        "table": "CCM_MASTER",
         "fieldName": "COURT"
+
     }
 
     $.ajax({
