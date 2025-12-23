@@ -20,7 +20,13 @@ const params = new URLSearchParams(window.location.search);
 const needRetrieve = params.get("retrieveRecord");
 
 function populateCourts() {
-    const select = document.getElementById("txtCOURT");
+    let select = document.getElementById("txtCOURT");
+    if (select == null) {
+        select = document.getElementById("txtCOURTReview");
+    }
+    if (select == null) {
+        select = document.getElementById("txtCOURTResult");
+    }
 
     var courtModel = {
         "appId": "CAACS",
@@ -1734,6 +1740,10 @@ function saveDraft() {
                         name:"FIELD2_1_2",
                         value: $("#txtFIELD2_1_2").val(),
                 },  
+                {
+                    name: "FIELD2_2_1",
+                    value: $("#txtFIELD2_2_1").val(),
+                },
                
             {
                         name:"FIELD2_2_1_1",
@@ -1747,7 +1757,10 @@ function saveDraft() {
                         name:"FIELD2_2_1_3",
                         value: $("#txtFIELD2_2_1_3").val(),
                 },   
-
+                {
+                    name: "FIELD2_2_2",
+                    value: $("#txtFIELD2_2_2").val(),
+                },
             {
                         name:"FIELD2_2_2_1",
                         value: $("#txtFIELD2_2_2_1").val(),
@@ -2245,6 +2258,487 @@ function deleteFoundModal() {
                 {
                     name: "STATUS",
                     value: "DELETED",
+                },
+
+                {
+                    name: "INPUT",
+                    value: new Date(),
+                },
+
+                {
+                    name: "COURT",
+                    value: $("#txtCOURT").val(),
+                },
+
+                {
+                    name: "REPORTINGYEAR",
+                    value: $("#intREPORTINGYEAR").val(),
+                },
+
+                {
+                    name: "DATEFROM",
+                    value: $("#dtFROM").val(),
+                },
+
+                {
+                    name: "DATETO",
+                    value: $("#dtTO").val(),
+                },
+                {
+                    name: "FIELD1_1_1",
+                    value: $("#txtFIELD1_1_1").val(),
+                },
+
+                {
+                    name: "FIELD1_1_2",
+                    value: $("#txtFIELD1_1_2").val(),
+                },
+                {
+                    name: "FIELD1_1_3",
+                    value: $("#txtFIELD1_1_3").val(),
+                },
+
+                {
+                    name: "FIELD1_1_4",
+                    value: $("#txtFIELD1_1_4").val(),
+                },
+
+                {
+                    name: "FIELD1_1_5",
+                    value: $("#txtFIELD1_1_5").val(),
+                },
+                {
+                    name: "FIELD1_1_6",
+                    value: $("#txtFIELD1_1_6").val(),
+                },
+                {
+                    name: "FIELD1_1_7",
+                    value: $("#txtFIELD1_1_7").val(),
+                },
+                {
+                    name: "COMMENTSECTION1",
+                    value: $("#txtFIELD_1_Comments").val(),
+                },
+                {
+                    name: "FIELD1_2_1",
+                    value: $("#txtFIELD1_2_1").val(),
+                },
+                {
+                    name: "FIELD1_2_2",
+                    value: $("#txtFIELD1_2_2").val(),
+                },
+                {
+                    name: "FIELD1_2_3",
+                    value: $("#txtFIELD1_2_3").val(),
+                },
+                {
+                    name: "FIELD1_2_4",
+                    value: $("#txtFIELD1_2_4").val(),
+                },
+
+                {
+                    name: "FIELD1_2_5",
+                    value: $("#txtFIELD1_2_5").val(),
+                },
+                {
+                    name: "FIELD2_1_1",
+                    value: $("#txtFIELD2_1_1").val(),
+                },
+                {
+                    name: "FIELD2_1_2",
+                    value: $("#txtFIELD2_1_2").val(),
+                },
+                {
+                    name: "FIELD2_2_1",
+                    value: $("#txtFIELD2_2_1").val(),
+                },
+
+                {
+                    name: "FIELD2_2_1_1",
+                    value: $("#txtFIELD2_2_1_1").val(),
+                },
+                {
+                    name: "FIELD2_2_1_2",
+                    value: $("#txtFIELD2_2_1_2").val(),
+                },
+                {
+                    name: "FIELD2_2_1_3",
+                    value: $("#txtFIELD2_2_1_3").val(),
+                },
+                {
+                    name: "FIELD2_2_2",
+                    value: $("#txtFIELD2_2_2").val(),
+                },
+                {
+                    name: "FIELD2_2_2_1",
+                    value: $("#txtFIELD2_2_2_1").val(),
+                },
+                {
+                    name: "FIELD2_2_2_2",
+                    value: $("#txtFIELD2_2_2_2").val(),
+                },
+                {
+                    name: "FIELD2_2_2_3",
+                    value: $("#txtFIELD2_2_2_3").val(),
+                },
+                {
+                    name: "COMMENTSECTION2",
+                    value: $("#txtFIELD_2_Comments").val(),
+                },
+                {
+                    name: "FIELD3_1",
+                    value: $("#txtFIELD3_1").val(),
+                },
+                {
+                    name: "FIELD3_2",
+                    value: $("#txtFIELD3_2").val(),
+                },
+                {
+                    name: "COMMENTSECTION3",
+                    value: $("#txtFIELD_3_Comments").val(),
+                },
+                {
+                    name: "FIELD4_1_1",
+                    value: $("#txtFIELD4_1_1").val(),
+                },
+                {
+                    name: "FIELD4_1_2",
+                    value: $("#txtFIELD4_1_2").val(),
+                },
+                {
+                    name: "FIELD4_1_3",
+                    value: $("#txtFIELD4_1_3").val(),
+                },
+                {
+                    name: "FIELD4_1_4_1",
+                    value: $("#txtFIELD4_1_4_1").val(),
+                },
+                {
+                    name: "FIELD4_1_4_2",
+                    value: $("#txtFIELD4_1_4_2").val(),
+                },
+                {
+                    name: "FIELD4_1_4_3",
+                    value: $("#txtFIELD4_1_4_3").val(),
+                },
+                {
+                    name: "FIELD4_1_5_1",
+                    value: $("#txtFIELD4_1_5_1").val(),
+                },
+                {
+                    name: "FIELD4_1_5_2",
+                    value: $("#txtFIELD4_1_5_2").val(),
+                },
+                {
+                    name: "FIELD4_1_5_3",
+                    value: $("#txtFIELD4_1_5_3").val(),
+                },
+                {
+                    name: "FIELD4_1_6_1",
+                    value: $("#txtFIELD4_1_6_1").val(),
+                },
+                {
+                    name: "FIELD4_1_6_2",
+                    value: $("#txtFIELD4_1_6_2").val(),
+                },
+                {
+                    name: "FIELD4_1_6_3",
+                    value: $("#txtFIELD4_1_6_3").val(),
+                },
+                {
+                    name: "FIELD4_2_1",
+                    value: $("#txtFIELD4_2_1").val(),
+                },
+                {
+                    name: "FIELD4_2_2",
+                    value: $("#txtFIELD4_2_2").val(),
+                },
+                {
+                    name: "FIELD4_2_3",
+                    value: $("#txtFIELD4_2_3").val(),
+                },
+                {
+                    name: "FIELD4_2_4_1",
+                    value: $("#txtFIELD4_2_4_1").val(),
+                },
+                {
+                    name: "FIELD4_2_4_2",
+                    value: $("#txtFIELD4_2_4_2").val(),
+                },
+                {
+                    name: "FIELD4_2_4_3",
+                    value: $("#txtFIELD4_2_4_3").val(),
+                },
+                {
+                    name: "FIELD4_2_5_1",
+                    value: $("#txtFIELD4_2_5_1").val(),
+                },
+                {
+                    name: "FIELD4_2_5_2",
+                    value: $("#txtFIELD4_2_5_2").val(),
+                },
+                {
+                    name: "FIELD4_2_5_3",
+                    value: $("#txtFIELD4_2_5_3").val(),
+                },
+                {
+                    name: "FIELD4_2_6_1",
+                    value: $("#txtFIELD4_2_6_1").val(),
+                },
+                {
+                    name: "FIELD4_2_6_2",
+                    value: $("#txtFIELD4_2_6_2").val(),
+                },
+                {
+                    name: "FIELD4_2_6_3",
+                    value: $("#txtFIELD4_2_6_3").val(),
+                },
+                {
+                    name: "FIELD4_3_1",
+                    value: $("#txtFIELD4_3_1").val(),
+                },
+
+
+                {
+                    name: "FIELD4_3_2",
+                    value: $("#txtFIELD4_3_2").val(),
+                },
+
+
+                {
+                    name: "FIELD4_3_3",
+                    value: $("#txtFIELD4_3_3").val(),
+                },
+
+
+                {
+                    name: "FIELD4_3_4_1",
+                    value: $("#txtFIELD4_3_4_1").val(),
+                },
+
+
+                {
+                    name: "FIELD4_3_4_2",
+                    value: $("#txtFIELD4_3_4_2").val(),
+                },
+
+
+                {
+                    name: "FIELD4_3_4_3",
+                    value: $("#txtFIELD4_3_4_3").val(),
+                },
+
+
+                {
+                    name: "FIELD4_3_5_1",
+                    value: $("#txtFIELD4_3_5_1").val(),
+                },
+
+
+                {
+                    name: "FIELD4_3_5_2",
+                    value: $("#txtFIELD4_3_5_2").val(),
+                },
+
+
+                {
+                    name: "FIELD4_3_5_3",
+                    value: $("#txtFIELD4_3_5_3").val(),
+                },
+
+
+                {
+                    name: "FIELD4_3_6_1",
+                    value: $("#txtFIELD4_3_6_1").val(),
+                },
+
+
+                {
+                    name: "FIELD4_3_6_2",
+                    value: $("#txtFIELD4_3_6_2").val(),
+                },
+
+
+                {
+                    name: "FIELD4_3_6_3",
+                    value: $("#txtFIELD4_3_6_3").val(),
+                },
+
+
+                {
+                    name: "COMMENTSECTION4",
+                    value: $("#txtFIELD_4_Comments").val(),
+                },
+
+                {
+                    name: "FIELD5_1",
+                    value: $("#txtFIELD5_1").val(),
+                },
+
+
+                {
+                    name: "FIELD5_2",
+                    value: $("#txtFIELD5_2").val(),
+                },
+
+
+                {
+                    name: "FIELD5_3",
+                    value: $("#txtFIELD5_3").val(),
+                },
+
+
+                {
+                    name: "FIELD5_4",
+                    value: $("#txtFIELD5_4").val(),
+                },
+
+
+                {
+                    name: "COMMENTSECTION5",
+                    value: $("#txtFIELD_5_Comments").val(),
+                },
+
+                {
+                    name: "FIELD6_1_1",
+                    value: $("#txtFIELD6_1_1").val(),
+                },
+                {
+                    name: "FIELD6_1_2",
+                    value: $("#txtFIELD6_1_2").val(),
+                },
+                {
+                    name: "FIELD6_1_3",
+                    value: $("#txtFIELD6_1_3").val(),
+                },
+                {
+                    name: "FIELD6_2_1",
+                    value: $("#txtFIELD6_2_1").val(),
+                },
+
+
+                {
+                    name: "FIELD6_2_2",
+                    value: $("#txtFIELD6_2_2").val(),
+                },
+
+
+                {
+                    name: "FIELD6_2_3",
+                    value: $("#txtFIELD6_2_3").val(),
+                },
+
+
+                {
+                    name: "FIELD6_3_1",
+                    value: $("#txtFIELD6_3_1").val(),
+                },
+
+
+                {
+                    name: "FIELD6_3_2",
+                    value: $("#txtFIELD6_3_2").val(),
+                },
+
+
+                {
+                    name: "FIELD6_3_3",
+                    value: $("#txtFIELD6_3_3").val(),
+                },
+
+
+                {
+                    name: "COMMENTSECTION6",
+                    value: $("#txtFIELD_6_Comments").val(),
+                },
+
+                {
+                    name: "FIELD7_1_1",
+                    value: $("#txtFIELD7_1_1").val(),
+                },
+
+
+                {
+                    name: "FIELD7_1_2",
+                    value: $("#txtFIELD7_1_2").val(),
+                },
+
+
+                {
+                    name: "FIELD7_1_3",
+                    value: $("#txtFIELD7_1_3").val(),
+                },
+
+
+                {
+                    name: "COMMENTSECTION7",
+                    value: $("#txtFIELD_7_Comments").val(),
+                },
+
+                {
+                    name: "FIELD8_1",
+                    value: $("#txtFIELD8_1").val(),
+                },
+
+
+                {
+                    name: "FIELD8_2",
+                    value: $("#txtFIELD8_2").val(),
+                },
+
+
+                {
+                    name: "FIELD8_3",
+                    value: $("#txtFIELD8_3").val(),
+                },
+
+
+                {
+                    name: "COMMENTSECTION8",
+                    value: $("#txtFIELD_8_Comments").val(),
+                },
+
+                {
+                    name: "FIELD9_1",
+                    value: $("#txtFIELD9_1").val(),
+                },
+
+
+                {
+                    name: "FIELD9_2",
+                    value: $("#txtFIELD9_2").val(),
+                },
+
+
+                {
+                    name: "COMMENTSECTION9",
+                    value: $("#txtFIELD_9_Comments").val(),
+                },
+
+                {
+                    name: "FIELD10_1",
+                    value: $("#txtFIELD10_1").val(),
+                },
+                {
+                    name: "COMMENTSECTION10",
+                    value: $("#txtFIELD_10_Comments").val(),
+                },
+
+                {
+                    name: "FIELD11_1",
+                    value: $("#txtFIELD11_1").val(),
+                },
+
+
+                {
+                    name: "FIELD11_2",
+                    value: $("#txtFIELD11_2").val(),
+                },
+
+
+                {
+                    name: "COMMENTSECTION11",
+                    value: $("#txtFIELD_11_Comments").val(),
                 }
             ]
         }]

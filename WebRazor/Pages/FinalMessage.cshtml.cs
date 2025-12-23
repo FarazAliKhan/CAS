@@ -664,6 +664,12 @@ namespace WebRazor.Pages
 
             fields.Add(new Field()
             {
+                name = "FIELD2_2_1",
+                value = createItem.txtFIELD2_2_1 != null ? createItem.txtFIELD2_2_1.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
                 name = "FIELD2_2_1_1",
                 value = createItem.txtFIELD2_2_1_1 != null ? createItem.txtFIELD2_2_1_1.Value.ToString() : "0",
             });
@@ -678,6 +684,12 @@ namespace WebRazor.Pages
             {
                 name = "FIELD2_2_1_3",
                 value = createItem.txtFIELD2_2_1_3 != null ? createItem.txtFIELD2_2_1_3.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD2_2_2",
+                value = createItem.txtFIELD2_2_2 != null ? createItem.txtFIELD2_2_2.Value.ToString() : "0",
             });
 
             fields.Add(new Field()
