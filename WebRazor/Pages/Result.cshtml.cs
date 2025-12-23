@@ -358,6 +358,8 @@ namespace WebRazor.Pages
 
         public IActionResult OnPost(CASEntityCreate createItem)
         {
+            return Page();
+
             var finalSubmit = Request.Query["finalSubmit"].FirstOrDefault();
             if (!String.IsNullOrEmpty(finalSubmit))
             {
