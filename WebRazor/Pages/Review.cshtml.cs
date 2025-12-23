@@ -246,6 +246,9 @@ namespace WebRazor.Pages
         [BindProperty]
         public string apiUrlRetrieve { get; set; }
 
+        [BindProperty]
+        public string apiUrlPickCourt { get; set; }
+
         public ReviewModel(
                 IConfiguration configuration
             )
@@ -253,6 +256,7 @@ namespace WebRazor.Pages
             this._configuration = configuration;
             apiUrlSave = _configuration.GetValue<string>("SaveURL1");
             apiUrlRetrieve = _configuration.GetValue<string>("RetrieveURL1");
+            apiUrlPickCourt = _configuration.GetValue<string>("PickCourtURL1");
         }
 
         public void OnGet()

@@ -52,7 +52,12 @@
 </div>
 <br />
 <form method="post" id="ResultForm">
-
+    <input type="hidden" id="apiUrlSave" asp-for="@Model.apiUrlSave">
+    <input type="hidden" id="apiUrlRetrieve" asp-for="@Model.apiUrlRetrieve">
+    <input type="hidden" id="apiUrlPickCourt" asp-for="@Model.apiUrlPickCourt">
+    <input type="hidden" id="emailAddress" asp-for="@Model.emailAddress">
+    <input type="hidden" id="modelUuid" asp-for="@Model.modelUuid" value="00000000-0000-0000-0000-000000000000">
+    <input type="hidden" id="nodeUuid" asp-for="@Model.nodeUuid" value="00000000-0000-0000-0000-000000000000">
     <div id="detailsBasicInfo" class="section-color fs-6">
         <div class="align-left fs-12">
             <div class="row">
