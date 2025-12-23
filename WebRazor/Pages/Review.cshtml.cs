@@ -507,7 +507,15 @@ namespace WebRazor.Pages
             }
 
             TempData["sectionId"] = Request.Query["sectionId"].FirstOrDefault();
-            return RedirectToPage("Create", "Load");
+            var section = Request.Query["sectionId"].FirstOrDefault();
+            if (!String.IsNullOrEmpty(section))
+            {
+                return RedirectToPage("Create", "Load");
+            }
+            else
+            {
+                return Page();
+            }
         }
 
 

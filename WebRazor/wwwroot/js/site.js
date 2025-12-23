@@ -113,7 +113,7 @@ function submitForReview() {
         }
         else {
             var form = document.getElementById("createForm");
-            form.action = "/Create/Create";
+            form.action = "/Review";
             form.submit();
         }
     }
