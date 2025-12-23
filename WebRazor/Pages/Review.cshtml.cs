@@ -1170,6 +1170,7 @@ namespace WebRazor.Pages
                         Console.WriteLine(apiResponse);
                         resJson = apiResponse;
                         var casResponseModel = JsonConvert.DeserializeObject<CasModel>(apiResponse);
+                        TempData["RootUuidReturned"] = casResponseModel.nodes[0].uuid;
                     }
                     responseStatusCode = response.StatusCode.ToString();
                 }
