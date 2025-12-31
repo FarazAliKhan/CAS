@@ -76,11 +76,6 @@
         <select hidden style="pointer-events: none;" class="form-control" id="txtCOURTResult" asp-for="@Model.txtCOURT" onchange="javascript:enableDisableResult();" style="width:100%" required="required"
                 data-num="" data-msg="Please enter Name of Court">
             <option value="">Select Court</option>
-        </select>
-
-        <select hidden style="pointer-events: none;" class="form-control" id="intREPORTINGYEARResult" asp-for="@Model.intREPORTINGYEAR" onchange="javascript:enableDisableResult();" style="width:100%;" required="required"
-                data-num="" data-msg="Please enter Reporting Year">
-            <option value="">Select Court</option>
             <option value="ABCA">Alberta Court of Appeal</option>
             <option value="BCCA">Court of Appeal for British Columbia</option>
             <option value="CMAC">Court Martial Appeal Court of Canada (CMACC)</option>
@@ -96,6 +91,11 @@
             <option value="QCCA">Cour d’appel du Québec</option>
             <option value="SKCA">Court of Appeal for Saskatchewan</option>
             <option value="YKCA">Court of Appeal of Yukon</option>
+        </select>
+
+        <select hidden style="pointer-events: none;" class="form-control" id="intREPORTINGYEARResult" asp-for="@Model.intREPORTINGYEAR" onchange="javascript:enableDisableResult();" style="width:100%;" required="required"
+                data-num="" data-msg="Please enter Reporting Year">
+            <option value="">Select Court</option>
         </select>
 
         <input hidden class="form-control" id="dtFROM" name="dtFROM" type="date" asp-for="@Model.dtFROM" onchange="javascript:enableDisableResult();" autocomplete="dtFROM" data-rule-minlength="1" style="width:100%" required="required"
