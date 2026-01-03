@@ -178,6 +178,24 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Court of Appeal Annual Statistics (CAAS).
+        /// </summary>
+        public static string hdgCreateheading1 {
+            get {
+                return ResourceManager.GetString("hdgCreateheading1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Data Entry Form.
+        /// </summary>
+        public static string hdgDataEntryForm {
+            get {
+                return ResourceManager.GetString("hdgDataEntryForm", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Home.
         /// </summary>
         public static string Home {

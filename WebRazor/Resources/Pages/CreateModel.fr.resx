@@ -180,4 +180,10 @@
   <data name="1_1_4_Info" xml:space="preserve">
     <value>The civil appeals, cross-appeals, references, and JRs disposed of by the registrar take into account the certificates of lapse of appeal issued by the registry.</value>
   </data>
+  <data name="hdgCreateheading1" xml:space="preserve">
+    <value>FR-Court of Appeal Annual Statistics (CAAS)</value>
+  </data>
+  <data name="hdgDataEntryForm" xml:space="preserve">
+    <value>Fr-Data Entry Form</value>
+  </data>
 </root>
