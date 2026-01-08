@@ -70,11 +70,83 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs disposed of by the registrar, the case management officer or authorized personnel or by operation of the rules.
+        /// </summary>
+        public static string _1_1_4_Heading1 {
+            get {
+                return ResourceManager.GetString("1_1_4_Heading1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs disposed of by the registrar, the case management officer or authorized personnel or by operation of the rules.
+        /// </summary>
+        public static string _1_1_4_Heading2 {
+            get {
+                return ResourceManager.GetString("1_1_4_Heading2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs disposed of by the registrar, the case management officer or authorized personnel or by operation of the rules.
+        /// </summary>
+        public static string _1_1_4_Heading3 {
+            get {
+                return ResourceManager.GetString("1_1_4_Heading3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs disposed of by the registrar, the case management officer or authorized personnel or by operation of the rules.
+        /// </summary>
+        public static string _1_1_4_Heading4 {
+            get {
+                return ResourceManager.GetString("1_1_4_Heading4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The civil appeals, cross-appeals, references, and JRs disposed of by the registrar take into account the certificates of lapse of appeal issued by the registry..
         /// </summary>
         public static string _1_1_4_Info {
             get {
                 return ResourceManager.GetString("1_1_4_Info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The civil appeals, cross-appeals, references, and JRs disposed of by the registrar take into account the certificates of lapse of appeal issued by the registry..
+        /// </summary>
+        public static string _1_1_4_Info1 {
+            get {
+                return ResourceManager.GetString("1_1_4_Info1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The civil appeals, cross-appeals, references, and JRs disposed of by the registrar take into account the certificates of lapse of appeal issued by the registry..
+        /// </summary>
+        public static string _1_1_4_Info2 {
+            get {
+                return ResourceManager.GetString("1_1_4_Info2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The civil appeals, cross-appeals, references, and JRs disposed of by the registrar take into account the certificates of lapse of appeal issued by the registry..
+        /// </summary>
+        public static string _1_1_4_Info3 {
+            get {
+                return ResourceManager.GetString("1_1_4_Info3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The civil appeals, cross-appeals, references, and JRs disposed of by the registrar take into account the certificates of lapse of appeal issued by the registry..
+        /// </summary>
+        public static string _1_1_4_Info4 {
+            get {
+                return ResourceManager.GetString("1_1_4_Info4", resourceCulture);
             }
         }
         
@@ -88,11 +160,83 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Number of appeals, cross-appeals, references, bail reviews, and judicial reviews (JRs).
+        /// </summary>
+        public static string _1_Heading1 {
+            get {
+                return ResourceManager.GetString("1_Heading1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of appeals, cross-appeals, references, bail reviews, and judicial reviews (JRs).
+        /// </summary>
+        public static string _1_Heading2 {
+            get {
+                return ResourceManager.GetString("1_Heading2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of appeals, cross-appeals, references, bail reviews, and judicial reviews (JRs).
+        /// </summary>
+        public static string _1_Heading3 {
+            get {
+                return ResourceManager.GetString("1_Heading3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of appeals, cross-appeals, references, bail reviews, and judicial reviews (JRs).
+        /// </summary>
+        public static string _1_Heading4 {
+            get {
+                return ResourceManager.GetString("1_Heading4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to One notice of appeal counts as one appeal filed and one appeal disposed of, even though a number of related cases may be grouped together and heard at one hearing (example: if 10 cases are grouped together and heard together but are the subject of 10 notices of appeal, this counts as 10 appeals filed and 10 appeals disposed of). A notice of appeal containing both an appeal against conviction and against sentence, shall be counted as two appeals, but when heard together shall be counted as a single hearing.&lt; [rest of string was truncated]&quot;;.
         /// </summary>
         public static string _1_Info {
             get {
                 return ResourceManager.GetString("1_Info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to One notice of appeal counts as one appeal filed and one appeal disposed of, even though a number of related cases may be grouped together and heard at one hearing (example: if 10 cases are grouped together and heard together but are the subject of 10 notices of appeal, this counts as 10 appeals filed and 10 appeals disposed of). A notice of appeal containing both an appeal against conviction and against sentence, shall be counted as two appeals, but when heard together shall be counted as a single hearing.&lt; [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string _1_Info1 {
+            get {
+                return ResourceManager.GetString("1_Info1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to One notice of appeal counts as one appeal filed and one appeal disposed of, even though a number of related cases may be grouped together and heard at one hearing (example: if 10 cases are grouped together and heard together but are the subject of 10 notices of appeal, this counts as 10 appeals filed and 10 appeals disposed of). A notice of appeal containing both an appeal against conviction and against sentence, shall be counted as two appeals, but when heard together shall be counted as a single hearing.&lt; [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string _1_Info2 {
+            get {
+                return ResourceManager.GetString("1_Info2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to One notice of appeal counts as one appeal filed and one appeal disposed of, even though a number of related cases may be grouped together and heard at one hearing (example: if 10 cases are grouped together and heard together but are the subject of 10 notices of appeal, this counts as 10 appeals filed and 10 appeals disposed of). A notice of appeal containing both an appeal against conviction and against sentence, shall be counted as two appeals, but when heard together shall be counted as a single hearing.&lt; [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string _1_Info3 {
+            get {
+                return ResourceManager.GetString("1_Info3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to One notice of appeal counts as one appeal filed and one appeal disposed of, even though a number of related cases may be grouped together and heard at one hearing (example: if 10 cases are grouped together and heard together but are the subject of 10 notices of appeal, this counts as 10 appeals filed and 10 appeals disposed of). A notice of appeal containing both an appeal against conviction and against sentence, shall be counted as two appeals, but when heard together shall be counted as a single hearing.&lt; [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string _1_Info4 {
+            get {
+                return ResourceManager.GetString("1_Info4", resourceCulture);
             }
         }
         
@@ -106,11 +250,83 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to A draft record found. Do you want to load it?.
+        /// </summary>
+        public static string Alert_DraftFound_AskLoad1 {
+            get {
+                return ResourceManager.GetString("Alert_DraftFound_AskLoad1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A draft record found. Do you want to load it?.
+        /// </summary>
+        public static string Alert_DraftFound_AskLoad2 {
+            get {
+                return ResourceManager.GetString("Alert_DraftFound_AskLoad2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A draft record found. Do you want to load it?.
+        /// </summary>
+        public static string Alert_DraftFound_AskLoad3 {
+            get {
+                return ResourceManager.GetString("Alert_DraftFound_AskLoad3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A draft record found. Do you want to load it?.
+        /// </summary>
+        public static string Alert_DraftFound_AskLoad4 {
+            get {
+                return ResourceManager.GetString("Alert_DraftFound_AskLoad4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The draft save failed..
         /// </summary>
         public static string Alert_DraftSavedFailed {
             get {
                 return ResourceManager.GetString("Alert_DraftSavedFailed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The draft save failed..
+        /// </summary>
+        public static string Alert_DraftSavedFailed1 {
+            get {
+                return ResourceManager.GetString("Alert_DraftSavedFailed1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The draft save failed..
+        /// </summary>
+        public static string Alert_DraftSavedFailed2 {
+            get {
+                return ResourceManager.GetString("Alert_DraftSavedFailed2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The draft save failed..
+        /// </summary>
+        public static string Alert_DraftSavedFailed3 {
+            get {
+                return ResourceManager.GetString("Alert_DraftSavedFailed3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The draft save failed..
+        /// </summary>
+        public static string Alert_DraftSavedFailed4 {
+            get {
+                return ResourceManager.GetString("Alert_DraftSavedFailed4", resourceCulture);
             }
         }
         
@@ -124,11 +340,83 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The draft saved successfully..
+        /// </summary>
+        public static string Alert_DraftSavedSuccess1 {
+            get {
+                return ResourceManager.GetString("Alert_DraftSavedSuccess1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The draft saved successfully..
+        /// </summary>
+        public static string Alert_DraftSavedSuccess2 {
+            get {
+                return ResourceManager.GetString("Alert_DraftSavedSuccess2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The draft saved successfully..
+        /// </summary>
+        public static string Alert_DraftSavedSuccess3 {
+            get {
+                return ResourceManager.GetString("Alert_DraftSavedSuccess3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The draft saved successfully..
+        /// </summary>
+        public static string Alert_DraftSavedSuccess4 {
+            get {
+                return ResourceManager.GetString("Alert_DraftSavedSuccess4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The record delete failed..
         /// </summary>
         public static string Alert_RecordDeleteFailed {
             get {
                 return ResourceManager.GetString("Alert_RecordDeleteFailed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The record delete failed..
+        /// </summary>
+        public static string Alert_RecordDeleteFailed1 {
+            get {
+                return ResourceManager.GetString("Alert_RecordDeleteFailed1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The record delete failed..
+        /// </summary>
+        public static string Alert_RecordDeleteFailed2 {
+            get {
+                return ResourceManager.GetString("Alert_RecordDeleteFailed2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The record delete failed..
+        /// </summary>
+        public static string Alert_RecordDeleteFailed3 {
+            get {
+                return ResourceManager.GetString("Alert_RecordDeleteFailed3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The record delete failed..
+        /// </summary>
+        public static string Alert_RecordDeleteFailed4 {
+            get {
+                return ResourceManager.GetString("Alert_RecordDeleteFailed4", resourceCulture);
             }
         }
         
@@ -142,11 +430,83 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The record retrieval failed..
+        /// </summary>
+        public static string Alert_RecordRetrievalFailed1 {
+            get {
+                return ResourceManager.GetString("Alert_RecordRetrievalFailed1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The record retrieval failed..
+        /// </summary>
+        public static string Alert_RecordRetrievalFailed2 {
+            get {
+                return ResourceManager.GetString("Alert_RecordRetrievalFailed2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The record retrieval failed..
+        /// </summary>
+        public static string Alert_RecordRetrievalFailed3 {
+            get {
+                return ResourceManager.GetString("Alert_RecordRetrievalFailed3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The record retrieval failed..
+        /// </summary>
+        public static string Alert_RecordRetrievalFailed4 {
+            get {
+                return ResourceManager.GetString("Alert_RecordRetrievalFailed4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Close.
         /// </summary>
         public static string Aria_Close {
             get {
                 return ResourceManager.GetString("Aria_Close", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Close.
+        /// </summary>
+        public static string Aria_Close1 {
+            get {
+                return ResourceManager.GetString("Aria_Close1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Close.
+        /// </summary>
+        public static string Aria_Close2 {
+            get {
+                return ResourceManager.GetString("Aria_Close2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Close.
+        /// </summary>
+        public static string Aria_Close3 {
+            get {
+                return ResourceManager.GetString("Aria_Close3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Close.
+        /// </summary>
+        public static string Aria_Close4 {
+            get {
+                return ResourceManager.GetString("Aria_Close4", resourceCulture);
             }
         }
         
@@ -160,11 +520,83 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Back.
+        /// </summary>
+        public static string Back1 {
+            get {
+                return ResourceManager.GetString("Back1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Back.
+        /// </summary>
+        public static string Back2 {
+            get {
+                return ResourceManager.GetString("Back2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Back.
+        /// </summary>
+        public static string Back3 {
+            get {
+                return ResourceManager.GetString("Back3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Back.
+        /// </summary>
+        public static string Back4 {
+            get {
+                return ResourceManager.GetString("Back4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Name of Court and Reporting Year.
         /// </summary>
         public static string BasicInfo_SectionTitle {
             get {
                 return ResourceManager.GetString("BasicInfo_SectionTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Name of Court and Reporting Year.
+        /// </summary>
+        public static string BasicInfo_SectionTitle1 {
+            get {
+                return ResourceManager.GetString("BasicInfo_SectionTitle1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Name of Court and Reporting Year.
+        /// </summary>
+        public static string BasicInfo_SectionTitle2 {
+            get {
+                return ResourceManager.GetString("BasicInfo_SectionTitle2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Name of Court and Reporting Year.
+        /// </summary>
+        public static string BasicInfo_SectionTitle3 {
+            get {
+                return ResourceManager.GetString("BasicInfo_SectionTitle3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Name of Court and Reporting Year.
+        /// </summary>
+        public static string BasicInfo_SectionTitle4 {
+            get {
+                return ResourceManager.GetString("BasicInfo_SectionTitle4", resourceCulture);
             }
         }
         
@@ -178,11 +610,83 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Previous Tab.
+        /// </summary>
+        public static string Btn_PreviousTab1 {
+            get {
+                return ResourceManager.GetString("Btn_PreviousTab1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Previous Tab.
+        /// </summary>
+        public static string Btn_PreviousTab2 {
+            get {
+                return ResourceManager.GetString("Btn_PreviousTab2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Previous Tab.
+        /// </summary>
+        public static string Btn_PreviousTab3 {
+            get {
+                return ResourceManager.GetString("Btn_PreviousTab3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Previous Tab.
+        /// </summary>
+        public static string Btn_PreviousTab4 {
+            get {
+                return ResourceManager.GetString("Btn_PreviousTab4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Close.
         /// </summary>
         public static string Close {
             get {
                 return ResourceManager.GetString("Close", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Close.
+        /// </summary>
+        public static string Close1 {
+            get {
+                return ResourceManager.GetString("Close1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Close.
+        /// </summary>
+        public static string Close2 {
+            get {
+                return ResourceManager.GetString("Close2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Close.
+        /// </summary>
+        public static string Close3 {
+            get {
+                return ResourceManager.GetString("Close3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Close.
+        /// </summary>
+        public static string Close4 {
+            get {
+                return ResourceManager.GetString("Close4", resourceCulture);
             }
         }
         
@@ -196,11 +700,83 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Comments.
+        /// </summary>
+        public static string Comments1 {
+            get {
+                return ResourceManager.GetString("Comments1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Comments.
+        /// </summary>
+        public static string Comments2 {
+            get {
+                return ResourceManager.GetString("Comments2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Comments.
+        /// </summary>
+        public static string Comments3 {
+            get {
+                return ResourceManager.GetString("Comments3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Comments.
+        /// </summary>
+        public static string Comments4 {
+            get {
+                return ResourceManager.GetString("Comments4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Conviction/acquittal.
         /// </summary>
         public static string Common_ConvictionAcquittal {
             get {
                 return ResourceManager.GetString("Common_ConvictionAcquittal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Conviction/acquittal.
+        /// </summary>
+        public static string Common_ConvictionAcquittal1 {
+            get {
+                return ResourceManager.GetString("Common_ConvictionAcquittal1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Conviction/acquittal.
+        /// </summary>
+        public static string Common_ConvictionAcquittal2 {
+            get {
+                return ResourceManager.GetString("Common_ConvictionAcquittal2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Conviction/acquittal.
+        /// </summary>
+        public static string Common_ConvictionAcquittal3 {
+            get {
+                return ResourceManager.GetString("Common_ConvictionAcquittal3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Conviction/acquittal.
+        /// </summary>
+        public static string Common_ConvictionAcquittal4 {
+            get {
+                return ResourceManager.GetString("Common_ConvictionAcquittal4", resourceCulture);
             }
         }
         
@@ -214,11 +790,83 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Other.
+        /// </summary>
+        public static string Common_Other1 {
+            get {
+                return ResourceManager.GetString("Common_Other1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Other.
+        /// </summary>
+        public static string Common_Other2 {
+            get {
+                return ResourceManager.GetString("Common_Other2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Other.
+        /// </summary>
+        public static string Common_Other3 {
+            get {
+                return ResourceManager.GetString("Common_Other3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Other.
+        /// </summary>
+        public static string Common_Other4 {
+            get {
+                return ResourceManager.GetString("Common_Other4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Sentence.
         /// </summary>
         public static string Common_Sentence {
             get {
                 return ResourceManager.GetString("Common_Sentence", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sentence.
+        /// </summary>
+        public static string Common_Sentence1 {
+            get {
+                return ResourceManager.GetString("Common_Sentence1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sentence.
+        /// </summary>
+        public static string Common_Sentence2 {
+            get {
+                return ResourceManager.GetString("Common_Sentence2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sentence.
+        /// </summary>
+        public static string Common_Sentence3 {
+            get {
+                return ResourceManager.GetString("Common_Sentence3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sentence.
+        /// </summary>
+        public static string Common_Sentence4 {
+            get {
+                return ResourceManager.GetString("Common_Sentence4", resourceCulture);
             }
         }
         
@@ -232,11 +880,83 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Court is required.
+        /// </summary>
+        public static string CourtRequired1 {
+            get {
+                return ResourceManager.GetString("CourtRequired1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Court is required.
+        /// </summary>
+        public static string CourtRequired2 {
+            get {
+                return ResourceManager.GetString("CourtRequired2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Court is required.
+        /// </summary>
+        public static string CourtRequired3 {
+            get {
+                return ResourceManager.GetString("CourtRequired3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Court is required.
+        /// </summary>
+        public static string CourtRequired4 {
+            get {
+                return ResourceManager.GetString("CourtRequired4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Statistics.
         /// </summary>
         public static string Create {
             get {
                 return ResourceManager.GetString("Create", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Statistics.
+        /// </summary>
+        public static string Create1 {
+            get {
+                return ResourceManager.GetString("Create1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Statistics.
+        /// </summary>
+        public static string Create2 {
+            get {
+                return ResourceManager.GetString("Create2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Statistics.
+        /// </summary>
+        public static string Create3 {
+            get {
+                return ResourceManager.GetString("Create3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Statistics.
+        /// </summary>
+        public static string Create4 {
+            get {
+                return ResourceManager.GetString("Create4", resourceCulture);
             }
         }
         
@@ -250,11 +970,83 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Date of Birth.
+        /// </summary>
+        public static string dob1 {
+            get {
+                return ResourceManager.GetString("dob1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Date of Birth.
+        /// </summary>
+        public static string dob2 {
+            get {
+                return ResourceManager.GetString("dob2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Date of Birth.
+        /// </summary>
+        public static string dob3 {
+            get {
+                return ResourceManager.GetString("dob3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Date of Birth.
+        /// </summary>
+        public static string dob4 {
+            get {
+                return ResourceManager.GetString("dob4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Please correct following errors:.
         /// </summary>
         public static string ErrorText {
             get {
                 return ResourceManager.GetString("ErrorText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please correct following errors:.
+        /// </summary>
+        public static string ErrorText1 {
+            get {
+                return ResourceManager.GetString("ErrorText1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please correct following errors:.
+        /// </summary>
+        public static string ErrorText2 {
+            get {
+                return ResourceManager.GetString("ErrorText2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please correct following errors:.
+        /// </summary>
+        public static string ErrorText3 {
+            get {
+                return ResourceManager.GetString("ErrorText3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please correct following errors:.
+        /// </summary>
+        public static string ErrorText4 {
+            get {
+                return ResourceManager.GetString("ErrorText4", resourceCulture);
             }
         }
         
@@ -268,11 +1060,83 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to First Name.
+        /// </summary>
+        public static string FirstName1 {
+            get {
+                return ResourceManager.GetString("FirstName1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to First Name.
+        /// </summary>
+        public static string FirstName2 {
+            get {
+                return ResourceManager.GetString("FirstName2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to First Name.
+        /// </summary>
+        public static string FirstName3 {
+            get {
+                return ResourceManager.GetString("FirstName3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to First Name.
+        /// </summary>
+        public static string FirstName4 {
+            get {
+                return ResourceManager.GetString("FirstName4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to First Name is required.
         /// </summary>
         public static string FirstNameRequired {
             get {
                 return ResourceManager.GetString("FirstNameRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to First Name is required.
+        /// </summary>
+        public static string FirstNameRequired1 {
+            get {
+                return ResourceManager.GetString("FirstNameRequired1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to First Name is required.
+        /// </summary>
+        public static string FirstNameRequired2 {
+            get {
+                return ResourceManager.GetString("FirstNameRequired2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to First Name is required.
+        /// </summary>
+        public static string FirstNameRequired3 {
+            get {
+                return ResourceManager.GetString("FirstNameRequired3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to First Name is required.
+        /// </summary>
+        public static string FirstNameRequired4 {
+            get {
+                return ResourceManager.GetString("FirstNameRequired4", resourceCulture);
             }
         }
         
@@ -286,11 +1150,83 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to First Name should be atleast two characters long.
+        /// </summary>
+        public static string FirstNameTwoChars1 {
+            get {
+                return ResourceManager.GetString("FirstNameTwoChars1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to First Name should be atleast two characters long.
+        /// </summary>
+        public static string FirstNameTwoChars2 {
+            get {
+                return ResourceManager.GetString("FirstNameTwoChars2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to First Name should be atleast two characters long.
+        /// </summary>
+        public static string FirstNameTwoChars3 {
+            get {
+                return ResourceManager.GetString("FirstNameTwoChars3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to First Name should be atleast two characters long.
+        /// </summary>
+        public static string FirstNameTwoChars4 {
+            get {
+                return ResourceManager.GetString("FirstNameTwoChars4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to From Date is Required.
         /// </summary>
         public static string FromDateRequired {
             get {
                 return ResourceManager.GetString("FromDateRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to From Date is Required.
+        /// </summary>
+        public static string FromDateRequired1 {
+            get {
+                return ResourceManager.GetString("FromDateRequired1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to From Date is Required.
+        /// </summary>
+        public static string FromDateRequired2 {
+            get {
+                return ResourceManager.GetString("FromDateRequired2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to From Date is Required.
+        /// </summary>
+        public static string FromDateRequired3 {
+            get {
+                return ResourceManager.GetString("FromDateRequired3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to From Date is Required.
+        /// </summary>
+        public static string FromDateRequired4 {
+            get {
+                return ResourceManager.GetString("FromDateRequired4", resourceCulture);
             }
         }
         
@@ -304,11 +1240,83 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Court of Appeal Annual Statistics (CAAS).
+        /// </summary>
+        public static string hdgCreateheading2 {
+            get {
+                return ResourceManager.GetString("hdgCreateheading2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Court of Appeal Annual Statistics (CAAS).
+        /// </summary>
+        public static string hdgCreateheading3 {
+            get {
+                return ResourceManager.GetString("hdgCreateheading3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Court of Appeal Annual Statistics (CAAS).
+        /// </summary>
+        public static string hdgCreateheading4 {
+            get {
+                return ResourceManager.GetString("hdgCreateheading4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Court of Appeal Annual Statistics (CAAS).
+        /// </summary>
+        public static string hdgCreateheading5 {
+            get {
+                return ResourceManager.GetString("hdgCreateheading5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Data Entry Form.
         /// </summary>
         public static string hdgDataEntryForm {
             get {
                 return ResourceManager.GetString("hdgDataEntryForm", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Data Entry Form.
+        /// </summary>
+        public static string hdgDataEntryForm1 {
+            get {
+                return ResourceManager.GetString("hdgDataEntryForm1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Data Entry Form.
+        /// </summary>
+        public static string hdgDataEntryForm2 {
+            get {
+                return ResourceManager.GetString("hdgDataEntryForm2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Data Entry Form.
+        /// </summary>
+        public static string hdgDataEntryForm3 {
+            get {
+                return ResourceManager.GetString("hdgDataEntryForm3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Data Entry Form.
+        /// </summary>
+        public static string hdgDataEntryForm4 {
+            get {
+                return ResourceManager.GetString("hdgDataEntryForm4", resourceCulture);
             }
         }
         
@@ -322,11 +1330,83 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Home.
+        /// </summary>
+        public static string Home1 {
+            get {
+                return ResourceManager.GetString("Home1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Home.
+        /// </summary>
+        public static string Home2 {
+            get {
+                return ResourceManager.GetString("Home2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Home.
+        /// </summary>
+        public static string Home3 {
+            get {
+                return ResourceManager.GetString("Home3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Home.
+        /// </summary>
+        public static string Home4 {
+            get {
+                return ResourceManager.GetString("Home4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The sidebar tabs will appear once you fill the Name of Court and Reporting Year fields..
         /// </summary>
         public static string Info_SidebarAppearsAfterBasicInfo {
             get {
                 return ResourceManager.GetString("Info_SidebarAppearsAfterBasicInfo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The sidebar tabs will appear once you fill the Name of Court and Reporting Year fields..
+        /// </summary>
+        public static string Info_SidebarAppearsAfterBasicInfo1 {
+            get {
+                return ResourceManager.GetString("Info_SidebarAppearsAfterBasicInfo1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The sidebar tabs will appear once you fill the Name of Court and Reporting Year fields..
+        /// </summary>
+        public static string Info_SidebarAppearsAfterBasicInfo2 {
+            get {
+                return ResourceManager.GetString("Info_SidebarAppearsAfterBasicInfo2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The sidebar tabs will appear once you fill the Name of Court and Reporting Year fields..
+        /// </summary>
+        public static string Info_SidebarAppearsAfterBasicInfo3 {
+            get {
+                return ResourceManager.GetString("Info_SidebarAppearsAfterBasicInfo3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The sidebar tabs will appear once you fill the Name of Court and Reporting Year fields..
+        /// </summary>
+        public static string Info_SidebarAppearsAfterBasicInfo4 {
+            get {
+                return ResourceManager.GetString("Info_SidebarAppearsAfterBasicInfo4", resourceCulture);
             }
         }
         
@@ -340,11 +1420,83 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Last Name.
+        /// </summary>
+        public static string LastName1 {
+            get {
+                return ResourceManager.GetString("LastName1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Last Name.
+        /// </summary>
+        public static string LastName2 {
+            get {
+                return ResourceManager.GetString("LastName2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Last Name.
+        /// </summary>
+        public static string LastName3 {
+            get {
+                return ResourceManager.GetString("LastName3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Last Name.
+        /// </summary>
+        public static string LastName4 {
+            get {
+                return ResourceManager.GetString("LastName4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Last Name is required.
         /// </summary>
         public static string LastNameRequired {
             get {
                 return ResourceManager.GetString("LastNameRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Last Name is required.
+        /// </summary>
+        public static string LastNameRequired1 {
+            get {
+                return ResourceManager.GetString("LastNameRequired1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Last Name is required.
+        /// </summary>
+        public static string LastNameRequired2 {
+            get {
+                return ResourceManager.GetString("LastNameRequired2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Last Name is required.
+        /// </summary>
+        public static string LastNameRequired3 {
+            get {
+                return ResourceManager.GetString("LastNameRequired3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Last Name is required.
+        /// </summary>
+        public static string LastNameRequired4 {
+            get {
+                return ResourceManager.GetString("LastNameRequired4", resourceCulture);
             }
         }
         
@@ -358,11 +1510,137 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Last Name should be atleast two characters long.
+        /// </summary>
+        public static string LastNameTwoChars1 {
+            get {
+                return ResourceManager.GetString("LastNameTwoChars1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Last Name should be atleast two characters long.
+        /// </summary>
+        public static string LastNameTwoChars2 {
+            get {
+                return ResourceManager.GetString("LastNameTwoChars2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Last Name should be atleast two characters long.
+        /// </summary>
+        public static string LastNameTwoChars3 {
+            get {
+                return ResourceManager.GetString("LastNameTwoChars3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Last Name should be atleast two characters long.
+        /// </summary>
+        public static string LastNameTwoChars4 {
+            get {
+                return ResourceManager.GetString("LastNameTwoChars4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs filed but still pending as of December 31&lt;sup&gt;st&lt;/sup&gt; of the previous year.
         /// </summary>
         public static string Lbl_1_1_1 {
             get {
                 return ResourceManager.GetString("Lbl_1_1_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs settled by judicial mediation.
+        /// </summary>
+        public static string Lbl_1_1_10 {
+            get {
+                return ResourceManager.GetString("Lbl_1_1_10", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs disposed of by other means.
+        /// </summary>
+        public static string Lbl_1_1_11 {
+            get {
+                return ResourceManager.GetString("Lbl_1_1_11", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total number of civil appeals, cross-appeals, references, and JRs.
+        /// </summary>
+        public static string Lbl_1_1_12 {
+            get {
+                return ResourceManager.GetString("Lbl_1_1_12", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs filed but still pending as of December 31&lt;sup&gt;st&lt;/sup&gt; of the previous year.
+        /// </summary>
+        public static string Lbl_1_1_13 {
+            get {
+                return ResourceManager.GetString("Lbl_1_1_13", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs filed.
+        /// </summary>
+        public static string Lbl_1_1_14 {
+            get {
+                return ResourceManager.GetString("Lbl_1_1_14", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs disposed of by judgment.
+        /// </summary>
+        public static string Lbl_1_1_15 {
+            get {
+                return ResourceManager.GetString("Lbl_1_1_15", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs settled by judicial mediation.
+        /// </summary>
+        public static string Lbl_1_1_16 {
+            get {
+                return ResourceManager.GetString("Lbl_1_1_16", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs disposed of by other means.
+        /// </summary>
+        public static string Lbl_1_1_17 {
+            get {
+                return ResourceManager.GetString("Lbl_1_1_17", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total number of civil appeals, cross-appeals, references, and JRs.
+        /// </summary>
+        public static string Lbl_1_1_18 {
+            get {
+                return ResourceManager.GetString("Lbl_1_1_18", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs filed but still pending as of December 31&lt;sup&gt;st&lt;/sup&gt; of the previous year.
+        /// </summary>
+        public static string Lbl_1_1_19 {
+            get {
+                return ResourceManager.GetString("Lbl_1_1_19", resourceCulture);
             }
         }
         
@@ -376,11 +1654,119 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs filed.
+        /// </summary>
+        public static string Lbl_1_1_20 {
+            get {
+                return ResourceManager.GetString("Lbl_1_1_20", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs disposed of by judgment.
+        /// </summary>
+        public static string Lbl_1_1_21 {
+            get {
+                return ResourceManager.GetString("Lbl_1_1_21", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs settled by judicial mediation.
+        /// </summary>
+        public static string Lbl_1_1_22 {
+            get {
+                return ResourceManager.GetString("Lbl_1_1_22", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs disposed of by other means.
+        /// </summary>
+        public static string Lbl_1_1_23 {
+            get {
+                return ResourceManager.GetString("Lbl_1_1_23", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total number of civil appeals, cross-appeals, references, and JRs.
+        /// </summary>
+        public static string Lbl_1_1_24 {
+            get {
+                return ResourceManager.GetString("Lbl_1_1_24", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs filed but still pending as of December 31&lt;sup&gt;st&lt;/sup&gt; of the previous year.
+        /// </summary>
+        public static string Lbl_1_1_25 {
+            get {
+                return ResourceManager.GetString("Lbl_1_1_25", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs filed.
+        /// </summary>
+        public static string Lbl_1_1_26 {
+            get {
+                return ResourceManager.GetString("Lbl_1_1_26", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs disposed of by judgment.
+        /// </summary>
+        public static string Lbl_1_1_27 {
+            get {
+                return ResourceManager.GetString("Lbl_1_1_27", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs settled by judicial mediation.
+        /// </summary>
+        public static string Lbl_1_1_28 {
+            get {
+                return ResourceManager.GetString("Lbl_1_1_28", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs disposed of by other means.
+        /// </summary>
+        public static string Lbl_1_1_29 {
+            get {
+                return ResourceManager.GetString("Lbl_1_1_29", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs disposed of by judgment.
         /// </summary>
         public static string Lbl_1_1_3 {
             get {
                 return ResourceManager.GetString("Lbl_1_1_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total number of civil appeals, cross-appeals, references, and JRs.
+        /// </summary>
+        public static string Lbl_1_1_30 {
+            get {
+                return ResourceManager.GetString("Lbl_1_1_30", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs filed but still pending as of December 31&lt;sup&gt;st&lt;/sup&gt; of the previous year.
+        /// </summary>
+        public static string Lbl_1_1_4 {
+            get {
+                return ResourceManager.GetString("Lbl_1_1_4", resourceCulture);
             }
         }
         
@@ -412,11 +1798,65 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs filed.
+        /// </summary>
+        public static string Lbl_1_1_8 {
+            get {
+                return ResourceManager.GetString("Lbl_1_1_8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs disposed of by judgment.
+        /// </summary>
+        public static string Lbl_1_1_9 {
+            get {
+                return ResourceManager.GetString("Lbl_1_1_9", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Civil appeals, cross-appeals, references, and JRs filed, disposed of, and abandoned or withdrawn.
         /// </summary>
         public static string Lbl_1_1_Title {
             get {
                 return ResourceManager.GetString("Lbl_1_1_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Civil appeals, cross-appeals, references, and JRs filed, disposed of, and abandoned or withdrawn.
+        /// </summary>
+        public static string Lbl_1_1_Title1 {
+            get {
+                return ResourceManager.GetString("Lbl_1_1_Title1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Civil appeals, cross-appeals, references, and JRs filed, disposed of, and abandoned or withdrawn.
+        /// </summary>
+        public static string Lbl_1_1_Title2 {
+            get {
+                return ResourceManager.GetString("Lbl_1_1_Title2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Civil appeals, cross-appeals, references, and JRs filed, disposed of, and abandoned or withdrawn.
+        /// </summary>
+        public static string Lbl_1_1_Title3 {
+            get {
+                return ResourceManager.GetString("Lbl_1_1_Title3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Civil appeals, cross-appeals, references, and JRs filed, disposed of, and abandoned or withdrawn.
+        /// </summary>
+        public static string Lbl_1_1_Title4 {
+            get {
+                return ResourceManager.GetString("Lbl_1_1_Title4", resourceCulture);
             }
         }
         
@@ -430,11 +1870,155 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Total number of criminal appeals, cross-appeals, references and bail reviews.
+        /// </summary>
+        public static string Lbl_1_2_10 {
+            get {
+                return ResourceManager.GetString("Lbl_1_2_10", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of criminal appeals, cross-appeals, references and bail reviews filed but still pending as of December 31&lt;sup&gt;st&lt;/sup&gt; of the previous year.
+        /// </summary>
+        public static string Lbl_1_2_11 {
+            get {
+                return ResourceManager.GetString("Lbl_1_2_11", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of criminal appeals, cross-appeals, references and bail reviews filed.
+        /// </summary>
+        public static string Lbl_1_2_12 {
+            get {
+                return ResourceManager.GetString("Lbl_1_2_12", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of criminal appeals, cross-appeals, references and bail reviews disposed of by judgment.
+        /// </summary>
+        public static string Lbl_1_2_13 {
+            get {
+                return ResourceManager.GetString("Lbl_1_2_13", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of criminal appeals, cross-appeals, references and bail reviews disposed of by other means.
+        /// </summary>
+        public static string Lbl_1_2_14 {
+            get {
+                return ResourceManager.GetString("Lbl_1_2_14", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total number of criminal appeals, cross-appeals, references and bail reviews.
+        /// </summary>
+        public static string Lbl_1_2_15 {
+            get {
+                return ResourceManager.GetString("Lbl_1_2_15", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of criminal appeals, cross-appeals, references and bail reviews filed but still pending as of December 31&lt;sup&gt;st&lt;/sup&gt; of the previous year.
+        /// </summary>
+        public static string Lbl_1_2_16 {
+            get {
+                return ResourceManager.GetString("Lbl_1_2_16", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of criminal appeals, cross-appeals, references and bail reviews filed.
+        /// </summary>
+        public static string Lbl_1_2_17 {
+            get {
+                return ResourceManager.GetString("Lbl_1_2_17", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of criminal appeals, cross-appeals, references and bail reviews disposed of by judgment.
+        /// </summary>
+        public static string Lbl_1_2_18 {
+            get {
+                return ResourceManager.GetString("Lbl_1_2_18", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of criminal appeals, cross-appeals, references and bail reviews disposed of by other means.
+        /// </summary>
+        public static string Lbl_1_2_19 {
+            get {
+                return ResourceManager.GetString("Lbl_1_2_19", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Number of criminal appeals, cross-appeals, references and bail reviews filed.
         /// </summary>
         public static string Lbl_1_2_2 {
             get {
                 return ResourceManager.GetString("Lbl_1_2_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total number of criminal appeals, cross-appeals, references and bail reviews.
+        /// </summary>
+        public static string Lbl_1_2_20 {
+            get {
+                return ResourceManager.GetString("Lbl_1_2_20", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of criminal appeals, cross-appeals, references and bail reviews filed but still pending as of December 31&lt;sup&gt;st&lt;/sup&gt; of the previous year.
+        /// </summary>
+        public static string Lbl_1_2_21 {
+            get {
+                return ResourceManager.GetString("Lbl_1_2_21", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of criminal appeals, cross-appeals, references and bail reviews filed.
+        /// </summary>
+        public static string Lbl_1_2_22 {
+            get {
+                return ResourceManager.GetString("Lbl_1_2_22", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of criminal appeals, cross-appeals, references and bail reviews disposed of by judgment.
+        /// </summary>
+        public static string Lbl_1_2_23 {
+            get {
+                return ResourceManager.GetString("Lbl_1_2_23", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of criminal appeals, cross-appeals, references and bail reviews disposed of by other means.
+        /// </summary>
+        public static string Lbl_1_2_24 {
+            get {
+                return ResourceManager.GetString("Lbl_1_2_24", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total number of criminal appeals, cross-appeals, references and bail reviews.
+        /// </summary>
+        public static string Lbl_1_2_25 {
+            get {
+                return ResourceManager.GetString("Lbl_1_2_25", resourceCulture);
             }
         }
         
@@ -466,6 +2050,42 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Number of criminal appeals, cross-appeals, references and bail reviews filed but still pending as of December 31&lt;sup&gt;st&lt;/sup&gt; of the previous year.
+        /// </summary>
+        public static string Lbl_1_2_6 {
+            get {
+                return ResourceManager.GetString("Lbl_1_2_6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of criminal appeals, cross-appeals, references and bail reviews filed.
+        /// </summary>
+        public static string Lbl_1_2_7 {
+            get {
+                return ResourceManager.GetString("Lbl_1_2_7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of criminal appeals, cross-appeals, references and bail reviews disposed of by judgment.
+        /// </summary>
+        public static string Lbl_1_2_8 {
+            get {
+                return ResourceManager.GetString("Lbl_1_2_8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of criminal appeals, cross-appeals, references and bail reviews disposed of by other means.
+        /// </summary>
+        public static string Lbl_1_2_9 {
+            get {
+                return ResourceManager.GetString("Lbl_1_2_9", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Conviction appeal and sentence appeal are heard together.
         /// </summary>
         public static string Lbl_1_2_CheckboxText {
@@ -475,11 +2095,83 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Conviction appeal and sentence appeal are heard together.
+        /// </summary>
+        public static string Lbl_1_2_CheckboxText1 {
+            get {
+                return ResourceManager.GetString("Lbl_1_2_CheckboxText1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Conviction appeal and sentence appeal are heard together.
+        /// </summary>
+        public static string Lbl_1_2_CheckboxText2 {
+            get {
+                return ResourceManager.GetString("Lbl_1_2_CheckboxText2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Conviction appeal and sentence appeal are heard together.
+        /// </summary>
+        public static string Lbl_1_2_CheckboxText3 {
+            get {
+                return ResourceManager.GetString("Lbl_1_2_CheckboxText3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Conviction appeal and sentence appeal are heard together.
+        /// </summary>
+        public static string Lbl_1_2_CheckboxText4 {
+            get {
+                return ResourceManager.GetString("Lbl_1_2_CheckboxText4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Criminal appeals, cross-appeals, references and bail reviews filed, disposed of, and abandoned or withdrawn..
         /// </summary>
         public static string Lbl_1_2_Title {
             get {
                 return ResourceManager.GetString("Lbl_1_2_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Criminal appeals, cross-appeals, references and bail reviews filed, disposed of, and abandoned or withdrawn..
+        /// </summary>
+        public static string Lbl_1_2_Title1 {
+            get {
+                return ResourceManager.GetString("Lbl_1_2_Title1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Criminal appeals, cross-appeals, references and bail reviews filed, disposed of, and abandoned or withdrawn..
+        /// </summary>
+        public static string Lbl_1_2_Title2 {
+            get {
+                return ResourceManager.GetString("Lbl_1_2_Title2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Criminal appeals, cross-appeals, references and bail reviews filed, disposed of, and abandoned or withdrawn..
+        /// </summary>
+        public static string Lbl_1_2_Title3 {
+            get {
+                return ResourceManager.GetString("Lbl_1_2_Title3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Criminal appeals, cross-appeals, references and bail reviews filed, disposed of, and abandoned or withdrawn..
+        /// </summary>
+        public static string Lbl_1_2_Title4 {
+            get {
+                return ResourceManager.GetString("Lbl_1_2_Title4", resourceCulture);
             }
         }
         
@@ -495,9 +2187,81 @@ namespace WebRazor.Resources.Pages {
         /// <summary>
         ///   Looks up a localized string similar to Number of civil case reserved decisions.
         /// </summary>
+        public static string Lbl_2_1_10 {
+            get {
+                return ResourceManager.GetString("Lbl_2_1_10", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil case reserved decisions.
+        /// </summary>
         public static string Lbl_2_1_2 {
             get {
                 return ResourceManager.GetString("Lbl_2_1_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil case decisions given at hearing.
+        /// </summary>
+        public static string Lbl_2_1_3 {
+            get {
+                return ResourceManager.GetString("Lbl_2_1_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil case reserved decisions.
+        /// </summary>
+        public static string Lbl_2_1_4 {
+            get {
+                return ResourceManager.GetString("Lbl_2_1_4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil case decisions given at hearing.
+        /// </summary>
+        public static string Lbl_2_1_5 {
+            get {
+                return ResourceManager.GetString("Lbl_2_1_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil case reserved decisions.
+        /// </summary>
+        public static string Lbl_2_1_6 {
+            get {
+                return ResourceManager.GetString("Lbl_2_1_6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil case decisions given at hearing.
+        /// </summary>
+        public static string Lbl_2_1_7 {
+            get {
+                return ResourceManager.GetString("Lbl_2_1_7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil case reserved decisions.
+        /// </summary>
+        public static string Lbl_2_1_8 {
+            get {
+                return ResourceManager.GetString("Lbl_2_1_8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil case decisions given at hearing.
+        /// </summary>
+        public static string Lbl_2_1_9 {
+            get {
+                return ResourceManager.GetString("Lbl_2_1_9", resourceCulture);
             }
         }
         
@@ -507,6 +2271,42 @@ namespace WebRazor.Resources.Pages {
         public static string Lbl_2_1_Title {
             get {
                 return ResourceManager.GetString("Lbl_2_1_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Civil case decisions.
+        /// </summary>
+        public static string Lbl_2_1_Title1 {
+            get {
+                return ResourceManager.GetString("Lbl_2_1_Title1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Civil case decisions.
+        /// </summary>
+        public static string Lbl_2_1_Title2 {
+            get {
+                return ResourceManager.GetString("Lbl_2_1_Title2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Civil case decisions.
+        /// </summary>
+        public static string Lbl_2_1_Title3 {
+            get {
+                return ResourceManager.GetString("Lbl_2_1_Title3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Civil case decisions.
+        /// </summary>
+        public static string Lbl_2_1_Title4 {
+            get {
+                return ResourceManager.GetString("Lbl_2_1_Title4", resourceCulture);
             }
         }
         
@@ -529,6 +2329,60 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Number of convictions/acquittals given at hearing.
+        /// </summary>
+        public static string Lbl_2_2_1_10 {
+            get {
+                return ResourceManager.GetString("Lbl_2_2_1_10", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of sentences given at hearing.
+        /// </summary>
+        public static string Lbl_2_2_1_11 {
+            get {
+                return ResourceManager.GetString("Lbl_2_2_1_11", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of other criminal appeals given at hearing.
+        /// </summary>
+        public static string Lbl_2_2_1_12 {
+            get {
+                return ResourceManager.GetString("Lbl_2_2_1_12", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of convictions/acquittals given at hearing.
+        /// </summary>
+        public static string Lbl_2_2_1_13 {
+            get {
+                return ResourceManager.GetString("Lbl_2_2_1_13", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of sentences given at hearing.
+        /// </summary>
+        public static string Lbl_2_2_1_14 {
+            get {
+                return ResourceManager.GetString("Lbl_2_2_1_14", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of other criminal appeals given at hearing.
+        /// </summary>
+        public static string Lbl_2_2_1_15 {
+            get {
+                return ResourceManager.GetString("Lbl_2_2_1_15", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Number of sentences given at hearing.
         /// </summary>
         public static string Lbl_2_2_1_2 {
@@ -543,6 +2397,69 @@ namespace WebRazor.Resources.Pages {
         public static string Lbl_2_2_1_3 {
             get {
                 return ResourceManager.GetString("Lbl_2_2_1_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of convictions/acquittals given at hearing.
+        /// </summary>
+        public static string Lbl_2_2_1_4 {
+            get {
+                return ResourceManager.GetString("Lbl_2_2_1_4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of sentences given at hearing.
+        /// </summary>
+        public static string Lbl_2_2_1_5 {
+            get {
+                return ResourceManager.GetString("Lbl_2_2_1_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of other criminal appeals given at hearing.
+        /// </summary>
+        public static string Lbl_2_2_1_6 {
+            get {
+                return ResourceManager.GetString("Lbl_2_2_1_6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of convictions/acquittals given at hearing.
+        /// </summary>
+        public static string Lbl_2_2_1_7 {
+            get {
+                return ResourceManager.GetString("Lbl_2_2_1_7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of sentences given at hearing.
+        /// </summary>
+        public static string Lbl_2_2_1_8 {
+            get {
+                return ResourceManager.GetString("Lbl_2_2_1_8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of other criminal appeals given at hearing.
+        /// </summary>
+        public static string Lbl_2_2_1_9 {
+            get {
+                return ResourceManager.GetString("Lbl_2_2_1_9", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of criminal case decisions filed after reserving.
+        /// </summary>
+        public static string Lbl_2_2_10 {
+            get {
+                return ResourceManager.GetString("Lbl_2_2_10", resourceCulture);
             }
         }
         
@@ -565,6 +2482,60 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Number of convictions/acquittals filed after reserving.
+        /// </summary>
+        public static string Lbl_2_2_2_10 {
+            get {
+                return ResourceManager.GetString("Lbl_2_2_2_10", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of sentences filed after reserving.
+        /// </summary>
+        public static string Lbl_2_2_2_11 {
+            get {
+                return ResourceManager.GetString("Lbl_2_2_2_11", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of other criminal appeals filed after reserving.
+        /// </summary>
+        public static string Lbl_2_2_2_12 {
+            get {
+                return ResourceManager.GetString("Lbl_2_2_2_12", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of convictions/acquittals filed after reserving.
+        /// </summary>
+        public static string Lbl_2_2_2_13 {
+            get {
+                return ResourceManager.GetString("Lbl_2_2_2_13", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of sentences filed after reserving.
+        /// </summary>
+        public static string Lbl_2_2_2_14 {
+            get {
+                return ResourceManager.GetString("Lbl_2_2_2_14", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of other criminal appeals filed after reserving.
+        /// </summary>
+        public static string Lbl_2_2_2_15 {
+            get {
+                return ResourceManager.GetString("Lbl_2_2_2_15", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Number of sentences filed after reserving.
         /// </summary>
         public static string Lbl_2_2_2_2 {
@@ -583,6 +2554,123 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Number of convictions/acquittals filed after reserving.
+        /// </summary>
+        public static string Lbl_2_2_2_4 {
+            get {
+                return ResourceManager.GetString("Lbl_2_2_2_4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of sentences filed after reserving.
+        /// </summary>
+        public static string Lbl_2_2_2_5 {
+            get {
+                return ResourceManager.GetString("Lbl_2_2_2_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of other criminal appeals filed after reserving.
+        /// </summary>
+        public static string Lbl_2_2_2_6 {
+            get {
+                return ResourceManager.GetString("Lbl_2_2_2_6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of convictions/acquittals filed after reserving.
+        /// </summary>
+        public static string Lbl_2_2_2_7 {
+            get {
+                return ResourceManager.GetString("Lbl_2_2_2_7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of sentences filed after reserving.
+        /// </summary>
+        public static string Lbl_2_2_2_8 {
+            get {
+                return ResourceManager.GetString("Lbl_2_2_2_8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of other criminal appeals filed after reserving.
+        /// </summary>
+        public static string Lbl_2_2_2_9 {
+            get {
+                return ResourceManager.GetString("Lbl_2_2_2_9", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of criminal case decisions given at hearing.
+        /// </summary>
+        public static string Lbl_2_2_3 {
+            get {
+                return ResourceManager.GetString("Lbl_2_2_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of criminal case decisions filed after reserving.
+        /// </summary>
+        public static string Lbl_2_2_4 {
+            get {
+                return ResourceManager.GetString("Lbl_2_2_4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of criminal case decisions given at hearing.
+        /// </summary>
+        public static string Lbl_2_2_5 {
+            get {
+                return ResourceManager.GetString("Lbl_2_2_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of criminal case decisions filed after reserving.
+        /// </summary>
+        public static string Lbl_2_2_6 {
+            get {
+                return ResourceManager.GetString("Lbl_2_2_6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of criminal case decisions given at hearing.
+        /// </summary>
+        public static string Lbl_2_2_7 {
+            get {
+                return ResourceManager.GetString("Lbl_2_2_7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of criminal case decisions filed after reserving.
+        /// </summary>
+        public static string Lbl_2_2_8 {
+            get {
+                return ResourceManager.GetString("Lbl_2_2_8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of criminal case decisions given at hearing.
+        /// </summary>
+        public static string Lbl_2_2_9 {
+            get {
+                return ResourceManager.GetString("Lbl_2_2_9", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Criminal case decisions.
         /// </summary>
         public static string Lbl_2_2_Title {
@@ -592,11 +2680,83 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Criminal case decisions.
+        /// </summary>
+        public static string Lbl_2_2_Title1 {
+            get {
+                return ResourceManager.GetString("Lbl_2_2_Title1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Criminal case decisions.
+        /// </summary>
+        public static string Lbl_2_2_Title2 {
+            get {
+                return ResourceManager.GetString("Lbl_2_2_Title2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Criminal case decisions.
+        /// </summary>
+        public static string Lbl_2_2_Title3 {
+            get {
+                return ResourceManager.GetString("Lbl_2_2_Title3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Criminal case decisions.
+        /// </summary>
+        public static string Lbl_2_2_Title4 {
+            get {
+                return ResourceManager.GetString("Lbl_2_2_Title4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Civil and criminal case decisions.
         /// </summary>
         public static string Lbl_2_Heading {
             get {
                 return ResourceManager.GetString("Lbl_2_Heading", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Civil and criminal case decisions.
+        /// </summary>
+        public static string Lbl_2_Heading1 {
+            get {
+                return ResourceManager.GetString("Lbl_2_Heading1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Civil and criminal case decisions.
+        /// </summary>
+        public static string Lbl_2_Heading2 {
+            get {
+                return ResourceManager.GetString("Lbl_2_Heading2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Civil and criminal case decisions.
+        /// </summary>
+        public static string Lbl_2_Heading3 {
+            get {
+                return ResourceManager.GetString("Lbl_2_Heading3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Civil and criminal case decisions.
+        /// </summary>
+        public static string Lbl_2_Heading4 {
+            get {
+                return ResourceManager.GetString("Lbl_2_Heading4", resourceCulture);
             }
         }
         
@@ -612,9 +2772,81 @@ namespace WebRazor.Resources.Pages {
         /// <summary>
         ///   Looks up a localized string similar to Number of reserved decisions/judgments.
         /// </summary>
+        public static string Lbl_3_10 {
+            get {
+                return ResourceManager.GetString("Lbl_3_10", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of reserved decisions/judgments.
+        /// </summary>
         public static string Lbl_3_2 {
             get {
                 return ResourceManager.GetString("Lbl_3_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of Bench decisions/judgments.
+        /// </summary>
+        public static string Lbl_3_3 {
+            get {
+                return ResourceManager.GetString("Lbl_3_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of reserved decisions/judgments.
+        /// </summary>
+        public static string Lbl_3_4 {
+            get {
+                return ResourceManager.GetString("Lbl_3_4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of Bench decisions/judgments.
+        /// </summary>
+        public static string Lbl_3_5 {
+            get {
+                return ResourceManager.GetString("Lbl_3_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of reserved decisions/judgments.
+        /// </summary>
+        public static string Lbl_3_6 {
+            get {
+                return ResourceManager.GetString("Lbl_3_6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of Bench decisions/judgments.
+        /// </summary>
+        public static string Lbl_3_7 {
+            get {
+                return ResourceManager.GetString("Lbl_3_7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of reserved decisions/judgments.
+        /// </summary>
+        public static string Lbl_3_8 {
+            get {
+                return ResourceManager.GetString("Lbl_3_8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of Bench decisions/judgments.
+        /// </summary>
+        public static string Lbl_3_9 {
+            get {
+                return ResourceManager.GetString("Lbl_3_9", resourceCulture);
             }
         }
         
@@ -624,6 +2856,42 @@ namespace WebRazor.Resources.Pages {
         public static string Lbl_3_Heading {
             get {
                 return ResourceManager.GetString("Lbl_3_Heading", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of decisions/judgments (total).
+        /// </summary>
+        public static string Lbl_3_Heading1 {
+            get {
+                return ResourceManager.GetString("Lbl_3_Heading1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of decisions/judgments (total).
+        /// </summary>
+        public static string Lbl_3_Heading2 {
+            get {
+                return ResourceManager.GetString("Lbl_3_Heading2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of decisions/judgments (total).
+        /// </summary>
+        public static string Lbl_3_Heading3 {
+            get {
+                return ResourceManager.GetString("Lbl_3_Heading3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of decisions/judgments (total).
+        /// </summary>
+        public static string Lbl_3_Heading4 {
+            get {
+                return ResourceManager.GetString("Lbl_3_Heading4", resourceCulture);
             }
         }
         
@@ -648,9 +2916,108 @@ namespace WebRazor.Resources.Pages {
         /// <summary>
         ///   Looks up a localized string similar to EN-Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took between 6 to 12 months.
         /// </summary>
+        public static string Lbl_4_1_10 {
+            get {
+                return ResourceManager.GetString("Lbl_4_1_10", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EN-Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took more than 12 months.
+        /// </summary>
+        public static string Lbl_4_1_11 {
+            get {
+                return ResourceManager.GetString("Lbl_4_1_11", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EN-Number of criminal appeals where the interval from the notice of appeal to filing of the appellant’s factum took less than 6 months for:.
+        /// </summary>
+        public static string Lbl_4_1_12 {
+            get {
+                return ResourceManager.GetString("Lbl_4_1_12", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took less than 6 months.
+        /// </summary>
+        public static string Lbl_4_1_13 {
+            get {
+                return ResourceManager.GetString("Lbl_4_1_13", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EN-Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took between 6 to 12 months.
+        /// </summary>
+        public static string Lbl_4_1_14 {
+            get {
+                return ResourceManager.GetString("Lbl_4_1_14", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EN-Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took more than 12 months.
+        /// </summary>
+        public static string Lbl_4_1_15 {
+            get {
+                return ResourceManager.GetString("Lbl_4_1_15", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EN-Number of criminal appeals where the interval from the notice of appeal to filing of the appellant’s factum took less than 6 months for:.
+        /// </summary>
+        public static string Lbl_4_1_16 {
+            get {
+                return ResourceManager.GetString("Lbl_4_1_16", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took less than 6 months.
+        /// </summary>
+        public static string Lbl_4_1_17 {
+            get {
+                return ResourceManager.GetString("Lbl_4_1_17", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EN-Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took between 6 to 12 months.
+        /// </summary>
+        public static string Lbl_4_1_18 {
+            get {
+                return ResourceManager.GetString("Lbl_4_1_18", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EN-Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took more than 12 months.
+        /// </summary>
+        public static string Lbl_4_1_19 {
+            get {
+                return ResourceManager.GetString("Lbl_4_1_19", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EN-Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took between 6 to 12 months.
+        /// </summary>
         public static string Lbl_4_1_2 {
             get {
                 return ResourceManager.GetString("Lbl_4_1_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EN-Number of criminal appeals where the interval from the notice of appeal to filing of the appellant’s factum took less than 6 months for:.
+        /// </summary>
+        public static string Lbl_4_1_20 {
+            get {
+                return ResourceManager.GetString("Lbl_4_1_20", resourceCulture);
             }
         }
         
@@ -682,11 +3049,164 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to EN-Conviction/acquittal.
+        /// </summary>
+        public static string Lbl_4_1_4_2 {
+            get {
+                return ResourceManager.GetString("Lbl_4_1_4_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EN-Conviction/acquittal.
+        /// </summary>
+        public static string Lbl_4_1_4_3 {
+            get {
+                return ResourceManager.GetString("Lbl_4_1_4_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EN-Conviction/acquittal.
+        /// </summary>
+        public static string Lbl_4_1_4_4 {
+            get {
+                return ResourceManager.GetString("Lbl_4_1_4_4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EN-Conviction/acquittal.
+        /// </summary>
+        public static string Lbl_4_1_4_5 {
+            get {
+                return ResourceManager.GetString("Lbl_4_1_4_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took less than 6 months.
+        /// </summary>
+        public static string Lbl_4_1_5 {
+            get {
+                return ResourceManager.GetString("Lbl_4_1_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EN-Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took between 6 to 12 months.
+        /// </summary>
+        public static string Lbl_4_1_6 {
+            get {
+                return ResourceManager.GetString("Lbl_4_1_6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EN-Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took more than 12 months.
+        /// </summary>
+        public static string Lbl_4_1_7 {
+            get {
+                return ResourceManager.GetString("Lbl_4_1_7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EN-Number of criminal appeals where the interval from the notice of appeal to filing of the appellant’s factum took less than 6 months for:.
+        /// </summary>
+        public static string Lbl_4_1_8 {
+            get {
+                return ResourceManager.GetString("Lbl_4_1_8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took less than 6 months.
+        /// </summary>
+        public static string Lbl_4_1_9 {
+            get {
+                return ResourceManager.GetString("Lbl_4_1_9", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Criminal cases.
         /// </summary>
         public static string Lbl_4_1_CriminalCases {
             get {
                 return ResourceManager.GetString("Lbl_4_1_CriminalCases", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Criminal cases.
+        /// </summary>
+        public static string Lbl_4_1_CriminalCases1 {
+            get {
+                return ResourceManager.GetString("Lbl_4_1_CriminalCases1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Criminal cases.
+        /// </summary>
+        public static string Lbl_4_1_CriminalCases2 {
+            get {
+                return ResourceManager.GetString("Lbl_4_1_CriminalCases2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Criminal cases.
+        /// </summary>
+        public static string Lbl_4_1_CriminalCases3 {
+            get {
+                return ResourceManager.GetString("Lbl_4_1_CriminalCases3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Criminal cases.
+        /// </summary>
+        public static string Lbl_4_1_CriminalCases4 {
+            get {
+                return ResourceManager.GetString("Lbl_4_1_CriminalCases4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This time interval refers to the interval from the time a notice of appeal is filed (either as of right or after a motion for leave to appeal has been granted) to the time the appellant’s factum is filed and the appeal is ready to be set down for a hearing. The appeal is considered ready to be set down for a hearing on the date at which the appellant has done everything required by the rules of court to prepare an appeal for hearing (typically the serving and filing of the appeal book, transcripts and appel [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string Lbl_4_2 {
+            get {
+                return ResourceManager.GetString("Lbl_4_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This time interval refers to the interval from the time a notice of appeal is filed (either as of right or after a motion for leave to appeal has been granted) to the time the appellant’s factum is filed and the appeal is ready to be set down for a hearing. The appeal is considered ready to be set down for a hearing on the date at which the appellant has done everything required by the rules of court to prepare an appeal for hearing (typically the serving and filing of the appeal book, transcripts and appel [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string Lbl_4_3 {
+            get {
+                return ResourceManager.GetString("Lbl_4_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This time interval refers to the interval from the time a notice of appeal is filed (either as of right or after a motion for leave to appeal has been granted) to the time the appellant’s factum is filed and the appeal is ready to be set down for a hearing. The appeal is considered ready to be set down for a hearing on the date at which the appellant has done everything required by the rules of court to prepare an appeal for hearing (typically the serving and filing of the appeal book, transcripts and appel [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string Lbl_4_4 {
+            get {
+                return ResourceManager.GetString("Lbl_4_4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This time interval refers to the interval from the time a notice of appeal is filed (either as of right or after a motion for leave to appeal has been granted) to the time the appellant’s factum is filed and the appeal is ready to be set down for a hearing. The appeal is considered ready to be set down for a hearing on the date at which the appellant has done everything required by the rules of court to prepare an appeal for hearing (typically the serving and filing of the appeal book, transcripts and appel [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string Lbl_4_5 {
+            get {
+                return ResourceManager.GetString("Lbl_4_5", resourceCulture);
             }
         }
         
@@ -700,11 +3220,83 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Civil and criminal case time intervals.
+        /// </summary>
+        public static string Lbl_4_Heading1 {
+            get {
+                return ResourceManager.GetString("Lbl_4_Heading1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Civil and criminal case time intervals.
+        /// </summary>
+        public static string Lbl_4_Heading2 {
+            get {
+                return ResourceManager.GetString("Lbl_4_Heading2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Civil and criminal case time intervals.
+        /// </summary>
+        public static string Lbl_4_Heading3 {
+            get {
+                return ResourceManager.GetString("Lbl_4_Heading3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Civil and criminal case time intervals.
+        /// </summary>
+        public static string Lbl_4_Heading4 {
+            get {
+                return ResourceManager.GetString("Lbl_4_Heading4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Civil cases.
         /// </summary>
         public static string Lbl_CivilCases {
             get {
                 return ResourceManager.GetString("Lbl_CivilCases", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Civil cases.
+        /// </summary>
+        public static string Lbl_CivilCases1 {
+            get {
+                return ResourceManager.GetString("Lbl_CivilCases1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Civil cases.
+        /// </summary>
+        public static string Lbl_CivilCases2 {
+            get {
+                return ResourceManager.GetString("Lbl_CivilCases2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Civil cases.
+        /// </summary>
+        public static string Lbl_CivilCases3 {
+            get {
+                return ResourceManager.GetString("Lbl_CivilCases3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Civil cases.
+        /// </summary>
+        public static string Lbl_CivilCases4 {
+            get {
+                return ResourceManager.GetString("Lbl_CivilCases4", resourceCulture);
             }
         }
         
@@ -718,11 +3310,83 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Criminal cases.
+        /// </summary>
+        public static string Lbl_CriminalCases1 {
+            get {
+                return ResourceManager.GetString("Lbl_CriminalCases1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Criminal cases.
+        /// </summary>
+        public static string Lbl_CriminalCases2 {
+            get {
+                return ResourceManager.GetString("Lbl_CriminalCases2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Criminal cases.
+        /// </summary>
+        public static string Lbl_CriminalCases3 {
+            get {
+                return ResourceManager.GetString("Lbl_CriminalCases3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Criminal cases.
+        /// </summary>
+        public static string Lbl_CriminalCases4 {
+            get {
+                return ResourceManager.GetString("Lbl_CriminalCases4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to From.
         /// </summary>
         public static string Lbl_From {
             get {
                 return ResourceManager.GetString("Lbl_From", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to From.
+        /// </summary>
+        public static string Lbl_From1 {
+            get {
+                return ResourceManager.GetString("Lbl_From1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to From.
+        /// </summary>
+        public static string Lbl_From2 {
+            get {
+                return ResourceManager.GetString("Lbl_From2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to From.
+        /// </summary>
+        public static string Lbl_From3 {
+            get {
+                return ResourceManager.GetString("Lbl_From3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to From.
+        /// </summary>
+        public static string Lbl_From4 {
+            get {
+                return ResourceManager.GetString("Lbl_From4", resourceCulture);
             }
         }
         
@@ -736,11 +3400,83 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Name of Court.
+        /// </summary>
+        public static string Lbl_NameOfCourt1 {
+            get {
+                return ResourceManager.GetString("Lbl_NameOfCourt1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Name of Court.
+        /// </summary>
+        public static string Lbl_NameOfCourt2 {
+            get {
+                return ResourceManager.GetString("Lbl_NameOfCourt2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Name of Court.
+        /// </summary>
+        public static string Lbl_NameOfCourt3 {
+            get {
+                return ResourceManager.GetString("Lbl_NameOfCourt3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Name of Court.
+        /// </summary>
+        public static string Lbl_NameOfCourt4 {
+            get {
+                return ResourceManager.GetString("Lbl_NameOfCourt4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Reporting Year.
         /// </summary>
         public static string Lbl_ReportingYear {
             get {
                 return ResourceManager.GetString("Lbl_ReportingYear", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Reporting Year.
+        /// </summary>
+        public static string Lbl_ReportingYear1 {
+            get {
+                return ResourceManager.GetString("Lbl_ReportingYear1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Reporting Year.
+        /// </summary>
+        public static string Lbl_ReportingYear2 {
+            get {
+                return ResourceManager.GetString("Lbl_ReportingYear2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Reporting Year.
+        /// </summary>
+        public static string Lbl_ReportingYear3 {
+            get {
+                return ResourceManager.GetString("Lbl_ReportingYear3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Reporting Year.
+        /// </summary>
+        public static string Lbl_ReportingYear4 {
+            get {
+                return ResourceManager.GetString("Lbl_ReportingYear4", resourceCulture);
             }
         }
         
@@ -754,11 +3490,83 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to To.
+        /// </summary>
+        public static string Lbl_To1 {
+            get {
+                return ResourceManager.GetString("Lbl_To1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to To.
+        /// </summary>
+        public static string Lbl_To2 {
+            get {
+                return ResourceManager.GetString("Lbl_To2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to To.
+        /// </summary>
+        public static string Lbl_To3 {
+            get {
+                return ResourceManager.GetString("Lbl_To3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to To.
+        /// </summary>
+        public static string Lbl_To4 {
+            get {
+                return ResourceManager.GetString("Lbl_To4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Draft Found.
         /// </summary>
         public static string Modal_DraftFound_Title {
             get {
                 return ResourceManager.GetString("Modal_DraftFound_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Draft Found.
+        /// </summary>
+        public static string Modal_DraftFound_Title1 {
+            get {
+                return ResourceManager.GetString("Modal_DraftFound_Title1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Draft Found.
+        /// </summary>
+        public static string Modal_DraftFound_Title2 {
+            get {
+                return ResourceManager.GetString("Modal_DraftFound_Title2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Draft Found.
+        /// </summary>
+        public static string Modal_DraftFound_Title3 {
+            get {
+                return ResourceManager.GetString("Modal_DraftFound_Title3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Draft Found.
+        /// </summary>
+        public static string Modal_DraftFound_Title4 {
+            get {
+                return ResourceManager.GetString("Modal_DraftFound_Title4", resourceCulture);
             }
         }
         
@@ -772,11 +3580,137 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Please complete the following sections:.
+        /// </summary>
+        public static string Modal_Validation_Title1 {
+            get {
+                return ResourceManager.GetString("Modal_Validation_Title1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please complete the following sections:.
+        /// </summary>
+        public static string Modal_Validation_Title2 {
+            get {
+                return ResourceManager.GetString("Modal_Validation_Title2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please complete the following sections:.
+        /// </summary>
+        public static string Modal_Validation_Title3 {
+            get {
+                return ResourceManager.GetString("Modal_Validation_Title3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please complete the following sections:.
+        /// </summary>
+        public static string Modal_Validation_Title4 {
+            get {
+                return ResourceManager.GetString("Modal_Validation_Title4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs filed but still pending as of December 31&lt;sup&gt;st&lt;/sup&gt; of the previous year.
         /// </summary>
         public static string Msg_1_1_1 {
             get {
                 return ResourceManager.GetString("Msg_1_1_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs disposed of by judgment.
+        /// </summary>
+        public static string Msg_1_1_10 {
+            get {
+                return ResourceManager.GetString("Msg_1_1_10", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs disposed of by the registrar, the case management officer or authorized personnel or by operation of the rules.
+        /// </summary>
+        public static string Msg_1_1_11 {
+            get {
+                return ResourceManager.GetString("Msg_1_1_11", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs settled by judicial mediation.
+        /// </summary>
+        public static string Msg_1_1_12 {
+            get {
+                return ResourceManager.GetString("Msg_1_1_12", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs disposed of by other means.
+        /// </summary>
+        public static string Msg_1_1_13 {
+            get {
+                return ResourceManager.GetString("Msg_1_1_13", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total number of civil appeals, cross-appeals, references, and JRs.
+        /// </summary>
+        public static string Msg_1_1_14 {
+            get {
+                return ResourceManager.GetString("Msg_1_1_14", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs filed but still pending as of December 31&lt;sup&gt;st&lt;/sup&gt; of the previous year.
+        /// </summary>
+        public static string Msg_1_1_15 {
+            get {
+                return ResourceManager.GetString("Msg_1_1_15", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs filed.
+        /// </summary>
+        public static string Msg_1_1_16 {
+            get {
+                return ResourceManager.GetString("Msg_1_1_16", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs disposed of by judgment.
+        /// </summary>
+        public static string Msg_1_1_17 {
+            get {
+                return ResourceManager.GetString("Msg_1_1_17", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs disposed of by the registrar, the case management officer or authorized personnel or by operation of the rules.
+        /// </summary>
+        public static string Msg_1_1_18 {
+            get {
+                return ResourceManager.GetString("Msg_1_1_18", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs settled by judicial mediation.
+        /// </summary>
+        public static string Msg_1_1_19 {
+            get {
+                return ResourceManager.GetString("Msg_1_1_19", resourceCulture);
             }
         }
         
@@ -790,11 +3724,155 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs disposed of by other means.
+        /// </summary>
+        public static string Msg_1_1_20 {
+            get {
+                return ResourceManager.GetString("Msg_1_1_20", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total number of civil appeals, cross-appeals, references, and JRs.
+        /// </summary>
+        public static string Msg_1_1_21 {
+            get {
+                return ResourceManager.GetString("Msg_1_1_21", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs filed but still pending as of December 31&lt;sup&gt;st&lt;/sup&gt; of the previous year.
+        /// </summary>
+        public static string Msg_1_1_22 {
+            get {
+                return ResourceManager.GetString("Msg_1_1_22", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs filed.
+        /// </summary>
+        public static string Msg_1_1_23 {
+            get {
+                return ResourceManager.GetString("Msg_1_1_23", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs disposed of by judgment.
+        /// </summary>
+        public static string Msg_1_1_24 {
+            get {
+                return ResourceManager.GetString("Msg_1_1_24", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs disposed of by the registrar, the case management officer or authorized personnel or by operation of the rules.
+        /// </summary>
+        public static string Msg_1_1_25 {
+            get {
+                return ResourceManager.GetString("Msg_1_1_25", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs settled by judicial mediation.
+        /// </summary>
+        public static string Msg_1_1_26 {
+            get {
+                return ResourceManager.GetString("Msg_1_1_26", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs disposed of by other means.
+        /// </summary>
+        public static string Msg_1_1_27 {
+            get {
+                return ResourceManager.GetString("Msg_1_1_27", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total number of civil appeals, cross-appeals, references, and JRs.
+        /// </summary>
+        public static string Msg_1_1_28 {
+            get {
+                return ResourceManager.GetString("Msg_1_1_28", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs filed but still pending as of December 31&lt;sup&gt;st&lt;/sup&gt; of the previous year.
+        /// </summary>
+        public static string Msg_1_1_29 {
+            get {
+                return ResourceManager.GetString("Msg_1_1_29", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs disposed of by judgment.
         /// </summary>
         public static string Msg_1_1_3 {
             get {
                 return ResourceManager.GetString("Msg_1_1_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs filed.
+        /// </summary>
+        public static string Msg_1_1_30 {
+            get {
+                return ResourceManager.GetString("Msg_1_1_30", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs disposed of by judgment.
+        /// </summary>
+        public static string Msg_1_1_31 {
+            get {
+                return ResourceManager.GetString("Msg_1_1_31", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs disposed of by the registrar, the case management officer or authorized personnel or by operation of the rules.
+        /// </summary>
+        public static string Msg_1_1_32 {
+            get {
+                return ResourceManager.GetString("Msg_1_1_32", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs settled by judicial mediation.
+        /// </summary>
+        public static string Msg_1_1_33 {
+            get {
+                return ResourceManager.GetString("Msg_1_1_33", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs disposed of by other means.
+        /// </summary>
+        public static string Msg_1_1_34 {
+            get {
+                return ResourceManager.GetString("Msg_1_1_34", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total number of civil appeals, cross-appeals, references, and JRs.
+        /// </summary>
+        public static string Msg_1_1_35 {
+            get {
+                return ResourceManager.GetString("Msg_1_1_35", resourceCulture);
             }
         }
         
@@ -835,6 +3913,24 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs filed but still pending as of December 31&lt;sup&gt;st&lt;/sup&gt; of the previous year.
+        /// </summary>
+        public static string Msg_1_1_8 {
+            get {
+                return ResourceManager.GetString("Msg_1_1_8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs filed.
+        /// </summary>
+        public static string Msg_1_1_9 {
+            get {
+                return ResourceManager.GetString("Msg_1_1_9", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs filed of criminal appeals, cross-appeals, references and bail reviews filed but still pending as of December 31&lt;sup&gt;st&lt;/sup&gt; of the previous year.
         /// </summary>
         public static string Msg_1_2_1 {
@@ -844,11 +3940,155 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Total number of criminal appeals, cross-appeals, references and bail reviews.
+        /// </summary>
+        public static string Msg_1_2_10 {
+            get {
+                return ResourceManager.GetString("Msg_1_2_10", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs filed of criminal appeals, cross-appeals, references and bail reviews filed but still pending as of December 31&lt;sup&gt;st&lt;/sup&gt; of the previous year.
+        /// </summary>
+        public static string Msg_1_2_11 {
+            get {
+                return ResourceManager.GetString("Msg_1_2_11", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs filed of criminal appeals, cross-appeals, references and bail reviews filed.
+        /// </summary>
+        public static string Msg_1_2_12 {
+            get {
+                return ResourceManager.GetString("Msg_1_2_12", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of criminal appeals, cross-appeals, references and bail reviews disposed of by judgment.
+        /// </summary>
+        public static string Msg_1_2_13 {
+            get {
+                return ResourceManager.GetString("Msg_1_2_13", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of criminal appeals, cross-appeals, references and bail reviews disposed of by other means.
+        /// </summary>
+        public static string Msg_1_2_14 {
+            get {
+                return ResourceManager.GetString("Msg_1_2_14", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total number of criminal appeals, cross-appeals, references and bail reviews.
+        /// </summary>
+        public static string Msg_1_2_15 {
+            get {
+                return ResourceManager.GetString("Msg_1_2_15", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs filed of criminal appeals, cross-appeals, references and bail reviews filed but still pending as of December 31&lt;sup&gt;st&lt;/sup&gt; of the previous year.
+        /// </summary>
+        public static string Msg_1_2_16 {
+            get {
+                return ResourceManager.GetString("Msg_1_2_16", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs filed of criminal appeals, cross-appeals, references and bail reviews filed.
+        /// </summary>
+        public static string Msg_1_2_17 {
+            get {
+                return ResourceManager.GetString("Msg_1_2_17", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of criminal appeals, cross-appeals, references and bail reviews disposed of by judgment.
+        /// </summary>
+        public static string Msg_1_2_18 {
+            get {
+                return ResourceManager.GetString("Msg_1_2_18", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of criminal appeals, cross-appeals, references and bail reviews disposed of by other means.
+        /// </summary>
+        public static string Msg_1_2_19 {
+            get {
+                return ResourceManager.GetString("Msg_1_2_19", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs filed of criminal appeals, cross-appeals, references and bail reviews filed.
         /// </summary>
         public static string Msg_1_2_2 {
             get {
                 return ResourceManager.GetString("Msg_1_2_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total number of criminal appeals, cross-appeals, references and bail reviews.
+        /// </summary>
+        public static string Msg_1_2_20 {
+            get {
+                return ResourceManager.GetString("Msg_1_2_20", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs filed of criminal appeals, cross-appeals, references and bail reviews filed but still pending as of December 31&lt;sup&gt;st&lt;/sup&gt; of the previous year.
+        /// </summary>
+        public static string Msg_1_2_21 {
+            get {
+                return ResourceManager.GetString("Msg_1_2_21", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs filed of criminal appeals, cross-appeals, references and bail reviews filed.
+        /// </summary>
+        public static string Msg_1_2_22 {
+            get {
+                return ResourceManager.GetString("Msg_1_2_22", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of criminal appeals, cross-appeals, references and bail reviews disposed of by judgment.
+        /// </summary>
+        public static string Msg_1_2_23 {
+            get {
+                return ResourceManager.GetString("Msg_1_2_23", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of criminal appeals, cross-appeals, references and bail reviews disposed of by other means.
+        /// </summary>
+        public static string Msg_1_2_24 {
+            get {
+                return ResourceManager.GetString("Msg_1_2_24", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total number of criminal appeals, cross-appeals, references and bail reviews.
+        /// </summary>
+        public static string Msg_1_2_25 {
+            get {
+                return ResourceManager.GetString("Msg_1_2_25", resourceCulture);
             }
         }
         
@@ -880,6 +4120,42 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs filed of criminal appeals, cross-appeals, references and bail reviews filed but still pending as of December 31&lt;sup&gt;st&lt;/sup&gt; of the previous year.
+        /// </summary>
+        public static string Msg_1_2_6 {
+            get {
+                return ResourceManager.GetString("Msg_1_2_6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs filed of criminal appeals, cross-appeals, references and bail reviews filed.
+        /// </summary>
+        public static string Msg_1_2_7 {
+            get {
+                return ResourceManager.GetString("Msg_1_2_7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of criminal appeals, cross-appeals, references and bail reviews disposed of by judgment.
+        /// </summary>
+        public static string Msg_1_2_8 {
+            get {
+                return ResourceManager.GetString("Msg_1_2_8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of criminal appeals, cross-appeals, references and bail reviews disposed of by other means.
+        /// </summary>
+        public static string Msg_1_2_9 {
+            get {
+                return ResourceManager.GetString("Msg_1_2_9", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs filed of civil case decisions given at hearing.
         /// </summary>
         public static string Msg_2_1_1 {
@@ -891,9 +4167,81 @@ namespace WebRazor.Resources.Pages {
         /// <summary>
         ///   Looks up a localized string similar to Number of civil case reserved decisions.
         /// </summary>
+        public static string Msg_2_1_10 {
+            get {
+                return ResourceManager.GetString("Msg_2_1_10", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil case reserved decisions.
+        /// </summary>
         public static string Msg_2_1_2 {
             get {
                 return ResourceManager.GetString("Msg_2_1_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs filed of civil case decisions given at hearing.
+        /// </summary>
+        public static string Msg_2_1_3 {
+            get {
+                return ResourceManager.GetString("Msg_2_1_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil case reserved decisions.
+        /// </summary>
+        public static string Msg_2_1_4 {
+            get {
+                return ResourceManager.GetString("Msg_2_1_4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs filed of civil case decisions given at hearing.
+        /// </summary>
+        public static string Msg_2_1_5 {
+            get {
+                return ResourceManager.GetString("Msg_2_1_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil case reserved decisions.
+        /// </summary>
+        public static string Msg_2_1_6 {
+            get {
+                return ResourceManager.GetString("Msg_2_1_6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs filed of civil case decisions given at hearing.
+        /// </summary>
+        public static string Msg_2_1_7 {
+            get {
+                return ResourceManager.GetString("Msg_2_1_7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil case reserved decisions.
+        /// </summary>
+        public static string Msg_2_1_8 {
+            get {
+                return ResourceManager.GetString("Msg_2_1_8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals, cross-appeals, references, and JRs filed of civil case decisions given at hearing.
+        /// </summary>
+        public static string Msg_2_1_9 {
+            get {
+                return ResourceManager.GetString("Msg_2_1_9", resourceCulture);
             }
         }
         
@@ -916,6 +4264,60 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Number of convictions/acquittals given at hearing.
+        /// </summary>
+        public static string Msg_2_2_1_10 {
+            get {
+                return ResourceManager.GetString("Msg_2_2_1_10", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of sentences given at hearing.
+        /// </summary>
+        public static string Msg_2_2_1_11 {
+            get {
+                return ResourceManager.GetString("Msg_2_2_1_11", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of other criminal appeals given at hearing.
+        /// </summary>
+        public static string Msg_2_2_1_12 {
+            get {
+                return ResourceManager.GetString("Msg_2_2_1_12", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of convictions/acquittals given at hearing.
+        /// </summary>
+        public static string Msg_2_2_1_13 {
+            get {
+                return ResourceManager.GetString("Msg_2_2_1_13", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of sentences given at hearing.
+        /// </summary>
+        public static string Msg_2_2_1_14 {
+            get {
+                return ResourceManager.GetString("Msg_2_2_1_14", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of other criminal appeals given at hearing.
+        /// </summary>
+        public static string Msg_2_2_1_15 {
+            get {
+                return ResourceManager.GetString("Msg_2_2_1_15", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Number of sentences given at hearing.
         /// </summary>
         public static string Msg_2_2_1_2 {
@@ -930,6 +4332,69 @@ namespace WebRazor.Resources.Pages {
         public static string Msg_2_2_1_3 {
             get {
                 return ResourceManager.GetString("Msg_2_2_1_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of convictions/acquittals given at hearing.
+        /// </summary>
+        public static string Msg_2_2_1_4 {
+            get {
+                return ResourceManager.GetString("Msg_2_2_1_4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of sentences given at hearing.
+        /// </summary>
+        public static string Msg_2_2_1_5 {
+            get {
+                return ResourceManager.GetString("Msg_2_2_1_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of other criminal appeals given at hearing.
+        /// </summary>
+        public static string Msg_2_2_1_6 {
+            get {
+                return ResourceManager.GetString("Msg_2_2_1_6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of convictions/acquittals given at hearing.
+        /// </summary>
+        public static string Msg_2_2_1_7 {
+            get {
+                return ResourceManager.GetString("Msg_2_2_1_7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of sentences given at hearing.
+        /// </summary>
+        public static string Msg_2_2_1_8 {
+            get {
+                return ResourceManager.GetString("Msg_2_2_1_8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of other criminal appeals given at hearing.
+        /// </summary>
+        public static string Msg_2_2_1_9 {
+            get {
+                return ResourceManager.GetString("Msg_2_2_1_9", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of criminal case decisions filed after reserving.
+        /// </summary>
+        public static string Msg_2_2_10 {
+            get {
+                return ResourceManager.GetString("Msg_2_2_10", resourceCulture);
             }
         }
         
@@ -952,6 +4417,60 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Number of convictions/acquittals filed after reserving.
+        /// </summary>
+        public static string Msg_2_2_2_10 {
+            get {
+                return ResourceManager.GetString("Msg_2_2_2_10", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of sentences filed after reserving.
+        /// </summary>
+        public static string Msg_2_2_2_11 {
+            get {
+                return ResourceManager.GetString("Msg_2_2_2_11", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of other criminal appeals filed after reserving.
+        /// </summary>
+        public static string Msg_2_2_2_12 {
+            get {
+                return ResourceManager.GetString("Msg_2_2_2_12", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of convictions/acquittals filed after reserving.
+        /// </summary>
+        public static string Msg_2_2_2_13 {
+            get {
+                return ResourceManager.GetString("Msg_2_2_2_13", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of sentences filed after reserving.
+        /// </summary>
+        public static string Msg_2_2_2_14 {
+            get {
+                return ResourceManager.GetString("Msg_2_2_2_14", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of other criminal appeals filed after reserving.
+        /// </summary>
+        public static string Msg_2_2_2_15 {
+            get {
+                return ResourceManager.GetString("Msg_2_2_2_15", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Number of sentences filed after reserving.
         /// </summary>
         public static string Msg_2_2_2_2 {
@@ -970,11 +4489,137 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Number of convictions/acquittals filed after reserving.
+        /// </summary>
+        public static string Msg_2_2_2_4 {
+            get {
+                return ResourceManager.GetString("Msg_2_2_2_4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of sentences filed after reserving.
+        /// </summary>
+        public static string Msg_2_2_2_5 {
+            get {
+                return ResourceManager.GetString("Msg_2_2_2_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of other criminal appeals filed after reserving.
+        /// </summary>
+        public static string Msg_2_2_2_6 {
+            get {
+                return ResourceManager.GetString("Msg_2_2_2_6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of convictions/acquittals filed after reserving.
+        /// </summary>
+        public static string Msg_2_2_2_7 {
+            get {
+                return ResourceManager.GetString("Msg_2_2_2_7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of sentences filed after reserving.
+        /// </summary>
+        public static string Msg_2_2_2_8 {
+            get {
+                return ResourceManager.GetString("Msg_2_2_2_8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of other criminal appeals filed after reserving.
+        /// </summary>
+        public static string Msg_2_2_2_9 {
+            get {
+                return ResourceManager.GetString("Msg_2_2_2_9", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of criminal case decisions given at hearing.
+        /// </summary>
+        public static string Msg_2_2_3 {
+            get {
+                return ResourceManager.GetString("Msg_2_2_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of criminal case decisions filed after reserving.
+        /// </summary>
+        public static string Msg_2_2_4 {
+            get {
+                return ResourceManager.GetString("Msg_2_2_4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of criminal case decisions given at hearing.
+        /// </summary>
+        public static string Msg_2_2_5 {
+            get {
+                return ResourceManager.GetString("Msg_2_2_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of criminal case decisions filed after reserving.
+        /// </summary>
+        public static string Msg_2_2_6 {
+            get {
+                return ResourceManager.GetString("Msg_2_2_6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of criminal case decisions given at hearing.
+        /// </summary>
+        public static string Msg_2_2_7 {
+            get {
+                return ResourceManager.GetString("Msg_2_2_7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of criminal case decisions filed after reserving.
+        /// </summary>
+        public static string Msg_2_2_8 {
+            get {
+                return ResourceManager.GetString("Msg_2_2_8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of criminal case decisions given at hearing.
+        /// </summary>
+        public static string Msg_2_2_9 {
+            get {
+                return ResourceManager.GetString("Msg_2_2_9", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Number of Bench decisions/judgments.
         /// </summary>
         public static string Msg_3_1 {
             get {
                 return ResourceManager.GetString("Msg_3_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of reserved decisions/judgments.
+        /// </summary>
+        public static string Msg_3_10 {
+            get {
+                return ResourceManager.GetString("Msg_3_10", resourceCulture);
             }
         }
         
@@ -988,11 +4633,128 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Number of Bench decisions/judgments.
+        /// </summary>
+        public static string Msg_3_3 {
+            get {
+                return ResourceManager.GetString("Msg_3_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of reserved decisions/judgments.
+        /// </summary>
+        public static string Msg_3_4 {
+            get {
+                return ResourceManager.GetString("Msg_3_4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of Bench decisions/judgments.
+        /// </summary>
+        public static string Msg_3_5 {
+            get {
+                return ResourceManager.GetString("Msg_3_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of reserved decisions/judgments.
+        /// </summary>
+        public static string Msg_3_6 {
+            get {
+                return ResourceManager.GetString("Msg_3_6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of Bench decisions/judgments.
+        /// </summary>
+        public static string Msg_3_7 {
+            get {
+                return ResourceManager.GetString("Msg_3_7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of reserved decisions/judgments.
+        /// </summary>
+        public static string Msg_3_8 {
+            get {
+                return ResourceManager.GetString("Msg_3_8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of Bench decisions/judgments.
+        /// </summary>
+        public static string Msg_3_9 {
+            get {
+                return ResourceManager.GetString("Msg_3_9", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took less than 6 months.
         /// </summary>
         public static string Msg_4_1_1 {
             get {
                 return ResourceManager.GetString("Msg_4_1_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took less than 6 months.
+        /// </summary>
+        public static string Msg_4_1_10 {
+            get {
+                return ResourceManager.GetString("Msg_4_1_10", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EN-Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took between 6 to 12 months.
+        /// </summary>
+        public static string Msg_4_1_11 {
+            get {
+                return ResourceManager.GetString("Msg_4_1_11", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EN-Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took more than 12 months.
+        /// </summary>
+        public static string Msg_4_1_12 {
+            get {
+                return ResourceManager.GetString("Msg_4_1_12", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took less than 6 months.
+        /// </summary>
+        public static string Msg_4_1_13 {
+            get {
+                return ResourceManager.GetString("Msg_4_1_13", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EN-Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took between 6 to 12 months.
+        /// </summary>
+        public static string Msg_4_1_14 {
+            get {
+                return ResourceManager.GetString("Msg_4_1_14", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EN-Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took more than 12 months.
+        /// </summary>
+        public static string Msg_4_1_15 {
+            get {
+                return ResourceManager.GetString("Msg_4_1_15", resourceCulture);
             }
         }
         
@@ -1015,11 +4777,101 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took less than 6 months.
+        /// </summary>
+        public static string Msg_4_1_4 {
+            get {
+                return ResourceManager.GetString("Msg_4_1_4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to EN-Conviction/acquittal.
         /// </summary>
         public static string Msg_4_1_4_1 {
             get {
                 return ResourceManager.GetString("Msg_4_1_4_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EN-Conviction/acquittal.
+        /// </summary>
+        public static string Msg_4_1_4_2 {
+            get {
+                return ResourceManager.GetString("Msg_4_1_4_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EN-Conviction/acquittal.
+        /// </summary>
+        public static string Msg_4_1_4_3 {
+            get {
+                return ResourceManager.GetString("Msg_4_1_4_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EN-Conviction/acquittal.
+        /// </summary>
+        public static string Msg_4_1_4_4 {
+            get {
+                return ResourceManager.GetString("Msg_4_1_4_4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EN-Conviction/acquittal.
+        /// </summary>
+        public static string Msg_4_1_4_5 {
+            get {
+                return ResourceManager.GetString("Msg_4_1_4_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EN-Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took between 6 to 12 months.
+        /// </summary>
+        public static string Msg_4_1_5 {
+            get {
+                return ResourceManager.GetString("Msg_4_1_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EN-Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took more than 12 months.
+        /// </summary>
+        public static string Msg_4_1_6 {
+            get {
+                return ResourceManager.GetString("Msg_4_1_6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took less than 6 months.
+        /// </summary>
+        public static string Msg_4_1_7 {
+            get {
+                return ResourceManager.GetString("Msg_4_1_7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EN-Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took between 6 to 12 months.
+        /// </summary>
+        public static string Msg_4_1_8 {
+            get {
+                return ResourceManager.GetString("Msg_4_1_8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EN-Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took more than 12 months.
+        /// </summary>
+        public static string Msg_4_1_9 {
+            get {
+                return ResourceManager.GetString("Msg_4_1_9", resourceCulture);
             }
         }
         
@@ -1033,11 +4885,83 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Please enter From Date.
+        /// </summary>
+        public static string Msg_FromDate1 {
+            get {
+                return ResourceManager.GetString("Msg_FromDate1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please enter From Date.
+        /// </summary>
+        public static string Msg_FromDate2 {
+            get {
+                return ResourceManager.GetString("Msg_FromDate2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please enter From Date.
+        /// </summary>
+        public static string Msg_FromDate3 {
+            get {
+                return ResourceManager.GetString("Msg_FromDate3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please enter From Date.
+        /// </summary>
+        public static string Msg_FromDate4 {
+            get {
+                return ResourceManager.GetString("Msg_FromDate4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Please enter Name of Court.
         /// </summary>
         public static string Msg_NameOfCourt {
             get {
                 return ResourceManager.GetString("Msg_NameOfCourt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please enter Name of Court.
+        /// </summary>
+        public static string Msg_NameOfCourt1 {
+            get {
+                return ResourceManager.GetString("Msg_NameOfCourt1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please enter Name of Court.
+        /// </summary>
+        public static string Msg_NameOfCourt2 {
+            get {
+                return ResourceManager.GetString("Msg_NameOfCourt2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please enter Name of Court.
+        /// </summary>
+        public static string Msg_NameOfCourt3 {
+            get {
+                return ResourceManager.GetString("Msg_NameOfCourt3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please enter Name of Court.
+        /// </summary>
+        public static string Msg_NameOfCourt4 {
+            get {
+                return ResourceManager.GetString("Msg_NameOfCourt4", resourceCulture);
             }
         }
         
@@ -1051,11 +4975,83 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Please enter Reporting Year.
+        /// </summary>
+        public static string Msg_ReportingYear1 {
+            get {
+                return ResourceManager.GetString("Msg_ReportingYear1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please enter Reporting Year.
+        /// </summary>
+        public static string Msg_ReportingYear2 {
+            get {
+                return ResourceManager.GetString("Msg_ReportingYear2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please enter Reporting Year.
+        /// </summary>
+        public static string Msg_ReportingYear3 {
+            get {
+                return ResourceManager.GetString("Msg_ReportingYear3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please enter Reporting Year.
+        /// </summary>
+        public static string Msg_ReportingYear4 {
+            get {
+                return ResourceManager.GetString("Msg_ReportingYear4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Please enter To Date.
         /// </summary>
         public static string Msg_ToDate {
             get {
                 return ResourceManager.GetString("Msg_ToDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please enter To Date.
+        /// </summary>
+        public static string Msg_ToDate1 {
+            get {
+                return ResourceManager.GetString("Msg_ToDate1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please enter To Date.
+        /// </summary>
+        public static string Msg_ToDate2 {
+            get {
+                return ResourceManager.GetString("Msg_ToDate2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please enter To Date.
+        /// </summary>
+        public static string Msg_ToDate3 {
+            get {
+                return ResourceManager.GetString("Msg_ToDate3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please enter To Date.
+        /// </summary>
+        public static string Msg_ToDate4 {
+            get {
+                return ResourceManager.GetString("Msg_ToDate4", resourceCulture);
             }
         }
         
@@ -1069,11 +5065,83 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Reporting Year is required.
+        /// </summary>
+        public static string ReportingYearRequired1 {
+            get {
+                return ResourceManager.GetString("ReportingYearRequired1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Reporting Year is required.
+        /// </summary>
+        public static string ReportingYearRequired2 {
+            get {
+                return ResourceManager.GetString("ReportingYearRequired2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Reporting Year is required.
+        /// </summary>
+        public static string ReportingYearRequired3 {
+            get {
+                return ResourceManager.GetString("ReportingYearRequired3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Reporting Year is required.
+        /// </summary>
+        public static string ReportingYearRequired4 {
+            get {
+                return ResourceManager.GetString("ReportingYearRequired4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Review.
         /// </summary>
         public static string Review {
             get {
                 return ResourceManager.GetString("Review", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Review.
+        /// </summary>
+        public static string Review1 {
+            get {
+                return ResourceManager.GetString("Review1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Review.
+        /// </summary>
+        public static string Review2 {
+            get {
+                return ResourceManager.GetString("Review2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Review.
+        /// </summary>
+        public static string Review3 {
+            get {
+                return ResourceManager.GetString("Review3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Review.
+        /// </summary>
+        public static string Review4 {
+            get {
+                return ResourceManager.GetString("Review4", resourceCulture);
             }
         }
         
@@ -1096,6 +5164,78 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Number of appeals, cross-appeals, references, bail reviews and JRs that have not been finalized as of December 31st.
+        /// </summary>
+        public static string Sec10_101_Label_Plain1 {
+            get {
+                return ResourceManager.GetString("Sec10_101_Label_Plain1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of appeals, cross-appeals, references, bail reviews and JRs that have not been finalized as of December 31st.
+        /// </summary>
+        public static string Sec10_101_Label_Plain2 {
+            get {
+                return ResourceManager.GetString("Sec10_101_Label_Plain2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of appeals, cross-appeals, references, bail reviews and JRs that have not been finalized as of December 31st.
+        /// </summary>
+        public static string Sec10_101_Label_Plain3 {
+            get {
+                return ResourceManager.GetString("Sec10_101_Label_Plain3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of appeals, cross-appeals, references, bail reviews and JRs that have not been finalized as of December 31st.
+        /// </summary>
+        public static string Sec10_101_Label_Plain4 {
+            get {
+                return ResourceManager.GetString("Sec10_101_Label_Plain4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of appeals, cross-appeals, references, bail reviews and JRs that have not been finalized as of December 31&lt;sup&gt;st&lt;/sup&gt;.
+        /// </summary>
+        public static string Sec10_101_Label1 {
+            get {
+                return ResourceManager.GetString("Sec10_101_Label1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of appeals, cross-appeals, references, bail reviews and JRs that have not been finalized as of December 31&lt;sup&gt;st&lt;/sup&gt;.
+        /// </summary>
+        public static string Sec10_101_Label2 {
+            get {
+                return ResourceManager.GetString("Sec10_101_Label2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of appeals, cross-appeals, references, bail reviews and JRs that have not been finalized as of December 31&lt;sup&gt;st&lt;/sup&gt;.
+        /// </summary>
+        public static string Sec10_101_Label3 {
+            get {
+                return ResourceManager.GetString("Sec10_101_Label3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of appeals, cross-appeals, references, bail reviews and JRs that have not been finalized as of December 31&lt;sup&gt;st&lt;/sup&gt;.
+        /// </summary>
+        public static string Sec10_101_Label4 {
+            get {
+                return ResourceManager.GetString("Sec10_101_Label4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Total number of appeals, cross-appeals, references, bail reviews and JRs pending on December 31st.
         /// </summary>
         public static string Sec10_Heading {
@@ -1114,11 +5254,119 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Explanation text for pending inventory measured as of December 31st, including heard and unheard matters..
+        /// </summary>
+        public static string Sec10_Heading_Tooltip1 {
+            get {
+                return ResourceManager.GetString("Sec10_Heading_Tooltip1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Explanation text for pending inventory measured as of December 31st, including heard and unheard matters..
+        /// </summary>
+        public static string Sec10_Heading_Tooltip2 {
+            get {
+                return ResourceManager.GetString("Sec10_Heading_Tooltip2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Explanation text for pending inventory measured as of December 31st, including heard and unheard matters..
+        /// </summary>
+        public static string Sec10_Heading_Tooltip3 {
+            get {
+                return ResourceManager.GetString("Sec10_Heading_Tooltip3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Explanation text for pending inventory measured as of December 31st, including heard and unheard matters..
+        /// </summary>
+        public static string Sec10_Heading_Tooltip4 {
+            get {
+                return ResourceManager.GetString("Sec10_Heading_Tooltip4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total number of appeals, cross-appeals, references, bail reviews and JRs pending on December 31st.
+        /// </summary>
+        public static string Sec10_Heading1 {
+            get {
+                return ResourceManager.GetString("Sec10_Heading1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total number of appeals, cross-appeals, references, bail reviews and JRs pending on December 31st.
+        /// </summary>
+        public static string Sec10_Heading2 {
+            get {
+                return ResourceManager.GetString("Sec10_Heading2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total number of appeals, cross-appeals, references, bail reviews and JRs pending on December 31st.
+        /// </summary>
+        public static string Sec10_Heading3 {
+            get {
+                return ResourceManager.GetString("Sec10_Heading3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total number of appeals, cross-appeals, references, bail reviews and JRs pending on December 31st.
+        /// </summary>
+        public static string Sec10_Heading4 {
+            get {
+                return ResourceManager.GetString("Sec10_Heading4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Regular judges.
         /// </summary>
         public static string Sec11_111_DataMsg {
             get {
                 return ResourceManager.GetString("Sec11_111_DataMsg", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Regular judges.
+        /// </summary>
+        public static string Sec11_111_DataMsg1 {
+            get {
+                return ResourceManager.GetString("Sec11_111_DataMsg1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Regular judges.
+        /// </summary>
+        public static string Sec11_111_DataMsg2 {
+            get {
+                return ResourceManager.GetString("Sec11_111_DataMsg2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Regular judges.
+        /// </summary>
+        public static string Sec11_111_DataMsg3 {
+            get {
+                return ResourceManager.GetString("Sec11_111_DataMsg3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Regular judges.
+        /// </summary>
+        public static string Sec11_111_DataMsg4 {
+            get {
+                return ResourceManager.GetString("Sec11_111_DataMsg4", resourceCulture);
             }
         }
         
@@ -1132,11 +5380,83 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Regular judges.
+        /// </summary>
+        public static string Sec11_111_Label1 {
+            get {
+                return ResourceManager.GetString("Sec11_111_Label1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Regular judges.
+        /// </summary>
+        public static string Sec11_111_Label2 {
+            get {
+                return ResourceManager.GetString("Sec11_111_Label2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Regular judges.
+        /// </summary>
+        public static string Sec11_111_Label3 {
+            get {
+                return ResourceManager.GetString("Sec11_111_Label3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Regular judges.
+        /// </summary>
+        public static string Sec11_111_Label4 {
+            get {
+                return ResourceManager.GetString("Sec11_111_Label4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Number of judges of the court as of December 31st that have not elected a supernumerary status and have regular judicial duties..
         /// </summary>
         public static string Sec11_111_Tooltip {
             get {
                 return ResourceManager.GetString("Sec11_111_Tooltip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of judges of the court as of December 31st that have not elected a supernumerary status and have regular judicial duties..
+        /// </summary>
+        public static string Sec11_111_Tooltip1 {
+            get {
+                return ResourceManager.GetString("Sec11_111_Tooltip1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of judges of the court as of December 31st that have not elected a supernumerary status and have regular judicial duties..
+        /// </summary>
+        public static string Sec11_111_Tooltip2 {
+            get {
+                return ResourceManager.GetString("Sec11_111_Tooltip2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of judges of the court as of December 31st that have not elected a supernumerary status and have regular judicial duties..
+        /// </summary>
+        public static string Sec11_111_Tooltip3 {
+            get {
+                return ResourceManager.GetString("Sec11_111_Tooltip3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of judges of the court as of December 31st that have not elected a supernumerary status and have regular judicial duties..
+        /// </summary>
+        public static string Sec11_111_Tooltip4 {
+            get {
+                return ResourceManager.GetString("Sec11_111_Tooltip4", resourceCulture);
             }
         }
         
@@ -1152,9 +5472,81 @@ namespace WebRazor.Resources.Pages {
         /// <summary>
         ///   Looks up a localized string similar to Supernumerary judges.
         /// </summary>
+        public static string Sec11_112_DataMsg1 {
+            get {
+                return ResourceManager.GetString("Sec11_112_DataMsg1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Supernumerary judges.
+        /// </summary>
+        public static string Sec11_112_DataMsg2 {
+            get {
+                return ResourceManager.GetString("Sec11_112_DataMsg2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Supernumerary judges.
+        /// </summary>
+        public static string Sec11_112_DataMsg3 {
+            get {
+                return ResourceManager.GetString("Sec11_112_DataMsg3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Supernumerary judges.
+        /// </summary>
+        public static string Sec11_112_DataMsg4 {
+            get {
+                return ResourceManager.GetString("Sec11_112_DataMsg4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Supernumerary judges.
+        /// </summary>
         public static string Sec11_112_Label {
             get {
                 return ResourceManager.GetString("Sec11_112_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Supernumerary judges.
+        /// </summary>
+        public static string Sec11_112_Label1 {
+            get {
+                return ResourceManager.GetString("Sec11_112_Label1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Supernumerary judges.
+        /// </summary>
+        public static string Sec11_112_Label2 {
+            get {
+                return ResourceManager.GetString("Sec11_112_Label2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Supernumerary judges.
+        /// </summary>
+        public static string Sec11_112_Label3 {
+            get {
+                return ResourceManager.GetString("Sec11_112_Label3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Supernumerary judges.
+        /// </summary>
+        public static string Sec11_112_Label4 {
+            get {
+                return ResourceManager.GetString("Sec11_112_Label4", resourceCulture);
             }
         }
         
@@ -1168,11 +5560,83 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Number of judges of the court as of December 31st that hold office as supernumerary judges as per section 28 of the Judges Act..
+        /// </summary>
+        public static string Sec11_112_Tooltip1 {
+            get {
+                return ResourceManager.GetString("Sec11_112_Tooltip1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of judges of the court as of December 31st that hold office as supernumerary judges as per section 28 of the Judges Act..
+        /// </summary>
+        public static string Sec11_112_Tooltip2 {
+            get {
+                return ResourceManager.GetString("Sec11_112_Tooltip2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of judges of the court as of December 31st that hold office as supernumerary judges as per section 28 of the Judges Act..
+        /// </summary>
+        public static string Sec11_112_Tooltip3 {
+            get {
+                return ResourceManager.GetString("Sec11_112_Tooltip3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of judges of the court as of December 31st that hold office as supernumerary judges as per section 28 of the Judges Act..
+        /// </summary>
+        public static string Sec11_112_Tooltip4 {
+            get {
+                return ResourceManager.GetString("Sec11_112_Tooltip4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Number of judges (as of December 31&lt;sup&gt;st&lt;/sup&gt;).
         /// </summary>
         public static string Sec11_Heading {
             get {
                 return ResourceManager.GetString("Sec11_Heading", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of judges (as of December 31&lt;sup&gt;st&lt;/sup&gt;).
+        /// </summary>
+        public static string Sec11_Heading1 {
+            get {
+                return ResourceManager.GetString("Sec11_Heading1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of judges (as of December 31&lt;sup&gt;st&lt;/sup&gt;).
+        /// </summary>
+        public static string Sec11_Heading2 {
+            get {
+                return ResourceManager.GetString("Sec11_Heading2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of judges (as of December 31&lt;sup&gt;st&lt;/sup&gt;).
+        /// </summary>
+        public static string Sec11_Heading3 {
+            get {
+                return ResourceManager.GetString("Sec11_Heading3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of judges (as of December 31&lt;sup&gt;st&lt;/sup&gt;).
+        /// </summary>
+        public static string Sec11_Heading4 {
+            get {
+                return ResourceManager.GetString("Sec11_Heading4", resourceCulture);
             }
         }
         
@@ -1195,11 +5659,119 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Comments should only be used on an exceptional basis. A true anomaly is a situation that considerably deviates from what is considered normal or expected..
+        /// </summary>
+        public static string Sec12_Heading_Tooltip1 {
+            get {
+                return ResourceManager.GetString("Sec12_Heading_Tooltip1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Comments should only be used on an exceptional basis. A true anomaly is a situation that considerably deviates from what is considered normal or expected..
+        /// </summary>
+        public static string Sec12_Heading_Tooltip2 {
+            get {
+                return ResourceManager.GetString("Sec12_Heading_Tooltip2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Comments should only be used on an exceptional basis. A true anomaly is a situation that considerably deviates from what is considered normal or expected..
+        /// </summary>
+        public static string Sec12_Heading_Tooltip3 {
+            get {
+                return ResourceManager.GetString("Sec12_Heading_Tooltip3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Comments should only be used on an exceptional basis. A true anomaly is a situation that considerably deviates from what is considered normal or expected..
+        /// </summary>
+        public static string Sec12_Heading_Tooltip4 {
+            get {
+                return ResourceManager.GetString("Sec12_Heading_Tooltip4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Additional comments.
+        /// </summary>
+        public static string Sec12_Heading1 {
+            get {
+                return ResourceManager.GetString("Sec12_Heading1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Additional comments.
+        /// </summary>
+        public static string Sec12_Heading2 {
+            get {
+                return ResourceManager.GetString("Sec12_Heading2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Additional comments.
+        /// </summary>
+        public static string Sec12_Heading3 {
+            get {
+                return ResourceManager.GetString("Sec12_Heading3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Additional comments.
+        /// </summary>
+        public static string Sec12_Heading4 {
+            get {
+                return ResourceManager.GetString("Sec12_Heading4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Notice of appeal to filing of the appellant’s factum.
         /// </summary>
         public static string Sec4_41_Heading {
             get {
                 return ResourceManager.GetString("Sec4_41_Heading", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Notice of appeal to filing of the appellant’s factum.
+        /// </summary>
+        public static string Sec4_41_Heading1 {
+            get {
+                return ResourceManager.GetString("Sec4_41_Heading1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Notice of appeal to filing of the appellant’s factum.
+        /// </summary>
+        public static string Sec4_41_Heading2 {
+            get {
+                return ResourceManager.GetString("Sec4_41_Heading2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Notice of appeal to filing of the appellant’s factum.
+        /// </summary>
+        public static string Sec4_41_Heading3 {
+            get {
+                return ResourceManager.GetString("Sec4_41_Heading3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Notice of appeal to filing of the appellant’s factum.
+        /// </summary>
+        public static string Sec4_41_Heading4 {
+            get {
+                return ResourceManager.GetString("Sec4_41_Heading4", resourceCulture);
             }
         }
         
@@ -1213,11 +5785,83 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to This time interval refers to the interval from the time a notice of appeal is filed (either as of right or after a motion for leave to appeal has been granted) to the time the appellant’s factum is filed and the appeal is ready to be set down for a hearing. The appeal is considered ready to be set down for a hearing on the date at which the appellant has done everything required by the rules of court to prepare an appeal for hearing (typically the serving and filing of the appeal book, transcripts and appel [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string Sec4_41_Tip1 {
+            get {
+                return ResourceManager.GetString("Sec4_41_Tip1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This time interval refers to the interval from the time a notice of appeal is filed (either as of right or after a motion for leave to appeal has been granted) to the time the appellant’s factum is filed and the appeal is ready to be set down for a hearing. The appeal is considered ready to be set down for a hearing on the date at which the appellant has done everything required by the rules of court to prepare an appeal for hearing (typically the serving and filing of the appeal book, transcripts and appel [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string Sec4_41_Tip2 {
+            get {
+                return ResourceManager.GetString("Sec4_41_Tip2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This time interval refers to the interval from the time a notice of appeal is filed (either as of right or after a motion for leave to appeal has been granted) to the time the appellant’s factum is filed and the appeal is ready to be set down for a hearing. The appeal is considered ready to be set down for a hearing on the date at which the appellant has done everything required by the rules of court to prepare an appeal for hearing (typically the serving and filing of the appeal book, transcripts and appel [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string Sec4_41_Tip3 {
+            get {
+                return ResourceManager.GetString("Sec4_41_Tip3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This time interval refers to the interval from the time a notice of appeal is filed (either as of right or after a motion for leave to appeal has been granted) to the time the appellant’s factum is filed and the appeal is ready to be set down for a hearing. The appeal is considered ready to be set down for a hearing on the date at which the appellant has done everything required by the rules of court to prepare an appeal for hearing (typically the serving and filing of the appeal book, transcripts and appel [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string Sec4_41_Tip4 {
+            get {
+                return ResourceManager.GetString("Sec4_41_Tip4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to (Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took less than 6 months).
         /// </summary>
         public static string Sec4_411_Label {
             get {
                 return ResourceManager.GetString("Sec4_411_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took less than 6 months).
+        /// </summary>
+        public static string Sec4_411_Label1 {
+            get {
+                return ResourceManager.GetString("Sec4_411_Label1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took less than 6 months).
+        /// </summary>
+        public static string Sec4_411_Label2 {
+            get {
+                return ResourceManager.GetString("Sec4_411_Label2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took less than 6 months).
+        /// </summary>
+        public static string Sec4_411_Label3 {
+            get {
+                return ResourceManager.GetString("Sec4_411_Label3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took less than 6 months).
+        /// </summary>
+        public static string Sec4_411_Label4 {
+            get {
+                return ResourceManager.GetString("Sec4_411_Label4", resourceCulture);
             }
         }
         
@@ -1231,11 +5875,83 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to (Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took between 6 to 12 months).
+        /// </summary>
+        public static string Sec4_412_Label1 {
+            get {
+                return ResourceManager.GetString("Sec4_412_Label1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took between 6 to 12 months).
+        /// </summary>
+        public static string Sec4_412_Label2 {
+            get {
+                return ResourceManager.GetString("Sec4_412_Label2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took between 6 to 12 months).
+        /// </summary>
+        public static string Sec4_412_Label3 {
+            get {
+                return ResourceManager.GetString("Sec4_412_Label3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took between 6 to 12 months).
+        /// </summary>
+        public static string Sec4_412_Label4 {
+            get {
+                return ResourceManager.GetString("Sec4_412_Label4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to (Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took more than 12 months).
         /// </summary>
         public static string Sec4_413_Label {
             get {
                 return ResourceManager.GetString("Sec4_413_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took more than 12 months).
+        /// </summary>
+        public static string Sec4_413_Label1 {
+            get {
+                return ResourceManager.GetString("Sec4_413_Label1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took more than 12 months).
+        /// </summary>
+        public static string Sec4_413_Label2 {
+            get {
+                return ResourceManager.GetString("Sec4_413_Label2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took more than 12 months).
+        /// </summary>
+        public static string Sec4_413_Label3 {
+            get {
+                return ResourceManager.GetString("Sec4_413_Label3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took more than 12 months).
+        /// </summary>
+        public static string Sec4_413_Label4 {
+            get {
+                return ResourceManager.GetString("Sec4_413_Label4", resourceCulture);
             }
         }
         
@@ -1249,11 +5965,83 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to (Number of criminal appeals where the interval from the notice of appeal to filing of the appellant’s factum took less than 6 months for:).
+        /// </summary>
+        public static string Sec4_414_Label1 {
+            get {
+                return ResourceManager.GetString("Sec4_414_Label1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (Number of criminal appeals where the interval from the notice of appeal to filing of the appellant’s factum took less than 6 months for:).
+        /// </summary>
+        public static string Sec4_414_Label2 {
+            get {
+                return ResourceManager.GetString("Sec4_414_Label2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (Number of criminal appeals where the interval from the notice of appeal to filing of the appellant’s factum took less than 6 months for:).
+        /// </summary>
+        public static string Sec4_414_Label3 {
+            get {
+                return ResourceManager.GetString("Sec4_414_Label3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (Number of criminal appeals where the interval from the notice of appeal to filing of the appellant’s factum took less than 6 months for:).
+        /// </summary>
+        public static string Sec4_414_Label4 {
+            get {
+                return ResourceManager.GetString("Sec4_414_Label4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to (Number of criminal appeals where the interval from the notice of appeal to filing of the appellant’s factum took between 6 to 12 months for:).
         /// </summary>
         public static string Sec4_415_Label {
             get {
                 return ResourceManager.GetString("Sec4_415_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (Number of criminal appeals where the interval from the notice of appeal to filing of the appellant’s factum took between 6 to 12 months for:).
+        /// </summary>
+        public static string Sec4_415_Label1 {
+            get {
+                return ResourceManager.GetString("Sec4_415_Label1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (Number of criminal appeals where the interval from the notice of appeal to filing of the appellant’s factum took between 6 to 12 months for:).
+        /// </summary>
+        public static string Sec4_415_Label2 {
+            get {
+                return ResourceManager.GetString("Sec4_415_Label2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (Number of criminal appeals where the interval from the notice of appeal to filing of the appellant’s factum took between 6 to 12 months for:).
+        /// </summary>
+        public static string Sec4_415_Label3 {
+            get {
+                return ResourceManager.GetString("Sec4_415_Label3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (Number of criminal appeals where the interval from the notice of appeal to filing of the appellant’s factum took between 6 to 12 months for:).
+        /// </summary>
+        public static string Sec4_415_Label4 {
+            get {
+                return ResourceManager.GetString("Sec4_415_Label4", resourceCulture);
             }
         }
         
@@ -1267,11 +6055,83 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Number of criminal appeals where the interval from the notice of appeal to filing of the appellant’s factum took more than 12 months for:.
+        /// </summary>
+        public static string Sec4_416_Label1 {
+            get {
+                return ResourceManager.GetString("Sec4_416_Label1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of criminal appeals where the interval from the notice of appeal to filing of the appellant’s factum took more than 12 months for:.
+        /// </summary>
+        public static string Sec4_416_Label2 {
+            get {
+                return ResourceManager.GetString("Sec4_416_Label2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of criminal appeals where the interval from the notice of appeal to filing of the appellant’s factum took more than 12 months for:.
+        /// </summary>
+        public static string Sec4_416_Label3 {
+            get {
+                return ResourceManager.GetString("Sec4_416_Label3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of criminal appeals where the interval from the notice of appeal to filing of the appellant’s factum took more than 12 months for:.
+        /// </summary>
+        public static string Sec4_416_Label4 {
+            get {
+                return ResourceManager.GetString("Sec4_416_Label4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Filing of the appellant’s factum to hearing.
         /// </summary>
         public static string Sec4_42_Heading {
             get {
                 return ResourceManager.GetString("Sec4_42_Heading", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Filing of the appellant’s factum to hearing.
+        /// </summary>
+        public static string Sec4_42_Heading1 {
+            get {
+                return ResourceManager.GetString("Sec4_42_Heading1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Filing of the appellant’s factum to hearing.
+        /// </summary>
+        public static string Sec4_42_Heading2 {
+            get {
+                return ResourceManager.GetString("Sec4_42_Heading2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Filing of the appellant’s factum to hearing.
+        /// </summary>
+        public static string Sec4_42_Heading3 {
+            get {
+                return ResourceManager.GetString("Sec4_42_Heading3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Filing of the appellant’s factum to hearing.
+        /// </summary>
+        public static string Sec4_42_Heading4 {
+            get {
+                return ResourceManager.GetString("Sec4_42_Heading4", resourceCulture);
             }
         }
         
@@ -1285,11 +6145,83 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to This time interval refers to the time required from the time the appellant’s factum is filed to the time the case is heard. The time the appeal is heard is the actual day of the appeal hearing and &lt;u&gt;not&lt;/u&gt; the scheduled date of hearing.&lt;br /&gt;&lt;br /&gt;Where the hearing consumes more than one day, use the first day of hearing for calculating the filing of the appellant’s factum to hearing time interval and the hearing to final decision time interval..
+        /// </summary>
+        public static string Sec4_42_Tip1 {
+            get {
+                return ResourceManager.GetString("Sec4_42_Tip1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This time interval refers to the time required from the time the appellant’s factum is filed to the time the case is heard. The time the appeal is heard is the actual day of the appeal hearing and &lt;u&gt;not&lt;/u&gt; the scheduled date of hearing.&lt;br /&gt;&lt;br /&gt;Where the hearing consumes more than one day, use the first day of hearing for calculating the filing of the appellant’s factum to hearing time interval and the hearing to final decision time interval..
+        /// </summary>
+        public static string Sec4_42_Tip2 {
+            get {
+                return ResourceManager.GetString("Sec4_42_Tip2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This time interval refers to the time required from the time the appellant’s factum is filed to the time the case is heard. The time the appeal is heard is the actual day of the appeal hearing and &lt;u&gt;not&lt;/u&gt; the scheduled date of hearing.&lt;br /&gt;&lt;br /&gt;Where the hearing consumes more than one day, use the first day of hearing for calculating the filing of the appellant’s factum to hearing time interval and the hearing to final decision time interval..
+        /// </summary>
+        public static string Sec4_42_Tip3 {
+            get {
+                return ResourceManager.GetString("Sec4_42_Tip3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This time interval refers to the time required from the time the appellant’s factum is filed to the time the case is heard. The time the appeal is heard is the actual day of the appeal hearing and &lt;u&gt;not&lt;/u&gt; the scheduled date of hearing.&lt;br /&gt;&lt;br /&gt;Where the hearing consumes more than one day, use the first day of hearing for calculating the filing of the appellant’s factum to hearing time interval and the hearing to final decision time interval..
+        /// </summary>
+        public static string Sec4_42_Tip4 {
+            get {
+                return ResourceManager.GetString("Sec4_42_Tip4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Number of civil appeals where the time interval from filing of the appellant’s factum to the hearing took less than 6 months.
         /// </summary>
         public static string Sec4_421_Label {
             get {
                 return ResourceManager.GetString("Sec4_421_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals where the time interval from filing of the appellant’s factum to the hearing took less than 6 months.
+        /// </summary>
+        public static string Sec4_421_Label1 {
+            get {
+                return ResourceManager.GetString("Sec4_421_Label1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals where the time interval from filing of the appellant’s factum to the hearing took less than 6 months.
+        /// </summary>
+        public static string Sec4_421_Label2 {
+            get {
+                return ResourceManager.GetString("Sec4_421_Label2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals where the time interval from filing of the appellant’s factum to the hearing took less than 6 months.
+        /// </summary>
+        public static string Sec4_421_Label3 {
+            get {
+                return ResourceManager.GetString("Sec4_421_Label3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals where the time interval from filing of the appellant’s factum to the hearing took less than 6 months.
+        /// </summary>
+        public static string Sec4_421_Label4 {
+            get {
+                return ResourceManager.GetString("Sec4_421_Label4", resourceCulture);
             }
         }
         
@@ -1303,11 +6235,83 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals where the time interval from filing of the appellant’s factum to the hearing took between 6 to 12 months.
+        /// </summary>
+        public static string Sec4_422_Label1 {
+            get {
+                return ResourceManager.GetString("Sec4_422_Label1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals where the time interval from filing of the appellant’s factum to the hearing took between 6 to 12 months.
+        /// </summary>
+        public static string Sec4_422_Label2 {
+            get {
+                return ResourceManager.GetString("Sec4_422_Label2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals where the time interval from filing of the appellant’s factum to the hearing took between 6 to 12 months.
+        /// </summary>
+        public static string Sec4_422_Label3 {
+            get {
+                return ResourceManager.GetString("Sec4_422_Label3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals where the time interval from filing of the appellant’s factum to the hearing took between 6 to 12 months.
+        /// </summary>
+        public static string Sec4_422_Label4 {
+            get {
+                return ResourceManager.GetString("Sec4_422_Label4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Number of civil appeals where the time interval from filing of the appellant’s factum to the hearing took more than 12 months.
         /// </summary>
         public static string Sec4_423_Label {
             get {
                 return ResourceManager.GetString("Sec4_423_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals where the time interval from filing of the appellant’s factum to the hearing took more than 12 months.
+        /// </summary>
+        public static string Sec4_423_Label1 {
+            get {
+                return ResourceManager.GetString("Sec4_423_Label1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals where the time interval from filing of the appellant’s factum to the hearing took more than 12 months.
+        /// </summary>
+        public static string Sec4_423_Label2 {
+            get {
+                return ResourceManager.GetString("Sec4_423_Label2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals where the time interval from filing of the appellant’s factum to the hearing took more than 12 months.
+        /// </summary>
+        public static string Sec4_423_Label3 {
+            get {
+                return ResourceManager.GetString("Sec4_423_Label3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals where the time interval from filing of the appellant’s factum to the hearing took more than 12 months.
+        /// </summary>
+        public static string Sec4_423_Label4 {
+            get {
+                return ResourceManager.GetString("Sec4_423_Label4", resourceCulture);
             }
         }
         
@@ -1321,11 +6325,83 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Number of criminal appeals where the time interval from filing of the appellant’s factum to the hearing took less than 6 months for:.
+        /// </summary>
+        public static string Sec4_424_Label1 {
+            get {
+                return ResourceManager.GetString("Sec4_424_Label1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of criminal appeals where the time interval from filing of the appellant’s factum to the hearing took less than 6 months for:.
+        /// </summary>
+        public static string Sec4_424_Label2 {
+            get {
+                return ResourceManager.GetString("Sec4_424_Label2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of criminal appeals where the time interval from filing of the appellant’s factum to the hearing took less than 6 months for:.
+        /// </summary>
+        public static string Sec4_424_Label3 {
+            get {
+                return ResourceManager.GetString("Sec4_424_Label3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of criminal appeals where the time interval from filing of the appellant’s factum to the hearing took less than 6 months for:.
+        /// </summary>
+        public static string Sec4_424_Label4 {
+            get {
+                return ResourceManager.GetString("Sec4_424_Label4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Number of criminal appeals where the time interval from filing of the appellant’s factum to the hearing took between 6 to 12 months for:.
         /// </summary>
         public static string Sec4_425_Label {
             get {
                 return ResourceManager.GetString("Sec4_425_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of criminal appeals where the time interval from filing of the appellant’s factum to the hearing took between 6 to 12 months for:.
+        /// </summary>
+        public static string Sec4_425_Label1 {
+            get {
+                return ResourceManager.GetString("Sec4_425_Label1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of criminal appeals where the time interval from filing of the appellant’s factum to the hearing took between 6 to 12 months for:.
+        /// </summary>
+        public static string Sec4_425_Label2 {
+            get {
+                return ResourceManager.GetString("Sec4_425_Label2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of criminal appeals where the time interval from filing of the appellant’s factum to the hearing took between 6 to 12 months for:.
+        /// </summary>
+        public static string Sec4_425_Label3 {
+            get {
+                return ResourceManager.GetString("Sec4_425_Label3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of criminal appeals where the time interval from filing of the appellant’s factum to the hearing took between 6 to 12 months for:.
+        /// </summary>
+        public static string Sec4_425_Label4 {
+            get {
+                return ResourceManager.GetString("Sec4_425_Label4", resourceCulture);
             }
         }
         
@@ -1339,11 +6415,83 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Number of criminal appeals where the time interval from filing of the appellant’s factum to the hearing took more than 12 months for:.
+        /// </summary>
+        public static string Sec4_426_Label1 {
+            get {
+                return ResourceManager.GetString("Sec4_426_Label1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of criminal appeals where the time interval from filing of the appellant’s factum to the hearing took more than 12 months for:.
+        /// </summary>
+        public static string Sec4_426_Label2 {
+            get {
+                return ResourceManager.GetString("Sec4_426_Label2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of criminal appeals where the time interval from filing of the appellant’s factum to the hearing took more than 12 months for:.
+        /// </summary>
+        public static string Sec4_426_Label3 {
+            get {
+                return ResourceManager.GetString("Sec4_426_Label3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of criminal appeals where the time interval from filing of the appellant’s factum to the hearing took more than 12 months for:.
+        /// </summary>
+        public static string Sec4_426_Label4 {
+            get {
+                return ResourceManager.GetString("Sec4_426_Label4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Hearing to final decision.
         /// </summary>
         public static string Sec4_43_Heading {
             get {
                 return ResourceManager.GetString("Sec4_43_Heading", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hearing to final decision.
+        /// </summary>
+        public static string Sec4_43_Heading1 {
+            get {
+                return ResourceManager.GetString("Sec4_43_Heading1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hearing to final decision.
+        /// </summary>
+        public static string Sec4_43_Heading2 {
+            get {
+                return ResourceManager.GetString("Sec4_43_Heading2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hearing to final decision.
+        /// </summary>
+        public static string Sec4_43_Heading3 {
+            get {
+                return ResourceManager.GetString("Sec4_43_Heading3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hearing to final decision.
+        /// </summary>
+        public static string Sec4_43_Heading4 {
+            get {
+                return ResourceManager.GetString("Sec4_43_Heading4", resourceCulture);
             }
         }
         
@@ -1357,11 +6505,83 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to This time interval refers to the time between the day of the hearing (actual day of hearing and &lt;u&gt;not&lt;/u&gt; the scheduled date of hearing) and the date of the decision/judgment..
+        /// </summary>
+        public static string Sec4_43_Tip1 {
+            get {
+                return ResourceManager.GetString("Sec4_43_Tip1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This time interval refers to the time between the day of the hearing (actual day of hearing and &lt;u&gt;not&lt;/u&gt; the scheduled date of hearing) and the date of the decision/judgment..
+        /// </summary>
+        public static string Sec4_43_Tip2 {
+            get {
+                return ResourceManager.GetString("Sec4_43_Tip2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This time interval refers to the time between the day of the hearing (actual day of hearing and &lt;u&gt;not&lt;/u&gt; the scheduled date of hearing) and the date of the decision/judgment..
+        /// </summary>
+        public static string Sec4_43_Tip3 {
+            get {
+                return ResourceManager.GetString("Sec4_43_Tip3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This time interval refers to the time between the day of the hearing (actual day of hearing and &lt;u&gt;not&lt;/u&gt; the scheduled date of hearing) and the date of the decision/judgment..
+        /// </summary>
+        public static string Sec4_43_Tip4 {
+            get {
+                return ResourceManager.GetString("Sec4_43_Tip4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Number of civil appeals where the time interval from the hearing to the final decision took less than 6 months.
         /// </summary>
         public static string Sec4_431_Label {
             get {
                 return ResourceManager.GetString("Sec4_431_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals where the time interval from the hearing to the final decision took less than 6 months.
+        /// </summary>
+        public static string Sec4_431_Label1 {
+            get {
+                return ResourceManager.GetString("Sec4_431_Label1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals where the time interval from the hearing to the final decision took less than 6 months.
+        /// </summary>
+        public static string Sec4_431_Label2 {
+            get {
+                return ResourceManager.GetString("Sec4_431_Label2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals where the time interval from the hearing to the final decision took less than 6 months.
+        /// </summary>
+        public static string Sec4_431_Label3 {
+            get {
+                return ResourceManager.GetString("Sec4_431_Label3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals where the time interval from the hearing to the final decision took less than 6 months.
+        /// </summary>
+        public static string Sec4_431_Label4 {
+            get {
+                return ResourceManager.GetString("Sec4_431_Label4", resourceCulture);
             }
         }
         
@@ -1375,11 +6595,83 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals where the time interval from the hearing to the final decision took between 6 to 12 months.
+        /// </summary>
+        public static string Sec4_432_Label1 {
+            get {
+                return ResourceManager.GetString("Sec4_432_Label1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals where the time interval from the hearing to the final decision took between 6 to 12 months.
+        /// </summary>
+        public static string Sec4_432_Label2 {
+            get {
+                return ResourceManager.GetString("Sec4_432_Label2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals where the time interval from the hearing to the final decision took between 6 to 12 months.
+        /// </summary>
+        public static string Sec4_432_Label3 {
+            get {
+                return ResourceManager.GetString("Sec4_432_Label3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals where the time interval from the hearing to the final decision took between 6 to 12 months.
+        /// </summary>
+        public static string Sec4_432_Label4 {
+            get {
+                return ResourceManager.GetString("Sec4_432_Label4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Number of civil appeals where the time interval from the hearing to the final decision took more than 12 months.
         /// </summary>
         public static string Sec4_433_Label {
             get {
                 return ResourceManager.GetString("Sec4_433_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals where the time interval from the hearing to the final decision took more than 12 months.
+        /// </summary>
+        public static string Sec4_433_Label1 {
+            get {
+                return ResourceManager.GetString("Sec4_433_Label1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals where the time interval from the hearing to the final decision took more than 12 months.
+        /// </summary>
+        public static string Sec4_433_Label2 {
+            get {
+                return ResourceManager.GetString("Sec4_433_Label2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals where the time interval from the hearing to the final decision took more than 12 months.
+        /// </summary>
+        public static string Sec4_433_Label3 {
+            get {
+                return ResourceManager.GetString("Sec4_433_Label3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of civil appeals where the time interval from the hearing to the final decision took more than 12 months.
+        /// </summary>
+        public static string Sec4_433_Label4 {
+            get {
+                return ResourceManager.GetString("Sec4_433_Label4", resourceCulture);
             }
         }
         
@@ -1393,11 +6685,83 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Number of criminal appeals where the time interval from the hearing to the final decision took less than 6 months for:.
+        /// </summary>
+        public static string Sec4_434_Label1 {
+            get {
+                return ResourceManager.GetString("Sec4_434_Label1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of criminal appeals where the time interval from the hearing to the final decision took less than 6 months for:.
+        /// </summary>
+        public static string Sec4_434_Label2 {
+            get {
+                return ResourceManager.GetString("Sec4_434_Label2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of criminal appeals where the time interval from the hearing to the final decision took less than 6 months for:.
+        /// </summary>
+        public static string Sec4_434_Label3 {
+            get {
+                return ResourceManager.GetString("Sec4_434_Label3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of criminal appeals where the time interval from the hearing to the final decision took less than 6 months for:.
+        /// </summary>
+        public static string Sec4_434_Label4 {
+            get {
+                return ResourceManager.GetString("Sec4_434_Label4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Number of criminal appeals where the time interval from the hearing to the final decision took between 6 to 12 months for:.
         /// </summary>
         public static string Sec4_435_Label {
             get {
                 return ResourceManager.GetString("Sec4_435_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of criminal appeals where the time interval from the hearing to the final decision took between 6 to 12 months for:.
+        /// </summary>
+        public static string Sec4_435_Label1 {
+            get {
+                return ResourceManager.GetString("Sec4_435_Label1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of criminal appeals where the time interval from the hearing to the final decision took between 6 to 12 months for:.
+        /// </summary>
+        public static string Sec4_435_Label2 {
+            get {
+                return ResourceManager.GetString("Sec4_435_Label2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of criminal appeals where the time interval from the hearing to the final decision took between 6 to 12 months for:.
+        /// </summary>
+        public static string Sec4_435_Label3 {
+            get {
+                return ResourceManager.GetString("Sec4_435_Label3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of criminal appeals where the time interval from the hearing to the final decision took between 6 to 12 months for:.
+        /// </summary>
+        public static string Sec4_435_Label4 {
+            get {
+                return ResourceManager.GetString("Sec4_435_Label4", resourceCulture);
             }
         }
         
@@ -1411,6 +6775,42 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Number of criminal appeals where the time interval from the hearing to the final decision took more than 12 months for:.
+        /// </summary>
+        public static string Sec4_436_Label1 {
+            get {
+                return ResourceManager.GetString("Sec4_436_Label1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of criminal appeals where the time interval from the hearing to the final decision took more than 12 months for:.
+        /// </summary>
+        public static string Sec4_436_Label2 {
+            get {
+                return ResourceManager.GetString("Sec4_436_Label2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of criminal appeals where the time interval from the hearing to the final decision took more than 12 months for:.
+        /// </summary>
+        public static string Sec4_436_Label3 {
+            get {
+                return ResourceManager.GetString("Sec4_436_Label3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of criminal appeals where the time interval from the hearing to the final decision took more than 12 months for:.
+        /// </summary>
+        public static string Sec4_436_Label4 {
+            get {
+                return ResourceManager.GetString("Sec4_436_Label4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Civil cases.
         /// </summary>
         public static string Sec4_CivilCases {
@@ -1420,11 +6820,83 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Civil cases.
+        /// </summary>
+        public static string Sec4_CivilCases1 {
+            get {
+                return ResourceManager.GetString("Sec4_CivilCases1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Civil cases.
+        /// </summary>
+        public static string Sec4_CivilCases2 {
+            get {
+                return ResourceManager.GetString("Sec4_CivilCases2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Civil cases.
+        /// </summary>
+        public static string Sec4_CivilCases3 {
+            get {
+                return ResourceManager.GetString("Sec4_CivilCases3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Civil cases.
+        /// </summary>
+        public static string Sec4_CivilCases4 {
+            get {
+                return ResourceManager.GetString("Sec4_CivilCases4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Comments.
         /// </summary>
         public static string Sec4_Comments_Label {
             get {
                 return ResourceManager.GetString("Sec4_Comments_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Comments.
+        /// </summary>
+        public static string Sec4_Comments_Label1 {
+            get {
+                return ResourceManager.GetString("Sec4_Comments_Label1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Comments.
+        /// </summary>
+        public static string Sec4_Comments_Label2 {
+            get {
+                return ResourceManager.GetString("Sec4_Comments_Label2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Comments.
+        /// </summary>
+        public static string Sec4_Comments_Label3 {
+            get {
+                return ResourceManager.GetString("Sec4_Comments_Label3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Comments.
+        /// </summary>
+        public static string Sec4_Comments_Label4 {
+            get {
+                return ResourceManager.GetString("Sec4_Comments_Label4", resourceCulture);
             }
         }
         
@@ -1447,6 +6919,78 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to For criminal cases, the time intervals and time periods should be reported for each of the following three categories of criminal appeals: 1) Conviction/acquittal, 2) Sentence, and 3) Other..
+        /// </summary>
+        public static string Sec4_CriminalCases_Tip1 {
+            get {
+                return ResourceManager.GetString("Sec4_CriminalCases_Tip1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to For criminal cases, the time intervals and time periods should be reported for each of the following three categories of criminal appeals: 1) Conviction/acquittal, 2) Sentence, and 3) Other..
+        /// </summary>
+        public static string Sec4_CriminalCases_Tip2 {
+            get {
+                return ResourceManager.GetString("Sec4_CriminalCases_Tip2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to For criminal cases, the time intervals and time periods should be reported for each of the following three categories of criminal appeals: 1) Conviction/acquittal, 2) Sentence, and 3) Other..
+        /// </summary>
+        public static string Sec4_CriminalCases_Tip3 {
+            get {
+                return ResourceManager.GetString("Sec4_CriminalCases_Tip3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to For criminal cases, the time intervals and time periods should be reported for each of the following three categories of criminal appeals: 1) Conviction/acquittal, 2) Sentence, and 3) Other..
+        /// </summary>
+        public static string Sec4_CriminalCases_Tip4 {
+            get {
+                return ResourceManager.GetString("Sec4_CriminalCases_Tip4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Criminal cases.
+        /// </summary>
+        public static string Sec4_CriminalCases1 {
+            get {
+                return ResourceManager.GetString("Sec4_CriminalCases1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Criminal cases.
+        /// </summary>
+        public static string Sec4_CriminalCases2 {
+            get {
+                return ResourceManager.GetString("Sec4_CriminalCases2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Criminal cases.
+        /// </summary>
+        public static string Sec4_CriminalCases3 {
+            get {
+                return ResourceManager.GetString("Sec4_CriminalCases3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Criminal cases.
+        /// </summary>
+        public static string Sec4_CriminalCases4 {
+            get {
+                return ResourceManager.GetString("Sec4_CriminalCases4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to (Civil and criminal case time intervals).
         /// </summary>
         public static string Sec4_Heading {
@@ -1465,11 +7009,119 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to (Civil and criminal case statistics are to be collected for three time intervals: 1) Notice of appeal to filing of the appellant’s factum (or the equivalent document), 2) Filing of appellant’s factum to hearing, and 3) Hearing to final decision.&lt;br /&gt;&lt;br /&gt;For each of these time intervals, information will be gathered for three time periods: 1) Less than 6 months, 2) Between 6 to 12 months, and 3) More than 12 months.).
+        /// </summary>
+        public static string Sec4_Heading_Tip1 {
+            get {
+                return ResourceManager.GetString("Sec4_Heading_Tip1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (Civil and criminal case statistics are to be collected for three time intervals: 1) Notice of appeal to filing of the appellant’s factum (or the equivalent document), 2) Filing of appellant’s factum to hearing, and 3) Hearing to final decision.&lt;br /&gt;&lt;br /&gt;For each of these time intervals, information will be gathered for three time periods: 1) Less than 6 months, 2) Between 6 to 12 months, and 3) More than 12 months.).
+        /// </summary>
+        public static string Sec4_Heading_Tip2 {
+            get {
+                return ResourceManager.GetString("Sec4_Heading_Tip2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (Civil and criminal case statistics are to be collected for three time intervals: 1) Notice of appeal to filing of the appellant’s factum (or the equivalent document), 2) Filing of appellant’s factum to hearing, and 3) Hearing to final decision.&lt;br /&gt;&lt;br /&gt;For each of these time intervals, information will be gathered for three time periods: 1) Less than 6 months, 2) Between 6 to 12 months, and 3) More than 12 months.).
+        /// </summary>
+        public static string Sec4_Heading_Tip3 {
+            get {
+                return ResourceManager.GetString("Sec4_Heading_Tip3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (Civil and criminal case statistics are to be collected for three time intervals: 1) Notice of appeal to filing of the appellant’s factum (or the equivalent document), 2) Filing of appellant’s factum to hearing, and 3) Hearing to final decision.&lt;br /&gt;&lt;br /&gt;For each of these time intervals, information will be gathered for three time periods: 1) Less than 6 months, 2) Between 6 to 12 months, and 3) More than 12 months.).
+        /// </summary>
+        public static string Sec4_Heading_Tip4 {
+            get {
+                return ResourceManager.GetString("Sec4_Heading_Tip4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (Civil and criminal case time intervals).
+        /// </summary>
+        public static string Sec4_Heading1 {
+            get {
+                return ResourceManager.GetString("Sec4_Heading1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (Civil and criminal case time intervals).
+        /// </summary>
+        public static string Sec4_Heading2 {
+            get {
+                return ResourceManager.GetString("Sec4_Heading2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (Civil and criminal case time intervals).
+        /// </summary>
+        public static string Sec4_Heading3 {
+            get {
+                return ResourceManager.GetString("Sec4_Heading3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (Civil and criminal case time intervals).
+        /// </summary>
+        public static string Sec4_Heading4 {
+            get {
+                return ResourceManager.GetString("Sec4_Heading4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to In-person hearings.
         /// </summary>
         public static string Sec5_51_Label_Short {
             get {
                 return ResourceManager.GetString("Sec5_51_Label_Short", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to In-person hearings.
+        /// </summary>
+        public static string Sec5_51_Label_Short1 {
+            get {
+                return ResourceManager.GetString("Sec5_51_Label_Short1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to In-person hearings.
+        /// </summary>
+        public static string Sec5_51_Label_Short2 {
+            get {
+                return ResourceManager.GetString("Sec5_51_Label_Short2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to In-person hearings.
+        /// </summary>
+        public static string Sec5_51_Label_Short3 {
+            get {
+                return ResourceManager.GetString("Sec5_51_Label_Short3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to In-person hearings.
+        /// </summary>
+        public static string Sec5_51_Label_Short4 {
+            get {
+                return ResourceManager.GetString("Sec5_51_Label_Short4", resourceCulture);
             }
         }
         
@@ -1483,11 +7135,83 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Number of hearings held where all parties were present in court for the hearing. This description also includes situations where the counsel attended the hearing in-person but where the individual being represented attended remotely/virtually..
+        /// </summary>
+        public static string Sec5_51_Tip1 {
+            get {
+                return ResourceManager.GetString("Sec5_51_Tip1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of hearings held where all parties were present in court for the hearing. This description also includes situations where the counsel attended the hearing in-person but where the individual being represented attended remotely/virtually..
+        /// </summary>
+        public static string Sec5_51_Tip2 {
+            get {
+                return ResourceManager.GetString("Sec5_51_Tip2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of hearings held where all parties were present in court for the hearing. This description also includes situations where the counsel attended the hearing in-person but where the individual being represented attended remotely/virtually..
+        /// </summary>
+        public static string Sec5_51_Tip3 {
+            get {
+                return ResourceManager.GetString("Sec5_51_Tip3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of hearings held where all parties were present in court for the hearing. This description also includes situations where the counsel attended the hearing in-person but where the individual being represented attended remotely/virtually..
+        /// </summary>
+        public static string Sec5_51_Tip4 {
+            get {
+                return ResourceManager.GetString("Sec5_51_Tip4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Virtual hearings.
         /// </summary>
         public static string Sec5_52_Label_Short {
             get {
                 return ResourceManager.GetString("Sec5_52_Label_Short", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Virtual hearings.
+        /// </summary>
+        public static string Sec5_52_Label_Short1 {
+            get {
+                return ResourceManager.GetString("Sec5_52_Label_Short1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Virtual hearings.
+        /// </summary>
+        public static string Sec5_52_Label_Short2 {
+            get {
+                return ResourceManager.GetString("Sec5_52_Label_Short2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Virtual hearings.
+        /// </summary>
+        public static string Sec5_52_Label_Short3 {
+            get {
+                return ResourceManager.GetString("Sec5_52_Label_Short3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Virtual hearings.
+        /// </summary>
+        public static string Sec5_52_Label_Short4 {
+            get {
+                return ResourceManager.GetString("Sec5_52_Label_Short4", resourceCulture);
             }
         }
         
@@ -1501,11 +7225,83 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Number of hearings held where all parties attended the hearing remotely/virtually..
+        /// </summary>
+        public static string Sec5_52_Tip1 {
+            get {
+                return ResourceManager.GetString("Sec5_52_Tip1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of hearings held where all parties attended the hearing remotely/virtually..
+        /// </summary>
+        public static string Sec5_52_Tip2 {
+            get {
+                return ResourceManager.GetString("Sec5_52_Tip2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of hearings held where all parties attended the hearing remotely/virtually..
+        /// </summary>
+        public static string Sec5_52_Tip3 {
+            get {
+                return ResourceManager.GetString("Sec5_52_Tip3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of hearings held where all parties attended the hearing remotely/virtually..
+        /// </summary>
+        public static string Sec5_52_Tip4 {
+            get {
+                return ResourceManager.GetString("Sec5_52_Tip4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Hybrid hearings.
         /// </summary>
         public static string Sec5_53_Label_Short {
             get {
                 return ResourceManager.GetString("Sec5_53_Label_Short", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hybrid hearings.
+        /// </summary>
+        public static string Sec5_53_Label_Short1 {
+            get {
+                return ResourceManager.GetString("Sec5_53_Label_Short1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hybrid hearings.
+        /// </summary>
+        public static string Sec5_53_Label_Short2 {
+            get {
+                return ResourceManager.GetString("Sec5_53_Label_Short2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hybrid hearings.
+        /// </summary>
+        public static string Sec5_53_Label_Short3 {
+            get {
+                return ResourceManager.GetString("Sec5_53_Label_Short3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hybrid hearings.
+        /// </summary>
+        public static string Sec5_53_Label_Short4 {
+            get {
+                return ResourceManager.GetString("Sec5_53_Label_Short4", resourceCulture);
             }
         }
         
@@ -1519,6 +7315,42 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Number of hearings held where one or more parties were present in court for the hearing and one or more parties attended the hearing remotely/virtually..
+        /// </summary>
+        public static string Sec5_53_Tip1 {
+            get {
+                return ResourceManager.GetString("Sec5_53_Tip1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of hearings held where one or more parties were present in court for the hearing and one or more parties attended the hearing remotely/virtually..
+        /// </summary>
+        public static string Sec5_53_Tip2 {
+            get {
+                return ResourceManager.GetString("Sec5_53_Tip2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of hearings held where one or more parties were present in court for the hearing and one or more parties attended the hearing remotely/virtually..
+        /// </summary>
+        public static string Sec5_53_Tip3 {
+            get {
+                return ResourceManager.GetString("Sec5_53_Tip3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of hearings held where one or more parties were present in court for the hearing and one or more parties attended the hearing remotely/virtually..
+        /// </summary>
+        public static string Sec5_53_Tip4 {
+            get {
+                return ResourceManager.GetString("Sec5_53_Tip4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Total number of hearings held in-person, virtually and in hybrid mode.
         /// </summary>
         public static string Sec5_54_Label {
@@ -1528,11 +7360,83 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Total number of hearings held in-person, virtually and in hybrid mode.
+        /// </summary>
+        public static string Sec5_54_Label1 {
+            get {
+                return ResourceManager.GetString("Sec5_54_Label1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total number of hearings held in-person, virtually and in hybrid mode.
+        /// </summary>
+        public static string Sec5_54_Label2 {
+            get {
+                return ResourceManager.GetString("Sec5_54_Label2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total number of hearings held in-person, virtually and in hybrid mode.
+        /// </summary>
+        public static string Sec5_54_Label3 {
+            get {
+                return ResourceManager.GetString("Sec5_54_Label3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total number of hearings held in-person, virtually and in hybrid mode.
+        /// </summary>
+        public static string Sec5_54_Label4 {
+            get {
+                return ResourceManager.GetString("Sec5_54_Label4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to This field is auto-populated using fields 5.1 to 5.3.
         /// </summary>
         public static string Sec5_54_Tip {
             get {
                 return ResourceManager.GetString("Sec5_54_Tip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This field is auto-populated using fields 5.1 to 5.3.
+        /// </summary>
+        public static string Sec5_54_Tip1 {
+            get {
+                return ResourceManager.GetString("Sec5_54_Tip1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This field is auto-populated using fields 5.1 to 5.3.
+        /// </summary>
+        public static string Sec5_54_Tip2 {
+            get {
+                return ResourceManager.GetString("Sec5_54_Tip2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This field is auto-populated using fields 5.1 to 5.3.
+        /// </summary>
+        public static string Sec5_54_Tip3 {
+            get {
+                return ResourceManager.GetString("Sec5_54_Tip3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This field is auto-populated using fields 5.1 to 5.3.
+        /// </summary>
+        public static string Sec5_54_Tip4 {
+            get {
+                return ResourceManager.GetString("Sec5_54_Tip4", resourceCulture);
             }
         }
         
@@ -1555,11 +7459,119 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The number of hearings in this section are to be collected for &lt;u&gt;hearings by a panel of judges only&lt;/u&gt;.).
+        /// </summary>
+        public static string Sec5_Heading_Tip1 {
+            get {
+                return ResourceManager.GetString("Sec5_Heading_Tip1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The number of hearings in this section are to be collected for &lt;u&gt;hearings by a panel of judges only&lt;/u&gt;.).
+        /// </summary>
+        public static string Sec5_Heading_Tip2 {
+            get {
+                return ResourceManager.GetString("Sec5_Heading_Tip2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The number of hearings in this section are to be collected for &lt;u&gt;hearings by a panel of judges only&lt;/u&gt;.).
+        /// </summary>
+        public static string Sec5_Heading_Tip3 {
+            get {
+                return ResourceManager.GetString("Sec5_Heading_Tip3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The number of hearings in this section are to be collected for &lt;u&gt;hearings by a panel of judges only&lt;/u&gt;.).
+        /// </summary>
+        public static string Sec5_Heading_Tip4 {
+            get {
+                return ResourceManager.GetString("Sec5_Heading_Tip4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of in-person, virtual and hybrid hearings.
+        /// </summary>
+        public static string Sec5_Heading1 {
+            get {
+                return ResourceManager.GetString("Sec5_Heading1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of in-person, virtual and hybrid hearings.
+        /// </summary>
+        public static string Sec5_Heading2 {
+            get {
+                return ResourceManager.GetString("Sec5_Heading2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of in-person, virtual and hybrid hearings.
+        /// </summary>
+        public static string Sec5_Heading3 {
+            get {
+                return ResourceManager.GetString("Sec5_Heading3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of in-person, virtual and hybrid hearings.
+        /// </summary>
+        public static string Sec5_Heading4 {
+            get {
+                return ResourceManager.GetString("Sec5_Heading4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Motions and applications heard by a single judge.
         /// </summary>
         public static string Sec6_61_Label {
             get {
                 return ResourceManager.GetString("Sec6_61_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Motions and applications heard by a single judge.
+        /// </summary>
+        public static string Sec6_61_Label1 {
+            get {
+                return ResourceManager.GetString("Sec6_61_Label1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Motions and applications heard by a single judge.
+        /// </summary>
+        public static string Sec6_61_Label2 {
+            get {
+                return ResourceManager.GetString("Sec6_61_Label2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Motions and applications heard by a single judge.
+        /// </summary>
+        public static string Sec6_61_Label3 {
+            get {
+                return ResourceManager.GetString("Sec6_61_Label3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Motions and applications heard by a single judge.
+        /// </summary>
+        public static string Sec6_61_Label4 {
+            get {
+                return ResourceManager.GetString("Sec6_61_Label4", resourceCulture);
             }
         }
         
@@ -1573,11 +7585,83 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Number of motions and applications filed before a single judge.
+        /// </summary>
+        public static string Sec6_611_Label1 {
+            get {
+                return ResourceManager.GetString("Sec6_611_Label1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of motions and applications filed before a single judge.
+        /// </summary>
+        public static string Sec6_611_Label2 {
+            get {
+                return ResourceManager.GetString("Sec6_611_Label2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of motions and applications filed before a single judge.
+        /// </summary>
+        public static string Sec6_611_Label3 {
+            get {
+                return ResourceManager.GetString("Sec6_611_Label3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of motions and applications filed before a single judge.
+        /// </summary>
+        public static string Sec6_611_Label4 {
+            get {
+                return ResourceManager.GetString("Sec6_611_Label4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Number of motions and applications disposed of by order of a single judge.
         /// </summary>
         public static string Sec6_612_Label {
             get {
                 return ResourceManager.GetString("Sec6_612_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of motions and applications disposed of by order of a single judge.
+        /// </summary>
+        public static string Sec6_612_Label1 {
+            get {
+                return ResourceManager.GetString("Sec6_612_Label1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of motions and applications disposed of by order of a single judge.
+        /// </summary>
+        public static string Sec6_612_Label2 {
+            get {
+                return ResourceManager.GetString("Sec6_612_Label2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of motions and applications disposed of by order of a single judge.
+        /// </summary>
+        public static string Sec6_612_Label3 {
+            get {
+                return ResourceManager.GetString("Sec6_612_Label3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of motions and applications disposed of by order of a single judge.
+        /// </summary>
+        public static string Sec6_612_Label4 {
+            get {
+                return ResourceManager.GetString("Sec6_612_Label4", resourceCulture);
             }
         }
         
@@ -1591,11 +7675,83 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Number of motions and applications before a single judge that were abandoned, withdrawn or dismissed administratively.
+        /// </summary>
+        public static string Sec6_613_Label1 {
+            get {
+                return ResourceManager.GetString("Sec6_613_Label1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of motions and applications before a single judge that were abandoned, withdrawn or dismissed administratively.
+        /// </summary>
+        public static string Sec6_613_Label2 {
+            get {
+                return ResourceManager.GetString("Sec6_613_Label2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of motions and applications before a single judge that were abandoned, withdrawn or dismissed administratively.
+        /// </summary>
+        public static string Sec6_613_Label3 {
+            get {
+                return ResourceManager.GetString("Sec6_613_Label3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of motions and applications before a single judge that were abandoned, withdrawn or dismissed administratively.
+        /// </summary>
+        public static string Sec6_613_Label4 {
+            get {
+                return ResourceManager.GetString("Sec6_613_Label4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Examples of dismissed administratively include dismissed for want of prosecution, non-compliance with rules, applications where leave is denied, etc..
         /// </summary>
         public static string Sec6_613_Tip {
             get {
                 return ResourceManager.GetString("Sec6_613_Tip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Examples of dismissed administratively include dismissed for want of prosecution, non-compliance with rules, applications where leave is denied, etc..
+        /// </summary>
+        public static string Sec6_613_Tip1 {
+            get {
+                return ResourceManager.GetString("Sec6_613_Tip1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Examples of dismissed administratively include dismissed for want of prosecution, non-compliance with rules, applications where leave is denied, etc..
+        /// </summary>
+        public static string Sec6_613_Tip2 {
+            get {
+                return ResourceManager.GetString("Sec6_613_Tip2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Examples of dismissed administratively include dismissed for want of prosecution, non-compliance with rules, applications where leave is denied, etc..
+        /// </summary>
+        public static string Sec6_613_Tip3 {
+            get {
+                return ResourceManager.GetString("Sec6_613_Tip3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Examples of dismissed administratively include dismissed for want of prosecution, non-compliance with rules, applications where leave is denied, etc..
+        /// </summary>
+        public static string Sec6_613_Tip4 {
+            get {
+                return ResourceManager.GetString("Sec6_613_Tip4", resourceCulture);
             }
         }
         
@@ -1609,11 +7765,83 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Motions and applications heard by a panel of three or more judges.
+        /// </summary>
+        public static string Sec6_62_Label1 {
+            get {
+                return ResourceManager.GetString("Sec6_62_Label1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Motions and applications heard by a panel of three or more judges.
+        /// </summary>
+        public static string Sec6_62_Label2 {
+            get {
+                return ResourceManager.GetString("Sec6_62_Label2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Motions and applications heard by a panel of three or more judges.
+        /// </summary>
+        public static string Sec6_62_Label3 {
+            get {
+                return ResourceManager.GetString("Sec6_62_Label3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Motions and applications heard by a panel of three or more judges.
+        /// </summary>
+        public static string Sec6_62_Label4 {
+            get {
+                return ResourceManager.GetString("Sec6_62_Label4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Number of motions and applications filed before a panel of three or more judges.
         /// </summary>
         public static string Sec6_621_Label {
             get {
                 return ResourceManager.GetString("Sec6_621_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of motions and applications filed before a panel of three or more judges.
+        /// </summary>
+        public static string Sec6_621_Label1 {
+            get {
+                return ResourceManager.GetString("Sec6_621_Label1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of motions and applications filed before a panel of three or more judges.
+        /// </summary>
+        public static string Sec6_621_Label2 {
+            get {
+                return ResourceManager.GetString("Sec6_621_Label2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of motions and applications filed before a panel of three or more judges.
+        /// </summary>
+        public static string Sec6_621_Label3 {
+            get {
+                return ResourceManager.GetString("Sec6_621_Label3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of motions and applications filed before a panel of three or more judges.
+        /// </summary>
+        public static string Sec6_621_Label4 {
+            get {
+                return ResourceManager.GetString("Sec6_621_Label4", resourceCulture);
             }
         }
         
@@ -1627,11 +7855,83 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Number of motions and applications disposed of by order of a panel of three or more judges.
+        /// </summary>
+        public static string Sec6_622_Label1 {
+            get {
+                return ResourceManager.GetString("Sec6_622_Label1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of motions and applications disposed of by order of a panel of three or more judges.
+        /// </summary>
+        public static string Sec6_622_Label2 {
+            get {
+                return ResourceManager.GetString("Sec6_622_Label2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of motions and applications disposed of by order of a panel of three or more judges.
+        /// </summary>
+        public static string Sec6_622_Label3 {
+            get {
+                return ResourceManager.GetString("Sec6_622_Label3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of motions and applications disposed of by order of a panel of three or more judges.
+        /// </summary>
+        public static string Sec6_622_Label4 {
+            get {
+                return ResourceManager.GetString("Sec6_622_Label4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Number of panel motions and applications that were abandoned, withdrawn or dismissed administratively.
         /// </summary>
         public static string Sec6_623_Label {
             get {
                 return ResourceManager.GetString("Sec6_623_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of panel motions and applications that were abandoned, withdrawn or dismissed administratively.
+        /// </summary>
+        public static string Sec6_623_Label1 {
+            get {
+                return ResourceManager.GetString("Sec6_623_Label1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of panel motions and applications that were abandoned, withdrawn or dismissed administratively.
+        /// </summary>
+        public static string Sec6_623_Label2 {
+            get {
+                return ResourceManager.GetString("Sec6_623_Label2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of panel motions and applications that were abandoned, withdrawn or dismissed administratively.
+        /// </summary>
+        public static string Sec6_623_Label3 {
+            get {
+                return ResourceManager.GetString("Sec6_623_Label3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of panel motions and applications that were abandoned, withdrawn or dismissed administratively.
+        /// </summary>
+        public static string Sec6_623_Label4 {
+            get {
+                return ResourceManager.GetString("Sec6_623_Label4", resourceCulture);
             }
         }
         
@@ -1645,11 +7945,83 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Examples of dismissed administratively include dismissed for want of prosecution, non-compliance with rules, applications where leave is denied, etc..
+        /// </summary>
+        public static string Sec6_623_Tip1 {
+            get {
+                return ResourceManager.GetString("Sec6_623_Tip1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Examples of dismissed administratively include dismissed for want of prosecution, non-compliance with rules, applications where leave is denied, etc..
+        /// </summary>
+        public static string Sec6_623_Tip2 {
+            get {
+                return ResourceManager.GetString("Sec6_623_Tip2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Examples of dismissed administratively include dismissed for want of prosecution, non-compliance with rules, applications where leave is denied, etc..
+        /// </summary>
+        public static string Sec6_623_Tip3 {
+            get {
+                return ResourceManager.GetString("Sec6_623_Tip3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Examples of dismissed administratively include dismissed for want of prosecution, non-compliance with rules, applications where leave is denied, etc..
+        /// </summary>
+        public static string Sec6_623_Tip4 {
+            get {
+                return ResourceManager.GetString("Sec6_623_Tip4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Motions and applications heard by a registrar.
         /// </summary>
         public static string Sec6_63_Label {
             get {
                 return ResourceManager.GetString("Sec6_63_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Motions and applications heard by a registrar.
+        /// </summary>
+        public static string Sec6_63_Label1 {
+            get {
+                return ResourceManager.GetString("Sec6_63_Label1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Motions and applications heard by a registrar.
+        /// </summary>
+        public static string Sec6_63_Label2 {
+            get {
+                return ResourceManager.GetString("Sec6_63_Label2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Motions and applications heard by a registrar.
+        /// </summary>
+        public static string Sec6_63_Label3 {
+            get {
+                return ResourceManager.GetString("Sec6_63_Label3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Motions and applications heard by a registrar.
+        /// </summary>
+        public static string Sec6_63_Label4 {
+            get {
+                return ResourceManager.GetString("Sec6_63_Label4", resourceCulture);
             }
         }
         
@@ -1663,11 +8035,83 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Number of motions and applications filed before a registrar.
+        /// </summary>
+        public static string Sec6_631_Label1 {
+            get {
+                return ResourceManager.GetString("Sec6_631_Label1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of motions and applications filed before a registrar.
+        /// </summary>
+        public static string Sec6_631_Label2 {
+            get {
+                return ResourceManager.GetString("Sec6_631_Label2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of motions and applications filed before a registrar.
+        /// </summary>
+        public static string Sec6_631_Label3 {
+            get {
+                return ResourceManager.GetString("Sec6_631_Label3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of motions and applications filed before a registrar.
+        /// </summary>
+        public static string Sec6_631_Label4 {
+            get {
+                return ResourceManager.GetString("Sec6_631_Label4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Number of motions and applications disposed of by order of a registrar.
         /// </summary>
         public static string Sec6_632_Label {
             get {
                 return ResourceManager.GetString("Sec6_632_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of motions and applications disposed of by order of a registrar.
+        /// </summary>
+        public static string Sec6_632_Label1 {
+            get {
+                return ResourceManager.GetString("Sec6_632_Label1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of motions and applications disposed of by order of a registrar.
+        /// </summary>
+        public static string Sec6_632_Label2 {
+            get {
+                return ResourceManager.GetString("Sec6_632_Label2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of motions and applications disposed of by order of a registrar.
+        /// </summary>
+        public static string Sec6_632_Label3 {
+            get {
+                return ResourceManager.GetString("Sec6_632_Label3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of motions and applications disposed of by order of a registrar.
+        /// </summary>
+        public static string Sec6_632_Label4 {
+            get {
+                return ResourceManager.GetString("Sec6_632_Label4", resourceCulture);
             }
         }
         
@@ -1681,11 +8125,83 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Number of panel motions and applications that were abandoned, withdrawn or dismissed by a registrar or for administrative reasons.
+        /// </summary>
+        public static string Sec6_633_Label1 {
+            get {
+                return ResourceManager.GetString("Sec6_633_Label1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of panel motions and applications that were abandoned, withdrawn or dismissed by a registrar or for administrative reasons.
+        /// </summary>
+        public static string Sec6_633_Label2 {
+            get {
+                return ResourceManager.GetString("Sec6_633_Label2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of panel motions and applications that were abandoned, withdrawn or dismissed by a registrar or for administrative reasons.
+        /// </summary>
+        public static string Sec6_633_Label3 {
+            get {
+                return ResourceManager.GetString("Sec6_633_Label3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of panel motions and applications that were abandoned, withdrawn or dismissed by a registrar or for administrative reasons.
+        /// </summary>
+        public static string Sec6_633_Label4 {
+            get {
+                return ResourceManager.GetString("Sec6_633_Label4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Examples of administrative reasons include dismissed for want of prosecution, non-compliance with rules, applications where leave is denied, etc..
         /// </summary>
         public static string Sec6_633_Tip {
             get {
                 return ResourceManager.GetString("Sec6_633_Tip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Examples of administrative reasons include dismissed for want of prosecution, non-compliance with rules, applications where leave is denied, etc..
+        /// </summary>
+        public static string Sec6_633_Tip1 {
+            get {
+                return ResourceManager.GetString("Sec6_633_Tip1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Examples of administrative reasons include dismissed for want of prosecution, non-compliance with rules, applications where leave is denied, etc..
+        /// </summary>
+        public static string Sec6_633_Tip2 {
+            get {
+                return ResourceManager.GetString("Sec6_633_Tip2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Examples of administrative reasons include dismissed for want of prosecution, non-compliance with rules, applications where leave is denied, etc..
+        /// </summary>
+        public static string Sec6_633_Tip3 {
+            get {
+                return ResourceManager.GetString("Sec6_633_Tip3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Examples of administrative reasons include dismissed for want of prosecution, non-compliance with rules, applications where leave is denied, etc..
+        /// </summary>
+        public static string Sec6_633_Tip4 {
+            get {
+                return ResourceManager.GetString("Sec6_633_Tip4", resourceCulture);
             }
         }
         
@@ -1708,11 +8224,119 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The number of motions and applications heard in chambers (single judge), in court (panels of three or more judges) and by registrars. In some jurisdictions, motions and applications can be heard by a master or other judicial officers.&lt;br /&gt;&lt;br /&gt;Motions and applications heard at the time of the hearing of an appeal are &lt;u&gt;not&lt;/u&gt; to be included. Motions and applications in writing should be included. Consent orders should also be included if judicial time is required to deal with them.&lt;br /&gt;&lt;br /&gt;With respe [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string Sec6_Heading_Tip1 {
+            get {
+                return ResourceManager.GetString("Sec6_Heading_Tip1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The number of motions and applications heard in chambers (single judge), in court (panels of three or more judges) and by registrars. In some jurisdictions, motions and applications can be heard by a master or other judicial officers.&lt;br /&gt;&lt;br /&gt;Motions and applications heard at the time of the hearing of an appeal are &lt;u&gt;not&lt;/u&gt; to be included. Motions and applications in writing should be included. Consent orders should also be included if judicial time is required to deal with them.&lt;br /&gt;&lt;br /&gt;With respe [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string Sec6_Heading_Tip2 {
+            get {
+                return ResourceManager.GetString("Sec6_Heading_Tip2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The number of motions and applications heard in chambers (single judge), in court (panels of three or more judges) and by registrars. In some jurisdictions, motions and applications can be heard by a master or other judicial officers.&lt;br /&gt;&lt;br /&gt;Motions and applications heard at the time of the hearing of an appeal are &lt;u&gt;not&lt;/u&gt; to be included. Motions and applications in writing should be included. Consent orders should also be included if judicial time is required to deal with them.&lt;br /&gt;&lt;br /&gt;With respe [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string Sec6_Heading_Tip3 {
+            get {
+                return ResourceManager.GetString("Sec6_Heading_Tip3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The number of motions and applications heard in chambers (single judge), in court (panels of three or more judges) and by registrars. In some jurisdictions, motions and applications can be heard by a master or other judicial officers.&lt;br /&gt;&lt;br /&gt;Motions and applications heard at the time of the hearing of an appeal are &lt;u&gt;not&lt;/u&gt; to be included. Motions and applications in writing should be included. Consent orders should also be included if judicial time is required to deal with them.&lt;br /&gt;&lt;br /&gt;With respe [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string Sec6_Heading_Tip4 {
+            get {
+                return ResourceManager.GetString("Sec6_Heading_Tip4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of motions and applications.
+        /// </summary>
+        public static string Sec6_Heading1 {
+            get {
+                return ResourceManager.GetString("Sec6_Heading1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of motions and applications.
+        /// </summary>
+        public static string Sec6_Heading2 {
+            get {
+                return ResourceManager.GetString("Sec6_Heading2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of motions and applications.
+        /// </summary>
+        public static string Sec6_Heading3 {
+            get {
+                return ResourceManager.GetString("Sec6_Heading3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of motions and applications.
+        /// </summary>
+        public static string Sec6_Heading4 {
+            get {
+                return ResourceManager.GetString("Sec6_Heading4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Number of appeals involving an SRL at the hearing of the appeal on the merits.
         /// </summary>
         public static string Sec7_711_Label {
             get {
                 return ResourceManager.GetString("Sec7_711_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of appeals involving an SRL at the hearing of the appeal on the merits.
+        /// </summary>
+        public static string Sec7_711_Label1 {
+            get {
+                return ResourceManager.GetString("Sec7_711_Label1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of appeals involving an SRL at the hearing of the appeal on the merits.
+        /// </summary>
+        public static string Sec7_711_Label2 {
+            get {
+                return ResourceManager.GetString("Sec7_711_Label2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of appeals involving an SRL at the hearing of the appeal on the merits.
+        /// </summary>
+        public static string Sec7_711_Label3 {
+            get {
+                return ResourceManager.GetString("Sec7_711_Label3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of appeals involving an SRL at the hearing of the appeal on the merits.
+        /// </summary>
+        public static string Sec7_711_Label4 {
+            get {
+                return ResourceManager.GetString("Sec7_711_Label4", resourceCulture);
             }
         }
         
@@ -1726,11 +8350,83 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Number of motions and applications involving an SRL at the hearing of a motion or an application (by a single judge, a panel or the registrar).
+        /// </summary>
+        public static string Sec7_712_Label1 {
+            get {
+                return ResourceManager.GetString("Sec7_712_Label1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of motions and applications involving an SRL at the hearing of a motion or an application (by a single judge, a panel or the registrar).
+        /// </summary>
+        public static string Sec7_712_Label2 {
+            get {
+                return ResourceManager.GetString("Sec7_712_Label2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of motions and applications involving an SRL at the hearing of a motion or an application (by a single judge, a panel or the registrar).
+        /// </summary>
+        public static string Sec7_712_Label3 {
+            get {
+                return ResourceManager.GetString("Sec7_712_Label3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of motions and applications involving an SRL at the hearing of a motion or an application (by a single judge, a panel or the registrar).
+        /// </summary>
+        public static string Sec7_712_Label4 {
+            get {
+                return ResourceManager.GetString("Sec7_712_Label4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Motions and applications heard at the time of the hearing of an appeal are not to be included..
         /// </summary>
         public static string Sec7_712_Tip {
             get {
                 return ResourceManager.GetString("Sec7_712_Tip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Motions and applications heard at the time of the hearing of an appeal are not to be included..
+        /// </summary>
+        public static string Sec7_712_Tip1 {
+            get {
+                return ResourceManager.GetString("Sec7_712_Tip1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Motions and applications heard at the time of the hearing of an appeal are not to be included..
+        /// </summary>
+        public static string Sec7_712_Tip2 {
+            get {
+                return ResourceManager.GetString("Sec7_712_Tip2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Motions and applications heard at the time of the hearing of an appeal are not to be included..
+        /// </summary>
+        public static string Sec7_712_Tip3 {
+            get {
+                return ResourceManager.GetString("Sec7_712_Tip3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Motions and applications heard at the time of the hearing of an appeal are not to be included..
+        /// </summary>
+        public static string Sec7_712_Tip4 {
+            get {
+                return ResourceManager.GetString("Sec7_712_Tip4", resourceCulture);
             }
         }
         
@@ -1744,11 +8440,83 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Total number of appeals, motions and applications involving an SRL at the hearing.
+        /// </summary>
+        public static string Sec7_713_Label1 {
+            get {
+                return ResourceManager.GetString("Sec7_713_Label1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total number of appeals, motions and applications involving an SRL at the hearing.
+        /// </summary>
+        public static string Sec7_713_Label2 {
+            get {
+                return ResourceManager.GetString("Sec7_713_Label2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total number of appeals, motions and applications involving an SRL at the hearing.
+        /// </summary>
+        public static string Sec7_713_Label3 {
+            get {
+                return ResourceManager.GetString("Sec7_713_Label3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total number of appeals, motions and applications involving an SRL at the hearing.
+        /// </summary>
+        public static string Sec7_713_Label4 {
+            get {
+                return ResourceManager.GetString("Sec7_713_Label4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to This field is auto-populated using fields 7.1.1 and 7.1.2..
         /// </summary>
         public static string Sec7_713_Tip {
             get {
                 return ResourceManager.GetString("Sec7_713_Tip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This field is auto-populated using fields 7.1.1 and 7.1.2..
+        /// </summary>
+        public static string Sec7_713_Tip1 {
+            get {
+                return ResourceManager.GetString("Sec7_713_Tip1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This field is auto-populated using fields 7.1.1 and 7.1.2..
+        /// </summary>
+        public static string Sec7_713_Tip2 {
+            get {
+                return ResourceManager.GetString("Sec7_713_Tip2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This field is auto-populated using fields 7.1.1 and 7.1.2..
+        /// </summary>
+        public static string Sec7_713_Tip3 {
+            get {
+                return ResourceManager.GetString("Sec7_713_Tip3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This field is auto-populated using fields 7.1.1 and 7.1.2..
+        /// </summary>
+        public static string Sec7_713_Tip4 {
+            get {
+                return ResourceManager.GetString("Sec7_713_Tip4", resourceCulture);
             }
         }
         
@@ -1771,11 +8539,119 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to An SRL is a person who appears in court without representation from a lawyer. The litigant is not to be considered an SRL if the court has appointed counsel to assist the litigant.&lt;br /&gt;&lt;br /&gt;The number of appeals and the number of motions involving an SRL is &lt;u&gt;only&lt;/u&gt; collected at the hearing. For example, if a person is represented by a lawyer at the filing stage of an appeal or motion but is not represented at the hearing, the appeal or motion is considered an SRL case..
+        /// </summary>
+        public static string Sec7_Heading_Tip1 {
+            get {
+                return ResourceManager.GetString("Sec7_Heading_Tip1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to An SRL is a person who appears in court without representation from a lawyer. The litigant is not to be considered an SRL if the court has appointed counsel to assist the litigant.&lt;br /&gt;&lt;br /&gt;The number of appeals and the number of motions involving an SRL is &lt;u&gt;only&lt;/u&gt; collected at the hearing. For example, if a person is represented by a lawyer at the filing stage of an appeal or motion but is not represented at the hearing, the appeal or motion is considered an SRL case..
+        /// </summary>
+        public static string Sec7_Heading_Tip2 {
+            get {
+                return ResourceManager.GetString("Sec7_Heading_Tip2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to An SRL is a person who appears in court without representation from a lawyer. The litigant is not to be considered an SRL if the court has appointed counsel to assist the litigant.&lt;br /&gt;&lt;br /&gt;The number of appeals and the number of motions involving an SRL is &lt;u&gt;only&lt;/u&gt; collected at the hearing. For example, if a person is represented by a lawyer at the filing stage of an appeal or motion but is not represented at the hearing, the appeal or motion is considered an SRL case..
+        /// </summary>
+        public static string Sec7_Heading_Tip3 {
+            get {
+                return ResourceManager.GetString("Sec7_Heading_Tip3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to An SRL is a person who appears in court without representation from a lawyer. The litigant is not to be considered an SRL if the court has appointed counsel to assist the litigant.&lt;br /&gt;&lt;br /&gt;The number of appeals and the number of motions involving an SRL is &lt;u&gt;only&lt;/u&gt; collected at the hearing. For example, if a person is represented by a lawyer at the filing stage of an appeal or motion but is not represented at the hearing, the appeal or motion is considered an SRL case..
+        /// </summary>
+        public static string Sec7_Heading_Tip4 {
+            get {
+                return ResourceManager.GetString("Sec7_Heading_Tip4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Self-Represented Litigants (SRLs).
+        /// </summary>
+        public static string Sec7_Heading1 {
+            get {
+                return ResourceManager.GetString("Sec7_Heading1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Self-Represented Litigants (SRLs).
+        /// </summary>
+        public static string Sec7_Heading2 {
+            get {
+                return ResourceManager.GetString("Sec7_Heading2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Self-Represented Litigants (SRLs).
+        /// </summary>
+        public static string Sec7_Heading3 {
+            get {
+                return ResourceManager.GetString("Sec7_Heading3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Self-Represented Litigants (SRLs).
+        /// </summary>
+        public static string Sec7_Heading4 {
+            get {
+                return ResourceManager.GetString("Sec7_Heading4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Less than 6 months.
         /// </summary>
         public static string Sec8_81_Label {
             get {
                 return ResourceManager.GetString("Sec8_81_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Less than 6 months.
+        /// </summary>
+        public static string Sec8_81_Label1 {
+            get {
+                return ResourceManager.GetString("Sec8_81_Label1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Less than 6 months.
+        /// </summary>
+        public static string Sec8_81_Label2 {
+            get {
+                return ResourceManager.GetString("Sec8_81_Label2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Less than 6 months.
+        /// </summary>
+        public static string Sec8_81_Label3 {
+            get {
+                return ResourceManager.GetString("Sec8_81_Label3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Less than 6 months.
+        /// </summary>
+        public static string Sec8_81_Label4 {
+            get {
+                return ResourceManager.GetString("Sec8_81_Label4", resourceCulture);
             }
         }
         
@@ -1789,11 +8665,83 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Between 6 to 12 months.
+        /// </summary>
+        public static string Sec8_82_Label1 {
+            get {
+                return ResourceManager.GetString("Sec8_82_Label1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Between 6 to 12 months.
+        /// </summary>
+        public static string Sec8_82_Label2 {
+            get {
+                return ResourceManager.GetString("Sec8_82_Label2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Between 6 to 12 months.
+        /// </summary>
+        public static string Sec8_82_Label3 {
+            get {
+                return ResourceManager.GetString("Sec8_82_Label3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Between 6 to 12 months.
+        /// </summary>
+        public static string Sec8_82_Label4 {
+            get {
+                return ResourceManager.GetString("Sec8_82_Label4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to More than 12 months.
         /// </summary>
         public static string Sec8_83_Label {
             get {
                 return ResourceManager.GetString("Sec8_83_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to More than 12 months.
+        /// </summary>
+        public static string Sec8_83_Label1 {
+            get {
+                return ResourceManager.GetString("Sec8_83_Label1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to More than 12 months.
+        /// </summary>
+        public static string Sec8_83_Label2 {
+            get {
+                return ResourceManager.GetString("Sec8_83_Label2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to More than 12 months.
+        /// </summary>
+        public static string Sec8_83_Label3 {
+            get {
+                return ResourceManager.GetString("Sec8_83_Label3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to More than 12 months.
+        /// </summary>
+        public static string Sec8_83_Label4 {
+            get {
+                return ResourceManager.GetString("Sec8_83_Label4", resourceCulture);
             }
         }
         
@@ -1807,11 +8755,83 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Number of decisions related to civil and criminal cases that are rendered based on the selected time period from the hearing date. The cases involving the &lt;i&gt;Youth Criminal Justice Act&lt;/i&gt; are not to be tracked separately. They should be counted as any other decision rendered..
+        /// </summary>
+        public static string Sec8_Decision_Tip1 {
+            get {
+                return ResourceManager.GetString("Sec8_Decision_Tip1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of decisions related to civil and criminal cases that are rendered based on the selected time period from the hearing date. The cases involving the &lt;i&gt;Youth Criminal Justice Act&lt;/i&gt; are not to be tracked separately. They should be counted as any other decision rendered..
+        /// </summary>
+        public static string Sec8_Decision_Tip2 {
+            get {
+                return ResourceManager.GetString("Sec8_Decision_Tip2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of decisions related to civil and criminal cases that are rendered based on the selected time period from the hearing date. The cases involving the &lt;i&gt;Youth Criminal Justice Act&lt;/i&gt; are not to be tracked separately. They should be counted as any other decision rendered..
+        /// </summary>
+        public static string Sec8_Decision_Tip3 {
+            get {
+                return ResourceManager.GetString("Sec8_Decision_Tip3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of decisions related to civil and criminal cases that are rendered based on the selected time period from the hearing date. The cases involving the &lt;i&gt;Youth Criminal Justice Act&lt;/i&gt; are not to be tracked separately. They should be counted as any other decision rendered..
+        /// </summary>
+        public static string Sec8_Decision_Tip4 {
+            get {
+                return ResourceManager.GetString("Sec8_Decision_Tip4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Number of decisions/judgments rendered.
         /// </summary>
         public static string Sec8_Heading {
             get {
                 return ResourceManager.GetString("Sec8_Heading", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of decisions/judgments rendered.
+        /// </summary>
+        public static string Sec8_Heading1 {
+            get {
+                return ResourceManager.GetString("Sec8_Heading1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of decisions/judgments rendered.
+        /// </summary>
+        public static string Sec8_Heading2 {
+            get {
+                return ResourceManager.GetString("Sec8_Heading2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of decisions/judgments rendered.
+        /// </summary>
+        public static string Sec8_Heading3 {
+            get {
+                return ResourceManager.GetString("Sec8_Heading3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of decisions/judgments rendered.
+        /// </summary>
+        public static string Sec8_Heading4 {
+            get {
+                return ResourceManager.GetString("Sec8_Heading4", resourceCulture);
             }
         }
         
@@ -1825,11 +8845,83 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to By a 3-member panel hearings.
+        /// </summary>
+        public static string Sec9_91_Label1 {
+            get {
+                return ResourceManager.GetString("Sec9_91_Label1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to By a 3-member panel hearings.
+        /// </summary>
+        public static string Sec9_91_Label2 {
+            get {
+                return ResourceManager.GetString("Sec9_91_Label2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to By a 3-member panel hearings.
+        /// </summary>
+        public static string Sec9_91_Label3 {
+            get {
+                return ResourceManager.GetString("Sec9_91_Label3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to By a 3-member panel hearings.
+        /// </summary>
+        public static string Sec9_91_Label4 {
+            get {
+                return ResourceManager.GetString("Sec9_91_Label4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to By a 5-member panel hearings.
         /// </summary>
         public static string Sec9_92_Label {
             get {
                 return ResourceManager.GetString("Sec9_92_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to By a 5-member panel hearings.
+        /// </summary>
+        public static string Sec9_92_Label1 {
+            get {
+                return ResourceManager.GetString("Sec9_92_Label1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to By a 5-member panel hearings.
+        /// </summary>
+        public static string Sec9_92_Label2 {
+            get {
+                return ResourceManager.GetString("Sec9_92_Label2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to By a 5-member panel hearings.
+        /// </summary>
+        public static string Sec9_92_Label3 {
+            get {
+                return ResourceManager.GetString("Sec9_92_Label3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to By a 5-member panel hearings.
+        /// </summary>
+        public static string Sec9_92_Label4 {
+            get {
+                return ResourceManager.GetString("Sec9_92_Label4", resourceCulture);
             }
         }
         
@@ -1843,6 +8935,42 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Number of appeals that are heard.
+        /// </summary>
+        public static string Sec9_Heading1 {
+            get {
+                return ResourceManager.GetString("Sec9_Heading1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of appeals that are heard.
+        /// </summary>
+        public static string Sec9_Heading2 {
+            get {
+                return ResourceManager.GetString("Sec9_Heading2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of appeals that are heard.
+        /// </summary>
+        public static string Sec9_Heading3 {
+            get {
+                return ResourceManager.GetString("Sec9_Heading3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of appeals that are heard.
+        /// </summary>
+        public static string Sec9_Heading4 {
+            get {
+                return ResourceManager.GetString("Sec9_Heading4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Select.
         /// </summary>
         public static string Select {
@@ -1852,11 +8980,83 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Select.
+        /// </summary>
+        public static string Select1 {
+            get {
+                return ResourceManager.GetString("Select1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select.
+        /// </summary>
+        public static string Select2 {
+            get {
+                return ResourceManager.GetString("Select2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select.
+        /// </summary>
+        public static string Select3 {
+            get {
+                return ResourceManager.GetString("Select3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select.
+        /// </summary>
+        public static string Select4 {
+            get {
+                return ResourceManager.GetString("Select4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Name of Court and Reporting Year.
         /// </summary>
         public static string Sidebar_BasicInfo {
             get {
                 return ResourceManager.GetString("Sidebar_BasicInfo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Name of Court and Reporting Year.
+        /// </summary>
+        public static string Sidebar_BasicInfo1 {
+            get {
+                return ResourceManager.GetString("Sidebar_BasicInfo1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Name of Court and Reporting Year.
+        /// </summary>
+        public static string Sidebar_BasicInfo2 {
+            get {
+                return ResourceManager.GetString("Sidebar_BasicInfo2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Name of Court and Reporting Year.
+        /// </summary>
+        public static string Sidebar_BasicInfo3 {
+            get {
+                return ResourceManager.GetString("Sidebar_BasicInfo3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Name of Court and Reporting Year.
+        /// </summary>
+        public static string Sidebar_BasicInfo4 {
+            get {
+                return ResourceManager.GetString("Sidebar_BasicInfo4", resourceCulture);
             }
         }
         
@@ -1897,11 +9097,164 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Tab 1 - Number of appeals, cross-appeals, references, bail reviews, and judicial reviews (JRs).
+        /// </summary>
+        public static string Sidebar_Tab13 {
+            get {
+                return ResourceManager.GetString("Sidebar_Tab13", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tab 2 - Civil and criminal case decisions.
+        /// </summary>
+        public static string Sidebar_Tab14 {
+            get {
+                return ResourceManager.GetString("Sidebar_Tab14", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tab 3 - Number of decisions/judgments (total).
+        /// </summary>
+        public static string Sidebar_Tab15 {
+            get {
+                return ResourceManager.GetString("Sidebar_Tab15", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tab 4 - Civil and criminal case time intervals.
+        /// </summary>
+        public static string Sidebar_Tab16 {
+            get {
+                return ResourceManager.GetString("Sidebar_Tab16", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tab 5 - Number of in-person, virtual and hybrid hearings.
+        /// </summary>
+        public static string Sidebar_Tab17 {
+            get {
+                return ResourceManager.GetString("Sidebar_Tab17", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of motions and applications.
+        /// </summary>
+        public static string Sidebar_Tab18 {
+            get {
+                return ResourceManager.GetString("Sidebar_Tab18", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Self-Represented Litigants (SRLs).
+        /// </summary>
+        public static string Sidebar_Tab19 {
+            get {
+                return ResourceManager.GetString("Sidebar_Tab19", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Tab 2 - Civil and criminal case decisions.
         /// </summary>
         public static string Sidebar_Tab2 {
             get {
                 return ResourceManager.GetString("Sidebar_Tab2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of decisions/judgments rendered.
+        /// </summary>
+        public static string Sidebar_Tab20 {
+            get {
+                return ResourceManager.GetString("Sidebar_Tab20", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of appeals that are heard.
+        /// </summary>
+        public static string Sidebar_Tab21 {
+            get {
+                return ResourceManager.GetString("Sidebar_Tab21", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total number of appeals, cross-appeals, references, bail reviews and JRs pending on December 31st.
+        /// </summary>
+        public static string Sidebar_Tab22 {
+            get {
+                return ResourceManager.GetString("Sidebar_Tab22", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of judges (as of December 31st).
+        /// </summary>
+        public static string Sidebar_Tab23 {
+            get {
+                return ResourceManager.GetString("Sidebar_Tab23", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Additional comments and review statistics.
+        /// </summary>
+        public static string Sidebar_Tab24 {
+            get {
+                return ResourceManager.GetString("Sidebar_Tab24", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tab 1 - Number of appeals, cross-appeals, references, bail reviews, and judicial reviews (JRs).
+        /// </summary>
+        public static string Sidebar_Tab25 {
+            get {
+                return ResourceManager.GetString("Sidebar_Tab25", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tab 2 - Civil and criminal case decisions.
+        /// </summary>
+        public static string Sidebar_Tab26 {
+            get {
+                return ResourceManager.GetString("Sidebar_Tab26", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tab 3 - Number of decisions/judgments (total).
+        /// </summary>
+        public static string Sidebar_Tab27 {
+            get {
+                return ResourceManager.GetString("Sidebar_Tab27", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tab 4 - Civil and criminal case time intervals.
+        /// </summary>
+        public static string Sidebar_Tab28 {
+            get {
+                return ResourceManager.GetString("Sidebar_Tab28", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tab 5 - Number of in-person, virtual and hybrid hearings.
+        /// </summary>
+        public static string Sidebar_Tab29 {
+            get {
+                return ResourceManager.GetString("Sidebar_Tab29", resourceCulture);
             }
         }
         
@@ -1915,11 +9268,191 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Number of motions and applications.
+        /// </summary>
+        public static string Sidebar_Tab30 {
+            get {
+                return ResourceManager.GetString("Sidebar_Tab30", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Self-Represented Litigants (SRLs).
+        /// </summary>
+        public static string Sidebar_Tab31 {
+            get {
+                return ResourceManager.GetString("Sidebar_Tab31", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of decisions/judgments rendered.
+        /// </summary>
+        public static string Sidebar_Tab32 {
+            get {
+                return ResourceManager.GetString("Sidebar_Tab32", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of appeals that are heard.
+        /// </summary>
+        public static string Sidebar_Tab33 {
+            get {
+                return ResourceManager.GetString("Sidebar_Tab33", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total number of appeals, cross-appeals, references, bail reviews and JRs pending on December 31st.
+        /// </summary>
+        public static string Sidebar_Tab34 {
+            get {
+                return ResourceManager.GetString("Sidebar_Tab34", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of judges (as of December 31st).
+        /// </summary>
+        public static string Sidebar_Tab35 {
+            get {
+                return ResourceManager.GetString("Sidebar_Tab35", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Additional comments and review statistics.
+        /// </summary>
+        public static string Sidebar_Tab36 {
+            get {
+                return ResourceManager.GetString("Sidebar_Tab36", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tab 1 - Number of appeals, cross-appeals, references, bail reviews, and judicial reviews (JRs).
+        /// </summary>
+        public static string Sidebar_Tab37 {
+            get {
+                return ResourceManager.GetString("Sidebar_Tab37", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tab 2 - Civil and criminal case decisions.
+        /// </summary>
+        public static string Sidebar_Tab38 {
+            get {
+                return ResourceManager.GetString("Sidebar_Tab38", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tab 3 - Number of decisions/judgments (total).
+        /// </summary>
+        public static string Sidebar_Tab39 {
+            get {
+                return ResourceManager.GetString("Sidebar_Tab39", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Tab 4 - Civil and criminal case time intervals.
         /// </summary>
         public static string Sidebar_Tab4 {
             get {
                 return ResourceManager.GetString("Sidebar_Tab4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tab 4 - Civil and criminal case time intervals.
+        /// </summary>
+        public static string Sidebar_Tab40 {
+            get {
+                return ResourceManager.GetString("Sidebar_Tab40", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tab 5 - Number of in-person, virtual and hybrid hearings.
+        /// </summary>
+        public static string Sidebar_Tab41 {
+            get {
+                return ResourceManager.GetString("Sidebar_Tab41", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of motions and applications.
+        /// </summary>
+        public static string Sidebar_Tab42 {
+            get {
+                return ResourceManager.GetString("Sidebar_Tab42", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Self-Represented Litigants (SRLs).
+        /// </summary>
+        public static string Sidebar_Tab43 {
+            get {
+                return ResourceManager.GetString("Sidebar_Tab43", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of decisions/judgments rendered.
+        /// </summary>
+        public static string Sidebar_Tab44 {
+            get {
+                return ResourceManager.GetString("Sidebar_Tab44", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of appeals that are heard.
+        /// </summary>
+        public static string Sidebar_Tab45 {
+            get {
+                return ResourceManager.GetString("Sidebar_Tab45", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total number of appeals, cross-appeals, references, bail reviews and JRs pending on December 31st.
+        /// </summary>
+        public static string Sidebar_Tab46 {
+            get {
+                return ResourceManager.GetString("Sidebar_Tab46", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of judges (as of December 31st).
+        /// </summary>
+        public static string Sidebar_Tab47 {
+            get {
+                return ResourceManager.GetString("Sidebar_Tab47", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Additional comments and review statistics.
+        /// </summary>
+        public static string Sidebar_Tab48 {
+            get {
+                return ResourceManager.GetString("Sidebar_Tab48", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tab 1 - Number of appeals, cross-appeals, references, bail reviews, and judicial reviews (JRs).
+        /// </summary>
+        public static string Sidebar_Tab49 {
+            get {
+                return ResourceManager.GetString("Sidebar_Tab49", resourceCulture);
             }
         }
         
@@ -1933,11 +9466,110 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Tab 2 - Civil and criminal case decisions.
+        /// </summary>
+        public static string Sidebar_Tab50 {
+            get {
+                return ResourceManager.GetString("Sidebar_Tab50", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tab 3 - Number of decisions/judgments (total).
+        /// </summary>
+        public static string Sidebar_Tab51 {
+            get {
+                return ResourceManager.GetString("Sidebar_Tab51", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tab 4 - Civil and criminal case time intervals.
+        /// </summary>
+        public static string Sidebar_Tab52 {
+            get {
+                return ResourceManager.GetString("Sidebar_Tab52", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tab 5 - Number of in-person, virtual and hybrid hearings.
+        /// </summary>
+        public static string Sidebar_Tab53 {
+            get {
+                return ResourceManager.GetString("Sidebar_Tab53", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of motions and applications.
+        /// </summary>
+        public static string Sidebar_Tab54 {
+            get {
+                return ResourceManager.GetString("Sidebar_Tab54", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Self-Represented Litigants (SRLs).
+        /// </summary>
+        public static string Sidebar_Tab55 {
+            get {
+                return ResourceManager.GetString("Sidebar_Tab55", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of decisions/judgments rendered.
+        /// </summary>
+        public static string Sidebar_Tab56 {
+            get {
+                return ResourceManager.GetString("Sidebar_Tab56", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of appeals that are heard.
+        /// </summary>
+        public static string Sidebar_Tab57 {
+            get {
+                return ResourceManager.GetString("Sidebar_Tab57", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total number of appeals, cross-appeals, references, bail reviews and JRs pending on December 31st.
+        /// </summary>
+        public static string Sidebar_Tab58 {
+            get {
+                return ResourceManager.GetString("Sidebar_Tab58", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of judges (as of December 31st).
+        /// </summary>
+        public static string Sidebar_Tab59 {
+            get {
+                return ResourceManager.GetString("Sidebar_Tab59", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Number of motions and applications.
         /// </summary>
         public static string Sidebar_Tab6 {
             get {
                 return ResourceManager.GetString("Sidebar_Tab6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Additional comments and review statistics.
+        /// </summary>
+        public static string Sidebar_Tab60 {
+            get {
+                return ResourceManager.GetString("Sidebar_Tab60", resourceCulture);
             }
         }
         
@@ -1978,6 +9610,132 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Success.
+        /// </summary>
+        public static string Success1 {
+            get {
+                return ResourceManager.GetString("Success1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Success.
+        /// </summary>
+        public static string Success2 {
+            get {
+                return ResourceManager.GetString("Success2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Success.
+        /// </summary>
+        public static string Success3 {
+            get {
+                return ResourceManager.GetString("Success3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Success.
+        /// </summary>
+        public static string Success4 {
+            get {
+                return ResourceManager.GetString("Success4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Previous year civil appeals, cross-appeals, references and JRs filed but still pending as of December 31st of the previous year (1.1.1) plus new civil appeals, cross-appeals, references, and JRs filed (1.1.2) minus total number of civil appeals, cross-appeals, references, and JRs disposed of, settled by mediation, abandoned or withdrawn (1.1.3 to 1.1.6) = net civil appeals, cross-appeals, references, and JRs for the year..
+        /// </summary>
+        public static string Tip_1_1_10 {
+            get {
+                return ResourceManager.GetString("Tip_1_1_10", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to To be included in this category, the settlement must have taken place at the time of judicial mediation and can include settlement, abandonment or withdrawal of the appeal at that time..
+        /// </summary>
+        public static string Tip_1_1_11 {
+            get {
+                return ResourceManager.GetString("Tip_1_1_11", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to These appeals, cross-appeals, references, and JRs are to include those that are abandoned, withdrawn, dismissed for want of prosecution, non-compliance with rules, dispositions by a single judge, etc. The civil appeals, cross-appeals, references, and JRs abandoned or withdrawn by the registrar take into account the certificates of lapse of appeal issued by the registry..
+        /// </summary>
+        public static string Tip_1_1_12 {
+            get {
+                return ResourceManager.GetString("Tip_1_1_12", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Previous year civil appeals, cross-appeals, references and JRs filed but still pending as of December 31st of the previous year (1.1.1) plus new civil appeals, cross-appeals, references, and JRs filed (1.1.2) minus total number of civil appeals, cross-appeals, references, and JRs disposed of, settled by mediation, abandoned or withdrawn (1.1.3 to 1.1.6) = net civil appeals, cross-appeals, references, and JRs for the year..
+        /// </summary>
+        public static string Tip_1_1_13 {
+            get {
+                return ResourceManager.GetString("Tip_1_1_13", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to To be included in this category, the settlement must have taken place at the time of judicial mediation and can include settlement, abandonment or withdrawal of the appeal at that time..
+        /// </summary>
+        public static string Tip_1_1_14 {
+            get {
+                return ResourceManager.GetString("Tip_1_1_14", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to These appeals, cross-appeals, references, and JRs are to include those that are abandoned, withdrawn, dismissed for want of prosecution, non-compliance with rules, dispositions by a single judge, etc. The civil appeals, cross-appeals, references, and JRs abandoned or withdrawn by the registrar take into account the certificates of lapse of appeal issued by the registry..
+        /// </summary>
+        public static string Tip_1_1_15 {
+            get {
+                return ResourceManager.GetString("Tip_1_1_15", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Previous year civil appeals, cross-appeals, references and JRs filed but still pending as of December 31st of the previous year (1.1.1) plus new civil appeals, cross-appeals, references, and JRs filed (1.1.2) minus total number of civil appeals, cross-appeals, references, and JRs disposed of, settled by mediation, abandoned or withdrawn (1.1.3 to 1.1.6) = net civil appeals, cross-appeals, references, and JRs for the year..
+        /// </summary>
+        public static string Tip_1_1_16 {
+            get {
+                return ResourceManager.GetString("Tip_1_1_16", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to To be included in this category, the settlement must have taken place at the time of judicial mediation and can include settlement, abandonment or withdrawal of the appeal at that time..
+        /// </summary>
+        public static string Tip_1_1_17 {
+            get {
+                return ResourceManager.GetString("Tip_1_1_17", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to These appeals, cross-appeals, references, and JRs are to include those that are abandoned, withdrawn, dismissed for want of prosecution, non-compliance with rules, dispositions by a single judge, etc. The civil appeals, cross-appeals, references, and JRs abandoned or withdrawn by the registrar take into account the certificates of lapse of appeal issued by the registry..
+        /// </summary>
+        public static string Tip_1_1_18 {
+            get {
+                return ResourceManager.GetString("Tip_1_1_18", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Previous year civil appeals, cross-appeals, references and JRs filed but still pending as of December 31st of the previous year (1.1.1) plus new civil appeals, cross-appeals, references, and JRs filed (1.1.2) minus total number of civil appeals, cross-appeals, references, and JRs disposed of, settled by mediation, abandoned or withdrawn (1.1.3 to 1.1.6) = net civil appeals, cross-appeals, references, and JRs for the year..
+        /// </summary>
+        public static string Tip_1_1_19 {
+            get {
+                return ResourceManager.GetString("Tip_1_1_19", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to To be included in this category, the settlement must have taken place at the time of judicial mediation and can include settlement, abandonment or withdrawal of the appeal at that time..
         /// </summary>
         public static string Tip_1_1_5 {
@@ -2005,11 +9763,137 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to To be included in this category, the settlement must have taken place at the time of judicial mediation and can include settlement, abandonment or withdrawal of the appeal at that time..
+        /// </summary>
+        public static string Tip_1_1_8 {
+            get {
+                return ResourceManager.GetString("Tip_1_1_8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to These appeals, cross-appeals, references, and JRs are to include those that are abandoned, withdrawn, dismissed for want of prosecution, non-compliance with rules, dispositions by a single judge, etc. The civil appeals, cross-appeals, references, and JRs abandoned or withdrawn by the registrar take into account the certificates of lapse of appeal issued by the registry..
+        /// </summary>
+        public static string Tip_1_1_9 {
+            get {
+                return ResourceManager.GetString("Tip_1_1_9", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The criminal appeals, cross-appeals, references and bail reviews filed involving the Youth Criminal Justice Act are not to be separately tracked as such. They should be counted as any other criminal appeals, cross-appeals, references and bail reviews filed..
+        /// </summary>
+        public static string Tip_1_2_10 {
+            get {
+                return ResourceManager.GetString("Tip_1_2_10", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The criminal appeals, cross-appeals, references and bail reviews disposed of by judgment involving the Youth &lt;i&gt;Criminal Justice Act&lt;/i&gt; are not to be tracked separately. They should be counted as any other criminal appeals, cross appeals, references and bail reviews disposed of..
+        /// </summary>
+        public static string Tip_1_2_11 {
+            get {
+                return ResourceManager.GetString("Tip_1_2_11", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to These appeals, cross-appeals, references and bail reviews are to include those that are settled by judicial facilitations, abandoned, withdrawn, dismissed for want of prosecution, non-compliance with rules, and disposed of by a single judge, etc..
+        /// </summary>
+        public static string Tip_1_2_12 {
+            get {
+                return ResourceManager.GetString("Tip_1_2_12", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Criminal appeals, cross-appeals, references and bail reviews filed but still pending as of December 31st of the previous year (1.2.1) plus new criminal appeals, cross-appeals, references and bail reviews filed (1.2.2) minus total number of criminal appeals, cross-appeals, references and bail reviews disposed of, settled by judicial facilitations, abandoned or withdrawn (1.2.3 to 1.2.4) = net criminal appeals, cross-appeals, references and bail reviews for the year..
+        /// </summary>
+        public static string Tip_1_2_13 {
+            get {
+                return ResourceManager.GetString("Tip_1_2_13", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The criminal appeals, cross-appeals, references and bail reviews filed involving the Youth Criminal Justice Act are not to be separately tracked as such. They should be counted as any other criminal appeals, cross-appeals, references and bail reviews filed..
+        /// </summary>
+        public static string Tip_1_2_14 {
+            get {
+                return ResourceManager.GetString("Tip_1_2_14", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The criminal appeals, cross-appeals, references and bail reviews disposed of by judgment involving the Youth &lt;i&gt;Criminal Justice Act&lt;/i&gt; are not to be tracked separately. They should be counted as any other criminal appeals, cross appeals, references and bail reviews disposed of..
+        /// </summary>
+        public static string Tip_1_2_15 {
+            get {
+                return ResourceManager.GetString("Tip_1_2_15", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to These appeals, cross-appeals, references and bail reviews are to include those that are settled by judicial facilitations, abandoned, withdrawn, dismissed for want of prosecution, non-compliance with rules, and disposed of by a single judge, etc..
+        /// </summary>
+        public static string Tip_1_2_16 {
+            get {
+                return ResourceManager.GetString("Tip_1_2_16", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Criminal appeals, cross-appeals, references and bail reviews filed but still pending as of December 31st of the previous year (1.2.1) plus new criminal appeals, cross-appeals, references and bail reviews filed (1.2.2) minus total number of criminal appeals, cross-appeals, references and bail reviews disposed of, settled by judicial facilitations, abandoned or withdrawn (1.2.3 to 1.2.4) = net criminal appeals, cross-appeals, references and bail reviews for the year..
+        /// </summary>
+        public static string Tip_1_2_17 {
+            get {
+                return ResourceManager.GetString("Tip_1_2_17", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The criminal appeals, cross-appeals, references and bail reviews filed involving the Youth Criminal Justice Act are not to be separately tracked as such. They should be counted as any other criminal appeals, cross-appeals, references and bail reviews filed..
+        /// </summary>
+        public static string Tip_1_2_18 {
+            get {
+                return ResourceManager.GetString("Tip_1_2_18", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The criminal appeals, cross-appeals, references and bail reviews disposed of by judgment involving the Youth &lt;i&gt;Criminal Justice Act&lt;/i&gt; are not to be tracked separately. They should be counted as any other criminal appeals, cross appeals, references and bail reviews disposed of..
+        /// </summary>
+        public static string Tip_1_2_19 {
+            get {
+                return ResourceManager.GetString("Tip_1_2_19", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The criminal appeals, cross-appeals, references and bail reviews filed involving the Youth Criminal Justice Act are not to be separately tracked as such. They should be counted as any other criminal appeals, cross-appeals, references and bail reviews filed..
         /// </summary>
         public static string Tip_1_2_2 {
             get {
                 return ResourceManager.GetString("Tip_1_2_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to These appeals, cross-appeals, references and bail reviews are to include those that are settled by judicial facilitations, abandoned, withdrawn, dismissed for want of prosecution, non-compliance with rules, and disposed of by a single judge, etc..
+        /// </summary>
+        public static string Tip_1_2_20 {
+            get {
+                return ResourceManager.GetString("Tip_1_2_20", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Criminal appeals, cross-appeals, references and bail reviews filed but still pending as of December 31st of the previous year (1.2.1) plus new criminal appeals, cross-appeals, references and bail reviews filed (1.2.2) minus total number of criminal appeals, cross-appeals, references and bail reviews disposed of, settled by judicial facilitations, abandoned or withdrawn (1.2.3 to 1.2.4) = net criminal appeals, cross-appeals, references and bail reviews for the year..
+        /// </summary>
+        public static string Tip_1_2_21 {
+            get {
+                return ResourceManager.GetString("Tip_1_2_21", resourceCulture);
             }
         }
         
@@ -2041,11 +9925,83 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The criminal appeals, cross-appeals, references and bail reviews filed involving the Youth Criminal Justice Act are not to be separately tracked as such. They should be counted as any other criminal appeals, cross-appeals, references and bail reviews filed..
+        /// </summary>
+        public static string Tip_1_2_6 {
+            get {
+                return ResourceManager.GetString("Tip_1_2_6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The criminal appeals, cross-appeals, references and bail reviews disposed of by judgment involving the Youth &lt;i&gt;Criminal Justice Act&lt;/i&gt; are not to be tracked separately. They should be counted as any other criminal appeals, cross appeals, references and bail reviews disposed of..
+        /// </summary>
+        public static string Tip_1_2_7 {
+            get {
+                return ResourceManager.GetString("Tip_1_2_7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to These appeals, cross-appeals, references and bail reviews are to include those that are settled by judicial facilitations, abandoned, withdrawn, dismissed for want of prosecution, non-compliance with rules, and disposed of by a single judge, etc..
+        /// </summary>
+        public static string Tip_1_2_8 {
+            get {
+                return ResourceManager.GetString("Tip_1_2_8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Criminal appeals, cross-appeals, references and bail reviews filed but still pending as of December 31st of the previous year (1.2.1) plus new criminal appeals, cross-appeals, references and bail reviews filed (1.2.2) minus total number of criminal appeals, cross-appeals, references and bail reviews disposed of, settled by judicial facilitations, abandoned or withdrawn (1.2.3 to 1.2.4) = net criminal appeals, cross-appeals, references and bail reviews for the year..
+        /// </summary>
+        public static string Tip_1_2_9 {
+            get {
+                return ResourceManager.GetString("Tip_1_2_9", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Courts that hear conviction and sentence appeals together should check this box..
         /// </summary>
         public static string Tip_1_2_Checkbox {
             get {
                 return ResourceManager.GetString("Tip_1_2_Checkbox", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Courts that hear conviction and sentence appeals together should check this box..
+        /// </summary>
+        public static string Tip_1_2_Checkbox1 {
+            get {
+                return ResourceManager.GetString("Tip_1_2_Checkbox1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Courts that hear conviction and sentence appeals together should check this box..
+        /// </summary>
+        public static string Tip_1_2_Checkbox2 {
+            get {
+                return ResourceManager.GetString("Tip_1_2_Checkbox2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Courts that hear conviction and sentence appeals together should check this box..
+        /// </summary>
+        public static string Tip_1_2_Checkbox3 {
+            get {
+                return ResourceManager.GetString("Tip_1_2_Checkbox3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Courts that hear conviction and sentence appeals together should check this box..
+        /// </summary>
+        public static string Tip_1_2_Checkbox4 {
+            get {
+                return ResourceManager.GetString("Tip_1_2_Checkbox4", resourceCulture);
             }
         }
         
@@ -2061,9 +10017,81 @@ namespace WebRazor.Resources.Pages {
         /// <summary>
         ///   Looks up a localized string similar to A decision given after reserving is a decision that is rendered at a later date, i.e., not immediately after the hearing, not on the same day of the hearing and not during the same sitting week..
         /// </summary>
+        public static string Tip_2_1_10 {
+            get {
+                return ResourceManager.GetString("Tip_2_1_10", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A decision given after reserving is a decision that is rendered at a later date, i.e., not immediately after the hearing, not on the same day of the hearing and not during the same sitting week..
+        /// </summary>
         public static string Tip_2_1_2 {
             get {
                 return ResourceManager.GetString("Tip_2_1_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A decision given at hearing (also referred to as Bench decision) is a decision that is rendered immediately after the hearing, the same day of the hearing or during the same sitting week. If a decision is given at the hearing but the reasons follow the pronouncement, which means that the reasons are not provided immediately after the hearing, on the same day of the hearing or on the same sitting week of the hearing, this decision should be counted as a reserved judgment..
+        /// </summary>
+        public static string Tip_2_1_3 {
+            get {
+                return ResourceManager.GetString("Tip_2_1_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A decision given after reserving is a decision that is rendered at a later date, i.e., not immediately after the hearing, not on the same day of the hearing and not during the same sitting week..
+        /// </summary>
+        public static string Tip_2_1_4 {
+            get {
+                return ResourceManager.GetString("Tip_2_1_4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A decision given at hearing (also referred to as Bench decision) is a decision that is rendered immediately after the hearing, the same day of the hearing or during the same sitting week. If a decision is given at the hearing but the reasons follow the pronouncement, which means that the reasons are not provided immediately after the hearing, on the same day of the hearing or on the same sitting week of the hearing, this decision should be counted as a reserved judgment..
+        /// </summary>
+        public static string Tip_2_1_5 {
+            get {
+                return ResourceManager.GetString("Tip_2_1_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A decision given after reserving is a decision that is rendered at a later date, i.e., not immediately after the hearing, not on the same day of the hearing and not during the same sitting week..
+        /// </summary>
+        public static string Tip_2_1_6 {
+            get {
+                return ResourceManager.GetString("Tip_2_1_6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A decision given at hearing (also referred to as Bench decision) is a decision that is rendered immediately after the hearing, the same day of the hearing or during the same sitting week. If a decision is given at the hearing but the reasons follow the pronouncement, which means that the reasons are not provided immediately after the hearing, on the same day of the hearing or on the same sitting week of the hearing, this decision should be counted as a reserved judgment..
+        /// </summary>
+        public static string Tip_2_1_7 {
+            get {
+                return ResourceManager.GetString("Tip_2_1_7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A decision given after reserving is a decision that is rendered at a later date, i.e., not immediately after the hearing, not on the same day of the hearing and not during the same sitting week..
+        /// </summary>
+        public static string Tip_2_1_8 {
+            get {
+                return ResourceManager.GetString("Tip_2_1_8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A decision given at hearing (also referred to as Bench decision) is a decision that is rendered immediately after the hearing, the same day of the hearing or during the same sitting week. If a decision is given at the hearing but the reasons follow the pronouncement, which means that the reasons are not provided immediately after the hearing, on the same day of the hearing or on the same sitting week of the hearing, this decision should be counted as a reserved judgment..
+        /// </summary>
+        public static string Tip_2_1_9 {
+            get {
+                return ResourceManager.GetString("Tip_2_1_9", resourceCulture);
             }
         }
         
@@ -2086,6 +10114,51 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Examples of other criminal appeals are habeas corpus, prohibition, certiorari, mental disorder reviews, etc..
+        /// </summary>
+        public static string Tip_2_2_1_4 {
+            get {
+                return ResourceManager.GetString("Tip_2_2_1_4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Examples of other criminal appeals are habeas corpus, prohibition, certiorari, mental disorder reviews, etc..
+        /// </summary>
+        public static string Tip_2_2_1_5 {
+            get {
+                return ResourceManager.GetString("Tip_2_2_1_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Examples of other criminal appeals are habeas corpus, prohibition, certiorari, mental disorder reviews, etc..
+        /// </summary>
+        public static string Tip_2_2_1_6 {
+            get {
+                return ResourceManager.GetString("Tip_2_2_1_6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Examples of other criminal appeals are habeas corpus, prohibition, certiorari, mental disorder reviews, etc..
+        /// </summary>
+        public static string Tip_2_2_1_7 {
+            get {
+                return ResourceManager.GetString("Tip_2_2_1_7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A decision filed after reserving is a decision that is rendered at a later date i.e. not on the same day of the hearing or during the same sitting week. If a decision is given at the hearing but the reasons follow the pronouncement i.e., they are not provided immediately after the hearing, on the same day of the hearing or during the same sitting week, this decision should be counted as a reserved judgment..
+        /// </summary>
+        public static string Tip_2_2_10 {
+            get {
+                return ResourceManager.GetString("Tip_2_2_10", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to A decision filed after reserving is a decision that is rendered at a later date i.e. not on the same day of the hearing or during the same sitting week. If a decision is given at the hearing but the reasons follow the pronouncement i.e., they are not provided immediately after the hearing, on the same day of the hearing or during the same sitting week, this decision should be counted as a reserved judgment..
         /// </summary>
         public static string Tip_2_2_2 {
@@ -2104,11 +10177,119 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Examples of criminal appeals are habeas corpus, prohibition, certiorari, mental disorder reviews..
+        /// </summary>
+        public static string Tip_2_2_2_4 {
+            get {
+                return ResourceManager.GetString("Tip_2_2_2_4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Examples of criminal appeals are habeas corpus, prohibition, certiorari, mental disorder reviews..
+        /// </summary>
+        public static string Tip_2_2_2_5 {
+            get {
+                return ResourceManager.GetString("Tip_2_2_2_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Examples of criminal appeals are habeas corpus, prohibition, certiorari, mental disorder reviews..
+        /// </summary>
+        public static string Tip_2_2_2_6 {
+            get {
+                return ResourceManager.GetString("Tip_2_2_2_6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Examples of criminal appeals are habeas corpus, prohibition, certiorari, mental disorder reviews..
+        /// </summary>
+        public static string Tip_2_2_2_7 {
+            get {
+                return ResourceManager.GetString("Tip_2_2_2_7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A decision given at hearing (also referred to as Bench decision) is a decision that is rendered immediately after the hearing, the same day of the hearing or during the same sitting week. If a decision is given at the hearing but the reasons follow the pronouncement, which means that the reasons are not provided immediately after the hearing, on the same day of the hearing or on the same sitting week of the hearing, this decision should be counted as a reserved judgment.&lt;br /&gt;&lt;br /&gt;The decisions involving t [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string Tip_2_2_3 {
+            get {
+                return ResourceManager.GetString("Tip_2_2_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A decision filed after reserving is a decision that is rendered at a later date i.e. not on the same day of the hearing or during the same sitting week. If a decision is given at the hearing but the reasons follow the pronouncement i.e., they are not provided immediately after the hearing, on the same day of the hearing or during the same sitting week, this decision should be counted as a reserved judgment..
+        /// </summary>
+        public static string Tip_2_2_4 {
+            get {
+                return ResourceManager.GetString("Tip_2_2_4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A decision given at hearing (also referred to as Bench decision) is a decision that is rendered immediately after the hearing, the same day of the hearing or during the same sitting week. If a decision is given at the hearing but the reasons follow the pronouncement, which means that the reasons are not provided immediately after the hearing, on the same day of the hearing or on the same sitting week of the hearing, this decision should be counted as a reserved judgment.&lt;br /&gt;&lt;br /&gt;The decisions involving t [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string Tip_2_2_5 {
+            get {
+                return ResourceManager.GetString("Tip_2_2_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A decision filed after reserving is a decision that is rendered at a later date i.e. not on the same day of the hearing or during the same sitting week. If a decision is given at the hearing but the reasons follow the pronouncement i.e., they are not provided immediately after the hearing, on the same day of the hearing or during the same sitting week, this decision should be counted as a reserved judgment..
+        /// </summary>
+        public static string Tip_2_2_6 {
+            get {
+                return ResourceManager.GetString("Tip_2_2_6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A decision given at hearing (also referred to as Bench decision) is a decision that is rendered immediately after the hearing, the same day of the hearing or during the same sitting week. If a decision is given at the hearing but the reasons follow the pronouncement, which means that the reasons are not provided immediately after the hearing, on the same day of the hearing or on the same sitting week of the hearing, this decision should be counted as a reserved judgment.&lt;br /&gt;&lt;br /&gt;The decisions involving t [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string Tip_2_2_7 {
+            get {
+                return ResourceManager.GetString("Tip_2_2_7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A decision filed after reserving is a decision that is rendered at a later date i.e. not on the same day of the hearing or during the same sitting week. If a decision is given at the hearing but the reasons follow the pronouncement i.e., they are not provided immediately after the hearing, on the same day of the hearing or during the same sitting week, this decision should be counted as a reserved judgment..
+        /// </summary>
+        public static string Tip_2_2_8 {
+            get {
+                return ResourceManager.GetString("Tip_2_2_8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A decision given at hearing (also referred to as Bench decision) is a decision that is rendered immediately after the hearing, the same day of the hearing or during the same sitting week. If a decision is given at the hearing but the reasons follow the pronouncement, which means that the reasons are not provided immediately after the hearing, on the same day of the hearing or on the same sitting week of the hearing, this decision should be counted as a reserved judgment.&lt;br /&gt;&lt;br /&gt;The decisions involving t [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string Tip_2_2_9 {
+            get {
+                return ResourceManager.GetString("Tip_2_2_9", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Bench decisions/judgments are also referred to as decisions given at hearing. A Bench decision or decision given at hearing is rendered immediately after the hearing, the same day of the hearing or during the same sitting week. The decisions involving the &lt;i&gt;Youth Criminal Justice Act&lt;/i&gt; are not to be tracked separately. They should be counted as any other decision/judgment..
         /// </summary>
         public static string Tip_3_1 {
             get {
                 return ResourceManager.GetString("Tip_3_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A reserved decision is a decision that is rendered at a later date i.e. not immediately after the hearing, not on the same day of the hearing nor during the same sitting week. The decisions involving the &lt;i&gt;Youth Criminal Justice Act&lt;/i&gt; are not to be tracked separately. They should be counted as any other criminal appeal decision..
+        /// </summary>
+        public static string Tip_3_10 {
+            get {
+                return ResourceManager.GetString("Tip_3_10", resourceCulture);
             }
         }
         
@@ -2122,11 +10303,110 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Bench decisions/judgments are also referred to as decisions given at hearing. A Bench decision or decision given at hearing is rendered immediately after the hearing, the same day of the hearing or during the same sitting week. The decisions involving the &lt;i&gt;Youth Criminal Justice Act&lt;/i&gt; are not to be tracked separately. They should be counted as any other decision/judgment..
+        /// </summary>
+        public static string Tip_3_3 {
+            get {
+                return ResourceManager.GetString("Tip_3_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A reserved decision is a decision that is rendered at a later date i.e. not immediately after the hearing, not on the same day of the hearing nor during the same sitting week. The decisions involving the &lt;i&gt;Youth Criminal Justice Act&lt;/i&gt; are not to be tracked separately. They should be counted as any other criminal appeal decision..
+        /// </summary>
+        public static string Tip_3_4 {
+            get {
+                return ResourceManager.GetString("Tip_3_4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bench decisions/judgments are also referred to as decisions given at hearing. A Bench decision or decision given at hearing is rendered immediately after the hearing, the same day of the hearing or during the same sitting week. The decisions involving the &lt;i&gt;Youth Criminal Justice Act&lt;/i&gt; are not to be tracked separately. They should be counted as any other decision/judgment..
+        /// </summary>
+        public static string Tip_3_5 {
+            get {
+                return ResourceManager.GetString("Tip_3_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A reserved decision is a decision that is rendered at a later date i.e. not immediately after the hearing, not on the same day of the hearing nor during the same sitting week. The decisions involving the &lt;i&gt;Youth Criminal Justice Act&lt;/i&gt; are not to be tracked separately. They should be counted as any other criminal appeal decision..
+        /// </summary>
+        public static string Tip_3_6 {
+            get {
+                return ResourceManager.GetString("Tip_3_6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bench decisions/judgments are also referred to as decisions given at hearing. A Bench decision or decision given at hearing is rendered immediately after the hearing, the same day of the hearing or during the same sitting week. The decisions involving the &lt;i&gt;Youth Criminal Justice Act&lt;/i&gt; are not to be tracked separately. They should be counted as any other decision/judgment..
+        /// </summary>
+        public static string Tip_3_7 {
+            get {
+                return ResourceManager.GetString("Tip_3_7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A reserved decision is a decision that is rendered at a later date i.e. not immediately after the hearing, not on the same day of the hearing nor during the same sitting week. The decisions involving the &lt;i&gt;Youth Criminal Justice Act&lt;/i&gt; are not to be tracked separately. They should be counted as any other criminal appeal decision..
+        /// </summary>
+        public static string Tip_3_8 {
+            get {
+                return ResourceManager.GetString("Tip_3_8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bench decisions/judgments are also referred to as decisions given at hearing. A Bench decision or decision given at hearing is rendered immediately after the hearing, the same day of the hearing or during the same sitting week. The decisions involving the &lt;i&gt;Youth Criminal Justice Act&lt;/i&gt; are not to be tracked separately. They should be counted as any other decision/judgment..
+        /// </summary>
+        public static string Tip_3_9 {
+            get {
+                return ResourceManager.GetString("Tip_3_9", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to EN-For criminal cases, the time intervals and time periods should be reported for each of the following three categories of criminal appeals: 1) Conviction/acquittal, 2) Sentence, and 3) Other..
         /// </summary>
         public static string Tip_4_1_CriminalCases {
             get {
                 return ResourceManager.GetString("Tip_4_1_CriminalCases", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EN-For criminal cases, the time intervals and time periods should be reported for each of the following three categories of criminal appeals: 1) Conviction/acquittal, 2) Sentence, and 3) Other..
+        /// </summary>
+        public static string Tip_4_1_CriminalCases1 {
+            get {
+                return ResourceManager.GetString("Tip_4_1_CriminalCases1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EN-For criminal cases, the time intervals and time periods should be reported for each of the following three categories of criminal appeals: 1) Conviction/acquittal, 2) Sentence, and 3) Other..
+        /// </summary>
+        public static string Tip_4_1_CriminalCases2 {
+            get {
+                return ResourceManager.GetString("Tip_4_1_CriminalCases2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EN-For criminal cases, the time intervals and time periods should be reported for each of the following three categories of criminal appeals: 1) Conviction/acquittal, 2) Sentence, and 3) Other..
+        /// </summary>
+        public static string Tip_4_1_CriminalCases3 {
+            get {
+                return ResourceManager.GetString("Tip_4_1_CriminalCases3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EN-For criminal cases, the time intervals and time periods should be reported for each of the following three categories of criminal appeals: 1) Conviction/acquittal, 2) Sentence, and 3) Other..
+        /// </summary>
+        public static string Tip_4_1_CriminalCases4 {
+            get {
+                return ResourceManager.GetString("Tip_4_1_CriminalCases4", resourceCulture);
             }
         }
         
@@ -2140,11 +10420,83 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Civil and criminal case statistics are to be collected for three time intervals: 1) Notice of appeal to filing of the appellant’s factum (or the equivalent document), 2) Filing of appellant’s factum to hearing, and 3) Hearing to final decision.&lt;br /&gt;&lt;br /&gt;For each of these time intervals, information will be gathered for three time periods: 1) Less than 6 months, 2) Between 6 to 12 months, and 3) More than 12 months..
+        /// </summary>
+        public static string Tip_4_Heading1 {
+            get {
+                return ResourceManager.GetString("Tip_4_Heading1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Civil and criminal case statistics are to be collected for three time intervals: 1) Notice of appeal to filing of the appellant’s factum (or the equivalent document), 2) Filing of appellant’s factum to hearing, and 3) Hearing to final decision.&lt;br /&gt;&lt;br /&gt;For each of these time intervals, information will be gathered for three time periods: 1) Less than 6 months, 2) Between 6 to 12 months, and 3) More than 12 months..
+        /// </summary>
+        public static string Tip_4_Heading2 {
+            get {
+                return ResourceManager.GetString("Tip_4_Heading2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Civil and criminal case statistics are to be collected for three time intervals: 1) Notice of appeal to filing of the appellant’s factum (or the equivalent document), 2) Filing of appellant’s factum to hearing, and 3) Hearing to final decision.&lt;br /&gt;&lt;br /&gt;For each of these time intervals, information will be gathered for three time periods: 1) Less than 6 months, 2) Between 6 to 12 months, and 3) More than 12 months..
+        /// </summary>
+        public static string Tip_4_Heading3 {
+            get {
+                return ResourceManager.GetString("Tip_4_Heading3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Civil and criminal case statistics are to be collected for three time intervals: 1) Notice of appeal to filing of the appellant’s factum (or the equivalent document), 2) Filing of appellant’s factum to hearing, and 3) Hearing to final decision.&lt;br /&gt;&lt;br /&gt;For each of these time intervals, information will be gathered for three time periods: 1) Less than 6 months, 2) Between 6 to 12 months, and 3) More than 12 months..
+        /// </summary>
+        public static string Tip_4_Heading4 {
+            get {
+                return ResourceManager.GetString("Tip_4_Heading4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The court for which the submission applies..
         /// </summary>
         public static string Tip_Court {
             get {
                 return ResourceManager.GetString("Tip_Court", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The court for which the submission applies..
+        /// </summary>
+        public static string Tip_Court1 {
+            get {
+                return ResourceManager.GetString("Tip_Court1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The court for which the submission applies..
+        /// </summary>
+        public static string Tip_Court2 {
+            get {
+                return ResourceManager.GetString("Tip_Court2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The court for which the submission applies..
+        /// </summary>
+        public static string Tip_Court3 {
+            get {
+                return ResourceManager.GetString("Tip_Court3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The court for which the submission applies..
+        /// </summary>
+        public static string Tip_Court4 {
+            get {
+                return ResourceManager.GetString("Tip_Court4", resourceCulture);
             }
         }
         
@@ -2158,11 +10510,83 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to For criminal cases, the time intervals and time periods should be reported for each of the following three categories of criminal appeals: 1) Conviction/acquittal, 2) Sentence, and 3) Other..
+        /// </summary>
+        public static string Tip_CriminalCases1 {
+            get {
+                return ResourceManager.GetString("Tip_CriminalCases1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to For criminal cases, the time intervals and time periods should be reported for each of the following three categories of criminal appeals: 1) Conviction/acquittal, 2) Sentence, and 3) Other..
+        /// </summary>
+        public static string Tip_CriminalCases2 {
+            get {
+                return ResourceManager.GetString("Tip_CriminalCases2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to For criminal cases, the time intervals and time periods should be reported for each of the following three categories of criminal appeals: 1) Conviction/acquittal, 2) Sentence, and 3) Other..
+        /// </summary>
+        public static string Tip_CriminalCases3 {
+            get {
+                return ResourceManager.GetString("Tip_CriminalCases3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to For criminal cases, the time intervals and time periods should be reported for each of the following three categories of criminal appeals: 1) Conviction/acquittal, 2) Sentence, and 3) Other..
+        /// </summary>
+        public static string Tip_CriminalCases4 {
+            get {
+                return ResourceManager.GetString("Tip_CriminalCases4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The start date of the period covered by the submission..
         /// </summary>
         public static string Tip_FromDate {
             get {
                 return ResourceManager.GetString("Tip_FromDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The start date of the period covered by the submission..
+        /// </summary>
+        public static string Tip_FromDate1 {
+            get {
+                return ResourceManager.GetString("Tip_FromDate1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The start date of the period covered by the submission..
+        /// </summary>
+        public static string Tip_FromDate2 {
+            get {
+                return ResourceManager.GetString("Tip_FromDate2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The start date of the period covered by the submission..
+        /// </summary>
+        public static string Tip_FromDate3 {
+            get {
+                return ResourceManager.GetString("Tip_FromDate3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The start date of the period covered by the submission..
+        /// </summary>
+        public static string Tip_FromDate4 {
+            get {
+                return ResourceManager.GetString("Tip_FromDate4", resourceCulture);
             }
         }
         
@@ -2176,11 +10600,83 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The reporting year for the data..
+        /// </summary>
+        public static string Tip_ReportingYear1 {
+            get {
+                return ResourceManager.GetString("Tip_ReportingYear1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The reporting year for the data..
+        /// </summary>
+        public static string Tip_ReportingYear2 {
+            get {
+                return ResourceManager.GetString("Tip_ReportingYear2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The reporting year for the data..
+        /// </summary>
+        public static string Tip_ReportingYear3 {
+            get {
+                return ResourceManager.GetString("Tip_ReportingYear3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The reporting year for the data..
+        /// </summary>
+        public static string Tip_ReportingYear4 {
+            get {
+                return ResourceManager.GetString("Tip_ReportingYear4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The end date of the period covered by the submission..
         /// </summary>
         public static string Tip_ToDate {
             get {
                 return ResourceManager.GetString("Tip_ToDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The end date of the period covered by the submission..
+        /// </summary>
+        public static string Tip_ToDate1 {
+            get {
+                return ResourceManager.GetString("Tip_ToDate1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The end date of the period covered by the submission..
+        /// </summary>
+        public static string Tip_ToDate2 {
+            get {
+                return ResourceManager.GetString("Tip_ToDate2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The end date of the period covered by the submission..
+        /// </summary>
+        public static string Tip_ToDate3 {
+            get {
+                return ResourceManager.GetString("Tip_ToDate3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The end date of the period covered by the submission..
+        /// </summary>
+        public static string Tip_ToDate4 {
+            get {
+                return ResourceManager.GetString("Tip_ToDate4", resourceCulture);
             }
         }
         
@@ -2194,11 +10690,83 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to To Date is required.
+        /// </summary>
+        public static string ToDateRequired1 {
+            get {
+                return ResourceManager.GetString("ToDateRequired1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to To Date is required.
+        /// </summary>
+        public static string ToDateRequired2 {
+            get {
+                return ResourceManager.GetString("ToDateRequired2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to To Date is required.
+        /// </summary>
+        public static string ToDateRequired3 {
+            get {
+                return ResourceManager.GetString("ToDateRequired3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to To Date is required.
+        /// </summary>
+        public static string ToDateRequired4 {
+            get {
+                return ResourceManager.GetString("ToDateRequired4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to All fields are mandatory. Please enter 0 to indicate that no data is being submitted..
         /// </summary>
         public static string Validation_FormIncomplete {
             get {
                 return ResourceManager.GetString("Validation_FormIncomplete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to All fields are mandatory. Please enter 0 to indicate that no data is being submitted..
+        /// </summary>
+        public static string Validation_FormIncomplete1 {
+            get {
+                return ResourceManager.GetString("Validation_FormIncomplete1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to All fields are mandatory. Please enter 0 to indicate that no data is being submitted..
+        /// </summary>
+        public static string Validation_FormIncomplete2 {
+            get {
+                return ResourceManager.GetString("Validation_FormIncomplete2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to All fields are mandatory. Please enter 0 to indicate that no data is being submitted..
+        /// </summary>
+        public static string Validation_FormIncomplete3 {
+            get {
+                return ResourceManager.GetString("Validation_FormIncomplete3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to All fields are mandatory. Please enter 0 to indicate that no data is being submitted..
+        /// </summary>
+        public static string Validation_FormIncomplete4 {
+            get {
+                return ResourceManager.GetString("Validation_FormIncomplete4", resourceCulture);
             }
         }
     }
