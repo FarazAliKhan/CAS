@@ -79,6 +79,24 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Generate Reports.
+        /// </summary>
+        public static string Generate {
+            get {
+                return ResourceManager.GetString("Generate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Court of Appeal Annual Statistics (CAAS).
+        /// </summary>
+        public static string Heading {
+            get {
+                return ResourceManager.GetString("Heading", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Home.
         /// </summary>
         public static string Home {
@@ -102,6 +120,60 @@ namespace WebRazor.Resources.Pages {
         public static string Select {
             get {
                 return ResourceManager.GetString("Select", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Submit Statistics.
+        /// </summary>
+        public static string Submit {
+            get {
+                return ResourceManager.GetString("Submit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Welcome to the Court of Appeal Annual Statistics (CAAS) database..
+        /// </summary>
+        public static string Text1 {
+            get {
+                return ResourceManager.GetString("Text1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to All statistics are to be collected on a calendar year basis (January 1&lt;sup&gt;st&lt;/sup&gt; to December 31&lt;sup&gt;st&lt;/sup&gt;)..
+        /// </summary>
+        public static string Text2 {
+            get {
+                return ResourceManager.GetString("Text2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The database offers a variety of reports that can be generated for use by your court..
+        /// </summary>
+        public static string Text3 {
+            get {
+                return ResourceManager.GetString("Text3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to To enter your annual statistics and/or generate reports, please use the buttons below..
+        /// </summary>
+        public static string Text4 {
+            get {
+                return ResourceManager.GetString("Text4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to If you encounter any technical difficulties, please contact committees-comites@cjc-ccm.ca.
+        /// </summary>
+        public static string Text5 {
+            get {
+                return ResourceManager.GetString("Text5", resourceCulture);
             }
         }
     }

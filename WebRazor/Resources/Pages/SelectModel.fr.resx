@@ -123,6 +123,12 @@
   <data name="Form" xml:space="preserve">
     <value>Formulaire</value>
   </data>
+  <data name="Generate" xml:space="preserve">
+    <value>fr-Generate Reports</value>
+  </data>
+  <data name="Heading" xml:space="preserve">
+    <value>fr-Court of Appeal Annual Statistics (CAAS)</value>
+  </data>
   <data name="Home" xml:space="preserve">
     <value>Maison</value>
   </data>
@@ -131,5 +137,23 @@
   </data>
   <data name="Select" xml:space="preserve">
     <value>Sélectionner</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>fr-Submit Statistics</value>
+  </data>
+  <data name="Text1" xml:space="preserve">
+    <value>fr-Welcome to the Court of Appeal Annual Statistics (CAAS) database.</value>
+  </data>
+  <data name="Text2" xml:space="preserve">
+    <value>fr-All statistics are to be collected on a calendar year basis (January 1&lt;sup&gt;st&lt;/sup&gt; to December 31&lt;sup&gt;st&lt;/sup&gt;).</value>
+  </data>
+  <data name="Text3" xml:space="preserve">
+    <value>fr-The database offers a variety of reports that can be generated for use by your court.</value>
+  </data>
+  <data name="Text4" xml:space="preserve">
+    <value>fr-To enter your annual statistics and/or generate reports, please use the buttons below.</value>
+  </data>
+  <data name="Text5" xml:space="preserve">
+    <value>fr-If you encounter any technical difficulties, please contact committees-comites@cjc-ccm.ca</value>
   </data>
 </root>
