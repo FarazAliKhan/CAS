@@ -43,7 +43,7 @@
     </div>
 </nav>
 
-<div class="text-center"><h3>Court of Appeal Annual Statistics (CAAS)</h3></div>
+<div class="text-center"><h3>@htmlLocalizer["Heading"]</h3></div>
 
 <div class="text-center">
     <form method="post" id="finalForm">
@@ -55,9 +55,9 @@
         <input type="hidden" id="nodeUuid" asp-for="@Model.nodeUuid" value="00000000-0000-0000-0000-000000000000">
         <br />
         <br />
-        <div>Thank you for submitting your annual statistics.</div><br />
-        <div>You will receive a confirmation email at (email associated with user account).</div><br />
-        <div>You may now generate reports using your newly entered statistics.</div><br />
+        <div>@htmlLocalizer["Text1"]</div><br />
+        <div>@htmlLocalizer["Text2"]</div><br />
+        <div>@htmlLocalizer["Text3"]</div><br />
 
         @*         <div class="row ">
             <div class="form-group col-md-6">
@@ -414,19 +414,19 @@
                             </textarea>
 
 
-        <div class="row"><h3>Response Code returned is: @TempData["responseStatusCode"]</h3></div>
-        <div class="row"><h3>The root id returned is: @TempData["RootUuidReturned"]</h3></div>
+        <div class="row"><h3>@htmlLocalizer["ResponseCode"] @TempData["responseStatusCode"]</h3></div>
+        <div class="row"><h3>@htmlLocalizer["RootId"] @TempData["RootUuidReturned"]</h3></div>
         <br />
         <div class="text-center">
             <span class="col-md-6 text-right">
-                <a class="btn btn-primary cjc-big-buttons" type="button" onclick="javascript:submitForResult();">View Submission</a>
+                <a class="btn btn-primary cjc-big-buttons" type="button" onclick="javascript:submitForResult();">@localizer["ViewSubmission"]</a>
             </span>
             <span class="col-md-6 text-left">
-                <a class="btn btn-primary cjc-big-buttons" asp-page="./Report2">Generate Reports</a>
+                <a class="btn btn-primary cjc-big-buttons" asp-page="./Report2">@localizer["Generate"]</a>
             </span>
         </div>
         <br />
-        <a class="btn btn-primary" style="color:white;width:200px;height:90px;text-align:center;border-radius:12px;" href="/Select"><span><br />Back to Home</span></a><br />
+        <a class="btn btn-primary" style="color:white;width:200px;height:90px;text-align:center;border-radius:12px;" href="/Select"><span><br />@localizer["Back"]</span></a><br />
     </form>
 </div>
 <script>
