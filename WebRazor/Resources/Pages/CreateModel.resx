@@ -544,28 +544,28 @@
     <value>Criminal cases</value>
   </data>
   <data name="Tip_4_1_CriminalCases" xml:space="preserve">
-    <value>EN-For criminal cases, the time intervals and time periods should be reported for each of the following three categories of criminal appeals: 1) Conviction/acquittal, 2) Sentence, and 3) Other.</value>
+    <value>For criminal cases, the time intervals and time periods should be reported for each of the following three categories of criminal appeals: 1) Conviction/acquittal, 2) Sentence, and 3) Other.</value>
   </data>
   <data name="Lbl_4_1_2" xml:space="preserve">
-    <value>EN-Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took between 6 to 12 months</value>
+    <value>Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took between 6 to 12 months</value>
   </data>
   <data name="Msg_4_1_2" xml:space="preserve">
-    <value>EN-Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took between 6 to 12 months</value>
+    <value>Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took between 6 to 12 months</value>
   </data>
   <data name="Lbl_4_1_3" xml:space="preserve">
-    <value>EN-Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took more than 12 months</value>
+    <value>Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took more than 12 months</value>
   </data>
   <data name="Msg_4_1_3" xml:space="preserve">
-    <value>EN-Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took more than 12 months</value>
+    <value>Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took more than 12 months</value>
   </data>
   <data name="Lbl_4_1_4" xml:space="preserve">
-    <value>EN-Number of criminal appeals where the interval from the notice of appeal to filing of the appellant’s factum took less than 6 months for:</value>
+    <value>Number of criminal appeals where the interval from the notice of appeal to filing of the appellant’s factum took less than 6 months for:</value>
   </data>
   <data name="Lbl_4_1_4_1" xml:space="preserve">
-    <value>EN-Conviction/acquittal</value>
+    <value>Conviction/acquittal</value>
   </data>
   <data name="Msg_4_1_4_1" xml:space="preserve">
-    <value>EN-Conviction/acquittal</value>
+    <value>Conviction/acquittal</value>
   </data>
   <data name="Sec4_Heading" xml:space="preserve">
     <value>(Civil and criminal case time intervals)</value>

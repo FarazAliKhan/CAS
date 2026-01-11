@@ -673,7 +673,7 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to EN-Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took between 6 to 12 months.
+        ///   Looks up a localized string similar to Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took between 6 to 12 months.
         /// </summary>
         public static string Lbl_4_1_2 {
             get {
@@ -682,7 +682,7 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to EN-Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took more than 12 months.
+        ///   Looks up a localized string similar to Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took more than 12 months.
         /// </summary>
         public static string Lbl_4_1_3 {
             get {
@@ -691,7 +691,7 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to EN-Number of criminal appeals where the interval from the notice of appeal to filing of the appellant’s factum took less than 6 months for:.
+        ///   Looks up a localized string similar to Number of criminal appeals where the interval from the notice of appeal to filing of the appellant’s factum took less than 6 months for:.
         /// </summary>
         public static string Lbl_4_1_4 {
             get {
@@ -700,7 +700,7 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to EN-Conviction/acquittal.
+        ///   Looks up a localized string similar to Conviction/acquittal.
         /// </summary>
         public static string Lbl_4_1_4_1 {
             get {
@@ -1024,7 +1024,7 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to EN-Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took between 6 to 12 months.
+        ///   Looks up a localized string similar to Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took between 6 to 12 months.
         /// </summary>
         public static string Msg_4_1_2 {
             get {
@@ -1033,7 +1033,7 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to EN-Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took more than 12 months.
+        ///   Looks up a localized string similar to Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took more than 12 months.
         /// </summary>
         public static string Msg_4_1_3 {
             get {
@@ -1042,7 +1042,7 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to EN-Conviction/acquittal.
+        ///   Looks up a localized string similar to Conviction/acquittal.
         /// </summary>
         public static string Msg_4_1_4_1 {
             get {
@@ -2149,7 +2149,7 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to EN-For criminal cases, the time intervals and time periods should be reported for each of the following three categories of criminal appeals: 1) Conviction/acquittal, 2) Sentence, and 3) Other..
+        ///   Looks up a localized string similar to For criminal cases, the time intervals and time periods should be reported for each of the following three categories of criminal appeals: 1) Conviction/acquittal, 2) Sentence, and 3) Other..
         /// </summary>
         public static string Tip_4_1_CriminalCases {
             get {
