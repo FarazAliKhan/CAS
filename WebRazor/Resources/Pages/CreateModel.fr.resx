@@ -196,22 +196,22 @@
     <value>Fermer</value>
   </data>
   <data name="Alert_DraftSavedSuccess" xml:space="preserve">
-    <value>FR-The draft saved successfully.</value>
+    <value>Le brouillon a été enregistré avec succès.</value>
   </data>
   <data name="Alert_DraftSavedFailed" xml:space="preserve">
-    <value>FR-The draft save failed.</value>
+    <value>La sauvegarde provisoire a échoué.</value>
   </data>
   <data name="Modal_DraftFound_Title" xml:space="preserve">
-    <value>FR-Draft Found</value>
+    <value>Projet trouvé</value>
   </data>
   <data name="Alert_DraftFound_AskLoad" xml:space="preserve">
-    <value>FR-A draft record found. Do you want to load it?</value>
+    <value>Un brouillon de document a été trouvé. Voulez-vous le charger ?</value>
   </data>
   <data name="Alert_RecordRetrievalFailed" xml:space="preserve">
-    <value>FR-The record retrieval failed.</value>
+    <value>La récupération du dossier a échoué.</value>
   </data>
   <data name="Alert_RecordDeleteFailed" xml:space="preserve">
-    <value>FR-The record delete failed.</value>
+    <value>La suppression du dossier a échoué</value>
   </data>
   <data name="Sidebar_BasicInfo" xml:space="preserve">
     <value>Nom du tribunal et année de référence</value>
@@ -256,7 +256,7 @@
     <value>Onglet précédent </value>
   </data>
   <data name="Validation_FormIncomplete" xml:space="preserve">
-    <value>FR-Form Incomplete: All fields are mandatory. Please enter 0 to indicate that no data is being submitted.</value>
+    <value>Formulaire incomplet : Tous les champs sont obligatoires. Veuillez entrer 0 pour indiquer qu’aucune donnée n’est soumise. </value>
   </data>
   <data name="Info_SidebarAppearsAfterBasicInfo" xml:space="preserve">
     <value>Les onglets de la barre latérale apparaîtront une fois que vous aurez rempli les champs Nom de la cour et Année de référence.</value>
@@ -376,7 +376,7 @@
     <value>FR-The criminal appeals, cross-appeals, references and bail reviews filed involving the Youth Criminal Justice Act are not to be separately tracked as such. They should be counted as any other criminal appeals, cross-appeals, references and bail reviews filed.</value>
   </data>
   <data name="Msg_1_2_2" xml:space="preserve">
-    <value>FR-Number of civil appeals, cross-appeals, references, and JRs filed of criminal appeals, cross-appeals, references and bail reviews filed</value>
+    <value>Nombre d’appels, d’appels incidents et de renvois criminels et de révisions de cautionnement déposés</value>
   </data>
   <data name="Lbl_1_2_3" xml:space="preserve">
     <value>Nombre d’appels, d’appels incidents et de renvois criminels et de révisions de cautionnement ayant fait l’objet d’un jugement ou d’une décision mettant fin au dossier</value>
@@ -517,7 +517,7 @@
     <value>FR-Number of reserved decisions/judgments</value>
   </data>
   <data name="Lbl_4_Heading" xml:space="preserve">
-    <value>FR-Civil and criminal case time intervals</value>
+    <value>Intervalles de temps pour les affaires civiles et criminelles</value>
   </data>
   <data name="Tip_4_Heading" xml:space="preserve">
     <value>FR-Civil and criminal case statistics are to be collected for three time intervals: 1) Notice of appeal to filing of the appellant’s factum (or the equivalent document), 2) Filing of appellant’s factum to hearing, and 3) Hearing to final decision.&lt;br /&gt;&lt;br /&gt;For each of these time intervals, information will be gathered for three time periods: 1) Less than 6 months, 2) Between 6 to 12 months, and 3) More than 12 months.
@@ -528,146 +528,145 @@
 </value>
   </data>
   <data name="Lbl_CivilCases" xml:space="preserve">
-    <value>FR-Civil cases</value>
+    <value>Affaires civiles</value>
   </data>
   <data name="Lbl_CriminalCases" xml:space="preserve">
-    <value>FR-Criminal cases</value>
+    <value>Affaires criminelles </value>
   </data>
   <data name="Tip_CriminalCases" xml:space="preserve">
     <value>FR-For criminal cases, the time intervals and time periods should be reported for each of the following three categories of criminal appeals: 1) Conviction/acquittal, 2) Sentence, and 3) Other.</value>
   </data>
   <data name="Lbl_4_1_1" xml:space="preserve">
-    <value>FR-Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took less than 6 months</value>
+    <value>Nombre d’affaires civiles où l’intervalle de temps entre l’avis d’appel et le dépôt du mémoire de l’appelant est de moins de 6 mois</value>
   </data>
   <data name="Msg_4_1_1" xml:space="preserve">
-    <value>FR-Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took less than 6 months</value>
+    <value>Nombre d’affaires civiles où l’intervalle de temps entre l’avis d’appel et le dépôt du mémoire de l’appelant est de moins de 6 mois</value>
   </data>
   <data name="Lbl_4_1_CriminalCases" xml:space="preserve">
-    <value>FR-Criminal cases</value>
+    <value>Affaires criminelles </value>
   </data>
   <data name="Tip_4_1_CriminalCases" xml:space="preserve">
     <value>FR-For criminal cases, the time intervals and time periods should be reported for each of the following three categories of criminal appeals: 1) Conviction/acquittal, 2) Sentence, and 3) Other.</value>
   </data>
   <data name="Lbl_4_1_2" xml:space="preserve">
-    <value>FR-Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took between 6 to 12 months</value>
+    <value>Nombre d’affaires civiles où l’intervalle de temps entre l’avis d’appel et le dépôt du mémoire de l’appelant est entre 6 et 12 mois</value>
   </data>
   <data name="Msg_4_1_2" xml:space="preserve">
-    <value>FR-Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took between 6 to 12 months</value>
+    <value>Nombre d’affaires civiles où l’intervalle de temps entre l’avis d’appel et le dépôt du mémoire de l’appelant est entre 6 et 12 mois</value>
   </data>
   <data name="Lbl_4_1_3" xml:space="preserve">
-    <value>FR-Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took more than 12 months</value>
+    <value>Nombre d’affaires civiles où l’intervalle de temps entre l’avis d’appel et le dépôt du mémoire de l’appelant est de plus de 12 mois </value>
   </data>
   <data name="Msg_4_1_3" xml:space="preserve">
-    <value>FR-Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took more than 12 months</value>
+    <value>Nombre d’affaires civiles où l’intervalle de temps entre l’avis d’appel et le dépôt du mémoire de l’appelant est de plus de 12 mois</value>
   </data>
   <data name="Lbl_4_1_4" xml:space="preserve">
-    <value>FR-Number of criminal appeals where the interval from the notice of appeal to filing of the appellant’s factum took less than 6 months for:</value>
+    <value>Nombre d’affaires criminelles où l’intervalle de temps entre l’avis d’appel 	et le dépôt du mémoire de l’appelant est de moins de 6 mois pour :</value>
   </data>
   <data name="Lbl_4_1_4_1" xml:space="preserve">
-    <value>FR-Conviction/acquittal</value>
+    <value>Culpabilité/acquittement</value>
   </data>
   <data name="Msg_4_1_4_1" xml:space="preserve">
-    <value>FR-Conviction/acquittal</value>
+    <value>Culpabilité/acquittement</value>
   </data>
   <data name="Sec4_Heading" xml:space="preserve">
-    <value>FR-Civil and criminal case time intervals</value>
+    <value>Intervalles de temps pour les affaires civiles et criminelles</value>
   </data>
   <data name="Sec4_Heading_Tip" xml:space="preserve">
     <value>FR-Civil and criminal case statistics are to be collected for three time intervals: 1) Notice of appeal to filing of the appellant’s factum (or the equivalent document), 2) Filing of appellant’s factum to hearing, and 3) Hearing to final decision.&lt;br /&gt;&lt;br /&gt;For each of these time intervals, information will be gathered for three time periods: 1) Less than 6 months, 2) Between 6 to 12 months, and 3) More than 12 months.</value>
   </data>
   <data name="Sec4_411_Label" xml:space="preserve">
-    <value>FR-Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took less than 6 months</value>
+    <value>Nombre d’affaires civiles où l’intervalle de temps entre l’avis d’appel et le dépôt du mémoire de l’appelant est de moins de 6 mois </value>
   </data>
   <data name="Sec4_412_Label" xml:space="preserve">
-    <value>FR-Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took between 6 to 12 months</value>
+    <value>Nombre d’affaires civiles où l’intervalle de temps entre l’avis d’appel et le dépôt du mémoire de l’appelant est entre 6 et 12 mois </value>
   </data>
   <data name="Sec4_413_Label" xml:space="preserve">
-    <value>FR-Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took more than 12 months
-</value>
+    <value>Nombre d’affaires civiles où l’intervalle de temps entre l’avis d’appel et le dépôt du mémoire de l’appelant est de plus de 12 mois</value>
   </data>
   <data name="Sec4_414_Label" xml:space="preserve">
-    <value>FR-Number of criminal appeals where the interval from the notice of appeal to filing of the appellant’s factum took less than 6 months for:</value>
+    <value>Nombre d’affaires criminelles où l’intervalle de temps entre l’avis d’appel 	et le dépôt du mémoire de l’appelant est de moins de 6 mois pour : </value>
   </data>
   <data name="Sec4_415_Label" xml:space="preserve">
-    <value>FR-Number of criminal appeals where the interval from the notice of appeal to filing of the appellant’s factum took between 6 to 12 months for:</value>
+    <value>Nombre d’affaires criminelles où l’intervalle de temps entre l’avis d’appel 	et le dépôt du mémoire de l’appelant est entre 6 et 12 mois pour :</value>
   </data>
   <data name="Sec4_416_Label" xml:space="preserve">
-    <value>FR-Number of criminal appeals where the interval from the notice of appeal to filing of the appellant’s factum took more than 12 months for:</value>
+    <value>Nombre d’affaires criminelles où l’intervalle de temps entre l’avis d’appel 	et le dépôt du mémoire de l’appelant est de plus de 12 mois pour : </value>
   </data>
   <data name="Sec4_41_Heading" xml:space="preserve">
-    <value>FR-Notice of appeal to filing of the appellant’s factum</value>
+    <value>Entre l’avis d’appel et le dépôt du mémoire de l’appelant</value>
   </data>
   <data name="Sec4_41_Tip" xml:space="preserve">
     <value>FR-This time interval refers to the interval from the time a notice of appeal is filed (either as of right or after a motion for leave to appeal has been granted) to the time the appellant’s factum is filed and the appeal is ready to be set down for a hearing. The appeal is considered ready to be set down for a hearing on the date at which the appellant has done everything required by the rules of court to prepare an appeal for hearing (typically the serving and filing of the appeal book, transcripts and appellant’s factum). On references, the date the Order in Council or of the originating document is received will replace the notice of appeal date.</value>
   </data>
   <data name="Sec4_CivilCases" xml:space="preserve">
-    <value>FR-Civil cases</value>
+    <value>Affaires civiles</value>
   </data>
   <data name="Sec4_CriminalCases" xml:space="preserve">
-    <value>FR-Criminal cases</value>
+    <value>Affaires criminelles</value>
   </data>
   <data name="Sec4_CriminalCases_Tip" xml:space="preserve">
     <value>FR-For criminal cases, the time intervals and time periods should be reported for each of the following three categories of criminal appeals: 1) Conviction/acquittal, 2) Sentence, and 3) Other.</value>
   </data>
   <data name="Sec4_42_Heading" xml:space="preserve">
-    <value>FR-Filing of the appellant’s factum to hearing</value>
+    <value>Entre le dépôt du mémoire de l’appelant et l’audience</value>
   </data>
   <data name="Sec4_42_Tip" xml:space="preserve">
     <value>FR-This time interval refers to the time required from the time the appellant’s factum is filed to the time the case is heard. The time the appeal is heard is the actual day of the appeal hearing and &lt;u&gt;not&lt;/u&gt; the scheduled date of hearing.&lt;br /&gt;&lt;br /&gt;Where the hearing consumes more than one day, use the first day of hearing for calculating the filing of the appellant’s factum to hearing time interval and the hearing to final decision time interval.</value>
   </data>
   <data name="Sec4_421_Label" xml:space="preserve">
-    <value>FR-Number of civil appeals where the time interval from filing of the appellant’s factum to the hearing took less than 6 months</value>
+    <value>Nombre d’affaires civiles où l’intervalle de temps entre le dépôt du mémoire de l’appelant et l’audience est de moins de 6 mois</value>
   </data>
   <data name="Sec4_422_Label" xml:space="preserve">
-    <value>FR-Number of civil appeals where the time interval from filing of the appellant’s factum to the hearing took between 6 to 12 months</value>
+    <value>Nombre d’affaires civiles où l’intervalle de temps entre le dépôt du mémoire de l’appelant et l’audience est entre 6 et 12 mois</value>
   </data>
   <data name="Sec4_423_Label" xml:space="preserve">
-    <value>FR-Number of civil appeals where the time interval from filing of the appellant’s factum to the hearing took more than 12 months</value>
+    <value>Nombre d’affaires civiles où l’intervalle de temps entre le dépôt du mémoire de l’appelant et l’audience est de plus de 12 mois </value>
   </data>
   <data name="Sec4_424_Label" xml:space="preserve">
-    <value>FR-Number of criminal appeals where the time interval from filing of the appellant’s factum to the hearing took less than 6 months for:</value>
+    <value>Nombre d’affaires criminelles où l’intervalle de temps entre le dépôt du mémoire de l’appelant et l’audience est de moins de 6 mois pour : </value>
   </data>
   <data name="Sec4_425_Label" xml:space="preserve">
-    <value>FR-Number of criminal appeals where the time interval from filing of the appellant’s factum to the hearing took between 6 to 12 months for:</value>
+    <value>Nombre d’affaires criminelles où l’intervalle de temps entre le dépôt du mémoire de l’appelant et l’audience est entre 6 et 12 mois pour : </value>
   </data>
   <data name="Sec4_426_Label" xml:space="preserve">
-    <value>FR-Number of criminal appeals where the time interval from filing of the appellant’s factum to the hearing took more than 12 months for:</value>
+    <value>Nombre d’affaires criminelles où l’intervalle de temps entre le dépôt du mémoire de l’appelant et l’audience a pris plus de 12 mois pour : </value>
   </data>
   <data name="Sec4_43_Heading" xml:space="preserve">
-    <value>FR-Hearing to final decision</value>
+    <value>Entre l’audience et la décision finale</value>
   </data>
   <data name="Sec4_43_Tip" xml:space="preserve">
     <value>FR-This time interval refers to the time between the day of the hearing (actual day of hearing and &lt;u&gt;not&lt;/u&gt; the scheduled date of hearing) and the date of the decision/judgment.</value>
   </data>
   <data name="Sec4_431_Label" xml:space="preserve">
-    <value>FR-Number of civil appeals where the time interval from the hearing to the final decision took less than 6 months</value>
+    <value>Nombre d’affaires civiles où l’intervalle de temps entre l’audience et la décision finale est de moins de 6 mois </value>
   </data>
   <data name="Sec4_432_Label" xml:space="preserve">
-    <value>FR-Number of civil appeals where the time interval from the hearing to the final decision took between 6 to 12 months</value>
+    <value>Nombre d’affaires civiles où l’intervalle de temps entre l’audience et la décision finale est entre 6 et 12 mois </value>
   </data>
   <data name="Sec4_433_Label" xml:space="preserve">
-    <value>FR-Number of civil appeals where the time interval from the hearing to the final decision took more than 12 months</value>
+    <value>Nombre d’affaires civiles où l’intervalle de temps entre l’audience et la décision finale est de plus de 12 mois s</value>
   </data>
   <data name="Sec4_434_Label" xml:space="preserve">
-    <value>FR-Number of criminal appeals where the time interval from the hearing to the final decision took less than 6 months for:</value>
+    <value>Nombre d’affaires criminelles où l’intervalle de temps entre l’audience et la décision finale est de moins de 6 mois pour :</value>
   </data>
   <data name="Sec4_435_Label" xml:space="preserve">
-    <value>FR-Number of criminal appeals where the time interval from the hearing to the final decision took between 6 to 12 months for:</value>
+    <value>Nombre d’affaires criminelles où l’intervalle de temps entre l’audience et la décision finale est entre 6 et 12 mois pour :</value>
   </data>
   <data name="Sec4_436_Label" xml:space="preserve">
-    <value>FR-Number of criminal appeals where the time interval from the hearing to the final decision took more than 12 months for:</value>
+    <value>Nombre d’affaires criminelles où l’intervalle de temps entre l’audience et 	la décision finale est de plus de 12 mois pour :  </value>
   </data>
   <data name="Sec4_Comments_Label" xml:space="preserve">
-    <value>FR-Comments</value>
+    <value>Commentaires</value>
   </data>
   <data name="Common_ConvictionAcquittal" xml:space="preserve">
-    <value>FR-Conviction/acquittal</value>
+    <value>Culpabilité/acquittement </value>
   </data>
   <data name="Common_Sentence" xml:space="preserve">
-    <value>FR-Sentence</value>
+    <value>Peine</value>
   </data>
   <data name="Common_Other" xml:space="preserve">
-    <value>FR-Other</value>
+    <value>Autre</value>
   </data>
   <data name="Sec5_Heading" xml:space="preserve">
     <value>Nombre d’audiences en personne, virtuelles et hybrides</value>
