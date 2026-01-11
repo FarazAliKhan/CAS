@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Back" xml:space="preserve">
-    <value>fr-Back To Home</value>
+    <value>Retour à l’accuei</value>
   </data>
   <data name="Create" xml:space="preserve">
     <value>fr-Create</value>
@@ -127,13 +127,13 @@
     <value>fr-Final</value>
   </data>
   <data name="Generate" xml:space="preserve">
-    <value>fr-Generate Reports</value>
+    <value>Générer des rapports </value>
   </data>
   <data name="Heading" xml:space="preserve">
     <value>fr-Court of Appeal Annual Statistics (CAAS)</value>
   </data>
   <data name="Home" xml:space="preserve">
-    <value>fr-Home</value>
+    <value>Accueil</value>
   </data>
   <data name="ResponseCode" xml:space="preserve">
     <value>fr-Response Code returned is:</value>
@@ -142,18 +142,18 @@
     <value>fr-The root id returned is:</value>
   </data>
   <data name="Select" xml:space="preserve">
-    <value>fr-Select</value>
+    <value>Sélectionnez</value>
   </data>
   <data name="Text1" xml:space="preserve">
-    <value>fr-Thank you for submitting your annual statistics.</value>
+    <value>Merci d’avoir soumis vos statistiques annuelles.</value>
   </data>
   <data name="Text2" xml:space="preserve">
-    <value>fr-You will receive a confirmation email at (email associated with user account).</value>
+    <value>Vous recevrez un courriel de confirmation à (email associated with user account). </value>
   </data>
   <data name="Text3" xml:space="preserve">
     <value>fr-You may now generate reports using your newly entered statistics.</value>
   </data>
   <data name="ViewSubmission" xml:space="preserve">
-    <value>fr-View Submission</value>
+    <value>Afficher la soumission</value>
   </data>
 </root>
