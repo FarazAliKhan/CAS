@@ -169,11 +169,38 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Next Tab.
+        /// </summary>
+        public static string btn_NextTab {
+            get {
+                return ResourceManager.GetString("btn_NextTab", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Previous Tab.
         /// </summary>
         public static string Btn_PreviousTab {
             get {
                 return ResourceManager.GetString("Btn_PreviousTab", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Save.
+        /// </summary>
+        public static string btn_Save {
+            get {
+                return ResourceManager.GetString("btn_Save", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Review Stats.
+        /// </summary>
+        public static string btnReviewStats {
+            get {
+                return ResourceManager.GetString("btnReviewStats", resourceCulture);
             }
         }
         

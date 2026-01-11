@@ -831,4 +831,13 @@
   <data name="Sec12_Heading_Tooltip" xml:space="preserve">
     <value>Comments should only be used on an exceptional basis. A true anomaly is a situation that considerably deviates from what is considered normal or expected.</value>
   </data>
+  <data name="btn_Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="btn_NextTab" xml:space="preserve">
+    <value>Next Tab</value>
+  </data>
+  <data name="btnReviewStats" xml:space="preserve">
+    <value>Review Stats</value>
+  </data>
 </root>

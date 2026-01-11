@@ -184,7 +184,7 @@
     <value>FR-Court of Appeal Annual Statistics (CAAS)</value>
   </data>
   <data name="hdgDataEntryForm" xml:space="preserve">
-    <value>Fr-Data Entry Form</value>
+    <value>Formulaire de saisie de données</value>
   </data>
   <data name="Modal_Validation_Title" xml:space="preserve">
     <value>FR-Please complete the following sections:</value>
@@ -253,13 +253,13 @@
     <value>FR-Tab 12 - Additional comments and review statistics</value>
   </data>
   <data name="Btn_PreviousTab" xml:space="preserve">
-    <value>FR-Previous Tab</value>
+    <value>Onglet précédent </value>
   </data>
   <data name="Validation_FormIncomplete" xml:space="preserve">
     <value>FR-Form Incomplete: All fields are mandatory. Please enter 0 to indicate that no data is being submitted.</value>
   </data>
   <data name="Info_SidebarAppearsAfterBasicInfo" xml:space="preserve">
-    <value>FR-The sidebar tabs will appear once you fill the Name of Court and Reporting Year fields.</value>
+    <value>Les onglets de la barre latérale apparaîtront une fois que vous aurez rempli les champs Nom de la cour et Année de référence.</value>
   </data>
   <data name="BasicInfo_SectionTitle" xml:space="preserve">
     <value>FR-Name of Court and Reporting Year</value>
@@ -286,7 +286,7 @@
     <value>De</value>
   </data>
   <data name="Tip_FromDate" xml:space="preserve">
-    <value>FR-The start date of the period covered by the submission.</value>
+    <value>Date de début de la période couverte par la soumission. </value>
   </data>
   <data name="Msg_FromDate" xml:space="preserve">
     <value>FR-Please enter From Date</value>
@@ -295,7 +295,7 @@
     <value>À</value>
   </data>
   <data name="Tip_ToDate" xml:space="preserve">
-    <value>FR-The end date of the period covered by the submission.</value>
+    <value>Date de fin de la période couverte par la soumission</value>
   </data>
   <data name="Msg_ToDate" xml:space="preserve">
     <value>FR-Please enter To Date</value>
@@ -833,5 +833,14 @@
   </data>
   <data name="Sec12_Heading_Tooltip" xml:space="preserve">
     <value>FR-Comments should only be used on an exceptional basis. A true anomaly is a situation that considerably deviates from what is considered normal or expected.</value>
+  </data>
+  <data name="btn_Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="btn_NextTab" xml:space="preserve">
+    <value>Onglet suivant </value>
+  </data>
+  <data name="btnReviewStats" xml:space="preserve">
+    <value>Révision des statistiques </value>
   </data>
 </root>
