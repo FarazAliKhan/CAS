@@ -265,7 +265,7 @@
     <value>FR-Name of Court and Reporting Year</value>
   </data>
   <data name="Lbl_NameOfCourt" xml:space="preserve">
-    <value>FR-Name of Court</value>
+    <value>Nom de la cour</value>
   </data>
   <data name="Tip_Court" xml:space="preserve">
     <value>FR-The court for which the submission applies.</value>
@@ -274,7 +274,7 @@
     <value>FR-Please enter Name of Court</value>
   </data>
   <data name="Lbl_ReportingYear" xml:space="preserve">
-    <value>FR-Reporting Year</value>
+    <value>Année de référence</value>
   </data>
   <data name="Tip_ReportingYear" xml:space="preserve">
     <value>FR-The reporting year for the data.</value>
@@ -283,7 +283,7 @@
     <value>FR-Please enter Reporting Year</value>
   </data>
   <data name="Lbl_From" xml:space="preserve">
-    <value>FR-From</value>
+    <value>De</value>
   </data>
   <data name="Tip_FromDate" xml:space="preserve">
     <value>FR-The start date of the period covered by the submission.</value>
@@ -292,7 +292,7 @@
     <value>FR-Please enter From Date</value>
   </data>
   <data name="Lbl_To" xml:space="preserve">
-    <value>FR-To</value>
+    <value>À</value>
   </data>
   <data name="Tip_ToDate" xml:space="preserve">
     <value>FR-The end date of the period covered by the submission.</value>
