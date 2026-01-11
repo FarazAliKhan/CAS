@@ -1,6 +1,8 @@
 ﻿@using Microsoft.AspNetCore.Components
 @using WebRazor.Models
 @using Microsoft.AspNetCore.Http.Extensions;
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
 
 <!DOCTYPE html>
 <html class="no-js" lang="en" dir="ltr">
@@ -45,7 +47,7 @@
     <header class="py-3 px-4 d-flex justify-content-between align-items-center">
         <h4 class="text-white m-0"><a href="/Index" class="custom-link">CAAS</a></h4>
 
-        <a href="/Index" class="btn btn-danger ms-auto">Sign Out</a>
+        <a href="/Index" class="btn btn-danger ms-auto">@Localizer["SignOut"]</a>
     </header>
 
     <!-- MAIN DASHBOARD AREA -->

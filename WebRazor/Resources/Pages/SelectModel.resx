@@ -138,6 +138,9 @@
   <data name="Select" xml:space="preserve">
     <value>Select</value>
   </data>
+  <data name="SignOut" xml:space="preserve">
+    <value>Sign Out</value>
+  </data>
   <data name="Submit" xml:space="preserve">
     <value>Submit Statistics</value>
   </data>

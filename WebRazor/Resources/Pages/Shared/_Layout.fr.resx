@@ -117,46 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Back" xml:space="preserve">
-    <value>Retour</value>
-  </data>
-  <data name="Form" xml:space="preserve">
-    <value>Formulaire</value>
-  </data>
-  <data name="Generate" xml:space="preserve">
-    <value>Générer des rapports </value>
-  </data>
-  <data name="Heading" xml:space="preserve">
-    <value>fr-Court of Appeal Annual Statistics (CAAS)</value>
-  </data>
-  <data name="Home" xml:space="preserve">
-    <value>Maison</value>
-  </data>
-  <data name="Report" xml:space="preserve">
-    <value>Rapport</value>
-  </data>
-  <data name="Select" xml:space="preserve">
-    <value>Sélectionner</value>
-  </data>
   <data name="SignOut" xml:space="preserve">
     <value>Déconnexion</value>
-  </data>
-  <data name="Submit" xml:space="preserve">
-    <value>Soumettre des statistiques </value>
-  </data>
-  <data name="Text1" xml:space="preserve">
-    <value>Bienvenue dans la base de données des Statistiques annuelles des Cours d’appel (SACA).</value>
-  </data>
-  <data name="Text2" xml:space="preserve">
-    <value>L’ensemble des statistiques doivent être recueillies sur la base d’une année (du 1er janvier &lt;sup&gt;st&lt;/sup&gt; au 31 décembre&lt;sup&gt;st&lt;/sup&gt;).</value>
-  </data>
-  <data name="Text3" xml:space="preserve">
-    <value>La base de données offre une gamme de rapports qui peuvent être générés et utilisés par votre cour. </value>
-  </data>
-  <data name="Text4" xml:space="preserve">
-    <value>La base de données offre une gamme de rapports qui peuvent être générés et utilisés par votre cour. </value>
-  </data>
-  <data name="Text5" xml:space="preserve">
-    <value>Si vous éprouvez des difficultés techniques, veuillez envoyer un courriel à committees-comites@cjc-ccm.ca </value>
   </data>
 </root>
