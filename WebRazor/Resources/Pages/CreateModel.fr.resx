@@ -124,7 +124,7 @@
     <value>One notice of appeal counts as one appeal filed and one appeal disposed of, even though a number of related cases may be grouped together and heard at one hearing (example: if 10 cases are grouped together and heard together but are the subject of 10 notices of appeal, this counts as 10 appeals filed and 10 appeals disposed of). A notice of appeal containing both an appeal against conviction and against sentence, shall be counted as two appeals, but when heard together shall be counted as a single hearing.&lt;br /&gt;&lt;br /&gt;Where an appeal was deemed abandoned or struck in the previous calendar year and restored in this calendar year, it is counted as a new appeal filed.&lt;br /&gt;&lt;br /&gt;Cross-appeals are to be collected &lt;u&gt;only&lt;/u&gt; if they are docket as a separate appeal.</value>
   </data>
   <data name="1_1_4_Heading" xml:space="preserve">
-    <value>Number of civil appeals, cross-appeals, references, and JRs disposed of by the registrar, the case management officer or authorized personnel or by operation of the rules</value>
+    <value>Nombre d’appels, d’appels incidents et de renvois civils et de contrôles judiciaires fermés par le greffier, le responsable de la gestion des dossiers ou le personnel autorisé ou par application des règles</value>
   </data>
   <data name="Back" xml:space="preserve">
     <value>Retour</value>
@@ -355,10 +355,10 @@
     <value>Nombre total d’appels, d’appels incidents et de renvois civils et de contrôles judiciaires</value>
   </data>
   <data name="Lbl_1_2_Title" xml:space="preserve">
-    <value>FR-Criminal appeals, cross-appeals, references and bail reviews filed, disposed of, and abandoned or withdrawn.</value>
+    <value>Appels, appels incidents et renvois criminels et révisions de cautionnement déposés, ayant fait l’objet d’un jugement ou d’une décision mettant fin au dossier et abandonnés ou retirés </value>
   </data>
   <data name="Lbl_1_2_CheckboxText" xml:space="preserve">
-    <value>FR-Conviction appeal and sentence appeal are heard together</value>
+    <value>L’appel concernant la décision sur la culpabilité et l’appel concernant la décision sur la peine sont entendus en même temps</value>
   </data>
   <data name="Tip_1_2_Checkbox" xml:space="preserve">
     <value>FR-Courts that hear conviction and sentence appeals together should check this box.</value>
@@ -370,7 +370,7 @@
     <value>FR-Number of civil appeals, cross-appeals, references, and JRs filed of criminal appeals, cross-appeals, references and bail reviews filed but still pending as of December 31&lt;sup&gt;st&lt;/sup&gt; of the previous year</value>
   </data>
   <data name="Lbl_1_2_2" xml:space="preserve">
-    <value>FR-Number of criminal appeals, cross-appeals, references and bail reviews filed</value>
+    <value>Nombre d’appels, d’appels incidents et de renvois criminels et de révisions de cautionnement déposés</value>
   </data>
   <data name="Tip_1_2_2" xml:space="preserve">
     <value>FR-The criminal appeals, cross-appeals, references and bail reviews filed involving the Youth Criminal Justice Act are not to be separately tracked as such. They should be counted as any other criminal appeals, cross-appeals, references and bail reviews filed.</value>
@@ -379,43 +379,43 @@
     <value>FR-Number of civil appeals, cross-appeals, references, and JRs filed of criminal appeals, cross-appeals, references and bail reviews filed</value>
   </data>
   <data name="Lbl_1_2_3" xml:space="preserve">
-    <value>FR-Number of criminal appeals, cross-appeals, references and bail reviews disposed of by judgment</value>
+    <value>Nombre d’appels, d’appels incidents et de renvois criminels et de révisions de cautionnement ayant fait l’objet d’un jugement ou d’une décision mettant fin au dossier</value>
   </data>
   <data name="Tip_1_2_3" xml:space="preserve">
     <value>FR-The criminal appeals, cross-appeals, references and bail reviews disposed of by judgment involving the Youth &lt;i&gt;Criminal Justice Act&lt;/i&gt; are not to be tracked separately. They should be counted as any other criminal appeals, cross appeals, references and bail reviews disposed of.</value>
   </data>
   <data name="Msg_1_2_3" xml:space="preserve">
-    <value>FR-Number of criminal appeals, cross-appeals, references and bail reviews disposed of by judgment</value>
+    <value>Nombre d’appels, d’appels incidents et de renvois criminels et de révisions de cautionnement ayant fait l’objet d’un jugement ou d’une décision mettant fin au dossier </value>
   </data>
   <data name="Lbl_1_2_4" xml:space="preserve">
-    <value>FR-Number of criminal appeals, cross-appeals, references and bail reviews disposed of by other means</value>
+    <value>Nombre d’appels, d’appels incidents et renvois criminels et de révisions de cautionnement terminés d’autres façons</value>
   </data>
   <data name="Tip_1_2_4" xml:space="preserve">
     <value>FR-These appeals, cross-appeals, references and bail reviews are to include those that are settled by judicial facilitations, abandoned, withdrawn, dismissed for want of prosecution, non-compliance with rules, and disposed of by a single judge, etc.</value>
   </data>
   <data name="Msg_1_2_4" xml:space="preserve">
-    <value>FR-Number of criminal appeals, cross-appeals, references and bail reviews disposed of by other means</value>
+    <value>Nombre d’appels, d’appels incidents et renvois criminels et de révisions de cautionnement terminés d’autres façons</value>
   </data>
   <data name="Lbl_1_2_5" xml:space="preserve">
-    <value>FR-Total number of criminal appeals, cross-appeals, references and bail reviews</value>
+    <value>Nombre total  d’appels, d’appels incidents et de renvois criminels et de révisions de cautionnement</value>
   </data>
   <data name="Tip_1_2_5" xml:space="preserve">
     <value>FR-Criminal appeals, cross-appeals, references and bail reviews filed but still pending as of December 31st of the previous year (1.2.1) plus new criminal appeals, cross-appeals, references and bail reviews filed (1.2.2) minus total number of criminal appeals, cross-appeals, references and bail reviews disposed of, settled by judicial facilitations, abandoned or withdrawn (1.2.3 to 1.2.4) = net criminal appeals, cross-appeals, references and bail reviews for the year.</value>
   </data>
   <data name="Msg_1_2_5" xml:space="preserve">
-    <value>FR-Total number of criminal appeals, cross-appeals, references and bail reviews</value>
+    <value>Nombre total  d’appels, d’appels incidents et de renvois criminels et de révisions de cautionnement</value>
   </data>
   <data name="Comments" xml:space="preserve">
-    <value>FR-Comments</value>
+    <value>Commentaires</value>
   </data>
   <data name="Lbl_2_Heading" xml:space="preserve">
-    <value>FR-Civil and criminal case decisions</value>
+    <value>Affaires civiles et criminelles décidées</value>
   </data>
   <data name="Lbl_2_1_Title" xml:space="preserve">
-    <value>FR-Civil case decisions</value>
+    <value>Affaires civiles décidées</value>
   </data>
   <data name="Lbl_2_1_1" xml:space="preserve">
-    <value>FR-Number of civil case decisions given at hearing</value>
+    <value>Nombre de décisions d’affaires civiles rendues à l’audience</value>
   </data>
   <data name="Tip_2_1_1" xml:space="preserve">
     <value>FR-A decision given at hearing (also referred to as Bench decision) is a decision that is rendered immediately after the hearing, the same day of the hearing or during the same sitting week. If a decision is given at the hearing but the reasons follow the pronouncement, which means that the reasons are not provided immediately after the hearing, on the same day of the hearing or on the same sitting week of the hearing, this decision should be counted as a reserved judgment.</value>
@@ -424,88 +424,88 @@
     <value>FR-Number of civil appeals, cross-appeals, references, and JRs filed of civil case decisions given at hearing</value>
   </data>
   <data name="Lbl_2_1_2" xml:space="preserve">
-    <value>FR-Number of civil case reserved decisions</value>
+    <value>Nombre de décisions d’affaires civiles déposées après délibéré</value>
   </data>
   <data name="Tip_2_1_2" xml:space="preserve">
     <value>FR-A decision given after reserving is a decision that is rendered at a later date, i.e., not immediately after the hearing, not on the same day of the hearing and not during the same sitting week.</value>
   </data>
   <data name="Msg_2_1_2" xml:space="preserve">
-    <value>EN-Number of civil case reserved decisions</value>
+    <value>Nombre de décisions d’affaires civiles déposées après délibéré</value>
   </data>
   <data name="Lbl_2_2_Title" xml:space="preserve">
-    <value>FR-Criminal case decisions</value>
+    <value>Affaires criminelles décidées</value>
   </data>
   <data name="Lbl_2_2_1" xml:space="preserve">
-    <value>FR-Number of criminal case decisions given at hearing</value>
+    <value>Nombre de décisions d’affaires criminelles rendues à l’audience</value>
   </data>
   <data name="Tip_2_2_1" xml:space="preserve">
     <value>FR-A decision given at hearing (also referred to as Bench decision) is a decision that is rendered immediately after the hearing, the same day of the hearing or during the same sitting week. If a decision is given at the hearing but the reasons follow the pronouncement, which means that the reasons are not provided immediately after the hearing, on the same day of the hearing or on the same sitting week of the hearing, this decision should be counted as a reserved judgment.&lt;br /&gt;&lt;br /&gt;The decisions involving the &lt;i&gt;Youth Criminal Justice Act&lt;/i&gt; are not to be tracked separately. They should be counted as any other criminal appeal decision.</value>
   </data>
   <data name="Msg_2_2_1" xml:space="preserve">
-    <value>FR-Number of criminal case decisions given at hearing</value>
+    <value>Nombre de décisions d’affaires criminelles rendues à l’audience</value>
   </data>
   <data name="Lbl_2_2_1_1" xml:space="preserve">
-    <value>FR-Number of convictions/acquittals given at hearing</value>
+    <value>Nombre de verdicts de culpabilité/acquittements rendus à l’audience</value>
   </data>
   <data name="Msg_2_2_1_1" xml:space="preserve">
-    <value>FR-Number of convictions/acquittals given at hearing</value>
+    <value>Nombre de verdicts de culpabilité/acquittements rendus à l’audience</value>
   </data>
   <data name="Lbl_2_2_1_2" xml:space="preserve">
-    <value>FR-Number of sentences given at hearing</value>
+    <value>Nombre de jugements sur la peine rendues à l’audience</value>
   </data>
   <data name="Msg_2_2_1_2" xml:space="preserve">
-    <value>FR-Number of sentences given at hearing</value>
+    <value>Nombre de jugements sur la peine rendues à l’audience</value>
   </data>
   <data name="Lbl_2_2_1_3" xml:space="preserve">
-    <value>FR-Number of other criminal appeals given at hearing</value>
+    <value>Nombre de jugements sur d’autres appels criminels rendus à l’audience</value>
   </data>
   <data name="Tip_2_2_1_3" xml:space="preserve">
     <value>FR-Examples of other criminal appeals are habeas corpus, prohibition, certiorari, mental disorder reviews, etc.</value>
   </data>
   <data name="Msg_2_2_1_3" xml:space="preserve">
-    <value>FR-Number of other criminal appeals given at hearing</value>
+    <value>Nombre de jugements sur d’autres appels criminels rendus à l’audience</value>
   </data>
   <data name="Lbl_2_2_2" xml:space="preserve">
-    <value>FR-Number of criminal case decisions filed after reserving</value>
+    <value>Nombre de décisions criminelles déposées après la mise en délibéré</value>
   </data>
   <data name="Tip_2_2_2" xml:space="preserve">
     <value>FR-A decision filed after reserving is a decision that is rendered at a later date i.e. not on the same day of the hearing or during the same sitting week. If a decision is given at the hearing but the reasons follow the pronouncement i.e., they are not provided immediately after the hearing, on the same day of the hearing or during the same sitting week, this decision should be counted as a reserved judgment.</value>
   </data>
   <data name="Msg_2_2_2" xml:space="preserve">
-    <value>FR-Number of criminal case decisions filed after reserving</value>
+    <value>Nombre de décisions criminelles déposées après la mise en délibéré</value>
   </data>
   <data name="Lbl_2_2_2_1" xml:space="preserve">
-    <value>FR-Number of convictions/acquittals filed after reserving</value>
+    <value>Nombre de verdicts de culpabilité/acquittements déposés après la mise en délibéré</value>
   </data>
   <data name="Msg_2_2_2_1" xml:space="preserve">
-    <value>FR-Number of convictions/acquittals filed after reserving</value>
+    <value>Nombre de verdicts de culpabilité/acquittements déposés après la mise en délibéré</value>
   </data>
   <data name="Lbl_2_2_2_2" xml:space="preserve">
-    <value>FR-Number of sentences filed after reserving</value>
+    <value>Nombre de jugements sur la peine déposés après la mise en délibéré </value>
   </data>
   <data name="Msg_2_2_2_2" xml:space="preserve">
-    <value>FR-Number of sentences filed after reserving</value>
+    <value>Nombre de jugements sur la peine déposés après la mise en délibéré</value>
   </data>
   <data name="Lbl_2_2_2_3" xml:space="preserve">
-    <value>FR-Number of other criminal appeals filed after reserving</value>
+    <value>Nombre d’autres jugements sur des appels criminels déposés après la mise en délibéré.</value>
   </data>
   <data name="Tip_2_2_2_3" xml:space="preserve">
     <value>FR-Examples of criminal appeals are habeas corpus, prohibition, certiorari, mental disorder reviews.</value>
   </data>
   <data name="Msg_2_2_2_3" xml:space="preserve">
-    <value>FR-Number of other criminal appeals filed after reserving</value>
+    <value>Nombre d’autres jugements sur des appels criminels déposés après la mise en délibéré.</value>
   </data>
   <data name="Lbl_3_Heading" xml:space="preserve">
-    <value>FR-Number of decisions/judgments (total)</value>
+    <value>Nombre de décisions/jugements (total)</value>
   </data>
   <data name="Lbl_3_1" xml:space="preserve">
-    <value>FR-Number of Bench decisions/judgments</value>
+    <value>Nombre de décisions/jugements rendus sur le banc</value>
   </data>
   <data name="Tip_3_1" xml:space="preserve">
     <value>FR-Bench decisions/judgments are also referred to as decisions given at hearing. A Bench decision or decision given at hearing is rendered immediately after the hearing, the same day of the hearing or during the same sitting week. The decisions involving the &lt;i&gt;Youth Criminal Justice Act&lt;/i&gt; are not to be tracked separately. They should be counted as any other decision/judgment.</value>
   </data>
   <data name="Msg_3_1" xml:space="preserve">
-    <value>FR-Number of Bench decisions/judgments</value>
+    <value>Nombre de décisions/jugements rendus sur le banc</value>
   </data>
   <data name="Lbl_3_2" xml:space="preserve">
     <value>FR-Number of reserved decisions/judgments</value>
@@ -829,7 +829,7 @@
     <value>FR-Supernumerary judges</value>
   </data>
   <data name="Sec12_Heading" xml:space="preserve">
-    <value>FR-Additional comments</value>
+    <value>Commentaires additionnels</value>
   </data>
   <data name="Sec12_Heading_Tooltip" xml:space="preserve">
     <value>FR-Comments should only be used on an exceptional basis. A true anomaly is a situation that considerably deviates from what is considered normal or expected.</value>
