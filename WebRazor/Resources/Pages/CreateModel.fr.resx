@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="1_Heading" xml:space="preserve">
-    <value>Number of appeals, cross-appeals, references, bail reviews, and judicial reviews (JRs)</value>
+    <value>Nombre d’appels, d’appels incidents, de renvois, de révisions de cautionnement et de contrôles judiciaires</value>
   </data>
   <data name="1_Info" xml:space="preserve">
     <value>One notice of appeal counts as one appeal filed and one appeal disposed of, even though a number of related cases may be grouped together and heard at one hearing (example: if 10 cases are grouped together and heard together but are the subject of 10 notices of appeal, this counts as 10 appeals filed and 10 appeals disposed of). A notice of appeal containing both an appeal against conviction and against sentence, shall be counted as two appeals, but when heard together shall be counted as a single hearing.&lt;br /&gt;&lt;br /&gt;Where an appeal was deemed abandoned or struck in the previous calendar year and restored in this calendar year, it is counted as a new appeal filed.&lt;br /&gt;&lt;br /&gt;Cross-appeals are to be collected &lt;u&gt;only&lt;/u&gt; if they are docket as a separate appeal.</value>
@@ -301,7 +301,7 @@
     <value>FR-Please enter To Date</value>
   </data>
   <data name="Lbl_1_1_Title" xml:space="preserve">
-    <value>FR-Civil appeals, cross-appeals, references, and JRs filed, disposed of, and abandoned or withdrawn</value>
+    <value>Appels, appels incidents et renvois civils et contrôles judiciaires déposés, ayant fait l’objet d’un jugement ou d’une décision mettant fin au dossier et abandonnés ou retirés</value>
   </data>
   <data name="Lbl_1_1_1" xml:space="preserve">
     <value>FR-Number of civil appeals, cross-appeals, references, and JRs filed but still pending as of December 31&lt;sup&gt;st&lt;/sup&gt; of the previous year</value>
@@ -310,49 +310,49 @@
     <value>FR-Number of civil appeals, cross-appeals, references, and JRs filed but still pending as of December 31&lt;sup&gt;st&lt;/sup&gt; of the previous year</value>
   </data>
   <data name="Lbl_1_1_2" xml:space="preserve">
-    <value>FR-Number of civil appeals, cross-appeals, references, and JRs filed</value>
+    <value>Nombre d’appels, d’appels incidents et de renvois civils et de contrôles judiciaires déposés </value>
   </data>
   <data name="Msg_1_1_2" xml:space="preserve">
-    <value>FR-Number of civil appeals, cross-appeals, references, and JRs filed</value>
+    <value>Nombre d’appels, d’appels incidents et de renvois civils et de contrôles judiciaires déposés </value>
   </data>
   <data name="Lbl_1_1_3" xml:space="preserve">
-    <value>FR-Number of civil appeals, cross-appeals, references, and JRs disposed of by judgment</value>
+    <value>Nombre d’appels, d’appels incidents et de renvois civils et de contrôles judiciaires ayant fait l’objet d’un jugement ou d’une décision mettant fin 	au dossier </value>
   </data>
   <data name="Msg_1_1_3" xml:space="preserve">
-    <value>FR-Number of civil appeals, cross-appeals, references, and JRs disposed of by judgment</value>
+    <value>Nombre d’appels, d’appels incidents et de renvois civils et de contrôles judiciaires ayant fait l’objet d’un jugement ou d’une décision mettant fin 	au dossier </value>
   </data>
   <data name="Msg_1_1_4" xml:space="preserve">
-    <value>FR-Number of civil appeals, cross-appeals, references, and JRs disposed of by the registrar, the case management officer or authorized personnel or by operation of the rules</value>
+    <value>Nombre d’appels, d’appels incidents et de renvois civils et de contrôles judiciaires fermés par le greffier, le responsable de la gestion des dossiers ou le personnel autorisé ou par application des règles</value>
   </data>
   <data name="Lbl_1_1_5" xml:space="preserve">
-    <value>FR-Number of civil appeals, cross-appeals, references, and JRs settled by judicial mediation</value>
+    <value>Nombre d’appels, d’appels incidents et de renvois civils et de contrôles judiciaires réglés à la suite d’une médiation judiciaire</value>
   </data>
   <data name="Tip_1_1_5" xml:space="preserve">
-    <value>EN-To be included in this category, the settlement must have taken place at the time of judicial mediation and can include settlement, abandonment or withdrawal of the appeal at that time.</value>
+    <value>To be included in this category, the settlement must have taken place at the time of judicial mediation and can include settlement, abandonment or withdrawal of the appeal at that time.</value>
   </data>
   <data name="Success" xml:space="preserve">
     <value>FR-Success</value>
   </data>
   <data name="Msg_1_1_5" xml:space="preserve">
-    <value>FR-Number of civil appeals, cross-appeals, references, and JRs settled by judicial mediation</value>
+    <value>Nombre d’appels, d’appels incidents et de renvois civils et de contrôles judiciaires réglés à la suite d’une médiation judiciaire</value>
   </data>
   <data name="Lbl_1_1_6" xml:space="preserve">
-    <value>FR-Number of civil appeals, cross-appeals, references, and JRs disposed of by other means</value>
+    <value>Nombre d’appels, d’appels incidents et de renvois civils et de contrôles judiciaires terminés d’autres façons</value>
   </data>
   <data name="Tip_1_1_6" xml:space="preserve">
     <value>FR-These appeals, cross-appeals, references, and JRs are to include those that are abandoned, withdrawn, dismissed for want of prosecution, non-compliance with rules, dispositions by a single judge, etc. The civil appeals, cross-appeals, references, and JRs abandoned or withdrawn by the registrar take into account the certificates of lapse of appeal issued by the registry.</value>
   </data>
   <data name="Msg_1_1_6" xml:space="preserve">
-    <value>FR-Number of civil appeals, cross-appeals, references, and JRs disposed of by other means</value>
+    <value>Nombre d’appels, d’appels incidents et de renvois civils et de contrôles judiciaires terminés d’autres façons</value>
   </data>
   <data name="Lbl_1_1_7" xml:space="preserve">
-    <value>FR-Total number of civil appeals, cross-appeals, references, and JRs</value>
+    <value>Nombre total d’appels, d’appels incidents et de renvois civils et de contrôles judiciaires</value>
   </data>
   <data name="Tip_1_1_7" xml:space="preserve">
     <value>FR-Previous year civil appeals, cross-appeals, references and JRs filed but still pending as of December 31st of the previous year (1.1.1) plus new civil appeals, cross-appeals, references, and JRs filed (1.1.2) minus total number of civil appeals, cross-appeals, references, and JRs disposed of, settled by mediation, abandoned or withdrawn (1.1.3 to 1.1.6) = net civil appeals, cross-appeals, references, and JRs for the year.</value>
   </data>
   <data name="Msg_1_1_7" xml:space="preserve">
-    <value>FR-Total number of civil appeals, cross-appeals, references, and JRs</value>
+    <value>Nombre total d’appels, d’appels incidents et de renvois civils et de contrôles judiciaires</value>
   </data>
   <data name="Lbl_1_2_Title" xml:space="preserve">
     <value>FR-Criminal appeals, cross-appeals, references and bail reviews filed, disposed of, and abandoned or withdrawn.</value>
