@@ -112,10 +112,10 @@ function submitForm(sectionId) {
     form.submit();
 }
 
-function submitForReview() {
+function submitForReview(cultureInfo) {
     var validator = $("form").validate();
     if ($('form').valid()) {
-        if (!(validate())) {
+        if (!(validate(cultureInfo))) {
             $('#validationModal').modal('show');
             return;
         }
@@ -938,7 +938,7 @@ function calculateField_7_1_3() {
     document.getElementById("txtFIELD7_1_3").value = calcSum;
 }
 
-function validate() {
+function validate(cultureInfo) {
 
     let result = true;
     let errorHtml = "";
@@ -1052,7 +1052,12 @@ function validate() {
         || (fIELD1_2_4.value == "")
         || (fIELD1_2_5.value == "")
     ) {
-        sectionHtml = sectionHtml + "<div><a href='javascript:errorSection1();'>Tab 1 –	Number of appeals, cross-appeals, references, bail reviews, and judicial reviews (JRs)</a></div>";
+        if (cultureInfo == "fr") {
+            sectionHtml = sectionHtml + "<div><a href='javascript:errorSection1();'>Tab 1 - Nombre d’appels, d’appels incidents, de renvois, de révisions de cautionnement et de contrôles judiciaires</a></div>";
+        }
+        else {
+            sectionHtml = sectionHtml + "<div><a href='javascript:errorSection1();'>Tab 1 –	Number of appeals, cross-appeals, references, bail reviews, and judicial reviews (JRs)</a></div>";
+        }
         result = false;
     }
 
@@ -1067,14 +1072,24 @@ function validate() {
         || (txtFIELD2_2_2_2.value == "")
         || (txtFIELD2_2_2_3.value == "")
     ) {
-        sectionHtml = sectionHtml + "<div><a href='javascript:errorSection2();'>Tab 2 – Civil and criminal case decisions</a></div>";
+        if (cultureInfo == "fr") {
+            sectionHtml = sectionHtml + "<div><a href='javascript:errorSection2();'>Tab 2 - Affaires civiles et criminelles décidées</a></div>";
+        }
+        else {
+            sectionHtml = sectionHtml + "<div><a href='javascript:errorSection2();'>Tab 2 – Civil and criminal case decisions</a></div>";
+        }
         result = false;
     }
 
     if ((txtFIELD3_1.value == "")
         || (txtFIELD3_2.value == "")
     ) {
-        sectionHtml = sectionHtml + "<div><a href='javascript:errorSection3();'>Tab 3 – Number of decisions/judgments (total)</a></div>";
+        if (cultureInfo == "fr") {
+            sectionHtml = sectionHtml + "<div><a href='javascript:errorSection3();'>Tab 3 - Nombre de décisions/jugements (total)</a></div>";
+        }
+        else {
+            sectionHtml = sectionHtml + "<div><a href='javascript:errorSection3();'>Tab 3 – Number of decisions/judgments (total)</a></div>";
+        }
         result = false;
     }
 
@@ -1115,7 +1130,12 @@ function validate() {
         || (txtFIELD4_3_6_2.value == "")
         || (txtFIELD4_3_6_3.value == "")
     ) {
-        sectionHtml = sectionHtml + "<div><a href='javascript:errorSection4();'>Tab 4 – Civil and criminal case time intervals</a></div>";
+        if (cultureInfo == "fr") {
+            sectionHtml = sectionHtml + "<div><a href='javascript:errorSection4();'>Tab 4 - Intervalles de temps pour les affaires civiles et criminelles</a></div>";
+        }
+        else {
+            sectionHtml = sectionHtml + "<div><a href='javascript:errorSection4();'>Tab 4 – Civil and criminal case time intervals</a></div>";
+        }
         result = false;
     }
 
@@ -1124,7 +1144,12 @@ function validate() {
         || (txtFIELD5_3.value == "")
         || (txtFIELD5_4.value == "")
     ) {
-        sectionHtml = sectionHtml + "<div><a href='javascript:errorSection5();'>Tab 5 – Number of in-person, virtual and hybrid hearings</a></div>";
+        if (cultureInfo == "fr") {
+            sectionHtml = sectionHtml + "<div><a href='javascript:errorSection5();'>Tab 5 - Nombre d’audiences en personne, virtuelles et hybrides</a></div>";
+        }
+        else {
+            sectionHtml = sectionHtml + "<div><a href='javascript:errorSection5();'>Tab 5 – Number of in-person, virtual and hybrid hearings</a></div>";
+        }
         result = false;
     }
 
@@ -1138,7 +1163,12 @@ function validate() {
         || (txtFIELD6_3_2.value == "")
         || (txtFIELD6_3_3.value == "")
     ) {
-        sectionHtml = sectionHtml + "<div><a href='javascript:errorSection6();'>Tab 6 – Number of motions and applications</a></div>";
+        if (cultureInfo == "fr") {
+            sectionHtml = sectionHtml + "<div><a href='javascript:errorSection6();'>Tab 6 - Nombre de requêtes et demandes</a></div>";
+        }
+        else {
+            sectionHtml = sectionHtml + "<div><a href='javascript:errorSection6();'>Tab 6 – Number of motions and applications</a></div>";
+        }
         result = false;
     }
 
@@ -1146,7 +1176,12 @@ function validate() {
         || (txtFIELD7_1_2.value == "")
         || (txtFIELD7_1_3.value == "")
     ) {
-        sectionHtml = sectionHtml + "<div><a href='javascript:errorSection7();'>Tab 7 – Self-Represented Litigants (SRLs)</a></div>";
+        if (cultureInfo == "fr") {
+            sectionHtml = sectionHtml + "<div><a href='javascript:errorSection7();'>Tab 7 - Personnes qui se représentent seules</a></div>";
+        }
+        else {
+            sectionHtml = sectionHtml + "<div><a href='javascript:errorSection7();'>Tab 7 – Self-Represented Litigants (SRLs)</a></div>";
+        }
         result = false;
     }
 
@@ -1154,27 +1189,47 @@ function validate() {
         || (txtFIELD8_2.value == "")
         || (txtFIELD8_3.value == "")
     ) {
-        sectionHtml = sectionHtml + "<div><a href='javascript:errorSection8();'>Tab 8 – Number of decisions/judgments rendered</a></div>";
+        if (cultureInfo == "fr") {
+            sectionHtml = sectionHtml + "<div><a href='javascript:errorSection8();'>Tab 8 - Nombre de décisions/jugements rendus</a></div>";
+        }
+        else {
+            sectionHtml = sectionHtml + "<div><a href='javascript:errorSection8();'>Tab 8 – Number of decisions/judgments rendered</a></div>";
+        }
         result = false;
     }
 
     if ((txtFIELD9_1.value == "")
         || (txtFIELD9_2.value == "")
     ) {
-        sectionHtml = sectionHtml + "<div><a href='javascript:errorSection9();'>Tab 9 – Number of appeals that are heard</a></div>";
+        if (cultureInfo == "fr") {
+            sectionHtml = sectionHtml + "<div><a href='javascript:errorSection9();'>Tab 9 - Nombre d’appels qui sont entendus</a></div>";
+        }
+        else {
+            sectionHtml = sectionHtml + "<div><a href='javascript:errorSection9();'>Tab 9 – Number of appeals that are heard</a></div>";
+        }
         result = false;
     }
 
     if ((txtFIELD10_1.value == "")
     ) {
-        sectionHtml = sectionHtml + "<div><a href='javascript:errorSection10();'>Tab 10 – Total number of  appeals, cross-appeals, references, bail reviews and JRs pending on December 31<sup>st</sup></a></div>";
+        if (cultureInfo == "fr") {
+            sectionHtml = sectionHtml + "<div><a href='javascript:errorSection10();'>FR - Tab 10 – Total number of  appeals, cross-appeals, references, bail reviews and JRs pending on December 31<sup>st</sup></a></div>";
+        }
+        else {
+            sectionHtml = sectionHtml + "<div><a href='javascript:errorSection10();'>Tab 10 – Total number of  appeals, cross-appeals, references, bail reviews and JRs pending on December 31<sup>st</sup></a></div>";
+        }
         result = false;
     }
 
     if ((txtFIELD11_1.value == "")
         || (txtFIELD11_2.value == "")
     ) {
-        sectionHtml = sectionHtml + "<div><a href='javascript:errorSection11();'>Tab 11 – Number of judges (as of December 31<sup>st</sup>)</a></div>";
+        if (cultureInfo == "fr") {
+            sectionHtml = sectionHtml + "<div><a href='javascript:errorSection11();'>FR - Tab 11 – Number of judges (as of December 31<sup>st</sup>)</a></div>";
+        }
+        else {
+            sectionHtml = sectionHtml + "<div><a href='javascript:errorSection11();'>Tab 11 – Number of judges (as of December 31<sup>st</sup>)</a></div>";
+        }
         result = false;
     }
 
