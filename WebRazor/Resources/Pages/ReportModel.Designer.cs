@@ -70,6 +70,15 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Court of Appeal Annual Statistics (CAAS).
+        /// </summary>
+        public static string CAASHeading {
+            get {
+                return ResourceManager.GetString("CAASHeading", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Home.
         /// </summary>
         public static string Home {
