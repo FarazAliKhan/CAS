@@ -120,6 +120,9 @@
   <data name="Back" xml:space="preserve">
     <value>Back</value>
   </data>
+  <data name="CAASHeading" xml:space="preserve">
+    <value>Court of Appeal Annual Statistics (CAAS)</value>
+  </data>
   <data name="Home" xml:space="preserve">
     <value>Home</value>
   </data>
