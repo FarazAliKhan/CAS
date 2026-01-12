@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="1_1_4_Heading" xml:space="preserve">
-    <value>Number of civil appeals, cross-appeals, references, and JRs disposed of by the registrar, the case management officer or authorized personnel or by operation of the rules</value>
+    <value>Nombre d’appels, d’appels incidents et de renvois civils et de contrôles judiciaires fermés par le greffier, le responsable de la gestion des dossiers ou le personnel autorisé ou par application des règles</value>
   </data>
   <data name="1_1_4_Heading1" xml:space="preserve">
-    <value>Number of civil appeals, cross-appeals, references, and JRs disposed of by the registrar, the case management officer or authorized personnel or by operation of the rules</value>
+    <value>Nombre d’appels, d’appels incidents et de renvois civils et de contrôles judiciaires fermés par le greffier, le responsable de la gestion des dossiers ou le personnel autorisé ou par application des règles</value>
   </data>
   <data name="1_1_4_Info" xml:space="preserve">
     <value>The civil appeals, cross-appeals, references, and JRs disposed of by the registrar take into account the certificates of lapse of appeal issued by the registry.</value>
@@ -130,10 +130,10 @@
     <value>The civil appeals, cross-appeals, references, and JRs disposed of by the registrar take into account the certificates of lapse of appeal issued by the registry.</value>
   </data>
   <data name="1_Heading" xml:space="preserve">
-    <value>Number of appeals, cross-appeals, references, bail reviews, and judicial reviews (JRs)</value>
+    <value>Nombre d’appels, d’appels incidents, de renvois, de révisions de cautionnement et de contrôles judiciaires</value>
   </data>
   <data name="1_Heading1" xml:space="preserve">
-    <value>Number of appeals, cross-appeals, references, bail reviews, and judicial reviews (JRs)</value>
+    <value>Nombre d’appels, d’appels incidents, de renvois, de révisions de cautionnement et de contrôles judiciaires</value>
   </data>
   <data name="1_Info" xml:space="preserve">
     <value>One notice of appeal counts as one appeal filed and one appeal disposed of, even though a number of related cases may be grouped together and heard at one hearing (example: if 10 cases are grouped together and heard together but are the subject of 10 notices of appeal, this counts as 10 appeals filed and 10 appeals disposed of). A notice of appeal containing both an appeal against conviction and against sentence, shall be counted as two appeals, but when heard together shall be counted as a single hearing.&lt;br /&gt;&lt;br /&gt;Where an appeal was deemed abandoned or struck in the previous calendar year and restored in this calendar year, it is counted as a new appeal filed.&lt;br /&gt;&lt;br /&gt;Cross-appeals are to be collected &lt;u&gt;only&lt;/u&gt; if they are docket as a separate appeal.</value>
@@ -142,22 +142,22 @@
     <value>One notice of appeal counts as one appeal filed and one appeal disposed of, even though a number of related cases may be grouped together and heard at one hearing (example: if 10 cases are grouped together and heard together but are the subject of 10 notices of appeal, this counts as 10 appeals filed and 10 appeals disposed of). A notice of appeal containing both an appeal against conviction and against sentence, shall be counted as two appeals, but when heard together shall be counted as a single hearing.&lt;br /&gt;&lt;br /&gt;Where an appeal was deemed abandoned or struck in the previous calendar year and restored in this calendar year, it is counted as a new appeal filed.&lt;br /&gt;&lt;br /&gt;Cross-appeals are to be collected &lt;u&gt;only&lt;/u&gt; if they are docket as a separate appeal.</value>
   </data>
   <data name="Alert_DraftFound_AskLoad" xml:space="preserve">
-    <value>FR-A draft record found. Do you want to load it?</value>
+    <value>Un brouillon de document a été trouvé. Voulez-vous le charger ?</value>
   </data>
   <data name="Alert_DraftSavedFailed" xml:space="preserve">
-    <value>FR-The draft save failed.</value>
+    <value>La sauvegarde provisoire a échoué.</value>
   </data>
   <data name="Alert_DraftSavedSuccess" xml:space="preserve">
-    <value>FR-The draft saved successfully.</value>
+    <value>Le brouillon a été enregistré avec succès.</value>
   </data>
   <data name="Alert_RecordDeleteFailed" xml:space="preserve">
-    <value>FR-The record delete failed.</value>
+    <value>La suppression du dossier a échoué</value>
   </data>
   <data name="Alert_RecordRetrievalFailed" xml:space="preserve">
-    <value>FR-The record retrieval failed.</value>
+    <value>La récupération du dossier a échoué.</value>
   </data>
   <data name="Aria_Close" xml:space="preserve">
-    <value>FR-Close</value>
+    <value>Fermer</value>
   </data>
   <data name="Back" xml:space="preserve">
     <value>Retour</value>
@@ -166,25 +166,25 @@
     <value>Retour</value>
   </data>
   <data name="BasicInfo_SectionTitle" xml:space="preserve">
-    <value>FR-Name of Court and Reporting Year</value>
+    <value>Nom du tribunal et année de référence</value>
   </data>
   <data name="Btn_PreviousTab" xml:space="preserve">
-    <value>FR-Previous Tab</value>
+    <value>Onglet précédent </value>
   </data>
   <data name="Close" xml:space="preserve">
-    <value>FR-Close</value>
+    <value>Fermer</value>
   </data>
   <data name="Comments" xml:space="preserve">
-    <value>FR-Comments</value>
+    <value>Commentaires</value>
   </data>
   <data name="Common_ConvictionAcquittal" xml:space="preserve">
-    <value>FR-Conviction/acquittal</value>
+    <value>Culpabilité/acquittement </value>
   </data>
   <data name="Common_Other" xml:space="preserve">
-    <value>FR-Other</value>
+    <value>Autre</value>
   </data>
   <data name="Common_Sentence" xml:space="preserve">
-    <value>FR-Sentence</value>
+    <value>Peine</value>
   </data>
   <data name="CourtRequired" xml:space="preserve">
     <value>Court is required</value>
@@ -226,7 +226,7 @@
     <value>FR-Court of Appeal Annual Statistics (CAAS)</value>
   </data>
   <data name="hdgDataEntryForm" xml:space="preserve">
-    <value>Fr-Data Entry Form</value>
+    <value>Formulaire de saisie de données</value>
   </data>
   <data name="Home" xml:space="preserve">
     <value>Maison</value>
@@ -235,7 +235,7 @@
     <value>Maison</value>
   </data>
   <data name="Info_SidebarAppearsAfterBasicInfo" xml:space="preserve">
-    <value>FR-The sidebar tabs will appear once you fill the Name of Court and Reporting Year fields.</value>
+    <value>Les onglets de la barre latérale apparaîtront une fois que vous aurez rempli les champs Nom de la cour et Année de référence.</value>
   </data>
   <data name="LastName" xml:space="preserve">
     <value>Nom</value>
@@ -253,224 +253,224 @@
     <value>FR-Number of civil appeals, cross-appeals, references, and JRs filed but still pending as of December 31&lt;sup&gt;st&lt;/sup&gt; of the previous year</value>
   </data>
   <data name="Lbl_1_1_2" xml:space="preserve">
-    <value>FR-Number of civil appeals, cross-appeals, references, and JRs filed</value>
+    <value>Nombre d’appels, d’appels incidents et de renvois civils et de contrôles judiciaires déposés </value>
   </data>
   <data name="Lbl_1_1_3" xml:space="preserve">
-    <value>FR-Number of civil appeals, cross-appeals, references, and JRs disposed of by judgment</value>
+    <value>Nombre d’appels, d’appels incidents et de renvois civils et de contrôles judiciaires ayant fait l’objet d’un jugement ou d’une décision mettant fin 	au dossier </value>
   </data>
   <data name="Lbl_1_1_5" xml:space="preserve">
-    <value>FR-Number of civil appeals, cross-appeals, references, and JRs settled by judicial mediation</value>
+    <value>Nombre d’appels, d’appels incidents et de renvois civils et de contrôles judiciaires réglés à la suite d’une médiation judiciaire</value>
   </data>
   <data name="Lbl_1_1_6" xml:space="preserve">
-    <value>FR-Number of civil appeals, cross-appeals, references, and JRs disposed of by other means</value>
+    <value>Nombre d’appels, d’appels incidents et de renvois civils et de contrôles judiciaires terminés d’autres façons</value>
   </data>
   <data name="Lbl_1_1_7" xml:space="preserve">
-    <value>FR-Total number of civil appeals, cross-appeals, references, and JRs</value>
+    <value>Nombre total d’appels, d’appels incidents et de renvois civils et de contrôles judiciaires</value>
   </data>
   <data name="Lbl_1_1_Title" xml:space="preserve">
-    <value>FR-Civil appeals, cross-appeals, references, and JRs filed, disposed of, and abandoned or withdrawn</value>
+    <value>Appels, appels incidents et renvois civils et contrôles judiciaires déposés, ayant fait l’objet d’un jugement ou d’une décision mettant fin au dossier et abandonnés ou retirés</value>
   </data>
   <data name="Lbl_1_2_1" xml:space="preserve">
     <value>FR-Number of criminal appeals, cross-appeals, references and bail reviews filed but still pending as of December 31&lt;sup&gt;st&lt;/sup&gt; of the previous year</value>
   </data>
   <data name="Lbl_1_2_2" xml:space="preserve">
-    <value>FR-Number of criminal appeals, cross-appeals, references and bail reviews filed</value>
+    <value>Nombre d’appels, d’appels incidents et de renvois criminels et de révisions de cautionnement déposés</value>
   </data>
   <data name="Lbl_1_2_3" xml:space="preserve">
-    <value>FR-Number of criminal appeals, cross-appeals, references and bail reviews disposed of by judgment</value>
+    <value>Nombre d’appels, d’appels incidents et de renvois criminels et de révisions de cautionnement ayant fait l’objet d’un jugement ou d’une décision mettant fin au dossier</value>
   </data>
   <data name="Lbl_1_2_4" xml:space="preserve">
-    <value>FR-Number of criminal appeals, cross-appeals, references and bail reviews disposed of by other means</value>
+    <value>Nombre d’appels, d’appels incidents et renvois criminels et de révisions de cautionnement terminés d’autres façons</value>
   </data>
   <data name="Lbl_1_2_5" xml:space="preserve">
-    <value>FR-Total number of criminal appeals, cross-appeals, references and bail reviews</value>
+    <value>Nombre total  d’appels, d’appels incidents et de renvois criminels et de révisions de cautionnement</value>
   </data>
   <data name="Lbl_1_2_CheckboxText" xml:space="preserve">
-    <value>FR-Conviction appeal and sentence appeal are heard together</value>
+    <value>L’appel concernant la décision sur la culpabilité et l’appel concernant la décision sur la peine sont entendus en même temps</value>
   </data>
   <data name="Lbl_1_2_Title" xml:space="preserve">
-    <value>FR-Criminal appeals, cross-appeals, references and bail reviews filed, disposed of, and abandoned or withdrawn.</value>
+    <value>Appels, appels incidents et renvois criminels et révisions de cautionnement déposés, ayant fait l’objet d’un jugement ou d’une décision mettant fin au dossier et abandonnés ou retirés </value>
   </data>
   <data name="Lbl_2_1_1" xml:space="preserve">
-    <value>FR-Number of civil case decisions given at hearing</value>
+    <value>Nombre de décisions d’affaires civiles rendues à l’audience</value>
   </data>
   <data name="Lbl_2_1_2" xml:space="preserve">
-    <value>FR-Number of civil case reserved decisions</value>
+    <value>Nombre de décisions d’affaires civiles déposées après délibéré</value>
   </data>
   <data name="Lbl_2_1_Title" xml:space="preserve">
-    <value>FR-Civil case decisions</value>
+    <value>Affaires civiles décidées</value>
   </data>
   <data name="Lbl_2_2_1" xml:space="preserve">
-    <value>FR-Number of criminal case decisions given at hearing</value>
+    <value>Nombre de décisions d’affaires criminelles rendues à l’audience</value>
   </data>
   <data name="Lbl_2_2_1_1" xml:space="preserve">
-    <value>FR-Number of convictions/acquittals given at hearing</value>
+    <value>Nombre de verdicts de culpabilité/acquittements rendus à l’audience</value>
   </data>
   <data name="Lbl_2_2_1_2" xml:space="preserve">
-    <value>FR-Number of sentences given at hearing</value>
+    <value>Nombre de jugements sur la peine rendues à l’audience</value>
   </data>
   <data name="Lbl_2_2_1_3" xml:space="preserve">
-    <value>FR-Number of other criminal appeals given at hearing</value>
+    <value>Nombre de jugements sur d’autres appels criminels rendus à l’audience</value>
   </data>
   <data name="Lbl_2_2_2" xml:space="preserve">
-    <value>FR-Number of criminal case decisions filed after reserving</value>
+    <value>Nombre de décisions criminelles déposées après la mise en délibéré</value>
   </data>
   <data name="Lbl_2_2_2_1" xml:space="preserve">
-    <value>FR-Number of convictions/acquittals filed after reserving</value>
+    <value>Nombre de verdicts de culpabilité/acquittements déposés après la mise en délibéré</value>
   </data>
   <data name="Lbl_2_2_2_2" xml:space="preserve">
-    <value>FR-Number of sentences filed after reserving</value>
+    <value>Nombre de jugements sur la peine déposés après la mise en délibéré </value>
   </data>
   <data name="Lbl_2_2_2_3" xml:space="preserve">
-    <value>FR-Number of other criminal appeals filed after reserving</value>
+    <value>Nombre d’autres jugements sur des appels criminels déposés après la mise en délibéré.</value>
   </data>
   <data name="Lbl_2_2_Title" xml:space="preserve">
-    <value>FR-Criminal case decisions</value>
+    <value>Affaires criminelles décidées</value>
   </data>
   <data name="Lbl_2_Heading" xml:space="preserve">
-    <value>FR-Civil and criminal case decisions</value>
+    <value>Affaires civiles et criminelles décidées</value>
   </data>
   <data name="Lbl_3_1" xml:space="preserve">
-    <value>FR-Number of Bench decisions/judgments</value>
+    <value>Nombre de décisions/jugements rendus sur le banc</value>
   </data>
   <data name="Lbl_3_2" xml:space="preserve">
     <value>FR-Number of reserved decisions/judgments</value>
   </data>
   <data name="Lbl_3_Heading" xml:space="preserve">
-    <value>FR-Number of decisions/judgments (total)</value>
+    <value>Nombre de décisions/jugements (total)</value>
   </data>
   <data name="Lbl_4_1" xml:space="preserve">
     <value>FR-This time interval refers to the interval from the time a notice of appeal is filed (either as of right or after a motion for leave to appeal has been granted) to the time the appellant’s factum is filed and the appeal is ready to be set down for a hearing. The appeal is considered ready to be set down for a hearing on the date at which the appellant has done everything required by the rules of court to prepare an appeal for hearing (typically the serving and filing of the appeal book, transcripts and appellant’s factum). On references, the date the Order in Council or of the originating document is received will replace the notice of appeal date.
 </value>
   </data>
   <data name="Lbl_4_1_1" xml:space="preserve">
-    <value>FR-Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took less than 6 months</value>
+    <value>Nombre d’affaires civiles où l’intervalle de temps entre l’avis d’appel et le dépôt du mémoire de l’appelant est de moins de 6 mois</value>
   </data>
   <data name="Lbl_4_1_2" xml:space="preserve">
-    <value>FR-Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took between 6 to 12 months</value>
+    <value>Nombre d’affaires civiles où l’intervalle de temps entre l’avis d’appel et le dépôt du mémoire de l’appelant est entre 6 et 12 mois</value>
   </data>
   <data name="Lbl_4_1_3" xml:space="preserve">
-    <value>FR-Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took more than 12 months</value>
+    <value>Nombre d’affaires civiles où l’intervalle de temps entre l’avis d’appel et le dépôt du mémoire de l’appelant est de plus de 12 mois </value>
   </data>
   <data name="Lbl_4_1_4" xml:space="preserve">
-    <value>FR-Number of criminal appeals where the interval from the notice of appeal to filing of the appellant’s factum took less than 6 months for:</value>
+    <value>Nombre d’affaires criminelles où l’intervalle de temps entre l’avis d’appel 	et le dépôt du mémoire de l’appelant est de moins de 6 mois pour :</value>
   </data>
   <data name="Lbl_4_1_4_1" xml:space="preserve">
-    <value>FR-Conviction/acquittal</value>
+    <value>Culpabilité/acquittement</value>
   </data>
   <data name="Lbl_4_1_CriminalCases" xml:space="preserve">
-    <value>FR-Criminal cases</value>
+    <value>Affaires criminelles </value>
   </data>
   <data name="Lbl_4_Heading" xml:space="preserve">
-    <value>FR-Civil and criminal case time intervals</value>
+    <value>Intervalles de temps pour les affaires civiles et criminelles</value>
   </data>
   <data name="Lbl_CivilCases" xml:space="preserve">
-    <value>FR-Civil cases</value>
+    <value>Affaires civiles</value>
   </data>
   <data name="Lbl_CriminalCases" xml:space="preserve">
-    <value>FR-Criminal cases</value>
+    <value>Affaires criminelles </value>
   </data>
   <data name="Lbl_From" xml:space="preserve">
-    <value>FR-From</value>
+    <value>De</value>
   </data>
   <data name="Lbl_NameOfCourt" xml:space="preserve">
-    <value>FR-Name of Court</value>
+    <value>Nom de la cour</value>
   </data>
   <data name="Lbl_ReportingYear" xml:space="preserve">
-    <value>FR-Reporting Year</value>
+    <value>Année de référence</value>
   </data>
   <data name="Lbl_To" xml:space="preserve">
-    <value>FR-To</value>
+    <value>À</value>
   </data>
   <data name="Modal_DraftFound_Title" xml:space="preserve">
-    <value>FR-Draft Found</value>
+    <value>Projet trouvé</value>
   </data>
   <data name="Modal_Validation_Title" xml:space="preserve">
-    <value>FR-Please complete the following sections:</value>
+    <value>Veuillez remplir les sections suivantes :</value>
   </data>
   <data name="Msg_1_1_1" xml:space="preserve">
     <value>FR-Number of civil appeals, cross-appeals, references, and JRs filed but still pending as of December 31&lt;sup&gt;st&lt;/sup&gt; of the previous year</value>
   </data>
   <data name="Msg_1_1_2" xml:space="preserve">
-    <value>FR-Number of civil appeals, cross-appeals, references, and JRs filed</value>
+    <value>Nombre d’appels, d’appels incidents et de renvois civils et de contrôles judiciaires déposés </value>
   </data>
   <data name="Msg_1_1_3" xml:space="preserve">
-    <value>FR-Number of civil appeals, cross-appeals, references, and JRs disposed of by judgment</value>
+    <value>Nombre d’appels, d’appels incidents et de renvois civils et de contrôles judiciaires ayant fait l’objet d’un jugement ou d’une décision mettant fin 	au dossier </value>
   </data>
   <data name="Msg_1_1_4" xml:space="preserve">
-    <value>FR-Number of civil appeals, cross-appeals, references, and JRs disposed of by the registrar, the case management officer or authorized personnel or by operation of the rules</value>
+    <value>Nombre d’appels, d’appels incidents et de renvois civils et de contrôles judiciaires fermés par le greffier, le responsable de la gestion des dossiers ou le personnel autorisé ou par application des règles</value>
   </data>
   <data name="Msg_1_1_5" xml:space="preserve">
-    <value>FR-Number of civil appeals, cross-appeals, references, and JRs settled by judicial mediation</value>
+    <value>Nombre d’appels, d’appels incidents et de renvois civils et de contrôles judiciaires réglés à la suite d’une médiation judiciaire</value>
   </data>
   <data name="Msg_1_1_6" xml:space="preserve">
-    <value>FR-Number of civil appeals, cross-appeals, references, and JRs disposed of by other means</value>
+    <value>Nombre d’appels, d’appels incidents et de renvois civils et de contrôles judiciaires terminés d’autres façons</value>
   </data>
   <data name="Msg_1_1_7" xml:space="preserve">
-    <value>FR-Total number of civil appeals, cross-appeals, references, and JRs</value>
+    <value>Nombre total d’appels, d’appels incidents et de renvois civils et de contrôles judiciaires</value>
   </data>
   <data name="Msg_1_2_1" xml:space="preserve">
     <value>FR-Number of civil appeals, cross-appeals, references, and JRs filed of criminal appeals, cross-appeals, references and bail reviews filed but still pending as of December 31&lt;sup&gt;st&lt;/sup&gt; of the previous year</value>
   </data>
   <data name="Msg_1_2_2" xml:space="preserve">
-    <value>FR-Number of civil appeals, cross-appeals, references, and JRs filed of criminal appeals, cross-appeals, references and bail reviews filed</value>
+    <value>Nombre d’appels, d’appels incidents et de renvois criminels et de révisions de cautionnement déposés</value>
   </data>
   <data name="Msg_1_2_3" xml:space="preserve">
-    <value>FR-Number of criminal appeals, cross-appeals, references and bail reviews disposed of by judgment</value>
+    <value>Nombre d’appels, d’appels incidents et de renvois criminels et de révisions de cautionnement ayant fait l’objet d’un jugement ou d’une décision mettant fin au dossier </value>
   </data>
   <data name="Msg_1_2_4" xml:space="preserve">
-    <value>FR-Number of criminal appeals, cross-appeals, references and bail reviews disposed of by other means</value>
+    <value>Nombre d’appels, d’appels incidents et renvois criminels et de révisions de cautionnement terminés d’autres façons</value>
   </data>
   <data name="Msg_1_2_5" xml:space="preserve">
-    <value>FR-Total number of criminal appeals, cross-appeals, references and bail reviews</value>
+    <value>Nombre total  d’appels, d’appels incidents et de renvois criminels et de révisions de cautionnement</value>
   </data>
   <data name="Msg_2_1_1" xml:space="preserve">
     <value>FR-Number of civil appeals, cross-appeals, references, and JRs filed of civil case decisions given at hearing</value>
   </data>
   <data name="Msg_2_1_2" xml:space="preserve">
-    <value>EN-Number of civil case reserved decisions</value>
+    <value>Nombre de décisions d’affaires civiles déposées après délibéré</value>
   </data>
   <data name="Msg_2_2_1" xml:space="preserve">
-    <value>FR-Number of criminal case decisions given at hearing</value>
+    <value>Nombre de décisions d’affaires criminelles rendues à l’audience</value>
   </data>
   <data name="Msg_2_2_1_1" xml:space="preserve">
-    <value>FR-Number of convictions/acquittals given at hearing</value>
+    <value>Nombre de verdicts de culpabilité/acquittements rendus à l’audience</value>
   </data>
   <data name="Msg_2_2_1_2" xml:space="preserve">
-    <value>FR-Number of sentences given at hearing</value>
+    <value>Nombre de jugements sur la peine rendues à l’audience</value>
   </data>
   <data name="Msg_2_2_1_3" xml:space="preserve">
-    <value>FR-Number of other criminal appeals given at hearing</value>
+    <value>Nombre de jugements sur d’autres appels criminels rendus à l’audience</value>
   </data>
   <data name="Msg_2_2_2" xml:space="preserve">
-    <value>FR-Number of criminal case decisions filed after reserving</value>
+    <value>Nombre de décisions criminelles déposées après la mise en délibéré</value>
   </data>
   <data name="Msg_2_2_2_1" xml:space="preserve">
-    <value>FR-Number of convictions/acquittals filed after reserving</value>
+    <value>Nombre de verdicts de culpabilité/acquittements déposés après la mise en délibéré</value>
   </data>
   <data name="Msg_2_2_2_2" xml:space="preserve">
-    <value>FR-Number of sentences filed after reserving</value>
+    <value>Nombre de jugements sur la peine déposés après la mise en délibéré</value>
   </data>
   <data name="Msg_2_2_2_3" xml:space="preserve">
-    <value>FR-Number of other criminal appeals filed after reserving</value>
+    <value>Nombre d’autres jugements sur des appels criminels déposés après la mise en délibéré.</value>
   </data>
   <data name="Msg_3_1" xml:space="preserve">
-    <value>FR-Number of Bench decisions/judgments</value>
+    <value>Nombre de décisions/jugements rendus sur le banc</value>
   </data>
   <data name="Msg_3_2" xml:space="preserve">
     <value>FR-Number of reserved decisions/judgments</value>
   </data>
   <data name="Msg_4_1_1" xml:space="preserve">
-    <value>FR-Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took less than 6 months</value>
+    <value>Nombre d’affaires civiles où l’intervalle de temps entre l’avis d’appel et le dépôt du mémoire de l’appelant est de moins de 6 mois</value>
   </data>
   <data name="Msg_4_1_2" xml:space="preserve">
-    <value>FR-Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took between 6 to 12 months</value>
+    <value>Nombre d’affaires civiles où l’intervalle de temps entre l’avis d’appel et le dépôt du mémoire de l’appelant est entre 6 et 12 mois</value>
   </data>
   <data name="Msg_4_1_3" xml:space="preserve">
-    <value>FR-Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took more than 12 months</value>
+    <value>Nombre d’affaires civiles où l’intervalle de temps entre l’avis d’appel et le dépôt du mémoire de l’appelant est de plus de 12 mois</value>
   </data>
   <data name="Msg_4_1_4_1" xml:space="preserve">
-    <value>FR-Conviction/acquittal</value>
+    <value>Culpabilité/acquittement</value>
   </data>
   <data name="Msg_FromDate" xml:space="preserve">
     <value>FR-Please enter From Date</value>
@@ -494,83 +494,82 @@
     <value>Examen</value>
   </data>
   <data name="Sec4_41_Heading" xml:space="preserve">
-    <value>FR-Notice of appeal to filing of the appellant’s factum</value>
+    <value>Entre l’avis d’appel et le dépôt du mémoire de l’appelant</value>
   </data>
   <data name="Sec4_41_Tip" xml:space="preserve">
     <value>FR-This time interval refers to the interval from the time a notice of appeal is filed (either as of right or after a motion for leave to appeal has been granted) to the time the appellant’s factum is filed and the appeal is ready to be set down for a hearing. The appeal is considered ready to be set down for a hearing on the date at which the appellant has done everything required by the rules of court to prepare an appeal for hearing (typically the serving and filing of the appeal book, transcripts and appellant’s factum). On references, the date the Order in Council or of the originating document is received will replace the notice of appeal date.</value>
   </data>
   <data name="Sec4_42_Heading" xml:space="preserve">
-    <value>FR-Filing of the appellant’s factum to hearing</value>
+    <value>Entre le dépôt du mémoire de l’appelant et l’audience</value>
   </data>
   <data name="Sec4_42_Tip" xml:space="preserve">
     <value>FR-This time interval refers to the time required from the time the appellant’s factum is filed to the time the case is heard. The time the appeal is heard is the actual day of the appeal hearing and &lt;u&gt;not&lt;/u&gt; the scheduled date of hearing.&lt;br /&gt;&lt;br /&gt;Where the hearing consumes more than one day, use the first day of hearing for calculating the filing of the appellant’s factum to hearing time interval and the hearing to final decision time interval.</value>
   </data>
   <data name="Sec4_43_Heading" xml:space="preserve">
-    <value>FR-Hearing to final decision</value>
+    <value>Entre l’audience et la décision finale</value>
   </data>
   <data name="Sec4_43_Tip" xml:space="preserve">
     <value>FR-This time interval refers to the time between the day of the hearing (actual day of hearing and &lt;u&gt;not&lt;/u&gt; the scheduled date of hearing) and the date of the decision/judgment.</value>
   </data>
   <data name="Sec4_411_Label" xml:space="preserve">
-    <value>FR-Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took less than 6 months</value>
+    <value>Nombre d’affaires civiles où l’intervalle de temps entre l’avis d’appel et le dépôt du mémoire de l’appelant est de moins de 6 mois </value>
   </data>
   <data name="Sec4_412_Label" xml:space="preserve">
-    <value>FR-Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took between 6 to 12 months</value>
+    <value>Nombre d’affaires civiles où l’intervalle de temps entre l’avis d’appel et le dépôt du mémoire de l’appelant est entre 6 et 12 mois </value>
   </data>
   <data name="Sec4_413_Label" xml:space="preserve">
-    <value>FR-Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took more than 12 months
-</value>
+    <value>Nombre d’affaires civiles où l’intervalle de temps entre l’avis d’appel et le dépôt du mémoire de l’appelant est de plus de 12 mois</value>
   </data>
   <data name="Sec4_414_Label" xml:space="preserve">
-    <value>FR-Number of criminal appeals where the interval from the notice of appeal to filing of the appellant’s factum took less than 6 months for:</value>
+    <value>Nombre d’affaires criminelles où l’intervalle de temps entre l’avis d’appel 	et le dépôt du mémoire de l’appelant est de moins de 6 mois pour : </value>
   </data>
   <data name="Sec4_415_Label" xml:space="preserve">
-    <value>FR-Number of criminal appeals where the interval from the notice of appeal to filing of the appellant’s factum took between 6 to 12 months for:</value>
+    <value>Nombre d’affaires criminelles où l’intervalle de temps entre l’avis d’appel 	et le dépôt du mémoire de l’appelant est entre 6 et 12 mois pour :</value>
   </data>
   <data name="Sec4_416_Label" xml:space="preserve">
-    <value>FR-Number of criminal appeals where the interval from the notice of appeal to filing of the appellant’s factum took more than 12 months for:</value>
+    <value>Nombre d’affaires criminelles où l’intervalle de temps entre l’avis d’appel 	et le dépôt du mémoire de l’appelant est de plus de 12 mois pour : </value>
   </data>
   <data name="Sec4_421_Label" xml:space="preserve">
-    <value>FR-Number of civil appeals where the time interval from filing of the appellant’s factum to the hearing took less than 6 months</value>
+    <value>Nombre d’affaires civiles où l’intervalle de temps entre le dépôt du mémoire de l’appelant et l’audience est de moins de 6 mois</value>
   </data>
   <data name="Sec4_422_Label" xml:space="preserve">
-    <value>FR-Number of civil appeals where the time interval from filing of the appellant’s factum to the hearing took between 6 to 12 months</value>
+    <value>Nombre d’affaires civiles où l’intervalle de temps entre le dépôt du mémoire de l’appelant et l’audience est entre 6 et 12 mois</value>
   </data>
   <data name="Sec4_423_Label" xml:space="preserve">
-    <value>FR-Number of civil appeals where the time interval from filing of the appellant’s factum to the hearing took more than 12 months</value>
+    <value>Nombre d’affaires civiles où l’intervalle de temps entre le dépôt du mémoire de l’appelant et l’audience est de plus de 12 mois </value>
   </data>
   <data name="Sec4_424_Label" xml:space="preserve">
-    <value>FR-Number of criminal appeals where the time interval from filing of the appellant’s factum to the hearing took less than 6 months for:</value>
+    <value>Nombre d’affaires criminelles où l’intervalle de temps entre le dépôt du mémoire de l’appelant et l’audience est de moins de 6 mois pour : </value>
   </data>
   <data name="Sec4_425_Label" xml:space="preserve">
-    <value>FR-Number of criminal appeals where the time interval from filing of the appellant’s factum to the hearing took between 6 to 12 months for:</value>
+    <value>Nombre d’affaires criminelles où l’intervalle de temps entre le dépôt du mémoire de l’appelant et l’audience est entre 6 et 12 mois pour : </value>
   </data>
   <data name="Sec4_426_Label" xml:space="preserve">
-    <value>FR-Number of criminal appeals where the time interval from filing of the appellant’s factum to the hearing took more than 12 months for:</value>
+    <value>Nombre d’affaires criminelles où l’intervalle de temps entre le dépôt du mémoire de l’appelant et l’audience a pris plus de 12 mois pour : </value>
   </data>
   <data name="Sec4_431_Label" xml:space="preserve">
-    <value>FR-Number of civil appeals where the time interval from the hearing to the final decision took less than 6 months</value>
+    <value>Nombre d’affaires civiles où l’intervalle de temps entre l’audience et la décision finale est de moins de 6 mois </value>
   </data>
   <data name="Sec4_432_Label" xml:space="preserve">
-    <value>FR-Number of civil appeals where the time interval from the hearing to the final decision took between 6 to 12 months</value>
+    <value>Nombre d’affaires civiles où l’intervalle de temps entre l’audience et la décision finale est entre 6 et 12 mois </value>
   </data>
   <data name="Sec4_433_Label" xml:space="preserve">
-    <value>FR-Number of civil appeals where the time interval from the hearing to the final decision took more than 12 months</value>
+    <value>Nombre d’affaires civiles où l’intervalle de temps entre l’audience et la décision finale est de plus de 12 mois s</value>
   </data>
   <data name="Sec4_434_Label" xml:space="preserve">
-    <value>FR-Number of criminal appeals where the time interval from the hearing to the final decision took less than 6 months for:</value>
+    <value>Nombre d’affaires criminelles où l’intervalle de temps entre l’audience et la décision finale est de moins de 6 mois pour :</value>
   </data>
   <data name="Sec4_435_Label" xml:space="preserve">
-    <value>FR-Number of criminal appeals where the time interval from the hearing to the final decision took between 6 to 12 months for:</value>
+    <value>Nombre d’affaires criminelles où l’intervalle de temps entre l’audience et la décision finale est entre 6 et 12 mois pour :</value>
   </data>
   <data name="Sec4_436_Label" xml:space="preserve">
-    <value>FR-Number of criminal appeals where the time interval from the hearing to the final decision took more than 12 months for:</value>
+    <value>Nombre d’affaires criminelles où l’intervalle de temps entre l’audience et 	la décision finale est de plus de 12 mois pour :  </value>
   </data>
   <data name="Sec4_CivilCases" xml:space="preserve">
-    <value>FR-Civil cases</value>
+    <value>Affaires civiles</value>
   </data>
   <data name="Sec4_Comments_Label" xml:space="preserve">
-    <value>FR-Comments</value>
+    <value>Commentaires</value>
   </data>
   <data name="Sec4_CriminalCases" xml:space="preserve">
     <value>FR-Criminal cases</value>
@@ -579,136 +578,136 @@
     <value>FR-For criminal cases, the time intervals and time periods should be reported for each of the following three categories of criminal appeals: 1) Conviction/acquittal, 2) Sentence, and 3) Other.</value>
   </data>
   <data name="Sec4_Heading" xml:space="preserve">
-    <value>FR-Civil and criminal case time intervals</value>
+    <value>Intervalles de temps pour les affaires civiles et criminelles</value>
   </data>
   <data name="Sec4_Heading_Tip" xml:space="preserve">
     <value>FR-Civil and criminal case statistics are to be collected for three time intervals: 1) Notice of appeal to filing of the appellant’s factum (or the equivalent document), 2) Filing of appellant’s factum to hearing, and 3) Hearing to final decision.&lt;br /&gt;&lt;br /&gt;For each of these time intervals, information will be gathered for three time periods: 1) Less than 6 months, 2) Between 6 to 12 months, and 3) More than 12 months.</value>
   </data>
   <data name="Sec5_51_Label_Short" xml:space="preserve">
-    <value>FR-In-person hearings</value>
+    <value>Audiences en personne</value>
   </data>
   <data name="Sec5_51_Tip" xml:space="preserve">
     <value>FR-Number of hearings held where all parties were present in court for the hearing. This description also includes situations where the counsel attended the hearing in-person but where the individual being represented attended remotely/virtually.</value>
   </data>
   <data name="Sec5_52_Label_Short" xml:space="preserve">
-    <value>FR-Virtual hearings</value>
+    <value>Audiences virtuelles</value>
   </data>
   <data name="Sec5_52_Tip" xml:space="preserve">
     <value>FR-Number of hearings held where all parties attended the hearing remotely/virtually.</value>
   </data>
   <data name="Sec5_53_Label_Short" xml:space="preserve">
-    <value>FR-Hybrid hearings</value>
+    <value>Audiences hybrides</value>
   </data>
   <data name="Sec5_53_Tip" xml:space="preserve">
     <value>FR-Number of hearings held where one or more parties were present in court for the hearing and one or more parties attended the hearing remotely/virtually.</value>
   </data>
   <data name="Sec5_54_Label" xml:space="preserve">
-    <value>FR-Total number of hearings held in-person, virtually and in hybrid mode</value>
+    <value>Nombre total d’audiences en personne, virtuelles et hybrides</value>
   </data>
   <data name="Sec5_54_Tip" xml:space="preserve">
     <value>FR-This field is auto-populated using fields 5.1 to 5.3</value>
   </data>
   <data name="Sec5_Heading" xml:space="preserve">
-    <value>FR-Number of in-person, virtual and hybrid hearings</value>
+    <value>Nombre d’audiences en personne, virtuelles et hybrides</value>
   </data>
   <data name="Sec5_Heading_Tip" xml:space="preserve">
     <value>FR-The number of hearings in this section are to be collected for &lt;u&gt;hearings by a panel of judges only&lt;/u&gt;.)</value>
   </data>
   <data name="Sec6_61_Label" xml:space="preserve">
-    <value>FR-Motions and applications heard by a single judge</value>
+    <value>Requêtes et demandes entendues par un juge seul</value>
   </data>
   <data name="Sec6_62_Label" xml:space="preserve">
-    <value>FR-Motions and applications heard by a panel of three or more judges</value>
+    <value>Requêtes et demandes entendues par une formation de trois juges ou plus</value>
   </data>
   <data name="Sec6_63_Label" xml:space="preserve">
-    <value>FR-Motions and applications heard by a registrar</value>
+    <value>Requêtes et demandes entendues par le greffier</value>
   </data>
   <data name="Sec6_611_Label" xml:space="preserve">
-    <value>FR-Number of motions and applications filed before a single judge</value>
+    <value>Nombre de requêtes et demandes déposées devant un juge seul</value>
   </data>
   <data name="Sec6_612_Label" xml:space="preserve">
-    <value>FR-Number of motions and applications disposed of by order of a single judge</value>
+    <value>Nombre de requêtes et demandes décidées par un juge seul</value>
   </data>
   <data name="Sec6_613_Label" xml:space="preserve">
-    <value>FR-Number of motions and applications before a single judge that were abandoned, withdrawn or dismissed administratively</value>
+    <value>Nombre de requêtes et demandes devant un juge seul qui ont été abandonnées, retirées, ou rejetées pour des motifs administratifs</value>
   </data>
   <data name="Sec6_613_Tip" xml:space="preserve">
     <value>FR-Examples of dismissed administratively include dismissed for want of prosecution, non-compliance with rules, applications where leave is denied, etc.</value>
   </data>
   <data name="Sec6_621_Label" xml:space="preserve">
-    <value>FR-Number of motions and applications filed before a panel of three or more judges</value>
+    <value>Nombre de requêtes et demandes déposées devant une formation de trois juges ou plus</value>
   </data>
   <data name="Sec6_622_Label" xml:space="preserve">
-    <value>FR-Number of motions and applications disposed of by order of a panel of three or more judges</value>
+    <value>Nombre de requêtes et demandes décidées par une formation de trois juges ou plus </value>
   </data>
   <data name="Sec6_623_Label" xml:space="preserve">
-    <value>FR-Number of panel motions and applications that were abandoned, withdrawn or dismissed administratively</value>
+    <value>Nombre de requêtes et demandes qui ont été abandonnées, retirées ou rejetées pour des motifs administratifs</value>
   </data>
   <data name="Sec6_623_Tip" xml:space="preserve">
     <value>FR-Examples of dismissed administratively include dismissed for want of prosecution, non-compliance with rules, applications where leave is denied, etc.</value>
   </data>
   <data name="Sec6_631_Label" xml:space="preserve">
-    <value>FR-Number of motions and applications filed before a registrar</value>
+    <value>Nombre de requêtes et demandes déposées devant le greffier </value>
   </data>
   <data name="Sec6_632_Label" xml:space="preserve">
-    <value>FR-Number of motions and applications disposed of by order of a registrar</value>
+    <value>Nombre de requêtes et demandes décidées par le greffier </value>
   </data>
   <data name="Sec6_633_Label" xml:space="preserve">
-    <value>FR-Number of panel motions and applications that were abandoned, withdrawn or dismissed by a registrar or for administrative reasons</value>
+    <value>Nombre de requêtes et demandes qui ont été abandonnées, retirées ou 	rejetées par le greffier ou pour des motifs administratifs </value>
   </data>
   <data name="Sec6_633_Tip" xml:space="preserve">
     <value>FR-Examples of administrative reasons include dismissed for want of prosecution, non-compliance with rules, applications where leave is denied, etc.</value>
   </data>
   <data name="Sec6_Heading" xml:space="preserve">
-    <value>FR-Number of motions and applications</value>
+    <value>Nombre de requêtes et demandes</value>
   </data>
   <data name="Sec6_Heading_Tip" xml:space="preserve">
     <value>FR-The number of motions and applications heard in chambers (single judge), in court (panels of three or more judges) and by registrars. In some jurisdictions, motions and applications can be heard by a master or other judicial officers.&lt;br /&gt;&lt;br /&gt;Motions and applications heard at the time of the hearing of an appeal are &lt;u&gt;not&lt;/u&gt; to be included. Motions and applications in writing should be included. Consent orders should also be included if judicial time is required to deal with them.&lt;br /&gt;&lt;br /&gt;With respect to applications for leave to appeal or leave to extend the time to appeal:&lt;br /&gt;&lt;br /&gt;1. Where leave is granted, these applications should be counted as both a motion heard and as an appeal filed and subsequently disposed of by judgment or by other means. Where the practice of the court is to open a new (second) file, count the motion heard only on the first file and the appeal filed on the second file, or&lt;br /&gt;&lt;br /&gt;2. Where only the motion or application is heard and leave is denied, these applications should be counted only as a motion heard by a motion judge or judges. However, when the entire appeal is heard and leave is denied by an appellate panel, then these applications should be counted only as an appeal disposed of by other means.</value>
   </data>
   <data name="Sec7_711_Label" xml:space="preserve">
-    <value>FR-Number of appeals involving an SRL at the hearing of the appeal on the merits</value>
+    <value>Nombre d’affaires impliquant des personnes qui se représentent seules à l’audience au fond</value>
   </data>
   <data name="Sec7_712_Label" xml:space="preserve">
-    <value>FR-Number of motions and applications involving an SRL at the hearing of a motion or an application (by a single judge, a panel or the registrar)</value>
+    <value>Nombre de requêtes et demandes impliquant des personnes qui se représentent seules à l’audience pour une requête ou une motion (par un juge seul, par une formation de juges ou le greffier)</value>
   </data>
   <data name="Sec7_712_Tip" xml:space="preserve">
     <value>FR-Motions and applications heard at the time of the hearing of an appeal are not to be included.</value>
   </data>
   <data name="Sec7_713_Label" xml:space="preserve">
-    <value>FR-Total number of appeals, motions and applications involving an SRL at the hearing</value>
+    <value>Nombre total d’affaires, requêtes et demandes impliquant des personnes qui se représentent seules à l’audience</value>
   </data>
   <data name="Sec7_713_Tip" xml:space="preserve">
     <value>FR-This field is auto-populated using fields 7.1.1 and 7.1.2.</value>
   </data>
   <data name="Sec7_Heading" xml:space="preserve">
-    <value>FR-Self-Represented Litigants (SRLs)</value>
+    <value>Personnes qui se représentent seules</value>
   </data>
   <data name="Sec7_Heading_Tip" xml:space="preserve">
     <value>FR-An SRL is a person who appears in court without representation from a lawyer. The litigant is not to be considered an SRL if the court has appointed counsel to assist the litigant.&lt;br /&gt;&lt;br /&gt;The number of appeals and the number of motions involving an SRL is &lt;u&gt;only&lt;/u&gt; collected at the hearing. For example, if a person is represented by a lawyer at the filing stage of an appeal or motion but is not represented at the hearing, the appeal or motion is considered an SRL case.</value>
   </data>
   <data name="Sec8_81_Label" xml:space="preserve">
-    <value>FR-Less than 6 months</value>
+    <value>Moins de 6 mois</value>
   </data>
   <data name="Sec8_82_Label" xml:space="preserve">
-    <value>FR-Between 6 to 12 months</value>
+    <value>Entre 6 et 12 mois</value>
   </data>
   <data name="Sec8_83_Label" xml:space="preserve">
-    <value>FR-More than 12 months</value>
+    <value>Plus de 12 mois</value>
   </data>
   <data name="Sec8_Decision_Tip" xml:space="preserve">
     <value>FR-Number of decisions related to civil and criminal cases that are rendered based on the selected time period from the hearing date. The cases involving the &lt;i&gt;Youth Criminal Justice Act&lt;/i&gt; are not to be tracked separately. They should be counted as any other decision rendered.</value>
   </data>
   <data name="Sec8_Heading" xml:space="preserve">
-    <value>FR-Number of decisions/judgments rendered</value>
+    <value>Nombre de décisions/jugements rendus </value>
   </data>
   <data name="Sec9_91_Label" xml:space="preserve">
-    <value>FR-By a 3-member panel hearings</value>
+    <value>Par une formation de 3 juges</value>
   </data>
   <data name="Sec9_92_Label" xml:space="preserve">
-    <value>FR-By a 5-member panel hearings</value>
+    <value>Par une formation de 5 juges</value>
   </data>
   <data name="Sec9_Heading" xml:space="preserve">
-    <value>FR-Number of appeals that are heard</value>
+    <value>Nombre d’appels qui sont entendus</value>
   </data>
   <data name="Sec10_101_Label" xml:space="preserve">
     <value>FR-Number of appeals, cross-appeals, references, bail reviews and JRs that have not been finalized as of December 31&lt;sup&gt;st&lt;/sup&gt;</value>
@@ -723,19 +722,19 @@
     <value>FR-Explanation text for pending inventory measured as of December 31st, including heard and unheard matters.</value>
   </data>
   <data name="Sec11_111_DataMsg" xml:space="preserve">
-    <value>FR-Regular judges</value>
+    <value>Juges réguliers</value>
   </data>
   <data name="Sec11_111_Label" xml:space="preserve">
-    <value>FR-Regular judges</value>
+    <value>Juges réguliers</value>
   </data>
   <data name="Sec11_111_Tooltip" xml:space="preserve">
     <value>FR-Number of judges of the court as of December 31st that have not elected a supernumerary status and have regular judicial duties.</value>
   </data>
   <data name="Sec11_112_DataMsg" xml:space="preserve">
-    <value>FR-Supernumerary judges</value>
+    <value>Juges surnuméraires</value>
   </data>
   <data name="Sec11_112_Label" xml:space="preserve">
-    <value>FR-Supernumerary judges</value>
+    <value>Juges surnuméraires</value>
   </data>
   <data name="Sec11_112_Tooltip" xml:space="preserve">
     <value>FR-Number of judges of the court as of December 31st that hold office as supernumerary judges as per section 28 of the Judges Act.</value>
@@ -744,7 +743,7 @@
     <value>FR-Number of judges (as of December 31&lt;sup&gt;st&lt;/sup&gt;)</value>
   </data>
   <data name="Sec12_Heading" xml:space="preserve">
-    <value>FR-Additional comments</value>
+    <value>Commentaires additionnels</value>
   </data>
   <data name="Sec12_Heading_Tooltip" xml:space="preserve">
     <value>FR-Comments should only be used on an exceptional basis. A true anomaly is a situation that considerably deviates from what is considered normal or expected.</value>
@@ -756,34 +755,34 @@
     <value>Sélectionner</value>
   </data>
   <data name="Sidebar_BasicInfo" xml:space="preserve">
-    <value>FR-Name of Court and Reporting Year</value>
+    <value>Nom du tribunal et année de référence</value>
   </data>
   <data name="Sidebar_Tab1" xml:space="preserve">
-    <value>FR-Tab 1 - Number of appeals, cross-appeals, references, bail reviews, and judicial reviews (JRs)</value>
+    <value>Tab 1 - Nombre d’appels, d’appels incidents, de renvois, de révisions de cautionnement et de contrôles judiciaires </value>
   </data>
   <data name="Sidebar_Tab2" xml:space="preserve">
-    <value>FR-Tab 2 - Civil and criminal case decisions</value>
+    <value>Tab 2 - Affaires civiles et criminelles décidées</value>
   </data>
   <data name="Sidebar_Tab3" xml:space="preserve">
-    <value>FR-Tab 3 - Number of decisions/judgments (total)</value>
+    <value>Tab 3 - Nombre de décisions/jugements (total) </value>
   </data>
   <data name="Sidebar_Tab4" xml:space="preserve">
-    <value>FR-Tab 4 - Civil and criminal case time intervals</value>
+    <value>Tab 4 - Intervalles de temps pour les affaires civiles et criminelles</value>
   </data>
   <data name="Sidebar_Tab5" xml:space="preserve">
-    <value>FR-Tab 5 - Number of in-person, virtual and hybrid hearings</value>
+    <value>Tab 5 - Nombre d’audiences en personne, virtuelles et hybrides</value>
   </data>
   <data name="Sidebar_Tab6" xml:space="preserve">
-    <value>FR-Tab 6 - Number of motions and applications</value>
+    <value>Tab 6 - Nombre de requêtes et demandes</value>
   </data>
   <data name="Sidebar_Tab7" xml:space="preserve">
-    <value>FR-Tab 7 - Self-Represented Litigants (SRLs)</value>
+    <value>Tab 7 - Personnes qui se représentent seules</value>
   </data>
   <data name="Sidebar_Tab8" xml:space="preserve">
-    <value>FR-Tab 8 - Number of decisions/judgments rendered</value>
+    <value>Tab 8 - Nombre de décisions/jugements rendus</value>
   </data>
   <data name="Sidebar_Tab9" xml:space="preserve">
-    <value>FR-Tab 9 - Number of appeals that are heard</value>
+    <value>Tab 9 - Nombre d’appels qui sont entendus</value>
   </data>
   <data name="Sidebar_Tab10" xml:space="preserve">
     <value>FR-Tab 10 - Total number of appeals, cross-appeals, references, bail reviews and JRs pending on December 31st</value>
@@ -792,7 +791,7 @@
     <value>FR-Tab 11 - Number of judges (as of December 31st)</value>
   </data>
   <data name="Sidebar_Tab12" xml:space="preserve">
-    <value>FR-Tab 12 - Additional comments and review statistics</value>
+    <value>Tab 12 - Commentaires additionnels et Révision des statistiques</value>
   </data>
   <data name="Submit" xml:space="preserve">
     <value>Soumettre</value>
@@ -801,7 +800,7 @@
     <value>FR-Success</value>
   </data>
   <data name="Tip_1_1_5" xml:space="preserve">
-    <value>EN-To be included in this category, the settlement must have taken place at the time of judicial mediation and can include settlement, abandonment or withdrawal of the appeal at that time.</value>
+    <value>To be included in this category, the settlement must have taken place at the time of judicial mediation and can include settlement, abandonment or withdrawal of the appeal at that time.</value>
   </data>
   <data name="Tip_1_1_6" xml:space="preserve">
     <value>FR-These appeals, cross-appeals, references, and JRs are to include those that are abandoned, withdrawn, dismissed for want of prosecution, non-compliance with rules, dispositions by a single judge, etc. The civil appeals, cross-appeals, references, and JRs abandoned or withdrawn by the registrar take into account the certificates of lapse of appeal issued by the registry.</value>
@@ -862,18 +861,18 @@
     <value>FR-For criminal cases, the time intervals and time periods should be reported for each of the following three categories of criminal appeals: 1) Conviction/acquittal, 2) Sentence, and 3) Other.</value>
   </data>
   <data name="Tip_FromDate" xml:space="preserve">
-    <value>FR-The start date of the period covered by the submission.</value>
+    <value>Date de début de la période couverte par la soumission. </value>
   </data>
   <data name="Tip_ReportingYear" xml:space="preserve">
     <value>FR-The reporting year for the data.</value>
   </data>
   <data name="Tip_ToDate" xml:space="preserve">
-    <value>FR-The end date of the period covered by the submission.</value>
+    <value>Date de fin de la période couverte par la soumission</value>
   </data>
   <data name="ToDateRequired" xml:space="preserve">
     <value>To Date is required</value>
   </data>
   <data name="Validation_FormIncomplete" xml:space="preserve">
-    <value>FR-Form Incomplete: All fields are mandatory. Please enter 0 to indicate that no data is being submitted.</value>
+    <value>Formulaire incomplet : Tous les champs sont obligatoires. Veuillez entrer 0 pour indiquer qu’aucune donnée n’est soumise. </value>
   </data>
 </root>
