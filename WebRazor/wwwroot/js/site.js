@@ -32,7 +32,7 @@ function populateCourts() {
         "appId": "CAACS",
         "region": "NEWRECORD",
         "table": "CCM_MASTER",
-        "fieldName": "COURT"
+        "field": "COURT"
 
     }
 
