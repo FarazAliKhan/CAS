@@ -2210,7 +2210,7 @@ function saveDraft() {
             //}, 10000);
         },
         error: function (err) {
-            console.error(err);
+            //console.error(err);
             $('#draftSavedFailed').modal('show');
             //alert("The draft save failed");
         }
@@ -2288,7 +2288,7 @@ function retrieveDraft() {
             //}, 10000);
         },
         error: function (err) {
-            console.error(err);
+            //console.error(err);
             $('#draftRetrievalFailed').modal('show');
             //alert("The draft save failed");
         }
@@ -2826,7 +2826,7 @@ function deleteFoundModal() {
             $('#draftFound').modal('hide');
         },
         error: function (err) {
-            console.error(err);
+            //console.error(err);
             $('#draftFound').modal('hide');
             $('#draftDeleteFailed').modal('show');
             //alert("The draft save failed");

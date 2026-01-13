@@ -95,7 +95,13 @@
 
         <select hidden style="pointer-events: none;" class="form-control" id="intREPORTINGYEARResult" asp-for="@Model.intREPORTINGYEAR" onchange="javascript:enableDisableResult();" style="width:100%;" required="required"
                 data-num="" data-msg="Please enter Reporting Year">
-            <option value="">Select Court</option>
+            <option value="">Select Year</option>
+            <option value="2025">2025</option>
+            <option value="2026">2026</option>
+            <option value="2027">2027</option>
+            <option value="2028">2028</option>
+            <option value="2029">2029</option>
+            <option value="2030">2030</option>
         </select>
 
         <input hidden class="form-control" id="dtFROM" name="dtFROM" type="date" asp-for="@Model.dtFROM" onchange="javascript:enableDisableResult();" autocomplete="dtFROM" data-rule-minlength="1" style="width:100%" required="required"
@@ -459,5 +465,5 @@
         }
     }
 
-    setYears("intREPORTINGYEARResult", @Model.intREPORTINGYEAR);
+    //setYears("intREPORTINGYEARResult", @Model.intREPORTINGYEAR);
 </script>

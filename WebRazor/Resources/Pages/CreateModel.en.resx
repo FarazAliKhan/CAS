@@ -208,7 +208,7 @@
     <value>A draft record found. Do you want to load it?</value>
   </data>
   <data name="Alert_RecordRetrievalFailed" xml:space="preserve">
-    <value>The record retrieval failed.</value>
+    <value>The record retrieval failed, please check your network connection.</value>
   </data>
   <data name="Alert_RecordDeleteFailed" xml:space="preserve">
     <value>The record delete failed.</value>
