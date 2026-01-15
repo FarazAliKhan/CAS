@@ -199,7 +199,7 @@
     <value>The draft saved successfully.</value>
   </data>
   <data name="Alert_DraftSavedFailed" xml:space="preserve">
-    <value>The draft save failed.</value>
+    <value>Record already saved.</value>
   </data>
   <data name="Modal_DraftFound_Title" xml:space="preserve">
     <value>Draft Found</value>
@@ -208,7 +208,7 @@
     <value>A draft record found. Do you want to load it?</value>
   </data>
   <data name="Alert_RecordRetrievalFailed" xml:space="preserve">
-    <value>The record retrieval failed, please check your network connection.</value>
+    <value>Please check VPN Connection.</value>
   </data>
   <data name="Alert_RecordDeleteFailed" xml:space="preserve">
     <value>The record delete failed.</value>
