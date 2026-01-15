@@ -201,7 +201,7 @@ Les appels incidents doivent uniquement être compilés s’ils sont inscrits au
     <value>Le brouillon a été enregistré avec succès.</value>
   </data>
   <data name="Alert_DraftSavedFailed" xml:space="preserve">
-    <value>La sauvegarde provisoire a échoué.</value>
+    <value>Enregistrement déjà sauvegardé.</value>
   </data>
   <data name="Modal_DraftFound_Title" xml:space="preserve">
     <value>Projet trouvé</value>
@@ -210,7 +210,7 @@ Les appels incidents doivent uniquement être compilés s’ils sont inscrits au
     <value>Un brouillon de document a été trouvé. Voulez-vous le charger ?</value>
   </data>
   <data name="Alert_RecordRetrievalFailed" xml:space="preserve">
-    <value>La récupération du dossier a échoué.</value>
+    <value>Veuillez vérifier votre connexion VPN.</value>
   </data>
   <data name="Alert_RecordDeleteFailed" xml:space="preserve">
     <value>La suppression du dossier a échoué</value>
