@@ -58,6 +58,8 @@
     <input type="hidden" id="emailAddress" asp-for="@Model.emailAddress">
     <input type="hidden" id="modelUuid" asp-for="@Model.modelUuid" value="00000000-0000-0000-0000-000000000000">
     <input type="hidden" id="nodeUuid" asp-for="@Model.nodeUuid" value="00000000-0000-0000-0000-000000000000">
+    <input type="hidden" id="currentCulture" value="@CultureInfo.CurrentCulture.ToString()">
+    <input type="hidden" id="courtCode" value="@Model.txtCOURT">
     @* Section 01 *@
     <div id="detailsBasicInfo" class="section-color fs-6">
         <div class="align-left fs-12">
@@ -100,21 +102,6 @@
 
                             @* OPTIONS LEFT AS-IS *@
                             <option value="">Select Court</option>
-                            <option value="ABCA">Alberta Court of Appeal</option>
-                            <option value="BCCA">Court of Appeal for British Columbia</option>
-                            <option value="CMAC">Court Martial Appeal Court of Canada (CMACC)</option>
-                            <option value="FCA">Federal Court of Appeal (FCA) </option>
-                            <option value="MBCA">Manitoba Court of Appeal</option>
-                            <option value="NBCA">Court of Appeal of New Brunswick</option>
-                            <option value="NLCA">Court of Appeal of Newfoundland and Labrador</option>
-                            <option value="NSCA">Court of Appeal for the Northwest Territories</option>
-                            <option value="NUCA">Nova Scotia Court of Appeal</option>
-                            <option value="NWTCA">Court of Appeal of Nunavut</option>
-                            <option value="ONCA">Court of Appeal for Ontario</option>
-                            <option value="PECA">Court of Appeal of Prince Edward Island</option>
-                            <option value="QCCA">Cour d’appel du Québec</option>
-                            <option value="SKCA">Court of Appeal for Saskatchewan</option>
-                            <option value="YKCA">Court of Appeal of Yukon</option>
                         </select>
                     </div>
                 </div>

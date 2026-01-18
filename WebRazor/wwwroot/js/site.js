@@ -19,7 +19,9 @@ populateCourts();
 const params = new URLSearchParams(window.location.search);
 const needRetrieve = params.get("retrieveRecord");
 
-function populateCourts() {
+function populateCourts(courtName) {
+    const culture = document.getElementById("currentCulture").value;
+    let court = document.getElementById("courtCode").value;
     let select = document.getElementById("txtCOURT");
     if (select == null) {
         select = document.getElementById("txtCOURTReview");
@@ -47,8 +49,16 @@ function populateCourts() {
             response.forEach(item => {
                 const option = document.createElement("option");
                 option.value = item.code;
-                option.text = item.desc_en_CA;
+                if (culture.startsWith("fr")) {
+                    option.text = item.desc_fr_CA;
+                }
+                else {
+                    option.text = item.desc_en_CA;
+                }   
                 select.add(option); // or select.appendChild(option)
+                if (option.value == court) {
+                    option.selected = true;
+                }
             });
         },
         error: function (err) {
