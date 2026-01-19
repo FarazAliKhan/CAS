@@ -6,6 +6,8 @@
 @model CreateModel
 @{
     ViewData["Title"] = "CAAS";
+
+
     if (HttpContext.Request.Query["culture"] == "fr")
     {
         CultureInfo.CurrentCulture = new CultureInfo("fr");
