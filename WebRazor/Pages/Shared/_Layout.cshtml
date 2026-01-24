@@ -1,4 +1,5 @@
 ﻿@using Microsoft.AspNetCore.Components
+@using System.Security.Claims
 @using WebRazor.Models
 @using Microsoft.AspNetCore.Http.Extensions;
 @using Microsoft.AspNetCore.Mvc.Localization
@@ -41,13 +42,23 @@
             CurrentPageEn = url + "&culture=en";
             CurrentPageFr = url + "&culture=fr";
         }
+
+        var userEmail = User.FindFirstValue(ClaimTypes.Name)
+        ?? User.FindFirstValue("name")    // OpenID Connect / some providers
+        ?? User.FindFirstValue(ClaimTypes.NameIdentifier)
+        ?? User.FindFirstValue("subject");    // JWT subject
+        var emailAddress = "";
+        if (!string.IsNullOrEmpty(userEmail))
+        {
+            emailAddress = userEmail + "@cjc-ccm.ca";
+        }
     }
 
     <!-- HEADER -->
     <header class="py-3 px-4 d-flex justify-content-between align-items-center">
         <h4 class="text-white m-0"><a href="/Index" class="custom-link">CAAS</a></h4>
         <span class="align-items-end text-white">
-            Welcome Faraz@gmail.com
+            Welcome @emailAddress
             <a href="/Index" class="btn btn-danger ms-auto">@Localizer["SignOut"]</a>
         </span>
     </header>
@@ -56,7 +67,7 @@
     <main class="dashboard-container">
         <div class="container">
             <div class="text-center bg-white georgia-font">
-                
+
                 <p class="text-muted">@RenderBody()</p>
             </div>
         </div>
