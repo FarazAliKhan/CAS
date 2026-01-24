@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using SmartBreadcrumbs.Attributes;
+using System.Security.Claims;
 using WebRazor.Models;
 
 namespace WebRazor.Pages
@@ -11,6 +12,20 @@ namespace WebRazor.Pages
         [BindProperty]
         public string? emailAddress { get; set; }
 
+        public void OnGet()
+        {
+            // var userEmail = User.FindFirstValue(;
+
+            var userEmail = User.FindFirstValue(ClaimTypes.Name)
+                         ?? User.FindFirstValue("name")    // OpenID Connect / some providers
+                         ?? User.FindFirstValue(ClaimTypes.NameIdentifier)
+                         ?? User.FindFirstValue("subject");    // JWT subject
+
+            if (!string.IsNullOrEmpty(userEmail))
+            {
+                emailAddress = userEmail + "@cjc-ccm.ca";
+            }
+        }
         public IActionResult OnPost()
         {
             TempData["emailAddress"] = emailAddress;
