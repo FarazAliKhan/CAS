@@ -604,7 +604,7 @@ function enableDisableReview() {
     ) {
         if (!(retrieveExisting())) {
             $("#btnReview").removeAttr('disabled');
-            $("#tabsbar").removeAttr('hidden');
+            //$("#tabsbar").removeAttr('hidden');
         }
     }
     else {
@@ -2982,7 +2982,7 @@ function loadFoundRecord() {
         }
     });
 
-    enableDisableReview();
+    //enableDisableReview();
 
     $('#draftFound').modal('hide');
 }
@@ -3044,10 +3044,16 @@ function retrieveExisting() {
             /*const guid = data[response][childKey][0].guid;*/
             if (Object.keys(response)[0] != null) {
                 $('#alreadyExists').modal('show');
+                $("#tabsbar").attr('hidden', true);
+                $("#btnSave").attr('hidden', true);
+                $("#btnNext").attr('hidden', true);
                 return true;
             }
             else {
                 retrieveDraft();
+                $("#tabsbar").removeAttr('hidden');
+                $("#btnSave").removeAttr('hidden');
+                $("#btnNext").removeAttr('hidden');
             }
             return false;
         },
