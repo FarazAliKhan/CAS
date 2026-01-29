@@ -111,9 +111,9 @@ if ($("#intREPORTINGYEARResult") != null) {
 $(".breadcrumb").children().first().remove();
 enableDisableReview();
 
-if (needRetrieve != null) {
-    retrieveDraft();
-}
+//if (needRetrieve != null) {
+//    retrieveDraft();
+//}
 
 function submitForm(sectionId) {
     var form = document.getElementById("reviewForm");
@@ -602,8 +602,10 @@ function enableDisableReview() {
         && $("#dtFROM").val() != ""
         && $("#dtTO").val() != ""
     ) {
-        $("#btnReview").removeAttr('disabled');
-        $("#tabsbar").removeAttr('hidden');
+        if (!(retrieveExisting())) {
+            $("#btnReview").removeAttr('disabled');
+            $("#tabsbar").removeAttr('hidden');
+        }
     }
     else {
         $("#btnReview").attr('disabled', true);
@@ -2239,6 +2241,8 @@ function hideFailedModal() {
 var retrievedRecord = {};
 
 function retrieveDraft() {
+    var courtName = document.getElementById("txtCOURT").value;
+    var reportingYear = document.getElementById("intREPORTINGYEAR").value;
     var retrieveObj = {
         "appId": "CAACS",
         "region": "NEWRECORD",
@@ -2260,10 +2264,17 @@ function retrieveDraft() {
                 ]
             },
             {
-                "fieldName": "EXTERNALUSERID",
+                "fieldName": "COURT",
                 "operator": "EQUAL",
                 "values": [
-                    $("#emailAddress").val()
+                    courtName
+                ]
+            },
+            {
+                "fieldName": "REPORTINGYEAR",
+                "operator": "EQUAL",
+                "values": [
+                    reportingYear
                 ]
             }
         ]
@@ -2974,4 +2985,80 @@ function loadFoundRecord() {
     enableDisableReview();
 
     $('#draftFound').modal('hide');
+}
+
+function retrieveExisting() {
+    var courtName = document.getElementById("txtCOURT").value;
+    var reportingYear = document.getElementById("intREPORTINGYEAR").value;
+    var retrieveObj = {
+        "appId": "CAACS",
+        "region": "NEWRECORD",
+        "summaryPage": {
+            "pageSize": 1,
+            "pageNumber": 1,
+            "offset": 0,
+            "pageCount": 0,
+            "sortFieldName": "DOCKET",
+            "sortDirection": "DESC",
+            "showRestrictedItems": true
+        },
+        "searchParams": [
+            {
+                "fieldName": "STATUS",
+                "operator": "EQUAL",
+                "values": [
+                    "COMPLETED"
+                ]
+            },
+            {
+                "fieldName": "COURT",
+                "operator": "EQUAL",
+                "values": [
+                    courtName
+                ]
+            },
+            {
+                "fieldName": "REPORTINGYEAR",
+                "operator": "EQUAL",
+                "values": [
+                    reportingYear
+                ]
+            }
+        ]
+    }
+
+    $.ajax({
+        url: $("#apiUrlRetrieve").val(),
+        type: 'POST',
+        data: JSON.stringify(retrieveObj), // convert to JSON
+        contentType: 'application/json; charset=utf-8',
+        dataType: 'json',
+        success: function (response) {
+            console.log(response);
+            //retrievedRecord = response;
+            //var data = retrievedRecord;
+
+            //const rootKey = Object.keys(data)[0];
+            //const childKey = Object.keys(data[rootKey])[0];
+
+            /*const guid = data[response][childKey][0].guid;*/
+            if (Object.keys(response)[0] != null) {
+                $('#alreadyExists').modal('show');
+                return true;
+            }
+            else {
+                retrieveDraft();
+            }
+            return false;
+        },
+        error: function (err) {
+            //console.error(err);
+            $('#draftRetrievalFailed').modal('show');
+            //alert("The draft save failed");
+        }
+    });
+}
+
+function hideAlreadyExists() {
+    $('#alreadyExists').modal('hide');
 }
