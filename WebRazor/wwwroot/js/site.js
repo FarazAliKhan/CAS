@@ -320,60 +320,72 @@ function showDetails(detailsId) {
         case "detailsBasicInfo":
             $("#btnPrevious").attr("hidden", true);
             $("#btnNext").removeAttr("hidden");
+            $("#btnSave").attr("hidden", true);
             break;
         case "details1":
             $("#btnPrevious").removeAttr("hidden");
             $("#btnNext").removeAttr("hidden");
+            $("#btnSave").removeAttr("hidden");
             makeSection1Required();
             break;
         case "details2":
             $("#btnPrevious").removeAttr("hidden");
             $("#btnNext").removeAttr("hidden");
+            $("#btnSave").removeAttr("hidden");
             makeSection2Required();
             break;
         case "details3":
             $("#btnPrevious").removeAttr("hidden");
             $("#btnNext").removeAttr("hidden");
+            $("#btnSave").removeAttr("hidden");
             makeSection3Required();
             break;
         case "details4":
             $("#btnPrevious").removeAttr("hidden");
             $("#btnNext").removeAttr("hidden");
+            $("#btnSave").removeAttr("hidden");
             makeSection4Required();
             break;
         case "details5":
             $("#btnPrevious").removeAttr("hidden");
             $("#btnNext").removeAttr("hidden");
+            $("#btnSave").removeAttr("hidden");
             makeSection5Required();
             break;
         case "details6":
             $("#btnPrevious").removeAttr("hidden");
             $("#btnNext").removeAttr("hidden");
+            $("#btnSave").removeAttr("hidden");
             makeSection6Required();
             break;
         case "details7":
             $("#btnPrevious").removeAttr("hidden");
             $("#btnNext").removeAttr("hidden");
+            $("#btnSave").removeAttr("hidden");
             makeSection7Required();
             break;
         case "details8":
             $("#btnPrevious").removeAttr("hidden");
             $("#btnNext").removeAttr("hidden");
+            $("#btnSave").removeAttr("hidden");
             makeSection8Required();
             break;
         case "details9":
             $("#btnPrevious").removeAttr("hidden");
             $("#btnNext").removeAttr("hidden");
+            $("#btnSave").removeAttr("hidden");
             makeSection9Required();
             break;
         case "details10":
             $("#btnPrevious").removeAttr("hidden");
             $("#btnNext").removeAttr("hidden");
+            $("#btnSave").removeAttr("hidden");
             makeSection10Required();
             break;
         case "details11":
             $("#btnPrevious").removeAttr("hidden");
             $("#btnNext").removeAttr("hidden");
+            $("#btnSave").removeAttr("hidden");
             makeSection11Required();
             break;
         case "details12":
@@ -381,6 +393,7 @@ function showDetails(detailsId) {
             $("#revMessage").removeAttr("hidden", true);
             $("#btnPrevious").removeAttr("hidden");
             $("#btnNext").attr("hidden", true);
+            $("#btnSave").attr("hidden", true);
             break;
     }
 }
