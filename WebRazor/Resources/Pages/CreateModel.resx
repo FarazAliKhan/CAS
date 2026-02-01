@@ -840,4 +840,8 @@
   <data name="btnReviewStats" xml:space="preserve">
     <value>Review Stats</value>
   </data>
+  <data name="AlertRecordAlreadyCompleted" xml:space="preserve">
+    <value>This form has already been submitted for the selected Court and Year. For more information or changes, please contact the CJC department.
+</value>
+  </data>
 </root>

@@ -142,6 +142,16 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to This form has already been submitted for the selected Court and Year. For more information or changes, please contact the CJC department.
+        ///.
+        /// </summary>
+        public static string AlertRecordAlreadyCompleted {
+            get {
+                return ResourceManager.GetString("AlertRecordAlreadyCompleted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Close.
         /// </summary>
         public static string Aria_Close {

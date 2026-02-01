@@ -204,8 +204,12 @@
   <data name="Modal_DraftFound_Title" xml:space="preserve">
     <value>Draft Found</value>
   </data>
-  <data name="Alert_DraftFound_AskLoad" xml:space="preserve">
-    <value>A draft record found. Do you want to load it?</value>
+	<data name="Alert_DraftFound_AskLoad" xml:space="preserve">
+    <value>We found a draft for the selected Court and Reporting Year. Would you like to continue where you left off or discard it and start a new form?</value>
+  </data>
+  <data name="AlertRecordAlreadyCompleted" xml:space="preserve">
+    <value>This form has already been submitted for the selected Court and Year. For more information or changes, please contact the CJC department.
+</value>
   </data>
   <data name="Alert_RecordRetrievalFailed" xml:space="preserve">
     <value>Please check VPN Connection.</value>

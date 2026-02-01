@@ -134,7 +134,7 @@
     </div>
 </div>
 
-<div class="modal fade" id="draftRetrievalFailed" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal fade col-md-12" id="draftRetrievalFailed" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -145,7 +145,7 @@
             </div>
             <div id="failed-body" class="modal-body align-left">
                 <div class="alert alert-danger align-left">
-                    <i class="fa-solid fa-circle-failed"></i> @localizer["Alert_RecordRetrievalFailed"]
+                   <span class="align-left"> @localizer["Alert_RecordRetrievalFailed"]</span>
                 </div>
             </div>
             <div class="modal-footer">
@@ -157,6 +157,31 @@
     </div>
 </div>
 
+
+
+<div class="modal fade" id="draftRetrievalFailed" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Added modal-xl and modal-dialog-centered; you can replace modal-xl with modal-lg or use modal-custom -->
+    <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">@localizer["Failed"]</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="@localizer["Aria_Close"]" onclick="javascript:hideFailedRetrieval();">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div id="failed-body" class="modal-body align-left">
+                <div class="alert alert-danger align-left">
+                   <span class="align-left"> @localizer["Alert_RecordRetrievalFailed"]</span>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="javascript:hideFailedRetrieval();">
+                    @localizer["Close"]
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="modal fade" id="draftDeleteFailed" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -191,7 +216,7 @@
             </div>
             <div id="failed-body" class="modal-body align-left">
                 <div class="alert alert-danger align-left">
-                    <i class="fa-solid fa-circle-failed"></i> Record already exists
+                    <i class="fa-solid fa-circle-failed"></i> @localizer["AlertRecordAlreadyCompleted"]
                 </div>
             </div>
             <div class="modal-footer">

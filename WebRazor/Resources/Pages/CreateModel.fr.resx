@@ -846,4 +846,8 @@ Si l’audience dure plus d’une journée, utilisez le premier jour de l’audi
   <data name="btnReviewStats" xml:space="preserve">
     <value>Révision des statistiques </value>
   </data>
+  <data name="AlertRecordAlreadyCompleted" xml:space="preserve">
+    <value>Fr-This form has already been submitted for the selected Court and Year. For more information or changes, please contact the CJC department.
+</value>
+  </data>
 </root>
