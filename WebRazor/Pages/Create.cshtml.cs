@@ -1,4 +1,5 @@
 using BusinessLayer.DTOs;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Forms;
 using Microsoft.AspNetCore.Localization;
@@ -21,6 +22,7 @@ using WebRazor.Models;
 
 namespace WebRazor.Pages
 {
+    [Authorize]
     [Breadcrumb("ViewData.Create", FromPage = typeof(SelectModel))]
     public class CreateModel : PageModel
     {
