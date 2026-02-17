@@ -14,7 +14,7 @@ document.querySelectorAll('#sidebar .nav-link').forEach(link => {
         });
 });
 
-populateCourts();
+//populateCourts();
 
 const params = new URLSearchParams(window.location.search);
 const needRetrieve = params.get("retrieveRecord");

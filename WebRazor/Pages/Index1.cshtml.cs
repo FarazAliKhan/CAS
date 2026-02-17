@@ -24,7 +24,7 @@ namespace WebRazor.Pages
 {
     [Authorize]
     [Breadcrumb("ViewData.Create", FromPage = typeof(SelectModel))]
-    public class CreateModel : PageModel
+    public class IndexModel1 : PageModel
     {
         private readonly IConfiguration _configuration;
 
@@ -39,10 +39,6 @@ namespace WebRazor.Pages
         [BindProperty]
         [Required(ErrorMessageResourceType = typeof(Resources.Pages.CreateModel), ErrorMessageResourceName = "CourtRequired")]
         public string txtCOURT { get; set; }
-
-        
-        public List<CourtsModel> Courts { get; set; } = new List<CourtsModel>();
-
         [BindProperty]
         [Required(ErrorMessageResourceType = typeof(Resources.Pages.CreateModel), ErrorMessageResourceName = "FromDateRequired")]
         public DateTime? dtFROM { get; set; } = DateTime.Now;
@@ -95,7 +91,7 @@ namespace WebRazor.Pages
         public int? txtFIELD2_2_1_3 { get; set; }
         [BindProperty]
         public int? txtFIELD2_2_2 { get; set; }
-        
+
         [BindProperty]
         public int? txtFIELD2_2_2_1 { get; set; }
         [BindProperty]
@@ -274,7 +270,7 @@ namespace WebRazor.Pages
 
         [BindProperty]
         public string apiUrlPickCourt { get; set; }
-        
+
 
         public CreateModel(
                 IConfiguration configuration
@@ -294,43 +290,6 @@ namespace WebRazor.Pages
             {
                 emailAddress = (string)TempData["emailAddress"];
             }
-
-            var courts = new {
-                appId = "CAACS",
-                region = "NEWRECORD",
-                table = "CCM_MASTER",
-                field = "COURT"
-            };
-
-            var json = JsonConvert.SerializeObject(courts);
-
-            var apiEndpoint = _configuration.GetValue<string>("PickCourtURL1");
-
-            var content = new StringContent(json, UnicodeEncoding.UTF8, "application/json");
-
-            var httpClientHandler = new HttpClientHandler();
-            httpClientHandler.ServerCertificateCustomValidationCallback = (message, cert, chain, sslPolicyErrors) =>
-            {
-                return true;
-            };
-            HttpClient httpClient = new HttpClient(httpClientHandler) { BaseAddress = new Uri(apiEndpoint) };
-
-            using (httpClient)
-            {
-
-                using (HttpResponseMessage response = httpClient.PostAsync(apiEndpoint, content).Result)
-                {
-                    if (response.IsSuccessStatusCode)
-                    {
-                        string apiResponse = response.Content.ReadAsStringAsync().Result;
-                        Console.WriteLine(apiResponse);
-                        //resJson = apiResponse;
-                        Courts = JsonConvert.DeserializeObject<List<CourtsModel>>(apiResponse);
-                    }
- 
-                }
-            }
-
             //if (TempData["modelUuid"] != null)
             //{
             //    modelUuid = (string)TempData["modelUuid"];
@@ -341,7 +300,8 @@ namespace WebRazor.Pages
             //}
         }
 
-        public IActionResult OnPost() {
+        public IActionResult OnPost()
+        {
             //if (Upload != null) { 
             //    if(Upload.Length > maxFileSize)
             //    {
@@ -352,7 +312,7 @@ namespace WebRazor.Pages
             //}
 
             //if (!ModelState.IsValid)
-                //return Page();
+            //return Page();
 
             var createItem = new CASEntityCreate()
             {
@@ -444,7 +404,7 @@ namespace WebRazor.Pages
                 txtFIELD6_3_2 = txtFIELD6_3_2,
                 txtFIELD6_3_3 = txtFIELD6_3_3,
                 txtFIELD_6_Comments = txtFIELD_6_Comments,
-                
+
                 txtFIELD7_1_1 = txtFIELD7_1_1,
                 txtFIELD7_1_2 = txtFIELD7_1_2,
                 txtFIELD7_1_3 = txtFIELD7_1_3,
@@ -601,15 +561,15 @@ namespace WebRazor.Pages
                     return Page();
                 }
             }
-             
-            if(!String.IsNullOrEmpty(fromSelect))
+
+            if (!String.IsNullOrEmpty(fromSelect))
             {
                 return Page();
             }
             else
             {
                 return RedirectToPage("Review");
-            }              
+            }
         }
 
         public void OnGetLoad()
@@ -735,8 +695,9 @@ namespace WebRazor.Pages
             try
             {
                 IBrowserFile file = e.File;
-                if (file != null) { 
-                    if(file?.Size > maxFileSize)
+                if (file != null)
+                {
+                    if (file?.Size > maxFileSize)
                     {
 
                         return Page();
@@ -754,7 +715,7 @@ namespace WebRazor.Pages
         {
             if (!ModelState.IsValid)
                 return Page();
-            
+
             SetValuesInTempData();
 
             TempData["sectionId"] = "1";

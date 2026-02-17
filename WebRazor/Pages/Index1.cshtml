@@ -1,4 +1,4 @@
-﻿@page "Create"
+﻿@page "Index1"
 @using Microsoft.AspNetCore.Localization
 @using Microsoft.AspNetCore.Mvc.Localization
 @inject IStringLocalizer<CreateModel> localizer
@@ -145,7 +145,7 @@
             </div>
             <div id="failed-body" class="modal-body align-left">
                 <div class="alert alert-danger align-left">
-                   <span class="align-left"> @localizer["Alert_RecordRetrievalFailed"]</span>
+                    <span class="align-left"> @localizer["Alert_RecordRetrievalFailed"]</span>
                 </div>
             </div>
             <div class="modal-footer">
@@ -171,7 +171,7 @@
             </div>
             <div id="failed-body" class="modal-body align-left">
                 <div class="alert alert-danger align-left">
-                   <span class="align-left"> @localizer["Alert_RecordRetrievalFailed"]</span>
+                    <span class="align-left"> @localizer["Alert_RecordRetrievalFailed"]</span>
                 </div>
             </div>
             <div class="modal-footer">
@@ -366,7 +366,7 @@
                     } *@
             <h3 class="mb-3"><span class="text-center">@localizer["hdgCreateheading1"]<br />@localizer["hdgDataEntryForm"]</span></h3><br />
             <div>
-                <form method="post" id="createForm" >
+                <form method="post" id="createForm">
                     <div>
                         <div class="align-right">
                             <button id="btnPrevious"
@@ -442,7 +442,7 @@
                                             </div>
                                         </div>
 
-                                        @* <select class="form-control"
+                                        <select class="form-control"
                                                 id="txtCOURT"
                                                 asp-for="@Model.txtCOURT"
                                                 onchange="javascript:enableDisableReview();"
@@ -453,25 +453,8 @@
                                                 data-num=""
                                                 data-msg="@localizer["Msg_NameOfCourt"]">
 
-                                          
+                                            @* OPTIONS LEFT AS-IS *@
                                             <option value="">Select Court</option>
-                                        </select> *@
-
-                                        <select asp-for="@Model.txtCOURT" class="form-control">
-                                           
-                                            <option value="">Select Court</option>
-                                            @foreach(var court in Model.Courts)
-                                            {
-                                                @if (CultureInfo.CurrentCulture.ToString() == "fr"){
-                                                    <option value="@court.Code">@court.Desc_fr_CA</option>
-                                                }
-                                                else
-                                                {
-                                                    <option value="@court.Code">@court.Desc_en_CA</option>
-
-                                                }
-                                                    
-                                            }   
                                         </select>
                                     </div>
                                 </div>
