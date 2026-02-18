@@ -342,6 +342,43 @@ namespace WebRazor.Pages
         }
 
         public IActionResult OnPost() {
+
+            var courts = new
+            {
+                appId = "CAACS",
+                region = "NEWRECORD",
+                table = "CCM_MASTER",
+                field = "COURT"
+            };
+
+            var json = JsonConvert.SerializeObject(courts);
+
+            var apiEndpoint = _configuration.GetValue<string>("PickCourtURL1");
+
+            var content = new StringContent(json, UnicodeEncoding.UTF8, "application/json");
+
+            var httpClientHandler = new HttpClientHandler();
+            httpClientHandler.ServerCertificateCustomValidationCallback = (message, cert, chain, sslPolicyErrors) =>
+            {
+                return true;
+            };
+            HttpClient httpClient = new HttpClient(httpClientHandler) { BaseAddress = new Uri(apiEndpoint) };
+
+            using (httpClient)
+            {
+
+                using (HttpResponseMessage response = httpClient.PostAsync(apiEndpoint, content).Result)
+                {
+                    if (response.IsSuccessStatusCode)
+                    {
+                        string apiResponse = response.Content.ReadAsStringAsync().Result;
+                        Console.WriteLine(apiResponse);
+                        //resJson = apiResponse;
+                        Courts = JsonConvert.DeserializeObject<List<CourtsModel>>(apiResponse);
+                    }
+
+                }
+            }
             //if (Upload != null) { 
             //    if(Upload.Length > maxFileSize)
             //    {
@@ -352,7 +389,7 @@ namespace WebRazor.Pages
             //}
 
             //if (!ModelState.IsValid)
-                //return Page();
+            //return Page();
 
             var createItem = new CASEntityCreate()
             {
