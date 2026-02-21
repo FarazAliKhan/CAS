@@ -160,6 +160,7 @@ function submitForSave() {
     form.action = "/Create/Create?submitForSave=true";
     form.method = "post";
     form.submit();
+    $('#draftSavedSuccessfully').modal('show');
 }
 
 function submitStats() {

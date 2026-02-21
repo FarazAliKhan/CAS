@@ -9,15 +9,18 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Localization;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using SmartBreadcrumbs.Attributes;
 using System;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.IO;
+using System.Reflection.Metadata;
 using System.Runtime.Versioning;
 using System.Security.AccessControl;
 using System.Text;
 using WebRazor.Models;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 
 namespace WebRazor.Pages
@@ -40,7 +43,7 @@ namespace WebRazor.Pages
         [Required(ErrorMessageResourceType = typeof(Resources.Pages.CreateModel), ErrorMessageResourceName = "CourtRequired")]
         public string txtCOURT { get; set; }
 
-        
+
         public List<CourtsModel> Courts { get; set; } = new List<CourtsModel>();
 
         [BindProperty]
@@ -95,7 +98,7 @@ namespace WebRazor.Pages
         public int? txtFIELD2_2_1_3 { get; set; }
         [BindProperty]
         public int? txtFIELD2_2_2 { get; set; }
-        
+
         [BindProperty]
         public int? txtFIELD2_2_2_1 { get; set; }
         [BindProperty]
@@ -274,7 +277,7 @@ namespace WebRazor.Pages
 
         [BindProperty]
         public string apiUrlPickCourt { get; set; }
-        
+
 
         public CreateModel(
                 IConfiguration configuration
@@ -295,7 +298,8 @@ namespace WebRazor.Pages
                 emailAddress = (string)TempData["emailAddress"];
             }
 
-            var courts = new {
+            var courts = new
+            {
                 appId = "CAACS",
                 region = "NEWRECORD",
                 table = "CCM_MASTER",
@@ -327,7 +331,7 @@ namespace WebRazor.Pages
                         //resJson = apiResponse;
                         Courts = JsonConvert.DeserializeObject<List<CourtsModel>>(apiResponse);
                     }
- 
+
                 }
             }
 
@@ -341,7 +345,8 @@ namespace WebRazor.Pages
             //}
         }
 
-        public IActionResult OnPost() {
+        public IActionResult OnPost()
+        {
 
             var courts = new
             {
@@ -481,7 +486,7 @@ namespace WebRazor.Pages
                 txtFIELD6_3_2 = txtFIELD6_3_2,
                 txtFIELD6_3_3 = txtFIELD6_3_3,
                 txtFIELD_6_Comments = txtFIELD_6_Comments,
-                
+
                 txtFIELD7_1_1 = txtFIELD7_1_1,
                 txtFIELD7_1_2 = txtFIELD7_1_2,
                 txtFIELD7_1_3 = txtFIELD7_1_3,
@@ -626,7 +631,7 @@ namespace WebRazor.Pages
             var fromSelect = Request.Query["fromSelect"].FirstOrDefault();
 
             var submitForSave = Request.Query["submitForSave"].FirstOrDefault();
-            if (!String.IsNullOrEmpty(submitForSave))
+            if (!string.IsNullOrEmpty(submitForSave))
             {
                 bool success = HandleSubmit(createItem);
                 if (success)
@@ -638,15 +643,15 @@ namespace WebRazor.Pages
                     return Page();
                 }
             }
-             
-            if(!String.IsNullOrEmpty(fromSelect))
+
+            if (!string.IsNullOrEmpty(fromSelect))
             {
                 return Page();
             }
             else
             {
                 return RedirectToPage("Review");
-            }              
+            }
         }
 
         public void OnGetLoad()
@@ -772,8 +777,9 @@ namespace WebRazor.Pages
             try
             {
                 IBrowserFile file = e.File;
-                if (file != null) { 
-                    if(file?.Size > maxFileSize)
+                if (file != null)
+                {
+                    if (file?.Size > maxFileSize)
                     {
 
                         return Page();
@@ -791,7 +797,7 @@ namespace WebRazor.Pages
         {
             if (!ModelState.IsValid)
                 return Page();
-            
+
             SetValuesInTempData();
 
             TempData["sectionId"] = "1";
@@ -1076,6 +1082,12 @@ namespace WebRazor.Pages
 
             fields.Add(new Field()
             {
+                name = "FIELD2_2_1",
+                value = createItem.txtFIELD2_2_1 != null ? createItem.txtFIELD2_2_1.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
                 name = "FIELD2_2_1_1",
                 value = createItem.txtFIELD2_2_1_1 != null ? createItem.txtFIELD2_2_1_1.Value.ToString() : "0",
             });
@@ -1090,6 +1102,12 @@ namespace WebRazor.Pages
             {
                 name = "FIELD2_2_1_3",
                 value = createItem.txtFIELD2_2_1_3 != null ? createItem.txtFIELD2_2_1_3.Value.ToString() : "0",
+            });
+
+            fields.Add(new Field()
+            {
+                name = "FIELD2_2_2",
+                value = createItem.txtFIELD2_2_2 != null ? createItem.txtFIELD2_2_2.Value.ToString() : "0",
             });
 
             fields.Add(new Field()
@@ -1558,9 +1576,6 @@ namespace WebRazor.Pages
             var json = JsonConvert.SerializeObject(casModel);
 
             Console.Write(json);
-            //reqJson = json;
-            //resJson = "";
-            var responseStatusCode = "200";
 
             var apiEndpoint = _configuration.GetValue<string>("SaveURL1");
 
@@ -1584,14 +1599,148 @@ namespace WebRazor.Pages
                         Console.WriteLine(apiResponse);
                         //resJson = apiResponse;
                         var casResponseModel = JsonConvert.DeserializeObject<CasModel>(apiResponse);
-                        modelUuid = casResponseModel.uuid;
-                        nodeUuid = casResponseModel.nodes[0].uuid;
+                        TempData["RootUuidReturned"] = casResponseModel.nodes[0].uuid;
                     }
-                    responseStatusCode = response.StatusCode.ToString();
+                    //responseStatusCode = response.StatusCode.ToString();
                 }
             }
 
             return true;
+        }
+
+        public IActionResult RetrieveData(string completedOrDraft) {
+            var courtName = txtCOURT;
+            var reportingYear = intREPORTINGYEAR;
+            var retrieveObj = new CasRetrievalModel();
+            retrieveObj.searchParams = new List<SearchParam>();
+            retrieveObj.searchParams.Add(
+                new SearchParam()
+                {
+                    fieldName = "STATUS",
+                    oper = "EQUAL",
+                    values = [
+                    completedOrDraft
+                ]
+                });
+            retrieveObj.searchParams.Add(
+                new SearchParam()
+                {
+                    fieldName = "COURT",
+                    oper = "EQUAL",
+                    values = [
+                    courtName
+                ]
+                });
+            retrieveObj.searchParams.Add(
+                 new SearchParam()
+                 {
+                     fieldName = "REPORTINGYEAR",
+                     oper = "EQUAL",
+                     values = [
+                        reportingYear
+                        ]
+                 });
+
+             var json = JsonConvert.SerializeObject(retrieveObj);
+
+            Console.Write(json);
+
+            var apiEndpoint = _configuration.GetValue<string>("RetrieveURL1");
+
+            var content = new StringContent(json, UnicodeEncoding.UTF8, "application/json");
+
+            var httpClientHandler = new HttpClientHandler();
+            httpClientHandler.ServerCertificateCustomValidationCallback = (message, cert, chain, sslPolicyErrors) =>
+            {
+                return true;
+            };
+            HttpClient httpClient = new HttpClient(httpClientHandler) { BaseAddress = new Uri(apiEndpoint) };
+
+            using (httpClient)
+            {
+
+                using (HttpResponseMessage response = httpClient.PostAsync(apiEndpoint, content).Result)
+                {
+                    if (response.IsSuccessStatusCode)
+                    {
+                        string apiResponse = response.Content.ReadAsStringAsync().Result;
+                        Console.WriteLine(apiResponse);
+                        //resJson = apiResponse;
+                        var casResponseModel = JsonConvert.DeserializeObject<CasModel>(apiResponse);
+                        TempData["RootUuidReturned"] = casResponseModel.nodes[0].uuid;
+                    }
+                    //responseStatusCode = response.StatusCode.ToString();
+                }
+            }
+
+            return Page();
+        }
+
+        public void loadFoundValue(CasModel createItem)
+        {
+
+        }
+
+        public void DeleteFoundValue() {
+            var casModel = new CasModel()
+            {
+                appId = "CAACS",
+                region = "NEWRECORD",
+                uuid = modelUuid,
+                nodes = new List<Node>()
+            };
+
+
+            var fields = new List<Field>();
+            fields.Add(new Field()
+            {
+                name = "EXTERNALUSERID",
+                value = emailAddress
+            });
+
+            fields.Add(
+                new Field() {
+                    name = "STATUS",
+                    value = "DELETED"
+                });
+
+            casModel.nodes.Add(new Node()
+            {
+                uuid = nodeUuid,
+                fields = fields
+            });
+
+            var json = JsonConvert.SerializeObject(casModel);
+
+            Console.Write(json);
+
+            var apiEndpoint = _configuration.GetValue<string>("SaveURL1");
+
+            var content = new StringContent(json, UnicodeEncoding.UTF8, "application/json");
+
+            var httpClientHandler = new HttpClientHandler();
+            httpClientHandler.ServerCertificateCustomValidationCallback = (message, cert, chain, sslPolicyErrors) =>
+            {
+                return true;
+            };
+            HttpClient httpClient = new HttpClient(httpClientHandler) { BaseAddress = new Uri(apiEndpoint) };
+
+            using (httpClient)
+            {
+
+                using (HttpResponseMessage response = httpClient.PostAsync(apiEndpoint, content).Result)
+                {
+                    if (response.IsSuccessStatusCode)
+                    {
+                        string apiResponse = response.Content.ReadAsStringAsync().Result;
+                        Console.WriteLine(apiResponse);
+                        //resJson = apiResponse;
+                        var casResponseModel = JsonConvert.DeserializeObject<CasModel>(apiResponse);
+                        TempData["RootUuidReturned"] = casResponseModel.nodes[0].uuid;
+                    }
+                    //responseStatusCode = response.StatusCode.ToString();
+                }
+            }
         }
     }
 }
