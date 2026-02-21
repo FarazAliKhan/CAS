@@ -640,7 +640,7 @@ namespace WebRazor.Pages
                     //TempData["reqJson"] = reqJson;
                     //TempData["resJson"] = resJson;
                     //TempData["responseStatusCode"] = responseStatusCode;
-                    return Page();
+                    return RedirectToPage("Create/Create?recordSaved=true");
                 }
             }
 
