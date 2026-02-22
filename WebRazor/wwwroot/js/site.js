@@ -28,7 +28,7 @@ function draftSuccessfullySaved() {
     if (recSaved != null) {
         $('#draftSavedSuccessfully').modal('show');
         const secId = params.get("sectionId");
-        focusOnForm(secId);
+        focusOnFormFromCreate(secId);
     }
 }   
 
@@ -182,6 +182,39 @@ function submitStats() {
     form.action = "/Create/Create?fromSelect=true&retrieveRecord=true";
     form.method = "post";
     form.submit();
+}
+
+function focusOnFormFromCreate(sectionId) {
+    //let sectField = document.getElementById("sectionId");
+    if (sectionId != null) {
+        let sectId = sectionId;
+        if (sectId != null && sectId != "") {
+            $('#sidebarMessage').attr("hidden", true);
+            setTabsBackgroundToInit();
+            hideDetails("detailsBasicInfo");
+            fieldFocus(sectId);
+            $("#btnReview").removeAttr("hidden");
+            $("#revMessage").removeAttr("hidden");
+            $("#tabsbar").removeAttr("hidden");
+            enableDisableReview();
+            $("#btnReview").removeAttr('disabled');
+            if (sectId != 12) {
+                $("#btnNext").removeAttr("hidden");
+            }
+            else {
+                $("#btnNext").attr("hidden", true);
+            }
+            if (sectId != 0) {
+                $("#btnPrevious").removeAttr("hidden");
+            }
+            else {
+                $("#btnPrevious").attr("hidden", true);
+            }
+        }
+        else {
+            $('#sidebarMessage').delay(5000).fadeOut(400);
+        }
+    }
 }
 
 function focusOnForm(sectionId) {
