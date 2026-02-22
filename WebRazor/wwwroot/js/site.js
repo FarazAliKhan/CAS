@@ -189,6 +189,7 @@ function focusOnForm(sectionId) {
     if (sectField != null) {
         let sectId = sectField.value;
         if (sectId != null && sectId != "") {
+            sectField.value = sectId;
             $('#sidebarMessage').attr("hidden", true);
             setTabsBackgroundToInit();
             hideDetails("detailsBasicInfo");
@@ -336,72 +337,84 @@ function showDetails(detailsId) {
             $("#btnPrevious").attr("hidden", true);
             $("#btnNext").removeAttr("hidden");
             $("#btnSave").attr("hidden", true);
+            sectField.value = "0";
             break;
         case "details1":
             $("#btnPrevious").removeAttr("hidden");
             $("#btnNext").removeAttr("hidden");
             $("#btnSave").removeAttr("hidden");
             makeSection1Required();
+            sectField.value = "1";
             break;
         case "details2":
             $("#btnPrevious").removeAttr("hidden");
             $("#btnNext").removeAttr("hidden");
             $("#btnSave").removeAttr("hidden");
             makeSection2Required();
+            sectField.value = "2";
             break;
         case "details3":
             $("#btnPrevious").removeAttr("hidden");
             $("#btnNext").removeAttr("hidden");
             $("#btnSave").removeAttr("hidden");
             makeSection3Required();
+            sectField.value = "3";
             break;
         case "details4":
             $("#btnPrevious").removeAttr("hidden");
             $("#btnNext").removeAttr("hidden");
             $("#btnSave").removeAttr("hidden");
             makeSection4Required();
+            sectField.value = "4";
             break;
         case "details5":
             $("#btnPrevious").removeAttr("hidden");
             $("#btnNext").removeAttr("hidden");
             $("#btnSave").removeAttr("hidden");
             makeSection5Required();
+            sectField.value = "5";
             break;
         case "details6":
             $("#btnPrevious").removeAttr("hidden");
             $("#btnNext").removeAttr("hidden");
             $("#btnSave").removeAttr("hidden");
             makeSection6Required();
+            sectField.value = "6";
             break;
         case "details7":
             $("#btnPrevious").removeAttr("hidden");
             $("#btnNext").removeAttr("hidden");
             $("#btnSave").removeAttr("hidden");
             makeSection7Required();
+            sectField.value = "7";
             break;
         case "details8":
             $("#btnPrevious").removeAttr("hidden");
             $("#btnNext").removeAttr("hidden");
             $("#btnSave").removeAttr("hidden");
             makeSection8Required();
+            sectField.value = "8";
             break;
         case "details9":
             $("#btnPrevious").removeAttr("hidden");
             $("#btnNext").removeAttr("hidden");
             $("#btnSave").removeAttr("hidden");
             makeSection9Required();
+            sectField.value = "9";
             break;
         case "details10":
             $("#btnPrevious").removeAttr("hidden");
             $("#btnNext").removeAttr("hidden");
             $("#btnSave").removeAttr("hidden");
             makeSection10Required();
+            sectField.value = "10";
             break;
         case "details11":
             $("#btnPrevious").removeAttr("hidden");
             $("#btnNext").removeAttr("hidden");
             $("#btnSave").removeAttr("hidden");
             makeSection11Required();
+            sectField.value = "11";
             break;
         case "details12":
             $("#btnReview").removeAttr("hidden");
@@ -409,6 +422,7 @@ function showDetails(detailsId) {
             $("#btnPrevious").removeAttr("hidden");
             $("#btnNext").attr("hidden", true);
             $("#btnSave").attr("hidden", true);
+            sectField.value = "12";
             break;
     }
 }
@@ -2292,82 +2306,82 @@ function hideFailedModal() {
 
 var retrievedRecord = {};
 
-function retrieveDraft() {
-    var courtName = document.getElementById("txtCOURT").value;
-    var reportingYear = document.getElementById("intREPORTINGYEAR").value;
-    var retrieveObj = {
-        "appId": "CAACS",
-        "region": "NEWRECORD",
-        "summaryPage": {
-            "pageSize": 1,
-            "pageNumber": 1,
-            "offset": 0,
-            "pageCount": 0,
-            "sortFieldName": "DOCKET",
-            "sortDirection": "DESC",
-            "showRestrictedItems": true
-        },
-        "searchParams": [
-            {
-                "fieldName": "STATUS",
-                "operator": "EQUAL",
-                "values": [
-                    "DRAFT"
-                ]
-            },
-            {
-                "fieldName": "COURT",
-                "operator": "EQUAL",
-                "values": [
-                    courtName
-                ]
-            },
-            {
-                "fieldName": "REPORTINGYEAR",
-                "operator": "EQUAL",
-                "values": [
-                    reportingYear
-                ]
-            }
-        ]
-    }
+//function retrieveDraft() {
+//    var courtName = document.getElementById("txtCOURT").value;
+//    var reportingYear = document.getElementById("intREPORTINGYEAR").value;
+//    var retrieveObj = {
+//        "appId": "CAACS",
+//        "region": "NEWRECORD",
+//        "summaryPage": {
+//            "pageSize": 1,
+//            "pageNumber": 1,
+//            "offset": 0,
+//            "pageCount": 0,
+//            "sortFieldName": "DOCKET",
+//            "sortDirection": "DESC",
+//            "showRestrictedItems": true
+//        },
+//        "searchParams": [
+//            {
+//                "fieldName": "STATUS",
+//                "operator": "EQUAL",
+//                "values": [
+//                    "DRAFT"
+//                ]
+//            },
+//            {
+//                "fieldName": "COURT",
+//                "operator": "EQUAL",
+//                "values": [
+//                    courtName
+//                ]
+//            },
+//            {
+//                "fieldName": "REPORTINGYEAR",
+//                "operator": "EQUAL",
+//                "values": [
+//                    reportingYear
+//                ]
+//            }
+//        ]
+//    }
 
-    $.ajax({
-        url: $("#apiUrlRetrieve").val(),
-        type: 'POST',
-        data: JSON.stringify(retrieveObj), // convert to JSON
-        contentType: 'application/json; charset=utf-8',
-        dataType: 'json',
-        success: function (response) {
-            console.log(response);
-            retrievedRecord = response;
-            var data = retrievedRecord;
+//    $.ajax({
+//        url: $("#apiUrlRetrieve").val(),
+//        type: 'POST',
+//        data: JSON.stringify(retrieveObj), // convert to JSON
+//        contentType: 'application/json; charset=utf-8',
+//        dataType: 'json',
+//        success: function (response) {
+//            console.log(response);
+//            retrievedRecord = response;
+//            var data = retrievedRecord;
 
-            const rootKey = Object.keys(data)[0];
-            const childKey = Object.keys(data[rootKey])[0];
+//            const rootKey = Object.keys(data)[0];
+//            const childKey = Object.keys(data[rootKey])[0];
 
-            const guid = data[rootKey][childKey][0].guid;
+//            const guid = data[rootKey][childKey][0].guid;
 
-            $("#modelUuid").val(guid);
-            $("#nodeUuid").val(guid);
-            //$("#emailAddress").val(response.nodes[0].fields[0].value);
-            //$('#savedSuccessfullyMessage').removeAttr("hidden");
-            //alert("The draft saved successfully.");
-            if (Object.keys(response)[0] != null) {
-                $('#draftFound').modal('show');
-            }
-            //setTimeout(function () {
-            //    document.getElementById("savedSuccessfullyMessage").style.display = "none";
-            //}, 10000);
-        },
-        error: function (err) {
-            //console.error(err);
-            $('#draftRetrievalFailed').modal('show');
-            //alert("The draft save failed");
-        }
-    });
+//            $("#modelUuid").val(guid);
+//            $("#nodeUuid").val(guid);
+//            //$("#emailAddress").val(response.nodes[0].fields[0].value);
+//            //$('#savedSuccessfullyMessage').removeAttr("hidden");
+//            //alert("The draft saved successfully.");
+//            if (Object.keys(response)[0] != null) {
+//                $('#draftFound').modal('show');
+//            }
+//            //setTimeout(function () {
+//            //    document.getElementById("savedSuccessfullyMessage").style.display = "none";
+//            //}, 10000);
+//        },
+//        error: function (err) {
+//            //console.error(err);
+//            $('#draftRetrievalFailed').modal('show');
+//            //alert("The draft save failed");
+//        }
+//    });
 
-}
+//}
 
 function hideFoundModal() {
     $('#draftFound').modal('hide');
@@ -2377,537 +2391,537 @@ function hideFailedRetrieval() {
     $('#draftRetrievalFailed').modal('hide');
 }
 
-function deleteFoundModal() {
-    var casModel =
-    {
-        appId: "CAACS",
-        region: "NEWRECORD",
-        uuid: $("#modelUuid").val(),
-        nodes: [{
-            uuid: $("#nodeUuid").val(),
-            fields: [
-                {
-                    name: "EXTERNALUSERID",
-                    value: $("#emailAddress").val(),
-                },
-                {
-                    name: "STATUS",
-                    value: "DELETED",
-                },
-
-                {
-                    name: "INPUT",
-                    value: new Date(),
-                },
-
-                {
-                    name: "COURT",
-                    value: $("#txtCOURT").val(),
-                },
-
-                {
-                    name: "REPORTINGYEAR",
-                    value: $("#intREPORTINGYEAR").val(),
-                },
-
-                {
-                    name: "DATEFROM",
-                    value: $("#dtFROM").val(),
-                },
-
-                {
-                    name: "DATETO",
-                    value: $("#dtTO").val(),
-                },
-                {
-                    name: "FIELD1_1_1",
-                    value: $("#txtFIELD1_1_1").val(),
-                },
-
-                {
-                    name: "FIELD1_1_2",
-                    value: $("#txtFIELD1_1_2").val(),
-                },
-                {
-                    name: "FIELD1_1_3",
-                    value: $("#txtFIELD1_1_3").val(),
-                },
-
-                {
-                    name: "FIELD1_1_4",
-                    value: $("#txtFIELD1_1_4").val(),
-                },
-
-                {
-                    name: "FIELD1_1_5",
-                    value: $("#txtFIELD1_1_5").val(),
-                },
-                {
-                    name: "FIELD1_1_6",
-                    value: $("#txtFIELD1_1_6").val(),
-                },
-                {
-                    name: "FIELD1_1_7",
-                    value: $("#txtFIELD1_1_7").val(),
-                },
-                {
-                    name: "COMMENTSECTION1",
-                    value: $("#txtFIELD_1_Comments").val(),
-                },
-                {
-                    name: "FIELD1_2_1",
-                    value: $("#txtFIELD1_2_1").val(),
-                },
-                {
-                    name: "FIELD1_2_2",
-                    value: $("#txtFIELD1_2_2").val(),
-                },
-                {
-                    name: "FIELD1_2_3",
-                    value: $("#txtFIELD1_2_3").val(),
-                },
-                {
-                    name: "FIELD1_2_4",
-                    value: $("#txtFIELD1_2_4").val(),
-                },
-
-                {
-                    name: "FIELD1_2_5",
-                    value: $("#txtFIELD1_2_5").val(),
-                },
-                {
-                    name: "FIELD2_1_1",
-                    value: $("#txtFIELD2_1_1").val(),
-                },
-                {
-                    name: "FIELD2_1_2",
-                    value: $("#txtFIELD2_1_2").val(),
-                },
-                {
-                    name: "FIELD2_2_1",
-                    value: $("#txtFIELD2_2_1").val(),
-                },
-
-                {
-                    name: "FIELD2_2_1_1",
-                    value: $("#txtFIELD2_2_1_1").val(),
-                },
-                {
-                    name: "FIELD2_2_1_2",
-                    value: $("#txtFIELD2_2_1_2").val(),
-                },
-                {
-                    name: "FIELD2_2_1_3",
-                    value: $("#txtFIELD2_2_1_3").val(),
-                },
-                {
-                    name: "FIELD2_2_2",
-                    value: $("#txtFIELD2_2_2").val(),
-                },
-                {
-                    name: "FIELD2_2_2_1",
-                    value: $("#txtFIELD2_2_2_1").val(),
-                },
-                {
-                    name: "FIELD2_2_2_2",
-                    value: $("#txtFIELD2_2_2_2").val(),
-                },
-                {
-                    name: "FIELD2_2_2_3",
-                    value: $("#txtFIELD2_2_2_3").val(),
-                },
-                {
-                    name: "COMMENTSECTION2",
-                    value: $("#txtFIELD_2_Comments").val(),
-                },
-                {
-                    name: "FIELD3_1",
-                    value: $("#txtFIELD3_1").val(),
-                },
-                {
-                    name: "FIELD3_2",
-                    value: $("#txtFIELD3_2").val(),
-                },
-                {
-                    name: "COMMENTSECTION3",
-                    value: $("#txtFIELD_3_Comments").val(),
-                },
-                {
-                    name: "FIELD4_1_1",
-                    value: $("#txtFIELD4_1_1").val(),
-                },
-                {
-                    name: "FIELD4_1_2",
-                    value: $("#txtFIELD4_1_2").val(),
-                },
-                {
-                    name: "FIELD4_1_3",
-                    value: $("#txtFIELD4_1_3").val(),
-                },
-                {
-                    name: "FIELD4_1_4_1",
-                    value: $("#txtFIELD4_1_4_1").val(),
-                },
-                {
-                    name: "FIELD4_1_4_2",
-                    value: $("#txtFIELD4_1_4_2").val(),
-                },
-                {
-                    name: "FIELD4_1_4_3",
-                    value: $("#txtFIELD4_1_4_3").val(),
-                },
-                {
-                    name: "FIELD4_1_5_1",
-                    value: $("#txtFIELD4_1_5_1").val(),
-                },
-                {
-                    name: "FIELD4_1_5_2",
-                    value: $("#txtFIELD4_1_5_2").val(),
-                },
-                {
-                    name: "FIELD4_1_5_3",
-                    value: $("#txtFIELD4_1_5_3").val(),
-                },
-                {
-                    name: "FIELD4_1_6_1",
-                    value: $("#txtFIELD4_1_6_1").val(),
-                },
-                {
-                    name: "FIELD4_1_6_2",
-                    value: $("#txtFIELD4_1_6_2").val(),
-                },
-                {
-                    name: "FIELD4_1_6_3",
-                    value: $("#txtFIELD4_1_6_3").val(),
-                },
-                {
-                    name: "FIELD4_2_1",
-                    value: $("#txtFIELD4_2_1").val(),
-                },
-                {
-                    name: "FIELD4_2_2",
-                    value: $("#txtFIELD4_2_2").val(),
-                },
-                {
-                    name: "FIELD4_2_3",
-                    value: $("#txtFIELD4_2_3").val(),
-                },
-                {
-                    name: "FIELD4_2_4_1",
-                    value: $("#txtFIELD4_2_4_1").val(),
-                },
-                {
-                    name: "FIELD4_2_4_2",
-                    value: $("#txtFIELD4_2_4_2").val(),
-                },
-                {
-                    name: "FIELD4_2_4_3",
-                    value: $("#txtFIELD4_2_4_3").val(),
-                },
-                {
-                    name: "FIELD4_2_5_1",
-                    value: $("#txtFIELD4_2_5_1").val(),
-                },
-                {
-                    name: "FIELD4_2_5_2",
-                    value: $("#txtFIELD4_2_5_2").val(),
-                },
-                {
-                    name: "FIELD4_2_5_3",
-                    value: $("#txtFIELD4_2_5_3").val(),
-                },
-                {
-                    name: "FIELD4_2_6_1",
-                    value: $("#txtFIELD4_2_6_1").val(),
-                },
-                {
-                    name: "FIELD4_2_6_2",
-                    value: $("#txtFIELD4_2_6_2").val(),
-                },
-                {
-                    name: "FIELD4_2_6_3",
-                    value: $("#txtFIELD4_2_6_3").val(),
-                },
-                {
-                    name: "FIELD4_3_1",
-                    value: $("#txtFIELD4_3_1").val(),
-                },
-
-
-                {
-                    name: "FIELD4_3_2",
-                    value: $("#txtFIELD4_3_2").val(),
-                },
-
-
-                {
-                    name: "FIELD4_3_3",
-                    value: $("#txtFIELD4_3_3").val(),
-                },
-
-
-                {
-                    name: "FIELD4_3_4_1",
-                    value: $("#txtFIELD4_3_4_1").val(),
-                },
-
-
-                {
-                    name: "FIELD4_3_4_2",
-                    value: $("#txtFIELD4_3_4_2").val(),
-                },
-
-
-                {
-                    name: "FIELD4_3_4_3",
-                    value: $("#txtFIELD4_3_4_3").val(),
-                },
-
-
-                {
-                    name: "FIELD4_3_5_1",
-                    value: $("#txtFIELD4_3_5_1").val(),
-                },
-
-
-                {
-                    name: "FIELD4_3_5_2",
-                    value: $("#txtFIELD4_3_5_2").val(),
-                },
-
-
-                {
-                    name: "FIELD4_3_5_3",
-                    value: $("#txtFIELD4_3_5_3").val(),
-                },
-
-
-                {
-                    name: "FIELD4_3_6_1",
-                    value: $("#txtFIELD4_3_6_1").val(),
-                },
-
-
-                {
-                    name: "FIELD4_3_6_2",
-                    value: $("#txtFIELD4_3_6_2").val(),
-                },
-
-
-                {
-                    name: "FIELD4_3_6_3",
-                    value: $("#txtFIELD4_3_6_3").val(),
-                },
-
-
-                {
-                    name: "COMMENTSECTION4",
-                    value: $("#txtFIELD_4_Comments").val(),
-                },
-
-                {
-                    name: "FIELD5_1",
-                    value: $("#txtFIELD5_1").val(),
-                },
-
-
-                {
-                    name: "FIELD5_2",
-                    value: $("#txtFIELD5_2").val(),
-                },
-
-
-                {
-                    name: "FIELD5_3",
-                    value: $("#txtFIELD5_3").val(),
-                },
-
-
-                {
-                    name: "FIELD5_4",
-                    value: $("#txtFIELD5_4").val(),
-                },
-
-
-                {
-                    name: "COMMENTSECTION5",
-                    value: $("#txtFIELD_5_Comments").val(),
-                },
-
-                {
-                    name: "FIELD6_1_1",
-                    value: $("#txtFIELD6_1_1").val(),
-                },
-                {
-                    name: "FIELD6_1_2",
-                    value: $("#txtFIELD6_1_2").val(),
-                },
-                {
-                    name: "FIELD6_1_3",
-                    value: $("#txtFIELD6_1_3").val(),
-                },
-                {
-                    name: "FIELD6_2_1",
-                    value: $("#txtFIELD6_2_1").val(),
-                },
-
-
-                {
-                    name: "FIELD6_2_2",
-                    value: $("#txtFIELD6_2_2").val(),
-                },
-
-
-                {
-                    name: "FIELD6_2_3",
-                    value: $("#txtFIELD6_2_3").val(),
-                },
-
-
-                {
-                    name: "FIELD6_3_1",
-                    value: $("#txtFIELD6_3_1").val(),
-                },
-
-
-                {
-                    name: "FIELD6_3_2",
-                    value: $("#txtFIELD6_3_2").val(),
-                },
-
-
-                {
-                    name: "FIELD6_3_3",
-                    value: $("#txtFIELD6_3_3").val(),
-                },
-
-
-                {
-                    name: "COMMENTSECTION6",
-                    value: $("#txtFIELD_6_Comments").val(),
-                },
-
-                {
-                    name: "FIELD7_1_1",
-                    value: $("#txtFIELD7_1_1").val(),
-                },
-
-
-                {
-                    name: "FIELD7_1_2",
-                    value: $("#txtFIELD7_1_2").val(),
-                },
-
-
-                {
-                    name: "FIELD7_1_3",
-                    value: $("#txtFIELD7_1_3").val(),
-                },
-
-
-                {
-                    name: "COMMENTSECTION7",
-                    value: $("#txtFIELD_7_Comments").val(),
-                },
-
-                {
-                    name: "FIELD8_1",
-                    value: $("#txtFIELD8_1").val(),
-                },
-
-
-                {
-                    name: "FIELD8_2",
-                    value: $("#txtFIELD8_2").val(),
-                },
-
-
-                {
-                    name: "FIELD8_3",
-                    value: $("#txtFIELD8_3").val(),
-                },
-
-
-                {
-                    name: "COMMENTSECTION8",
-                    value: $("#txtFIELD_8_Comments").val(),
-                },
-
-                {
-                    name: "FIELD9_1",
-                    value: $("#txtFIELD9_1").val(),
-                },
-
-
-                {
-                    name: "FIELD9_2",
-                    value: $("#txtFIELD9_2").val(),
-                },
-
-
-                {
-                    name: "COMMENTSECTION9",
-                    value: $("#txtFIELD_9_Comments").val(),
-                },
-
-                {
-                    name: "FIELD10_1",
-                    value: $("#txtFIELD10_1").val(),
-                },
-                {
-                    name: "COMMENTSECTION10",
-                    value: $("#txtFIELD_10_Comments").val(),
-                },
-
-                {
-                    name: "FIELD11_1",
-                    value: $("#txtFIELD11_1").val(),
-                },
-
-
-                {
-                    name: "FIELD11_2",
-                    value: $("#txtFIELD11_2").val(),
-                },
-
-
-                {
-                    name: "COMMENTSECTION11",
-                    value: $("#txtFIELD_11_Comments").val(),
-                }
-            ]
-        }]
-    }
-
-    $.ajax({
-        url: $("#apiUrlSave").val(),
-        type: 'POST',
-        data: JSON.stringify(casModel), // convert to JSON
-        contentType: 'application/json; charset=utf-8',
-        dataType: 'json',
-        success: function (response) {
-            console.log(response);
-            //$("#modelUuid").val(response.rootUuid);
-            //$("#nodeUuid").val(response.nodes[0].uuid);
-            //$("#emailAddress").val(response.nodes[0].fields[0].value);
-            //$('#savedSuccessfullyMessage').removeAttr("hidden");
-            //alert("The draft saved successfully.");
-            /*$('#draftSavedSuccessfully').modal('show');*/
-            //setTimeout(function () {
-            //    document.getElementById("savedSuccessfullyMessage").style.display = "none";
-            //}, 10000);
-            $('#draftFound').modal('hide');
-        },
-        error: function (err) {
-            //console.error(err);
-            $('#draftFound').modal('hide');
-            $('#draftDeleteFailed').modal('show');
-            //alert("The draft save failed");
-        }
-    });
+//function deleteFoundModal() {
+//    var casModel =
+//    {
+//        appId: "CAACS",
+//        region: "NEWRECORD",
+//        uuid: $("#modelUuid").val(),
+//        nodes: [{
+//            uuid: $("#nodeUuid").val(),
+//            fields: [
+//                {
+//                    name: "EXTERNALUSERID",
+//                    value: $("#emailAddress").val(),
+//                },
+//                {
+//                    name: "STATUS",
+//                    value: "DELETED",
+//                },
+
+//                {
+//                    name: "INPUT",
+//                    value: new Date(),
+//                },
+
+//                {
+//                    name: "COURT",
+//                    value: $("#txtCOURT").val(),
+//                },
+
+//                {
+//                    name: "REPORTINGYEAR",
+//                    value: $("#intREPORTINGYEAR").val(),
+//                },
+
+//                {
+//                    name: "DATEFROM",
+//                    value: $("#dtFROM").val(),
+//                },
+
+//                {
+//                    name: "DATETO",
+//                    value: $("#dtTO").val(),
+//                },
+//                {
+//                    name: "FIELD1_1_1",
+//                    value: $("#txtFIELD1_1_1").val(),
+//                },
+
+//                {
+//                    name: "FIELD1_1_2",
+//                    value: $("#txtFIELD1_1_2").val(),
+//                },
+//                {
+//                    name: "FIELD1_1_3",
+//                    value: $("#txtFIELD1_1_3").val(),
+//                },
+
+//                {
+//                    name: "FIELD1_1_4",
+//                    value: $("#txtFIELD1_1_4").val(),
+//                },
+
+//                {
+//                    name: "FIELD1_1_5",
+//                    value: $("#txtFIELD1_1_5").val(),
+//                },
+//                {
+//                    name: "FIELD1_1_6",
+//                    value: $("#txtFIELD1_1_6").val(),
+//                },
+//                {
+//                    name: "FIELD1_1_7",
+//                    value: $("#txtFIELD1_1_7").val(),
+//                },
+//                {
+//                    name: "COMMENTSECTION1",
+//                    value: $("#txtFIELD_1_Comments").val(),
+//                },
+//                {
+//                    name: "FIELD1_2_1",
+//                    value: $("#txtFIELD1_2_1").val(),
+//                },
+//                {
+//                    name: "FIELD1_2_2",
+//                    value: $("#txtFIELD1_2_2").val(),
+//                },
+//                {
+//                    name: "FIELD1_2_3",
+//                    value: $("#txtFIELD1_2_3").val(),
+//                },
+//                {
+//                    name: "FIELD1_2_4",
+//                    value: $("#txtFIELD1_2_4").val(),
+//                },
+
+//                {
+//                    name: "FIELD1_2_5",
+//                    value: $("#txtFIELD1_2_5").val(),
+//                },
+//                {
+//                    name: "FIELD2_1_1",
+//                    value: $("#txtFIELD2_1_1").val(),
+//                },
+//                {
+//                    name: "FIELD2_1_2",
+//                    value: $("#txtFIELD2_1_2").val(),
+//                },
+//                {
+//                    name: "FIELD2_2_1",
+//                    value: $("#txtFIELD2_2_1").val(),
+//                },
+
+//                {
+//                    name: "FIELD2_2_1_1",
+//                    value: $("#txtFIELD2_2_1_1").val(),
+//                },
+//                {
+//                    name: "FIELD2_2_1_2",
+//                    value: $("#txtFIELD2_2_1_2").val(),
+//                },
+//                {
+//                    name: "FIELD2_2_1_3",
+//                    value: $("#txtFIELD2_2_1_3").val(),
+//                },
+//                {
+//                    name: "FIELD2_2_2",
+//                    value: $("#txtFIELD2_2_2").val(),
+//                },
+//                {
+//                    name: "FIELD2_2_2_1",
+//                    value: $("#txtFIELD2_2_2_1").val(),
+//                },
+//                {
+//                    name: "FIELD2_2_2_2",
+//                    value: $("#txtFIELD2_2_2_2").val(),
+//                },
+//                {
+//                    name: "FIELD2_2_2_3",
+//                    value: $("#txtFIELD2_2_2_3").val(),
+//                },
+//                {
+//                    name: "COMMENTSECTION2",
+//                    value: $("#txtFIELD_2_Comments").val(),
+//                },
+//                {
+//                    name: "FIELD3_1",
+//                    value: $("#txtFIELD3_1").val(),
+//                },
+//                {
+//                    name: "FIELD3_2",
+//                    value: $("#txtFIELD3_2").val(),
+//                },
+//                {
+//                    name: "COMMENTSECTION3",
+//                    value: $("#txtFIELD_3_Comments").val(),
+//                },
+//                {
+//                    name: "FIELD4_1_1",
+//                    value: $("#txtFIELD4_1_1").val(),
+//                },
+//                {
+//                    name: "FIELD4_1_2",
+//                    value: $("#txtFIELD4_1_2").val(),
+//                },
+//                {
+//                    name: "FIELD4_1_3",
+//                    value: $("#txtFIELD4_1_3").val(),
+//                },
+//                {
+//                    name: "FIELD4_1_4_1",
+//                    value: $("#txtFIELD4_1_4_1").val(),
+//                },
+//                {
+//                    name: "FIELD4_1_4_2",
+//                    value: $("#txtFIELD4_1_4_2").val(),
+//                },
+//                {
+//                    name: "FIELD4_1_4_3",
+//                    value: $("#txtFIELD4_1_4_3").val(),
+//                },
+//                {
+//                    name: "FIELD4_1_5_1",
+//                    value: $("#txtFIELD4_1_5_1").val(),
+//                },
+//                {
+//                    name: "FIELD4_1_5_2",
+//                    value: $("#txtFIELD4_1_5_2").val(),
+//                },
+//                {
+//                    name: "FIELD4_1_5_3",
+//                    value: $("#txtFIELD4_1_5_3").val(),
+//                },
+//                {
+//                    name: "FIELD4_1_6_1",
+//                    value: $("#txtFIELD4_1_6_1").val(),
+//                },
+//                {
+//                    name: "FIELD4_1_6_2",
+//                    value: $("#txtFIELD4_1_6_2").val(),
+//                },
+//                {
+//                    name: "FIELD4_1_6_3",
+//                    value: $("#txtFIELD4_1_6_3").val(),
+//                },
+//                {
+//                    name: "FIELD4_2_1",
+//                    value: $("#txtFIELD4_2_1").val(),
+//                },
+//                {
+//                    name: "FIELD4_2_2",
+//                    value: $("#txtFIELD4_2_2").val(),
+//                },
+//                {
+//                    name: "FIELD4_2_3",
+//                    value: $("#txtFIELD4_2_3").val(),
+//                },
+//                {
+//                    name: "FIELD4_2_4_1",
+//                    value: $("#txtFIELD4_2_4_1").val(),
+//                },
+//                {
+//                    name: "FIELD4_2_4_2",
+//                    value: $("#txtFIELD4_2_4_2").val(),
+//                },
+//                {
+//                    name: "FIELD4_2_4_3",
+//                    value: $("#txtFIELD4_2_4_3").val(),
+//                },
+//                {
+//                    name: "FIELD4_2_5_1",
+//                    value: $("#txtFIELD4_2_5_1").val(),
+//                },
+//                {
+//                    name: "FIELD4_2_5_2",
+//                    value: $("#txtFIELD4_2_5_2").val(),
+//                },
+//                {
+//                    name: "FIELD4_2_5_3",
+//                    value: $("#txtFIELD4_2_5_3").val(),
+//                },
+//                {
+//                    name: "FIELD4_2_6_1",
+//                    value: $("#txtFIELD4_2_6_1").val(),
+//                },
+//                {
+//                    name: "FIELD4_2_6_2",
+//                    value: $("#txtFIELD4_2_6_2").val(),
+//                },
+//                {
+//                    name: "FIELD4_2_6_3",
+//                    value: $("#txtFIELD4_2_6_3").val(),
+//                },
+//                {
+//                    name: "FIELD4_3_1",
+//                    value: $("#txtFIELD4_3_1").val(),
+//                },
+
+
+//                {
+//                    name: "FIELD4_3_2",
+//                    value: $("#txtFIELD4_3_2").val(),
+//                },
+
+
+//                {
+//                    name: "FIELD4_3_3",
+//                    value: $("#txtFIELD4_3_3").val(),
+//                },
+
+
+//                {
+//                    name: "FIELD4_3_4_1",
+//                    value: $("#txtFIELD4_3_4_1").val(),
+//                },
+
+
+//                {
+//                    name: "FIELD4_3_4_2",
+//                    value: $("#txtFIELD4_3_4_2").val(),
+//                },
+
+
+//                {
+//                    name: "FIELD4_3_4_3",
+//                    value: $("#txtFIELD4_3_4_3").val(),
+//                },
+
+
+//                {
+//                    name: "FIELD4_3_5_1",
+//                    value: $("#txtFIELD4_3_5_1").val(),
+//                },
+
+
+//                {
+//                    name: "FIELD4_3_5_2",
+//                    value: $("#txtFIELD4_3_5_2").val(),
+//                },
+
+
+//                {
+//                    name: "FIELD4_3_5_3",
+//                    value: $("#txtFIELD4_3_5_3").val(),
+//                },
+
+
+//                {
+//                    name: "FIELD4_3_6_1",
+//                    value: $("#txtFIELD4_3_6_1").val(),
+//                },
+
+
+//                {
+//                    name: "FIELD4_3_6_2",
+//                    value: $("#txtFIELD4_3_6_2").val(),
+//                },
+
+
+//                {
+//                    name: "FIELD4_3_6_3",
+//                    value: $("#txtFIELD4_3_6_3").val(),
+//                },
+
+
+//                {
+//                    name: "COMMENTSECTION4",
+//                    value: $("#txtFIELD_4_Comments").val(),
+//                },
+
+//                {
+//                    name: "FIELD5_1",
+//                    value: $("#txtFIELD5_1").val(),
+//                },
+
+
+//                {
+//                    name: "FIELD5_2",
+//                    value: $("#txtFIELD5_2").val(),
+//                },
+
+
+//                {
+//                    name: "FIELD5_3",
+//                    value: $("#txtFIELD5_3").val(),
+//                },
+
+
+//                {
+//                    name: "FIELD5_4",
+//                    value: $("#txtFIELD5_4").val(),
+//                },
+
+
+//                {
+//                    name: "COMMENTSECTION5",
+//                    value: $("#txtFIELD_5_Comments").val(),
+//                },
+
+//                {
+//                    name: "FIELD6_1_1",
+//                    value: $("#txtFIELD6_1_1").val(),
+//                },
+//                {
+//                    name: "FIELD6_1_2",
+//                    value: $("#txtFIELD6_1_2").val(),
+//                },
+//                {
+//                    name: "FIELD6_1_3",
+//                    value: $("#txtFIELD6_1_3").val(),
+//                },
+//                {
+//                    name: "FIELD6_2_1",
+//                    value: $("#txtFIELD6_2_1").val(),
+//                },
+
+
+//                {
+//                    name: "FIELD6_2_2",
+//                    value: $("#txtFIELD6_2_2").val(),
+//                },
+
+
+//                {
+//                    name: "FIELD6_2_3",
+//                    value: $("#txtFIELD6_2_3").val(),
+//                },
+
+
+//                {
+//                    name: "FIELD6_3_1",
+//                    value: $("#txtFIELD6_3_1").val(),
+//                },
+
+
+//                {
+//                    name: "FIELD6_3_2",
+//                    value: $("#txtFIELD6_3_2").val(),
+//                },
+
+
+//                {
+//                    name: "FIELD6_3_3",
+//                    value: $("#txtFIELD6_3_3").val(),
+//                },
+
+
+//                {
+//                    name: "COMMENTSECTION6",
+//                    value: $("#txtFIELD_6_Comments").val(),
+//                },
+
+//                {
+//                    name: "FIELD7_1_1",
+//                    value: $("#txtFIELD7_1_1").val(),
+//                },
+
+
+//                {
+//                    name: "FIELD7_1_2",
+//                    value: $("#txtFIELD7_1_2").val(),
+//                },
+
+
+//                {
+//                    name: "FIELD7_1_3",
+//                    value: $("#txtFIELD7_1_3").val(),
+//                },
+
+
+//                {
+//                    name: "COMMENTSECTION7",
+//                    value: $("#txtFIELD_7_Comments").val(),
+//                },
+
+//                {
+//                    name: "FIELD8_1",
+//                    value: $("#txtFIELD8_1").val(),
+//                },
+
+
+//                {
+//                    name: "FIELD8_2",
+//                    value: $("#txtFIELD8_2").val(),
+//                },
+
+
+//                {
+//                    name: "FIELD8_3",
+//                    value: $("#txtFIELD8_3").val(),
+//                },
+
+
+//                {
+//                    name: "COMMENTSECTION8",
+//                    value: $("#txtFIELD_8_Comments").val(),
+//                },
+
+//                {
+//                    name: "FIELD9_1",
+//                    value: $("#txtFIELD9_1").val(),
+//                },
+
+
+//                {
+//                    name: "FIELD9_2",
+//                    value: $("#txtFIELD9_2").val(),
+//                },
+
+
+//                {
+//                    name: "COMMENTSECTION9",
+//                    value: $("#txtFIELD_9_Comments").val(),
+//                },
+
+//                {
+//                    name: "FIELD10_1",
+//                    value: $("#txtFIELD10_1").val(),
+//                },
+//                {
+//                    name: "COMMENTSECTION10",
+//                    value: $("#txtFIELD_10_Comments").val(),
+//                },
+
+//                {
+//                    name: "FIELD11_1",
+//                    value: $("#txtFIELD11_1").val(),
+//                },
+
+
+//                {
+//                    name: "FIELD11_2",
+//                    value: $("#txtFIELD11_2").val(),
+//                },
+
+
+//                {
+//                    name: "COMMENTSECTION11",
+//                    value: $("#txtFIELD_11_Comments").val(),
+//                }
+//            ]
+//        }]
+//    }
+
+//    $.ajax({
+//        url: $("#apiUrlSave").val(),
+//        type: 'POST',
+//        data: JSON.stringify(casModel), // convert to JSON
+//        contentType: 'application/json; charset=utf-8',
+//        dataType: 'json',
+//        success: function (response) {
+//            console.log(response);
+//            //$("#modelUuid").val(response.rootUuid);
+//            //$("#nodeUuid").val(response.nodes[0].uuid);
+//            //$("#emailAddress").val(response.nodes[0].fields[0].value);
+//            //$('#savedSuccessfullyMessage').removeAttr("hidden");
+//            //alert("The draft saved successfully.");
+//            /*$('#draftSavedSuccessfully').modal('show');*/
+//            //setTimeout(function () {
+//            //    document.getElementById("savedSuccessfullyMessage").style.display = "none";
+//            //}, 10000);
+//            $('#draftFound').modal('hide');
+//        },
+//        error: function (err) {
+//            //console.error(err);
+//            $('#draftFound').modal('hide');
+//            $('#draftDeleteFailed').modal('show');
+//            //alert("The draft save failed");
+//        }
+//    });
 
     
-}
+//}
 
 function hideFailedDelete() {
     $('#draftDeleteFailed').modal('hide');
@@ -3039,82 +3053,82 @@ function loadFoundRecord() {
     $('#draftFound').modal('hide');
 }
 
-function retrieveExisting() {
-    var courtName = document.getElementById("txtCOURT").value;
-    var reportingYear = document.getElementById("intREPORTINGYEAR").value;
-    var retrieveObj = {
-        "appId": "CAACS",
-        "region": "NEWRECORD",
-        "summaryPage": {
-            "pageSize": 1,
-            "pageNumber": 1,
-            "offset": 0,
-            "pageCount": 0,
-            "sortFieldName": "DOCKET",
-            "sortDirection": "DESC",
-            "showRestrictedItems": true
-        },
-        "searchParams": [
-            {
-                "fieldName": "STATUS",
-                "operator": "EQUAL",
-                "values": [
-                    "COMPLETED"
-                ]
-            },
-            {
-                "fieldName": "COURT",
-                "operator": "EQUAL",
-                "values": [
-                    courtName
-                ]
-            },
-            {
-                "fieldName": "REPORTINGYEAR",
-                "operator": "EQUAL",
-                "values": [
-                    reportingYear
-                ]
-            }
-        ]
-    }
+//function retrieveExisting() {
+//    var courtName = document.getElementById("txtCOURT").value;
+//    var reportingYear = document.getElementById("intREPORTINGYEAR").value;
+//    var retrieveObj = {
+//        "appId": "CAACS",
+//        "region": "NEWRECORD",
+//        "summaryPage": {
+//            "pageSize": 1,
+//            "pageNumber": 1,
+//            "offset": 0,
+//            "pageCount": 0,
+//            "sortFieldName": "DOCKET",
+//            "sortDirection": "DESC",
+//            "showRestrictedItems": true
+//        },
+//        "searchParams": [
+//            {
+//                "fieldName": "STATUS",
+//                "operator": "EQUAL",
+//                "values": [
+//                    "COMPLETED"
+//                ]
+//            },
+//            {
+//                "fieldName": "COURT",
+//                "operator": "EQUAL",
+//                "values": [
+//                    courtName
+//                ]
+//            },
+//            {
+//                "fieldName": "REPORTINGYEAR",
+//                "operator": "EQUAL",
+//                "values": [
+//                    reportingYear
+//                ]
+//            }
+//        ]
+//    }
 
-    $.ajax({
-        url: $("#apiUrlRetrieve").val(),
-        type: 'POST',
-        data: JSON.stringify(retrieveObj), // convert to JSON
-        contentType: 'application/json; charset=utf-8',
-        dataType: 'json',
-        success: function (response) {
-            console.log(response);
-            //retrievedRecord = response;
-            //var data = retrievedRecord;
+//    $.ajax({
+//        url: $("#apiUrlRetrieve").val(),
+//        type: 'POST',
+//        data: JSON.stringify(retrieveObj), // convert to JSON
+//        contentType: 'application/json; charset=utf-8',
+//        dataType: 'json',
+//        success: function (response) {
+//            console.log(response);
+//            //retrievedRecord = response;
+//            //var data = retrievedRecord;
 
-            //const rootKey = Object.keys(data)[0];
-            //const childKey = Object.keys(data[rootKey])[0];
+//            //const rootKey = Object.keys(data)[0];
+//            //const childKey = Object.keys(data[rootKey])[0];
 
-            /*const guid = data[response][childKey][0].guid;*/
-            if (Object.keys(response)[0] != null) {
-                $('#alreadyExists').modal('show');
-                $("#tabsbar").attr('hidden', true);
-                $("#btnSave").attr('hidden', true);
-                $("#btnNext").attr('hidden', true);
-                return true;
-            }
-            else {
-                retrieveDraft();
-                $("#tabsbar").removeAttr('hidden');
-                $("#btnNext").removeAttr('hidden');
-            }
-            return false;
-        },
-        error: function (err) {
-            //console.error(err);
-            $('#draftRetrievalFailed').modal('show');
-            //alert("The draft save failed");
-        }
-    });
-}
+//            /*const guid = data[response][childKey][0].guid;*/
+//            if (Object.keys(response)[0] != null) {
+//                $('#alreadyExists').modal('show');
+//                $("#tabsbar").attr('hidden', true);
+//                $("#btnSave").attr('hidden', true);
+//                $("#btnNext").attr('hidden', true);
+//                return true;
+//            }
+//            else {
+//                retrieveDraft();
+//                $("#tabsbar").removeAttr('hidden');
+//                $("#btnNext").removeAttr('hidden');
+//            }
+//            return false;
+//        },
+//        error: function (err) {
+//            //console.error(err);
+//            $('#draftRetrievalFailed').modal('show');
+//            //alert("The draft save failed");
+//        }
+//    });
+//}
 
 function hideAlreadyExists() {
     $('#alreadyExists').modal('hide');
