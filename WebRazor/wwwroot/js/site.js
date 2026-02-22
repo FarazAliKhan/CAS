@@ -1,6 +1,11 @@
 ﻿// Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
 // for details on configuring this project to bundle and minify static web assets.
 
+window.addEventListener("load", function () {
+    console.log("Page is fully loaded");
+    draftSuccessfullySaved();
+});
+
 document.querySelectorAll('#sidebar .nav-link').forEach(link => {
         link.addEventListener('click', function () {
 
@@ -14,68 +19,71 @@ document.querySelectorAll('#sidebar .nav-link').forEach(link => {
         });
 });
 
-const params = new URLSearchParams(window.location.search);
-
-const recSaved = params.get("recordSaved");
-if (recSaved) {
-    $('#draftSavedSuccessfully').modal('show');
-}
 //populateCourts();
 
-const params = new URLSearchParams(window.location.search);
-const needRetrieve = params.get("retrieveRecord");
-
-function populateCourts(courtName) {
-    const culture = document.getElementById("currentCulture").value;
-    let court = document.getElementById("courtCode").value;
-    let select = document.getElementById("txtCOURT");
-    if (select == null) {
-        select = document.getElementById("txtCOURTReview");
+function draftSuccessfullySaved() {
+    const params = new URLSearchParams(window.location.search);
+    //const needRetrieve = params.get("retrieveRecord");
+    const recSaved = params.get("recordSaved");
+    if (recSaved != null) {
+        $('#draftSavedSuccessfully').modal('show');
+        const secId = params.get("sectionId");
+        focusOnForm(secId);
     }
-    if (select == null) {
-        select = document.getElementById("txtCOURTResult");
-    }
+}   
 
-    var courtModel = {
-        "appId": "CAACS",
-        "region": "NEWRECORD",
-        "table": "CCM_MASTER",
-        "field": "COURT"
 
-    }
+//function populateCourts(courtName) {
+//    const culture = document.getElementById("currentCulture").value;
+//    let court = document.getElementById("courtCode").value;
+//    let select = document.getElementById("txtCOURT");
+//    if (select == null) {
+//        select = document.getElementById("txtCOURTReview");
+//    }
+//    if (select == null) {
+//        select = document.getElementById("txtCOURTResult");
+//    }
 
-    $.ajax({
-        url: $("#apiUrlPickCourt").val(),
-        type: 'POST',
-        data: JSON.stringify(courtModel), // convert to JSON
-        contentType: 'application/json; charset=utf-8',
-        dataType: 'json',
-        success: function (response) {
-            console.log(response);
-            response.forEach(item => {
-                const option = document.createElement("option");
-                option.value = item.code;
-                if (culture.startsWith("fr")) {
-                    option.text = item.desc_fr_CA;
-                }
-                else {
-                    option.text = item.desc_en_CA;
-                }   
-                select.add(option); // or select.appendChild(option)
-                if (option.value == court) {
-                    option.selected = true;
-                }
-            });
-        },
-        error: function (err) {
-            console.error(err);
-            //$('#draftFound').modal('hide');
-            //$('#draftDeleteFailed').modal('show');
-            //alert("The draft save failed");
-        }
-    });
+//    var courtModel = {
+//        "appId": "CAACS",
+//        "region": "NEWRECORD",
+//        "table": "CCM_MASTER",
+//        "field": "COURT"
+
+//    }
+
+//    $.ajax({
+//        url: $("#apiUrlPickCourt").val(),
+//        type: 'POST',
+//        data: JSON.stringify(courtModel), // convert to JSON
+//        contentType: 'application/json; charset=utf-8',
+//        dataType: 'json',
+//        success: function (response) {
+//            console.log(response);
+//            response.forEach(item => {
+//                const option = document.createElement("option");
+//                option.value = item.code;
+//                if (culture.startsWith("fr")) {
+//                    option.text = item.desc_fr_CA;
+//                }
+//                else {
+//                    option.text = item.desc_en_CA;
+//                }   
+//                select.add(option); // or select.appendChild(option)
+//                if (option.value == court) {
+//                    option.selected = true;
+//                }
+//            });
+//        },
+//        error: function (err) {
+//            console.error(err);
+//            //$('#draftFound').modal('hide');
+//            //$('#draftDeleteFailed').modal('show');
+//            //alert("The draft save failed");
+//        }
+//    });
    
-}
+//}
 
 if ($("#txtCOURTReview") != null) {
     $("#txtCOURTReview").each(function () {
