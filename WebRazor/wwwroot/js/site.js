@@ -668,10 +668,10 @@ function enableDisableReview() {
         && $("#dtFROM").val() != ""
         && $("#dtTO").val() != ""
     ) {
-        if (!(retrieveExisting())) {
+        //if (!(retrieveExisting())) {
             $("#btnReview").removeAttr('disabled');
-            //$("#tabsbar").removeAttr('hidden');
-        }
+            $("#tabsbar").removeAttr('hidden');
+        //}
     }
     else {
         $("#btnReview").attr('disabled', true);
