@@ -1616,6 +1616,11 @@ namespace WebRazor.Pages
         }
 
         public IActionResult RetrieveData(string completedOrDraft) {
+
+            txtCOURT = (string)TempData["txtCOURT"];
+            dtFROM = (DateTime?)TempData["dtFROM"];
+            dtTO = (DateTime?)TempData["dtTO"];
+            intREPORTINGYEAR = (string)TempData["intREPORTINGYEAR"];
             var courtName = txtCOURT;
             var reportingYear = intREPORTINGYEAR;
             var retrieveObj = new CasRetrievalModel();
@@ -1673,9 +1678,9 @@ namespace WebRazor.Pages
                         string apiResponse = response.Content.ReadAsStringAsync().Result;
                         Console.WriteLine(apiResponse);
                         //resJson = apiResponse;
-                        var casResponseModel = JsonConvert.DeserializeObject<CasModel>(apiResponse);
-                        TempData["RootUuidReturned"] = casResponseModel.nodes[0].uuid;
-                        loadFoundValue(casResponseModel);
+                        var casResponseModel = JsonConvert.DeserializeObject<RootObject>(apiResponse);
+                        //TempData["RootUuidReturned"] = casResponseModel.nodes[0].uuid;
+                        loadFoundValue(casResponseModel.FirstOrDefault().Value.FirstOrDefault().Value.FirstOrDefault());
                     }
                     //responseStatusCode = response.StatusCode.ToString();
                 }
@@ -1684,7 +1689,7 @@ namespace WebRazor.Pages
             return Page();
         }
 
-        public void loadFoundValue(CasModel casItem)
+        public void loadFoundValue(Record casItem)
         {
             var data = casItem;
 
@@ -1693,116 +1698,373 @@ namespace WebRazor.Pages
 
             //var guid = data[rootKey][childKey][0].guid;
 
-            var modelUuid = data.uuid;
-            var nodeUuid = data.uuid;
+            var modelUuid = data.Guid;
+            var nodeUuid = data.Guid;
 
-            var fields = data.nodes[0].fields;
+            var fields = data.Fields;
 
             //fields.forEach(f => {
-            foreach (Field f in fields)
+            foreach (NodeField f in fields)
             {
-                switch (f.name)
+                //float floatValue = 0;
+                //int? intValue = 0;
+                switch (f.Name)
                 {
-                    case "EXTERNALUSERID": emailAddress = f.value; break;
-                    case "COURT": txtCOURT = f.value; break;
-                    case "REPORTINGYEAR": intREPORTINGYEAR = f.value; break;
-                    case "DATEFROM": dtFROM = DateTime.Parse(f.value); break;
-                    case "DATETO": dtTO = DateTime.Parse(f.value); break;
-                    case "FIELD1_1_1": txtFIELD1_1_1 = Convert.ToInt32(f.value); break;
-                    case "FIELD1_1_2": txtFIELD1_1_2 = Convert.ToInt32(f.value); break;
-                    case "FIELD1_1_3": txtFIELD1_1_3 = Convert.ToInt32(f.value); break;
-                    case "FIELD1_1_4": txtFIELD1_1_4 = Convert.ToInt32(f.value); break;
-                    case "FIELD1_1_5": txtFIELD1_1_5 = Convert.ToInt32(f.value); break;
-                    case "FIELD1_1_6": txtFIELD1_1_6 = Convert.ToInt32(f.value); break;
-                    case "FIELD1_1_7": txtFIELD1_1_7 = Convert.ToInt32(f.value); break;
-                    case "COMMENTSECTION1": txtFIELD_1_Comments = f.value; break;
-                    case "FIELD1_2_1": txtFIELD1_2_1 = Convert.ToInt32(f.value); break;
-                    case "FIELD1_2_2": txtFIELD1_2_2 = Convert.ToInt32(f.value); break;
-                    case "FIELD1_2_3": txtFIELD1_2_3 = Convert.ToInt32(f.value); break;
-                    case "FIELD1_2_4": txtFIELD1_2_4 = Convert.ToInt32(f.value); break;
-                    case "FIELD1_2_5": txtFIELD1_2_5 = Convert.ToInt32(f.value); break;
-                    case "FIELD2_1_1": txtFIELD2_1_1 = Convert.ToInt32(f.value); break;
-                    case "FIELD2_1_2": txtFIELD2_1_2 = Convert.ToInt32(f.value); break;
-                    case "FIELD2_2_1": txtFIELD2_2_1 = Convert.ToInt32(f.value); break;
-                    case "FIELD2_2_1_1": txtFIELD2_2_1_1 = Convert.ToInt32(f.value); break;
-                    case "FIELD2_2_1_2": txtFIELD2_2_1_2 = Convert.ToInt32(f.value); break;
-                    case "FIELD2_2_1_3": txtFIELD2_2_1_3 = Convert.ToInt32(f.value); break;
-                    case "FIELD2_2_2": txtFIELD2_2_2 = Convert.ToInt32(f.value); break;
-                    case "FIELD2_2_2_1": txtFIELD2_2_2_1 = Convert.ToInt32(f.value); break;
-                    case "FIELD2_2_2_2": txtFIELD2_2_2_2 = Convert.ToInt32(f.value); break;
-                    case "FIELD2_2_2_3": txtFIELD2_2_2_3 = Convert.ToInt32(f.value); break;
-                    case "COMMENTSECTION2": txtFIELD_2_Comments = f.value; break;
-                    case "FIELD3_1": txtFIELD3_1 = Convert.ToInt32(f.value); break;
-                    case "FIELD3_2": txtFIELD3_2 = Convert.ToInt32(f.value); break;
-                    case "COMMENTSECTION3": txtFIELD_3_Comments = f.value; break;
-                    case "FIELD4_1_1": txtFIELD4_1_1 = Convert.ToInt32(f.value); break;
-                    case "FIELD4_1_2": txtFIELD4_1_2 = Convert.ToInt32(f.value); break;
-                    case "FIELD4_1_3": txtFIELD4_1_3 = Convert.ToInt32(f.value); break;
-                    case "FIELD4_1_4_1": txtFIELD4_1_4_1 = Convert.ToInt32(f.value); break;
-                    case "FIELD4_1_4_2": txtFIELD4_1_4_2 = Convert.ToInt32(f.value); break;
-                    case "FIELD4_1_4_3": txtFIELD4_1_4_3 = Convert.ToInt32(f.value); break;
-                    case "FIELD4_1_5_1": txtFIELD4_1_5_1 = Convert.ToInt32(f.value); break;
-                    case "FIELD4_1_5_2": txtFIELD4_1_5_2 = Convert.ToInt32(f.value); break;
-                    case "FIELD4_1_5_3": txtFIELD4_1_5_3 = Convert.ToInt32(f.value); break;
-                    case "FIELD4_1_6_1": txtFIELD4_1_6_1 = Convert.ToInt32(f.value); break;
-                    case "FIELD4_1_6_2": txtFIELD4_1_6_2 = Convert.ToInt32(f.value); break;
-                    case "FIELD4_1_6_3": txtFIELD4_1_6_3 = Convert.ToInt32(f.value); break;
-                    case "FIELD4_2_1": txtFIELD4_2_1 = Convert.ToInt32(f.value); break;
-                    case "FIELD4_2_2": txtFIELD4_2_2 = Convert.ToInt32(f.value); break;
-                    case "FIELD4_2_3": txtFIELD4_2_3 = Convert.ToInt32(f.value); break;
-                    case "FIELD4_2_4_1": txtFIELD4_2_4_1 = Convert.ToInt32(f.value); break;
-                    case "FIELD4_2_4_2": txtFIELD4_2_4_2 = Convert.ToInt32(f.value); break;
-                    case "FIELD4_2_4_3": txtFIELD4_2_4_3 = Convert.ToInt32(f.value); break;
-                    case "FIELD4_2_5_1": txtFIELD4_2_5_1 = Convert.ToInt32(f.value); break;
-                    case "FIELD4_2_5_2": txtFIELD4_2_5_2 = Convert.ToInt32(f.value); break;
-                    case "FIELD4_2_5_3": txtFIELD4_2_5_3 = Convert.ToInt32(f.value); break;
-                    case "FIELD4_2_6_1": txtFIELD4_2_6_1 = Convert.ToInt32(f.value); break;
-                    case "FIELD4_2_6_2": txtFIELD4_2_6_2 = Convert.ToInt32(f.value); break;
-                    case "FIELD4_2_6_3": txtFIELD4_2_6_3 = Convert.ToInt32(f.value); break;
-                    case "FIELD4_3_1": txtFIELD4_3_1 = Convert.ToInt32(f.value); break;
-                    case "FIELD4_3_2": txtFIELD4_3_2 = Convert.ToInt32(f.value); break;
-                    case "FIELD4_3_3": txtFIELD4_3_3 = Convert.ToInt32(f.value); break;
-                    case "FIELD4_3_4_1": txtFIELD4_3_4_1 = Convert.ToInt32(f.value); break;
-                    case "FIELD4_3_4_2": txtFIELD4_3_4_2 = Convert.ToInt32(f.value); break;
-                    case "FIELD4_3_4_3": txtFIELD4_3_4_3 = Convert.ToInt32(f.value); break;
-                    case "FIELD4_3_5_1": txtFIELD4_3_5_1 = Convert.ToInt32(f.value); break;
-                    case "FIELD4_3_5_2": txtFIELD4_3_5_2 = Convert.ToInt32(f.value); break;
-                    case "FIELD4_3_5_3": txtFIELD4_3_5_3 = Convert.ToInt32(f.value); break;
-                    case "FIELD4_3_6_1": txtFIELD4_3_6_1 = Convert.ToInt32(f.value); break;
-                    case "FIELD4_3_6_2": txtFIELD4_3_6_2 = Convert.ToInt32(f.value); break;
-                    case "FIELD4_3_6_3": txtFIELD4_3_6_3 = Convert.ToInt32(f.value); break;
-                    case "COMMENTSECTION4": txtFIELD_4_Comments = f.value; break;
-                    case "FIELD5_1": txtFIELD5_1 = Convert.ToInt32(f.value); break;
-                    case "FIELD5_2": txtFIELD5_2 = Convert.ToInt32(f.value); break;
-                    case "FIELD5_3": txtFIELD5_3 = Convert.ToInt32(f.value); break;
-                    case "FIELD5_4": txtFIELD5_4 = Convert.ToInt32(f.value); break;
-                    case "COMMENTSECTION5": txtFIELD_5_Comments = f.value; break;
-                    case "FIELD6_1_1": txtFIELD6_1_1 = Convert.ToInt32(f.value); break;
-                    case "FIELD6_1_2": txtFIELD6_1_2 = Convert.ToInt32(f.value); break;
-                    case "FIELD6_1_3": txtFIELD6_1_3 = Convert.ToInt32(f.value); break;
-                    case "FIELD6_2_1": txtFIELD6_2_1 = Convert.ToInt32(f.value); break;
-                    case "FIELD6_2_2": txtFIELD6_2_2 = Convert.ToInt32(f.value); break;
-                    case "FIELD6_2_3": txtFIELD6_2_3 = Convert.ToInt32(f.value); break;
-                    case "FIELD6_3_1": txtFIELD6_3_1 = Convert.ToInt32(f.value); break;
-                    case "FIELD6_3_2": txtFIELD6_3_2 = Convert.ToInt32(f.value); break;
-                    case "FIELD6_3_3": txtFIELD6_3_3 = Convert.ToInt32(f.value); break;
-                    case "COMMENTSECTION6": txtFIELD_6_Comments = f.value; break;
-                    case "FIELD7_1_1": txtFIELD7_1_1 = Convert.ToInt32(f.value); break;
-                    case "FIELD7_1_2": txtFIELD7_1_2 = Convert.ToInt32(f.value); break;
-                    case "FIELD7_1_3": txtFIELD7_1_3 = Convert.ToInt32(f.value); break;
-                    case "COMMENTSECTION7": txtFIELD_7_Comments = f.value; break;
-                    case "FIELD8_1": txtFIELD8_1 = Convert.ToInt32(f.value); break;
-                    case "FIELD8_2": txtFIELD8_2 = Convert.ToInt32(f.value); break;
-                    case "FIELD8_3": txtFIELD8_3 = Convert.ToInt32(f.value); break;
-                    case "COMMENTSECTION8": txtFIELD_8_Comments = f.value; break;
-                    case "FIELD9_1": txtFIELD9_1 = Convert.ToInt32(f.value); break;
-                    case "FIELD9_2": txtFIELD9_2 = Convert.ToInt32(f.value); break;
-                    case "COMMENTSECTION9": txtFIELD_9_Comments = f.value; break;
-                    case "FIELD10_1": txtFIELD10_1 = Convert.ToInt32(f.value); break;
-                    case "COMMENTSECTION10": txtFIELD_10_Comments = f.value; break;
-                    case "FIELD11_1": txtFIELD11_1 = Convert.ToInt32(f.value); break;
-                    case "FIELD11_2": txtFIELD11_2 = Convert.ToInt32(f.value); break;
-                    case "COMMENTSECTION11": txtFIELD_11_Comments = f.value; break;
+                    case "EXTERNALUSERID": emailAddress = f.Value; break;
+                    case "COURT": txtCOURT = f.Value; break;
+                    case "REPORTINGYEAR":
+                        var floatValue = float.Parse(f.Value);
+                        int? intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intREPORTINGYEAR = intValue!.ToString(); break;
+                    case "DATEFROM": dtFROM = DateTime.Parse(f.Value); break;
+                    case "DATETO": dtTO = DateTime.Parse(f.Value); break;
+                    case "FIELD1_1_1":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
+                        txtFIELD1_1_1 = intValue; break;
+                    case "FIELD1_1_2":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
+                        txtFIELD1_1_2 = intValue; break;
+                    case "FIELD1_1_3":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
+                        txtFIELD1_1_3 = intValue; break;
+                    case "FIELD1_1_4":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
+                        txtFIELD1_1_4 = intValue; break;
+                    case "FIELD1_1_5":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
+                        txtFIELD1_1_5 = intValue; break;
+                    case "FIELD1_1_6":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD1_1_6 = intValue; break;
+                    case "FIELD1_1_7":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD1_1_7 = intValue; break;
+                    case "COMMENTSECTION1": txtFIELD_1_Comments = f.Value; break;
+                    case "FIELD1_2_1":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD1_2_1 = intValue; break;
+                    case "FIELD1_2_2":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD1_2_2 = intValue; break;
+                    case "FIELD1_2_3":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD1_2_3 = intValue; break;
+                    case "FIELD1_2_4":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD1_2_4 = intValue; break;
+                    case "FIELD1_2_5":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD1_2_5 = intValue; break;
+                    case "FIELD2_1_1":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD2_1_1 = intValue; break;
+                    case "FIELD2_1_2":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD2_1_2 = intValue; break;
+                    case "FIELD2_2_1":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD2_2_1 = intValue; break;
+                    case "FIELD2_2_1_1":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD2_2_1_1 = intValue; break;
+                    case "FIELD2_2_1_2":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD2_2_1_2 = intValue; break;
+                    case "FIELD2_2_1_3":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD2_2_1_3 = intValue; break;
+                    case "FIELD2_2_2":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD2_2_2 = intValue; break;
+                    case "FIELD2_2_2_1":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD2_2_2_1 = intValue; break;
+                    case "FIELD2_2_2_2":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD2_2_2_2 = intValue; break;
+                    case "FIELD2_2_2_3":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD2_2_2_3 = intValue; break;
+                    case "COMMENTSECTION2": txtFIELD_2_Comments = f.Value; break;
+                    case "FIELD3_1":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD3_1 = intValue; break;
+                    case "FIELD3_2":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD3_2 = intValue; break;
+                    case "COMMENTSECTION3": txtFIELD_3_Comments = f.Value; break;
+                    case "FIELD4_1_1":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD4_1_1 = intValue; break;
+                    case "FIELD4_1_2":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD4_1_2 = intValue; break;
+                    case "FIELD4_1_3":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD4_1_3 = intValue; break;
+                    case "FIELD4_1_4_1":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
+                        txtFIELD4_1_4_1 = intValue; break;
+                    case "FIELD4_1_4_2":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD4_1_4_2 = intValue; break;
+                    case "FIELD4_1_4_3":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD4_1_4_3 = intValue; break;
+                    case "FIELD4_1_5_1":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD4_1_5_1 = intValue; break;
+                    case "FIELD4_1_5_2":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD4_1_5_2 = intValue; break;
+                    case "FIELD4_1_5_3":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD4_1_5_3 = intValue; break;
+                    case "FIELD4_1_6_1":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD4_1_6_1 = intValue; break;
+                    case "FIELD4_1_6_2":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD4_1_6_2 = intValue; break;
+                    case "FIELD4_1_6_3":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD4_1_6_3 = intValue; break;
+                    case "FIELD4_2_1":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD4_2_1 = intValue; break;
+                    case "FIELD4_2_2":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD4_2_2 = intValue; break;
+                    case "FIELD4_2_3":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD4_2_3 = intValue; break;
+                    case "FIELD4_2_4_1":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD4_2_4_1 = intValue; break;
+                    case "FIELD4_2_4_2":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD4_2_4_2 = intValue; break;
+                    case "FIELD4_2_4_3":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD4_2_4_3 = intValue; break;
+                    case "FIELD4_2_5_1":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD4_2_5_1 = intValue; break;
+                    case "FIELD4_2_5_2":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD4_2_5_2 = intValue; break;
+                    case "FIELD4_2_5_3":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD4_2_5_3 = intValue; break;
+                    case "FIELD4_2_6_1":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD4_2_6_1 = intValue; break;
+                    case "FIELD4_2_6_2":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD4_2_6_2 = intValue; break;
+                    case "FIELD4_2_6_3":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD4_2_6_3 = intValue; break;
+                    case "FIELD4_3_1":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD4_3_1 = intValue; break;
+                    case "FIELD4_3_2":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD4_3_2 = intValue; break;
+                    case "FIELD4_3_3":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD4_3_3 = intValue; break;
+                    case "FIELD4_3_4_1":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD4_3_4_1 = intValue; break;
+                    case "FIELD4_3_4_2":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD4_3_4_2 = intValue; break;
+                    case "FIELD4_3_4_3":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD4_3_4_3 = intValue; break;
+                    case "FIELD4_3_5_1":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD4_3_5_1 = intValue; break;
+                    case "FIELD4_3_5_2":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD4_3_5_2 = intValue; break;
+                    case "FIELD4_3_5_3":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD4_3_5_3 = intValue; break;
+                    case "FIELD4_3_6_1":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD4_3_6_1 = intValue; break;
+                    case "FIELD4_3_6_2":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD4_3_6_2 = intValue; break;
+                    case "FIELD4_3_6_3":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD4_3_6_3 = intValue; break;
+                    case "COMMENTSECTION4": txtFIELD_4_Comments = f.Value; break;
+                    case "FIELD5_1":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD5_1 = intValue; break;
+                    case "FIELD5_2":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD5_2 = intValue; break;
+                    case "FIELD5_3":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD5_3 = intValue; break;
+                    case "FIELD5_4":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD5_4 = intValue; break;
+                    case "COMMENTSECTION5": txtFIELD_5_Comments = f.Value; break;
+                    case "FIELD6_1_1":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD6_1_1 = intValue; break;
+                    case "FIELD6_1_2":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD6_1_2 = intValue; break;
+                    case "FIELD6_1_3":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD6_1_3 = intValue; break;
+                    case "FIELD6_2_1":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD6_2_1 = intValue; break;
+                    case "FIELD6_2_2":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD6_2_2 = intValue; break;
+                    case "FIELD6_2_3":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD6_2_3 = intValue; break;
+                    case "FIELD6_3_1":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD6_3_1 = intValue; break;
+                    case "FIELD6_3_2":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD6_3_2 = intValue; break;
+                    case "FIELD6_3_3":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD6_3_3 = intValue; break;
+                    case "COMMENTSECTION6": txtFIELD_6_Comments = f.Value; break;
+                    case "FIELD7_1_1":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD7_1_1 = intValue; break;
+                    case "FIELD7_1_2":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD7_1_2 = intValue; break;
+                    case "FIELD7_1_3":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD7_1_3 = intValue; break;
+                    case "COMMENTSECTION7": txtFIELD_7_Comments = f.Value; break;
+                    case "FIELD8_1":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD8_1 = intValue; break;
+                    case "FIELD8_2":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD8_2 = intValue; break;
+                    case "FIELD8_3":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD8_3 = intValue; break;
+                    case "COMMENTSECTION8": txtFIELD_8_Comments = f.Value; break;
+                    case "FIELD9_1":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD9_1 = intValue; break;
+                    case "FIELD9_2":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD9_2 = intValue; break;
+                    case "COMMENTSECTION9": txtFIELD_9_Comments = f.Value; break;
+                    case "FIELD10_1":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD10_1 = intValue; break;
+                    case "COMMENTSECTION10": txtFIELD_10_Comments = f.Value; break;
+                    case "FIELD11_1":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD11_1 = intValue; break;
+                    case "FIELD11_2":
+                        floatValue = float.Parse(f.Value);
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        txtFIELD11_2 = intValue; break;
+                    case "COMMENTSECTION11": txtFIELD_11_Comments = f.Value; break;
                 }
             }
         }
