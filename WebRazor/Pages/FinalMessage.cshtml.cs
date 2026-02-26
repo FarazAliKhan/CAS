@@ -1,4 +1,5 @@
 using BusinessLayer.DTOs;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Newtonsoft.Json;
@@ -9,7 +10,9 @@ using WebRazor.Models;
 
 namespace WebRazor.Pages
 {
+    [Authorize]
     [Breadcrumb("ViewData.Final", FromPage = typeof(CreateModel))]
+   
     public class FinalMessageModel : PageModel
     {
         private readonly IConfiguration _configuration;

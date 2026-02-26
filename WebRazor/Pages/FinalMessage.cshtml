@@ -409,7 +409,7 @@
         <br />
         <div class="text-center">
             <span class="col-md-6 text-right">
-                <a class="btn btn-primary cjc-big-buttons" type="button" onclick="javascript:submitForResult();">@localizer["ViewSubmission"]</a>
+                <a class="btn btn-primary cjc-big-buttons" type="button" asp-page="./Result?CourtName=@Model.txtCOURT">@localizer["ViewSubmission"]</a>
             </span>
             <span class="col-md-6 text-left">
                 <a class="btn btn-primary cjc-big-buttons" asp-page="./Report2">@localizer["Generate"]</a>
