@@ -15,7 +15,7 @@ namespace WebRazor.Pages
     public class ResultModel : PageModel
     {
         private readonly IConfiguration _configuration;
-
+        public List<CourtsModel> Courts { get; set; } = new List<CourtsModel>();
         [BindProperty]
         public string? modelUuid { get; set; }
         [BindProperty]
@@ -267,6 +267,46 @@ namespace WebRazor.Pages
 
         public void OnGet()
         {
+            var courts = new
+            {
+                appId = "CAACS",
+                region = "NEWRECORD",
+                table = "CCM_MASTER",
+                field = "COURT"
+            };
+
+            var json = JsonConvert.SerializeObject(courts);
+
+            var apiEndpoint = _configuration.GetValue<string>("PickCourtURL1");
+
+            var content = new StringContent(json, UnicodeEncoding.UTF8, "application/json");
+
+            var httpClientHandler = new HttpClientHandler();
+            httpClientHandler.ServerCertificateCustomValidationCallback = (message, cert, chain, sslPolicyErrors) =>
+            {
+                return true;
+            };
+            HttpClient httpClient = new HttpClient(httpClientHandler) { BaseAddress = new Uri(apiEndpoint) };
+
+            using (httpClient)
+            {
+
+                using (HttpResponseMessage response = httpClient.PostAsync(apiEndpoint, content).Result)
+                {
+                    if (response.IsSuccessStatusCode)
+                    {
+                        string apiResponse = response.Content.ReadAsStringAsync().Result;
+                        Console.WriteLine(apiResponse);
+                        //resJson = apiResponse;
+                        Courts = JsonConvert.DeserializeObject<List<CourtsModel>>(apiResponse);
+                    }
+
+                }
+            }
+
+
+
+
             RetrieveData("DRAFT");
 
             //txtFIELD1_1_1 = (int?)TempData["txtFIELD1_1_1"];
