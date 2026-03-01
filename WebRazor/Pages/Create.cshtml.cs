@@ -294,10 +294,6 @@ namespace WebRazor.Pages
         {
             dtFROM = new DateTime(2025, 01, 01);
             dtTO = new DateTime(2025, 12, 31);
-            if (TempData["emailAddress"] != null)
-            {
-                emailAddress = (string)TempData["emailAddress"];
-            }
 
             var courts = new
             {
@@ -336,20 +332,14 @@ namespace WebRazor.Pages
                 }
             }
 
-            var recSaved = Request.Query["recordSaved"].FirstOrDefault();
-            if (recSaved != null && recSaved != "")
+            if (TempData["emailAddress"] != null)
             {
-                RetrieveData("DRAFT");
+                emailAddress = (string)TempData["emailAddress"];
+                txtCOURT = (string)TempData["txtCOURT"];
+                intREPORTINGYEAR = (string)TempData["intREPORTINGYEAR"];
+                dtFROM = (DateTime?)TempData["dtFROM"];
+                dtTO = (DateTime?)TempData["dtTO"];
             }
-
-            //if (TempData["modelUuid"] != null)
-            //{
-            //    modelUuid = (string)TempData["modelUuid"];
-            //}
-            //if (TempData["nodeUuid"] != null)
-            //{
-            //    nodeUuid = (string)TempData["nodeUuid"];
-            //}
         }
 
         public IActionResult OnPost()
@@ -391,6 +381,9 @@ namespace WebRazor.Pages
 
                 }
             }
+
+           
+
             //if (Upload != null) { 
             //    if(Upload.Length > maxFileSize)
             //    {
@@ -638,21 +631,65 @@ namespace WebRazor.Pages
             var fromSelect = Request.Query["fromSelect"].FirstOrDefault();
 
             var submitForSave = Request.Query["submitForSave"].FirstOrDefault();
-            if (!string.IsNullOrEmpty(submitForSave))
+
+            var loadRecord = Request.Query["loadRecord"].FirstOrDefault();
+
+            var deleteDraft = Request.Query["deleteDraft"].FirstOrDefault();
+
+            var retrieveCompleted = Request.Query["retrieveCompleted"].FirstOrDefault();
+
+            var retrieveDraft = Request.Query["retrieveDraft"].FirstOrDefault();
+
+            if (!string.IsNullOrEmpty(fromSelect))
+            {
+                return Page();
+            }
+            else if (!string.IsNullOrEmpty(submitForSave))
             {
                 bool success = HandleSubmit(createItem);
                 if (success)
                 {
-
+                    loadFoundValue(RetrieveData("DRAFT"));
                     //TempData["reqJson"] = reqJson;
                     //TempData["resJson"] = resJson;
                     //TempData["responseStatusCode"] = responseStatusCode;
-                    return Redirect("/Create/Create?recordSaved=true&sectionId="+sectId);
+                    return Redirect("/Create/Create?recordSaved=true&sectionId=" + sectId);
+                }
+                else
+                {
+                    return Page();
                 }
             }
-
-            if (!string.IsNullOrEmpty(fromSelect))
+            else if (!string.IsNullOrEmpty(retrieveDraft))
             {
+                var draftData = RetrieveData("DRAFT");
+                if (draftData != null)
+                {
+                    //return Page();
+                    return Redirect("/Create/Create?draftFound=true");
+                }
+                else
+                {
+                    return Page();
+                }
+            }
+            else if (!string.IsNullOrEmpty(loadRecord))
+            {
+                loadFoundValue(RetrieveData("DRAFT"));
+                return Page();
+            }
+            else if (!string.IsNullOrEmpty(deleteDraft))
+            {
+                DeleteFoundValue();
+                return Page();
+            }
+            else if (!string.IsNullOrEmpty(retrieveCompleted))
+            {
+                var completedRecord = RetrieveData("COMPLETED");
+                if (completedRecord != null)
+                {
+                    return Redirect("/Create/Create?completedFound=true");
+                }
                 return Page();
             }
             else
@@ -1615,7 +1652,7 @@ namespace WebRazor.Pages
             return true;
         }
 
-        public IActionResult RetrieveData(string completedOrDraft) {
+        public Record? RetrieveData(string completedOrDraft) {
 
             txtCOURT = (string)TempData["txtCOURT"];
             dtFROM = (DateTime?)TempData["dtFROM"];
@@ -1668,6 +1705,8 @@ namespace WebRazor.Pages
             };
             HttpClient httpClient = new HttpClient(httpClientHandler) { BaseAddress = new Uri(apiEndpoint) };
 
+            RootObject? casResponseModel = null;
+
             using (httpClient)
             {
 
@@ -1678,15 +1717,14 @@ namespace WebRazor.Pages
                         string apiResponse = response.Content.ReadAsStringAsync().Result;
                         Console.WriteLine(apiResponse);
                         //resJson = apiResponse;
-                        var casResponseModel = JsonConvert.DeserializeObject<RootObject>(apiResponse);
+                        casResponseModel = JsonConvert.DeserializeObject<RootObject>(apiResponse);
                         //TempData["RootUuidReturned"] = casResponseModel.nodes[0].uuid;
-                        loadFoundValue(casResponseModel.FirstOrDefault().Value.FirstOrDefault().Value.FirstOrDefault());
                     }
                     //responseStatusCode = response.StatusCode.ToString();
                 }
             }
 
-            return Page();
+            return casResponseModel == null? null : casResponseModel.FirstOrDefault().Value.FirstOrDefault().Value.FirstOrDefault();
         }
 
         public void loadFoundValue(Record casItem)

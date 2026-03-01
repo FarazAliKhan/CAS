@@ -3,7 +3,35 @@
 
 window.addEventListener("load", function () {
     console.log("Page is fully loaded");
-    draftSuccessfullySaved();
+    $(".breadcrumb").children().first().remove();
+    const params = new URLSearchParams(window.location.search);
+    const recSaved = params.get("recordSaved");
+    if (recSaved != null) {
+        draftSuccessfullySaved();
+        $("#btnReview").removeAttr('disabled');
+        $("#tabsbar").removeAttr('hidden');
+        $("#btnNext").removeAttr('hidden');
+    }
+    const completedFound = params.get("completedFound");
+    if (completedFound != null) {
+        showAlreadyExists();
+    }
+    const draftRecFound = params.get("draftFound");
+    if (draftRecFound != null) {
+        retrieveDraft();
+    }
+    const loadRec = params.get("loadRecord");
+    if (loadRec != null) {
+        $("#btnReview").removeAttr('disabled');
+        $("#tabsbar").removeAttr('hidden');
+        $("#btnNext").removeAttr('hidden');
+    }
+    const deleteDraft = params.get("deleteDraft");
+    if (deleteDraft != null) {
+        $("#btnReview").removeAttr('disabled');
+        $("#tabsbar").removeAttr('hidden');
+        $("#btnNext").removeAttr('hidden');
+    }
 });
 
 document.querySelectorAll('#sidebar .nav-link').forEach(link => {
@@ -22,16 +50,18 @@ document.querySelectorAll('#sidebar .nav-link').forEach(link => {
 //populateCourts();
 
 function draftSuccessfullySaved() {
-    const params = new URLSearchParams(window.location.search);
-    //const needRetrieve = params.get("retrieveRecord");
-    const recSaved = params.get("recordSaved");
-    if (recSaved != null) {
-        $('#draftSavedSuccessfully').modal('show');
-        const secId = params.get("sectionId");
-        focusOnFormFromCreate(secId);
-    }
-}   
+    $('#draftSavedSuccessfully').modal('show');
+    const secId = params.get("sectionId");
+    focusOnFormFromCreate(secId);
+}  
 
+function retrieveDraft() {
+    $('#draftFound').modal('show');
+}
+
+function showAlreadyExists() {
+    $('#alreadyExists').modal('show');
+}
 
 //function populateCourts(courtName) {
 //    const culture = document.getElementById("currentCulture").value;
@@ -121,10 +151,6 @@ if ($("#intREPORTINGYEARResult") != null) {
     });
 }
 
-// Write your JavaScript code.
-$(".breadcrumb").children().first().remove();
-enableDisableReview();
-
 //if (needRetrieve != null) {
 //    retrieveDraft();
 //}
@@ -173,8 +199,7 @@ function submitForSave() {
     var form = document.getElementById("createForm");
     form.action = "/Create/Create?submitForSave=true";
     form.method = "post";
-    form.submit();
-    
+    form.submit();  
 }
 
 function submitStats() {
@@ -705,6 +730,10 @@ function enableDisableReview() {
             $("#btnReview").removeAttr('disabled');
             $("#tabsbar").removeAttr('hidden');
         //}
+        var form = document.getElementById("createForm");
+        form.action = "/Create/Create?retrieveDraft=true";
+        form.method = "post";
+        form.submit();
     }
     else {
         $("#btnReview").attr('disabled', true);
@@ -2424,6 +2453,13 @@ function hideFailedRetrieval() {
     $('#draftRetrievalFailed').modal('hide');
 }
 
+function deleteFoundModal(){
+    var form = document.getElementById("createForm");
+    form.action = "/Create/Create?deleteDraft=true";
+    form.method = "post";
+    form.submit();
+}
+
 //function deleteFoundModal() {
 //    var casModel =
 //    {
@@ -2961,130 +2997,137 @@ function hideFailedDelete() {
 }
 
 function loadFoundRecord() {
-    var data = retrievedRecord;
-
-    const rootKey = Object.keys(data)[0];
-    const childKey = Object.keys(data[rootKey])[0];
-
-    const guid = data[rootKey][childKey][0].guid;
-
-    $("#modelUuid").val(guid);
-    $("#nodeUuid").val(guid);
-
-    const fields = data[rootKey][childKey][0].fields;
-
-    fields.forEach(f => {
-        console.log(f.name, f.value);
-        switch (f.name) {
-            case "EXTERNALUSERID": $("#emailAddress").val(f.value); break;
-            //case "STATUS": $("#emailAddress").val(f.value); break;
-            //case "INPUT": $("#emailAddress").val(f.value); break;
-            case "COURT": $("#txtCOURT").val(f.value); break;
-            case "REPORTINGYEAR": $("#intREPORTINGYEAR").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "DATEFROM": $("#dtFROM").val(f.value.split("T")[0]); break;
-            case "DATETO": $("#dtTO").val(f.value.split("T")[0]); break;
-            case "FIELD1_1_1": $("#txtFIELD1_1_1").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD1_1_2": $("#txtFIELD1_1_2").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD1_1_3": $("#txtFIELD1_1_3").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD1_1_4": $("#txtFIELD1_1_4").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD1_1_5": $("#txtFIELD1_1_5").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD1_1_6": $("#txtFIELD1_1_6").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD1_1_7": $("#txtFIELD1_1_7").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "COMMENTSECTION1": $("#txtFIELD_1_Comments").val(f.value); break;
-            case "FIELD1_2_1": $("#txtFIELD1_2_1").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD1_2_2": $("#txtFIELD1_2_2").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD1_2_3": $("#txtFIELD1_2_3").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD1_2_4": $("#txtFIELD1_2_4").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD1_2_5": $("#txtFIELD1_2_5").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD2_1_1": $("#txtFIELD2_1_1").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD2_1_2": $("#txtFIELD2_1_2").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD2_2_1": $("#txtFIELD2_2_1").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD2_2_1_1": $("#txtFIELD2_2_1_1").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD2_2_1_2": $("#txtFIELD2_2_1_2").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD2_2_1_3": $("#txtFIELD2_2_1_3").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD2_2_2": $("#txtFIELD2_2_2").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD2_2_2_1": $("#txtFIELD2_2_2_1").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD2_2_2_2": $("#txtFIELD2_2_2_2").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD2_2_2_3": $("#txtFIELD2_2_2_3").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "COMMENTSECTION2": $("#txtFIELD_2_Comments").val(f.value); break;
-            case "FIELD3_1": $("#txtFIELD3_1").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD3_2": $("#txtFIELD3_2").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "COMMENTSECTION3": $("#txtFIELD_3_Comments").val(f.value); break;
-            case "FIELD4_1_1": $("#txtFIELD4_1_1").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD4_1_2": $("#txtFIELD4_1_2").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD4_1_3": $("#txtFIELD4_1_3").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD4_1_4_1": $("#txtFIELD4_1_4_1").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD4_1_4_2": $("#txtFIELD4_1_4_2").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD4_1_4_3": $("#txtFIELD4_1_4_3").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD4_1_5_1": $("#txtFIELD4_1_5_1").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD4_1_5_2": $("#txtFIELD4_1_5_2").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD4_1_5_3": $("#txtFIELD4_1_5_3").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD4_1_6_1": $("#txtFIELD4_1_6_1").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD4_1_6_2": $("#txtFIELD4_1_6_2").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD4_1_6_3": $("#txtFIELD4_1_6_3").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD4_2_1": $("#txtFIELD4_2_1").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD4_2_2": $("#txtFIELD4_2_2").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD4_2_3": $("#txtFIELD4_2_3").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD4_2_4_1": $("#txtFIELD4_2_4_1").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD4_2_4_2": $("#txtFIELD4_2_4_2").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD4_2_4_3": $("#txtFIELD4_2_4_3").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD4_2_5_1": $("#txtFIELD4_2_5_1").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD4_2_5_2": $("#txtFIELD4_2_5_2").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD4_2_5_3": $("#txtFIELD4_2_5_3").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD4_2_6_1": $("#txtFIELD4_2_6_1").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD4_2_6_2": $("#txtFIELD4_2_6_2").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD4_2_6_3": $("#txtFIELD4_2_6_3").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD4_3_1": $("#txtFIELD4_3_1").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD4_3_2": $("#txtFIELD4_3_2").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD4_3_3": $("#txtFIELD4_3_3").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD4_3_4_1": $("#txtFIELD4_3_4_1").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD4_3_4_2": $("#txtFIELD4_3_4_2").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD4_3_4_3": $("#txtFIELD4_3_4_3").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD4_3_5_1": $("#txtFIELD4_3_5_1").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD4_3_5_2": $("#txtFIELD4_3_5_2").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD4_3_5_3": $("#txtFIELD4_3_5_3").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD4_3_6_1": $("#txtFIELD4_3_6_1").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD4_3_6_2": $("#txtFIELD4_3_6_2").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD4_3_6_3": $("#txtFIELD4_3_6_3").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "COMMENTSECTION4": $("#txtFIELD_4_Comments").val(f.value); break;
-            case "FIELD5_1": $("#txtFIELD5_1").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD5_2": $("#txtFIELD5_2").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD5_3": $("#txtFIELD5_3").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD5_4": $("#txtFIELD5_4").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "COMMENTSECTION5": $("#txtFIELD_5_Comments").val(f.value); break;
-            case "FIELD6_1_1": $("#txtFIELD6_1_1").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD6_1_2": $("#txtFIELD6_1_2").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD6_1_3": $("#txtFIELD6_1_3").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD6_2_1": $("#txtFIELD6_2_1").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD6_2_2": $("#txtFIELD6_2_2").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD6_2_3": $("#txtFIELD6_2_3").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD6_3_1": $("#txtFIELD6_3_1").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD6_3_2": $("#txtFIELD6_3_2").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD6_3_3": $("#txtFIELD6_3_3").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "COMMENTSECTION6": $("#txtFIELD_6_Comments").val(f.value); break;
-            case "FIELD7_1_1": $("#txtFIELD7_1_1").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD7_1_2": $("#txtFIELD7_1_2").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD7_1_3": $("#txtFIELD7_1_3").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "COMMENTSECTION7": $("#txtFIELD_7_Comments").val(f.value); break;
-            case "FIELD8_1": $("#txtFIELD8_1").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD8_2": $("#txtFIELD8_2").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD8_3": $("#txtFIELD8_3").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "COMMENTSECTION8": $("#txtFIELD_8_Comments").val(f.value); break;
-            case "FIELD9_1": $("#txtFIELD9_1").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD9_2": $("#txtFIELD9_2").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "COMMENTSECTION9": $("#txtFIELD_9_Comments").val(f.value); break;
-            case "FIELD10_1": $("#txtFIELD10_1").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "COMMENTSECTION10": $("#txtFIELD_10_Comments").val(f.value); break;
-            case "FIELD11_1": $("#txtFIELD11_1").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "FIELD11_2": $("#txtFIELD11_2").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
-            case "COMMENTSECTION11": $("#txtFIELD_11_Comments").val(f.value); break;
-        }
-    });
-
-    //enableDisableReview();
-
-    $('#draftFound').modal('hide');
+    var form = document.getElementById("createForm");
+    form.action = "/Create/Create?loadRecord=true";
+    form.method = "post";
+    form.submit();
 }
+
+//function loadFoundRecord() {
+//    var data = retrievedRecord;
+
+//    const rootKey = Object.keys(data)[0];
+//    const childKey = Object.keys(data[rootKey])[0];
+
+//    const guid = data[rootKey][childKey][0].guid;
+
+//    $("#modelUuid").val(guid);
+//    $("#nodeUuid").val(guid);
+
+//    const fields = data[rootKey][childKey][0].fields;
+
+//    fields.forEach(f => {
+//        console.log(f.name, f.value);
+//        switch (f.name) {
+//            case "EXTERNALUSERID": $("#emailAddress").val(f.value); break;
+//            //case "STATUS": $("#emailAddress").val(f.value); break;
+//            //case "INPUT": $("#emailAddress").val(f.value); break;
+//            case "COURT": $("#txtCOURT").val(f.value); break;
+//            case "REPORTINGYEAR": $("#intREPORTINGYEAR").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "DATEFROM": $("#dtFROM").val(f.value.split("T")[0]); break;
+//            case "DATETO": $("#dtTO").val(f.value.split("T")[0]); break;
+//            case "FIELD1_1_1": $("#txtFIELD1_1_1").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD1_1_2": $("#txtFIELD1_1_2").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD1_1_3": $("#txtFIELD1_1_3").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD1_1_4": $("#txtFIELD1_1_4").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD1_1_5": $("#txtFIELD1_1_5").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD1_1_6": $("#txtFIELD1_1_6").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD1_1_7": $("#txtFIELD1_1_7").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "COMMENTSECTION1": $("#txtFIELD_1_Comments").val(f.value); break;
+//            case "FIELD1_2_1": $("#txtFIELD1_2_1").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD1_2_2": $("#txtFIELD1_2_2").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD1_2_3": $("#txtFIELD1_2_3").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD1_2_4": $("#txtFIELD1_2_4").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD1_2_5": $("#txtFIELD1_2_5").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD2_1_1": $("#txtFIELD2_1_1").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD2_1_2": $("#txtFIELD2_1_2").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD2_2_1": $("#txtFIELD2_2_1").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD2_2_1_1": $("#txtFIELD2_2_1_1").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD2_2_1_2": $("#txtFIELD2_2_1_2").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD2_2_1_3": $("#txtFIELD2_2_1_3").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD2_2_2": $("#txtFIELD2_2_2").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD2_2_2_1": $("#txtFIELD2_2_2_1").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD2_2_2_2": $("#txtFIELD2_2_2_2").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD2_2_2_3": $("#txtFIELD2_2_2_3").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "COMMENTSECTION2": $("#txtFIELD_2_Comments").val(f.value); break;
+//            case "FIELD3_1": $("#txtFIELD3_1").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD3_2": $("#txtFIELD3_2").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "COMMENTSECTION3": $("#txtFIELD_3_Comments").val(f.value); break;
+//            case "FIELD4_1_1": $("#txtFIELD4_1_1").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD4_1_2": $("#txtFIELD4_1_2").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD4_1_3": $("#txtFIELD4_1_3").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD4_1_4_1": $("#txtFIELD4_1_4_1").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD4_1_4_2": $("#txtFIELD4_1_4_2").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD4_1_4_3": $("#txtFIELD4_1_4_3").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD4_1_5_1": $("#txtFIELD4_1_5_1").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD4_1_5_2": $("#txtFIELD4_1_5_2").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD4_1_5_3": $("#txtFIELD4_1_5_3").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD4_1_6_1": $("#txtFIELD4_1_6_1").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD4_1_6_2": $("#txtFIELD4_1_6_2").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD4_1_6_3": $("#txtFIELD4_1_6_3").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD4_2_1": $("#txtFIELD4_2_1").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD4_2_2": $("#txtFIELD4_2_2").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD4_2_3": $("#txtFIELD4_2_3").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD4_2_4_1": $("#txtFIELD4_2_4_1").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD4_2_4_2": $("#txtFIELD4_2_4_2").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD4_2_4_3": $("#txtFIELD4_2_4_3").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD4_2_5_1": $("#txtFIELD4_2_5_1").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD4_2_5_2": $("#txtFIELD4_2_5_2").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD4_2_5_3": $("#txtFIELD4_2_5_3").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD4_2_6_1": $("#txtFIELD4_2_6_1").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD4_2_6_2": $("#txtFIELD4_2_6_2").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD4_2_6_3": $("#txtFIELD4_2_6_3").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD4_3_1": $("#txtFIELD4_3_1").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD4_3_2": $("#txtFIELD4_3_2").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD4_3_3": $("#txtFIELD4_3_3").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD4_3_4_1": $("#txtFIELD4_3_4_1").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD4_3_4_2": $("#txtFIELD4_3_4_2").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD4_3_4_3": $("#txtFIELD4_3_4_3").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD4_3_5_1": $("#txtFIELD4_3_5_1").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD4_3_5_2": $("#txtFIELD4_3_5_2").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD4_3_5_3": $("#txtFIELD4_3_5_3").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD4_3_6_1": $("#txtFIELD4_3_6_1").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD4_3_6_2": $("#txtFIELD4_3_6_2").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD4_3_6_3": $("#txtFIELD4_3_6_3").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "COMMENTSECTION4": $("#txtFIELD_4_Comments").val(f.value); break;
+//            case "FIELD5_1": $("#txtFIELD5_1").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD5_2": $("#txtFIELD5_2").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD5_3": $("#txtFIELD5_3").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD5_4": $("#txtFIELD5_4").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "COMMENTSECTION5": $("#txtFIELD_5_Comments").val(f.value); break;
+//            case "FIELD6_1_1": $("#txtFIELD6_1_1").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD6_1_2": $("#txtFIELD6_1_2").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD6_1_3": $("#txtFIELD6_1_3").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD6_2_1": $("#txtFIELD6_2_1").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD6_2_2": $("#txtFIELD6_2_2").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD6_2_3": $("#txtFIELD6_2_3").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD6_3_1": $("#txtFIELD6_3_1").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD6_3_2": $("#txtFIELD6_3_2").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD6_3_3": $("#txtFIELD6_3_3").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "COMMENTSECTION6": $("#txtFIELD_6_Comments").val(f.value); break;
+//            case "FIELD7_1_1": $("#txtFIELD7_1_1").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD7_1_2": $("#txtFIELD7_1_2").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD7_1_3": $("#txtFIELD7_1_3").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "COMMENTSECTION7": $("#txtFIELD_7_Comments").val(f.value); break;
+//            case "FIELD8_1": $("#txtFIELD8_1").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD8_2": $("#txtFIELD8_2").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD8_3": $("#txtFIELD8_3").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "COMMENTSECTION8": $("#txtFIELD_8_Comments").val(f.value); break;
+//            case "FIELD9_1": $("#txtFIELD9_1").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD9_2": $("#txtFIELD9_2").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "COMMENTSECTION9": $("#txtFIELD_9_Comments").val(f.value); break;
+//            case "FIELD10_1": $("#txtFIELD10_1").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "COMMENTSECTION10": $("#txtFIELD_10_Comments").val(f.value); break;
+//            case "FIELD11_1": $("#txtFIELD11_1").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "FIELD11_2": $("#txtFIELD11_2").val(($.trim(f.value) !== "") ? Math.floor(Number(f.value)) : ""); break;
+//            case "COMMENTSECTION11": $("#txtFIELD_11_Comments").val(f.value); break;
+//        }
+//    });
+
+//    //enableDisableReview();
+
+//    $('#draftFound').modal('hide');
+//}
 
 //function retrieveExisting() {
 //    var courtName = document.getElementById("txtCOURT").value;

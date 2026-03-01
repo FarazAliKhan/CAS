@@ -457,7 +457,8 @@
                                             <option value="">Select Court</option>
                                         </select> *@
 
-                                        <select asp-for="@Model.txtCOURT" class="form-control">
+                                        <select asp-for="@Model.txtCOURT" class="form-control"
+                                                onchange="javascript:enableDisableReview();">
                                            
                                             <option value="">Select Court</option>
                                             @foreach(var court in Model.Courts)
