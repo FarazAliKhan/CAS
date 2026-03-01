@@ -382,20 +382,6 @@ namespace WebRazor.Pages
                 }
             }
 
-           
-
-            //if (Upload != null) { 
-            //    if(Upload.Length > maxFileSize)
-            //    {
-            //        ModelState.Clear();
-            //        ModelState.AddModelError("FileUpload", "File size should be less than 10 MB");
-            //        return Page();
-            //    }
-            //}
-
-            //if (!ModelState.IsValid)
-            //return Page();
-
             var createItem = new CASEntityCreate()
             {
                 txtCOURT = txtCOURT,
@@ -640,6 +626,8 @@ namespace WebRazor.Pages
 
             var retrieveDraft = Request.Query["retrieveDraft"].FirstOrDefault();
 
+            var noDraft = Request.Query["noDraft"].FirstOrDefault();
+
             if (!string.IsNullOrEmpty(fromSelect))
             {
                 return Page();
@@ -649,11 +637,10 @@ namespace WebRazor.Pages
                 bool success = HandleSubmit(createItem);
                 if (success)
                 {
-                    loadFoundValue(RetrieveData("DRAFT"));
-                    //TempData["reqJson"] = reqJson;
-                    //TempData["resJson"] = resJson;
-                    //TempData["responseStatusCode"] = responseStatusCode;
-                    return Redirect("/Create/Create?recordSaved=true&sectionId=" + sectId);
+                    //loadFoundValue(RetrieveData("DRAFT"));
+                    //ModelState.Clear();
+                    return Page();
+                    //return Redirect("/Create/Create?recordSaved=true&sectionId=" + sectId);
                 }
                 else
                 {
@@ -670,17 +657,27 @@ namespace WebRazor.Pages
                 }
                 else
                 {
-                    return Page();
+                    return Redirect("/Create/Create?noDraft=true");
                 }
             }
             else if (!string.IsNullOrEmpty(loadRecord))
             {
-                loadFoundValue(RetrieveData("DRAFT"));
+                var draftData = RetrieveData("DRAFT");
+                if (draftData != null)
+                {
+                    ModelState.Clear();
+                    loadFoundValue(draftData);
+                }
                 return Page();
             }
             else if (!string.IsNullOrEmpty(deleteDraft))
             {
-                DeleteFoundValue();
+                var draftData = RetrieveData("DRAFT");
+                if (draftData != null)
+                {
+                    DeleteFoundValue(draftData);
+                    return Redirect("/Create/Create?deleted=true");
+                }
                 return Page();
             }
             else if (!string.IsNullOrEmpty(retrieveCompleted))
@@ -690,6 +687,10 @@ namespace WebRazor.Pages
                 {
                     return Redirect("/Create/Create?completedFound=true");
                 }
+                return Page();
+            }
+            else if (!string.IsNullOrEmpty(noDraft))
+            {
                 return Page();
             }
             else
@@ -1652,7 +1653,8 @@ namespace WebRazor.Pages
             return true;
         }
 
-        public Record? RetrieveData(string completedOrDraft) {
+        public Record? RetrieveData(string completedOrDraft)
+        {
 
             txtCOURT = (string)TempData["txtCOURT"];
             dtFROM = (DateTime?)TempData["dtFROM"];
@@ -1690,7 +1692,7 @@ namespace WebRazor.Pages
                         ]
                  });
 
-             var json = JsonConvert.SerializeObject(retrieveObj);
+            var json = JsonConvert.SerializeObject(retrieveObj);
 
             Console.Write(json);
 
@@ -1724,7 +1726,7 @@ namespace WebRazor.Pages
                 }
             }
 
-            return casResponseModel == null? null : casResponseModel.FirstOrDefault().Value.FirstOrDefault().Value.FirstOrDefault();
+            return casResponseModel.Count == 0 ? null : casResponseModel.FirstOrDefault().Value.FirstOrDefault().Value.FirstOrDefault();
         }
 
         public void loadFoundValue(Record casItem)
@@ -1752,7 +1754,7 @@ namespace WebRazor.Pages
                     case "COURT": txtCOURT = f.Value; break;
                     case "REPORTINGYEAR":
                         var floatValue = float.Parse(f.Value);
-                        int? intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        int? intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         intREPORTINGYEAR = intValue!.ToString(); break;
                     case "DATEFROM": dtFROM = DateTime.Parse(f.Value); break;
                     case "DATETO": dtTO = DateTime.Parse(f.Value); break;
@@ -1778,94 +1780,94 @@ namespace WebRazor.Pages
                         txtFIELD1_1_5 = intValue; break;
                     case "FIELD1_1_6":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD1_1_6 = intValue; break;
                     case "FIELD1_1_7":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD1_1_7 = intValue; break;
                     case "COMMENTSECTION1": txtFIELD_1_Comments = f.Value; break;
                     case "FIELD1_2_1":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD1_2_1 = intValue; break;
                     case "FIELD1_2_2":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD1_2_2 = intValue; break;
                     case "FIELD1_2_3":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD1_2_3 = intValue; break;
                     case "FIELD1_2_4":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD1_2_4 = intValue; break;
                     case "FIELD1_2_5":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD1_2_5 = intValue; break;
                     case "FIELD2_1_1":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD2_1_1 = intValue; break;
                     case "FIELD2_1_2":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD2_1_2 = intValue; break;
                     case "FIELD2_2_1":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD2_2_1 = intValue; break;
                     case "FIELD2_2_1_1":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD2_2_1_1 = intValue; break;
                     case "FIELD2_2_1_2":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD2_2_1_2 = intValue; break;
                     case "FIELD2_2_1_3":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD2_2_1_3 = intValue; break;
                     case "FIELD2_2_2":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD2_2_2 = intValue; break;
                     case "FIELD2_2_2_1":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD2_2_2_1 = intValue; break;
                     case "FIELD2_2_2_2":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD2_2_2_2 = intValue; break;
                     case "FIELD2_2_2_3":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD2_2_2_3 = intValue; break;
                     case "COMMENTSECTION2": txtFIELD_2_Comments = f.Value; break;
                     case "FIELD3_1":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD3_1 = intValue; break;
                     case "FIELD3_2":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD3_2 = intValue; break;
                     case "COMMENTSECTION3": txtFIELD_3_Comments = f.Value; break;
                     case "FIELD4_1_1":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD4_1_1 = intValue; break;
                     case "FIELD4_1_2":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD4_1_2 = intValue; break;
                     case "FIELD4_1_3":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD4_1_3 = intValue; break;
                     case "FIELD4_1_4_1":
                         floatValue = float.Parse(f.Value);
@@ -1873,266 +1875,979 @@ namespace WebRazor.Pages
                         txtFIELD4_1_4_1 = intValue; break;
                     case "FIELD4_1_4_2":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD4_1_4_2 = intValue; break;
                     case "FIELD4_1_4_3":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD4_1_4_3 = intValue; break;
                     case "FIELD4_1_5_1":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD4_1_5_1 = intValue; break;
                     case "FIELD4_1_5_2":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD4_1_5_2 = intValue; break;
                     case "FIELD4_1_5_3":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD4_1_5_3 = intValue; break;
                     case "FIELD4_1_6_1":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD4_1_6_1 = intValue; break;
                     case "FIELD4_1_6_2":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD4_1_6_2 = intValue; break;
                     case "FIELD4_1_6_3":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD4_1_6_3 = intValue; break;
                     case "FIELD4_2_1":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD4_2_1 = intValue; break;
                     case "FIELD4_2_2":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD4_2_2 = intValue; break;
                     case "FIELD4_2_3":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD4_2_3 = intValue; break;
                     case "FIELD4_2_4_1":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD4_2_4_1 = intValue; break;
                     case "FIELD4_2_4_2":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD4_2_4_2 = intValue; break;
                     case "FIELD4_2_4_3":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD4_2_4_3 = intValue; break;
                     case "FIELD4_2_5_1":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD4_2_5_1 = intValue; break;
                     case "FIELD4_2_5_2":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD4_2_5_2 = intValue; break;
                     case "FIELD4_2_5_3":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD4_2_5_3 = intValue; break;
                     case "FIELD4_2_6_1":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD4_2_6_1 = intValue; break;
                     case "FIELD4_2_6_2":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD4_2_6_2 = intValue; break;
                     case "FIELD4_2_6_3":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD4_2_6_3 = intValue; break;
                     case "FIELD4_3_1":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD4_3_1 = intValue; break;
                     case "FIELD4_3_2":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD4_3_2 = intValue; break;
                     case "FIELD4_3_3":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD4_3_3 = intValue; break;
                     case "FIELD4_3_4_1":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD4_3_4_1 = intValue; break;
                     case "FIELD4_3_4_2":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD4_3_4_2 = intValue; break;
                     case "FIELD4_3_4_3":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD4_3_4_3 = intValue; break;
                     case "FIELD4_3_5_1":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD4_3_5_1 = intValue; break;
                     case "FIELD4_3_5_2":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD4_3_5_2 = intValue; break;
                     case "FIELD4_3_5_3":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD4_3_5_3 = intValue; break;
                     case "FIELD4_3_6_1":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD4_3_6_1 = intValue; break;
                     case "FIELD4_3_6_2":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD4_3_6_2 = intValue; break;
                     case "FIELD4_3_6_3":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD4_3_6_3 = intValue; break;
                     case "COMMENTSECTION4": txtFIELD_4_Comments = f.Value; break;
                     case "FIELD5_1":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD5_1 = intValue; break;
                     case "FIELD5_2":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD5_2 = intValue; break;
                     case "FIELD5_3":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD5_3 = intValue; break;
                     case "FIELD5_4":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD5_4 = intValue; break;
                     case "COMMENTSECTION5": txtFIELD_5_Comments = f.Value; break;
                     case "FIELD6_1_1":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD6_1_1 = intValue; break;
                     case "FIELD6_1_2":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD6_1_2 = intValue; break;
                     case "FIELD6_1_3":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD6_1_3 = intValue; break;
                     case "FIELD6_2_1":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD6_2_1 = intValue; break;
                     case "FIELD6_2_2":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD6_2_2 = intValue; break;
                     case "FIELD6_2_3":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD6_2_3 = intValue; break;
                     case "FIELD6_3_1":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD6_3_1 = intValue; break;
                     case "FIELD6_3_2":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD6_3_2 = intValue; break;
                     case "FIELD6_3_3":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD6_3_3 = intValue; break;
                     case "COMMENTSECTION6": txtFIELD_6_Comments = f.Value; break;
                     case "FIELD7_1_1":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD7_1_1 = intValue; break;
                     case "FIELD7_1_2":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD7_1_2 = intValue; break;
                     case "FIELD7_1_3":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD7_1_3 = intValue; break;
                     case "COMMENTSECTION7": txtFIELD_7_Comments = f.Value; break;
                     case "FIELD8_1":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD8_1 = intValue; break;
                     case "FIELD8_2":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD8_2 = intValue; break;
                     case "FIELD8_3":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD8_3 = intValue; break;
                     case "COMMENTSECTION8": txtFIELD_8_Comments = f.Value; break;
                     case "FIELD9_1":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD9_1 = intValue; break;
                     case "FIELD9_2":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD9_2 = intValue; break;
                     case "COMMENTSECTION9": txtFIELD_9_Comments = f.Value; break;
                     case "FIELD10_1":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD10_1 = intValue; break;
                     case "COMMENTSECTION10": txtFIELD_10_Comments = f.Value; break;
                     case "FIELD11_1":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD11_1 = intValue; break;
                     case "FIELD11_2":
                         floatValue = float.Parse(f.Value);
-                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null; 
+                        intValue = (int)Math.Floor(floatValue) != 0 ? (int)Math.Floor(floatValue) : null;
                         txtFIELD11_2 = intValue; break;
                     case "COMMENTSECTION11": txtFIELD_11_Comments = f.Value; break;
                 }
             }
         }
 
-        public void DeleteFoundValue() {
+        public void DeleteFoundValue(Record draftDataValues)
+        {
             var casModel = new CasModel()
             {
                 appId = "CAACS",
                 region = "NEWRECORD",
-                uuid = modelUuid,
+                uuid = draftDataValues.Guid.ToString(),
                 nodes = new List<Node>()
             };
 
 
             var fields = new List<Field>();
-            fields.Add(new Field()
-            {
-                name = "EXTERNALUSERID",
-                value = emailAddress
-            });
 
             fields.Add(
-                new Field() {
+                new Field()
+                {
                     name = "STATUS",
                     value = "DELETED"
                 });
 
+            fields.Add(
+                new Field()
+                {
+                    name = "INPUT",
+                    value = (new DateTime()).ToString()
+                });
+
+            var nodeFields = draftDataValues.Fields;
+
+            foreach (NodeField f in nodeFields)
+            {
+                switch (f.Name)
+                {
+                    case "EXTERNALUSERID":
+                        fields.Add(new Field()
+                        {
+                            name = "EXTERNALUSERID",
+                            value = f.Value
+                        });
+                        break;
+                    case "COURT":
+                        fields.Add(new Field()
+                        {
+                            name = "COURT",
+                            value = f.Value
+                        });
+                        break;
+                    case "REPORTINGYEAR":
+                        fields.Add(new Field()
+                        {
+                            name = "REPORTINGYEAR",
+                            value = f.Value
+                        });
+                        break;
+                    case "DATEFROM":
+                        fields.Add(new Field()
+                        {
+                            name = "DATEFROM",
+                            value = f.Value
+                        });
+                        break;
+                    case "DATETO":
+                        fields.Add(new Field()
+                        {
+                            name = "DATETO",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD1_1_1":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD1_1_1",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD1_1_2":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD1_1_2",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD1_1_3":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD1_1_3",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD1_1_4":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD1_1_4",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD1_1_5":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD1_1_5",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD1_1_6":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD1_1_6",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD1_1_7":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD1_1_7",
+                            value = f.Value
+                        });
+                        break;
+                    case "COMMENTSECTION1":
+                        fields.Add(new Field()
+                        {
+                            name = "COMMENTSECTION1",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD1_2_1":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD1_2_1",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD1_2_2":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD1_2_2",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD1_2_3":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD1_2_3",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD1_2_4":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD1_2_4",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD1_2_5":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD1_2_5",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD2_1_1":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD2_1_1",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD2_1_2":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD2_1_2",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD2_2_1":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD2_2_1",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD2_2_1_1":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD2_2_1_1",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD2_2_1_2":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD2_2_1_2",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD2_2_1_3":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD2_2_1_3",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD2_2_2":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD2_2_2",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD2_2_2_1":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD2_2_2_1",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD2_2_2_2":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD2_2_2_2",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD2_2_2_3":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD2_2_2_3",
+                            value = f.Value
+                        });
+                        break;
+                    case "COMMENTSECTION2":
+                        fields.Add(new Field()
+                        {
+                            name = "COMMENTSECTION2",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD3_1":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD3_1",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD3_2":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD3_2",
+                            value = f.Value
+                        });
+                        break;
+                    case "COMMENTSECTION3":
+                        fields.Add(new Field()
+                        {
+                            name = "COMMENTSECTION3",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD4_1_1":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD4_1_1",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD4_1_2":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD4_1_2",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD4_1_3":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD4_1_3",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD4_1_4_1":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD4_1_4_1",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD4_1_4_2":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD4_1_4_2",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD4_1_4_3":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD4_1_4_3",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD4_1_5_1":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD4_1_5_1",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD4_1_5_2":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD4_1_5_2",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD4_1_5_3":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD4_1_5_3",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD4_1_6_1":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD4_1_6_1",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD4_1_6_2":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD4_1_6_2",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD4_1_6_3":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD4_1_6_3",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD4_2_1":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD4_2_1",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD4_2_2":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD4_2_2",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD4_2_3":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD4_2_3",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD4_2_4_1":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD4_2_4_1",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD4_2_4_2":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD4_2_4_2",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD4_2_4_3":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD4_2_4_3",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD4_2_5_1":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD4_2_5_1",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD4_2_5_2":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD4_2_5_2",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD4_2_5_3":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD4_2_5_3",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD4_2_6_1":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD4_2_6_1",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD4_2_6_2":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD4_2_6_2",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD4_2_6_3":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD4_2_6_3",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD4_3_1":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD4_3_1",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD4_3_2":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD4_3_2",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD4_3_3":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD4_3_3",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD4_3_4_1":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD4_3_4_1",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD4_3_4_2":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD4_3_4_2",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD4_3_4_3":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD4_3_4_3",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD4_3_5_1":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD4_3_5_1",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD4_3_5_2":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD4_3_5_2",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD4_3_5_3":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD4_3_5_3",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD4_3_6_1":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD4_3_6_1",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD4_3_6_2":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD4_3_6_2",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD4_3_6_3":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD4_3_6_3",
+                            value = f.Value
+                        });
+                        break;
+                    case "COMMENTSECTION4":
+                        fields.Add(new Field()
+                        {
+                            name = "COMMENTSECTION4",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD5_1":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD5_1",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD5_2":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD5_2",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD5_3":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD5_3",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD5_4":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD5_4",
+                            value = f.Value
+                        });
+                        break;
+                    case "COMMENTSECTION5":
+                        fields.Add(new Field()
+                        {
+                            name = "COMMENTSECTION5",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD6_1_1":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD6_1_1",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD6_1_2":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD6_1_2",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD6_1_3":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD6_1_3",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD6_2_1":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD6_2_1",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD6_2_2":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD6_2_2",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD6_2_3":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD6_2_3",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD6_3_1":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD6_3_1",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD6_3_2":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD6_3_2",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD6_3_3":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD6_3_3",
+                            value = f.Value
+                        });
+                        break;
+                    case "COMMENTSECTION6":
+                        fields.Add(new Field()
+                        {
+                            name = "COMMENTSECTION6",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD7_1_1":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD7_1_1",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD7_1_2":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD7_1_2",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD7_1_3":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD7_1_3",
+                            value = f.Value
+                        });
+                        break;
+                    case "COMMENTSECTION7":
+                        fields.Add(new Field()
+                        {
+                            name = "COMMENTSECTION7",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD8_1":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD8_1",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD8_2":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD8_2",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD8_3":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD8_3",
+                            value = f.Value
+                        });
+                        break;
+                    case "COMMENTSECTION8":
+                        fields.Add(new Field()
+                        {
+                            name = "COMMENTSECTION8",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD9_1":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD9_1",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD9_2":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD9_2",
+                            value = f.Value
+                        });
+                        break;
+                    case "COMMENTSECTION9":
+                        fields.Add(new Field()
+                        {
+                            name = "COMMENTSECTION9",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD10_1":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD10_1",
+                            value = f.Value
+                        });
+                        break;
+                    case "COMMENTSECTION10":
+                        fields.Add(new Field()
+                        {
+                            name = "COMMENTSECTION10",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD11_1":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD11_1",
+                            value = f.Value
+                        });
+                        break;
+                    case "FIELD11_2":
+                        fields.Add(new Field()
+                        {
+                            name = "FIELD11_2",
+                            value = f.Value
+                        });
+                        break;
+                    case "COMMENTSECTION11":
+                        fields.Add(new Field()
+                        {
+                            name = "COMMENTSECTION11",
+                            value = f.Value
+                        });
+                        break;
+                }
+            }
+
             casModel.nodes.Add(new Node()
             {
-                uuid = nodeUuid,
+                uuid = draftDataValues.Guid.ToString(),
                 fields = fields
             });
 
@@ -2170,3 +2885,4 @@ namespace WebRazor.Pages
         }
     }
 }
+

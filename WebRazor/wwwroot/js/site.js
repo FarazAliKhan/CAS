@@ -5,12 +5,13 @@ window.addEventListener("load", function () {
     console.log("Page is fully loaded");
     $(".breadcrumb").children().first().remove();
     const params = new URLSearchParams(window.location.search);
-    const recSaved = params.get("recordSaved");
+    const recSaved = params.get("submitForSave");
     if (recSaved != null) {
-        draftSuccessfullySaved();
-        $("#btnReview").removeAttr('disabled');
         $("#tabsbar").removeAttr('hidden');
         $("#btnNext").removeAttr('hidden');
+        draftSuccessfullySaved();
+        const secId = document.getElementById("sectionIdFromCreate").value;
+        focusOnFormFromCreate(secId);
     }
     const completedFound = params.get("completedFound");
     if (completedFound != null) {
@@ -22,13 +23,22 @@ window.addEventListener("load", function () {
     }
     const loadRec = params.get("loadRecord");
     if (loadRec != null) {
-        $("#btnReview").removeAttr('disabled');
         $("#tabsbar").removeAttr('hidden');
         $("#btnNext").removeAttr('hidden');
     }
     const deleteDraft = params.get("deleteDraft");
     if (deleteDraft != null) {
-        $("#btnReview").removeAttr('disabled');
+        $("#tabsbar").removeAttr('hidden');
+        $("#btnNext").removeAttr('hidden');
+    }
+    const noDraft = params.get("noDraft");
+    if (noDraft != null) {
+        $("#tabsbar").removeAttr('hidden');
+        $("#btnNext").removeAttr('hidden');
+    }
+    const deleted = params.get("deleted");
+    if (deleted != null) {
+        hideFoundModal();
         $("#tabsbar").removeAttr('hidden');
         $("#btnNext").removeAttr('hidden');
     }
@@ -51,8 +61,6 @@ document.querySelectorAll('#sidebar .nav-link').forEach(link => {
 
 function draftSuccessfullySaved() {
     $('#draftSavedSuccessfully').modal('show');
-    const secId = params.get("sectionId");
-    focusOnFormFromCreate(secId);
 }  
 
 function retrieveDraft() {
@@ -218,11 +226,11 @@ function focusOnFormFromCreate(sectionId) {
             setTabsBackgroundToInit();
             hideDetails("detailsBasicInfo");
             fieldFocus(sectId);
-            $("#btnReview").removeAttr("hidden");
-            $("#revMessage").removeAttr("hidden");
+            //$("#btnReview").removeAttr("hidden");
+            //$("#revMessage").removeAttr("hidden");
             $("#tabsbar").removeAttr("hidden");
-            enableDisableReview();
-            $("#btnReview").removeAttr('disabled');
+            //enableDisableReview();
+            //$("#btnReview").removeAttr('disabled');
             if (sectId != 12) {
                 $("#btnNext").removeAttr("hidden");
             }
@@ -243,35 +251,37 @@ function focusOnFormFromCreate(sectionId) {
 }
 
 function focusOnForm(sectionId) {
-    let sectField = document.getElementById("sectionId");
-    if (sectField != null) {
-        let sectId = sectField.value;
-        if (sectId != null && sectId != "") {
-            sectField.value = sectId;
-            $('#sidebarMessage').attr("hidden", true);
-            setTabsBackgroundToInit();
-            hideDetails("detailsBasicInfo");
-            fieldFocus(sectId);
-            $("#btnReview").removeAttr("hidden");
-            $("#revMessage").removeAttr("hidden");
-            $("#tabsbar").removeAttr("hidden");
-            enableDisableReview();
-            $("#btnReview").removeAttr('disabled');
-            if (sectId != 12) {
-                $("#btnNext").removeAttr("hidden");
+    if (sectionId != null && sectionId != "") {
+        let sectField = document.getElementById("sectionId");
+        if (sectField != null) {
+            let sectId = sectField.value;
+            if (sectId != null && sectId != "") {
+                sectField.value = sectId;
+                $('#sidebarMessage').attr("hidden", true);
+                setTabsBackgroundToInit();
+                hideDetails("detailsBasicInfo");
+                fieldFocus(sectId);
+                $("#btnReview").removeAttr("hidden");
+                $("#revMessage").removeAttr("hidden");
+                $("#tabsbar").removeAttr("hidden");
+                //enableDisableReview();
+                $("#btnReview").removeAttr('disabled');
+                if (sectId != 12) {
+                    $("#btnNext").removeAttr("hidden");
+                }
+                else {
+                    $("#btnNext").attr("hidden", true);
+                }
+                if (sectId != 0) {
+                    $("#btnPrevious").removeAttr("hidden");
+                }
+                else {
+                    $("#btnPrevious").attr("hidden", true);
+                }
             }
             else {
-                $("#btnNext").attr("hidden", true);
+                $('#sidebarMessage').delay(5000).fadeOut(400);
             }
-            if (sectId != 0) {
-                $("#btnPrevious").removeAttr("hidden");
-            }
-            else {
-                $("#btnPrevious").attr("hidden", true);
-            }
-        }
-        else {
-            $('#sidebarMessage').delay(5000).fadeOut(400);
         }
     }
 }
@@ -395,12 +405,16 @@ function showDetails(detailsId) {
             $("#btnPrevious").attr("hidden", true);
             $("#btnNext").removeAttr("hidden");
             $("#btnSave").attr("hidden", true);
+            $("#btnReview").attr("hidden", true);
+            $("#revMessage").attr("hidden", true);
             sectField.value = "0";
             break;
         case "details1":
             $("#btnPrevious").removeAttr("hidden");
             $("#btnNext").removeAttr("hidden");
             $("#btnSave").removeAttr("hidden");
+            $("#btnReview").attr("hidden", true);
+            $("#revMessage").attr("hidden", true);
             makeSection1Required();
             sectField.value = "1";
             break;
@@ -408,6 +422,8 @@ function showDetails(detailsId) {
             $("#btnPrevious").removeAttr("hidden");
             $("#btnNext").removeAttr("hidden");
             $("#btnSave").removeAttr("hidden");
+            $("#btnReview").attr("hidden", true);
+            $("#revMessage").attr("hidden", true);
             makeSection2Required();
             sectField.value = "2";
             break;
@@ -415,6 +431,8 @@ function showDetails(detailsId) {
             $("#btnPrevious").removeAttr("hidden");
             $("#btnNext").removeAttr("hidden");
             $("#btnSave").removeAttr("hidden");
+            $("#btnReview").attr("hidden", true);
+            $("#revMessage").attr("hidden", true);
             makeSection3Required();
             sectField.value = "3";
             break;
@@ -422,6 +440,8 @@ function showDetails(detailsId) {
             $("#btnPrevious").removeAttr("hidden");
             $("#btnNext").removeAttr("hidden");
             $("#btnSave").removeAttr("hidden");
+            $("#btnReview").attr("hidden", true);
+            $("#revMessage").attr("hidden", true);
             makeSection4Required();
             sectField.value = "4";
             break;
@@ -429,6 +449,8 @@ function showDetails(detailsId) {
             $("#btnPrevious").removeAttr("hidden");
             $("#btnNext").removeAttr("hidden");
             $("#btnSave").removeAttr("hidden");
+            $("#btnReview").attr("hidden", true);
+            $("#revMessage").attr("hidden", true);
             makeSection5Required();
             sectField.value = "5";
             break;
@@ -436,6 +458,8 @@ function showDetails(detailsId) {
             $("#btnPrevious").removeAttr("hidden");
             $("#btnNext").removeAttr("hidden");
             $("#btnSave").removeAttr("hidden");
+            $("#btnReview").attr("hidden", true);
+            $("#revMessage").attr("hidden", true);
             makeSection6Required();
             sectField.value = "6";
             break;
@@ -443,6 +467,8 @@ function showDetails(detailsId) {
             $("#btnPrevious").removeAttr("hidden");
             $("#btnNext").removeAttr("hidden");
             $("#btnSave").removeAttr("hidden");
+            $("#btnReview").attr("hidden", true);
+            $("#revMessage").attr("hidden", true);
             makeSection7Required();
             sectField.value = "7";
             break;
@@ -450,6 +476,8 @@ function showDetails(detailsId) {
             $("#btnPrevious").removeAttr("hidden");
             $("#btnNext").removeAttr("hidden");
             $("#btnSave").removeAttr("hidden");
+            $("#btnReview").attr("hidden", true);
+            $("#revMessage").attr("hidden", true);
             makeSection8Required();
             sectField.value = "8";
             break;
@@ -457,6 +485,8 @@ function showDetails(detailsId) {
             $("#btnPrevious").removeAttr("hidden");
             $("#btnNext").removeAttr("hidden");
             $("#btnSave").removeAttr("hidden");
+            $("#btnReview").attr("hidden", true);
+            $("#revMessage").attr("hidden", true);
             makeSection9Required();
             sectField.value = "9";
             break;
@@ -464,6 +494,8 @@ function showDetails(detailsId) {
             $("#btnPrevious").removeAttr("hidden");
             $("#btnNext").removeAttr("hidden");
             $("#btnSave").removeAttr("hidden");
+            $("#btnReview").attr("hidden", true);
+            $("#revMessage").attr("hidden", true);
             makeSection10Required();
             sectField.value = "10";
             break;
@@ -471,6 +503,8 @@ function showDetails(detailsId) {
             $("#btnPrevious").removeAttr("hidden");
             $("#btnNext").removeAttr("hidden");
             $("#btnSave").removeAttr("hidden");
+            $("#btnReview").attr("hidden", true);
+            $("#revMessage").attr("hidden", true);
             makeSection11Required();
             sectField.value = "11";
             break;
