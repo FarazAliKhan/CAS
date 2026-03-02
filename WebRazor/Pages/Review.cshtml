@@ -91,7 +91,7 @@
                             </div>
                         </div>
 
-                        <select style="pointer-events: none;"
+                        @* <select style="pointer-events: none;"
                                 class="form-control"
                                 id="txtCOURTReview"
                                 asp-for="@Model.txtCOURT"
@@ -100,9 +100,29 @@
                                 required="required"
                                 data-num=""
                                 data-msg="@localizer["Msg_NameOfCourt"]">
-
-                            @* OPTIONS LEFT AS-IS *@
                             <option value="">Select Court</option>
+                        </select> *@
+
+                        <select id="txtCOURTReview"
+                                asp-for="@Model.txtCOURT" class="form-control"
+                                onchange="javascript:enableDisableReview();"
+                                data-num=""
+                                data-msg="@localizer["Msg_NameOfCourt"]">
+
+                            <option value="">Select Court</option>
+                            @foreach (var court in Model.Courts)
+                            {
+                                @if (CultureInfo.CurrentCulture.ToString() == "fr")
+                                {
+                                    <option value="@court.Code">@court.Desc_fr_CA</option>
+                                }
+                                else
+                                {
+                                    <option value="@court.Code">@court.Desc_en_CA</option>
+
+                                }
+
+                            }
                         </select>
                     </div>
                 </div>

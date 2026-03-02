@@ -458,8 +458,11 @@
                                             <option value="">Select Court</option>
                                         </select> *@
 
-                                        <select asp-for="@Model.txtCOURT" class="form-control"
-                                                onchange="javascript:enableDisableReview();">
+                                        <select id="txtCOURT"
+                                            asp-for="@Model.txtCOURT" class="form-control"
+                                                onchange="javascript:enableDisableReview();"
+                                                data-num=""
+                                                data-msg="@localizer["Msg_NameOfCourt"]">
                                            
                                             <option value="">Select Court</option>
                                             @foreach(var court in Model.Courts)

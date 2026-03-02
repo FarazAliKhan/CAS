@@ -304,10 +304,10 @@ namespace WebRazor.Pages
                 }
             }
 
+            var crt = Request.Query["court"].FirstOrDefault();
+            var yr = Request.Query["year"].FirstOrDefault();
 
-
-
-            RetrieveData("DRAFT");
+            RetrieveData("COMPLETED", crt, yr);
 
             //txtFIELD1_1_1 = (int?)TempData["txtFIELD1_1_1"];
             //    txtFIELD1_1_2 = (int?)TempData["txtFIELD1_1_2"];
@@ -553,12 +553,12 @@ namespace WebRazor.Pages
             return RedirectToPage("Create", "Load");
         }
 
-        public IActionResult RetrieveData(string completedOrDraft)
+        public IActionResult RetrieveData(string completedOrDraft, string? crt, string? yr)
         {
 
            
-            var courtName = "NUCA";
-            var reportingYear ="2028";
+            var courtName = crt;
+            var reportingYear = yr;
             var retrieveObj = new CasRetrievalModel();
             retrieveObj.searchParams = new List<SearchParam>();
             retrieveObj.searchParams.Add(

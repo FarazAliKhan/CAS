@@ -75,10 +75,33 @@
         </div> *@
         <br />
 
-        <select hidden style="pointer-events: none;" class="form-control" id="txtCOURTResult" asp-for="@Model.txtCOURT" onchange="javascript:enableDisableResult();" style="width:100%" required="required"
+        @* <select hidden style="pointer-events: none;" class="form-control" id="txtCOURTResult" asp-for="@Model.txtCOURT" onchange="javascript:enableDisableResult();" style="width:100%" required="required"
                 data-num="" data-msg="Please enter Name of Court">
             <option value="">Select Court</option>
-        </select>
+        </select> *@
+
+        <select hidden id="txtCOURTResult"
+                                asp-for="@Model.txtCOURT" class="form-control"
+                                onchange="javascript:enableDisableReview();"
+                                data-num=""
+                                data-msg="@localizer["Msg_NameOfCourt"]">
+
+                            <option value="">Select Court</option>
+                            @foreach (var court in Model.Courts)
+                            {
+                                @if (CultureInfo.CurrentCulture.ToString() == "fr")
+                                {
+                                    <option value="@court.Code">@court.Desc_fr_CA</option>
+                                }
+                                else
+                                {
+                                    <option value="@court.Code">@court.Desc_en_CA</option>
+
+                                }
+
+                            }
+                        </select>
+
 
         <select hidden style="pointer-events: none;" class="form-control" id="intREPORTINGYEARResult" asp-for="@Model.intREPORTINGYEAR" onchange="javascript:enableDisableResult();" style="width:100%;" required="required"
                 data-num="" data-msg="Please enter Reporting Year">
@@ -409,7 +432,12 @@
         <br />
         <div class="text-center">
             <span class="col-md-6 text-right">
-                <a class="btn btn-primary cjc-big-buttons" type="button" asp-page="./Result">@localizer["ViewSubmission"]</a>
+                <a class="btn btn-primary cjc-big-buttons"
+                   asp-page="./Result"
+                   asp-route-court="@Model.txtCOURT"
+                   asp-route-year="@Model.intREPORTINGYEAR">
+                    @localizer["ViewSubmission"]
+                </a>
             </span>
             <span class="col-md-6 text-left">
                 <a class="btn btn-primary cjc-big-buttons" asp-page="./Report2">@localizer["Generate"]</a>

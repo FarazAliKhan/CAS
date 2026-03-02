@@ -32,6 +32,9 @@ namespace WebRazor.Pages
        public DateTime? dtTO { get; set; } = DateTime.Now;
         [BindProperty]
          public string? intREPORTINGYEAR { get; set; }
+
+        public List<CourtsModel> Courts { get; set; } = new List<CourtsModel>();
+
         [BindProperty]
         public int? txtFIELD1_1_1 { get; set; }
         [BindProperty]
@@ -263,6 +266,43 @@ namespace WebRazor.Pages
 
         public void OnGet()
         {
+            var courts = new
+            {
+                appId = "CAACS",
+                region = "NEWRECORD",
+                table = "CCM_MASTER",
+                field = "COURT"
+            };
+
+            var json = JsonConvert.SerializeObject(courts);
+
+            var apiEndpoint = _configuration.GetValue<string>("PickCourtURL1");
+
+            var content = new StringContent(json, UnicodeEncoding.UTF8, "application/json");
+
+            var httpClientHandler = new HttpClientHandler();
+            httpClientHandler.ServerCertificateCustomValidationCallback = (message, cert, chain, sslPolicyErrors) =>
+            {
+                return true;
+            };
+            HttpClient httpClient = new HttpClient(httpClientHandler) { BaseAddress = new Uri(apiEndpoint) };
+
+            using (httpClient)
+            {
+
+                using (HttpResponseMessage response = httpClient.PostAsync(apiEndpoint, content).Result)
+                {
+                    if (response.IsSuccessStatusCode)
+                    {
+                        string apiResponse = response.Content.ReadAsStringAsync().Result;
+                        Console.WriteLine(apiResponse);
+                        //resJson = apiResponse;
+                        Courts = JsonConvert.DeserializeObject<List<CourtsModel>>(apiResponse);
+                    }
+
+                }
+            }
+
             if (TempData["txtCOURT"] != null)
             {
                 txtCOURT = (string)TempData["txtCOURT"];
@@ -385,7 +425,44 @@ namespace WebRazor.Pages
         }
 
         public IActionResult OnPost(CASEntityCreate createItem) 
-        {            
+        {
+            var courts = new
+            {
+                appId = "CAACS",
+                region = "NEWRECORD",
+                table = "CCM_MASTER",
+                field = "COURT"
+            };
+
+            var json = JsonConvert.SerializeObject(courts);
+
+            var apiEndpoint = _configuration.GetValue<string>("PickCourtURL1");
+
+            var content = new StringContent(json, UnicodeEncoding.UTF8, "application/json");
+
+            var httpClientHandler = new HttpClientHandler();
+            httpClientHandler.ServerCertificateCustomValidationCallback = (message, cert, chain, sslPolicyErrors) =>
+            {
+                return true;
+            };
+            HttpClient httpClient = new HttpClient(httpClientHandler) { BaseAddress = new Uri(apiEndpoint) };
+
+            using (httpClient)
+            {
+
+                using (HttpResponseMessage response = httpClient.PostAsync(apiEndpoint, content).Result)
+                {
+                    if (response.IsSuccessStatusCode)
+                    {
+                        string apiResponse = response.Content.ReadAsStringAsync().Result;
+                        Console.WriteLine(apiResponse);
+                        //resJson = apiResponse;
+                        Courts = JsonConvert.DeserializeObject<List<CourtsModel>>(apiResponse);
+                    }
+
+                }
+            }
+
             TempData["txtCOURT"] = createItem.txtCOURT;
             TempData["dtFROM"] = createItem.dtFROM;
             TempData["dtTO"] = createItem.dtTO;
