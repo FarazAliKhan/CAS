@@ -649,6 +649,11 @@ namespace WebRazor.Pages
             }
             else if (!string.IsNullOrEmpty(retrieveDraft))
             {
+                var completedData = RetrieveData("COMPLETED");
+                if (completedData != null) {
+                    return Redirect("/Create/Create?completedFound=true");
+                }
+
                 var draftData = RetrieveData("DRAFT");
                 if (draftData != null)
                 {
