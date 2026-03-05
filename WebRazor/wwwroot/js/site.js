@@ -12,6 +12,7 @@ window.addEventListener("load", function () {
         draftSuccessfullySaved();
         const secId = document.getElementById("sectionIdFromCreate").value;
         focusOnFormFromCreate(secId);
+        $("#btnSave").removeAttr('hidden');
     }
     const completedFound = params.get("completedFound");
     if (completedFound != null) {
@@ -25,22 +26,26 @@ window.addEventListener("load", function () {
     if (loadRec != null) {
         $("#tabsbar").removeAttr('hidden');
         $("#btnNext").removeAttr('hidden');
+        $("#btnSave").removeAttr('hidden');
     }
     const deleteDraft = params.get("deleteDraft");
     if (deleteDraft != null) {
         $("#tabsbar").removeAttr('hidden');
         $("#btnNext").removeAttr('hidden');
+        $("#btnSave").removeAttr('hidden');
     }
     const noDraft = params.get("noDraft");
     if (noDraft != null) {
         $("#tabsbar").removeAttr('hidden');
         $("#btnNext").removeAttr('hidden');
+        $("#btnSave").removeAttr('hidden');
     }
     const deleted = params.get("deleted");
     if (deleted != null) {
         hideFoundModal();
         $("#tabsbar").removeAttr('hidden');
         $("#btnNext").removeAttr('hidden');
+        $("#btnSave").removeAttr('hidden');
     }
 });
 
@@ -575,7 +580,7 @@ function gotoPrevious() {
             $("#lidetailsBasicInfo").addClass("active");
             $("#lidetails1").removeClass("active");
             makeSection1NotRequired();
-            $("#btnSave").attr('hidden',true);
+            $("#btnSave").removeAttr('hidden');
             break;
         case "details2": showDetails("details1");
             $("#lidetails1").addClass("active");

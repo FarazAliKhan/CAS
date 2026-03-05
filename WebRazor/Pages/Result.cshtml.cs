@@ -265,7 +265,7 @@ namespace WebRazor.Pages
    
 
 
-        public void OnGet()
+        public IActionResult OnGet()
         {
             var courts = new
             {
@@ -307,7 +307,16 @@ namespace WebRazor.Pages
             var crt = Request.Query["court"].FirstOrDefault();
             var yr = Request.Query["year"].FirstOrDefault();
 
-            RetrieveData("COMPLETED", crt, yr);
+            try
+            {
+                RetrieveData("COMPLETED", crt, yr);
+            }
+            catch (Exception ex)
+            {
+                return Content(ex.ToString());
+            }
+
+            return Page();
 
             //txtFIELD1_1_1 = (int?)TempData["txtFIELD1_1_1"];
             //    txtFIELD1_1_2 = (int?)TempData["txtFIELD1_1_2"];
@@ -419,139 +428,139 @@ namespace WebRazor.Pages
       
         }
 
-        public IActionResult OnPost(CASEntityCreate createItem)
-        {
-            return Page();
+        //public IActionResult OnPost(CASEntityCreate createItem)
+        //{
+        //    return Page();
 
-            var finalSubmit = Request.Query["finalSubmit"].FirstOrDefault();
-            if (!String.IsNullOrEmpty(finalSubmit))
-            {
-                bool success = HandleSubmit(createItem);
-                if (success)
-                {
-                    TempData["reqJson"] = reqJson;
-                    TempData["resJson"] = resJson;
-                    TempData["responseStatusCode"] = responseStatusCode;
-                    return RedirectToPage("FinalMessage");
-                }
-            }
+        //    var finalSubmit = Request.Query["finalSubmit"].FirstOrDefault();
+        //    if (!String.IsNullOrEmpty(finalSubmit))
+        //    {
+        //        bool success = HandleSubmit(createItem);
+        //        if (success)
+        //        {
+        //            TempData["reqJson"] = reqJson;
+        //            TempData["resJson"] = resJson;
+        //            TempData["responseStatusCode"] = responseStatusCode;
+        //            return RedirectToPage("FinalMessage");
+        //        }
+        //    }
 
-            TempData["txtCOURT"] = createItem.txtCOURT;
-            TempData["dtFROM"] = createItem.dtFROM;
-            TempData["dtTO"] = createItem.dtTO;
-            TempData["intREPORTINGYEAR"] = createItem.intREPORTINGYEAR;
+        //    TempData["txtCOURT"] = createItem.txtCOURT;
+        //    TempData["dtFROM"] = createItem.dtFROM;
+        //    TempData["dtTO"] = createItem.dtTO;
+        //    TempData["intREPORTINGYEAR"] = createItem.intREPORTINGYEAR;
 
-            TempData["txtFIELD1_1_1"] = createItem.txtFIELD1_1_1;
-            TempData["txtFIELD1_1_2"] = createItem.txtFIELD1_1_2;
-            TempData["txtFIELD1_1_3"] = createItem.txtFIELD1_1_3;
-            TempData["txtFIELD1_1_4"] = createItem.txtFIELD1_1_4;
-            TempData["txtFIELD1_1_5"] = createItem.txtFIELD1_1_5;
-            TempData["txtFIELD1_1_6"] = createItem.txtFIELD1_1_6;
-            TempData["txtFIELD1_1_7"] = createItem.txtFIELD1_1_7;
-            TempData["txtFIELD1_2_1"] = createItem.txtFIELD1_2_1;
-            TempData["txtFIELD1_2_2"] = createItem.txtFIELD1_2_2;
-            TempData["txtFIELD1_2_3"] = createItem.txtFIELD1_2_3;
-            TempData["txtFIELD1_2_4"] = createItem.txtFIELD1_2_4;
-            TempData["txtFIELD1_2_5"] = createItem.txtFIELD1_2_5;
-            TempData["txtFIELD_1_Comments"] = createItem.txtFIELD_1_Comments;
+        //    TempData["txtFIELD1_1_1"] = createItem.txtFIELD1_1_1;
+        //    TempData["txtFIELD1_1_2"] = createItem.txtFIELD1_1_2;
+        //    TempData["txtFIELD1_1_3"] = createItem.txtFIELD1_1_3;
+        //    TempData["txtFIELD1_1_4"] = createItem.txtFIELD1_1_4;
+        //    TempData["txtFIELD1_1_5"] = createItem.txtFIELD1_1_5;
+        //    TempData["txtFIELD1_1_6"] = createItem.txtFIELD1_1_6;
+        //    TempData["txtFIELD1_1_7"] = createItem.txtFIELD1_1_7;
+        //    TempData["txtFIELD1_2_1"] = createItem.txtFIELD1_2_1;
+        //    TempData["txtFIELD1_2_2"] = createItem.txtFIELD1_2_2;
+        //    TempData["txtFIELD1_2_3"] = createItem.txtFIELD1_2_3;
+        //    TempData["txtFIELD1_2_4"] = createItem.txtFIELD1_2_4;
+        //    TempData["txtFIELD1_2_5"] = createItem.txtFIELD1_2_5;
+        //    TempData["txtFIELD_1_Comments"] = createItem.txtFIELD_1_Comments;
 
-            TempData["txtFIELD2_1_1"] = createItem.txtFIELD2_1_1;
-            TempData["txtFIELD2_1_2"] = createItem.txtFIELD2_1_2;
-            TempData["txtFIELD2_2_1"] = createItem.txtFIELD2_2_1;
-            TempData["txtFIELD2_2_1_1"] = createItem.txtFIELD2_2_1_1;
-            TempData["txtFIELD2_2_1_2"] = createItem.txtFIELD2_2_1_2;
-            TempData["txtFIELD2_2_1_3"] = createItem.txtFIELD2_2_1_3;
-            TempData["txtFIELD2_2_2"] = createItem.txtFIELD2_2_2;
-            TempData["txtFIELD2_2_2_1"] = createItem.txtFIELD2_2_2_1;
-            TempData["txtFIELD2_2_2_2"] = createItem.txtFIELD2_2_2_2;
-            TempData["txtFIELD2_2_2_3"] = createItem.txtFIELD2_2_2_3;
-            TempData["txtFIELD_2_Comments"] = createItem.txtFIELD_2_Comments;
+        //    TempData["txtFIELD2_1_1"] = createItem.txtFIELD2_1_1;
+        //    TempData["txtFIELD2_1_2"] = createItem.txtFIELD2_1_2;
+        //    TempData["txtFIELD2_2_1"] = createItem.txtFIELD2_2_1;
+        //    TempData["txtFIELD2_2_1_1"] = createItem.txtFIELD2_2_1_1;
+        //    TempData["txtFIELD2_2_1_2"] = createItem.txtFIELD2_2_1_2;
+        //    TempData["txtFIELD2_2_1_3"] = createItem.txtFIELD2_2_1_3;
+        //    TempData["txtFIELD2_2_2"] = createItem.txtFIELD2_2_2;
+        //    TempData["txtFIELD2_2_2_1"] = createItem.txtFIELD2_2_2_1;
+        //    TempData["txtFIELD2_2_2_2"] = createItem.txtFIELD2_2_2_2;
+        //    TempData["txtFIELD2_2_2_3"] = createItem.txtFIELD2_2_2_3;
+        //    TempData["txtFIELD_2_Comments"] = createItem.txtFIELD_2_Comments;
 
-            TempData["txtFIELD3_1"] = createItem.txtFIELD3_1;
-            TempData["txtFIELD3_2"] = createItem.txtFIELD3_2;
-            TempData["txtFIELD_3_Comments"] = createItem.txtFIELD_3_Comments;
+        //    TempData["txtFIELD3_1"] = createItem.txtFIELD3_1;
+        //    TempData["txtFIELD3_2"] = createItem.txtFIELD3_2;
+        //    TempData["txtFIELD_3_Comments"] = createItem.txtFIELD_3_Comments;
 
-            TempData["txtFIELD4_1_1"] = createItem.txtFIELD4_1_1;
-            TempData["txtFIELD4_1_2"] = createItem.txtFIELD4_1_2;
-            TempData["txtFIELD4_1_3"] = createItem.txtFIELD4_1_3;
-            TempData["txtFIELD4_1_4_1"] = createItem.txtFIELD4_1_4_1;
-            TempData["txtFIELD4_1_4_2"] = createItem.txtFIELD4_1_4_2;
-            TempData["txtFIELD4_1_4_3"] = createItem.txtFIELD4_1_4_3;
-            TempData["txtFIELD4_1_5_1"] = createItem.txtFIELD4_1_5_1;
-            TempData["txtFIELD4_1_5_2"] = createItem.txtFIELD4_1_5_2;
-            TempData["txtFIELD4_1_5_3"] = createItem.txtFIELD4_1_5_3;
-            TempData["txtFIELD4_1_6_1"] = createItem.txtFIELD4_1_6_1;
-            TempData["txtFIELD4_1_6_2"] = createItem.txtFIELD4_1_6_2;
-            TempData["txtFIELD4_1_6_3"] = createItem.txtFIELD4_1_6_3;
-            TempData["txtFIELD4_2_1"] = createItem.txtFIELD4_2_1;
-            TempData["txtFIELD4_2_2"] = createItem.txtFIELD4_2_2;
-            TempData["txtFIELD4_2_3"] = createItem.txtFIELD4_2_3;
-            TempData["txtFIELD4_2_4_1"] = createItem.txtFIELD4_2_4_1;
-            TempData["txtFIELD4_2_4_2"] = createItem.txtFIELD4_2_4_2;
-            TempData["txtFIELD4_2_4_3"] = createItem.txtFIELD4_2_4_3;
-            TempData["txtFIELD4_2_5_1"] = createItem.txtFIELD4_2_5_1;
-            TempData["txtFIELD4_2_5_2"] = createItem.txtFIELD4_2_5_2;
-            TempData["txtFIELD4_2_5_3"] = createItem.txtFIELD4_2_5_3;
-            TempData["txtFIELD4_2_6_1"] = createItem.txtFIELD4_2_6_1;
-            TempData["txtFIELD4_2_6_2"] = createItem.txtFIELD4_2_6_2;
-            TempData["txtFIELD4_2_6_3"] = createItem.txtFIELD4_2_6_3;
-            TempData["txtFIELD4_3_1"] = createItem.txtFIELD4_3_1;
-            TempData["txtFIELD4_3_2"] = createItem.txtFIELD4_3_2;
-            TempData["txtFIELD4_3_3"] = createItem.txtFIELD4_3_3;
-            TempData["txtFIELD4_3_4_1"] = createItem.txtFIELD4_3_4_1;
-            TempData["txtFIELD4_3_4_2"] = createItem.txtFIELD4_3_4_2;
-            TempData["txtFIELD4_3_4_3"] = createItem.txtFIELD4_3_4_3;
-            TempData["txtFIELD4_3_5_1"] = createItem.txtFIELD4_3_5_1;
-            TempData["txtFIELD4_3_5_2"] = createItem.txtFIELD4_3_5_2;
-            TempData["txtFIELD4_3_5_3"] = createItem.txtFIELD4_3_5_3;
-            TempData["txtFIELD4_3_6_1"] = createItem.txtFIELD4_3_6_1;
-            TempData["txtFIELD4_3_6_2"] = createItem.txtFIELD4_3_6_2;
-            TempData["txtFIELD4_3_6_3"] = createItem.txtFIELD4_3_6_3;
-            TempData["txtFIELD_4_Comments"] = createItem.txtFIELD_4_Comments;
+        //    TempData["txtFIELD4_1_1"] = createItem.txtFIELD4_1_1;
+        //    TempData["txtFIELD4_1_2"] = createItem.txtFIELD4_1_2;
+        //    TempData["txtFIELD4_1_3"] = createItem.txtFIELD4_1_3;
+        //    TempData["txtFIELD4_1_4_1"] = createItem.txtFIELD4_1_4_1;
+        //    TempData["txtFIELD4_1_4_2"] = createItem.txtFIELD4_1_4_2;
+        //    TempData["txtFIELD4_1_4_3"] = createItem.txtFIELD4_1_4_3;
+        //    TempData["txtFIELD4_1_5_1"] = createItem.txtFIELD4_1_5_1;
+        //    TempData["txtFIELD4_1_5_2"] = createItem.txtFIELD4_1_5_2;
+        //    TempData["txtFIELD4_1_5_3"] = createItem.txtFIELD4_1_5_3;
+        //    TempData["txtFIELD4_1_6_1"] = createItem.txtFIELD4_1_6_1;
+        //    TempData["txtFIELD4_1_6_2"] = createItem.txtFIELD4_1_6_2;
+        //    TempData["txtFIELD4_1_6_3"] = createItem.txtFIELD4_1_6_3;
+        //    TempData["txtFIELD4_2_1"] = createItem.txtFIELD4_2_1;
+        //    TempData["txtFIELD4_2_2"] = createItem.txtFIELD4_2_2;
+        //    TempData["txtFIELD4_2_3"] = createItem.txtFIELD4_2_3;
+        //    TempData["txtFIELD4_2_4_1"] = createItem.txtFIELD4_2_4_1;
+        //    TempData["txtFIELD4_2_4_2"] = createItem.txtFIELD4_2_4_2;
+        //    TempData["txtFIELD4_2_4_3"] = createItem.txtFIELD4_2_4_3;
+        //    TempData["txtFIELD4_2_5_1"] = createItem.txtFIELD4_2_5_1;
+        //    TempData["txtFIELD4_2_5_2"] = createItem.txtFIELD4_2_5_2;
+        //    TempData["txtFIELD4_2_5_3"] = createItem.txtFIELD4_2_5_3;
+        //    TempData["txtFIELD4_2_6_1"] = createItem.txtFIELD4_2_6_1;
+        //    TempData["txtFIELD4_2_6_2"] = createItem.txtFIELD4_2_6_2;
+        //    TempData["txtFIELD4_2_6_3"] = createItem.txtFIELD4_2_6_3;
+        //    TempData["txtFIELD4_3_1"] = createItem.txtFIELD4_3_1;
+        //    TempData["txtFIELD4_3_2"] = createItem.txtFIELD4_3_2;
+        //    TempData["txtFIELD4_3_3"] = createItem.txtFIELD4_3_3;
+        //    TempData["txtFIELD4_3_4_1"] = createItem.txtFIELD4_3_4_1;
+        //    TempData["txtFIELD4_3_4_2"] = createItem.txtFIELD4_3_4_2;
+        //    TempData["txtFIELD4_3_4_3"] = createItem.txtFIELD4_3_4_3;
+        //    TempData["txtFIELD4_3_5_1"] = createItem.txtFIELD4_3_5_1;
+        //    TempData["txtFIELD4_3_5_2"] = createItem.txtFIELD4_3_5_2;
+        //    TempData["txtFIELD4_3_5_3"] = createItem.txtFIELD4_3_5_3;
+        //    TempData["txtFIELD4_3_6_1"] = createItem.txtFIELD4_3_6_1;
+        //    TempData["txtFIELD4_3_6_2"] = createItem.txtFIELD4_3_6_2;
+        //    TempData["txtFIELD4_3_6_3"] = createItem.txtFIELD4_3_6_3;
+        //    TempData["txtFIELD_4_Comments"] = createItem.txtFIELD_4_Comments;
 
-            TempData["txtFIELD5_1"] = createItem.txtFIELD5_1;
-            TempData["txtFIELD5_2"] = createItem.txtFIELD5_2;
-            TempData["txtFIELD5_3"] = createItem.txtFIELD5_3;
-            TempData["txtFIELD5_4"] = createItem.txtFIELD5_4;
-            TempData["txtFIELD_5_Comments"] = createItem.txtFIELD_5_Comments;
+        //    TempData["txtFIELD5_1"] = createItem.txtFIELD5_1;
+        //    TempData["txtFIELD5_2"] = createItem.txtFIELD5_2;
+        //    TempData["txtFIELD5_3"] = createItem.txtFIELD5_3;
+        //    TempData["txtFIELD5_4"] = createItem.txtFIELD5_4;
+        //    TempData["txtFIELD_5_Comments"] = createItem.txtFIELD_5_Comments;
 
-            TempData["txtFIELD6_1_1"] = createItem.txtFIELD6_1_1;
-            TempData["txtFIELD6_1_2"] = createItem.txtFIELD6_1_2;
-            TempData["txtFIELD6_1_3"] = createItem.txtFIELD6_1_3;
-            TempData["txtFIELD6_2_1"] = createItem.txtFIELD6_2_1;
-            TempData["txtFIELD6_2_2"] = createItem.txtFIELD6_2_2;
-            TempData["txtFIELD6_2_3"] = createItem.txtFIELD6_2_3;
-            TempData["txtFIELD6_3_1"] = createItem.txtFIELD6_3_1;
-            TempData["txtFIELD6_3_2"] = createItem.txtFIELD6_3_2;
-            TempData["txtFIELD6_3_3"] = createItem.txtFIELD6_3_3;
-            TempData["txtFIELD_6_Comments"] = createItem.txtFIELD_6_Comments;
+        //    TempData["txtFIELD6_1_1"] = createItem.txtFIELD6_1_1;
+        //    TempData["txtFIELD6_1_2"] = createItem.txtFIELD6_1_2;
+        //    TempData["txtFIELD6_1_3"] = createItem.txtFIELD6_1_3;
+        //    TempData["txtFIELD6_2_1"] = createItem.txtFIELD6_2_1;
+        //    TempData["txtFIELD6_2_2"] = createItem.txtFIELD6_2_2;
+        //    TempData["txtFIELD6_2_3"] = createItem.txtFIELD6_2_3;
+        //    TempData["txtFIELD6_3_1"] = createItem.txtFIELD6_3_1;
+        //    TempData["txtFIELD6_3_2"] = createItem.txtFIELD6_3_2;
+        //    TempData["txtFIELD6_3_3"] = createItem.txtFIELD6_3_3;
+        //    TempData["txtFIELD_6_Comments"] = createItem.txtFIELD_6_Comments;
 
-            TempData["txtFIELD7_1_1"] = createItem.txtFIELD7_1_1;
-            TempData["txtFIELD7_1_2"] = createItem.txtFIELD7_1_2;
-            TempData["txtFIELD7_1_3"] = createItem.txtFIELD7_1_3;
-            TempData["txtFIELD_7_Comments"] = createItem.txtFIELD_7_Comments;
+        //    TempData["txtFIELD7_1_1"] = createItem.txtFIELD7_1_1;
+        //    TempData["txtFIELD7_1_2"] = createItem.txtFIELD7_1_2;
+        //    TempData["txtFIELD7_1_3"] = createItem.txtFIELD7_1_3;
+        //    TempData["txtFIELD_7_Comments"] = createItem.txtFIELD_7_Comments;
 
-            TempData["txtFIELD8_1"] = createItem.txtFIELD8_1;
-            TempData["txtFIELD8_2"] = createItem.txtFIELD8_2;
-            TempData["txtFIELD8_3"] = createItem.txtFIELD8_3;
-            TempData["txtFIELD_8_Comments"] = createItem.txtFIELD_8_Comments;
+        //    TempData["txtFIELD8_1"] = createItem.txtFIELD8_1;
+        //    TempData["txtFIELD8_2"] = createItem.txtFIELD8_2;
+        //    TempData["txtFIELD8_3"] = createItem.txtFIELD8_3;
+        //    TempData["txtFIELD_8_Comments"] = createItem.txtFIELD_8_Comments;
 
-            TempData["txtFIELD9_1"] = createItem.txtFIELD9_1;
-            TempData["txtFIELD9_2"] = createItem.txtFIELD9_2;
-            TempData["txtFIELD_9_Comments"] = createItem.txtFIELD_9_Comments;
+        //    TempData["txtFIELD9_1"] = createItem.txtFIELD9_1;
+        //    TempData["txtFIELD9_2"] = createItem.txtFIELD9_2;
+        //    TempData["txtFIELD_9_Comments"] = createItem.txtFIELD_9_Comments;
 
-            TempData["txtFIELD10_1"] = createItem.txtFIELD10_1;
-            TempData["txtFIELD_10_Comments"] = createItem.txtFIELD_10_Comments;
+        //    TempData["txtFIELD10_1"] = createItem.txtFIELD10_1;
+        //    TempData["txtFIELD_10_Comments"] = createItem.txtFIELD_10_Comments;
 
-            TempData["txtFIELD11_1"] = createItem.txtFIELD11_1;
-            TempData["txtFIELD11_2"] = createItem.txtFIELD11_2;
-            TempData["txtFIELD_11_Comments"] = createItem.txtFIELD_11_Comments;
+        //    TempData["txtFIELD11_1"] = createItem.txtFIELD11_1;
+        //    TempData["txtFIELD11_2"] = createItem.txtFIELD11_2;
+        //    TempData["txtFIELD_11_Comments"] = createItem.txtFIELD_11_Comments;
 
-            TempData["txtFIELD_12_Comments"] = createItem.txtFIELD_12_Comments;
+        //    TempData["txtFIELD_12_Comments"] = createItem.txtFIELD_12_Comments;
 
-            TempData["sectionId"] = Request.Query["sectionId"].FirstOrDefault();
-            return RedirectToPage("Create", "Load");
-        }
+        //    TempData["sectionId"] = Request.Query["sectionId"].FirstOrDefault();
+        //    return RedirectToPage("Create", "Load");
+        //}
 
         public IActionResult RetrieveData(string completedOrDraft, string? crt, string? yr)
         {

@@ -292,8 +292,12 @@ namespace WebRazor.Pages
 
         public void OnGet()
         {
-            dtFROM = new DateTime(2025, 01, 01);
-            dtTO = new DateTime(2025, 12, 31);
+            var fromSelect = Request.Query["fromSelect"].FirstOrDefault();
+            if (!string.IsNullOrEmpty(fromSelect))
+            {
+                dtFROM = new DateTime(2025, 01, 01);
+                dtTO = new DateTime(2025, 12, 31);
+            }
 
             var courts = new
             {
@@ -380,6 +384,13 @@ namespace WebRazor.Pages
                     }
 
                 }
+            }
+
+            var fromSelect = Request.Query["fromSelect"].FirstOrDefault();
+            if (!string.IsNullOrEmpty(fromSelect))
+            {
+                dtFROM = new DateTime(2025, 01, 01);
+                dtTO = new DateTime(2025, 12, 31);
             }
 
             var createItem = new CASEntityCreate()
@@ -614,7 +625,7 @@ namespace WebRazor.Pages
             TempData["modelUuid"] = modelUuid;
             TempData["nodeUuid"] = nodeUuid;
 
-            var fromSelect = Request.Query["fromSelect"].FirstOrDefault();
+            fromSelect = Request.Query["fromSelect"].FirstOrDefault();
 
             var submitForSave = Request.Query["submitForSave"].FirstOrDefault();
 
@@ -1731,7 +1742,7 @@ namespace WebRazor.Pages
                 }
             }
 
-            return casResponseModel.Count == 0 ? null : casResponseModel.FirstOrDefault().Value.FirstOrDefault().Value.FirstOrDefault();
+            return (casResponseModel == null || casResponseModel.Count == 0) ? null : casResponseModel.FirstOrDefault().Value.FirstOrDefault().Value.FirstOrDefault();
         }
 
         public void loadFoundValue(Record casItem)
