@@ -209,17 +209,21 @@ function submitForResult() {
 }
 
 function submitForSave() {
-    var form = document.getElementById("createForm");
-    form.action = "/Create/Create?submitForSave=true";
-    form.method = "post";
-    form.submit();  
+    if (validateFields()) {
+        var form = document.getElementById("createForm");
+        form.action = "/Create/Create?submitForSave=true";
+        form.method = "post";
+        form.submit();
+    } else { }
 }
 
 function submitStats() {
-    var form = document.getElementById("selectForm");
-    form.action = "/Create/Create?fromSelect=true&retrieveRecord=true";
-    form.method = "post";
-    form.submit();
+   
+        var form = document.getElementById("selectForm");
+        form.action = "/Create/Create?fromSelect=true&retrieveRecord=true";
+        form.method = "post";
+        form.submit();
+    
 }
 
 function focusOnFormFromCreate(sectionId) {
