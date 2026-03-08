@@ -4382,9 +4382,23 @@
         }
     }
 
+    function setCourt(elemId, selectedCourt){
+        const select = document.getElementById(elemId);
+
+        if (select != null) {
+            for (var i = 0; i < select.options.length; i++) {
+                if (select.options[i].value === selectedCourt) {
+                    select.options[i].selected = true;
+                }
+            }
+        }
+    }
+
+    //setCourt("txtCOURT", @Model.txtCOURT);
+
     // setYears("intREPORTINGYEAR", 0);
-    document.getElementById("dtFROM").value = `2025-01-01`;
-        document.getElementById("dtTO").value = `2025-12-31`;
+    //document.getElementById("dtFROM").value = `2025-01-01`;
+        //document.getElementById("dtTO").value = `2025-12-31`;
 
         document.getElementById("intREPORTINGYEAR").addEventListener("change", function () {
         const year = this.value;

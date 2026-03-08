@@ -715,8 +715,45 @@ namespace WebRazor.Pages
             }
         }
 
-        public void OnGetLoad()
+        public IActionResult OnGetLoad()
         {
+            var courts = new
+            {
+                appId = "CAACS",
+                region = "NEWRECORD",
+                table = "CCM_MASTER",
+                field = "COURT"
+            };
+
+            var json = JsonConvert.SerializeObject(courts);
+
+            var apiEndpoint = _configuration.GetValue<string>("PickCourtURL1");
+
+            var content = new StringContent(json, UnicodeEncoding.UTF8, "application/json");
+
+            var httpClientHandler = new HttpClientHandler();
+            httpClientHandler.ServerCertificateCustomValidationCallback = (message, cert, chain, sslPolicyErrors) =>
+            {
+                return true;
+            };
+            HttpClient httpClient = new HttpClient(httpClientHandler) { BaseAddress = new Uri(apiEndpoint) };
+
+            using (httpClient)
+            {
+
+                using (HttpResponseMessage response = httpClient.PostAsync(apiEndpoint, content).Result)
+                {
+                    if (response.IsSuccessStatusCode)
+                    {
+                        string apiResponse = response.Content.ReadAsStringAsync().Result;
+                        Console.WriteLine(apiResponse);
+                        //resJson = apiResponse;
+                        Courts = JsonConvert.DeserializeObject<List<CourtsModel>>(apiResponse);
+                    }
+
+                }
+            }
+
             txtCOURT = (string)TempData["txtCOURT"];
             dtFROM = (DateTime?)TempData["dtFROM"];
             dtTO = (DateTime?)TempData["dtTO"];
@@ -831,6 +868,8 @@ namespace WebRazor.Pages
             txtFIELD_12_Comments = (string?)TempData["txtFIELD_12_Comments"];
 
             sectId = (string?)TempData["sectionId"];
+
+            return Page();
         }
 
         public IActionResult LoadFiles(InputFileChangeEventArgs e)
