@@ -11,8 +11,8 @@ namespace BusinessLayer.DTOs
     public class CASEntityCreate
     {
         public string? txtCOURT { get; set; }
-        public DateTime? dtFROM { get; set; } = DateTime.Now;
-        public DateTime? dtTO { get; set; } = DateTime.Now;
+        public DateTime? dtFROM { get; set; } = new DateTime(2025,01,01);
+        public DateTime? dtTO { get; set; } = new DateTime(2025, 12, 31);
         public string? intREPORTINGYEAR { get; set; }
         public int? txtFIELD1_1_1 { get; set; }
         public int? txtFIELD1_1_2 { get; set; }

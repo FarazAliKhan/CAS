@@ -497,7 +497,6 @@
                                         <select class="form-control"
                                                 id="intREPORTINGYEAR"
                                                 asp-for="@Model.intREPORTINGYEAR"
-                                                onchange="javascript:enableDisableReview();"
                                                 style="width:100%;"
                                                 required="required"
                                                 data-num=""
@@ -530,12 +529,12 @@
                                                name="dtFROM"
                                                type="date"
                                                asp-for="@Model.dtFROM"
-                                               onchange="javascript:enableDisableReview();"
+                                               onblur="javascript:enableDisableReview();"
                                                autocomplete="dtFROM"
                                                data-rule-minlength="1"
                                                style="width:100%"
                                                required="required"
-                                               max="2025-12-31"
+                                               
                                                data-num=""
                                                data-msg="@localizer["Msg_FromDate"]">
                                     </div>
@@ -557,13 +556,12 @@
                                                name="dtTO"
                                                type="date"
                                                asp-for="@Model.dtTO"
-                                               onchange="javascript:enableDisableReview();"
+                                               onblur="javascript:enableDisableReview();"
                                                autocomplete="dtTO"
                                                data-rule-minlength="1"
                                                style="width:100%"
                                                required="required"
-                                               min="2025-01-01"
-                                               max="2025-12-31"
+                                               
                                                data-num=""
                                                data-msg="@localizer["Msg_ToDate"]">
                                     </div>
@@ -4400,16 +4398,32 @@
     //document.getElementById("dtFROM").value = `2025-01-01`;
         //document.getElementById("dtTO").value = `2025-12-31`;
 
-        document.getElementById("intREPORTINGYEAR").addEventListener("change", function () {
+    let updatingDates = false;
+
+    document.getElementById("intREPORTINGYEAR").addEventListener("change", function () {
+
+        if (updatingDates) return;
+
+        updatingDates = true;
+
         const year = this.value;
         if (!year) return;
 
-        //document.getElementById("dtFROM").min = `${year}-01-01`;
-        document.getElementById("dtFROM").max = `${year}-12-31`;
-        document.getElementById("dtTO").min = `${year}-01-01`;
-        document.getElementById("dtTO").max = `${year}-12-31`;
+        const dtFrom = document.getElementById("dtFROM");
+        const dtTo = document.getElementById("dtTO");
 
-        document.getElementById("dtFROM").value = `${year}-01-01`;
-        document.getElementById("dtTO").value = `${year}-12-31`;
+        dtFrom.setAttribute("max", `${year}-12-31`);
+        dtTo.setAttribute("min", `${year}-01-01`);
+        dtTo.setAttribute("max", `${year}-12-31`);
+
+        dtFrom.value = `${year}-01-01`;
+        dtTo.value = `${year}-12-31`;
+
+        updatingDates = false;
+
+        dtFrom.dispatchEvent(new Event('change'));
+        dtTo.dispatchEvent(new Event('change'));
+
+        enableDisableReview();
     });
 </script>

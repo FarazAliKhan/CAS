@@ -1,53 +1,7 @@
 ﻿// Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
 // for details on configuring this project to bundle and minify static web assets.
 
-window.addEventListener("load", function () {
-    console.log("Page is fully loaded");
-    $(".breadcrumb").children().first().remove();
-    const params = new URLSearchParams(window.location.search);
-    const recSaved = params.get("submitForSave");
-    if (recSaved != null) {
-        $("#tabsbar").removeAttr('hidden');
-        $("#btnNext").removeAttr('hidden');
-        draftSuccessfullySaved();
-        const secId = document.getElementById("sectionIdFromCreate").value;
-        focusOnFormFromCreate(secId);
-        $("#btnSave").removeAttr('hidden');
-    }
-    const completedFound = params.get("completedFound");
-    if (completedFound != null) {
-        showAlreadyExists();
-    }
-    const draftRecFound = params.get("draftFound");
-    if (draftRecFound != null) {
-        retrieveDraft();
-    }
-    const loadRec = params.get("loadRecord");
-    if (loadRec != null) {
-        $("#tabsbar").removeAttr('hidden');
-        $("#btnNext").removeAttr('hidden');
-        $("#btnSave").removeAttr('hidden');
-    }
-    const deleteDraft = params.get("deleteDraft");
-    if (deleteDraft != null) {
-        $("#tabsbar").removeAttr('hidden');
-        $("#btnNext").removeAttr('hidden');
-        $("#btnSave").removeAttr('hidden');
-    }
-    const noDraft = params.get("noDraft");
-    if (noDraft != null) {
-        $("#tabsbar").removeAttr('hidden');
-        $("#btnNext").removeAttr('hidden');
-        $("#btnSave").removeAttr('hidden');
-    }
-    const deleted = params.get("deleted");
-    if (deleted != null) {
-        hideFoundModal();
-        $("#tabsbar").removeAttr('hidden');
-        $("#btnNext").removeAttr('hidden');
-        $("#btnSave").removeAttr('hidden');
-    }
-});
+
 
 document.querySelectorAll('#sidebar .nav-link').forEach(link => {
         link.addEventListener('click', function () {
@@ -770,8 +724,8 @@ function enableDisableReview() {
         && $("#dtTO").val() != ""
     ) {
         //if (!(retrieveExisting())) {
-            $("#btnReview").removeAttr('disabled');
-            $("#tabsbar").removeAttr('hidden');
+        $("#btnReview").removeAttr('disabled');
+        $("#tabsbar").removeAttr('hidden');
         //}
         var form = document.getElementById("createForm");
         form.action = "/Create/Create?retrieveDraft=true";
@@ -782,6 +736,22 @@ function enableDisableReview() {
         $("#btnReview").attr('disabled', true);
     }
 }
+
+
+//document.getElementById("intREPORTINGYEAR").addEventListener("change", function () {
+//    const year = this.value;
+//    if (!year) return;
+
+//    //document.getElementById("dtFROM").min = `${year}-01-01`;
+//    document.getElementById("dtFROM").max = `${year}-12-31`;
+//    document.getElementById("dtTO").min = `${year}-01-01`;
+//    document.getElementById("dtTO").max = `${year}-12-31`;
+
+//    document.getElementById("dtFROM").value = `${year}-01-01`;
+//    document.getElementById("dtTO").value = `${year}-12-31`;
+
+//    enableDisableReview();
+//});
 
 function setTabsBackgroundToInit() {
     $("#lidetailsBasicInfo").removeClass("active");
@@ -3252,3 +3222,67 @@ function loadFoundRecord() {
 function hideAlreadyExists() {
     $('#alreadyExists').modal('hide');
 }
+
+window.addEventListener("load", function () {
+    console.log("Page is fully loaded");
+
+    $(".breadcrumb").children().first().remove();
+    const params = new URLSearchParams(window.location.search);
+    const recSaved = params.get("submitForSave");
+    if (recSaved != null) {
+        $("#tabsbar").removeAttr('hidden');
+        $("#btnNext").removeAttr('hidden');
+        draftSuccessfullySaved();
+        const secId = document.getElementById("sectionIdFromCreate").value;
+        focusOnFormFromCreate(secId);
+        $("#btnSave").removeAttr('hidden');
+    }
+    const completedFound = params.get("completedFound");
+    if (completedFound != null) {
+        showAlreadyExists();
+    }
+    const draftRecFound = params.get("draftFound");
+    if (draftRecFound != null) {
+        retrieveDraft();
+    }
+    const loadRec = params.get("loadRecord");
+    if (loadRec != null) {
+        $("#tabsbar").removeAttr('hidden');
+        $("#btnNext").removeAttr('hidden');
+        $("#btnSave").removeAttr('hidden');
+    }
+    const deleteDraft = params.get("deleteDraft");
+    if (deleteDraft != null) {
+        $("#tabsbar").removeAttr('hidden');
+        $("#btnNext").removeAttr('hidden');
+        $("#btnSave").removeAttr('hidden');
+    }
+    const noDraft = params.get("noDraft");
+    if (noDraft != null) {
+        $("#tabsbar").removeAttr('hidden');
+        $("#btnNext").removeAttr('hidden');
+        $("#btnSave").removeAttr('hidden');
+    }
+    const deleted = params.get("deleted");
+    if (deleted != null) {
+        hideFoundModal();
+        $("#tabsbar").removeAttr('hidden');
+        $("#btnNext").removeAttr('hidden');
+        $("#btnSave").removeAttr('hidden');
+    }
+    if (document.getElementById("intREPORTINGYEAR") != null) {
+        const year = document.getElementById("intREPORTINGYEAR").value;
+        if (!year) return;
+
+        const dtFrom = document.getElementById("dtFROM");
+        const dtTo = document.getElementById("dtTO");
+
+        dtFrom.setAttribute("max", `${year}-12-31`);
+        dtTo.setAttribute("min", `${year}-01-01`);
+        dtTo.setAttribute("max", `${year}-12-31`);
+
+        console.log(dtFrom.max);
+        console.log(dtTo.min);
+        console.log(dtTo.max);
+    }
+});

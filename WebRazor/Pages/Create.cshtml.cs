@@ -49,10 +49,10 @@ namespace WebRazor.Pages
 
         [BindProperty]
         [Required(ErrorMessageResourceType = typeof(Resources.Pages.CreateModel), ErrorMessageResourceName = "FromDateRequired")]
-        public DateTime? dtFROM { get; set; } = DateTime.Now;
+        public DateTime? dtFROM { get; set; } = new DateTime(2025, 01, 01);
         [BindProperty]
         [Required(ErrorMessageResourceType = typeof(Resources.Pages.CreateModel), ErrorMessageResourceName = "ToDateRequired")]
-        public DateTime? dtTO { get; set; } = DateTime.Now;
+        public DateTime? dtTO { get; set; } = new DateTime(2025, 12, 31);
         [BindProperty]
         [Required(ErrorMessageResourceType = typeof(Resources.Pages.CreateModel), ErrorMessageResourceName = "ReportingYearRequired")]
         public string intREPORTINGYEAR { get; set; }
@@ -292,12 +292,12 @@ namespace WebRazor.Pages
 
         public void OnGet()
         {
-            var fromSelect = Request.Query["fromSelect"].FirstOrDefault();
-            if (!string.IsNullOrEmpty(fromSelect))
-            {
-                dtFROM = new DateTime(2025, 01, 01);
-                dtTO = new DateTime(2025, 12, 31);
-            }
+            //var fromSelect = Request.Query["fromSelect"].FirstOrDefault();
+            //if (!string.IsNullOrEmpty(fromSelect))
+            //{
+            //    dtFROM = new DateTime(2025, 01, 01);
+            //    dtTO = new DateTime(2025, 12, 31);
+            //}
 
             var courts = new
             {
@@ -387,11 +387,11 @@ namespace WebRazor.Pages
             }
 
             var fromSelect = Request.Query["fromSelect"].FirstOrDefault();
-            if (!string.IsNullOrEmpty(fromSelect))
-            {
-                dtFROM = new DateTime(2025, 01, 01);
-                dtTO = new DateTime(2025, 12, 31);
-            }
+            //if (!string.IsNullOrEmpty(fromSelect))
+            //{
+            //    dtFROM = new DateTime(2025, 01, 01);
+            //    dtTO = new DateTime(2025, 12, 31);
+            //}
 
             var createItem = new CASEntityCreate()
             {
