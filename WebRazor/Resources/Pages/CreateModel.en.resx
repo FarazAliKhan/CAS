@@ -208,7 +208,7 @@
     <value>We found a draft for the selected Court and Reporting Year. Would you like to continue where you left off or discard it and start a new form?</value>
   </data>
   <data name="AlertRecordAlreadyCompleted" xml:space="preserve">
-    <value>This form has already been submitted for the selected Court and Year. For more information or changes, please contact the CJC department.
+    <value>This form has already been submitted for the court and year that you have selected. If any changes are required to the statistics that have already been submitted, please contact the CJC Secretariat at committees-comites@cjc-ccm.ca
 </value>
   </data>
   <data name="Alert_RecordRetrievalFailed" xml:space="preserve">
@@ -248,10 +248,10 @@
     <value>Tab 9 - Number of appeals that are heard</value>
   </data>
   <data name="Sidebar_Tab10" xml:space="preserve">
-    <value>Tab 10 - Total number of appeals, cross-appeals, references, bail reviews and JRs pending on December 31st</value>
+    <value>Tab 10 - Total number of appeals, cross-appeals, references, bail reviews and JRs pending on December 31&lt;sup&gt;st&lt;/sup&gt;</value>
   </data>
   <data name="Sidebar_Tab11" xml:space="preserve">
-    <value>Tab 11 - Number of judges (as of December 31st)</value>
+    <value>Tab 11 - Number of judges (as of December 31&lt;sup&gt;st&lt;/sup&gt;)</value>
   </data>
   <data name="Sidebar_Tab12" xml:space="preserve">
     <value>Tab 12 - Additional comments and review statistics</value>
@@ -305,7 +305,7 @@
     <value>Please enter To Date</value>
   </data>
   <data name="Lbl_1_1_Title" xml:space="preserve">
-    <value>Civil appeals, cross-appeals, references, and JRs filed, disposed of, and abandoned or withdrawn</value>
+    <value>Civil appeals, cross-appeals, references, and JRs (filed, disposed of, and abandoned or withdrawn)</value>
   </data>
   <data name="Lbl_1_1_1" xml:space="preserve">
     <value>Number of civil appeals, cross-appeals, references, and JRs filed but still pending as of December 31&lt;sup&gt;st&lt;/sup&gt; of the previous year</value>
@@ -353,13 +353,13 @@
     <value>Total number of civil appeals, cross-appeals, references, and JRs</value>
   </data>
   <data name="Tip_1_1_7" xml:space="preserve">
-    <value>Previous year civil appeals, cross-appeals, references and JRs filed but still pending as of December 31st of the previous year (1.1.1) plus new civil appeals, cross-appeals, references, and JRs filed (1.1.2) minus total number of civil appeals, cross-appeals, references, and JRs disposed of, settled by mediation, abandoned or withdrawn (1.1.3 to 1.1.6) = net civil appeals, cross-appeals, references, and JRs for the year.</value>
+    <value>Previous year civil appeals, cross-appeals, references and JRs filed but still pending as of December 31&lt;sup&gt;st&lt;/sup&gt; of the previous year (1.1.1) plus new civil appeals, cross-appeals, references, and JRs filed (1.1.2) minus total number of civil appeals, cross-appeals, references, and JRs disposed of, settled by mediation, abandoned or withdrawn (1.1.3 to 1.1.6) = net civil appeals, cross-appeals, references, and JRs for the year.</value>
   </data>
   <data name="Msg_1_1_7" xml:space="preserve">
     <value>Total number of civil appeals, cross-appeals, references, and JRs</value>
   </data>
   <data name="Lbl_1_2_Title" xml:space="preserve">
-    <value>Criminal appeals, cross-appeals, references and bail reviews filed, disposed of, and abandoned or withdrawn.</value>
+    <value>Criminal appeals, cross-appeals, references and bail reviews (filed, disposed of, and abandoned or withdrawn)</value>
   </data>
   <data name="Lbl_1_2_CheckboxText" xml:space="preserve">
     <value>Conviction appeal and sentence appeal are heard together</value>
@@ -404,7 +404,7 @@
     <value>Total number of criminal appeals, cross-appeals, references and bail reviews</value>
   </data>
   <data name="Tip_1_2_5" xml:space="preserve">
-    <value>Criminal appeals, cross-appeals, references and bail reviews filed but still pending as of December 31st of the previous year (1.2.1) plus new criminal appeals, cross-appeals, references and bail reviews filed (1.2.2) minus total number of criminal appeals, cross-appeals, references and bail reviews disposed of, settled by judicial facilitations, abandoned or withdrawn (1.2.3 to 1.2.4) = net criminal appeals, cross-appeals, references and bail reviews for the year.</value>
+    <value>Criminal appeals, cross-appeals, references and bail reviews filed but still pending as of December 31&lt;sup&gt;st&lt;/sup&gt; of the previous year (1.2.1) plus new criminal appeals, cross-appeals, references and bail reviews filed (1.2.2) minus total number of criminal appeals, cross-appeals, references and bail reviews disposed of, settled by judicial facilitations, abandoned or withdrawn (1.2.3 to 1.2.4) = net criminal appeals, cross-appeals, references and bail reviews for the year.</value>
   </data>
   <data name="Msg_1_2_5" xml:space="preserve">
     <value>Total number of criminal appeals, cross-appeals, references and bail reviews</value>
@@ -559,7 +559,7 @@
     <value>Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took between 6 to 12 months</value>
   </data>
   <data name="Lbl_4_1_3" xml:space="preserve">
-    <value>Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took more than 12 months</value>
+    <value> Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took more than 12 months</value>
   </data>
   <data name="Msg_4_1_3" xml:space="preserve">
     <value>Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took more than 12 months</value>
@@ -590,7 +590,7 @@
 </value>
   </data>
   <data name="Sec4_414_Label" xml:space="preserve">
-    <value>(Number of criminal appeals where the interval from the notice of appeal to filing of the appellant’s factum took less than 6 months for:)</value>
+    <value>Number of criminal appeals where the interval from the notice of appeal to filing of the appellant’s factum took less than 6 months for:</value>
   </data>
   <data name="Sec4_415_Label" xml:space="preserve">
     <value>Number of criminal appeals where the interval from the notice of appeal to filing of the appellant’s factum took between 6 to 12 months for:</value>
@@ -779,13 +779,13 @@
     <value>Number of decisions/judgments rendered</value>
   </data>
   <data name="Sec8_81_Label" xml:space="preserve">
-    <value>Less than 6 months</value>
+    <value>Number of decisions related to civil and criminal cases that are rendered in less than 6 months from the hearing date. The cases involving the Youth Criminal Justice Act are not to be tracked separately. They should be counted as any other decision rendered.</value>
   </data>
   <data name="Sec8_82_Label" xml:space="preserve">
-    <value>Between 6 to 12 months</value>
+    <value>Number of decisions related to civil and criminal cases that are rendered between 6 to 12 months from the hearing date. The cases involving the Youth Criminal Justice Act are not to be tracked separately. They should be counted as any other decision rendered.</value>
   </data>
   <data name="Sec8_83_Label" xml:space="preserve">
-    <value>More than 12 months</value>
+    <value>Number of decisions related to civil and criminal cases that are rendered in more than 12 months from the hearing date. The cases involving the Youth Criminal Justice Act are not to be tracked separately. They should be counted as any other decision rendered.</value>
   </data>
   <data name="Sec8_Decision_Tip" xml:space="preserve">
     <value>Number of decisions related to civil and criminal cases that are rendered based on the selected time period from the hearing date. The cases involving the &lt;i&gt;Youth Criminal Justice Act&lt;/i&gt; are not to be tracked separately. They should be counted as any other decision rendered.</value>
@@ -800,16 +800,16 @@
     <value>By a 5-member panel hearings</value>
   </data>
   <data name="Sec10_Heading" xml:space="preserve">
-    <value>Total number of appeals, cross-appeals, references, bail reviews and JRs pending on December 31st</value>
+    <value>Total number of appeals, cross-appeals, references, bail reviews and JRs pending on December 31&lt;sup&gt;st&lt;/sup&gt;</value>
   </data>
   <data name="Sec10_Heading_Tooltip" xml:space="preserve">
-    <value>Explanation text for pending inventory measured as of December 31st, including heard and unheard matters.</value>
+    <value>Explanation text for pending inventory measured as of December 31&lt;sup&gt;st&lt;/sup&gt;, including heard and unheard matters.</value>
   </data>
   <data name="Sec10_101_Label" xml:space="preserve">
     <value>Number of appeals, cross-appeals, references, bail reviews and JRs that have not been finalized as of December 31&lt;sup&gt;st&lt;/sup&gt;</value>
   </data>
   <data name="Sec10_101_Label_Plain" xml:space="preserve">
-    <value>Number of appeals, cross-appeals, references, bail reviews and JRs that have not been finalized as of December 31st</value>
+    <value>Number of appeals, cross-appeals, references, bail reviews and JRs that have not been finalized as of December 31&lt;sup&gt;st&lt;/sup&gt;</value>
   </data>
   <data name="Sec11_Heading" xml:space="preserve">
     <value>Number of judges (as of December 31&lt;sup&gt;st&lt;/sup&gt;)</value>
@@ -818,7 +818,7 @@
     <value>Regular judges</value>
   </data>
   <data name="Sec11_111_Tooltip" xml:space="preserve">
-    <value>Number of judges of the court as of December 31st that have not elected a supernumerary status and have regular judicial duties.</value>
+    <value>Number of judges of the court as of December 31&lt;sup&gt;st&lt;/sup&gt; that have not elected a supernumerary status and have regular judicial duties.</value>
   </data>
   <data name="Sec11_111_DataMsg" xml:space="preserve">
     <value>Regular judges</value>
@@ -827,7 +827,7 @@
     <value>Supernumerary judges</value>
   </data>
   <data name="Sec11_112_Tooltip" xml:space="preserve">
-    <value>Number of judges of the court as of December 31st that hold office as supernumerary judges as per section 28 of the Judges Act.</value>
+    <value>Number of judges of the court as of December 31&lt;sup&gt;st&lt;/sup&gt; that hold office as supernumerary judges as per section 28 of the Judges Act.</value>
   </data>
   <data name="Sec11_112_DataMsg" xml:space="preserve">
     <value>Supernumerary judges</value>

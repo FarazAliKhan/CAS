@@ -88,7 +88,7 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Report.
+        ///   Looks up a localized string similar to Reports.
         /// </summary>
         public static string Report {
             get {

@@ -246,10 +246,10 @@ Les appels incidents doivent uniquement être compilés s’ils sont inscrits au
     <value>Tab 9 - Nombre d’appels qui sont entendus</value>
   </data>
   <data name="Sidebar_Tab10" xml:space="preserve">
-    <value>FR-Tab 10 - Total number of appeals, cross-appeals, references, bail reviews and JRs pending on December 31st</value>
+    <value>FR-Tab 10 - Total number of appeals, cross-appeals, references, bail reviews and JRs pending on December 31&lt;sup&gt;st&lt;/sup&gt;</value>
   </data>
   <data name="Sidebar_Tab11" xml:space="preserve">
-    <value>FR-Tab 11 - Number of judges (as of December 31st)</value>
+    <value>FR-Tab 11 - Number of judges (as of December 31&lt;sup&gt;st&lt;/sup&gt;)</value>
   </data>
   <data name="Sidebar_Tab12" xml:space="preserve">
     <value>Tab 12 - Commentaires additionnels et Révision des statistiques</value>
@@ -303,7 +303,7 @@ Les appels incidents doivent uniquement être compilés s’ils sont inscrits au
     <value>FR-Please enter To Date</value>
   </data>
   <data name="Lbl_1_1_Title" xml:space="preserve">
-    <value> Appels, appels incidents et renvois civils et contrôles judiciaires (déposés, ayant fait l’objet d’un jugement ou d’une décision mettant fin au dossier et abandonnés ou retirés)</value>
+    <value>Appels, appels incidents et renvois civils et contrôles judiciaires (déposés, ayant fait l’objet d’un jugement ou d’une décision mettant fin au dossier et abandonnés ou retirés)</value>
   </data>
   <data name="Lbl_1_1_1" xml:space="preserve">
     <value>FR-Number of civil appeals, cross-appeals, references, and JRs filed but still pending as of December 31&lt;sup&gt;st&lt;/sup&gt; of the previous year</value>
@@ -847,7 +847,7 @@ Si l’audience dure plus d’une journée, utilisez le premier jour de l’audi
     <value>Révision des statistiques </value>
   </data>
   <data name="AlertRecordAlreadyCompleted" xml:space="preserve">
-    <value>Fr-This form has already been submitted for the selected Court and Year. For more information or changes, please contact the CJC department.
+    <value>Ce formulaire a déjà été soumis pour la cour et l’année que vous avez sélectionnées. Si des modifications sont nécessaires aux statistiques que vous avez déjà soumises, veuillez envoyer un courriel à committees-comites@cjc-ccm.ca
 </value>
   </data>
 </root>
