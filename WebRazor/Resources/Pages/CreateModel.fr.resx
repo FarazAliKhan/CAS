@@ -216,7 +216,7 @@ Les appels incidents doivent uniquement être compilés s’ils sont inscrits au
     <value>La suppression du dossier a échoué</value>
   </data>
   <data name="Sidebar_BasicInfo" xml:space="preserve">
-    <value>Nom du tribunal et année de référence</value>
+    <value>Nom de la cour et année de référence</value>
   </data>
   <data name="Sidebar_Tab1" xml:space="preserve">
     <value>Tab 1 - Nombre d’appels, d’appels incidents, de renvois, de révisions de cautionnement et de contrôles judiciaires </value>

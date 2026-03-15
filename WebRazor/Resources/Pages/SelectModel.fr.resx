@@ -148,13 +148,13 @@
     <value>Bienvenue dans la base de données des Statistiques annuelles des Cours d’appel (SACA).</value>
   </data>
   <data name="Text2" xml:space="preserve">
-    <value>L’ensemble des statistiques doivent être recueillies sur la base d’une année (du 1er janvier &lt;sup&gt;st&lt;/sup&gt; au 31 décembre&lt;sup&gt;st&lt;/sup&gt;).</value>
+    <value>L’ensemble des statistiques doivent être recueillies sur la base d’une année  (du 1&lt;sup&gt;st&lt;/sup&gt; au 31 décembre).</value>
   </data>
   <data name="Text3" xml:space="preserve">
     <value>La base de données offre une gamme de rapports qui peuvent être générés et utilisés par votre cour. </value>
   </data>
   <data name="Text4" xml:space="preserve">
-    <value>La base de données offre une gamme de rapports qui peuvent être générés et utilisés par votre cour. </value>
+    <value>Pour entrer vos statistiques annuelles et/ou générer des rapports, veuillez utiliser les boutons ci-dessous. </value>
   </data>
   <data name="Text5" xml:space="preserve">
     <value>Si vous éprouvez des difficultés techniques, veuillez envoyer un courriel à committees-comites@cjc-ccm.ca </value>
