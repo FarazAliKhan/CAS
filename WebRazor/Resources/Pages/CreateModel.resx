@@ -196,7 +196,7 @@
     <value>Close</value>
   </data>
   <data name="Alert_DraftSavedSuccess" xml:space="preserve">
-    <value>The draft saved successfully.</value>
+    <value>Success - The draft was saved successfully - Close</value>
   </data>
   <data name="Alert_DraftSavedFailed" xml:space="preserve">
     <value>The draft save failed.</value>

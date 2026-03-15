@@ -115,7 +115,7 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The draft saved successfully..
+        ///   Looks up a localized string similar to Success - The draft was saved successfully - Close.
         /// </summary>
         public static string Alert_DraftSavedSuccess {
             get {

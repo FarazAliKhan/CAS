@@ -198,7 +198,7 @@ Les appels incidents doivent uniquement être compilés s’ils sont inscrits au
     <value>Fermer</value>
   </data>
   <data name="Alert_DraftSavedSuccess" xml:space="preserve">
-    <value>Le brouillon a été enregistré avec succès.</value>
+    <value>Succès - Le brouillon a été enregistré avec succès - Fermer</value>
   </data>
   <data name="Alert_DraftSavedFailed" xml:space="preserve">
     <value>Enregistrement déjà sauvegardé.</value>
@@ -303,7 +303,7 @@ Les appels incidents doivent uniquement être compilés s’ils sont inscrits au
     <value>FR-Please enter To Date</value>
   </data>
   <data name="Lbl_1_1_Title" xml:space="preserve">
-    <value>Appels, appels incidents et renvois civils et contrôles judiciaires déposés, ayant fait l’objet d’un jugement ou d’une décision mettant fin au dossier et abandonnés ou retirés</value>
+    <value> Appels, appels incidents et renvois civils et contrôles judiciaires (déposés, ayant fait l’objet d’un jugement ou d’une décision mettant fin au dossier et abandonnés ou retirés)</value>
   </data>
   <data name="Lbl_1_1_1" xml:space="preserve">
     <value>FR-Number of civil appeals, cross-appeals, references, and JRs filed but still pending as of December 31&lt;sup&gt;st&lt;/sup&gt; of the previous year</value>
@@ -357,7 +357,7 @@ Les appels incidents doivent uniquement être compilés s’ils sont inscrits au
     <value>Nombre total d’appels, d’appels incidents et de renvois civils et de contrôles judiciaires</value>
   </data>
   <data name="Lbl_1_2_Title" xml:space="preserve">
-    <value>Appels, appels incidents et renvois criminels et révisions de cautionnement déposés, ayant fait l’objet d’un jugement ou d’une décision mettant fin au dossier et abandonnés ou retirés </value>
+    <value>Appels, appels incidents et renvois criminels et révisions de cautionnement (déposés, ayant fait l’objet d’un jugement ou d’une décision mettant fin au dossier et abandonnés ou retirés)C </value>
   </data>
   <data name="Lbl_1_2_CheckboxText" xml:space="preserve">
     <value>L’appel concernant la décision sur la culpabilité et l’appel concernant la décision sur la peine sont entendus en même temps</value>
@@ -459,13 +459,13 @@ Les appels incidents doivent uniquement être compilés s’ils sont inscrits au
     <value>Nombre de jugements sur la peine rendues à l’audience</value>
   </data>
   <data name="Lbl_2_2_1_3" xml:space="preserve">
-    <value>Nombre de jugements sur d’autres appels criminels rendus à l’audience</value>
+    <value>Exemples d'autres appels criminels : habeas corpus, prohibition, certiorari, examens de troubles mentaux, etc.</value>
   </data>
   <data name="Tip_2_2_1_3" xml:space="preserve">
     <value>Exemples d’autres appels criminels : habeas corpus, prohibition, certiorari, examens de troubles mentaux, etc.</value>
   </data>
   <data name="Msg_2_2_1_3" xml:space="preserve">
-    <value>Nombre de jugements sur d’autres appels criminels rendus à l’audience</value>
+    <value>Exemples d'autres appels criminels : habeas corpus, prohibition, certiorari, examens de troubles mentaux, etc.</value>
   </data>
   <data name="Lbl_2_2_2" xml:space="preserve">
     <value>Nombre de décisions criminelles déposées après la mise en délibéré</value>
@@ -510,13 +510,13 @@ Les appels incidents doivent uniquement être compilés s’ils sont inscrits au
     <value>Nombre de décisions/jugements rendus sur le banc</value>
   </data>
   <data name="Lbl_3_2" xml:space="preserve">
-    <value>FR-Number of reserved decisions/judgments</value>
+    <value>Nombre de décisions/jugements mis en délibéré </value>
   </data>
   <data name="Tip_3_2" xml:space="preserve">
     <value>Une décision mise en délibéré est une décision rendue à une date ultérieure, c.-à-d. qui n’est pas rendue immédiatement après l’audience, le même jour que l’audience ou pendant la même semaine que l’audience. Les décisions impliquant la &lt;i&gt;Loi sur le système de justice pénale pour les adolescents&lt;/i&gt; ne doivent pas être compilées séparément. Elles devraient être comptées comme n’importe quelle autre décision d’appel en matière criminelle.</value>
   </data>
   <data name="Msg_3_2" xml:space="preserve">
-    <value>FR-Number of reserved decisions/judgments</value>
+    <value>Nombre de décisions/jugements mis en délibéré </value>
   </data>
   <data name="Lbl_4_Heading" xml:space="preserve">
     <value>Intervalles de temps pour les affaires civiles et criminelles</value>
