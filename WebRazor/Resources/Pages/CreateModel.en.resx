@@ -580,13 +580,13 @@
     <value>Civil and criminal case statistics are to be collected for three time intervals: 1) Notice of appeal to filing of the appellant’s factum (or the equivalent document), 2) Filing of appellant’s factum to hearing, and 3) Hearing to final decision.&lt;br /&gt;&lt;br /&gt;For each of these time intervals, information will be gathered for three time periods: 1) Less than 6 months, 2) Between 6 to 12 months, and 3) More than 12 months.</value>
   </data>
   <data name="Sec4_411_Label" xml:space="preserve">
-    <value>Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took more than 12 months</value>
+    <value>Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took more than 6 months</value>
   </data>
   <data name="Sec4_412_Label" xml:space="preserve">
     <value>Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took between 6 to 12 months</value>
   </data>
   <data name="Sec4_413_Label" xml:space="preserve">
-    <value>(Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took more than 12 months)
+    <value>Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took more than 12 months
 </value>
   </data>
   <data name="Sec4_414_Label" xml:space="preserve">

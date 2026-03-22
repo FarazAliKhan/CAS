@@ -306,10 +306,10 @@ Les appels incidents doivent uniquement être compilés s’ils sont inscrits au
     <value>Appels, appels incidents et renvois civils et contrôles judiciaires (déposés, ayant fait l’objet d’un jugement ou d’une décision mettant fin au dossier et abandonnés ou retirés)</value>
   </data>
   <data name="Lbl_1_1_1" xml:space="preserve">
-    <value>FR-Number of civil appeals, cross-appeals, references, and JRs filed but still pending as of December 31&lt;sup&gt;st&lt;/sup&gt; of the previous year</value>
+    <value>Nombre d’appels, d’appels incidents et de renvois civils et de contrôles judiciaires déposés mais encore en cours au 31 décembre de l’année précédente.</value>
   </data>
   <data name="Msg_1_1_1" xml:space="preserve">
-    <value>FR-Number of civil appeals, cross-appeals, references, and JRs filed but still pending as of December 31&lt;sup&gt;st&lt;/sup&gt; of the previous year</value>
+    <value>Nombre d’appels, d’appels incidents et de renvois civils et de contrôles judiciaires déposés mais encore en cours au 31 décembre de l’année précédente.</value>
   </data>
   <data name="Lbl_1_1_2" xml:space="preserve">
     <value>Nombre d’appels, d’appels incidents et de renvois civils et de contrôles judiciaires déposés </value>
@@ -357,7 +357,7 @@ Les appels incidents doivent uniquement être compilés s’ils sont inscrits au
     <value>Nombre total d’appels, d’appels incidents et de renvois civils et de contrôles judiciaires</value>
   </data>
   <data name="Lbl_1_2_Title" xml:space="preserve">
-    <value>Appels, appels incidents et renvois criminels et révisions de cautionnement (déposés, ayant fait l’objet d’un jugement ou d’une décision mettant fin au dossier et abandonnés ou retirés)C </value>
+    <value>Appels, appels incidents et renvois criminels et révisions de cautionnement (déposés, ayant fait l’objet d’un jugement ou d’une décision mettant fin au dossier et abandonnés ou retirés) </value>
   </data>
   <data name="Lbl_1_2_CheckboxText" xml:space="preserve">
     <value>L’appel concernant la décision sur la culpabilité et l’appel concernant la décision sur la peine sont entendus en même temps</value>
@@ -366,10 +366,10 @@ Les appels incidents doivent uniquement être compilés s’ils sont inscrits au
     <value>Les cours qui entendent les appels concernant la décision sur la culpabilité et concernant la décision sur la peine en même temps doivent cocher cette case.</value>
   </data>
   <data name="Lbl_1_2_1" xml:space="preserve">
-    <value>FR-Number of criminal appeals, cross-appeals, references and bail reviews filed but still pending as of December 31&lt;sup&gt;st&lt;/sup&gt; of the previous year</value>
+    <value>Nombre d’appels, d’appels incidents et de renvois criminels et de révisions de cautionnement déposés mais encore en cours au 31 décembre de l’année précédente.</value>
   </data>
   <data name="Msg_1_2_1" xml:space="preserve">
-    <value>FR-Number of civil appeals, cross-appeals, references, and JRs filed of criminal appeals, cross-appeals, references and bail reviews filed but still pending as of December 31&lt;sup&gt;st&lt;/sup&gt; of the previous year</value>
+    <value>Nombre d’appels, d’appels incidents et de renvois criminels et de révisions de cautionnement déposés mais encore en cours au 31 décembre de l’année précédente.</value>
   </data>
   <data name="Lbl_1_2_2" xml:space="preserve">
     <value>Nombre d’appels, d’appels incidents et de renvois criminels et de révisions de cautionnement déposés</value>
@@ -649,7 +649,7 @@ Si l’audience dure plus d’une journée, utilisez le premier jour de l’audi
     <value>Nombre d’affaires civiles où l’intervalle de temps entre l’audience et la décision finale est entre 6 et 12 mois </value>
   </data>
   <data name="Sec4_433_Label" xml:space="preserve">
-    <value>Nombre d’affaires civiles où l’intervalle de temps entre l’audience et la décision finale est de plus de 12 mois s</value>
+    <value>Nombre d’affaires civiles où l’intervalle de temps entre l’audience et la décision finale est de plus de 12 mois</value>
   </data>
   <data name="Sec4_434_Label" xml:space="preserve">
     <value>Nombre d’affaires criminelles où l’intervalle de temps entre l’audience et la décision finale est de moins de 6 mois pour :</value>

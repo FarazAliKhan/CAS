@@ -148,7 +148,7 @@
     <value>Bienvenue dans la base de données des Statistiques annuelles des Cours d’appel (SACA).</value>
   </data>
   <data name="Text2" xml:space="preserve">
-    <value>L’ensemble des statistiques doivent être recueillies sur la base d’une année  (du 1&lt;sup&gt;st&lt;/sup&gt; au 31 décembre).</value>
+    <value>L’ensemble des statistiques doivent être recueillies sur la base d’une année  (du 1&lt;sup&gt;er&lt;/sup&gt; au 31 décembre).</value>
   </data>
   <data name="Text3" xml:space="preserve">
     <value>La base de données offre une gamme de rapports qui peuvent être générés et utilisés par votre cour. </value>
