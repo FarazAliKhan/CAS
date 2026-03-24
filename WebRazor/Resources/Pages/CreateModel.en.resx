@@ -779,16 +779,22 @@
     <value>Number of decisions/judgments rendered</value>
   </data>
   <data name="Sec8_81_Label" xml:space="preserve">
-    <value>Number of decisions related to civil and criminal cases that are rendered in less than 6 months from the hearing date. The cases involving the Youth Criminal Justice Act are not to be tracked separately. They should be counted as any other decision rendered.</value>
+    <value>Less than 6 months</value>
   </data>
   <data name="Sec8_82_Label" xml:space="preserve">
-    <value>Number of decisions related to civil and criminal cases that are rendered between 6 to 12 months from the hearing date. The cases involving the Youth Criminal Justice Act are not to be tracked separately. They should be counted as any other decision rendered.</value>
+    <value>Between 6 to 12 months </value>
   </data>
   <data name="Sec8_83_Label" xml:space="preserve">
-    <value>Number of decisions related to civil and criminal cases that are rendered in more than 12 months from the hearing date. The cases involving the Youth Criminal Justice Act are not to be tracked separately. They should be counted as any other decision rendered.</value>
+    <value>More than 12 months</value>
   </data>
-  <data name="Sec8_Decision_Tip" xml:space="preserve">
-    <value>Number of decisions related to civil and criminal cases that are rendered based on the selected time period from the hearing date. The cases involving the &lt;i&gt;Youth Criminal Justice Act&lt;/i&gt; are not to be tracked separately. They should be counted as any other decision rendered.</value>
+  <data name="Sec8_Decision1_Tip" xml:space="preserve">
+    <value>Number of decisions related to civil and criminal cases that are rendered in less than 6 months from the hearing date. The cases involving the Youth Criminal Justice Act are not to be tracked separately. They should be counted as any other decision rendered.</value>
+  </data>
+	<data name="Sec8_Decision2_Tip" xml:space="preserve">
+    <value>Number of decisions related to civil and criminal cases that are rendered between 6 to 12 months from the hearing date. The cases involving the Youth Criminal Justice Act are not to be tracked separately. They should be counted as any other decision rendered.</value>
+  </data>
+	<data name="Sec8_Decision3_Tip" xml:space="preserve">
+    <value>Number of decisions related to civil and criminal cases that are rendered in more than 12 months from the hearing date. The cases involving the Youth Criminal Justice Act are not to be tracked separately. They should be counted as any other decision rendered.</value>
   </data>
   <data name="Sec9_Heading" xml:space="preserve">
     <value>Number of appeals that are heard</value>

@@ -789,10 +789,17 @@ Si l’audience dure plus d’une journée, utilisez le premier jour de l’audi
   <data name="Sec8_83_Label" xml:space="preserve">
     <value>Plus de 12 mois</value>
   </data>
-  <data name="Sec8_Decision_Tip" xml:space="preserve">
-    <value>Nombre de décisions d’affaires civiles et criminelles qui sont rendues en moins de 6 mois à partir de la date de l’audience. Les affaires impliquant la Loi sur le système de justice pénale pour les adolescents ne doivent pas être compilées séparément. Elles devraient être comptées comme n’importe quelle autre décision rendue. </value>
+	<data name="Sec8_Decision1_Tip" xml:space="preserve">
+    <value>Nombre de décisions d’affaires civiles et criminelles qui sont rendues en moins de 6 mois à partir de la date de l’audience. Les affaires impliquant la Loi sur le système de justice pénale pour les adolescents ne doivent pas être compilées séparément. Elles devraient être comptées comme n’importe quelle autre décision rendue.</value>
   </data>
-  <data name="Sec9_Heading" xml:space="preserve">
+	<data name="Sec8_Decision2_Tip" xml:space="preserve">
+    <value>. Nombre de décisions relatives à des affaires civiles et criminelles qui sont rendues entre 6 et 12 mois à partir de la date de l’audience. Les affaires impliquant la Loi sur le système de justice pénale pour les adolescents ne doivent pas être compilées séparément. Elles devraient être comptées comme n’importe quelle autre décision rendue.</value>
+  </data>
+	<data name="Sec8_Decision3_Tip" xml:space="preserve">
+    <value>Nombre de décisions relatives à des affaires civiles et criminelles qui sont rendues en plus de 12 mois à partir de la date de l’audience. Les affaires impliquant la Loi sur le système de justice pénale pour les adolescents ne doivent pas être compilées séparément. Elles devraient être comptées comme n’importe quelle autre décision rendue.</value>
+  </data>
+
+	<data name="Sec9_Heading" xml:space="preserve">
     <value>Nombre d’appels qui sont entendus</value>
   </data>
   <data name="Sec9_91_Label" xml:space="preserve">
