@@ -812,13 +812,13 @@ Si l’audience dure plus d’une journée, utilisez le premier jour de l’audi
     <value>FR-Total number of appeals, cross-appeals, references, bail reviews and JRs pending on December 31st</value>
   </data>
   <data name="Sec10_Heading_Tooltip" xml:space="preserve">
-    <value>FR-Explanation text for pending inventory measured as of December 31st, including heard and unheard matters.</value>
+    <value>L’inventaire de clôture d’une année est également l’inventaire d’ouverture de l’année suivante. Cet inventaire peut être mesuré « en date » du 31 décembre de chaque année. Les appels, appels incidents, renvois, révisions de cautionnement et contrôles judiciaires qui sont introduits avant le 31 décembre, mais pour lesquels un jugement ou une décision n’est pas rendu avant le 31 décembre, sont considérés comme étant en cours à cette date. Cela comprend les appels, appels incidents, renvois, révisions de cautionnement et contrôles judiciaires qui n’ont pas encore été entendus, de même que ceux qui ont été entendus mais pour lesquels un jugement n’a pas encore été prononcé. Ces appels, appels incidents, renvois, révisions de cautionnement et contrôles judiciaires figureront dans l’inventaire de clôture d’une année et dans l’inventaire d’ouverture de l’année suivante. </value>
   </data>
   <data name="Sec10_101_Label" xml:space="preserve">
-    <value>FR-Number of appeals, cross-appeals, references, bail reviews and JRs that have not been finalized as of December 31&lt;sup&gt;st&lt;/sup&gt;</value>
+    <value>Nombre d’appels, d’appels incidents, de renvois, de révisions de cautionnement et de contrôles judiciaires qui n’ont pu être complétés au 31 décembre</value>
   </data>
   <data name="Sec10_101_Label_Plain" xml:space="preserve">
-    <value>FR-Number of appeals, cross-appeals, references, bail reviews and JRs that have not been finalized as of December 31st</value>
+    <value>Nombre d’appels, d’appels incidents, de renvois, de révisions de cautionnement et de contrôles judiciaires qui n’ont pu être complétés au 31 décembre</value>
   </data>
   <data name="Sec11_Heading" xml:space="preserve">
     <value>Nombre total de juges en date du 31 décembre</value>

@@ -806,10 +806,10 @@
     <value>By a 5-member panel hearings</value>
   </data>
   <data name="Sec10_Heading" xml:space="preserve">
-    <value>Total number of appeals, cross-appeals, references, bail reviews and JRs pending on December 31&lt;sup&gt;st&lt;/sup&gt;</value>
+    <value>Total number of appeals, cross-appeals, references, bail reviews and JRs pending on December 31&lt;sup&gt;st&lt;/sup&gt; </value>
   </data>
   <data name="Sec10_Heading_Tooltip" xml:space="preserve">
-    <value>Explanation text for pending inventory measured as of December 31&lt;sup&gt;st&lt;/sup&gt;, including heard and unheard matters.</value>
+    <value>The closing inventory of one year will equally be the opening inventory of the next year. That inventory can be measured “as of ” December 31&lt;sup&gt;st&lt;/sup&gt; of each year. Appeals, cross-appeals, references, bail reviews and JRs filed before December 31&lt;sup&gt;st&lt;/sup&gt; for which there is no judgment date or other disposition date before December 31&lt;sup&gt;st&lt;/sup&gt; are considered pending on that date. This includes the appeals, cross-appeals, references, bail reviews and JRs that have not been heard as well as those that have been heard but for which judgment has not yet been released. These appeals, cross-appeals, references, bail reviews and JRs will appear in the closing inventory of one year and the opening inventory of the next year. </value>
   </data>
   <data name="Sec10_101_Label" xml:space="preserve">
     <value>Number of appeals, cross-appeals, references, bail reviews and JRs that have not been finalized as of December 31&lt;sup&gt;st&lt;/sup&gt;</value>
