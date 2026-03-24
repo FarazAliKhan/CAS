@@ -676,38 +676,38 @@ Si l’audience dure plus d’une journée, utilisez le premier jour de l’audi
     <value>Nombre d’audiences en personne, virtuelles et hybrides</value>
   </data>
   <data name="Sec5_Heading_Tip" xml:space="preserve">
-    <value>FR-The number of hearings in this section are to be collected for &lt;u&gt;hearings by a panel of judges only&lt;/u&gt;.)</value>
+    <value>Le nombre d’audiences dans cette section doit être compilé pour les &lt;u&gt;audiences entendues par une formation de juges seulement.&lt;/u&gt;.)</value>
   </data>
   <data name="Sec5_51_Label_Short" xml:space="preserve">
     <value>Audiences en personne</value>
   </data>
   <data name="Sec5_51_Tip" xml:space="preserve">
-    <value>FR-Number of hearings held where all parties were present in court for the hearing. This description also includes situations where the counsel attended the hearing in-person but where the individual being represented attended remotely/virtually.</value>
+    <value>Nombre d’audiences où toutes les parties étaient présentes en cour pour l’audience. Cette description inclut également les situations où l’avocat s’est présenté à l’audience en personne mais que l’individu qu’il représente s’est présenté à distance ou virtuellement.</value>
   </data>
   <data name="Sec5_52_Label_Short" xml:space="preserve">
     <value>Audiences virtuelles</value>
   </data>
   <data name="Sec5_52_Tip" xml:space="preserve">
-    <value>FR-Number of hearings held where all parties attended the hearing remotely/virtually.</value>
+    <value>Nombre d’audiences où toutes les parties ont assisté à l’audience à distance ou virtuellement.</value>
   </data>
   <data name="Sec5_53_Label_Short" xml:space="preserve">
     <value>Audiences hybrides</value>
   </data>
   <data name="Sec5_53_Tip" xml:space="preserve">
-    <value>FR-Number of hearings held where one or more parties were present in court for the hearing and one or more parties attended the hearing remotely/virtually.</value>
+    <value>Nombre d’audiences où une ou plusieurs parties étaient présentes en cour pour l’audience, et où une ou plusieurs parties ont assisté à l’audience à distance ou virtuellement.</value>
   </data>
   <data name="Sec5_54_Label" xml:space="preserve">
     <value>Nombre total d’audiences en personne, virtuelles et hybrides</value>
   </data>
   <data name="Sec5_54_Tip" xml:space="preserve">
-    <value>FR-This field is auto-populated using fields 5.1 to 5.3</value>
+    <value>Ce champ est renseigné automatiquement à partir des champs 5.1 à 5.3</value>
   </data>
   <data name="Sec6_Heading" xml:space="preserve">
     <value>Nombre de requêtes et demandes</value>
   </data>
   <data name="Sec6_Heading_Tip" xml:space="preserve">
-    <value>FR-The number of motions and applications heard in chambers (single judge), in court (panels of three or more judges) and by registrars. In some jurisdictions, motions and applications can be heard by a master or other judicial officers.&lt;br /&gt;&lt;br /&gt;Motions and applications heard at the time of the hearing of an appeal are &lt;u&gt;not&lt;/u&gt; to be included. Motions and applications in writing should be included. Consent orders should also be included if judicial time is required to deal with them.&lt;br /&gt;&lt;br /&gt;With respect to applications for leave to appeal or leave to extend the time to appeal:&lt;br /&gt;&lt;br /&gt;1. Where leave is granted, these applications should be counted as both a motion heard and as an appeal filed and subsequently disposed of by judgment or by other means. Where the practice of the court is to open a new (second) file, count the motion heard only on the first file and the appeal filed on the second file, or&lt;br /&gt;&lt;br /&gt;2. Where only the motion or application is heard and leave is denied, these applications should be counted only as a motion heard by a motion judge or judges. However, when the entire appeal is heard and leave is denied by an appellate panel, then these applications should be counted only as an appeal disposed of by other means.</value>
-  </data>
+	 <value>Le nombre de requêtes et demandes entendues en cabinet (juge seul), par une formation (trois juges ou plus) et par le greffier . Les requêtes ou les demandes entendues au moment de l’audience ne doivent pas être incluses. Les requêtes et les demandes présentées par écrit devraient être incluses. Les ordonnances de consentement devraient aussi être incluses si les juges ont dû y consacrer du temps. &lt;br /&gt;&lt;br /&gt;En ce qui concerne les demandes d’autorisation d’appel et les demandes d’autorisation de proroger le délai d’appel ::&lt;br /&gt;&lt;br /&gt;1. Si l’autorisation est accordée, ces demandes devraient être comptées à la fois comme une requête entendue et comme un appel déposé qui est ultérieurement décidé par voie de jugement ou par d’autres moyens. Lorsque la pratique de la 	cour consiste à ouvrir un nouveau (deuxième) dossier, la requête entendue doit 	être comptée seulement dans le premier dossier, et l’appel déposé doit être compté dans le deuxième dossier, ou, or&lt;br /&gt;&lt;br /&gt;2. Si la requête ou la demande est entendue mais que l’autorisation est refusée, ces demandes devraient être comptées seulement comme une requête entendue par un ou plusieurs juges des requêtes. Cependant, si l’appel complet est entendu mais que l’autorisation est refusée par une formation d’appel, ces demandes devraient être comptées seulement comme un appel décidé par d’autres moyens. </value>
+    </data>
   <data name="Sec6_61_Label" xml:space="preserve">
     <value>Requêtes et demandes entendues par un juge seul</value>
   </data>
@@ -721,7 +721,8 @@ Si l’audience dure plus d’une journée, utilisez le premier jour de l’audi
     <value>Nombre de requêtes et demandes devant un juge seul qui ont été abandonnées, retirées, ou rejetées pour des motifs administratifs</value>
   </data>
   <data name="Sec6_613_Tip" xml:space="preserve">
-    <value>FR-Examples of dismissed administratively include dismissed for want of prosecution, non-compliance with rules, applications where leave is denied, etc.</value>
+    <value>Exemples de motifs administratifs : rejet pour défaut de poursuite, pour cause de non-respect des règles, parce que la demande d’autorisation a été rejetée, etc. 
+</value>
   </data>
   <data name="Sec6_62_Label" xml:space="preserve">
     <value>Requêtes et demandes entendues par une formation de trois juges ou plus</value>
@@ -736,7 +737,8 @@ Si l’audience dure plus d’une journée, utilisez le premier jour de l’audi
     <value>Nombre de requêtes et demandes qui ont été abandonnées, retirées ou rejetées pour des motifs administratifs</value>
   </data>
   <data name="Sec6_623_Tip" xml:space="preserve">
-    <value>FR-Examples of dismissed administratively include dismissed for want of prosecution, non-compliance with rules, applications where leave is denied, etc.</value>
+    <value>Exemples de motifs administratifs : rejet pour défaut de poursuite, pour cause de non-respect des règles, parce que la demande d’autorisation a été rejetée, etc. 
+</value>
   </data>
   <data name="Sec6_63_Label" xml:space="preserve">
     <value>Requêtes et demandes entendues par le greffier</value>
@@ -751,13 +753,14 @@ Si l’audience dure plus d’une journée, utilisez le premier jour de l’audi
     <value>Nombre de requêtes et demandes qui ont été abandonnées, retirées ou 	rejetées par le greffier ou pour des motifs administratifs </value>
   </data>
   <data name="Sec6_633_Tip" xml:space="preserve">
-    <value>FR-Examples of administrative reasons include dismissed for want of prosecution, non-compliance with rules, applications where leave is denied, etc.</value>
+    <value>Exemples de motifs administratifs : rejet pour défaut de poursuite, pour cause de non-respect des règles, parce que la demande d’autorisation a été rejetée, etc. 
+</value>
   </data>
   <data name="Sec7_Heading" xml:space="preserve">
     <value>Personnes qui se représentent seules</value>
   </data>
   <data name="Sec7_Heading_Tip" xml:space="preserve">
-    <value>FR-An SRL is a person who appears in court without representation from a lawyer. The litigant is not to be considered an SRL if the court has appointed counsel to assist the litigant.&lt;br /&gt;&lt;br /&gt;The number of appeals and the number of motions involving an SRL is &lt;u&gt;only&lt;/u&gt; collected at the hearing. For example, if a person is represented by a lawyer at the filing stage of an appeal or motion but is not represented at the hearing, the appeal or motion is considered an SRL case.</value>
+      <value>Une personne qui se représente seule est une personne qui comparaît en justice sans être représentée par un avocat. Le plaideur n’est pas considéré comme une personne qui se représente seule si la cour a désigné un avocat pour assister cette personne..&lt;br /&gt;&lt;br /&gt;Le nombre d’appels et le nombre de requêtes impliquant une personne qui se représente seule est &lt;u&gt;seulement&lt;/u&gt; compilé lors de l’audience. Par exemple, si une personne est représentée par un avocat au moment du dépôt d’un appel ou d’une requête, mais qu’elle n’est pas représentée à l’audience, l’appel ou la requête est considéré comme une affaire impliquant une personne qui se représente seule.</value>
   </data>
   <data name="Sec7_711_Label" xml:space="preserve">
     <value>Nombre d’affaires impliquant des personnes qui se représentent seules à l’audience au fond</value>
@@ -766,13 +769,13 @@ Si l’audience dure plus d’une journée, utilisez le premier jour de l’audi
     <value>Nombre de requêtes et demandes impliquant des personnes qui se représentent seules à l’audience pour une requête ou une motion (par un juge seul, par une formation de juges ou le greffier)</value>
   </data>
   <data name="Sec7_712_Tip" xml:space="preserve">
-    <value>FR-Motions and applications heard at the time of the hearing of an appeal are not to be included.</value>
+    <value>Les requêtes ou les demandes entendues au moment de l’audience ne doivent pas être incluses.</value>
   </data>
   <data name="Sec7_713_Label" xml:space="preserve">
     <value>Nombre total d’affaires, requêtes et demandes impliquant des personnes qui se représentent seules à l’audience</value>
   </data>
   <data name="Sec7_713_Tip" xml:space="preserve">
-    <value>FR-This field is auto-populated using fields 7.1.1 and 7.1.2.</value>
+    <value>Ce champ est rempli automatiquement à partir des champs 7.1.1 et 7.1.2.</value>
   </data>
   <data name="Sec8_Heading" xml:space="preserve">
     <value>Nombre de décisions/jugements rendus </value>
@@ -787,7 +790,7 @@ Si l’audience dure plus d’une journée, utilisez le premier jour de l’audi
     <value>Plus de 12 mois</value>
   </data>
   <data name="Sec8_Decision_Tip" xml:space="preserve">
-    <value>FR-Number of decisions related to civil and criminal cases that are rendered based on the selected time period from the hearing date. The cases involving the &lt;i&gt;Youth Criminal Justice Act&lt;/i&gt; are not to be tracked separately. They should be counted as any other decision rendered.</value>
+    <value>Nombre de décisions d’affaires civiles et criminelles qui sont rendues en moins de 6 mois à partir de la date de l’audience. Les affaires impliquant la Loi sur le système de justice pénale pour les adolescents ne doivent pas être compilées séparément. Elles devraient être comptées comme n’importe quelle autre décision rendue. </value>
   </data>
   <data name="Sec9_Heading" xml:space="preserve">
     <value>Nombre d’appels qui sont entendus</value>
@@ -811,13 +814,13 @@ Si l’audience dure plus d’une journée, utilisez le premier jour de l’audi
     <value>FR-Number of appeals, cross-appeals, references, bail reviews and JRs that have not been finalized as of December 31st</value>
   </data>
   <data name="Sec11_Heading" xml:space="preserve">
-    <value>FR-Number of judges (as of December 31&lt;sup&gt;st&lt;/sup&gt;)</value>
+    <value>Nombre total de juges en date du 31 décembre</value>
   </data>
   <data name="Sec11_111_Label" xml:space="preserve">
     <value>Juges réguliers</value>
   </data>
   <data name="Sec11_111_Tooltip" xml:space="preserve">
-    <value>FR-Number of judges of the court as of December 31st that have not elected a supernumerary status and have regular judicial duties.</value>
+    <value> Le nombre de juges de la cour qui, en date du 31 décembre, n’ont pas choisi d’exercer les fonctions de juge surnuméraire et qui exercent des fonctions judiciaires normales.</value>
   </data>
   <data name="Sec11_111_DataMsg" xml:space="preserve">
     <value>Juges réguliers</value>
@@ -826,7 +829,7 @@ Si l’audience dure plus d’une journée, utilisez le premier jour de l’audi
     <value>Juges surnuméraires</value>
   </data>
   <data name="Sec11_112_Tooltip" xml:space="preserve">
-    <value>FR-Number of judges of the court as of December 31st that hold office as supernumerary judges as per section 28 of the Judges Act.</value>
+    <value>Le nombre de juges de la cour qui, en date du 31 décembre exercent les fonctions de juge surnuméraire au terme de l’article 28 de la Loi sur les juges. </value>
   </data>
   <data name="Sec11_112_DataMsg" xml:space="preserve">
     <value>Juges surnuméraires</value>
@@ -835,7 +838,7 @@ Si l’audience dure plus d’une journée, utilisez le premier jour de l’audi
     <value>Commentaires additionnels</value>
   </data>
   <data name="Sec12_Heading_Tooltip" xml:space="preserve">
-    <value>FR-Comments should only be used on an exceptional basis. A true anomaly is a situation that considerably deviates from what is considered normal or expected.</value>
+    <value>Des commentaires ne devraient être ajoutés qu’à titre exceptionnel. Une véritable anomalie est une situation qui est très différente de ce qui est considéré comme étant normal ou attendu.</value>
   </data>
   <data name="btn_Save" xml:space="preserve">
     <value>Sauvegarder</value>
@@ -849,5 +852,8 @@ Si l’audience dure plus d’une journée, utilisez le premier jour de l’audi
   <data name="AlertRecordAlreadyCompleted" xml:space="preserve">
     <value>Ce formulaire a déjà été soumis pour la cour et l’année que vous avez sélectionnées. Si des modifications sont nécessaires aux statistiques que vous avez déjà soumises, veuillez envoyer un courriel à committees-comites@cjc-ccm.ca
 </value>
+  </data>
+	<data name="ReviewTab12Msg" xml:space="preserve">
+    <value>Pour revoir et soumettre vos statistiques, veuillez cliquer sur le bouton Révision des statistiques ci-dessous.</value>
   </data>
 </root>

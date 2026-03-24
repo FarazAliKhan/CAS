@@ -148,7 +148,7 @@
     <value>Merci d’avoir soumis vos statistiques annuelles.</value>
   </data>
   <data name="Text2" xml:space="preserve">
-    <value>Vous recevrez un courriel de confirmation à (email associated with user account). </value>
+    <value>Vous recevrez un courriel de confirmation à (courriel associé à votre compte d'usager). </value>
   </data>
   <data name="Text3" xml:space="preserve">
     <value>Vous pouvez désormais générer des rapports à partir des statistiques que vous venez de saisir.</value>

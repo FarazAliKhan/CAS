@@ -847,4 +847,7 @@
   <data name="btnReviewStats" xml:space="preserve">
     <value>Review Statistics</value>
   </data>
+	<data name="ReviewTab12Msg" xml:space="preserve">
+    <value>To review and submit your statistics, please click on the Review Statistics button below</value>
+  </data>
 </root>
