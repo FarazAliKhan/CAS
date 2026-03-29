@@ -670,7 +670,7 @@
     <value>Number of in-person, virtual and hybrid hearings</value>
   </data>
   <data name="Sec5_Heading_Tip" xml:space="preserve">
-    <value>The number of hearings in this section are to be collected for &lt;u&gt;hearings by a panel of judges only&lt;/u&gt;.)</value>
+    <value>The number of hearings in this section are to be collected for &lt;u&gt;hearings by a panel of judges only&lt;/u&gt;.</value>
   </data>
   <data name="Sec5_51_Label_Short" xml:space="preserve">
     <value>In-person hearings</value>
@@ -760,7 +760,7 @@
     <value>Number of motions and applications involving an SRL at the hearing of a motion or an application (by a single judge, a panel or the registrar)</value>
   </data>
   <data name="Sec7_712_Tip" xml:space="preserve">
-    <value>Motions and applications heard at the time of the hearing of an appeal are not to be included.</value>
+    <value>Motions and applications heard at the time of the hearing of an appeal are &lt;u&gt;not&lt;/u&gt; to be included.</value>
   </data>
   <data name="Sec7_713_Label" xml:space="preserve">
     <value>Total number of appeals, motions and applications involving an SRL at the hearing</value>
@@ -796,7 +796,7 @@
     <value>Total number of appeals, cross-appeals, references, bail reviews and JRs pending on December 31st</value>
   </data>
   <data name="Sec10_Heading_Tooltip" xml:space="preserve">
-    <value>Explanation text for pending inventory measured as of December 31st, including heard and unheard matters.</value>
+    <value>Explanation text for pending inventory measured as of December 31&lt;sup&gt;st&lt;/sup&gt;, including heard and unheard matters.</value>
   </data>
   <data name="Sec10_101_Label" xml:space="preserve">
     <value>Number of appeals, cross-appeals, references, bail reviews and JRs that have not been finalized as of December 31&lt;sup&gt;st&lt;/sup&gt;</value>

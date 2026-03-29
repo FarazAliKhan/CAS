@@ -1142,7 +1142,7 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Explanation text for pending inventory measured as of December 31st, including heard and unheard matters..
+        ///   Looks up a localized string similar to Explanation text for pending inventory measured as of December 31&lt;sup&gt;st&lt;/sup&gt;, including heard and unheard matters..
         /// </summary>
         public static string Sec10_Heading_Tooltip {
             get {
@@ -1583,7 +1583,7 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The number of hearings in this section are to be collected for &lt;u&gt;hearings by a panel of judges only&lt;/u&gt;.).
+        ///   Looks up a localized string similar to The number of hearings in this section are to be collected for &lt;u&gt;hearings by a panel of judges only&lt;/u&gt;..
         /// </summary>
         public static string Sec5_Heading_Tip {
             get {
@@ -1763,7 +1763,7 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Motions and applications heard at the time of the hearing of an appeal are not to be included..
+        ///   Looks up a localized string similar to Motions and applications heard at the time of the hearing of an appeal are &lt;u&gt;not&lt;/u&gt; to be included..
         /// </summary>
         public static string Sec7_712_Tip {
             get {

@@ -204,12 +204,8 @@
   <data name="Modal_DraftFound_Title" xml:space="preserve">
     <value>Draft Found</value>
   </data>
-	<data name="Alert_DraftFound_AskLoad" xml:space="preserve">
+  <data name="Alert_DraftFound_AskLoad" xml:space="preserve">
     <value>We found a draft for the selected Court and Reporting Year. Would you like to continue where you left off or discard it and start a new form?</value>
-  </data>
-  <data name="AlertRecordAlreadyCompleted" xml:space="preserve">
-    <value>This form has already been submitted for the court and year that you have selected. If any changes are required to the statistics that have already been submitted, please contact the CJC Secretariat at committees-comites@cjc-ccm.ca
-</value>
   </data>
   <data name="Alert_RecordRetrievalFailed" xml:space="preserve">
     <value>Please check VPN Connection.</value>
@@ -580,7 +576,7 @@
     <value>Civil and criminal case statistics are to be collected for three time intervals: 1) Notice of appeal to filing of the appellant’s factum (or the equivalent document), 2) Filing of appellant’s factum to hearing, and 3) Hearing to final decision.&lt;br /&gt;&lt;br /&gt;For each of these time intervals, information will be gathered for three time periods: 1) Less than 6 months, 2) Between 6 to 12 months, and 3) More than 12 months.</value>
   </data>
   <data name="Sec4_411_Label" xml:space="preserve">
-    <value>Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took more than 6 months</value>
+    <value>Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took less than 6 months</value>
   </data>
   <data name="Sec4_412_Label" xml:space="preserve">
     <value>Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took between 6 to 12 months</value>
@@ -677,7 +673,7 @@
     <value>Number of in-person, virtual and hybrid hearings</value>
   </data>
   <data name="Sec5_Heading_Tip" xml:space="preserve">
-    <value>The number of hearings in this section are to be collected for &lt;u&gt;hearings by a panel of judges only&lt;/u&gt;.)</value>
+    <value>The number of hearings in this section are to be collected for &lt;u&gt;hearings by a panel of judges only&lt;/u&gt;.</value>
   </data>
   <data name="Sec5_51_Label_Short" xml:space="preserve">
     <value>In-person hearings</value>
@@ -767,7 +763,7 @@
     <value>Number of motions and applications involving an SRL at the hearing of a motion or an application (by a single judge, a panel or the registrar)</value>
   </data>
   <data name="Sec7_712_Tip" xml:space="preserve">
-    <value>Motions and applications heard at the time of the hearing of an appeal are not to be included.</value>
+    <value>Motions and applications heard at the time of the hearing of an appeal are &lt;u&gt;not&lt;/u&gt; to be included.</value>
   </data>
   <data name="Sec7_713_Label" xml:space="preserve">
     <value>Total number of appeals, motions and applications involving an SRL at the hearing</value>
@@ -786,15 +782,6 @@
   </data>
   <data name="Sec8_83_Label" xml:space="preserve">
     <value>More than 12 months</value>
-  </data>
-  <data name="Sec8_Decision1_Tip" xml:space="preserve">
-    <value>Number of decisions related to civil and criminal cases that are rendered in less than 6 months from the hearing date. The cases involving the Youth Criminal Justice Act are not to be tracked separately. They should be counted as any other decision rendered.</value>
-  </data>
-	<data name="Sec8_Decision2_Tip" xml:space="preserve">
-    <value>Number of decisions related to civil and criminal cases that are rendered between 6 to 12 months from the hearing date. The cases involving the Youth Criminal Justice Act are not to be tracked separately. They should be counted as any other decision rendered.</value>
-  </data>
-	<data name="Sec8_Decision3_Tip" xml:space="preserve">
-    <value>Number of decisions related to civil and criminal cases that are rendered in more than 12 months from the hearing date. The cases involving the Youth Criminal Justice Act are not to be tracked separately. They should be counted as any other decision rendered.</value>
   </data>
   <data name="Sec9_Heading" xml:space="preserve">
     <value>Number of appeals that are heard</value>
@@ -853,7 +840,20 @@
   <data name="btnReviewStats" xml:space="preserve">
     <value>Review Statistics</value>
   </data>
-	<data name="ReviewTab12Msg" xml:space="preserve">
+  <data name="AlertRecordAlreadyCompleted" xml:space="preserve">
+    <value>This form has already been submitted for the court and year that you have selected. If any changes are required to the statistics that have already been submitted, please contact the CJC Secretariat at committees-comites@cjc-ccm.ca
+</value>
+  </data>
+  <data name="Sec8_Decision1_Tip" xml:space="preserve">
+    <value>Number of decisions related to civil and criminal cases that are rendered in less than 6 months from the hearing date. The cases involving the Youth Criminal Justice Act are not to be tracked separately. They should be counted as any other decision rendered.</value>
+  </data>
+  <data name="Sec8_Decision2_Tip" xml:space="preserve">
+    <value>Number of decisions related to civil and criminal cases that are rendered between 6 to 12 months from the hearing date. The cases involving the Youth Criminal Justice Act are not to be tracked separately. They should be counted as any other decision rendered.</value>
+  </data>
+  <data name="Sec8_Decision3_Tip" xml:space="preserve">
+    <value>Number of decisions related to civil and criminal cases that are rendered in more than 12 months from the hearing date. The cases involving the Youth Criminal Justice Act are not to be tracked separately. They should be counted as any other decision rendered.</value>
+  </data>
+  <data name="ReviewTab12Msg" xml:space="preserve">
     <value>To review and submit your statistics, please click on the Review Statistics button below</value>
   </data>
 </root>
