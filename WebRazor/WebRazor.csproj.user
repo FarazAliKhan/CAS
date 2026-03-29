@@ -22,6 +22,12 @@
     <EmbeddedResource Update="Resources\Pages\FinalMessageModel.fr.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Pages\ResultModel.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Pages\ResultModel.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Update="Resources\Pages\ReviewModel.en.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
