@@ -151,7 +151,7 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The draft saved successfully..
+        ///   Looks up a localized string similar to Success - The draft was saved successfully - Close.
         /// </summary>
         public static string Alert_DraftSavedSuccess {
             get {
@@ -174,6 +174,15 @@ namespace WebRazor.Resources.Pages {
         public static string Alert_RecordRetrievalFailed {
             get {
                 return ResourceManager.GetString("Alert_RecordRetrievalFailed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select.
+        /// </summary>
+        public static string AlertRecordAlreadyCompleted {
+            get {
+                return ResourceManager.GetString("AlertRecordAlreadyCompleted", resourceCulture);
             }
         }
         
@@ -214,11 +223,38 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Next Tab.
+        /// </summary>
+        public static string btn_NextTab {
+            get {
+                return ResourceManager.GetString("btn_NextTab", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Previous Tab.
         /// </summary>
         public static string Btn_PreviousTab {
             get {
                 return ResourceManager.GetString("Btn_PreviousTab", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Save.
+        /// </summary>
+        public static string btn_Save {
+            get {
+                return ResourceManager.GetString("btn_Save", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Review Stats.
+        /// </summary>
+        public static string btnReviewStats {
+            get {
+                return ResourceManager.GetString("btnReviewStats", resourceCulture);
             }
         }
         
@@ -745,7 +781,7 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to EN-Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took between 6 to 12 months.
+        ///   Looks up a localized string similar to Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took between 6 to 12 months.
         /// </summary>
         public static string Lbl_4_1_2 {
             get {
@@ -754,7 +790,7 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to EN-Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took more than 12 months.
+        ///   Looks up a localized string similar to Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took more than 12 months.
         /// </summary>
         public static string Lbl_4_1_3 {
             get {
@@ -763,7 +799,7 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to EN-Number of criminal appeals where the interval from the notice of appeal to filing of the appellant’s factum took less than 6 months for:.
+        ///   Looks up a localized string similar to Number of criminal appeals where the interval from the notice of appeal to filing of the appellant’s factum took less than 6 months for:.
         /// </summary>
         public static string Lbl_4_1_4 {
             get {
@@ -772,7 +808,7 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to EN-Conviction/acquittal.
+        ///   Looks up a localized string similar to Conviction/acquittal.
         /// </summary>
         public static string Lbl_4_1_4_1 {
             get {
@@ -1096,7 +1132,7 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to EN-Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took between 6 to 12 months.
+        ///   Looks up a localized string similar to Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took between 6 to 12 months.
         /// </summary>
         public static string Msg_4_1_2 {
             get {
@@ -1105,7 +1141,7 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to EN-Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took more than 12 months.
+        ///   Looks up a localized string similar to Number of civil appeals where the interval from the notice of appeal to filing of the appellant’s factum took more than 12 months.
         /// </summary>
         public static string Msg_4_1_3 {
             get {
@@ -1114,7 +1150,7 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to EN-Conviction/acquittal.
+        ///   Looks up a localized string similar to Conviction/acquittal.
         /// </summary>
         public static string Msg_4_1_4_1 {
             get {
@@ -1182,6 +1218,15 @@ namespace WebRazor.Resources.Pages {
         public static string Review1 {
             get {
                 return ResourceManager.GetString("Review1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to To review and submit your statistics, please click on the Review Statistics button below.
+        /// </summary>
+        public static string ReviewTab12Msg {
+            get {
+                return ResourceManager.GetString("ReviewTab12Msg", resourceCulture);
             }
         }
         
@@ -1834,7 +1879,7 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Motions and applications heard at the time of the hearing of an appeal are not to be included..
+        ///   Looks up a localized string similar to Motions and applications heard at the time of the hearing of an appeal are &lt;u&gt;not&lt;/u&gt; to be included..
         /// </summary>
         public static string Sec7_712_Tip {
             get {
@@ -1911,6 +1956,33 @@ namespace WebRazor.Resources.Pages {
         public static string Sec8_Decision_Tip {
             get {
                 return ResourceManager.GetString("Sec8_Decision_Tip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of decisions related to civil and criminal cases that are rendered in less than 6 months from the hearing date. The cases involving the Youth Criminal Justice Act are not to be tracked separately. They should be counted as any other decision rendered..
+        /// </summary>
+        public static string Sec8_Decision1_Tip {
+            get {
+                return ResourceManager.GetString("Sec8_Decision1_Tip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of decisions related to civil and criminal cases that are rendered between 6 to 12 months from the hearing date. The cases involving the Youth Criminal Justice Act are not to be tracked separately. They should be counted as any other decision rendered..
+        /// </summary>
+        public static string Sec8_Decision2_Tip {
+            get {
+                return ResourceManager.GetString("Sec8_Decision2_Tip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of decisions related to civil and criminal cases that are rendered in more than 12 months from the hearing date. The cases involving the Youth Criminal Justice Act are not to be tracked separately. They should be counted as any other decision rendered..
+        /// </summary>
+        public static string Sec8_Decision3_Tip {
+            get {
+                return ResourceManager.GetString("Sec8_Decision3_Tip", resourceCulture);
             }
         }
         

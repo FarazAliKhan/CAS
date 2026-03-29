@@ -1844,6 +1844,33 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Number of decisions related to civil and criminal cases that are rendered in less than 6 months from the hearing date. The cases involving the Youth Criminal Justice Act are not to be tracked separately. They should be counted as any other decision rendered..
+        /// </summary>
+        public static string Sec8_Decision1_Tip {
+            get {
+                return ResourceManager.GetString("Sec8_Decision1_Tip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of decisions related to civil and criminal cases that are rendered between 6 to 12 months from the hearing date. The cases involving the Youth Criminal Justice Act are not to be tracked separately. They should be counted as any other decision rendered..
+        /// </summary>
+        public static string Sec8_Decision2_Tip {
+            get {
+                return ResourceManager.GetString("Sec8_Decision2_Tip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of decisions related to civil and criminal cases that are rendered in more than 12 months from the hearing date. The cases involving the Youth Criminal Justice Act are not to be tracked separately. They should be counted as any other decision rendered..
+        /// </summary>
+        public static string Sec8_Decision3_Tip {
+            get {
+                return ResourceManager.GetString("Sec8_Decision3_Tip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Number of decisions/judgments rendered.
         /// </summary>
         public static string Sec8_Heading {
