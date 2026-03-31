@@ -13,7 +13,7 @@ namespace WebRazor.Pages
         public string EmbedToken { get; set; }
         public string ReportId { get; set; }
 
-        public async Task OnGet()
+public async Task OnGet()
         {
             EmbedUrl = "https://app.powerbi.com/view?r=eyJrIjoiMmRiNDgxZDUtNDc0NS00OTQ3LTliYTktN2Y5MTk4M2UwNGRjIiwidCI6IjY0OTM3ZDA0LWI4MDYtNDhiMy04N2U3LWIzNGQyYzBkYWVjMiJ9";
             EmbedToken = "eyJrIjoiMmRiNDgxZDUtNDc0NS00OTQ3LTliYTktN2Y5MTk4M2UwNGRjIiwidCI6IjY0OTM3ZDA0LWI4MDYtNDhiMy04N2U3LWIzNGQyYzBkYWVjMiJ9";
