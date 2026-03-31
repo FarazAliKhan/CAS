@@ -43,20 +43,38 @@
     </div>
 </nav>
 
-<div class="text-center"><h3>@localizer["CAASHeading"]<br /></h3></div>
-
+<div class="text-center"><h3>@localizer["CAASHeading"]</h3></div>
 <div class="text-center"><h3>@localizer["Report"]</h3></div>
+
 <form method="post">
-    <div>
-        <div style="text-align:center;">
-           @*  <iframe title="CAACS Stats - 1 - Appeals" width="1200" height="747" src=https://app.powerbi.com/view?r=eyJrIjoiMmRiNDgxZDUtNDc0NS00OTQ3LTliYTktN2Y5MTk4M2UwNGRjIiwidCI6IjY0OTM3ZDA0LWI4MDYtNDhiMy04N2U3LWIzNGQyYzBkYWVjMiJ9
-                    frameborder="0" allowFullScreen="allowfullscreen"></iframe> *@
+    <div style="text-align:center;">
 
-            <iframe title="CAACS Stats" width="1140" height="541.25" src=https://app.powerbi.com/reportEmbed?reportId=072023c3-4e04-44ae-abf4-507d225315d2&autoAuth=true&ctid=27a5d574-e6ec-4416-b4df-691e1b546a01&actionBarEnabled=true frameborder="0" allowFullScreen="true"></iframe>
+        <div id="reportContainer" style="width:1140px;height:541px;margin:auto;"></div>
 
-        </div>
-        <span>
-            <a class="btn btn-secondary" asp-page="./Select">@localizer["Back"]</a>
-        </span>
     </div>
+
+    <span>
+        <a class="btn btn-secondary" asp-page="./Select">@localizer["Back"]</a>
+    </span>
 </form>
+
+<script src="https://cdn.jsdelivr.net/npm/powerbi-client/dist/powerbi.min.js"></script>
+
+<script>
+    var embedUrl = '@Model.EmbedUrl';
+    var embedToken = '@Model.EmbedToken';
+    var reportId = '@Model.ReportId';
+
+    var models = window['powerbi-client'].models;
+
+    var config = {
+        type: 'report',
+        tokenType: models.TokenType.Embed,
+        accessToken: embedToken,
+        embedUrl: embedUrl,
+        id: reportId
+    };
+
+    var container = document.getElementById('reportContainer');
+    powerbi.embed(container, config);
+</script>
