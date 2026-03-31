@@ -47,13 +47,34 @@
 
 <div class="text-center"><h3>@localizer["Report2"]</h3></div>
 <form method="post">
-    <div>
-        <div style="text-align:center;">
-            <iframe title="CAACS Stats - 1 - Appeals" width="1300" height="747" src=https://app.powerbi.com/view?r=eyJrIjoiMmRiNDgxZDUtNDc0NS00OTQ3LTliYTktN2Y5MTk4M2UwNGRjIiwidCI6IjY0OTM3ZDA0LWI4MDYtNDhiMy04N2U3LWIzNGQyYzBkYWVjMiJ9
-                    frameborder="0" allowFullScreen="allowfullscreen"></iframe>
-        </div>
-        <span>
-            <a class="btn btn-secondary" asp-page="./Select">@localizer["Back"]</a>
-        </span>
+    <div style="text-align:center;">
+
+        <div id="reportContainer" style="width:1140px;height:541px;margin:auto;"></div>
+
     </div>
+
+    <span>
+        <a class="btn btn-secondary" asp-page="./Select">@localizer["Back"]</a>
+    </span>
 </form>
+
+<script src="https://cdn.jsdelivr.net/npm/powerbi-client/dist/powerbi.min.js"></script>
+
+<script>
+    var embedUrl = '@Model.EmbedUrl';
+    var embedToken = '@Model.EmbedToken';
+    var reportId = '@Model.ReportId';
+
+    var models = window['powerbi-client'].models;
+
+    var config = {
+        type: 'report',
+        tokenType: models.TokenType.Embed,
+        accessToken: embedToken,
+        embedUrl: embedUrl,
+        id: reportId
+    };
+
+    var container = document.getElementById('reportContainer');
+    powerbi.embed(container, config);
+</script>
