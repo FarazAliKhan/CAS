@@ -23,9 +23,9 @@ namespace WebRazor.Pages
             var report1Section = _configuration.GetSection("Report1");
 
             // Get individual values
-            string EmbedUrl = report1Section["EmbedUrl"];
-            string EmbedToken = report1Section["EmbedToken"];
-            string ReportId = report1Section["ReportId"];
+            EmbedUrl = report1Section["EmbedUrl"];
+            EmbedToken = report1Section["EmbedToken"];
+            ReportId = report1Section["ReportId"];
         }
     }
 }
