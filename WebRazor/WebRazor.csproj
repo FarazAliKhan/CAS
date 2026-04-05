@@ -26,6 +26,8 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.Identity.Web" Version="4.3.0" />
     <PackageReference Include="Microsoft.Identity.Web.UI" Version="4.3.0" />
+    <PackageReference Include="Microsoft.PowerBI.Api" Version="5.1.0" />
+    <PackageReference Include="Microsoft.Rest.ClientRuntime" Version="2.3.24" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="SmartBreadcrumbs" Version="3.6.1" />
   </ItemGroup>
