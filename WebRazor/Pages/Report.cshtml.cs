@@ -29,8 +29,8 @@ namespace WebRazor.Pages
                 // 🌍 Select French or English report
                 var isFrench = CultureInfo.CurrentCulture.TwoLetterISOLanguageName == "fr";
                 var reportSection = isFrench
-                    ? _configuration.GetSection("Report2Fr")
-                    : _configuration.GetSection("Report2En");
+                    ? _configuration.GetSection("Report1Fr")
+                    : _configuration.GetSection("Report1En");
 
                 ReportId = reportSection["ReportId"];
                 if (string.IsNullOrEmpty(ReportId))
