@@ -246,10 +246,10 @@ Les appels incidents doivent uniquement être compilés s’ils sont inscrits au
     <value>Tab 9 - Nombre d’appels qui sont entendus</value>
   </data>
   <data name="Sidebar_Tab10" xml:space="preserve">
-    <value>FR-Tab 10 - Total number of appeals, cross-appeals, references, bail reviews and JRs pending on December 31&lt;sup&gt;st&lt;/sup&gt;</value>
+    <value>Tab 10 - Nombre total d’appels, d’appels incidents, de renvois, de révisions de cautionnement et de contrôles judiciaires qui sont en cours au 31 décembre</value>
   </data>
   <data name="Sidebar_Tab11" xml:space="preserve">
-    <value>FR-Tab 11 - Number of judges (as of December 31&lt;sup&gt;st&lt;/sup&gt;)</value>
+    <value>Tab 11 - Nombre total de juges en date du 31 décembre</value>
   </data>
   <data name="Sidebar_Tab12" xml:space="preserve">
     <value>Tab 12 - Commentaires additionnels et Révision des statistiques</value>
@@ -760,7 +760,7 @@ Si l’audience dure plus d’une journée, utilisez le premier jour de l’audi
     <value>Personnes qui se représentent seules</value>
   </data>
   <data name="Sec7_Heading_Tip" xml:space="preserve">
-    <value>Une personne qui se représente seule est une personne qui comparaît en justice sans être représentée par un avocat. Le plaideur n’est pas considéré comme une personne qui se représente seule si la cour a désigné un avocat pour assister cette personne..&lt;br /&gt;&lt;br /&gt;Le nombre d’appels et le nombre de requêtes impliquant une personne qui se représente seule est &lt;u&gt;seulement&lt;/u&gt; compilé lors de l’audience. Par exemple, si une personne est représentée par un avocat au moment du dépôt d’un appel ou d’une requête, mais qu’elle n’est pas représentée à l’audience, l’appel ou la requête est considéré comme une affaire impliquant une personne qui se représente seule.</value>
+    <value>Une personne qui se représente seule est une personne qui comparaît en justice sans être représentée par un avocat. Le plaideur n’est pas considéré comme une personne qui se représente seule si la cour a désigné un avocat pour assister cette personne.&lt;br /&gt;&lt;br /&gt;Le nombre d’appels et le nombre de requêtes impliquant une personne qui se représente seule est &lt;u&gt;seulement&lt;/u&gt; compilé lors de l’audience. Par exemple, si une personne est représentée par un avocat au moment du dépôt d’un appel ou d’une requête, mais qu’elle n’est pas représentée à l’audience, l’appel ou la requête est considéré comme une affaire impliquant une personne qui se représente seule.</value>
   </data>
   <data name="Sec7_711_Label" xml:space="preserve">
     <value>Nombre d’affaires impliquant des personnes qui se représentent seules à l’audience au fond</value>
@@ -789,6 +789,10 @@ Si l’audience dure plus d’une journée, utilisez le premier jour de l’audi
   <data name="Sec8_83_Label" xml:space="preserve">
     <value>Plus de 12 mois</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Sec8_Decision_Tip" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
   <data name="Sec9_Heading" xml:space="preserve">
     <value>Nombre d’appels qui sont entendus</value>
   </data>
@@ -799,7 +803,7 @@ Si l’audience dure plus d’une journée, utilisez le premier jour de l’audi
     <value>Par une formation de 5 juges</value>
   </data>
   <data name="Sec10_Heading" xml:space="preserve">
-    <value>FR-Total number of appeals, cross-appeals, references, bail reviews and JRs pending on December 31st</value>
+    <value>Nombre total d’appels, d’appels incidents, de renvois, de révisions de cautionnement et de contrôles judiciaires qui sont en cours au 31 décembre</value>
   </data>
   <data name="Sec10_Heading_Tooltip" xml:space="preserve">
     <value>L’inventaire de clôture d’une année est également l’inventaire d’ouverture de l’année suivante. Cet inventaire peut être mesuré « en date » du 31 décembre de chaque année. Les appels, appels incidents, renvois, révisions de cautionnement et contrôles judiciaires qui sont introduits avant le 31 décembre, mais pour lesquels un jugement ou une décision n’est pas rendu avant le 31 décembre, sont considérés comme étant en cours à cette date. Cela comprend les appels, appels incidents, renvois, révisions de cautionnement et contrôles judiciaires qui n’ont pas encore été entendus, de même que ceux qui ont été entendus mais pour lesquels un jugement n’a pas encore été prononcé. Ces appels, appels incidents, renvois, révisions de cautionnement et contrôles judiciaires figureront dans l’inventaire de clôture d’une année et dans l’inventaire d’ouverture de l’année suivante. </value>
@@ -851,13 +855,13 @@ Si l’audience dure plus d’une journée, utilisez le premier jour de l’audi
 </value>
   </data>
   <data name="Sec8_Decision1_Tip" xml:space="preserve">
-    <value>Nombre de décisions d’affaires civiles et criminelles qui sont rendues en moins de 6 mois à partir de la date de l’audience. Les affaires impliquant la Loi sur le système de justice pénale pour les adolescents ne doivent pas être compilées séparément. Elles devraient être comptées comme n’importe quelle autre décision rendue.</value>
+    <value>Nombre de décisions d’affaires civiles et criminelles qui sont rendues en moins de 6 mois à partir de la date de l’audience. Les affaires impliquant la &lt;i&gt;Loi sur le système de justice pénale pour les adolescents&lt;/i&gt; ne doivent pas être compilées séparément. Elles devraient être comptées comme n’importe quelle autre décision rendue.</value>
   </data>
   <data name="Sec8_Decision2_Tip" xml:space="preserve">
-    <value>Nombre de décisions relatives à des affaires civiles et criminelles qui sont rendues entre 6 et 12 mois à partir de la date de l’audience. Les affaires impliquant la Loi sur le système de justice pénale pour les adolescents ne doivent pas être compilées séparément. Elles devraient être comptées comme n’importe quelle autre décision rendue.</value>
+    <value>Nombre de décisions relatives à des affaires civiles et criminelles qui sont rendues entre 6 et 12 mois à partir de la date de l’audience. Les affaires impliquant la &lt;i&gt;Loi sur le système de justice pénale pour les adolescents&lt;/i&gt; ne doivent pas être compilées séparément. Elles devraient être comptées comme n’importe quelle autre décision rendue.</value>
   </data>
   <data name="Sec8_Decision3_Tip" xml:space="preserve">
-    <value>Nombre de décisions relatives à des affaires civiles et criminelles qui sont rendues en plus de 12 mois à partir de la date de l’audience. Les affaires impliquant la Loi sur le système de justice pénale pour les adolescents ne doivent pas être compilées séparément. Elles devraient être comptées comme n’importe quelle autre décision rendue.</value>
+    <value>Nombre de décisions relatives à des affaires civiles et criminelles qui sont rendues en plus de 12 mois à partir de la date de l’audience. Les affaires impliquant la &lt;i&gt;Loi sur le système de justice pénale pour les adolescents&lt;/i&gt; ne doivent pas être compilées séparément. Elles devraient être comptées comme n’importe quelle autre décision rendue.</value>
   </data>
   <data name="ReviewTab12Msg" xml:space="preserve">
     <value>Pour revoir et soumettre vos statistiques, veuillez cliquer sur le bouton Révision des statistiques ci-dessous.</value>

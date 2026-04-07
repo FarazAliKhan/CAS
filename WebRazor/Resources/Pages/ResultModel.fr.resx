@@ -301,6 +301,12 @@ Les appels incidents doivent uniquement être compilés s’ils sont inscrits au
   <data name="Sidebar_Tab9" xml:space="preserve">
     <value>Tab 9 - Nombre d’appels qui sont entendus</value>
   </data>
+  <data name="Sidebar_Tab10" xml:space="preserve">
+    <value>Tab 10 - Nombre total d’appels, d’appels incidents, de renvois, de révisions de cautionnement et de contrôles judiciaires qui sont en cours au 31 décembre</value>
+  </data>
+  <data name="Sidebar_Tab11" xml:space="preserve">
+    <value>Tab 11 - Nombre total de juges en date du 31 décembre</value>
+  </data>
   <data name="Sidebar_Tab12" xml:space="preserve">
     <value>Tab 12 - Commentaires additionnels et Révision des statistiques</value>
   </data>
@@ -310,8 +316,14 @@ Les appels incidents doivent uniquement être compilés s’ils sont inscrits au
   <data name="Lbl_NameOfCourt" xml:space="preserve">
     <value>Nom de la cour</value>
   </data>
+  <data name="Msg_NameOfCourt" xml:space="preserve">
+    <value>FR-Please enter Name of Court</value>
+  </data>
   <data name="Lbl_ReportingYear" xml:space="preserve">
     <value>Année de référence</value>
+  </data>
+  <data name="Msg_ReportingYear" xml:space="preserve">
+    <value>FR-Please enter Reporting Year</value>
   </data>
   <data name="Lbl_1_1_1" xml:space="preserve">
     <value>Nombre d’appels, d’appels incidents et de renvois civils et de contrôles judiciaires déposés mais encore en cours au 31 décembre de l’année précédente.</value>
@@ -433,26 +445,20 @@ Les appels incidents doivent uniquement être compilés s’ils sont inscrits au
   <data name="Lbl_From" xml:space="preserve">
     <value>De</value>
   </data>
-	<data name="Lbl_NameOfCourt" xml:space="preserve">
-    <value>Nom de la cour</value>
-  </data>
-	<data name="Lbl_ReportingYear" xml:space="preserve">
-    <value>Année de référence</value>
-  </data>
   <data name="Lbl_To" xml:space="preserve">
     <value>À</value>
-  </data>
-	<data name="Modal_DraftFound_Title" xml:space="preserve">
-    <value>Projet trouvé</value>
-  </data>
-	<data name="Modal_Validation_Title" xml:space="preserve">
-    <value>Veuillez remplir les sections suivantes :</value>
   </data>
   <data name="Tip_FromDate" xml:space="preserve">
     <value>Date de début de la période couverte par la soumission. </value>
   </data>
+  <data name="Msg_FromDate" xml:space="preserve">
+    <value>FR-Please enter From Date</value>
+  </data>
   <data name="Tip_ToDate" xml:space="preserve">
     <value>Date de fin de la période couverte par la soumission</value>
+  </data>
+  <data name="Msg_ToDate" xml:space="preserve">
+    <value>FR-Please enter To Date</value>
   </data>
   <data name="Msg_1_1_1" xml:space="preserve">
     <value>Nombre d’appels, d’appels incidents et de renvois civils et de contrôles judiciaires déposés mais encore en cours au 31 décembre de l’année précédente.</value>
@@ -468,6 +474,9 @@ Les appels incidents doivent uniquement être compilés s’ils sont inscrits au
   </data>
   <data name="Tip_1_1_5" xml:space="preserve">
     <value>Pour être comptée dans cette catégorie, une instance doit avoir été réglée durant la médiation judiciaire, notamment par le règlement, l’abandon ou le désistement de l’appel.</value>
+  </data>
+  <data name="Success" xml:space="preserve">
+    <value>FR-Success</value>
   </data>
   <data name="Msg_1_1_5" xml:space="preserve">
     <value>Nombre d’appels, d’appels incidents et de renvois civils et de contrôles judiciaires réglés à la suite d’une médiation judiciaire</value>
@@ -583,26 +592,8 @@ Les appels incidents doivent uniquement être compilés s’ils sont inscrits au
   <data name="Msg_4_1_4_1" xml:space="preserve">
     <value>Culpabilité/acquittement</value>
   </data>
-	<data name="Msg_FromDate" xml:space="preserve">
-    <value>FR-Please enter From Date</value>
-  </data>
-	<data name="Msg_NameOfCourt" xml:space="preserve">
-    <value>FR-Please enter Name of Court</value>
-  </data>
-	<data name="Msg_ReportingYear" xml:space="preserve">
-    <value>FR-Please enter Reporting Year</value>
-  </data>
-	<data name="Msg_ToDate" xml:space="preserve">
-    <value>FR-Please enter To Date</value>
-  </data>
-	<data name="ReportingYearRequired" xml:space="preserve">
-    <value>Reporting Year is required</value>
-  </data>
-	<data name="Result" xml:space="preserve">
+  <data name="Result" xml:space="preserve">
     <value>Résulter</value>
-  </data>
-	<data name="Review" xml:space="preserve">
-    <value>Examen</value>
   </data>
   <data name="Review1" xml:space="preserve">
     <value>Examen</value>
@@ -662,7 +653,7 @@ Pour chaque intervalle de temps, de l’information sera compilée pour trois p�
     <value>Affaires civiles</value>
   </data>
   <data name="Sec4_CriminalCases" xml:space="preserve">
-    <value>Affaires criminelles</value>
+    <value>FR-Criminal cases</value>
   </data>
   <data name="Sec4_CriminalCases_Tip" xml:space="preserve">
     <value>Pour les affaires criminelles, les intervalles de temps et les périodes devraient être  indiqués pour chacune des trois catégories d’appels en matière criminelle suivantes :  1) culpabilité/acquittement, 2) peine, et 3) autre. </value>
@@ -703,24 +694,8 @@ Pour chaque intervalle de temps, de l’information sera compilée pour trois p�
   <data name="Sec4_436_Label" xml:space="preserve">
     <value>Nombre d’affaires criminelles où l’intervalle de temps entre l’audience et 	la décision finale est de plus de 12 mois pour :  </value>
   </data>
-	<data name="Sec4_CivilCases" xml:space="preserve">
-    <value>Affaires civiles</value>
-  </data>
   <data name="Sec4_Comments_Label" xml:space="preserve">
     <value>Commentaires</value>
-  </data>
-	<data name="Sec4_CriminalCases" xml:space="preserve">
-    <value>FR-Criminal cases</value>
-  </data>
-	<data name="Sec4_CriminalCases_Tip" xml:space="preserve">
-    <value>Pour les affaires criminelles, les intervalles de temps et les périodes devraient être  indiqués pour chacune des trois catégories d’appels en matière criminelle suivantes :  1) culpabilité/acquittement, 2) peine, et 3) autre. </value>
-  </data>
-	<data name="Sec4_Heading" xml:space="preserve">
-    <value>Intervalles de temps pour les affaires civiles et criminelles</value>
-  </data>
-	<data name="Sec4_Heading_Tip" xml:space="preserve">
-    <value>Les statistiques des affaires civiles et criminelles doivent être compilées pour trois intervalles de temps : 1) entre l’avis d’appel et le dépôt du mémoire (ou le document qui en tient lieu) par l’appelant, 2) entre le dépôt du mémoire par l’appelant et l’audience, et 3) entre l’audience et la décision finale.&lt;br/&gt;&lt;br/&gt;
-Pour chaque intervalle de temps, de l’information sera compilée pour trois périodes : 1) moins de 6 mois, 2) entre 6 et 12 mois, et 3) plus de 12 mois.</value>
   </data>
   <data name="Sec5_Heading" xml:space="preserve">
     <value>Nombre d’audiences en personne, virtuelles et hybrides</value>
@@ -806,14 +781,11 @@ Pour chaque intervalle de temps, de l’information sera compilée pour trois p�
     <value>Exemples de motifs administratifs : rejet pour défaut de poursuite, pour cause de non-respect des règles, parce que la demande d’autorisation a été rejetée, etc. 
 </value>
   </data>
-	<data name="Sec6_Heading" xml:space="preserve">
-    <value>Nombre de requêtes et demandes</value>
-  </data>
   <data name="Sec7_Heading" xml:space="preserve">
     <value>Personnes qui se représentent seules</value>
   </data>
   <data name="Sec7_Heading_Tip" xml:space="preserve">
-    <value>Une personne qui se représente seule est une personne qui comparaît en justice sans être représentée par un avocat. Le plaideur n’est pas considéré comme une personne qui se représente seule si la cour a désigné un avocat pour assister cette personne..&lt;br /&gt;&lt;br /&gt;Le nombre d’appels et le nombre de requêtes impliquant une personne qui se représente seule est &lt;u&gt;seulement&lt;/u&gt; compilé lors de l’audience. Par exemple, si une personne est représentée par un avocat au moment du dépôt d’un appel ou d’une requête, mais qu’elle n’est pas représentée à l’audience, l’appel ou la requête est considéré comme une affaire impliquant une personne qui se représente seule.</value>
+    <value>Une personne qui se représente seule est une personne qui comparaît en justice sans être représentée par un avocat. Le plaideur n’est pas considéré comme une personne qui se représente seule si la cour a désigné un avocat pour assister cette personne.&lt;br /&gt;&lt;br /&gt;Le nombre d’appels et le nombre de requêtes impliquant une personne qui se représente seule est &lt;u&gt;seulement&lt;/u&gt; compilé lors de l’audience. Par exemple, si une personne est représentée par un avocat au moment du dépôt d’un appel ou d’une requête, mais qu’elle n’est pas représentée à l’audience, l’appel ou la requête est considéré comme une affaire impliquant une personne qui se représente seule.</value>
   </data>
   <data name="Sec7_711_Label" xml:space="preserve">
     <value>Nombre d’affaires impliquant des personnes qui se représentent seules à l’audience au fond</value>
@@ -842,7 +814,7 @@ Pour chaque intervalle de temps, de l’information sera compilée pour trois p�
   <data name="Sec8_83_Label" xml:space="preserve">
     <value>Plus de 12 mois</value>
   </data>
-	<data name="Sec8_Decision_Tip" xml:space="preserve">
+  <data name="Sec8_Decision_Tip" xml:space="preserve">
     <value>FR-Number of decisions related to civil and criminal cases that are rendered based on the selected time period from the hearing date. The cases involving the &lt;i&gt;Youth Criminal Justice Act&lt;/i&gt; are not to be tracked separately. They should be counted as any other decision rendered.</value>
   </data>
   <data name="Sec9_Heading" xml:space="preserve">
@@ -853,6 +825,9 @@ Pour chaque intervalle de temps, de l’information sera compilée pour trois p�
   </data>
   <data name="Sec9_92_Label" xml:space="preserve">
     <value>Par une formation de 5 juges</value>
+  </data>
+  <data name="Sec10_Heading" xml:space="preserve">
+    <value>Nombre total d’appels, d’appels incidents, de renvois, de révisions de cautionnement et de contrôles judiciaires qui sont en cours au 31 décembre</value>
   </data>
   <data name="Sec10_Heading_Tooltip" xml:space="preserve">
     <value>L’inventaire de clôture d’une année est également l’inventaire d’ouverture de l’année suivante. Cet inventaire peut être mesuré « en date » du 31 décembre de chaque année. Les appels, appels incidents, renvois, révisions de cautionnement et contrôles judiciaires qui sont introduits avant le 31 décembre, mais pour lesquels un jugement ou une décision n’est pas rendu avant le 31 décembre, sont considérés comme étant en cours à cette date. Cela comprend les appels, appels incidents, renvois, révisions de cautionnement et contrôles judiciaires qui n’ont pas encore été entendus, de même que ceux qui ont été entendus mais pour lesquels un jugement n’a pas encore été prononcé. Ces appels, appels incidents, renvois, révisions de cautionnement et contrôles judiciaires figureront dans l’inventaire de clôture d’une année et dans l’inventaire d’ouverture de l’année suivante. </value>
@@ -906,132 +881,17 @@ Pour chaque intervalle de temps, de l’information sera compilée pour trois p�
   <data name="Select1" xml:space="preserve">
     <value>Sélectionner</value>
   </data>
-	<data name="Select" xml:space="preserve">
-    <value>Sélectionner</value>
-  </data>
-	<data name="Select1" xml:space="preserve">
-    <value>Sélectionner</value>
-  </data>
-	<data name="Sidebar_BasicInfo" xml:space="preserve">
-    <value>Nom du tribunal et année de référence</value>
-  </data>
-	<data name="Sidebar_Tab1" xml:space="preserve">
-    <value>Tab 1 - Nombre d’appels, d’appels incidents, de renvois, de révisions de cautionnement et de contrôles judiciaires </value>
-  </data>
-	<data name="Sidebar_Tab2" xml:space="preserve">
-    <value>Tab 2 - Affaires civiles et criminelles décidées</value>
-  </data>
-	<data name="Sidebar_Tab3" xml:space="preserve">
-    <value>Tab 3 - Nombre de décisions/jugements (total) </value>
-  </data>
-	<data name="Sidebar_Tab4" xml:space="preserve">
-    <value>Tab 4 - Intervalles de temps pour les affaires civiles et criminelles</value>
-  </data>
-	<data name="Sidebar_Tab5" xml:space="preserve">
-    <value>Tab 5 - Nombre d’audiences en personne, virtuelles et hybrides</value>
-  </data>
-	<data name="Sidebar_Tab6" xml:space="preserve">
-    <value>Tab 6 - Nombre de requêtes et demandes</value>
-  </data>
-	<data name="Sidebar_Tab7" xml:space="preserve">
-    <value>Tab 7 - Personnes qui se représentent seules</value>
-  </data>
-	<data name="Sidebar_Tab8" xml:space="preserve">
-    <value>Tab 8 - Nombre de décisions/jugements rendus</value>
-  </data>
-	<data name="Sidebar_Tab9" xml:space="preserve">
-    <value>Tab 9 - Nombre d’appels qui sont entendus</value>
-  </data>
-	<data name="Sidebar_Tab10" xml:space="preserve">
-    <value>FR-Tab 10 - Total number of appeals, cross-appeals, references, bail reviews and JRs pending on December 31st</value>
-  </data>
-	<data name="Sidebar_Tab11" xml:space="preserve">
-    <value>FR-Tab 11 - Number of judges (as of December 31st)</value>
-  </data>
-	<data name="Sidebar_Tab12" xml:space="preserve">
-    <value>Tab 12 - Commentaires additionnels et Révision des statistiques</value>
-  </data>
   <data name="Submit" xml:space="preserve">
     <value>Soumettre</value>
   </data>
-	<data name="Success" xml:space="preserve">
-    <value>FR-Success</value>
-  </data>
-	<data name="Tip_1_1_5" xml:space="preserve">
-    <value>Pour être comptée dans cette catégorie, une instance doit avoir été réglée durant la médiation judiciaire, notamment par le règlement, l’abandon ou le désistement de l’appel.</value>
-  </data>
-	<data name="Tip_1_1_6" xml:space="preserve">
-    <value>Ces appels, appels incidents et renvois civils et contrôles judiciaires doivent inclure ceux qui ont été abandonnés, retirés, rejetés par défaut de poursuites, non-respect des règles, les mesures prises par un juge seul, etc. Les appels, appels incidents et renvois civils et les contrôles judiciaires abandonnés ou retirés par le greffier incluent les constats de caducité délivrés par le greffier.</value>
-  </data>
-	<data name="Tip_1_1_7" xml:space="preserve">
-    <value>Appels, appels incidents et renvois civils et 	contrôles judiciaires déposés mais encore en cours au 31 décembre de l’année précédente (1.1.1) plus les nouveaux appels, appels incidents et renvois civils et de contrôles judiciaires déposés (1.1.2) moins le total des appels, appels incidents et renvois civils et de contrôles judiciaires ayant fait l’objet d’un jugement ou d’une décision mettant fin au dossier, fermés 	par le greffier, réglés à la suite d’une médiation, abandonnés ou retirés (1.1.3 à 1.1.6) = appels, appels incidents et renvois civils et de contrôles judiciaires nets pour l’année.</value>
-  </data>
-	<data name="Tip_1_2_2" xml:space="preserve">
-    <value>Les appels, appels incidents et renvois criminels et les révisions de cautionnement déposés et impliquant la &lt;i&gt;Loi sur le système de justice pénale pour les adolescents&lt;/i&gt; ne doivent pas être analysés séparément. Ils devraient être comptés comme n’importe quel autre appel, appel incident ou renvoi criminel ou révision de cautionnement déposé.</value>
-  </data>
-	<data name="Tip_1_2_3" xml:space="preserve">
-    <value>Les appels, appels incidents et renvois 	criminels et les révisions de cautionnement réglés par jugement impliquant la Loi sur le système de justice pénale pour les adolescents ne doivent pas être analysés séparément. Ils devraient être comptés comme 	n’importe quel autre appel, appel incident ou renvoi criminel ou révision de cautionnement instruit.</value>
-  </data>
-	<data name="Tip_1_2_4" xml:space="preserve">
-    <value>Ces appels, appels incidents et renvois et révisions de cautionnement doivent inclure ceux qui ont été réglés par facilitation pénale, abandonnés, retirés, rejetés par défaut de poursuite, non-respect des règles, mesures prises par un juge seul, etc.</value>
-  </data>
-	<data name="Tip_1_2_5" xml:space="preserve">
-    <value>Appels, appels incidents et renvois criminels et révisions decautionnement déposés mais encore en cours au 31 décembre de l’année précédente (1.2.1) plus les nouveaux appels, appels incidents et renvois criminels et révisions de cautionnement déposés (1.2.2) moins le total des appels, appels incidents et renvois criminels et des révisions de cautionnement ayant fait l’objet d’un jugement ou d’une décision mettant fin au dossier, réglés par facilitation pénale, abandonnés ou retirés (1.2.3 to 1.2.4) = appels, appels incidents et renvois criminels et révisions de cautionnement nets pour l’année.</value>
-  </data>
-	<data name="Tip_1_2_Checkbox" xml:space="preserve">
-    <value>Les cours qui entendent les appels concernant la décision sur la culpabilité et concernant la décision sur la peine en même temps doivent cocher cette case.</value>
-  </data>
-	<data name="Tip_2_1_1" xml:space="preserve">
-    <value>Une décision rendue à l’audience (aussi appelée décision rendue sur le banc) est une décision rendue immédiatement après l’audience, le même jour que l’audience ou pendant la même semaine que l’audience. Si une 	décision est rendue à l’audience, mais que les motifs sont prononcés plus tard, c’est-à-dire qu’ils ne sont pas donnés immédiatement après l’audience, le même jour que l’audience ou pendant la même semaine 	que l’audience, la décision devrait être comptée comme un jugement mis en délibéré.</value>
-  </data>
-	<data name="Tip_2_1_2" xml:space="preserve">
-    <value>Une décision déposée après délibéré est une décision rendue à une date ultérieure, c.-à-d. qui n’est pas rendue immédiatement après l’audience, le même jour que l’audience ou pendant la même semaine que l’audience.</value>
-  </data>
-	<data name="Tip_2_2_1" xml:space="preserve">
-    <value>Une décision rendue à l’audience (aussi appelée décision rendue sur le banc) est une décision rendue immédiatement après l’audience, le même jour que l’audience ou pendant la même semaine que l’audience. Si une 	décision est rendue à l’audience, mais que les motifs sont prononcés plus tard, c’est-à-dire qu’ils ne sont pas donnés immédiatement après l’audience, le même jour que l’audience ou pendant la même semaine 	que l’audience, la décision devrait être comptée comme un jugement mis en délibéré.&lt;br/&gt;&lt;br/&gt;Les décisions impliquant la &lt;i&gt;Loi sur le système de justice pénale pour les adolescents&lt;/i&gt; ne doivent pas être compilées séparément. Elles devraient être comptées comme n’importe quelle autre décision d’appel en matière criminelle.</value>
-  </data>
-	<data name="Tip_2_2_1_3" xml:space="preserve">
-    <value>Exemples d’autres appels criminels : habeas corpus, prohibition, certiorari, examens de troubles mentaux, etc.</value>
-  </data>
-	<data name="Tip_2_2_2" xml:space="preserve">
-    <value>Une décision déposée après délibéré est une décision rendue à une date ultérieure, c.-à-d. qui n’est pas rendue immédiatement après l’audience, le même jour que l’audience ou pendant la même semaine que l’audience. Si 	une décision est rendue à l’audience, mais que les motifs sont prononcés plus tard, c’est-à-dire qu’ils ne sont pas donnés immédiatement après l’audience, le même jour que l’audience ou pendant la même semaine que l’audience, la décision devrait être comptée comme un jugement mis en 	délibéré.</value>
-  </data>
-	<data name="Tip_2_2_2_3" xml:space="preserve">
-    <value>Exemples d’autres appels criminels : habeas corpus, prohibition, certiorari, examens de troubles mentaux, etc.</value>
-  </data>
-	<data name="Tip_3_1" xml:space="preserve">
-    <value>Les décisions/jugements rendus sur le banc sont aussi appelée décisions rendues à l’audience. Une décision rendue sur le banc ou une décision rendue à l’audience est rendue immédiatement après l’audience, le même jour que l’audience ou pendant la même semaine que l’audience. Les décisions impliquant la &lt;i&gt;Loi sur le système de justice pénale pour les adolescents&lt;/i&gt; ne doivent pas être compilées séparément. Elles devraient être comptées comme n’importe quelle autre décision ou jugement.</value>
-  </data>
-	<data name="Tip_3_2" xml:space="preserve">
-    <value>Une décision mise en délibéré est une décision rendue à une date ultérieure, c.-à-d. qui n’est pas rendue immédiatement après l’audience, le même jour que l’audience ou pendant la même semaine que l’audience. Les décisions impliquant la &lt;i&gt;Loi sur le système de justice pénale pour les adolescents&lt;/i&gt; ne doivent pas être compilées séparément. Elles devraient être comptées comme n’importe quelle autre décision d’appel en matière criminelle.</value>
-  </data>
-	<data name="Tip_4_1_CriminalCases" xml:space="preserve">
-    <value>Cet intervalle désigne l’intervalle entre le moment où un avis d’appel est déposé (que ce soit de plein droit ou après qu’une demande d’autorisation d’appel a été accordée) et le moment où le mémoire de l’appelant est déposé et que l’appel est prêt à être mis au rôle pour audition. L’appel est considéré comme prêt à être mis au rôle pour audition à la date où l’appelant a fait tout ce qui est exigé par les règles de la cour pour préparer l’audition de l’appel (généralement la signification et le dépôt du dossier d’appel, des transcriptions et du mémoire de l’appelant). Pour ce qui est des renvois, la date de réception du décret ou de l’acte introductif d’instance remplace la date de l’avis d’appel.</value>
-  </data>
-	<data name="Tip_4_Heading" xml:space="preserve">
-    <value>Les statistiques des affaires civiles et criminelles doivent être compilées pour trois intervalles de temps : 1) entre l’avis d’appel et le dépôt du mémoire (ou le document qui en tient lieu) par l’appelant, 2) entre le dépôt du mémoire par l’appelant et l’audience, et 3) entre l’audience et la décision finale.&lt;br/&gt;&lt;br/&gt;
-Pour chaque intervalle de temps, de l’information sera compilée pour trois périodes : 1) moins de 6 mois, 2) entre 6 et 12 mois, et 3) plus de 12 mois.</value>
-  </data>
-	<data name="Tip_FromDate" xml:space="preserve">
-    <value>Date de début de la période couverte par la soumission. </value>
-  </data>
-	<data name="Tip_ToDate" xml:space="preserve">
-    <value>Date de fin de la période couverte par la soumission</value>
-  </data>
-	<data name="ToDateRequired" xml:space="preserve">
-    <value>To Date is required</value>
-  </data>
-	<data name="Validation_FormIncomplete" xml:space="preserve">
-    <value>Formulaire incomplet : Tous les champs sont obligatoires. Veuillez entrer 0 pour indiquer qu’aucune donnée n’est soumise. </value>
-  </data>
   <data name="Sec8_Decision1_Tip" xml:space="preserve">
-    <value>Nombre de décisions d’affaires civiles et criminelles qui sont rendues en moins de 6 mois à partir de la date de l’audience. Les affaires impliquant la Loi sur le système de justice pénale pour les adolescents ne doivent pas être compilées séparément. Elles devraient être comptées comme n’importe quelle autre décision rendue.</value>
+    <value>Nombre de décisions d’affaires civiles et criminelles qui sont rendues en moins de 6 mois à partir de la date de l’audience. Les affaires impliquant la &lt;i&gt;Loi sur le système de justice pénale pour les adolescents&lt;/i&gt; ne doivent pas être compilées séparément. Elles devraient être comptées comme n’importe quelle autre décision rendue.</value>
   </data>
   <data name="Sec8_Decision2_Tip" xml:space="preserve">
-    <value>Nombre de décisions relatives à des affaires civiles et criminelles qui sont rendues entre 6 et 12 mois à partir de la date de l’audience. Les affaires impliquant la Loi sur le système de justice pénale pour les adolescents ne doivent pas être compilées séparément. Elles devraient être comptées comme n’importe quelle autre décision rendue.</value>
+    <value>Nombre de décisions relatives à des affaires civiles et criminelles qui sont rendues entre 6 et 12 mois à partir de la date de l’audience. Les affaires impliquant la &lt;i&gt;Loi sur le système de justice pénale pour les adolescents&lt;/i&gt; ne doivent pas être compilées séparément. Elles devraient être comptées comme n’importe quelle autre décision rendue.</value>
   </data>
   <data name="Sec8_Decision3_Tip" xml:space="preserve">
-    <value>Nombre de décisions relatives à des affaires civiles et criminelles qui sont rendues en plus de 12 mois à partir de la date de l’audience. Les affaires impliquant la Loi sur le système de justice pénale pour les adolescents ne doivent pas être compilées séparément. Elles devraient être comptées comme n’importe quelle autre décision rendue.</value>
+    <value>Nombre de décisions relatives à des affaires civiles et criminelles qui sont rendues en plus de 12 mois à partir de la date de l’audience. Les affaires impliquant la &lt;i&gt;Loi sur le système de justice pénale pour les adolescents&lt;/i&gt; ne doivent pas être compilées séparément. Elles devraient être comptées comme n’importe quelle autre décision rendue.</value>
   </data>
   <data name="ReviewTab12Msg" xml:space="preserve">
     <value>Pour revoir et soumettre vos statistiques, veuillez cliquer sur le bouton Révision des statistiques ci-dessous.</value>
