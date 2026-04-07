@@ -40,8 +40,9 @@ namespace WebRazor.Pages
                 if (string.IsNullOrEmpty(groupIdString))
                     throw new Exception("PowerBI:GroupId is missing in configuration.");
 
-                var groupId = Guid.Parse(groupIdString);
+                //var groupId = Guid.Parse(groupIdString);
                 var reportGuid = Guid.Parse(ReportId);
+                var groupId = Guid.Parse(_configuration["PowerBI:GroupId"]);
 
                 // 🔑 Get Azure AD token via MSAL
                 var accessToken = await GetAccessToken();
@@ -52,26 +53,26 @@ namespace WebRazor.Pages
                 );
 
                 // 📊 Get report info
-                //var report = await client.Reports.GetReportInGroupAsync(groupId, reportGuid);
-                //if (report == null)
-                //    throw new Exception($"Report {ReportId} not found in workspace {groupId}.");
+                var report = await client.Reports.GetReportInGroupAsync(groupId, reportGuid);
+                if (report == null)
+                    throw new Exception($"Report {ReportId} not found in workspace {groupId}.");
 
-                //EmbedUrl = report.Value.EmbedUrl;
-                EmbedUrl = reportSection["EmbedUrl"];
+                EmbedUrl = report.Value.EmbedUrl;
+                //EmbedUrl = reportSection["EmbedUrl"];
 
                 // 🎟 Generate embed token
-                //var tokenRequest = new GenerateTokenRequest
-                //{
-                //    AccessLevel = TokenAccessLevel.View
-                //};
+                var tokenRequest = new GenerateTokenRequest
+                {
+                    AccessLevel = TokenAccessLevel.View
+                };
 
-                //var embedTokenResponse = await client.Reports.GenerateTokenInGroupAsync(groupId, reportGuid, tokenRequest);
+                var embedTokenResponse = await client.Reports.GenerateTokenInGroupAsync(groupId, reportGuid, tokenRequest);
 
-                //if (embedTokenResponse == null || string.IsNullOrEmpty(embedTokenResponse.Value.Token))
-                //    throw new Exception("Failed to generate embed token.");
+                if (embedTokenResponse == null || string.IsNullOrEmpty(embedTokenResponse.Value.Token))
+                    throw new Exception("Failed to generate embed token.");
 
-                //EmbedToken = embedTokenResponse.Value.Token;
-                EmbedToken = accessToken;
+                EmbedToken = embedTokenResponse.Value.Token;
+                //EmbedToken = accessToken;
             }
             catch (Exception ex)
             {
