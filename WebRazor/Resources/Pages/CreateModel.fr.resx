@@ -333,7 +333,7 @@ Les appels incidents doivent uniquement être compilés s’ils sont inscrits au
     <value>Pour être comptée dans cette catégorie, une instance doit avoir été réglée durant la médiation judiciaire, notamment par le règlement, l’abandon ou le désistement de l’appel.</value>
   </data>
   <data name="Success" xml:space="preserve">
-    <value>FR-Success</value>
+    <value>Réussite</value>
   </data>
   <data name="Msg_1_1_5" xml:space="preserve">
     <value>Nombre d’appels, d’appels incidents et de renvois civils et de contrôles judiciaires réglés à la suite d’une médiation judiciaire</value>
@@ -871,5 +871,8 @@ Si l’audience dure plus d’une journée, utilisez le premier jour de l’audi
   </data>
   <data name="No" xml:space="preserve">
     <value>Non</value>
+  </data>
+  <data name="Failed" xml:space="preserve">
+    <value>Échoué</value>
   </data>
 </root>

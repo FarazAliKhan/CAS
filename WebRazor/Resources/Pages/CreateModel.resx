@@ -859,4 +859,7 @@
   <data name="No" xml:space="preserve">
     <value>No</value>
   </data>
+  <data name="Failed" xml:space="preserve">
+    <value>Failed</value>
+  </data>
 </root>
