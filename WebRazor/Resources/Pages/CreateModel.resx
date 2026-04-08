@@ -853,4 +853,10 @@
   <data name="Sec8_Decision3_Tip" xml:space="preserve">
     <value>Number of decisions related to civil and criminal cases that are rendered in more than 12 months from the hearing date. The cases involving the &lt;i&gt;Youth Criminal Justice Act&lt;/i&gt; are not to be tracked separately. They should be counted as any other decision rendered.</value>
   </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
+  </data>
 </root>

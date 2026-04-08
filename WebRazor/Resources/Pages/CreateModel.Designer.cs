@@ -1097,6 +1097,15 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to No.
+        /// </summary>
+        public static string No {
+            get {
+                return ResourceManager.GetString("No", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Reporting Year is required.
         /// </summary>
         public static string ReportingYearRequired {
@@ -2263,6 +2272,15 @@ namespace WebRazor.Resources.Pages {
         public static string Validation_FormIncomplete {
             get {
                 return ResourceManager.GetString("Validation_FormIncomplete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Yes.
+        /// </summary>
+        public static string Yes {
+            get {
+                return ResourceManager.GetString("Yes", resourceCulture);
             }
         }
     }

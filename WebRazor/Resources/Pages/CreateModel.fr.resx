@@ -866,4 +866,10 @@ Si l’audience dure plus d’une journée, utilisez le premier jour de l’audi
   <data name="ReviewTab12Msg" xml:space="preserve">
     <value>Pour revoir et soumettre vos statistiques, veuillez cliquer sur le bouton Révision des statistiques ci-dessous.</value>
   </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Oui</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>Non</value>
+  </data>
 </root>

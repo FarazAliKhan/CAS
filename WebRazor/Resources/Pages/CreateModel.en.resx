@@ -856,4 +856,10 @@
   <data name="ReviewTab12Msg" xml:space="preserve">
     <value>To review and submit your statistics, please click on the Review Statistics button below</value>
   </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
+  </data>
 </root>
