@@ -316,8 +316,14 @@ Les appels incidents doivent uniquement être compilés s’ils sont inscrits au
   <data name="Lbl_NameOfCourt" xml:space="preserve">
     <value>Nom de la cour</value>
   </data>
+  <data name="Tip_Court" xml:space="preserve">
+    <value>Le tribunal auquel s'applique la requête.</value>
+  </data>
   <data name="Lbl_ReportingYear" xml:space="preserve">
     <value>Année de référence</value>
+  </data>
+  <data name="Tip_ReportingYear" xml:space="preserve">
+    <value>L'année de référence pour les données.</value>
   </data>
   <data name="Lbl_1_1_1" xml:space="preserve">
     <value>Nombre d’appels, d’appels incidents et de renvois civils et de contrôles judiciaires déposés mais encore en cours au 31 décembre de l’année précédente.</value>

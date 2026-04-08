@@ -270,7 +270,7 @@ Les appels incidents doivent uniquement être compilés s’ils sont inscrits au
     <value>Nom de la cour</value>
   </data>
   <data name="Tip_Court" xml:space="preserve">
-    <value>FR-The court for which the submission applies.</value>
+    <value>Le tribunal auquel s'applique la requête.</value>
   </data>
   <data name="Msg_NameOfCourt" xml:space="preserve">
     <value>FR-Please enter Name of Court</value>
@@ -279,7 +279,7 @@ Les appels incidents doivent uniquement être compilés s’ils sont inscrits au
     <value>Année de référence</value>
   </data>
   <data name="Tip_ReportingYear" xml:space="preserve">
-    <value>FR-The reporting year for the data.</value>
+    <value>L'année de référence pour les données.</value>
   </data>
   <data name="Msg_ReportingYear" xml:space="preserve">
     <value>FR-Please enter Reporting Year</value>
