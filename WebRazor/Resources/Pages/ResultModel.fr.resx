@@ -512,7 +512,7 @@ Les appels incidents doivent uniquement être compilés s’ils sont inscrits au
     <value>Nombre d’appels, d’appels incidents et de renvois criminels et de révisions de cautionnement déposés</value>
   </data>
   <data name="Tip_1_2_3" xml:space="preserve">
-    <value>Les appels, appels incidents et renvois 	criminels et les révisions de cautionnement réglés par jugement impliquant la Loi sur le système de justice pénale pour les adolescents ne doivent pas être analysés séparément. Ils devraient être comptés comme 	n’importe quel autre appel, appel incident ou renvoi criminel ou révision de cautionnement instruit.</value>
+    <value>Les appels, appels incidents et renvois 	criminels et les révisions de cautionnement réglés par jugement impliquant la &lt;i&gt;Loi sur le système de justice pénale pour les adolescents&lt;/i&gt; ne doivent pas être analysés séparément. Ils devraient être comptés comme n’importe quel autre appel, appel incident ou renvoi criminel ou révision de cautionnement instruit.</value>
   </data>
   <data name="Msg_1_2_3" xml:space="preserve">
     <value>Nombre d’appels, d’appels incidents et de renvois criminels et de révisions de cautionnement ayant fait l’objet d’un jugement ou d’une décision mettant fin au dossier </value>

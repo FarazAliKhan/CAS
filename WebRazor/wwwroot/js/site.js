@@ -3225,7 +3225,7 @@ function hideAlreadyExists() {
 
 window.addEventListener("load", function () {
     console.log("Page is fully loaded");
-
+    $('#sidebarMessage').delay(3000).fadeOut(400);
     $(".breadcrumb").children().first().remove();
     const params = new URLSearchParams(window.location.search);
     const recSaved = params.get("submitForSave");
@@ -3285,4 +3285,5 @@ window.addEventListener("load", function () {
         console.log(dtTo.min);
         console.log(dtTo.max);
     }
+    
 });

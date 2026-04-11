@@ -2078,7 +2078,7 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Previous year civil appeals, cross-appeals, references and JRs filed but still pending as of December 31st of the previous year (1.1.1) plus new civil appeals, cross-appeals, references, and JRs filed (1.1.2) minus total number of civil appeals, cross-appeals, references, and JRs disposed of, settled by mediation, abandoned or withdrawn (1.1.3 to 1.1.6) = net civil appeals, cross-appeals, references, and JRs for the year..
+        ///   Looks up a localized string similar to Previous year civil appeals, cross-appeals, references and JRs filed but still pending as of December 31&lt;sup&gt;st&lt;/sup&gt; of the previous year (1.1.1) plus new civil appeals, cross-appeals, references, and JRs filed (1.1.2) minus total number of civil appeals, cross-appeals, references, and JRs disposed of, settled by mediation, abandoned or withdrawn (1.1.3 to 1.1.6) = net civil appeals, cross-appeals, references, and JRs for the year..
         /// </summary>
         public static string Tip_1_1_7 {
             get {
@@ -2087,7 +2087,7 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The criminal appeals, cross-appeals, references and bail reviews filed involving the Youth Criminal Justice Act are not to be separately tracked as such. They should be counted as any other criminal appeals, cross-appeals, references and bail reviews filed..
+        ///   Looks up a localized string similar to The criminal appeals, cross-appeals, references and bail reviews filed involving the &lt;i&gt;Youth Criminal Justice Act&lt;/i&gt; are not to be separately tracked as such. They should be counted as any other criminal appeals, cross-appeals, references and bail reviews filed..
         /// </summary>
         public static string Tip_1_2_2 {
             get {
@@ -2096,7 +2096,7 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The criminal appeals, cross-appeals, references and bail reviews disposed of by judgment involving the Youth &lt;i&gt;Criminal Justice Act&lt;/i&gt; are not to be tracked separately. They should be counted as any other criminal appeals, cross appeals, references and bail reviews disposed of..
+        ///   Looks up a localized string similar to The criminal appeals, cross-appeals, references and bail reviews disposed of by judgment involving the &lt;i&gt;Youth Criminal Justice Act&lt;/i&gt; are not to be tracked separately. They should be counted as any other criminal appeals, cross appeals, references and bail reviews disposed of..
         /// </summary>
         public static string Tip_1_2_3 {
             get {
