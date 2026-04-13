@@ -430,6 +430,33 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Court of Appeal Annual Statistics (CAAS).
+        /// </summary>
+        public static string Heading_Review {
+            get {
+                return ResourceManager.GetString("Heading_Review", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Before submitting your statistics, please review the data you have entered. If you wish to make any changes, click on the icon at the top of every section:.
+        /// </summary>
+        public static string Heading_Review_Text1 {
+            get {
+                return ResourceManager.GetString("Heading_Review_Text1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to To submit your statistics, please click on the Submit button at the bottom of the page..
+        /// </summary>
+        public static string Heading_Review_Text2 {
+            get {
+                return ResourceManager.GetString("Heading_Review_Text2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Home.
         /// </summary>
         public static string Home {
@@ -2194,7 +2221,7 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Previous year civil appeals, cross-appeals, references and JRs filed but still pending as of December 31st of the previous year (1.1.1) plus new civil appeals, cross-appeals, references, and JRs filed (1.1.2) minus total number of civil appeals, cross-appeals, references, and JRs disposed of, settled by mediation, abandoned or withdrawn (1.1.3 to 1.1.6) = net civil appeals, cross-appeals, references, and JRs for the year..
+        ///   Looks up a localized string similar to Previous year civil appeals, cross-appeals, references and JRs filed but still pending as of December 31&lt;sup&gt;st&lt;/sup&gt; of the previous year (1.1.1) plus new civil appeals, cross-appeals, references, and JRs filed (1.1.2) minus total number of civil appeals, cross-appeals, references, and JRs disposed of, settled by mediation, abandoned or withdrawn (1.1.3 to 1.1.6) = net civil appeals, cross-appeals, references, and JRs for the year..
         /// </summary>
         public static string Tip_1_1_7 {
             get {
@@ -2212,7 +2239,7 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The criminal appeals, cross-appeals, references and bail reviews disposed of by judgment involving the Youth &lt;i&gt;Criminal Justice Act&lt;/i&gt; are not to be tracked separately. They should be counted as any other criminal appeals, cross appeals, references and bail reviews disposed of..
+        ///   Looks up a localized string similar to The criminal appeals, cross-appeals, references and bail reviews disposed of by judgment involving the &lt;i&gt;Youth Criminal Justice Act&lt;/i&gt; are not to be tracked separately. They should be counted as any other criminal appeals, cross appeals, references and bail reviews disposed of..
         /// </summary>
         public static string Tip_1_2_3 {
             get {

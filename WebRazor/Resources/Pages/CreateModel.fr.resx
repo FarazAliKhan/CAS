@@ -384,7 +384,7 @@ Les appels incidents doivent uniquement être compilés s’ils sont inscrits au
     <value>Nombre d’appels, d’appels incidents et de renvois criminels et de révisions de cautionnement ayant fait l’objet d’un jugement ou d’une décision mettant fin au dossier</value>
   </data>
   <data name="Tip_1_2_3" xml:space="preserve">
-    <value>Les appels, appels incidents et renvois 	criminels et les révisions de cautionnement réglés par jugement impliquant la Loi sur le système de justice pénale pour les adolescents ne doivent pas être analysés séparément. Ils devraient être comptés comme 	n’importe quel autre appel, appel incident ou renvoi criminel ou révision de cautionnement instruit.</value>
+    <value>Les appels, appels incidents et renvois criminels et les révisions de cautionnement réglés par jugement impliquant la &lt;i&gt;Loi sur le système de justice pénale pour les adolescents&lt;/i&gt; ne doivent pas être analysés séparément. Ils devraient être comptés comme n’importe quel autre appel, appel incident ou renvoi criminel ou révision de cautionnement instruit.</value>
   </data>
   <data name="Msg_1_2_3" xml:space="preserve">
     <value>Nombre d’appels, d’appels incidents et de renvois criminels et de révisions de cautionnement ayant fait l’objet d’un jugement ou d’une décision mettant fin au dossier </value>
@@ -863,9 +863,6 @@ Si l’audience dure plus d’une journée, utilisez le premier jour de l’audi
   <data name="Sec8_Decision3_Tip" xml:space="preserve">
     <value>Nombre de décisions relatives à des affaires civiles et criminelles qui sont rendues en plus de 12 mois à partir de la date de l’audience. Les affaires impliquant la &lt;i&gt;Loi sur le système de justice pénale pour les adolescents&lt;/i&gt; ne doivent pas être compilées séparément. Elles devraient être comptées comme n’importe quelle autre décision rendue.</value>
   </data>
-  <data name="ReviewTab12Msg" xml:space="preserve">
-    <value>Pour revoir et soumettre vos statistiques, veuillez cliquer sur le bouton Révision des statistiques ci-dessous.</value>
-  </data>
   <data name="Yes" xml:space="preserve">
     <value>Oui</value>
   </data>
@@ -874,5 +871,8 @@ Si l’audience dure plus d’une journée, utilisez le premier jour de l’audi
   </data>
   <data name="Failed" xml:space="preserve">
     <value>Échoué</value>
+  </data>
+  <data name="ReviewTab12Msg" xml:space="preserve">
+    <value>Pour revoir et soumettre vos statistiques, veuillez cliquer sur le bouton Révision des statistiques ci-dessous.</value>
   </data>
 </root>

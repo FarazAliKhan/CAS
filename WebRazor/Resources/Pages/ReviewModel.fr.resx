@@ -257,7 +257,7 @@ Les appels incidents doivent uniquement être compilés s’ils sont inscrits au
     <value>Reporting Year is required</value>
   </data>
   <data name="Review" xml:space="preserve">
-    <value>Examen</value>
+    <value>Révision</value>
   </data>
   <data name="Select" xml:space="preserve">
     <value>Sélectionner</value>
@@ -469,6 +469,9 @@ Les appels incidents doivent uniquement être compilés s’ils sont inscrits au
   <data name="Tip_1_1_5" xml:space="preserve">
     <value>Pour être comptée dans cette catégorie, une instance doit avoir été réglée durant la médiation judiciaire, notamment par le règlement, l’abandon ou le désistement de l’appel.</value>
   </data>
+  <data name="Success" xml:space="preserve">
+    <value>Réussite</value>
+  </data>
   <data name="Msg_1_1_5" xml:space="preserve">
     <value>Nombre d’appels, d’appels incidents et de renvois civils et de contrôles judiciaires réglés à la suite d’une médiation judiciaire</value>
   </data>
@@ -497,7 +500,7 @@ Les appels incidents doivent uniquement être compilés s’ils sont inscrits au
     <value>Nombre d’appels, d’appels incidents et de renvois criminels et de révisions de cautionnement déposés</value>
   </data>
   <data name="Tip_1_2_3" xml:space="preserve">
-    <value>Les appels, appels incidents et renvois 	criminels et les révisions de cautionnement réglés par jugement impliquant la Loi sur le système de justice pénale pour les adolescents ne doivent pas être analysés séparément. Ils devraient être comptés comme 	n’importe quel autre appel, appel incident ou renvoi criminel ou révision de cautionnement instruit.</value>
+    <value>Les appels, appels incidents et renvois criminels et les révisions de cautionnement réglés par jugement impliquant la &lt;i&gt;Loi sur le système de justice pénale pour les adolescents&lt;/i&gt; ne doivent pas être analysés séparément. Ils devraient être comptés comme n’importe quel autre appel, appel incident ou renvoi criminel ou révision de cautionnement instruit.</value>
   </data>
   <data name="Msg_1_2_3" xml:space="preserve">
     <value>Nombre d’appels, d’appels incidents et de renvois criminels et de révisions de cautionnement ayant fait l’objet d’un jugement ou d’une décision mettant fin au dossier </value>
@@ -584,7 +587,7 @@ Les appels incidents doivent uniquement être compilés s’ils sont inscrits au
     <value>Culpabilité/acquittement</value>
   </data>
   <data name="Review1" xml:space="preserve">
-    <value>Examen</value>
+    <value>Révision</value>
   </data>
   <data name="Sec4_41_Heading" xml:space="preserve">
     <value>Entre l’avis d’appel et le dépôt du mémoire de l’appelant</value>
@@ -884,5 +887,14 @@ Pour chaque intervalle de temps, de l’information sera compilée pour trois p�
   </data>
   <data name="ReviewTab12Msg" xml:space="preserve">
     <value>Pour revoir et soumettre vos statistiques, veuillez cliquer sur le bouton Révision des statistiques ci-dessous.</value>
+  </data>
+  <data name="Heading_Review" xml:space="preserve">
+    <value>Statistiques annuelles des Cours d’appel (SACA)</value>
+  </data>
+  <data name="Heading_Review_Text1" xml:space="preserve">
+    <value>Avant de soumettre vos statistiques, veuillez vérifier les données que vous avez saisies.</value>
+  </data>
+  <data name="Heading_Review_Text2" xml:space="preserve">
+    <value>Si vous souhaitez apporter des modifications, cliquez sur l’icône en haut de chaque section.</value>
   </data>
 </root>

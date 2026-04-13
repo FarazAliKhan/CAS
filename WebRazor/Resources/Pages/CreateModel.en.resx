@@ -373,7 +373,7 @@
     <value>Number of criminal appeals, cross-appeals, references and bail reviews filed</value>
   </data>
   <data name="Tip_1_2_2" xml:space="preserve">
-    <value>The criminal appeals, cross-appeals, references and bail reviews filed involving the Youth Criminal Justice Act are not to be separately tracked as such. They should be counted as any other criminal appeals, cross-appeals, references and bail reviews filed.</value>
+    <value>The criminal appeals, cross-appeals, references and bail reviews filed involving the &lt;i&gt;Youth Criminal Justice Act&lt;/i&gt; are not to be separately tracked as such. They should be counted as any other criminal appeals, cross-appeals, references and bail reviews filed.</value>
   </data>
   <data name="Msg_1_2_2" xml:space="preserve">
     <value>Number of civil appeals, cross-appeals, references, and JRs filed of criminal appeals, cross-appeals, references and bail reviews filed</value>
@@ -382,7 +382,7 @@
     <value>Number of criminal appeals, cross-appeals, references and bail reviews disposed of by judgment</value>
   </data>
   <data name="Tip_1_2_3" xml:space="preserve">
-    <value>The criminal appeals, cross-appeals, references and bail reviews disposed of by judgment involving the Youth &lt;i&gt;Criminal Justice Act&lt;/i&gt; are not to be tracked separately. They should be counted as any other criminal appeals, cross appeals, references and bail reviews disposed of.</value>
+    <value>The criminal appeals, cross-appeals, references and bail reviews disposed of by judgment involving the &lt;i&gt;Youth Criminal Justice Act&lt;/i&gt; are not to be tracked separately. They should be counted as any other criminal appeals, cross appeals, references and bail reviews disposed of.</value>
   </data>
   <data name="Msg_1_2_3" xml:space="preserve">
     <value>Number of criminal appeals, cross-appeals, references and bail reviews disposed of by judgment</value>
@@ -853,9 +853,6 @@
   <data name="Sec8_Decision3_Tip" xml:space="preserve">
     <value>Number of decisions related to civil and criminal cases that are rendered in more than 12 months from the hearing date. The cases involving the &lt;i&gt;Youth Criminal Justice Act&lt;/i&gt; are not to be tracked separately. They should be counted as any other decision rendered.</value>
   </data>
-  <data name="ReviewTab12Msg" xml:space="preserve">
-    <value>To review and submit your statistics, please click on the Review Statistics button below</value>
-  </data>
   <data name="Yes" xml:space="preserve">
     <value>Yes</value>
   </data>
@@ -864,5 +861,8 @@
   </data>
   <data name="Failed" xml:space="preserve">
     <value>Failed</value>
+  </data>
+  <data name="ReviewTab12Msg" xml:space="preserve">
+    <value>To review and submit your statistics, please click on the Review Statistics button below</value>
   </data>
 </root>
