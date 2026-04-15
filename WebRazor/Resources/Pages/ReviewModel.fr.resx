@@ -233,10 +233,10 @@ Les appels incidents doivent uniquement être compilés s’ils sont inscrits au
     <value>Formulaire de saisie de données</value>
   </data>
   <data name="Home" xml:space="preserve">
-    <value>Maison</value>
+    <value>Accueil</value>
   </data>
   <data name="Home1" xml:space="preserve">
-    <value>Maison</value>
+    <value>Accueil</value>
   </data>
   <data name="Info_SidebarAppearsAfterBasicInfo" xml:space="preserve">
     <value>Les onglets de la barre latérale apparaîtront une fois que vous aurez rempli les champs Nom de la cour et Année de référence.</value>
@@ -849,7 +849,7 @@ Pour chaque intervalle de temps, de l’information sera compilée pour trois p�
     <value>Juges surnuméraires</value>
   </data>
   <data name="Sec11_112_Tooltip" xml:space="preserve">
-    <value>Le nombre de juges de la cour qui, en date du 31 décembre exercent les fonctions de juge surnuméraire au terme de l’article 28 de la Loi sur les juges. </value>
+    <value>Le nombre de juges de la cour qui, en date du 31 décembre exercent les fonctions de juge surnuméraire au terme de l’article 28 de la &lt;i&gt;Loi sur les juges&lt;/i&gt;. </value>
   </data>
   <data name="Sec12_Heading" xml:space="preserve">
     <value>Commentaires additionnels</value>

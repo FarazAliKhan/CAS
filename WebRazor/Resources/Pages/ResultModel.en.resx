@@ -524,7 +524,7 @@
     <value>Number of criminal appeals, cross-appeals, references and bail reviews disposed of by other means</value>
   </data>
   <data name="Tip_1_2_5" xml:space="preserve">
-    <value>Criminal appeals, cross-appeals, references and bail reviews filed but still pending as of December 31st of the previous year (1.2.1) plus new criminal appeals, cross-appeals, references and bail reviews filed (1.2.2) minus total number of criminal appeals, cross-appeals, references and bail reviews disposed of, settled by judicial facilitations, abandoned or withdrawn (1.2.3 to 1.2.4) = net criminal appeals, cross-appeals, references and bail reviews for the year.</value>
+    <value>Criminal appeals, cross-appeals, references and bail reviews filed but still pending as of December 31&lt;sup&gt;st&lt;/sup&gt; of the previous year (1.2.1) plus new criminal appeals, cross-appeals, references and bail reviews filed (1.2.2) minus total number of criminal appeals, cross-appeals, references and bail reviews disposed of, settled by judicial facilitations, abandoned or withdrawn (1.2.3 to 1.2.4) = net criminal appeals, cross-appeals, references and bail reviews for the year.</value>
   </data>
   <data name="Msg_1_2_5" xml:space="preserve">
     <value>Total number of criminal appeals, cross-appeals, references and bail reviews</value>
@@ -862,7 +862,7 @@
     <value>Supernumerary judges</value>
   </data>
   <data name="Sec11_112_Tooltip" xml:space="preserve">
-    <value>Number of judges of the court as of December 31&lt;sup&gt;st&lt;/sup&gt; that hold office as supernumerary judges as per section 28 of the Judges Act.</value>
+    <value>Number of judges of the court as of December 31&lt;sup&gt;st&lt;/sup&gt; that hold office as supernumerary judges as per section 28 of the &lt;i&gt;Judges Act&lt;/i&gt;.</value>
   </data>
   <data name="Sec12_Heading" xml:space="preserve">
     <value>Additional comments</value>

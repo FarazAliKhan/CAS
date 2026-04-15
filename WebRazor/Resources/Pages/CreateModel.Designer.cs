@@ -1214,7 +1214,7 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Number of judges of the court as of December 31st that hold office as supernumerary judges as per section 28 of the Judges Act..
+        ///   Looks up a localized string similar to Number of judges of the court as of December 31&lt;sup&gt;st&lt;/sup&gt; that hold office as supernumerary judges as per section 28 of the &lt;i&gt;Judges Act&lt;/i&gt;..
         /// </summary>
         public static string Sec11_112_Tooltip {
             get {

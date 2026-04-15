@@ -156,7 +156,7 @@ Les appels incidents doivent uniquement être compilés s’ils sont inscrits au
     <value>From Date is Required</value>
   </data>
   <data name="Home" xml:space="preserve">
-    <value>Maison</value>
+    <value>Accueil</value>
   </data>
   <data name="LastName" xml:space="preserve">
     <value>Nom</value>
@@ -830,7 +830,7 @@ Si l’audience dure plus d’une journée, utilisez le premier jour de l’audi
     <value>Juges surnuméraires</value>
   </data>
   <data name="Sec11_112_Tooltip" xml:space="preserve">
-    <value>Le nombre de juges de la cour qui, en date du 31 décembre exercent les fonctions de juge surnuméraire au terme de l’article 28 de la Loi sur les juges. </value>
+    <value>Le nombre de juges de la cour qui, en date du 31 décembre exercent les fonctions de juge surnuméraire au terme de l’article 28 de la &lt;i&gt;Loi sur les juges&lt;/i&gt;. </value>
   </data>
   <data name="Sec11_112_DataMsg" xml:space="preserve">
     <value>Juges surnuméraires</value>
