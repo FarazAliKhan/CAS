@@ -1151,7 +1151,7 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Total number of appeals, cross-appeals, references, bail reviews and JRs pending on December 31st.
+        ///   Looks up a localized string similar to Total number of appeals, cross-appeals, references, bail reviews and JRs pending on December 31&lt;sup&gt;st&lt;/sup&gt;.
         /// </summary>
         public static string Sec10_Heading {
             get {

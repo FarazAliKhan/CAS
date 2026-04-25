@@ -832,10 +832,10 @@
     <value>By a 5-member panel hearings</value>
   </data>
   <data name="Sec10_Heading" xml:space="preserve">
-    <value>Total number of appeals, cross-appeals, references, bail reviews and JRs pending on December 31st</value>
+    <value>Total number of appeals, cross-appeals, references, bail reviews and JRs pending on December 31&lt;sup&gt;st&lt;/sup&gt;</value>
   </data>
   <data name="Sec10_Heading_Tooltip" xml:space="preserve">
-    <value>Explanation text for pending inventory measured as of December 31st, including heard and unheard matters.</value>
+    <value>Explanation text for pending inventory measured as of December 31&lt;sup&gt;st&lt;/sup&gt;, including heard and unheard matters.</value>
   </data>
   <data name="Sec10_101_Label" xml:space="preserve">
     <value>Number of appeals, cross-appeals, references, bail reviews and JRs that have not been finalized as of December 31&lt;sup&gt;st&lt;/sup&gt;</value>

@@ -1276,7 +1276,7 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Total number of appeals, cross-appeals, references, bail reviews and JRs pending on December 31st.
+        ///   Looks up a localized string similar to Total number of appeals, cross-appeals, references, bail reviews and JRs pending on December 31&lt;sup&gt;st&lt;/sup&gt;.
         /// </summary>
         public static string Sec10_Heading {
             get {
@@ -1285,7 +1285,7 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Explanation text for pending inventory measured as of December 31st, including heard and unheard matters..
+        ///   Looks up a localized string similar to Explanation text for pending inventory measured as of December 31&lt;sup&gt;st&lt;/sup&gt;, including heard and unheard matters..
         /// </summary>
         public static string Sec10_Heading_Tooltip {
             get {
@@ -2257,7 +2257,7 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Criminal appeals, cross-appeals, references and bail reviews filed but still pending as of December 31st of the previous year (1.2.1) plus new criminal appeals, cross-appeals, references and bail reviews filed (1.2.2) minus total number of criminal appeals, cross-appeals, references and bail reviews disposed of, settled by judicial facilitations, abandoned or withdrawn (1.2.3 to 1.2.4) = net criminal appeals, cross-appeals, references and bail reviews for the year..
+        ///   Looks up a localized string similar to Criminal appeals, cross-appeals, references and bail reviews filed but still pending as of December 31&lt;sup&gt;st&lt;/sup&gt; of the previous year (1.2.1) plus new criminal appeals, cross-appeals, references and bail reviews filed (1.2.2) minus total number of criminal appeals, cross-appeals, references and bail reviews disposed of, settled by judicial facilitations, abandoned or withdrawn (1.2.3 to 1.2.4) = net criminal appeals, cross-appeals, references and bail reviews for the year..
         /// </summary>
         public static string Tip_1_2_5 {
             get {
