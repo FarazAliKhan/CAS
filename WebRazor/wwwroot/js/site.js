@@ -1035,16 +1035,16 @@ function calculateField_1_1_7() {
         calcSum = calcSum + parseInt(document.getElementById("txtFIELD1_1_2").value);
     }
     if (document.getElementById("txtFIELD1_1_3").value != "") {
-        calcSum = calcSum + parseInt(document.getElementById("txtFIELD1_1_3").value);
+        calcSum = calcSum - parseInt(document.getElementById("txtFIELD1_1_3").value);
     }
     if (document.getElementById("txtFIELD1_1_4").value != "") {
-        calcSum = calcSum + parseInt(document.getElementById("txtFIELD1_1_4").value);
+        calcSum = calcSum - parseInt(document.getElementById("txtFIELD1_1_4").value);
     }
     if (document.getElementById("txtFIELD1_1_5").value != "") {
-        calcSum = calcSum + parseInt(document.getElementById("txtFIELD1_1_5").value);
+        calcSum = calcSum - parseInt(document.getElementById("txtFIELD1_1_5").value);
     }
     if (document.getElementById("txtFIELD1_1_6").value != "") {
-        calcSum = calcSum + parseInt(document.getElementById("txtFIELD1_1_6").value);
+        calcSum = calcSum - parseInt(document.getElementById("txtFIELD1_1_6").value);
     }
     document.getElementById("txtFIELD1_1_7").value = calcSum;
 }
@@ -1058,10 +1058,10 @@ function calculateField_1_2_5() {
         calcSum = calcSum + parseInt(document.getElementById("txtFIELD1_2_2").value);
     }
     if (document.getElementById("txtFIELD1_2_3").value != "") {
-        calcSum = calcSum + parseInt(document.getElementById("txtFIELD1_2_3").value);
+        calcSum = calcSum - parseInt(document.getElementById("txtFIELD1_2_3").value);
     }
     if (document.getElementById("txtFIELD1_2_4").value != "") {
-        calcSum = calcSum + parseInt(document.getElementById("txtFIELD1_2_4").value);
+        calcSum = calcSum - parseInt(document.getElementById("txtFIELD1_2_4").value);
     }
     document.getElementById("txtFIELD1_2_5").value = calcSum;
 }

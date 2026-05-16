@@ -225,7 +225,7 @@ Les appels incidents doivent uniquement être compilés s’ils sont inscrits au
     <value>Tab 2 - Affaires civiles et criminelles décidées</value>
   </data>
   <data name="Sidebar_Tab3" xml:space="preserve">
-    <value>Tab 3 - Nombre de décisions/jugements (total) </value>
+    <value>Tab 3 - Nombre total de décisions/jugements rendus sur le banc et mis en délibéré</value>
   </data>
   <data name="Sidebar_Tab4" xml:space="preserve">
     <value>Tab 4 - Intervalles de temps pour les affaires civiles et criminelles</value>
@@ -342,7 +342,7 @@ Les appels incidents doivent uniquement être compilés s’ils sont inscrits au
     <value>Nombre d’appels, d’appels incidents et de renvois civils et de contrôles judiciaires terminés d’autres façons</value>
   </data>
   <data name="Tip_1_1_6" xml:space="preserve">
-    <value>Ces appels, appels incidents et renvois civils et contrôles judiciaires doivent inclure ceux qui ont été abandonnés, retirés, rejetés par défaut de poursuites, non-respect des règles, les mesures prises par un juge seul, etc. Les appels, appels incidents et renvois civils et les contrôles judiciaires abandonnés ou retirés par le greffier incluent les constats de caducité délivrés par le greffier.</value>
+    <value>Ces appels, appels incidents et renvois civils et contrôles judiciaires doivent inclure ceux qui ont été abandonnés, retirés, rejetés par défaut de poursuites, non-respect des règles, les décisions du juge seul mettant fin au dossier, etc. Les appels, appels incidents et renvois civils et les contrôles judiciaires abandonnés ou retirés par le greffier incluent les constats de caducité délivrés par le greffier.</value>
   </data>
   <data name="Msg_1_1_6" xml:space="preserve">
     <value>Nombre d’appels, d’appels incidents et de renvois civils et de contrôles judiciaires terminés d’autres façons</value>
@@ -393,7 +393,7 @@ Les appels incidents doivent uniquement être compilés s’ils sont inscrits au
     <value>Nombre d’appels, d’appels incidents et renvois criminels et de révisions de cautionnement terminés d’autres façons</value>
   </data>
   <data name="Tip_1_2_4" xml:space="preserve">
-    <value>Ces appels, appels incidents et renvois et révisions de cautionnement doivent inclure ceux qui ont été réglés par facilitation pénale, abandonnés, retirés, rejetés par défaut de poursuite, non-respect des règles, mesures prises par un juge seul, etc.</value>
+    <value>Ces appels, appels incidents et renvois et révisions de cautionnement doivent inclure ceux qui ont été réglés par facilitation pénale, abandonnés, retirés, rejetés par défaut de poursuite, non-respect des règles, les décisions du juge seul mettant fin au dossier, etc.</value>
   </data>
   <data name="Msg_1_2_4" xml:space="preserve">
     <value>Nombre d’appels, d’appels incidents et renvois criminels et de révisions de cautionnement terminés d’autres façons</value>
@@ -498,7 +498,7 @@ Les appels incidents doivent uniquement être compilés s’ils sont inscrits au
     <value>Nombre d’autres jugements sur des appels criminels déposés après la mise en délibéré.</value>
   </data>
   <data name="Lbl_3_Heading" xml:space="preserve">
-    <value>Nombre de décisions/jugements (total)</value>
+    <value>Nombre total de décisions/jugements rendus sur le banc et mis en délibéré</value>
   </data>
   <data name="Lbl_3_1" xml:space="preserve">
     <value>Nombre de décisions/jugements rendus sur le banc</value>

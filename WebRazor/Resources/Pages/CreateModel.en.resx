@@ -223,7 +223,7 @@
     <value>Tab 2 - Civil and criminal case decisions</value>
   </data>
   <data name="Sidebar_Tab3" xml:space="preserve">
-    <value>Tab 3 - Number of decisions/judgments (total)</value>
+    <value>Tab 3 - Total number of Bench and reserved decisions/judgments</value>
   </data>
   <data name="Sidebar_Tab4" xml:space="preserve">
     <value>Tab 4 - Civil and criminal case time intervals</value>
@@ -496,7 +496,7 @@
     <value>Number of other criminal appeals filed after reserving</value>
   </data>
   <data name="Lbl_3_Heading" xml:space="preserve">
-    <value>Number of decisions/judgments (total)</value>
+    <value>Total number of Bench and reserved decisions/judgments</value>
   </data>
   <data name="Lbl_3_1" xml:space="preserve">
     <value>Number of Bench decisions/judgments</value>

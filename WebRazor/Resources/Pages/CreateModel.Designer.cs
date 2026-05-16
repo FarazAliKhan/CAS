@@ -665,7 +665,7 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Number of decisions/judgments (total).
+        ///   Looks up a localized string similar to Total number of Bench and reserved decisions/judgments.
         /// </summary>
         public static string Lbl_3_Heading {
             get {
@@ -1988,7 +1988,7 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Tab 3 - Number of decisions/judgments (total).
+        ///   Looks up a localized string similar to Tab 3 - Total number of Bench and reserved decisions/judgments.
         /// </summary>
         public static string Sidebar_Tab3 {
             get {
