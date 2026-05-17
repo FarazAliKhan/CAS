@@ -198,7 +198,7 @@ Les appels incidents doivent uniquement être compilés s’ils sont inscrits au
     <value>Fermer</value>
   </data>
   <data name="Alert_DraftSavedSuccess" xml:space="preserve">
-    <value>Succès - Le brouillon a été enregistré avec succès - Fermer</value>
+    <value>Votre brouillon a été enregistré avec succès.</value>
   </data>
   <data name="Alert_DraftSavedFailed" xml:space="preserve">
     <value>Enregistrement déjà sauvegardé.</value>
@@ -333,7 +333,7 @@ Les appels incidents doivent uniquement être compilés s’ils sont inscrits au
     <value>Pour être comptée dans cette catégorie, une instance doit avoir été réglée durant la médiation judiciaire, notamment par le règlement, l’abandon ou le désistement de l’appel.</value>
   </data>
   <data name="Success" xml:space="preserve">
-    <value>Réussite</value>
+    <value>Succès</value>
   </data>
   <data name="Msg_1_1_5" xml:space="preserve">
     <value>Nombre d’appels, d’appels incidents et de renvois civils et de contrôles judiciaires réglés à la suite d’une médiation judiciaire</value>

@@ -622,6 +622,10 @@ function gotoPrevious() {
     }
     const summary = document.getElementById("validationSummary");
     summary.classList.add("d-none");
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
 }
 
 function gotoNext() {
@@ -715,6 +719,10 @@ function gotoNext() {
         //var errors = validator.errorList;
         //showValidationSummary(errors);
     }
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
 }
 
 function enableDisableReview() {
