@@ -307,7 +307,7 @@
     <value>Tab 12 - Additional comments and review statistics</value>
   </data>
   <data name="Validation_FormIncomplete" xml:space="preserve">
-    <value>Form Incomplete: All fields are mandatory. Please enter 0 to indicate that no data is being submitted.</value>
+    <value>Incomplete Form: All fields are mandatory.</value>
   </data>
   <data name="Lbl_NameOfCourt" xml:space="preserve">
     <value>Name of Court</value>

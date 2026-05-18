@@ -202,10 +202,11 @@
     <value>The draft save failed.</value>
   </data>
   <data name="Modal_DraftFound_Title" xml:space="preserve">
-    <value>Draft Found</value>
+    <value>Draft Form</value>
   </data>
   <data name="Alert_DraftFound_AskLoad" xml:space="preserve">
-    <value>A draft record found. Do you want to load it?</value>
+    <value>A draft form was started for the selected Court and Reporting Year. 
+Please choose one of the following options:</value>
   </data>
   <data name="Alert_RecordRetrievalFailed" xml:space="preserve">
     <value>The record retrieval failed.</value>
@@ -256,7 +257,7 @@
     <value>Previous Tab</value>
   </data>
   <data name="Validation_FormIncomplete" xml:space="preserve">
-    <value>All fields are mandatory. Please enter 0 to indicate that no data is being submitted.</value>
+    <value>Incomplete Form: All fields are mandatory.</value>
   </data>
   <data name="Info_SidebarAppearsAfterBasicInfo" xml:space="preserve">
     <value>The sidebar tabs will appear once you fill the Name of Court and Reporting Year fields.</value>
@@ -861,5 +862,11 @@
   </data>
   <data name="Failed" xml:space="preserve">
     <value>Failed</value>
+  </data>
+  <data name="Continue_Draft" xml:space="preserve">
+    <value>Continue Draft</value>
+  </data>
+  <data name="Start_New_Form" xml:space="preserve">
+    <value>Start New Form</value>
   </data>
 </root>

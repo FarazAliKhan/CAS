@@ -97,7 +97,8 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to A draft record found. Do you want to load it?.
+        ///   Looks up a localized string similar to A draft form was started for the selected Court and Reporting Year. 
+        ///Please choose one of the following options:.
         /// </summary>
         public static string Alert_DraftFound_AskLoad {
             get {
@@ -256,6 +257,15 @@ namespace WebRazor.Resources.Pages {
         public static string Common_Sentence {
             get {
                 return ResourceManager.GetString("Common_Sentence", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Continue Draft.
+        /// </summary>
+        public static string Continue_Draft {
+            get {
+                return ResourceManager.GetString("Continue_Draft", resourceCulture);
             }
         }
         
@@ -800,7 +810,7 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Draft Found.
+        ///   Looks up a localized string similar to Draft Form.
         /// </summary>
         public static string Modal_DraftFound_Title {
             get {
@@ -2051,6 +2061,15 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Start New Form.
+        /// </summary>
+        public static string Start_New_Form {
+            get {
+                return ResourceManager.GetString("Start_New_Form", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Success.
         /// </summary>
         public static string Success {
@@ -2276,7 +2295,7 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to All fields are mandatory. Please enter 0 to indicate that no data is being submitted..
+        ///   Looks up a localized string similar to Incomplete Form: All fields are mandatory..
         /// </summary>
         public static string Validation_FormIncomplete {
             get {

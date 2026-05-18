@@ -202,10 +202,11 @@
     <value>Record already saved.</value>
   </data>
   <data name="Modal_DraftFound_Title" xml:space="preserve">
-    <value>Draft Found</value>
+    <value>Draft Form</value>
   </data>
   <data name="Alert_DraftFound_AskLoad" xml:space="preserve">
-    <value>We found a draft for the selected Court and Reporting Year. Would you like to continue where you left off or discard it and start a new form?</value>
+    <value>A draft form was started for the selected Court and Reporting Year. 
+Please choose one of the following options:</value>
   </data>
   <data name="Alert_RecordRetrievalFailed" xml:space="preserve">
     <value>Please check VPN Connection.</value>
@@ -256,7 +257,7 @@
     <value>Previous Tab</value>
   </data>
   <data name="Validation_FormIncomplete" xml:space="preserve">
-    <value>Form Incomplete: All fields are mandatory. Please enter 0 to indicate that no data is being submitted.</value>
+    <value>Incomplete Form: All fields are mandatory.</value>
   </data>
   <data name="Info_SidebarAppearsAfterBasicInfo" xml:space="preserve">
     <value>The sidebar tabs will appear once you fill the Name of Court and Reporting Year fields.</value>
@@ -864,5 +865,11 @@
   </data>
   <data name="ReviewTab12Msg" xml:space="preserve">
     <value>To review and submit your statistics, please click on the Review Statistics button below</value>
+  </data>
+  <data name="Continue_Draft" xml:space="preserve">
+    <value>Continue Draft</value>
+  </data>
+  <data name="Start_New_Form" xml:space="preserve">
+    <value>Start New Form</value>
   </data>
 </root>

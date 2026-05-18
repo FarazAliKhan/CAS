@@ -2419,7 +2419,7 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to All fields are mandatory. Please enter 0 to indicate that no data is being submitted..
+        ///   Looks up a localized string similar to Incomplete Form: All fields are mandatory..
         /// </summary>
         public static string Validation_FormIncomplete {
             get {

@@ -204,10 +204,11 @@ Les appels incidents doivent uniquement être compilés s’ils sont inscrits au
     <value>Enregistrement déjà sauvegardé.</value>
   </data>
   <data name="Modal_DraftFound_Title" xml:space="preserve">
-    <value>Projet trouvé</value>
+    <value>Formulaire provisoire</value>
   </data>
   <data name="Alert_DraftFound_AskLoad" xml:space="preserve">
-    <value>Un brouillon de document a été trouvé. Voulez-vous le charger ?</value>
+    <value>Une version provisoire du formulaire existe pour la cour et l'année de référence sélectionnées.
+Veuillez choisir l'une des options suivantes :</value>
   </data>
   <data name="Alert_RecordRetrievalFailed" xml:space="preserve">
     <value>Veuillez vérifier votre connexion VPN.</value>
@@ -258,7 +259,7 @@ Les appels incidents doivent uniquement être compilés s’ils sont inscrits au
     <value>Onglet précédent </value>
   </data>
   <data name="Validation_FormIncomplete" xml:space="preserve">
-    <value>Formulaire incomplet : Tous les champs sont obligatoires. Veuillez entrer 0 pour indiquer qu’aucune donnée n’est soumise. </value>
+    <value>Formulaire incomplet : Tous les champs sont obligatoires.</value>
   </data>
   <data name="Info_SidebarAppearsAfterBasicInfo" xml:space="preserve">
     <value>Les onglets de la barre latérale apparaîtront une fois que vous aurez rempli les champs Nom de la cour et Année de référence.</value>
@@ -874,5 +875,11 @@ Si l’audience dure plus d’une journée, utilisez le premier jour de l’audi
   </data>
   <data name="ReviewTab12Msg" xml:space="preserve">
     <value>Pour revoir et soumettre vos statistiques, veuillez cliquer sur le bouton Révision des statistiques ci-dessous.</value>
+  </data>
+  <data name="Continue_Draft" xml:space="preserve">
+    <value>Poursuivre en utilisant le formulaire provisoire</value>
+  </data>
+  <data name="Start_New_Form" xml:space="preserve">
+    <value>Commencer un nouveau formulaire</value>
   </data>
 </root>
