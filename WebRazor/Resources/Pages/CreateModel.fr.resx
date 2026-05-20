@@ -454,10 +454,10 @@ Veuillez choisir l'une des options suivantes :</value>
     <value>Nombre de verdicts de culpabilité/acquittements rendus à l’audience</value>
   </data>
   <data name="Lbl_2_2_1_2" xml:space="preserve">
-    <value>Nombre de jugements sur la peine rendues à l’audience</value>
+    <value>Nombre de jugements sur la peine rendus à l’audience.</value>
   </data>
   <data name="Msg_2_2_1_2" xml:space="preserve">
-    <value>Nombre de jugements sur la peine rendues à l’audience</value>
+    <value>Nombre de jugements sur la peine rendus à l’audience.</value>
   </data>
   <data name="Lbl_2_2_1_3" xml:space="preserve">
     <value>Exemples d'autres appels criminels : habeas corpus, prohibition, certiorari, examens de troubles mentaux, etc.</value>
@@ -873,13 +873,13 @@ Si l’audience dure plus d’une journée, utilisez le premier jour de l’audi
   <data name="Failed" xml:space="preserve">
     <value>Échoué</value>
   </data>
-  <data name="ReviewTab12Msg" xml:space="preserve">
-    <value>Pour revoir et soumettre vos statistiques, veuillez cliquer sur le bouton Révision des statistiques ci-dessous.</value>
-  </data>
   <data name="Continue_Draft" xml:space="preserve">
     <value>Poursuivre en utilisant le formulaire provisoire</value>
   </data>
   <data name="Start_New_Form" xml:space="preserve">
     <value>Commencer un nouveau formulaire</value>
+  </data>
+  <data name="ReviewTab12Msg" xml:space="preserve">
+    <value>Pour revoir et soumettre vos statistiques, veuillez cliquer sur le bouton Révision des statistiques ci-dessous.</value>
   </data>
 </root>

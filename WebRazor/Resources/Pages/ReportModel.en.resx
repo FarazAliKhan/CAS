@@ -132,4 +132,10 @@
   <data name="Select" xml:space="preserve">
     <value>Select</value>
   </data>
+  <data name="PrintReport" xml:space="preserve">
+    <value>Print Report (PDF)</value>
+  </data>
+  <data name="Exporting" xml:space="preserve">
+    <value>Exporting...</value>
+  </data>
 </root>
