@@ -279,6 +279,9 @@ namespace WebRazor.Pages
         [BindProperty]
         public string apiUrlPickCourt { get; set; }
 
+        [BindProperty]
+        public bool isChecked_1_2 { get; set; }
+
 
         public CreateModel(
                 IConfiguration configuration
@@ -866,6 +869,7 @@ namespace WebRazor.Pages
             txtFIELD_11_Comments = (string?)TempData["txtFIELD_11_Comments"];
 
             txtFIELD_12_Comments = (string?)TempData["txtFIELD_12_Comments"];
+            isChecked_1_2 = (bool)TempData["isChecked_1_2"];
 
             sectId = (string?)TempData["sectionId"];
 

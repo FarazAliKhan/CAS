@@ -190,5 +190,7 @@ namespace BusinessLayer.DTOs
         public string? txtFIELD_11_Comments { get; set; }
 
         public string? txtFIELD_12_Comments { get; set; }
+
+        public bool isChecked_1_2 { get; set; }
     }
 }

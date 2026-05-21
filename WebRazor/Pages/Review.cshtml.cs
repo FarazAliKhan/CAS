@@ -254,6 +254,9 @@ namespace WebRazor.Pages
         [BindProperty]
         public string apiUrlPickCourt { get; set; }
 
+        [BindProperty]
+        public bool isChecked_1_2 { get; set; }
+
         public ReviewModel(
                 IConfiguration configuration
             )
@@ -417,6 +420,7 @@ namespace WebRazor.Pages
                 txtFIELD_11_Comments = (string?)TempData["txtFIELD_11_Comments"];
 
                 txtFIELD_12_Comments = (string?)TempData["txtFIELD_12_Comments"];
+                isChecked_1_2 = (bool)TempData["isChecked_1_2"];
 
                 emailAddress = (string?)TempData["emailAddress"];
                 modelUuid = (string?)TempData["modelUuid"].ToString();
@@ -575,6 +579,7 @@ namespace WebRazor.Pages
             TempData["txtFIELD_11_Comments"] = createItem.txtFIELD_11_Comments;
 
             TempData["txtFIELD_12_Comments"] = createItem.txtFIELD_12_Comments;
+            TempData["isChecked_1_2"] = createItem.isChecked_1_2;
 
             var finalSubmit = Request.Query["finalSubmit"].FirstOrDefault();
             if (!String.IsNullOrEmpty(finalSubmit))
