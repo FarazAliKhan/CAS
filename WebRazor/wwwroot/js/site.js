@@ -3244,6 +3244,12 @@ window.addEventListener("load", function () {
         const secId = document.getElementById("sectionIdFromCreate").value;
         focusOnFormFromCreate(secId);
         $("#btnSave").removeAttr('hidden');
+        $("#txtCOURT").on("mousedown keydown", function (e) {
+            e.preventDefault();
+        });
+        $("#intREPORTINGYEAR").on("mousedown keydown", function (e) {
+            e.preventDefault();
+        });
     }
     const completedFound = params.get("completedFound");
     if (completedFound != null) {
@@ -3258,6 +3264,12 @@ window.addEventListener("load", function () {
         $("#tabsbar").removeAttr('hidden');
         $("#btnNext").removeAttr('hidden');
         $("#btnSave").removeAttr('hidden');
+        $("#txtCOURT").on("mousedown keydown", function (e) {
+            e.preventDefault();
+        });
+        $("#intREPORTINGYEAR").on("mousedown keydown", function (e) {
+            e.preventDefault();
+        });
     }
     const deleteDraft = params.get("deleteDraft");
     if (deleteDraft != null) {
@@ -3270,6 +3282,14 @@ window.addEventListener("load", function () {
         $("#tabsbar").removeAttr('hidden');
         $("#btnNext").removeAttr('hidden');
         $("#btnSave").removeAttr('hidden');
+        $("#txtCOURT").attr("readonly", true);
+        $("#intREPORTINGYEAR").attr("readonly", true);
+        $("#txtCOURT").on("mousedown keydown", function (e) {
+            e.preventDefault();
+        });
+        $("#intREPORTINGYEAR").on("mousedown keydown", function (e) {
+            e.preventDefault();
+        });
     }
     const deleted = params.get("deleted");
     if (deleted != null) {
@@ -3277,6 +3297,24 @@ window.addEventListener("load", function () {
         $("#tabsbar").removeAttr('hidden');
         $("#btnNext").removeAttr('hidden');
         $("#btnSave").removeAttr('hidden');
+        $("#txtCOURT").on("mousedown keydown", function (e) {
+            e.preventDefault();
+        });
+        $("#intREPORTINGYEAR").on("mousedown keydown", function (e) {
+            e.preventDefault();
+        });
+    }
+    const handlerLoad = params.get("handler");
+    if (handlerLoad != null && handlerLoad == "Load") {
+        //$("#tabsbar").removeAttr('hidden');
+        //$("#btnNext").removeAttr('hidden');
+        //$("#btnSave").removeAttr('hidden');
+        $("#txtCOURT").on("mousedown keydown", function (e) {
+            e.preventDefault();
+        });
+        $("#intREPORTINGYEAR").on("mousedown keydown", function (e) {
+            e.preventDefault();
+        });
     }
     if (document.getElementById("intREPORTINGYEAR") != null) {
         const year = document.getElementById("intREPORTINGYEAR").value;

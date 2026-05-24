@@ -274,7 +274,7 @@ Veuillez choisir l'une des options suivantes :</value>
     <value>Le tribunal auquel s'applique la requête.</value>
   </data>
   <data name="Msg_NameOfCourt" xml:space="preserve">
-    <value>FR-Please enter Name of Court</value>
+    <value>Tous les champs sont obligatoires. Veuillez entrer le nom de votre cour.</value>
   </data>
   <data name="Lbl_ReportingYear" xml:space="preserve">
     <value>Année de référence</value>
@@ -283,7 +283,7 @@ Veuillez choisir l'une des options suivantes :</value>
     <value>L'année de référence pour les données.</value>
   </data>
   <data name="Msg_ReportingYear" xml:space="preserve">
-    <value>Veuillez entrer l’année de référence</value>
+    <value>Tous les champs sont obligatoires. Veuillez entrer votre année de référence.</value>
   </data>
   <data name="Lbl_From" xml:space="preserve">
     <value>De</value>
@@ -292,7 +292,7 @@ Veuillez choisir l'une des options suivantes :</value>
     <value>Date de début de la période couverte par la soumission. </value>
   </data>
   <data name="Msg_FromDate" xml:space="preserve">
-    <value>FR-Please enter From Date</value>
+    <value>Veuillez entrer les dates qui correspondent à l’année de référence.</value>
   </data>
   <data name="Lbl_To" xml:space="preserve">
     <value>À</value>
@@ -301,7 +301,7 @@ Veuillez choisir l'une des options suivantes :</value>
     <value>Date de fin de la période couverte par la soumission</value>
   </data>
   <data name="Msg_ToDate" xml:space="preserve">
-    <value>FR-Please enter To Date</value>
+    <value>Veuillez entrer les dates qui correspondent à l’année de référence.</value>
   </data>
   <data name="Lbl_1_1_Title" xml:space="preserve">
     <value>Appels, appels incidents et renvois civils et contrôles judiciaires (déposés, ayant fait l’objet d’un jugement ou d’une décision mettant fin au dossier et abandonnés ou retirés)</value>

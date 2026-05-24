@@ -1080,7 +1080,7 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Please enter From Date.
+        ///   Looks up a localized string similar to Please enter the dates that correspond to the Reporting Year..
         /// </summary>
         public static string Msg_FromDate {
             get {
@@ -1089,7 +1089,7 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Please enter Name of Court.
+        ///   Looks up a localized string similar to Please select the name of your court..
         /// </summary>
         public static string Msg_NameOfCourt {
             get {
@@ -1098,7 +1098,7 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Please enter Reporting Year.
+        ///   Looks up a localized string similar to Please select your reporting year..
         /// </summary>
         public static string Msg_ReportingYear {
             get {
@@ -1107,7 +1107,7 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Please enter To Date.
+        ///   Looks up a localized string similar to Please enter the dates that correspond to the Reporting Year..
         /// </summary>
         public static string Msg_ToDate {
             get {

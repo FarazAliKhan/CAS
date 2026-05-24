@@ -272,7 +272,7 @@ Please choose one of the following options:</value>
     <value>The court for which the submission applies.</value>
   </data>
   <data name="Msg_NameOfCourt" xml:space="preserve">
-    <value>Please enter Name of Court</value>
+    <value>Please select the name of your court.</value>
   </data>
   <data name="Lbl_ReportingYear" xml:space="preserve">
     <value>Reporting Year</value>
@@ -281,7 +281,7 @@ Please choose one of the following options:</value>
     <value>The reporting year for the data.</value>
   </data>
   <data name="Msg_ReportingYear" xml:space="preserve">
-    <value>Please enter Reporting Year</value>
+    <value>Please select your reporting year.</value>
   </data>
   <data name="Lbl_From" xml:space="preserve">
     <value>From</value>
@@ -290,7 +290,7 @@ Please choose one of the following options:</value>
     <value>The start date of the period covered by the submission.</value>
   </data>
   <data name="Msg_FromDate" xml:space="preserve">
-    <value>Please enter From Date</value>
+    <value>Please enter the dates that correspond to the Reporting Year.</value>
   </data>
   <data name="Lbl_To" xml:space="preserve">
     <value>To</value>
@@ -299,7 +299,7 @@ Please choose one of the following options:</value>
     <value>The end date of the period covered by the submission.</value>
   </data>
   <data name="Msg_ToDate" xml:space="preserve">
-    <value>Please enter To Date</value>
+    <value>Please enter the dates that correspond to the Reporting Year.</value>
   </data>
   <data name="Lbl_1_1_Title" xml:space="preserve">
     <value>Civil appeals, cross-appeals, references, and JRs filed, disposed of, and abandoned or withdrawn</value>
