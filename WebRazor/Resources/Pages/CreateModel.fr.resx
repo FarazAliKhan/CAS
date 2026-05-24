@@ -265,7 +265,7 @@ Veuillez choisir l'une des options suivantes :</value>
     <value>Les onglets de la barre latérale apparaîtront une fois que vous aurez rempli les champs Nom de la cour et Année de référence.</value>
   </data>
   <data name="BasicInfo_SectionTitle" xml:space="preserve">
-    <value>Nom du tribunal et année de référence</value>
+    <value>Nom de la cour et année de référence</value>
   </data>
   <data name="Lbl_NameOfCourt" xml:space="preserve">
     <value>Nom de la cour</value>
