@@ -259,7 +259,7 @@ Veuillez choisir l'une des options suivantes :</value>
     <value>Onglet précédent </value>
   </data>
   <data name="Validation_FormIncomplete" xml:space="preserve">
-    <value>Formulaire incomplet : Tous les champs sont obligatoires.</value>
+    <value>Formulaire incomplet : Tous les champs sont obligatoires. Veuillez entrer 0 pour indiquer qu’aucune donnée n’est soumise.</value>
   </data>
   <data name="Info_SidebarAppearsAfterBasicInfo" xml:space="preserve">
     <value>Les onglets de la barre latérale apparaîtront une fois que vous aurez rempli les champs Nom de la cour et Année de référence.</value>

@@ -257,7 +257,7 @@ Please choose one of the following options:</value>
     <value>Previous Tab</value>
   </data>
   <data name="Validation_FormIncomplete" xml:space="preserve">
-    <value>Incomplete Form: All fields are mandatory.</value>
+    <value>Form Incomplete: All fields are mandatory. Please enter 0 to indicate that no data is being submitted.</value>
   </data>
   <data name="Info_SidebarAppearsAfterBasicInfo" xml:space="preserve">
     <value>The sidebar tabs will appear once you fill the Name of Court and Reporting Year fields.</value>
