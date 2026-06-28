@@ -153,10 +153,17 @@ function submitForReview(cultureInfo) {
 }
 
 function finalSubmit() {
-    var form = document.getElementById("reviewForm");
-    form.action = "/FinalMessage?finalSubmit=true";
-    form.method = "post";
-    form.submit();
+    if (validateFields("reviewForm")) {
+        var form = document.getElementById("reviewForm");
+        form.action = "/FinalMessage?finalSubmit=true";
+        form.method = "post";
+        form.submit();
+    } else {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        }); 
+    }
 }
 
 function submitForResult() {
@@ -167,7 +174,7 @@ function submitForResult() {
 }
 
 function submitForSave() {
-    if (validateFields()) {
+    if (validateFields("createForm")) {
         var form = document.getElementById("createForm");
         form.action = "/Create/Create?submitForSave=true";
         form.method = "post";
@@ -639,7 +646,7 @@ function gotoPrevious() {
 
 function gotoNext() {
     //var validator = $("form").validate();
-    if (validateFields()) {
+    if (validateFields("createForm")) {
         //const summary = document.getElementById("validationSummary");
         //summary.classList.add("d-none");
         let activeDetails = $("#activeDetailsId").val();
@@ -1814,9 +1821,9 @@ function errorSection11() {
     }
 }
 
-function validateFields() {
+function validateFields(formName) {
 
-    let form = document.getElementById("createForm");
+    let form = document.getElementById(formName);
     let errors = [];
 
     // Clear previous alerts

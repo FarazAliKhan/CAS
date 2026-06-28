@@ -61,6 +61,18 @@
     <input type="hidden" id="nodeUuid" asp-for="@Model.nodeUuid" value="00000000-0000-0000-0000-000000000000">
     <input type="hidden" id="currentCulture" value="@CultureInfo.CurrentCulture.ToString()">
     <input type="hidden" id="courtCode" value="@Model.txtCOURT">
+    <div class="bg-danger">
+        <div id="validationSummary"
+             class="alert alert-danger d-none georgia-font align-left"
+             role="alert">
+            <h4 class="alert-heading georgia-font">
+                @localizer["Validation_FormIncomplete"]
+            </h4>
+            <ul id="errorList" class="mb-0 align-left">
+                <!-- Errors will be injected here -->
+            </ul>
+        </div>
+    </div>
     @* Section 01 *@
     <div id="detailsBasicInfo" class="section-color fs-6">
         <div class="align-left fs-12">
@@ -288,7 +300,8 @@
                                         <span class="field-name">@htmlLocalizer["Lbl_1_1_1"]</span>
                                     </label>
 
-                                    <input class="form-control"
+                                    <input required
+                                        class="form-control"
                                            id="txtFIELD1_1_1"
                                            name="txtFIELD1_1_1"
                                            type="number"
@@ -320,7 +333,7 @@
                                         <span class="field-name">@localizer["Lbl_1_1_2"]</span>
                                     </label>
 
-                                    <input class="form-control"
+                                    <input required class="form-control"
                                            id="txtFIELD1_1_2"
                                            name="txtFIELD1_1_2"
                                            type="number"
@@ -352,7 +365,7 @@
                                         <span class="field-name">@localizer["Lbl_1_1_3"]</span>
                                     </label>
 
-                                    <input class="form-control"
+                                    <input required class="form-control"
                                            id="txtFIELD1_1_3"
                                            name="txtFIELD1_1_3"
                                            type="number"
@@ -393,7 +406,7 @@
                                         </span>
                                     </label>
 
-                                    <input class="form-control"
+                                    <input required class="form-control"
                                            id="txtFIELD1_1_4"
                                            name="txtFIELD1_1_4"
                                            type="number"
@@ -433,7 +446,7 @@
                                         </span>
                                     </label>
 
-                                    <input class="form-control"
+                                    <input required class="form-control"
                                            id="txtFIELD1_1_5"
                                            name="txtFIELD1_1_5"
                                            type="number"
@@ -475,7 +488,7 @@
                                         </span>
                                     </label>
 
-                                    <input class="form-control"
+                                    <input required class="form-control"
                                            id="txtFIELD1_1_6"
                                            name="txtFIELD1_1_6"
                                            type="number"
@@ -517,7 +530,7 @@
                                         </span>
                                     </label>
 
-                                    <input class="form-control"
+                                    <input required class="form-control"
                                            id="txtFIELD1_1_7"
                                            name="txtFIELD1_1_7"
                                            type="number"
@@ -576,7 +589,7 @@
                                         <span class="field-name">@htmlLocalizer["Lbl_1_2_1"]</span>
                                     </label>
 
-                                    <input class="form-control"
+                                    <input required class="form-control"
                                            id="txtFIELD1_2_1"
                                            name="txtFIELD1_2_1"
                                            type="number"
@@ -618,7 +631,7 @@
                                         </span>
                                     </label>
 
-                                    <input class="form-control"
+                                    <input required class="form-control"
                                            id="txtFIELD1_2_2"
                                            name="txtFIELD1_2_2"
                                            type="number"
@@ -660,7 +673,7 @@
                                         </span>
                                     </label>
 
-                                    <input class="form-control"
+                                    <input required class="form-control"
                                            id="txtFIELD1_2_3"
                                            name="txtFIELD1_2_3"
                                            type="number"
@@ -702,7 +715,7 @@
                                         </span>
                                     </label>
 
-                                    <input class="form-control"
+                                    <input required class="form-control"
                                            id="txtFIELD1_2_4"
                                            name="txtFIELD1_2_4"
                                            type="number"
@@ -744,7 +757,7 @@
                                         </span>
                                     </label>
 
-                                    <input class="form-control"
+                                    <input required class="form-control"
                                            id="txtFIELD1_2_5"
                                            name="txtFIELD1_2_5"
                                            type="number"
@@ -843,7 +856,7 @@
                                         </span>
                                     </label>
 
-                                    <input  class="form-control"
+                                    <input required class="form-control"
                                            id="txtFIELD2_1_1"
                                            name="txtFIELD2_1_1"
                                            type="number"
@@ -885,7 +898,7 @@
                                         </span>
                                     </label>
 
-                                    <input  class="form-control"
+                                    <input required class="form-control"
                                            id="txtFIELD2_1_2"
                                            name="txtFIELD2_1_2"
                                            type="number"
@@ -943,7 +956,7 @@
                                             </span>
                                         </label>
 
-                                        <input  class="form-control"
+                                        <input required class="form-control"
                                                id="txtFIELD2_2_1"
                                                name="txtFIELD2_2_1"
                                                type="number"
@@ -981,7 +994,7 @@
                                                         <span class="field-name">@localizer["Lbl_2_2_1_1"]</span>
                                                     </label>
 
-                                                    <input  class="form-control"
+                                                    <input  required class="form-control"
                                                            id="txtFIELD2_2_1_1"
                                                            name="txtFIELD2_2_1_1"
                                                            type="number"
@@ -1020,7 +1033,7 @@
                                                         <span class="field-name">@localizer["Lbl_2_2_1_2"]</span>
                                                     </label>
 
-                                                    <input  class="form-control"
+                                                    <input required class="form-control"
                                                            id="txtFIELD2_2_1_2"
                                                            name="txtFIELD2_2_1_2"
                                                            type="number"
@@ -1067,7 +1080,7 @@
                                                         </span>
                                                     </label>
 
-                                                    <input  class="form-control"
+                                                    <input required class="form-control"
                                                            id="txtFIELD2_2_1_3"
                                                            name="txtFIELD2_2_1_3"
                                                            type="number"
@@ -1114,7 +1127,7 @@
                                             </span>
                                         </label>
 
-                                        <input  class="form-control"
+                                        <input required class="form-control"
                                                id="txtFIELD2_2_2"
                                                name="txtFIELD2_2_2"
                                                type="number"
@@ -1152,7 +1165,7 @@
                                                         <span class="field-name">@localizer["Lbl_2_2_2_1"]</span>
                                                     </label>
 
-                                                    <input  class="form-control"
+                                                    <input required class="form-control"
                                                            id="txtFIELD2_2_2_1"
                                                            name="txtFIELD2_2_2_1"
                                                            type="number"
@@ -1191,7 +1204,7 @@
                                                         <span class="field-name">@localizer["Lbl_2_2_2_2"]</span>
                                                     </label>
 
-                                                    <input  class="form-control"
+                                                    <input required class="form-control"
                                                            id="txtFIELD2_2_2_2"
                                                            name="txtFIELD2_2_2_2"
                                                            type="number"
@@ -1238,7 +1251,7 @@
                                                         </span>
                                                     </label>
 
-                                                    <input  class="form-control"
+                                                    <input required class="form-control"
                                                            id="txtFIELD2_2_2_3"
                                                            name="txtFIELD2_2_2_3"
                                                            type="number"
@@ -1333,7 +1346,7 @@
                                         </span>
                                     </label>
 
-                                    <input  class="form-control"
+                                    <input required class="form-control"
                                            id="txtFIELD3_1"
                                            name="txtFIELD3_1"
                                            type="number"
@@ -1373,7 +1386,7 @@
                                         </span>
                                     </label>
 
-                                    <input  class="form-control"
+                                    <input required class="form-control"
                                            id="txtFIELD3_2"
                                            name="txtFIELD3_2"
                                            type="number"
@@ -1501,7 +1514,7 @@
                                     <label for="txtFIELD4_1_1">
                                         <span class="field-name">@localizer["Sec4_411_Label"]</span>
                                     </label>
-                                    <input  class="form-control"
+                                    <input required class="form-control"
                                            id="txtFIELD4_1_1"
                                            name="txtFIELD4_1_1"
                                            type="number"
@@ -1532,7 +1545,7 @@
                                     <label for="txtFIELD4_1_2">
                                         <span class="field-name">@localizer["Sec4_412_Label"]</span>
                                     </label>
-                                    <input  class="form-control"
+                                    <input required class="form-control"
                                            id="txtFIELD4_1_2"
                                            name="txtFIELD4_1_2"
                                            type="number"
@@ -1563,7 +1576,7 @@
                                     <label for="txtFIELD4_1_3">
                                         <span class="field-name">@localizer["Sec4_413_Label"]</span>
                                     </label>
-                                    <input  class="form-control"
+                                    <input required class="form-control"
                                            id="txtFIELD4_1_3"
                                            name="txtFIELD4_1_3"
                                            type="number"
@@ -1633,7 +1646,7 @@
                                 <div class="col-md-1">4.1.4.1</div>
                                 <div class="col-md-11">
                                     <label for="txtFIELD4_1_4_1"><span class="field-name">@localizer["Common_ConvictionAcquittal"]</span></label>
-                                    <input  class="form-control"
+                                    <input  required class="form-control"
                                            id="txtFIELD4_1_4_1"
                                            name="txtFIELD4_1_4_1"
                                            type="number"
@@ -1662,7 +1675,7 @@
                                 <div class="col-md-1">4.1.4.2</div>
                                 <div class="col-md-11">
                                     <label for="txtFIELD4_1_4_2"><span class="field-name">@localizer["Common_Sentence"]</span></label>
-                                    <input  class="form-control"
+                                    <input  required class="form-control"
                                            id="txtFIELD4_1_4_2"
                                            name="txtFIELD4_1_4_2"
                                            type="number"
@@ -1691,7 +1704,7 @@
                                 <div class="col-md-1">4.1.4.3</div>
                                 <div class="col-md-11">
                                     <label for="txtFIELD4_1_4_3"><span class="field-name">@localizer["Common_Other"]</span></label>
-                                    <input  class="form-control"
+                                    <input required class="form-control"
                                            id="txtFIELD4_1_4_3"
                                            name="txtFIELD4_1_4_3"
                                            type="number"
@@ -1738,7 +1751,7 @@
                                 <div class="col-md-1">4.1.5.1</div>
                                 <div class="col-md-11">
                                     <label for="txtFIELD4_1_5_1"><span class="field-name">@localizer["Common_ConvictionAcquittal"]</span></label>
-                                    <input  class="form-control"
+                                    <input  required class="form-control"
                                            id="txtFIELD4_1_5_1"
                                            name="txtFIELD4_1_5_1"
                                            type="number"
@@ -1767,7 +1780,7 @@
                                 <div class="col-md-1">4.1.5.2</div>
                                 <div class="col-md-11">
                                     <label for="txtFIELD4_1_5_2"><span class="field-name">@localizer["Common_Sentence"]</span></label>
-                                    <input  class="form-control"
+                                    <input  required class="form-control"
                                            id="txtFIELD4_1_5_2"
                                            name="txtFIELD4_1_5_2"
                                            type="number"
@@ -1796,7 +1809,7 @@
                                 <div class="col-md-1">4.1.5.3</div>
                                 <div class="col-md-11">
                                     <label for="txtFIELD4_1_5_3"><span class="field-name">@localizer["Common_Other"]</span></label>
-                                    <input  class="form-control"
+                                    <input  required class="form-control"
                                            id="txtFIELD4_1_5_3"
                                            name="txtFIELD4_1_5_3"
                                            type="number"
@@ -1843,7 +1856,7 @@
                                 <div class="col-md-1">4.1.6.1</div>
                                 <div class="col-md-11">
                                     <label for="txtFIELD4_1_6_1"><span class="field-name">@localizer["Common_ConvictionAcquittal"]</span></label>
-                                    <input  class="form-control"
+                                    <input  required class="form-control"
                                            id="txtFIELD4_1_6_1"
                                            name="txtFIELD4_1_6_1"
                                            type="number"
@@ -1872,7 +1885,7 @@
                                 <div class="col-md-1">4.1.6.2</div>
                                 <div class="col-md-11">
                                     <label for="txtFIELD4_1_6_2"><span class="field-name">@localizer["Common_Sentence"]</span></label>
-                                    <input  class="form-control"
+                                    <input required class="form-control"
                                            id="txtFIELD4_1_6_2"
                                            name="txtFIELD4_1_6_2"
                                            type="number"
@@ -1901,7 +1914,7 @@
                                 <div class="col-md-1">4.1.6.3</div>
                                 <div class="col-md-11">
                                     <label for="txtFIELD4_1_6_3"><span class="field-name">@localizer["Common_Other"]</span></label>
-                                    <input  class="form-control"
+                                    <input required class="form-control"
                                            id="txtFIELD4_1_6_3"
                                            name="txtFIELD4_1_6_3"
                                            type="number"
@@ -1972,7 +1985,7 @@
                                 <div class="col-md-1">4.2.1</div>
                                 <div class="col-md-11">
                                     <label for="txtFIELD4_2_1"><span class="field-name">@localizer["Sec4_421_Label"]</span></label>
-                                    <input  class="form-control"
+                                    <input required class="form-control"
                                            id="txtFIELD4_2_1"
                                            name="txtFIELD4_2_1"
                                            type="number"
@@ -2001,7 +2014,7 @@
                                 <div class="col-md-1">4.2.2</div>
                                 <div class="col-md-11">
                                     <label for="txtFIELD4_2_2"><span class="field-name">@localizer["Sec4_422_Label"]</span></label>
-                                    <input  class="form-control"
+                                    <input  required class="form-control"
                                            id="txtFIELD4_2_2"
                                            name="txtFIELD4_2_2"
                                            type="number"
@@ -2030,7 +2043,7 @@
                                 <div class="col-md-1">4.2.3</div>
                                 <div class="col-md-11">
                                     <label for="txtFIELD4_2_3"><span class="field-name">@localizer["Sec4_423_Label"]</span></label>
-                                    <input  class="form-control"
+                                    <input  required class="form-control"
                                            id="txtFIELD4_2_3"
                                            name="txtFIELD4_2_3"
                                            type="number"
@@ -2090,7 +2103,7 @@
                                 <div class="col-md-1">4.2.4.1</div>
                                 <div class="col-md-11">
                                     <label for="txtFIELD4_2_4_1"><span class="field-name">@localizer["Common_ConvictionAcquittal"]</span></label>
-                                    <input  class="form-control"
+                                    <input  required class="form-control"
                                            id="txtFIELD4_2_4_1"
                                            name="txtFIELD4_2_4_1"
                                            type="number"
@@ -2119,7 +2132,7 @@
                                 <div class="col-md-1">4.2.4.2</div>
                                 <div class="col-md-11">
                                     <label for="txtFIELD4_2_4_2"><span class="field-name">@localizer["Common_Sentence"]</span></label>
-                                    <input  class="form-control"
+                                    <input required class="form-control"
                                            id="txtFIELD4_2_4_2"
                                            name="txtFIELD4_2_4_2"
                                            type="number"
@@ -2148,7 +2161,7 @@
                                 <div class="col-md-1">4.2.4.3</div>
                                 <div class="col-md-11">
                                     <label for="txtFIELD4_2_4_3"><span class="field-name">@localizer["Common_Other"]</span></label>
-                                    <input  class="form-control"
+                                    <input required class="form-control"
                                            id="txtFIELD4_2_4_3"
                                            name="txtFIELD4_2_4_3"
                                            type="number"
@@ -2195,7 +2208,7 @@
                                 <div class="col-md-1">4.2.5.1</div>
                                 <div class="col-md-11">
                                     <label for="txtFIELD4_2_5_1"><span class="field-name">@localizer["Common_ConvictionAcquittal"]</span></label>
-                                    <input  class="form-control"
+                                    <input  required class="form-control"
                                            id="txtFIELD4_2_5_1"
                                            name="txtFIELD4_2_5_1"
                                            type="number"
@@ -2224,7 +2237,7 @@
                                 <div class="col-md-1">4.2.5.2</div>
                                 <div class="col-md-11">
                                     <label for="txtFIELD4_2_5_2"><span class="field-name">@localizer["Common_Sentence"]</span></label>
-                                    <input  class="form-control"
+                                    <input required class="form-control"
                                            id="txtFIELD4_2_5_2"
                                            name="txtFIELD4_2_5_2"
                                            type="number"
@@ -2253,7 +2266,7 @@
                                 <div class="col-md-1">4.2.5.3</div>
                                 <div class="col-md-11">
                                     <label for="txtFIELD4_2_5_3"><span class="field-name">@localizer["Common_Other"]</span></label>
-                                    <input  class="form-control"
+                                    <input required class="form-control"
                                            id="txtFIELD4_2_5_3"
                                            name="txtFIELD4_2_5_3"
                                            type="number"
@@ -2300,7 +2313,7 @@
                                 <div class="col-md-1">4.2.6.1</div>
                                 <div class="col-md-11">
                                     <label for="txtFIELD4_2_6_1"><span class="field-name">@localizer["Common_ConvictionAcquittal"]</span></label>
-                                    <input  class="form-control"
+                                    <input  required class="form-control"
                                            id="txtFIELD4_2_6_1"
                                            name="txtFIELD4_2_6_1"
                                            type="number"
@@ -2329,7 +2342,7 @@
                                 <div class="col-md-1">4.2.6.2</div>
                                 <div class="col-md-11">
                                     <label for="txtFIELD4_2_6_2"><span class="field-name">@localizer["Common_Sentence"]</span></label>
-                                    <input  class="form-control"
+                                    <input required class="form-control"
                                            id="txtFIELD4_2_6_2"
                                            name="txtFIELD4_2_6_2"
                                            type="number"
@@ -2358,7 +2371,7 @@
                                 <div class="col-md-1">4.2.6.3</div>
                                 <div class="col-md-11">
                                     <label for="txtFIELD4_2_6_3"><span class="field-name">@localizer["Common_Other"]</span></label>
-                                    <input  class="form-control"
+                                    <input required class="form-control"
                                            id="txtFIELD4_2_6_3"
                                            name="txtFIELD4_2_6_3"
                                            type="number"
@@ -2433,7 +2446,7 @@
                                 <div class="col-md-1">4.3.1</div>
                                 <div class="col-md-11">
                                     <label for="txtFIELD4_3_1"><span class="field-name">@localizer["Sec4_431_Label"]</span></label>
-                                    <input  class="form-control"
+                                    <input required class="form-control"
                                            id="txtFIELD4_3_1"
                                            name="txtFIELD4_3_1"
                                            type="number"
@@ -2462,7 +2475,7 @@
                                 <div class="col-md-1">4.3.2</div>
                                 <div class="col-md-11">
                                     <label for="txtFIELD4_3_2"><span class="field-name">@localizer["Sec4_432_Label"]</span></label>
-                                    <input  class="form-control"
+                                    <input  required class="form-control"
                                            id="txtFIELD4_3_2"
                                            name="txtFIELD4_3_2"
                                            type="number"
@@ -2491,7 +2504,7 @@
                                 <div class="col-md-1">4.3.3</div>
                                 <div class="col-md-11">
                                     <label for="txtFIELD4_3_3"><span class="field-name">@localizer["Sec4_433_Label"]</span></label>
-                                    <input  class="form-control"
+                                    <input required class="form-control"
                                            id="txtFIELD4_3_3"
                                            name="txtFIELD4_3_3"
                                            type="number"
@@ -2551,7 +2564,7 @@
                                 <div class="col-md-1">4.3.4.1</div>
                                 <div class="col-md-11">
                                     <label for="txtFIELD4_3_4_1"><span class="field-name">@localizer["Common_ConvictionAcquittal"]</span></label>
-                                    <input  class="form-control"
+                                    <input required class="form-control"
                                            id="txtFIELD4_3_4_1"
                                            name="txtFIELD4_3_4_1"
                                            type="number"
@@ -2580,7 +2593,7 @@
                                 <div class="col-md-1">4.3.4.2</div>
                                 <div class="col-md-11">
                                     <label for="txtFIELD4_3_4_2"><span class="field-name">@localizer["Common_Sentence"]</span></label>
-                                    <input  class="form-control"
+                                    <input  required class="form-control"
                                            id="txtFIELD4_3_4_2"
                                            name="txtFIELD4_3_4_2"
                                            type="number"
@@ -2609,7 +2622,7 @@
                                 <div class="col-md-1">4.3.4.3</div>
                                 <div class="col-md-11">
                                     <label for="txtFIELD4_3_4_3"><span class="field-name">@localizer["Common_Other"]</span></label>
-                                    <input  class="form-control"
+                                    <input required class="form-control"
                                            id="txtFIELD4_3_4_3"
                                            name="txtFIELD4_3_4_3"
                                            type="number"
@@ -2656,7 +2669,7 @@
                                 <div class="col-md-1">4.3.5.1</div>
                                 <div class="col-md-11">
                                     <label for="txtFIELD4_3_5_1"><span class="field-name">@localizer["Common_ConvictionAcquittal"]</span></label>
-                                    <input  class="form-control"
+                                    <input  required class="form-control"
                                            id="txtFIELD4_3_5_1"
                                            name="txtFIELD4_3_5_1"
                                            type="number"
@@ -2685,7 +2698,7 @@
                                 <div class="col-md-1">4.3.5.2</div>
                                 <div class="col-md-11">
                                     <label for="txtFIELD4_3_5_2"><span class="field-name">@localizer["Common_Sentence"]</span></label>
-                                    <input  class="form-control"
+                                    <input  required class="form-control"
                                            id="txtFIELD4_3_5_2"
                                            name="txtFIELD4_3_5_2"
                                            type="number"
@@ -2714,7 +2727,7 @@
                                 <div class="col-md-1">4.3.5.3</div>
                                 <div class="col-md-11">
                                     <label for="txtFIELD4_3_5_3"><span class="field-name">@localizer["Common_Other"]</span></label>
-                                    <input  class="form-control"
+                                    <input required class="form-control"
                                            id="txtFIELD4_3_5_3"
                                            name="txtFIELD4_3_5_3"
                                            type="number"
@@ -2761,7 +2774,7 @@
                                 <div class="col-md-1">4.3.6.1</div>
                                 <div class="col-md-11">
                                     <label for="txtFIELD4_3_6_1"><span class="field-name">@localizer["Common_ConvictionAcquittal"]</span></label>
-                                    <input  class="form-control"
+                                    <input required class="form-control"
                                            id="txtFIELD4_3_6_1"
                                            name="txtFIELD4_3_6_1"
                                            type="number"
@@ -2790,7 +2803,7 @@
                                 <div class="col-md-1">4.3.6.2</div>
                                 <div class="col-md-11">
                                     <label for="txtFIELD4_3_6_2"><span class="field-name">@localizer["Common_Sentence"]</span></label>
-                                    <input  class="form-control"
+                                    <input required class="form-control"
                                            id="txtFIELD4_3_6_2"
                                            name="txtFIELD4_3_6_2"
                                            type="number"
@@ -2911,7 +2924,7 @@
                                             </div>
                                         </span>
                                     </label>
-                                    <input  class="form-control"
+                                    <input required class="form-control"
                                            id="txtFIELD5_1" name="txtFIELD5_1"
                                            type="number" min="0"
                                            asp-for="@Model.txtFIELD5_1"
@@ -2949,7 +2962,7 @@
                                             </div>
                                         </span>
                                     </label>
-                                    <input  class="form-control"
+                                    <input required class="form-control"
                                            id="txtFIELD5_2" name="txtFIELD5_2"
                                            type="number" min="0"
                                            asp-for="@Model.txtFIELD5_2"
@@ -2987,7 +3000,7 @@
                                             </div>
                                         </span>
                                     </label>
-                                    <input  class="form-control"
+                                    <input required class="form-control"
                                            id="txtFIELD5_3" name="txtFIELD5_3"
                                            type="number" min="0"
                                            asp-for="@Model.txtFIELD5_3"
@@ -3025,7 +3038,7 @@
                                             </div>
                                         </span>
                                     </label>
-                                    <input  class="form-control"
+                                    <input required class="form-control"
                                            id="txtFIELD5_4" name="txtFIELD5_4"
                                            type="number" min="0"
                                            asp-for="@Model.txtFIELD5_4"
@@ -3125,7 +3138,7 @@
                                     <span class="field-name">@localizer["Sec6_611_Label"]</span>
                                 </label>
 
-                                <input  class="form-control"
+                                <input  required class="form-control"
                                        id="txtFIELD6_1_1" name="txtFIELD6_1_1"
                                        type="number" min="0"
                                        asp-for="@Model.txtFIELD6_1_1"
@@ -3155,7 +3168,7 @@
                                 <label for="txtFIELD6_1_2">
                                     <span class="field-name">@localizer["Sec6_612_Label"]</span>
                                 </label>
-                                <input  class="form-control"
+                                    <input required class="form-control"
                                        id="txtFIELD6_1_2" name="txtFIELD6_1_2"
                                        type="number" min="0"
                                        asp-for="@Model.txtFIELD6_1_2"
@@ -3193,7 +3206,7 @@
                                         </div>
                                     </span>
                                 </label>
-                                <input  class="form-control"
+                                    <input required class="form-control"
                                        id="txtFIELD6_1_3" name="txtFIELD6_1_3"
                                        type="number" min="0"
                                        asp-for="@Model.txtFIELD6_1_3"
@@ -3244,7 +3257,7 @@
                                 <label for="txtFIELD6_2_1">
                                     <span class="field-name">@localizer["Sec6_621_Label"]</span>
                                 </label>
-                                <input  class="form-control"
+                                <input  required class="form-control"
                                        id="txtFIELD6_2_1" name="txtFIELD6_2_1"
                                        type="number" min="0"
                                        asp-for="@Model.txtFIELD6_2_1"
@@ -3274,7 +3287,7 @@
                                 <label for="txtFIELD6_2_2">
                                     <span class="field-name">@localizer["Sec6_622_Label"]</span>
                                 </label>
-                                <input  class="form-control"
+                                    <input required class="form-control"
                                        id="txtFIELD6_2_2" name="txtFIELD6_2_2"
                                        type="number" min="0"
                                        asp-for="@Model.txtFIELD6_2_2"
@@ -3363,7 +3376,7 @@
                                 <label for="txtFIELD6_3_1">
                                     <span class="field-name">@localizer["Sec6_631_Label"]</span>
                                 </label>
-                                <input  class="form-control"
+                                <input  required class="form-control"
                                        id="txtFIELD6_3_1" name="txtFIELD6_3_1"
                                        type="number" min="0"
                                        asp-for="@Model.txtFIELD6_3_1"
@@ -3393,7 +3406,7 @@
                                 <label for="txtFIELD6_3_2">
                                     <span class="field-name">@localizer["Sec6_632_Label"]</span>
                                 </label>
-                                <input  class="form-control"
+                                <input  required class="form-control"
                                        id="txtFIELD6_3_2" name="txtFIELD6_3_2"
                                        type="number" min="0"
                                        asp-for="@Model.txtFIELD6_3_2"
@@ -3431,7 +3444,7 @@
                                         </div>
                                     </span>
                                 </label>
-                                <input  class="form-control"
+                                    <input required class="form-control"
                                        id="txtFIELD6_3_3" name="txtFIELD6_3_3"
                                        type="number" min="0"
                                        asp-for="@Model.txtFIELD6_3_3"
@@ -3514,7 +3527,7 @@
                                         <span class="field-name">@localizer["Sec7_711_Label"]</span>
                                     </label>
 
-                                    <input 
+                                    <input required
                                            class="form-control"
                                            id="txtFIELD7_1_1"
                                            name="txtFIELD7_1_1"
@@ -3557,7 +3570,7 @@
                                         </span>
                                     </label>
 
-                                    <input 
+                                    <input  required
                                            class="form-control"
                                            id="txtFIELD7_1_2"
                                            name="txtFIELD7_1_2"
@@ -3600,7 +3613,7 @@
                                         </span>
                                     </label>
 
-                                    <input 
+                                    <input required
                                            class="form-control"
                                            id="txtFIELD7_1_3"
                                            name="txtFIELD7_1_3"
@@ -3692,7 +3705,7 @@
                                         </span>
                                     </label>
 
-                                    <input 
+                                    <input required
                                            class="form-control"
                                            id="txtFIELD8_1"
                                            name="txtFIELD8_1"
@@ -3734,7 +3747,7 @@
                                         </span>
                                     </label>
 
-                                    <input 
+                                    <input  required
                                            class="form-control"
                                            id="txtFIELD8_2"
                                            name="txtFIELD8_2"
@@ -3776,7 +3789,7 @@
                                         </span>
                                     </label>
 
-                                    <input 
+                                    <input required
                                            class="form-control"
                                            id="txtFIELD8_3"
                                            name="txtFIELD8_3"
@@ -3860,7 +3873,7 @@
                                         <span class="field-name">@localizer["Sec9_91_Label"]</span>
                                     </label>
 
-                                    <input 
+                                    <input  required
                                            class="form-control"
                                            id="txtFIELD9_1"
                                            name="txtFIELD9_1"
@@ -3894,7 +3907,7 @@
                                         <span class="field-name">@localizer["Sec9_92_Label"]</span>
                                     </label>
 
-                                    <input 
+                                    <input required
                                            class="form-control"
                                            id="txtFIELD9_2"
                                            name="txtFIELD9_2"
@@ -3986,7 +3999,7 @@
                                         </span>
                                     </label>
 
-                                    <input 
+                                    <input required
                                            class="form-control"
                                            id="txtFIELD10_1"
                                            name="txtFIELD10_1"
@@ -4078,7 +4091,7 @@
                                         </span>
                                     </label>
 
-                                    <input 
+                                    <input  required
                                            class="form-control"
                                            id="txtFIELD11_1"
                                            name="txtFIELD11_1"
@@ -4120,7 +4133,7 @@
                                         </span>
                                     </label>
 
-                                    <input 
+                                    <input required
                                            class="form-control"
                                            id="txtFIELD11_2"
                                            name="txtFIELD11_2"
