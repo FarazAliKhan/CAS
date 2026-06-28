@@ -134,6 +134,10 @@ function submitForReview(cultureInfo) {
     if ($('form').valid()) {
         if (!(validate(cultureInfo))) {
             $('#validationModal').modal('show');
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
             return;
         }
         else {
@@ -168,7 +172,12 @@ function submitForSave() {
         form.action = "/Create/Create?submitForSave=true";
         form.method = "post";
         form.submit();
-    } else { }
+    } else {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        }); 
+    }
 }
 
 function submitStats() {
@@ -3331,5 +3340,11 @@ window.addEventListener("load", function () {
         console.log(dtTo.min);
         console.log(dtTo.max);
     }
-    
+
+    if ((document.getElementById("intREPORTINGYEAR") != null)
+        && (document.getElementById("txtCOURT") != null)
+    ) {
+        $("#dtFROM").attr("readonly", true);
+        $("#dtTO").attr("readonly", true);
+    }
 });

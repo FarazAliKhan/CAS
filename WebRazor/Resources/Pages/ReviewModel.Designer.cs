@@ -439,7 +439,7 @@ namespace WebRazor.Resources.Pages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Before submitting your statistics, please review the data you have entered. If you wish to make any changes, click on the icon at the top of every section:.
+        ///   Looks up a localized string similar to Before submitting your statistics, please review the data you have entered. Should you wish to make any changes to your statistics, you may do so directly on this page.
         /// </summary>
         public static string Heading_Review_Text1 {
             get {

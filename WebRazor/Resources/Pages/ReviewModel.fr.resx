@@ -892,9 +892,9 @@ Pour chaque intervalle de temps, de l’information sera compilée pour trois p�
     <value>Statistiques annuelles des Cours d’appel (SACA)</value>
   </data>
   <data name="Heading_Review_Text1" xml:space="preserve">
-    <value>Avant de soumettre vos statistiques, veuillez vérifier les données que vous avez saisies.</value>
+    <value>Avant de soumettre vos statistiques, veuillez vérifier les données que vous avez saisies. Si vous souhaitez apporter des modifications, vous pouvez le faire directement sur cette page.</value>
   </data>
   <data name="Heading_Review_Text2" xml:space="preserve">
-    <value>Si vous souhaitez apporter des modifications, cliquez sur l’icône en haut de chaque section.</value>
+    <value>Pour soumettre vos statistiques, veuillez cliquer sur le bouton « Soumettre » en bas de la page.</value>
   </data>
 </root>
