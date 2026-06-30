@@ -36,19 +36,19 @@
 .tooltip-content {
     visibility: hidden;
     opacity: 0;
+    position: fixed;                 /* anchor to the viewport so zoom/edges can't clip it */
+    z-index: 1031;                   /* above the fixed navbar (1030) */
+    left: 50%;                       /* graceful fallback if JS is disabled */
+    top: 90px;
+    transform: translateX(-50%);
     width: max-content;
-    max-width: min(800px, 90vw);
+    max-width: min(800px, 92vw);     /* shrinks as the viewport (zoom) narrows */
+    box-sizing: border-box;          /* include border + padding in max-width */
     background-color: lightgrey;
     color: black;
     text-align: left;
     border-radius: 6px;
-    padding: 5px 5px;
-    position: absolute;
-    z-index: 1000;
-    bottom: 125%;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-left: 0;
+    padding: 6px 8px;
     font-size: 16px;
     border: 5px solid black;
     white-space: normal;
@@ -56,7 +56,8 @@
     transition: opacity 0.15s ease-in-out;
 }
 
-.tooltip-container:hover .tooltip-content {
+.tooltip-container:hover .tooltip-content,
+.tooltip-container:focus-within .tooltip-content {
     visibility: visible;
     opacity: 1;
 }
