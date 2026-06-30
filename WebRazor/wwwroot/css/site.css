@@ -1,4 +1,4 @@
-.span-break {
+    .span-break {
     display: block;
 }
 
@@ -35,23 +35,30 @@
 
 .tooltip-content {
     visibility: hidden;
-    width: 800px;
+    opacity: 0;
+    width: max-content;
+    max-width: min(800px, 90vw);
     background-color: lightgrey;
     color: black;
     text-align: left;
     border-radius: 6px;
     padding: 5px 5px;
     position: absolute;
-    z-index: 1;
+    z-index: 1000;
     bottom: 125%;
     left: 50%;
-    margin-left: -450px;
+    transform: translateX(-50%);
+    margin-left: 0;
     font-size: 16px;
     border: 5px solid black;
+    white-space: normal;
+    overflow-wrap: break-word;
+    transition: opacity 0.15s ease-in-out;
 }
 
-.tooltip-container:hover .tooltip-content{
+.tooltip-container:hover .tooltip-content {
     visibility: visible;
+    opacity: 1;
 }
 
 .align-right{
