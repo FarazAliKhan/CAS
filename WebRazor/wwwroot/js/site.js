@@ -386,6 +386,8 @@ function showDetails(detailsId) {
             $("#btnSave").attr("hidden", true);
             $("#btnReview").attr("hidden", true);
             $("#revMessage").attr("hidden", true);
+            $("#dtFROM").attr("readonly", true);
+            $("#dtTO").attr("readonly", true);
             sectField.value = "0";
             break;
         case "details1":
@@ -503,6 +505,8 @@ function hideDetails(detailsId) {
     $('#' + detailsId).attr('hidden', true);
     switch (detailsId) {
         case "detailsBasicInfo":
+            $("#dtFROM").attr("readonly", true);
+            $("#dtTO").attr("readonly", true);
             break;
         case "details1":
             makeSection1NotRequired();
@@ -546,6 +550,8 @@ function gotoPrevious() {
     let activeDetails = $("#activeDetailsId").val();
     switch (activeDetails) {
         case "detailsBasicInfo":
+            $("#dtFROM").attr("readonly", true);
+            $("#dtTO").attr("readonly", true);
             break;
         case "details1":
             $("#btnPrevious").attr("hidden", true);

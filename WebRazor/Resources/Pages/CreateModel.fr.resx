@@ -454,10 +454,10 @@ Veuillez choisir l'une des options suivantes :</value>
     <value>Nombre de verdicts de culpabilité/acquittements rendus à l’audience</value>
   </data>
   <data name="Lbl_2_2_1_2" xml:space="preserve">
-    <value>Nombre de jugements sur la peine rendus à l’audience.</value>
+    <value>Nombre de jugements sur la peine rendus à l’audience</value>
   </data>
   <data name="Msg_2_2_1_2" xml:space="preserve">
-    <value>Nombre de jugements sur la peine rendus à l’audience.</value>
+    <value>Nombre de jugements sur la peine rendus à l’audience</value>
   </data>
   <data name="Lbl_2_2_1_3" xml:space="preserve">
     <value>Exemples d'autres appels criminels : habeas corpus, prohibition, certiorari, examens de troubles mentaux, etc.</value>
