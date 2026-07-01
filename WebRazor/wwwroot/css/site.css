@@ -54,6 +54,33 @@
     visibility: visible;
 }
 
+.light-tooltip {
+    --bs-tooltip-bg: #e9ecef;
+    --bs-tooltip-color: #212529;
+    /* optional: keep Bootstrap happy */
+    --bs-tooltip-arrow-color: transparent;
+}
+
+    /* remove arrow completely */
+    .light-tooltip .tooltip-arrow {
+        display: none !important;
+    }
+
+    /* make it look like a floating card */
+    .light-tooltip .tooltip-inner {
+        background-color: #e9ecef;
+        color: #212529;
+        border: 1px solid #ced4da;
+        border-radius: 8px;
+        max-width: min(500px, 90vw);
+        padding: 12px 16px;
+        font-size: 14px;
+        line-height: 1.5;
+        white-space: normal;
+        text-align: left;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    }
+
 .align-right {
     text-align: right;
 }

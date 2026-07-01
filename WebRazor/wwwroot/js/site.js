@@ -3361,3 +3361,36 @@ window.addEventListener("load", function () {
         $("#dtTO").attr("readonly", true);
     }
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const tooltipTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    );
+
+    tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+});
+
+document.querySelectorAll('[data-bs-toggle="tooltip"]').forEach(el => {
+    new bootstrap.Tooltip(el, {
+        html: true,
+        container: 'body',
+        boundary: 'viewport',
+        fallbackPlacements: ['top', 'bottom', 'left', 'right'],
+        popperConfig(defaultBsPopperConfig) {
+            return {
+                ...defaultBsPopperConfig,
+                modifiers: [
+                    ...defaultBsPopperConfig.modifiers,
+                    {
+                        name: 'preventOverflow',
+                        options: {
+                            boundary: 'viewport'
+                        }
+                    }
+                ]
+            };
+        }
+    });
+});
